@@ -38,7 +38,9 @@ async function validateControlCenter() {
     "C-Trust",
     "C-Candidates",
     "C-Competitors",
-    "C-SearchIntel"
+    "C-SearchIntel",
+    "C-Widgets",
+    "C-WidgetCategories"
   ];
 
   // 1. Check all expected sheets exist

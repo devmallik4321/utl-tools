@@ -6,9 +6,11 @@ import {
   getUtilityBySlug,
   getRelatedUtilities,
   getCategoryBySlug,
+  getRelatedWidgetsForUtility,
 } from "@/lib/registry";
 import { ToolDispatcher } from "@/components/tools/ToolDispatcher";
 import { ToolCard } from "@/components/ToolCard";
+import { WidgetCard } from "@/components/WidgetCard";
 import { FaqAccordion } from "@/components/FaqAccordion";
 import { BookmarkButton } from "@/components/BookmarkButton";
 import { ShareButton } from "@/components/ShareButton";
@@ -65,6 +67,7 @@ export default function UtilityPage({ params }: UtilityPageProps) {
   if (!utility) notFound();
 
   const relatedTools = getRelatedUtilities(utility.slug, 4);
+  const relatedWidgets = getRelatedWidgetsForUtility(utility.slug, 3);
   const category = getCategoryBySlug(utility.category);
   const theme = getCategoryTheme(utility.category);
 
@@ -284,6 +287,34 @@ export default function UtilityPage({ params }: UtilityPageProps) {
               </h2>
             </div>
             <FaqAccordion items={utility.seo.faqs} />
+          </section>
+        )}
+
+        {/* CONTEXTUAL WINDOWS WIDGET / DESKTOP DISCOVERY GATEWAY */}
+        {relatedWidgets.length > 0 && (
+          <section className="p-6 bg-card border border-border rounded-2xl space-y-4 shadow-xs">
+            <div className="flex items-center justify-between">
+              <div>
+                <span className="text-xs font-semibold text-blue-600 dark:text-blue-400 uppercase tracking-wider block">
+                  Windows Desktop &amp; Widget Options
+                </span>
+                <h2 className="text-lg font-bold text-foreground">
+                  Want this capability on your Windows desktop?
+                </h2>
+              </div>
+              <Link
+                href="/widgets"
+                className="text-xs font-semibold text-blue-600 dark:text-blue-400 hover:underline flex items-center gap-1"
+              >
+                All Windows widgets <ArrowRight className="w-3 h-3" />
+              </Link>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {relatedWidgets.map((relWidget) => (
+                <WidgetCard key={relWidget.slug} widget={relWidget} />
+              ))}
+            </div>
           </section>
         )}
 

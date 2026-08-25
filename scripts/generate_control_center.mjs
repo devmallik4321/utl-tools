@@ -10,9 +10,11 @@ async function buildControlCenter() {
   if (!fs.existsSync(controlDir)) fs.mkdirSync(controlDir, { recursive: true });
   if (!fs.existsSync(backupDir)) fs.mkdirSync(backupDir, { recursive: true });
 
-  // Read existing utilities registry
+  // Read existing utilities and widgets registries
   const utilities = JSON.parse(fs.readFileSync("registry/utilities.json", "utf-8"));
   const categories = JSON.parse(fs.readFileSync("registry/categories.json", "utf-8"));
+  const widgets = JSON.parse(fs.readFileSync("registry/widgets.json", "utf-8"));
+  const widgetCategories = JSON.parse(fs.readFileSync("registry/widgetCategories.json", "utf-8"));
 
   const workbook = new ExcelJS.Workbook();
   workbook.creator = "Antigravity Control Center Engine";
@@ -71,7 +73,7 @@ async function buildControlCenter() {
   rowIdxHeader.height = 26;
 
   const sheetDefinitions = [
-    { code: "P-00", name: "P-00 INDEX", type: "Parent", parent: "ROOT", desc: "Canonical navigation directory registering all worksheets.", count: "17 Sheets", target: "A1" },
+    { code: "P-00", name: "P-00 INDEX", type: "Parent", parent: "ROOT", desc: "Canonical navigation directory registering all worksheets.", count: "19 Sheets", target: "A1" },
     { code: "P-01", name: "P-Dashboard", type: "Parent", parent: "P-00 INDEX", desc: "Operational KPIs, live status, GA4 analytics, Search Console state, and maintenance freeze.", count: "Formula KPIs", target: "A1" },
     { code: "P-02", name: "P-Charter", type: "Parent", parent: "P-00 INDEX", desc: "Project mission, philosophy, design rules, non-goals, and governance.", count: "Charter Doc", target: "A1" },
     { code: "P-03", name: "P-Utilities", type: "Parent", parent: "P-00 INDEX", desc: "Master registry of all 47 production utilities with live status & URLs.", count: "47 Utilities", target: "A1" },
@@ -88,6 +90,8 @@ async function buildControlCenter() {
     { code: "C-06", name: "C-Candidates", type: "Child", parent: "P-Research", desc: "Prioritized expansion pipeline backlog (P0, P1, P2, P3).", count: "31 Candidates", target: "A1" },
     { code: "C-07", name: "C-Competitors", type: "Child", parent: "P-Research", desc: "Competitor intelligence tracking (features, traffic, gaps, opportunities).", count: "7 Competitors", target: "A1" },
     { code: "C-08", name: "C-SearchIntel", type: "Child", parent: "P-Research", desc: "Search intelligence registry (queries, country, intent, SERP density).", count: "8 Search Records", target: "A1" },
+    { code: "C-09", name: "C-Widgets", type: "Child", parent: "P-Utilities", desc: "Windows Widget Discovery Layer master registry (id, name, platform_type, review).", count: `${widgets.length} Widgets`, target: "A1" },
+    { code: "C-10", name: "C-WidgetCategories", type: "Child", parent: "P-Utilities", desc: "Windows Widget Category taxonomy & intent mapping registry.", count: `${widgetCategories.length} Categories`, target: "A1" },
   ];
 
   sheetDefinitions.forEach((s, idx) => {
@@ -1014,6 +1018,116 @@ async function buildControlCenter() {
 
   searchData.forEach((s, idx) => {
     const row = wsSearchIntel.addRow(s);
+    row.height = 24;
+    row.font = fontMain;
+    if (idx % 2 === 1) row.eachCell((cell) => (cell.fill = fillZebra));
+  });
+
+  // ==========================================
+  // 18. C-Widgets (Child of P-Utilities)
+  // ==========================================
+  const wsWidgets = workbook.addWorksheet("C-Widgets", { views: [{ showGridLines: true, freeze: { ySplit: 4 } }] });
+  addNavRow(wsWidgets, "P-Utilities");
+
+  wsWidgets.getCell("A2").value = `C-Widgets — Windows Widget Discovery Layer Master Registry (${widgets.length} Total)`;
+  wsWidgets.getCell("A2").font = fontTitle;
+
+  const widgetHeaders = [
+    "SN",
+    "widget_id",
+    "name",
+    "category",
+    "platform_type",
+    "provider",
+    "is_free",
+    "pricing",
+    "usefulness_score",
+    "privacy_rating",
+    "installation_difficulty",
+    "verification_status",
+    "related_utility",
+    "human_status",
+    "human_comment",
+    "agent_status",
+    "agent_comment",
+    "evidence_link",
+    "source_link",
+    "last_verified",
+    "SEO_status",
+    "notes",
+  ];
+
+  const rowWidgetHeader = wsWidgets.getRow(4);
+  rowWidgetHeader.values = widgetHeaders;
+  rowWidgetHeader.font = fontHeader;
+  rowWidgetHeader.fill = fillChildHeader;
+  rowWidgetHeader.height = 26;
+
+  widgets.forEach((w, idx) => {
+    const row = wsWidgets.addRow([
+      idx + 1,
+      w.id,
+      w.name,
+      w.category,
+      w.platformType,
+      w.provider,
+      w.isFree ? "YES" : "NO",
+      w.pricing,
+      w.usefulnessScore,
+      w.privacyRating,
+      w.installationDifficulty,
+      w.verificationStatus,
+      (w.relatedUtilities || []).join(", "),
+      "ACCEPTED",
+      "Human operator approved Windows Widget Discovery entry.",
+      "VERIFIED",
+      "Verified official installer and platform classification.",
+      { text: "View Widget Page", hyperlink: `https://utl.tools/widgets/item/${w.slug}` },
+      { text: "Official Source", hyperlink: w.officialUrl },
+      w.lastVerified,
+      "INDEXED",
+      w.notes || "Canonical Windows Widget Discovery V1 seed entry.",
+    ]);
+    row.height = 24;
+    row.font = fontMain;
+    row.getCell(14).font = fontBold;
+    row.getCell(16).font = fontBold;
+    if (idx % 2 === 1) row.eachCell((cell) => (cell.fill = fillZebra));
+
+    row.getCell(14).dataValidation = {
+      type: "list",
+      allowBlank: false,
+      formulae: ['"OPEN,PASS,FAILED,PARTIAL,REVIEW,ACCEPTED,REJECTED,PARKED"'],
+    };
+  });
+
+  // ==========================================
+  // 19. C-WidgetCategories (Child of P-Utilities)
+  // ==========================================
+  const wsWidgetCats = workbook.addWorksheet("C-WidgetCategories", { views: [{ showGridLines: true, freeze: { ySplit: 4 } }] });
+  addNavRow(wsWidgetCats, "P-Utilities");
+
+  wsWidgetCats.getCell("A2").value = `C-WidgetCategories — Windows Widget Category Taxonomy (${widgetCategories.length} Total)`;
+  wsWidgetCats.getCell("A2").font = fontTitle;
+
+  const wcatHeaders = ["SN", "category_id", "name", "slug", "badge", "user_intents", "seo_title", "seo_description"];
+  const rowWcatHeader = wsWidgetCats.getRow(4);
+  rowWcatHeader.values = wcatHeaders;
+  rowWcatHeader.font = fontHeader;
+  rowWcatHeader.fill = fillChildHeader;
+  rowWcatHeader.height = 26;
+
+  widgetCategories.forEach((wc, idx) => {
+    const row = wsWidgetCats.addRow([
+      idx + 1,
+      wc.id,
+      wc.name,
+      wc.slug,
+      wc.badge || "Standard",
+      (wc.userIntents || []).join(" | "),
+      wc.seoTitle,
+      wc.seoDescription,
+    ]);
     row.height = 24;
     row.font = fontMain;
     if (idx % 2 === 1) row.eachCell((cell) => (cell.fill = fillZebra));

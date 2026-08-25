@@ -1,10 +1,17 @@
 import { MetadataRoute } from "next";
-import { getAllUtilities, getAllCategories } from "@/lib/registry";
+import {
+  getAllUtilities,
+  getAllCategories,
+  getAllWidgets,
+  getAllWidgetCategories,
+} from "@/lib/registry";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://utl.tools";
   const utilities = getAllUtilities();
   const categories = getAllCategories();
+  const widgets = getAllWidgets();
+  const widgetCategories = getAllWidgetCategories();
 
   const toolEntries: MetadataRoute.Sitemap = utilities.map((tool) => ({
     url: `${baseUrl}/tools/${tool.slug}`,
@@ -18,6 +25,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date(),
     changeFrequency: "weekly",
     priority: 0.85,
+  }));
+
+  const widgetCategoryEntries: MetadataRoute.Sitemap = widgetCategories.map((wcat) => ({
+    url: `${baseUrl}/widgets/${wcat.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly",
+    priority: 0.85,
+  }));
+
+  const widgetItemEntries: MetadataRoute.Sitemap = widgets.map((w) => ({
+    url: `${baseUrl}/widgets/item/${w.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly",
+    priority: 0.8,
   }));
 
   return [
@@ -36,10 +57,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: `${baseUrl}/widgets`,
       lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.7,
+      changeFrequency: "weekly",
+      priority: 0.9,
     },
     ...categoryEntries,
+    ...widgetCategoryEntries,
+    ...widgetItemEntries,
     ...toolEntries,
   ];
 }

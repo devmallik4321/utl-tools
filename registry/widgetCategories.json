@@ -1,0 +1,326 @@
+[
+  {
+    "id": "clock",
+    "name": "Clock & Time",
+    "slug": "clock",
+    "description": "Desktop clocks, countdown timers, focus tools, and vocal time announcements for Windows.",
+    "icon": "Clock",
+    "color": "blue",
+    "badge": "Popular",
+    "userIntents": ["I want a clock", "I want a timer", "I want something always visible", "I want something useful while studying"],
+    "seoTitle": "Windows Clock Widgets & Desktop Timers — Discovery & Recommendations",
+    "seoDescription": "Discover free Windows clock widgets, desktop timers, and focus tools. Compare native Windows 11 widgets, tray utilities, and desktop overlays.",
+    "whatAreThey": "Windows clock widgets are desktop, widget board, or tray-based timepieces that keep the current time, countdown timers, or focus alarms accessible while you work.",
+    "whyUse": "Using a dedicated desktop clock widget eliminates context switching and keeps critical deadlines or focus sessions visible without opening full-screen browser tabs.",
+    "faqs": [
+      {
+        "question": "How do I add a clock widget to Windows 11?",
+        "answer": "Press Win + W to open the Windows Widgets Board, click the '+' icon, and select Microsoft To-Do or Clock if installed via Microsoft Store."
+      },
+      {
+        "question": "Are these clock tools free to use?",
+        "answer": "Yes. All featured clock widgets, PWA timers, and tray utilities in this category are 100% free with no subscription required."
+      }
+    ]
+  },
+  {
+    "id": "system-monitoring",
+    "name": "System Monitoring",
+    "slug": "system-monitoring",
+    "description": "Hardware diagnostics, CPU/GPU temperature meters, RAM usage gauges, and battery monitors.",
+    "icon": "Cpu",
+    "color": "indigo",
+    "badge": "Hardware",
+    "userIntents": ["I want to monitor my PC", "I want system information", "I want something always visible"],
+    "seoTitle": "Windows System Monitor Widgets & Hardware Diagnostics",
+    "seoDescription": "Find the best Windows system monitoring widgets, HWiNFO tray gauges, and Rainmeter hardware skins for CPU, GPU, and RAM tracking.",
+    "whatAreThey": "System monitoring tools display real-time CPU core usage, GPU temperature, memory consumption, and fan speeds on your desktop or system tray.",
+    "whyUse": "Gamers, video editors, and power users use system monitors to detect thermal throttling and resource bottlenecks during heavy workloads.",
+    "faqs": [
+      {
+        "question": "Can I pin a CPU monitor to my Windows desktop?",
+        "answer": "Yes! You can use Rainmeter desktop overlays, Xbox Game Bar performance pin, or HWiNFO system tray counters."
+      }
+    ]
+  },
+  {
+    "id": "network",
+    "name": "Network & Internet",
+    "slug": "network",
+    "description": "Real-time network speed meters, ping latency monitors, Wi-Fi signal analyzers, and IP widgets.",
+    "icon": "Wifi",
+    "color": "cyan",
+    "badge": "Diagnostics",
+    "userIntents": ["I want to monitor my internet", "I want network information", "I want to check my connection"],
+    "seoTitle": "Windows Network Widgets & Speed Monitors",
+    "seoDescription": "Discover live network speed widgets, ping monitoring overlays, and Wi-Fi signal tools for Windows 10 and 11.",
+    "whatAreThey": "Network widgets show live download/upload throughput and ping response times directly on your taskbar or widget overlay.",
+    "whyUse": "Helps diagnose internet drops, background updates, and connection jitter instantly.",
+    "faqs": [
+      {
+        "question": "How do I show internet speed on the Windows taskbar?",
+        "answer": "Tools like TrafficMonitor create a lightweight, unobtrusive taskbar gauge showing real-time KB/s or MB/s speeds."
+      }
+    ]
+  },
+  {
+    "id": "productivity",
+    "name": "Productivity",
+    "slug": "productivity",
+    "description": "Sticky notes, task lists, Pomodoro focus timers, and window management utilities.",
+    "icon": "CheckSquare",
+    "color": "emerald",
+    "badge": "Essential",
+    "userIntents": ["I want productivity tools", "I want something useful while working", "I want to manage tasks"],
+    "seoTitle": "Windows Productivity Widgets & Desktop Task Tools",
+    "seoDescription": "Explore top Windows productivity widgets, sticky notes, and focus utilities to streamline your daily workflow.",
+    "whatAreThey": "Productivity widgets bring task lists, notes, and focus timers directly to your primary desktop workspace.",
+    "whyUse": "Reduces task switching and keeps urgent to-dos visible at a glance.",
+    "faqs": [
+      {
+        "question": "What is the best built-in sticky notes tool for Windows?",
+        "answer": "Microsoft Sticky Notes comes pre-installed on Windows 10 and 11, supporting cloud sync with Microsoft To-Do and mobile apps."
+      }
+    ]
+  },
+  {
+    "id": "developer",
+    "name": "Developer Tools",
+    "slug": "developer",
+    "description": "JSON tools, regex debuggers, color pickers, diff checkers, and developer helper apps.",
+    "icon": "Code",
+    "color": "violet",
+    "badge": "Devs",
+    "userIntents": ["I want developer tools", "I want something useful while working"],
+    "seoTitle": "Windows Developer Widgets & Desktop Utilities",
+    "seoDescription": "Discover essential Windows developer utilities, DevToys, regex testers, and desktop code helpers.",
+    "whatAreThey": "Developer desktop tools provide instant offline access to common programming utilities like JSON formatters, base64 encoders, and hash generators.",
+    "whyUse": "Saves developers from searching for web formatters and protects sensitive production data offline.",
+    "faqs": [
+      {
+        "question": "What is DevToys for Windows?",
+        "answer": "DevToys is a free open-source 'Swiss Army knife for developers' that runs locally on Windows to format JSON, generate hashes, decode JWTs, and test regex."
+      }
+    ]
+  },
+  {
+    "id": "ai",
+    "name": "AI & Assistants",
+    "slug": "ai",
+    "description": "AI sidebar assistants, prompt helpers, Copilot shortcuts, and desktop LLM tools.",
+    "icon": "Sparkles",
+    "color": "purple",
+    "badge": "AI",
+    "userIntents": ["I want AI tools", "I want something useful while working", "I want something useful while studying"],
+    "seoTitle": "Windows AI Widgets & Sidebar Assistants",
+    "seoDescription": "Discover free Windows AI widgets, Microsoft Copilot sidebar integration, and desktop AI helpers.",
+    "whatAreThey": "AI widgets integrate conversational assistants directly into your desktop or browser sidebar for instant answers and summarization.",
+    "whyUse": "Allows rapid drafting, code explanation, and document analysis without leaving your active window.",
+    "faqs": [
+      {
+        "question": "How do I access Copilot in Windows?",
+        "answer": "Press Win + C or click the Copilot button on the taskbar (or Edge sidebar) to launch the AI assistant."
+      }
+    ]
+  },
+  {
+    "id": "weather",
+    "name": "Weather & Environment",
+    "slug": "weather",
+    "description": "Live weather forecasts, radar maps, temperature widgets, and air quality meters.",
+    "icon": "CloudSun",
+    "color": "amber",
+    "badge": "Live",
+    "userIntents": ["I want weather", "I want something always visible"],
+    "seoTitle": "Windows Weather Widgets & Desktop Forecasts",
+    "seoDescription": "Find live weather widgets for Windows 11, taskbar temperature badges, and desktop forecast tools.",
+    "whatAreThey": "Weather widgets display live temperature, precipitation forecasts, and weather alerts.",
+    "whyUse": "Keeps local weather updates visible on the taskbar or Widgets board.",
+    "faqs": [
+      {
+        "question": "Does Windows 11 have a built-in weather widget?",
+        "answer": "Yes, Windows 11 shows live weather directly on the left side of the taskbar."
+      }
+    ]
+  },
+  {
+    "id": "calendar",
+    "name": "Calendar & Events",
+    "slug": "calendar",
+    "description": "Desktop calendars, agenda feeds, event countdowns, and schedule widgets.",
+    "icon": "Calendar",
+    "color": "rose",
+    "badge": "Schedule",
+    "userIntents": ["I want a calendar", "I want to manage tasks"],
+    "seoTitle": "Windows Calendar Widgets & Agenda Overlays",
+    "seoDescription": "Discover desktop calendar widgets for Windows 10 and 11, Outlook agenda feeds, and event count tools.",
+    "whatAreThey": "Calendar widgets display upcoming meetings and daily agendas on your desktop.",
+    "whyUse": "Prevents missed appointments by displaying your schedule automatically.",
+    "faqs": [
+      {
+        "question": "Can Outlook calendar sync with the Windows 11 widget board?",
+        "answer": "Yes, the Microsoft Outlook Calendar widget syncs seamlessly on the Windows 11 Widgets Board."
+      }
+    ]
+  },
+  {
+    "id": "finance",
+    "name": "Finance & Stock Tickers",
+    "slug": "finance",
+    "description": "Stock price tickers, crypto monitors, currency exchange calculators, and financial widgets.",
+    "icon": "DollarSign",
+    "color": "emerald",
+    "badge": "Markets",
+    "userIntents": ["I want finance information", "I want something always visible"],
+    "seoTitle": "Windows Finance Widgets & Stock Tickers",
+    "seoDescription": "Explore free stock market widgets, MSN Money tickers, and currency tools for Windows.",
+    "whatAreThey": "Finance widgets track stock indices, watchlist assets, and currency rates in real time.",
+    "whyUse": "Allows investors to track market movements without keeping trading tabs open.",
+    "faqs": [
+      {
+        "question": "Is MSN Money widget free on Windows 11?",
+        "answer": "Yes, the MSN Money watch list widget is built into the Windows 11 Widgets Board."
+      }
+    ]
+  },
+  {
+    "id": "news",
+    "name": "News & Headlines",
+    "slug": "news",
+    "description": "Breaking news tickers, RSS feed readers, headline widgets, and topic feeds.",
+    "icon": "Newspaper",
+    "color": "slate",
+    "badge": "Feeds",
+    "userIntents": ["I want news", "I want something useful while working"],
+    "seoTitle": "Windows News Widgets & RSS Feed Readers",
+    "seoDescription": "Find Windows news widgets, Microsoft Start headline feeds, and RSS desktop tools.",
+    "whatAreThey": "News widgets stream curated headlines and breaking news alerts to your desktop.",
+    "whyUse": "Keeps you updated on global news without manual browsing.",
+    "faqs": [
+      {
+        "question": "Can I customize news topics on Windows 11 Widgets?",
+        "answer": "Yes, you can follow specific topics or publishers via Microsoft Start settings."
+      }
+    ]
+  },
+  {
+    "id": "education",
+    "name": "Education & Study",
+    "slug": "education",
+    "description": "Flashcard widgets, formula references, dictionary tools, and study aids.",
+    "icon": "GraduationCap",
+    "color": "sky",
+    "badge": "Study",
+    "userIntents": ["I want something useful while studying", "I want education tools"],
+    "seoTitle": "Windows Education Widgets & Study Aids",
+    "seoDescription": "Discover study widgets, flashcard apps, and educational desktop tools for Windows students.",
+    "whatAreThey": "Study tools that assist with memorization, time boxing, and reference lookup.",
+    "whyUse": "Helps students maintain focus during study sessions.",
+    "faqs": [
+      {
+        "question": "What is the best Pomodoro timer for Windows?",
+        "answer": "The Windows Clock app includes built-in Focus Sessions with Spotify and Microsoft To-Do integration."
+      }
+    ]
+  },
+  {
+    "id": "health",
+    "name": "Health & Break Timers",
+    "slug": "health",
+    "description": "Posture reminders, 20-20-20 eye strain break timers, and hydration trackers.",
+    "icon": "Heart",
+    "color": "rose",
+    "badge": "Wellness",
+    "userIntents": ["I want health tools", "I want something useful while working"],
+    "seoTitle": "Windows Health Widgets & Ergonomic Break Reminders",
+    "seoDescription": "Find ergonomic break timers, 20-20-20 eye strain tools, and health widgets for Windows desktop.",
+    "whatAreThey": "Health widgets remind office workers to stretch, rest their eyes, and drink water.",
+    "whyUse": "Prevents repetitive strain injury (RSI) and computer vision syndrome.",
+    "faqs": [
+      {
+        "question": "What is the 20-20-20 rule for screen time?",
+        "answer": "Every 20 minutes, look at an object 20 feet away for at least 20 seconds."
+      }
+    ]
+  },
+  {
+    "id": "security",
+    "name": "Security & Privacy",
+    "slug": "security",
+    "description": "VPN status widgets, password manager sidebars, and privacy diagnostic overlays.",
+    "icon": "ShieldCheck",
+    "color": "slate",
+    "badge": "Privacy",
+    "userIntents": ["I want security tools", "I want to check my connection"],
+    "seoTitle": "Windows Security Widgets & Privacy Monitors",
+    "seoDescription": "Explore Windows Security status widgets, VPN toggles, and privacy gauges.",
+    "whatAreThey": "Security widgets monitor Windows Defender status, active VPN connections, and firewall state.",
+    "whyUse": "Ensures your system remains protected while browsing public networks.",
+    "faqs": [
+      {
+        "question": "Does Windows Security have a desktop widget?",
+        "answer": "Windows Security provides system tray status icons and integration with the Windows Security dashboard."
+      }
+    ]
+  },
+  {
+    "id": "media",
+    "name": "Media & Audio",
+    "slug": "media",
+    "description": "Now playing audio widgets, Spotify overlays, volume mixers, and media controls.",
+    "icon": "Music",
+    "color": "violet",
+    "badge": "Audio",
+    "userIntents": ["I want media controls", "I want something useful while working"],
+    "seoTitle": "Windows Media Widgets & Audio Controllers",
+    "seoDescription": "Discover Windows 11 media widgets, Spotify now-playing desktop overlays, and volume tools.",
+    "whatAreThey": "Media widgets display album art, track titles, and play/pause controls for active audio streams.",
+    "whyUse": "Control background music without switching windows.",
+    "faqs": [
+      {
+        "question": "Can Spotify display a widget on Windows 11?",
+        "answer": "Yes, Spotify provides an official Windows 11 Widgets Board widget for quick playback control."
+      }
+    ]
+  },
+  {
+    "id": "business",
+    "name": "Business & Analytics",
+    "slug": "business",
+    "description": "Invoice generators, currency tools, time tracking widgets, and sales charts.",
+    "icon": "Briefcase",
+    "color": "blue",
+    "badge": "Business",
+    "userIntents": ["I want business tools", "I want something useful while working"],
+    "seoTitle": "Windows Business Widgets & Time Tracking Tools",
+    "seoDescription": "Find Windows business widgets, invoice tools, and time tracking desktop helpers.",
+    "whatAreThey": "Business widgets help freelancers and teams track billable hours and financial metrics.",
+    "whyUse": "Streamlines administrative tasks directly from your primary workstation.",
+    "faqs": [
+      {
+        "question": "Are there free time tracking widgets for Windows?",
+        "answer": "Yes, Toggl Track and Clockify offer lightweight desktop and tray apps for Windows."
+      }
+    ]
+  },
+  {
+    "id": "customization",
+    "name": "Customization & Themes",
+    "slug": "customization",
+    "description": "Rainmeter skins, taskbar translucency tools, desktop wallpapers, and UI tweaks.",
+    "icon": "Palette",
+    "color": "amber",
+    "badge": "Desktop",
+    "userIntents": ["I want to customize my PC", "I want something always visible"],
+    "seoTitle": "Windows Customization Widgets & Rainmeter Skins",
+    "seoDescription": "Explore Windows desktop customization utilities, Rainmeter skins, and taskbar visual tweaks.",
+    "whatAreThey": "Customization tools modify the appearance of the Windows desktop, taskbar, and widget panels.",
+    "whyUse": "Allows users to personalize their computing environment to match their aesthetics.",
+    "faqs": [
+      {
+        "question": "Is Rainmeter safe to install on Windows 11?",
+        "answer": "Yes, Rainmeter is a well-established, open-source desktop customization framework."
+      }
+    ]
+  }
+]

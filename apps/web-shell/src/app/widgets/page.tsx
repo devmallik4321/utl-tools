@@ -1,172 +1,274 @@
-import { Metadata } from "next";
 import Link from "next/link";
-import { AppWindow, Monitor, ShieldCheck, Download, Sparkles, Compass, CheckCircle2, ArrowRight } from "lucide-react";
-import categories from "@/../../registry/categories.json";
+import type { Metadata } from "next";
+import {
+  getAllWidgets,
+  getAllWidgetCategories,
+  getPopularWidgets,
+  getAllUtilities,
+} from "@/lib/registry";
+import { WidgetCard } from "@/components/WidgetCard";
+import { WidgetCategoryCard } from "@/components/WidgetCategoryCard";
+import { WidgetSearchModal } from "@/components/WidgetSearchModal";
+import {
+  Monitor,
+  Search,
+  Sparkles,
+  ShieldCheck,
+  Zap,
+  ArrowRight,
+  Layers,
+  HelpCircle,
+  Clock,
+  Cpu,
+  Wifi,
+  Calculator,
+  KeyRound,
+  FileText,
+  FileSpreadsheet,
+  Dice5,
+  GraduationCap,
+  Briefcase,
+  Laptop,
+} from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Windows & Web Widget Discovery — Pin Utilities to Your Desktop | UTL.tools",
-  description: "Learn how to pin UTL utilities directly to your Windows desktop, Windows Widgets board, or browser sidebar for instant one-click access.",
-  alternates: {
-    canonical: "https://utl.tools/widgets",
+  title: "Windows Widget Discovery & Desktop Tools — UTL.tools",
+  description:
+    "Find useful Windows widgets, Edge sidebars, system tray tools, and desktop overlays you didn't know existed. Compare free Windows 11 widgets, installation methods, and related web utilities.",
+  keywords: [
+    "windows widgets discovery",
+    "best windows 11 widgets",
+    "free windows desktop tools",
+    "windows clock widget",
+    "system monitor widget windows",
+    "network speed tray monitor",
+    "windows productivity tools",
+  ],
+  openGraph: {
+    title: "Windows Widget Discovery & Desktop Tools — UTL.tools",
+    description:
+      "Find useful Windows widgets, Edge sidebars, system tray tools, and desktop overlays you didn't know existed.",
+    url: "https://utl.tools/widgets",
+    type: "website",
   },
 };
 
-const WIDGET_GUIDES = [
-  {
-    id: "edge-sidebar",
-    title: "Edge Sidebar & Windows Copilot Bar",
-    badge: "Native Windows 11",
-    desc: "Pin any UTL utility directly into Microsoft Edge's persistent sidebar so it slides out over any open application without losing your window focus.",
-    steps: [
-      "Open any UTL tool page (e.g. Password Generator or Unit Converter) in Microsoft Edge.",
-      "Click the '+' (Customize sidebar) icon in the right-hand Edge sidebar.",
-      "Select 'Add current page' to pin the utility as an instant floating widget.",
-      "Click the pinned icon anytime to open the utility in a lightweight split-pane flyout."
-    ],
-    recommendedTools: [
-      { name: "Password Generator", slug: "password-generator" },
-      { name: "Unit Converter", slug: "unit-converter" },
-      { name: "Talking Alarm Clock", slug: "talking-alarm-clock" }
-    ]
-  },
-  {
-    id: "pwa-desktop",
-    title: "Standalone Desktop PWA Window",
-    badge: "Chrome & Edge",
-    desc: "Install UTL.tools as a borderless Progressive Web App (PWA) with its own taskbar icon and independent desktop window.",
-    steps: [
-      "In Chrome or Edge, click the Install icon in the right side of the address bar (or Menu > 'Save and Share' > 'Install UTL.tools').",
-      "Confirm 'Install' to place an official shortcut in your Windows Start Menu and Taskbar.",
-      "Launch UTL.tools in its own ultra-fast, zero-overhead desktop window."
-    ],
-    recommendedTools: [
-      { name: "Diff Checker", slug: "diff-checker" },
-      { name: "JSON Formatter", slug: "json-formatter" },
-      { name: "Stopwatch & Timer", slug: "stopwatch-timer" }
-    ]
-  },
-  {
-    id: "windows-widgets-board",
-    title: "Windows 11 Widgets Board Integration",
-    badge: "Windows 11 (Win + W)",
-    desc: "Information regarding the Microsoft Windows App SDK Web Widget standard for native dashboard pinning.",
-    steps: [
-      "Press 'Windows Key + W' on your keyboard to open the Windows 11 Widgets board.",
-      "Click the '+' button in the top-right corner of the widgets panel.",
-      "When the official UTL.tools Microsoft Store companion widget is launched, you will be able to pin live quick-tools (like Stopwatch or World Time) directly to your board.",
-      "In the meantime, pinning via Edge Sidebar provides identical zero-click accessibility."
-    ],
-    recommendedTools: [
-      { name: "Talking Alarm Clock", slug: "talking-alarm-clock" },
-      { name: "Random Picker", slug: "random-picker" },
-      { name: "My IP Address", slug: "my-ip" }
-    ]
-  }
+const intentShortcuts = [
+  { title: "I want a clock or timer", desc: "Native Windows 11 clock, focus timers, world time", href: "/widgets/clock", icon: Clock },
+  { title: "I want to monitor my PC", desc: "CPU, GPU, RAM temperature and performance gauges", href: "/widgets/system-monitoring", icon: Cpu },
+  { title: "I want to monitor my internet", desc: "Real-time taskbar download/upload speed meters", href: "/widgets/network", icon: Wifi },
+  { title: "I want productivity tools", desc: "Sticky notes, task lists, Pomodoro timers", href: "/widgets/productivity", icon: Briefcase },
+  { title: "I want developer tools", desc: "Offline JSON formatters, JWT decoders, DevToys", href: "/widgets/developer", icon: Laptop },
+  { title: "I want AI tools", desc: "Edge Copilot sidebar, AI draft helpers", href: "/widgets/ai", icon: Sparkles },
+  { title: "I want weather", desc: "Live taskbar forecasts and radar maps", href: "/widgets/weather", icon: Monitor },
+  { title: "I want a calendar", desc: "Desktop agenda feeds and event countdowns", href: "/widgets/calendar", icon: GraduationCap },
 ];
 
-export default function WidgetsPage() {
-  return (
-    <div className="max-w-5xl mx-auto space-y-12 py-6">
-      {/* Header */}
-      <div className="space-y-4">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 dark:bg-blue-950/60 border border-blue-200 dark:border-blue-800 text-xs font-semibold text-blue-700 dark:text-blue-300">
-          <AppWindow className="w-3.5 h-3.5" />
-          <span>Desktop &amp; Widget Integration</span>
-        </div>
-        <h1 className="text-3xl sm:text-4xl font-black tracking-tight text-foreground">
-          Windows &amp; Web Widget Discovery
-        </h1>
-        <p className="text-sm sm:text-base text-muted-foreground max-w-3xl leading-relaxed">
-          Access your favorite UTL utilities in zero clicks. Pin our lightweight, privacy-first tools directly to your Windows desktop, Edge sidebar flyout, or taskbar without installing heavy bloated background applications.
-        </p>
-      </div>
+export default function WidgetsMainPage() {
+  const categories = getAllWidgetCategories();
+  const popularWidgets = getPopularWidgets(6);
+  const totalWidgets = getAllWidgets().length;
+  const totalUtilities = getAllUtilities().length;
 
-      {/* Trust Guarantee Card */}
-      <div className="p-6 bg-card border border-border rounded-2xl flex items-start gap-4 shadow-xs">
-        <div className="p-3 bg-emerald-50 dark:bg-emerald-950 text-emerald-600 dark:text-emerald-400 rounded-xl shrink-0">
-          <ShieldCheck className="w-6 h-6" />
+  return (
+    <div className="space-y-16 py-4 sm:py-8">
+      {/* Hero Header */}
+      <section className="relative text-center max-w-4xl mx-auto space-y-6 pt-4 sm:pt-10">
+        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-blue-50 dark:bg-blue-950/60 text-blue-800 dark:text-blue-200 border border-blue-200 dark:border-blue-800">
+          <Sparkles className="w-3.5 h-3.5 text-blue-500" />
+          <span>Windows Widget Discovery Layer V1 &bull; {totalWidgets} Verified Discoveries</span>
         </div>
-        <div className="space-y-1">
-          <h3 className="font-bold text-sm text-foreground">Zero Background Battery Drain &amp; Pure Privacy</h3>
-          <p className="text-xs text-muted-foreground leading-relaxed">
-            Unlike heavy electron desktop utilities that run background telemetry processes, UTL.tools widgets run strictly inside sandboxed Web API containers with zero CPU overhead when closed and zero remote tracking.
+
+        <div className="space-y-3">
+          <h1 className="text-4xl sm:text-6xl font-black tracking-tight text-foreground">
+            Windows <span className="text-blue-600 dark:text-blue-400">Widget Discovery</span>
+          </h1>
+          <p className="text-xl sm:text-2xl font-bold text-foreground/90">
+            Find useful Windows widgets and desktop tools you didn't know existed.
+          </p>
+          <p className="text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+            A curated, independent discovery experience matching everyday tasks to native Windows 11 widgets, Edge sidebars, tray meters, and desktop utilities.
           </p>
         </div>
-      </div>
 
-      {/* Integration Guides */}
-      <div className="space-y-8">
-        <h2 className="text-xl font-bold text-foreground">Recommended Widget Setup Methods</h2>
+        {/* Interactive Search Launcher */}
+        <div className="pt-2 max-w-xl mx-auto">
+          <WidgetSearchModal />
+        </div>
+      </section>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {WIDGET_GUIDES.map((guide) => (
-            <div
-              key={guide.id}
-              className="p-6 bg-card border border-border rounded-2xl flex flex-col justify-between space-y-6 shadow-xs hover:border-slate-400 dark:hover:border-slate-600 transition-colors"
-            >
-              <div className="space-y-4">
-                <div className="flex items-center justify-between">
-                  <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-muted text-muted-foreground uppercase tracking-wider">
-                    {guide.badge}
-                  </span>
+      {/* TECHNICAL CLASSIFICATION TRANSPARENCY BLOCK */}
+      <section className="p-6 bg-card border border-border rounded-2xl space-y-4 shadow-xs">
+        <div className="flex items-center gap-2 border-b border-border pb-3">
+          <Layers className="w-5 h-5 text-blue-500" />
+          <h2 className="text-base font-bold text-foreground">
+            Understanding Windows Desktop Utility Architecture Types
+          </h2>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
+          <div className="p-3.5 bg-muted/40 border border-border/80 rounded-xl space-y-1">
+            <span className="font-bold text-foreground block text-sm">Windows 11 Widget</span>
+            <p className="text-muted-foreground leading-relaxed">
+              Native widgets pinned to the Windows 11 Widgets Board (Win + W) or taskbar.
+            </p>
+          </div>
+
+          <div className="p-3.5 bg-muted/40 border border-border/80 rounded-xl space-y-1">
+            <span className="font-bold text-foreground block text-sm">Edge Sidebar</span>
+            <p className="text-muted-foreground leading-relaxed">
+              Persistent sidebar overlays (like Copilot) running alongside your browser tabs.
+            </p>
+          </div>
+
+          <div className="p-3.5 bg-muted/40 border border-border/80 rounded-xl space-y-1">
+            <span className="font-bold text-foreground block text-sm">System Tray Tool</span>
+            <p className="text-muted-foreground leading-relaxed">
+              Lightweight taskbar utilities (like net speed gauges or HWiNFO temp counters).
+            </p>
+          </div>
+
+          <div className="p-3.5 bg-muted/40 border border-border/80 rounded-xl space-y-1">
+            <span className="font-bold text-foreground block text-sm">Desktop Overlay</span>
+            <p className="text-muted-foreground leading-relaxed">
+              Pinned wallpaper skins (Rainmeter) or Xbox Game Bar hardware pin overlays.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* USER INTENT DISCOVERY: "What are you trying to do?" */}
+      <section className="space-y-6">
+        <div className="flex items-end justify-between border-b border-border pb-3">
+          <div>
+            <span className="text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-wider block">
+              Goal-Oriented Discovery
+            </span>
+            <h2 className="text-2xl font-black text-foreground tracking-tight">
+              What are you trying to do on Windows?
+            </h2>
+          </div>
+          <span className="text-xs text-muted-foreground hidden sm:block">
+            Find the right desktop solution by practical goal
+          </span>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+          {intentShortcuts.map((intent) => {
+            const Icon = intent.icon;
+            return (
+              <Link
+                key={intent.title}
+                href={intent.href}
+                className="group flex flex-col justify-between p-4 rounded-xl border border-border bg-card hover:border-slate-400 dark:hover:border-slate-600 hover:shadow-xs transition-all"
+              >
+                <div className="space-y-2">
+                  <div className="w-8 h-8 rounded-lg bg-blue-50 dark:bg-blue-950/60 text-blue-600 dark:text-blue-400 flex items-center justify-center">
+                    <Icon className="w-4 h-4" />
+                  </div>
+                  <h3 className="text-sm font-bold text-foreground group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                    {intent.title}
+                  </h3>
+                  <p className="text-[11px] text-muted-foreground line-clamp-2 leading-relaxed">
+                    {intent.desc}
+                  </p>
                 </div>
-
-                <h3 className="text-lg font-bold text-foreground">{guide.title}</h3>
-                <p className="text-xs text-muted-foreground leading-relaxed">{guide.desc}</p>
-
-                <div className="space-y-2 pt-2 border-t border-border">
-                  <span className="text-xs font-semibold text-foreground uppercase tracking-wider block">
-                    How to Setup:
-                  </span>
-                  <ol className="space-y-2 text-xs text-muted-foreground">
-                    {guide.steps.map((step, idx) => (
-                      <li key={idx} className="flex items-start gap-2">
-                        <span className="font-bold text-foreground shrink-0">{idx + 1}.</span>
-                        <span>{step}</span>
-                      </li>
-                    ))}
-                  </ol>
+                <div className="pt-2 text-[11px] font-semibold text-blue-600 dark:text-blue-400 flex items-center gap-1 group-hover:translate-x-0.5 transition-transform">
+                  Explore <ArrowRight className="w-3 h-3" />
                 </div>
-              </div>
+              </Link>
+            );
+          })}
+        </div>
+      </section>
 
-              <div className="pt-4 border-t border-border space-y-2">
-                <span className="text-[11px] font-semibold text-muted-foreground block">
-                  Top Recommended Utilities:
-                </span>
-                <div className="flex flex-wrap gap-1.5">
-                  {guide.recommendedTools.map((t) => (
-                    <Link
-                      key={t.slug}
-                      href={`/tools/${t.slug}`}
-                      className="px-2 py-1 text-[11px] font-medium bg-muted hover:bg-muted/80 text-foreground rounded-lg border border-border transition-colors flex items-center gap-1"
-                    >
-                      <span>{t.name}</span>
-                      <ArrowRight className="w-2.5 h-2.5" />
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            </div>
+      {/* POPULAR DISCOVERIES GRID */}
+      <section className="space-y-6">
+        <div className="flex items-end justify-between border-b border-border pb-3">
+          <div>
+            <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider block">
+              Featured Discoveries
+            </span>
+            <h2 className="text-2xl font-black text-foreground tracking-tight">
+              Essential Windows Desktop Discoveries
+            </h2>
+          </div>
+          <span className="text-xs text-muted-foreground font-mono">
+            {popularWidgets.length} Verified Highlights
+          </span>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {popularWidgets.map((widget) => (
+            <WidgetCard key={widget.slug} widget={widget} />
           ))}
         </div>
-      </div>
+      </section>
 
-      {/* Footer Navigation */}
-      <div className="p-8 bg-muted/30 border border-border rounded-2xl text-center space-y-4">
-        <h3 className="text-base font-bold text-foreground">Explore All 47 Production Utilities</h3>
-        <p className="text-xs text-muted-foreground max-w-xl mx-auto">
-          Every single utility on UTL.tools is 100% free, runs instantly in client-side browser memory, and requires zero account registration.
-        </p>
-        <div>
+      {/* WIDGET CATEGORIES GRID */}
+      <section className="space-y-6">
+        <div className="flex items-end justify-between border-b border-border pb-3">
+          <div>
+            <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider block">
+              Extensible Taxonomy
+            </span>
+            <h2 className="text-2xl font-black text-foreground tracking-tight">
+              Browse Widget Categories
+            </h2>
+          </div>
+          <span className="text-xs text-muted-foreground font-mono">
+            {categories.length} Specialized Domains
+          </span>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          {categories.map((cat) => (
+            <WidgetCategoryCard key={cat.slug} category={cat} />
+          ))}
+        </div>
+      </section>
+
+      {/* CROSS-LINKING GATEWAY: RELATED UTL WEB UTILITIES */}
+      <section className="p-8 bg-card border border-border rounded-2xl space-y-6 shadow-xs">
+        <div className="max-w-2xl space-y-2">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-800 dark:bg-emerald-950/60 dark:text-emerald-200 border border-emerald-200 dark:border-emerald-800">
+            <Zap className="w-3.5 h-3.5 text-emerald-500" />
+            <span>Zero-Install Client-Side Web Utilities</span>
+          </div>
+          <h2 className="text-2xl font-bold text-foreground">
+            Prefer Instant Web Execution Without Installing Anything?
+          </h2>
+          <p className="text-sm text-muted-foreground leading-relaxed">
+            UTL.tools hosts {totalUtilities} standalone interactive web utilities that run 100% inside your browser memory with zero installation, zero data logging, and sub-50ms execution speed.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           <Link
-            href="/"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-slate-900 text-white dark:bg-slate-100 dark:text-slate-900 font-bold text-xs rounded-xl hover:opacity-90 shadow-sm transition-opacity"
+            href="/tools/talking-alarm-clock"
+            className="p-4 bg-muted/40 border border-border rounded-xl space-y-1 hover:border-slate-400 transition-all"
           >
-            <span>Browse Complete Utility Toolbox</span>
-            <ArrowRight className="w-4 h-4" />
+            <span className="font-bold text-sm text-foreground block">Talking Alarm Clock</span>
+            <p className="text-xs text-muted-foreground">Voice announcements &amp; audio alerts in browser.</p>
+          </Link>
+
+          <Link
+            href="/tools/browser-info"
+            className="p-4 bg-muted/40 border border-border rounded-xl space-y-1 hover:border-slate-400 transition-all"
+          >
+            <span className="font-bold text-sm text-foreground block">Browser &amp; Hardware Info</span>
+            <p className="text-xs text-muted-foreground">Instant W3C CPU, GPU, and RAM diagnostics.</p>
+          </Link>
+
+          <Link
+            href="/tools/diff-checker"
+            className="p-4 bg-muted/40 border border-border rounded-xl space-y-1 hover:border-slate-400 transition-all"
+          >
+            <span className="font-bold text-sm text-foreground block">Diff Checker &amp; Text Compare</span>
+            <p className="text-xs text-muted-foreground">Side-by-side offline text comparator.</p>
           </Link>
         </div>
-      </div>
+      </section>
     </div>
   );
 }

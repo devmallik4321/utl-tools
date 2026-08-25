@@ -205,6 +205,29 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* COMPACT WINDOWS WIDGET DISCOVERY GATEWAY */}
+      <section className="p-6 bg-card border border-border rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-4 shadow-xs">
+        <div className="space-y-1 text-center sm:text-left">
+          <div className="inline-flex items-center gap-1.5 text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-wider">
+            <span>🪟 Windows Desktop Discovery</span>
+          </div>
+          <h3 className="text-lg sm:text-xl font-black text-foreground tracking-tight">
+            Looking for a Windows widget or desktop tool?
+          </h3>
+          <p className="text-xs sm:text-sm text-muted-foreground">
+            Explore curated Windows 11 widgets, net speed meters, HWiNFO tray gauges, and DevToys.
+          </p>
+        </div>
+
+        <Link
+          href="/widgets"
+          className="px-5 py-2.5 bg-blue-600 text-white font-bold text-xs rounded-xl hover:bg-blue-700 transition-all shrink-0 inline-flex items-center gap-1.5 shadow-xs"
+        >
+          <span>Discover Windows Widgets</span>
+          <ArrowRight className="w-4 h-4" />
+        </Link>
+      </section>
+
       {/* Categories Section (9 Card Grid) */}
       <section className="space-y-6">
         <div className="flex items-end justify-between border-b border-border pb-3">
