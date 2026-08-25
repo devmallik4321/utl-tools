@@ -15,7 +15,7 @@ export function Footer() {
               <Zap className="w-5 h-5" />
             </div>
             <div>
-              <h4 className="text-sm font-semibold text-foreground">Zero Friction & Instant</h4>
+              <h4 className="text-sm font-semibold text-foreground">Zero Friction &amp; Instant</h4>
               <p className="text-xs text-muted-foreground mt-0.5 leading-relaxed">
                 Tools run directly in your browser with sub-second execution. No subscriptions or accounts required.
               </p>
@@ -29,7 +29,7 @@ export function Footer() {
             <div>
               <h4 className="text-sm font-semibold text-foreground">100% Client-Side Privacy</h4>
               <p className="text-xs text-muted-foreground mt-0.5 leading-relaxed">
-                Your passwords, invoices, JSON payloads, and inputs never leave your device. Zero remote tracking.
+                Your input is processed locally in your browser and is not sent to UTL servers.
               </p>
             </div>
           </div>
@@ -39,7 +39,7 @@ export function Footer() {
               <Sparkles className="w-5 h-5" />
             </div>
             <div>
-              <h4 className="text-sm font-semibold text-foreground">Evergreen & Reliable</h4>
+              <h4 className="text-sm font-semibold text-foreground">Evergreen &amp; Reliable</h4>
               <p className="text-xs text-muted-foreground mt-0.5 leading-relaxed">
                 Built on resilient Web Standards and modern architecture engineered to run cleanly for years.
               </p>
@@ -84,11 +84,11 @@ export function Footer() {
               Popular Tools
             </span>
             <ul className="space-y-2 text-muted-foreground">
+              <li><Link href="/tools/diff-checker" className="hover:text-foreground">Diff Checker</Link></li>
               <li><Link href="/tools/json-formatter" className="hover:text-foreground">JSON Formatter</Link></li>
               <li><Link href="/tools/password-generator" className="hover:text-foreground">Password Generator</Link></li>
-              <li><Link href="/tools/qr-code-generator" className="hover:text-foreground">QR Code Generator</Link></li>
+              <li><Link href="/tools/unit-converter" className="hover:text-foreground">Unit Converter</Link></li>
               <li><Link href="/tools/my-ip" className="hover:text-foreground">What is My IP</Link></li>
-              <li><Link href="/tools/percentage-calculator" className="hover:text-foreground">Percentage Calculator</Link></li>
             </ul>
           </div>
 
@@ -98,9 +98,9 @@ export function Footer() {
             </span>
             <ul className="space-y-2 text-muted-foreground">
               <li><Link href="/tools/invoice-generator" className="hover:text-foreground">Invoice Generator</Link></li>
+              <li><Link href="/tools/csv-to-json-converter" className="hover:text-foreground">CSV to JSON</Link></li>
               <li><Link href="/tools/email-signature-generator" className="hover:text-foreground">Email Signature</Link></li>
               <li><Link href="/tools/uuid-generator" className="hover:text-foreground">UUID Generator</Link></li>
-              <li><Link href="/tools/base64-encoder" className="hover:text-foreground">Base64 Encoder</Link></li>
               <li><Link href="/saved" className="hover:text-foreground">My Saved Utilities</Link></li>
             </ul>
           </div>
@@ -111,7 +111,7 @@ export function Footer() {
             </span>
             <ul className="space-y-2 text-muted-foreground">
               <li>
-                <span className="text-muted-foreground">Version 1.1 (Production)</span>
+                <span className="text-muted-foreground">Version 1.2 (Production)</span>
               </li>
               <li>
                 <Link href="/widgets" className="hover:text-foreground">Windows &amp; Web Widgets</Link>

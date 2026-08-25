@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { Star } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { trackBookmark } from "@/lib/analytics";
 
 interface BookmarkButtonProps {
   slug: string;
@@ -30,9 +31,11 @@ export function BookmarkButton({ slug, name, className, showText = true }: Bookm
       if (saved.includes(slug)) {
         updated = saved.filter((s) => s !== slug);
         setIsBookmarked(false);
+        trackBookmark(slug, "remove");
       } else {
         updated = [...saved, slug];
         setIsBookmarked(true);
+        trackBookmark(slug, "add");
       }
       localStorage.setItem("utl_saved_tools", JSON.stringify(updated));
       window.dispatchEvent(new Event("utl_storage_update"));

@@ -3,17 +3,21 @@
 import { useState } from "react";
 import { Share2, Check } from "lucide-react";
 import { copyToClipboard } from "@/lib/utils";
+import { trackShare } from "@/lib/analytics";
 
 interface ShareButtonProps {
   title: string;
+  slug?: string;
   className?: string;
 }
 
-export function ShareButton({ title, className }: ShareButtonProps) {
+export function ShareButton({ title, slug, className }: ShareButtonProps) {
   const [copied, setCopied] = useState(false);
 
   const handleShare = async () => {
     if (typeof window === "undefined") return;
+
+    trackShare(slug || title, "button_click");
 
     if (navigator.share) {
       try {

@@ -2,9 +2,10 @@
 
 import { useEffect, useState, useRef } from "react";
 import { useRouter } from "next/navigation";
-import { Search, X, Command, ArrowRight, CornerDownLeft, Sparkles } from "lucide-react";
+import { Search, X, ArrowRight, CornerDownLeft, Sparkles } from "lucide-react";
 import { searchUtilities, getAllUtilities } from "@/lib/registry";
 import { UtilityItem } from "@/lib/types";
+import { trackSearch } from "@/lib/analytics";
 
 interface SearchModalProps {
   isOpen: boolean;
@@ -34,6 +35,10 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
     const res = searchUtilities(query);
     setResults(res.slice(0, 12));
     setSelectedIndex(0);
+
+    if (query.trim().length >= 2) {
+      trackSearch(query.trim().length, res.length);
+    }
   }, [query, isOpen]);
 
   useEffect(() => {
@@ -41,7 +46,7 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
       if (!isOpen) {
         if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") {
           e.preventDefault();
-          onClose(); // Will be toggled by parent if needed
+          onClose();
         }
         return;
       }
