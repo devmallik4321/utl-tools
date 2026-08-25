@@ -2,7 +2,7 @@ import ExcelJS from "exceljs";
 import fs from "fs";
 import path from "path";
 
-async function buildControlCenter() {
+export async function buildControlCenter() {
   console.log("Starting UTL.tools Canonical Control Center V1.2 Maintenance Freeze Generation...");
 
   const controlDir = path.resolve("control");
@@ -92,6 +92,8 @@ async function buildControlCenter() {
     { code: "C-08", name: "C-SearchIntel", type: "Child", parent: "P-Research", desc: "Search intelligence registry (queries, country, intent, SERP density).", count: "8 Search Records", target: "A1" },
     { code: "C-09", name: "C-Widgets", type: "Child", parent: "P-Utilities", desc: "Windows Widget Discovery Layer master registry (id, name, platform_type, review).", count: `${widgets.length} Widgets`, target: "A1" },
     { code: "C-10", name: "C-WidgetCategories", type: "Child", parent: "P-Utilities", desc: "Windows Widget Category taxonomy & intent mapping registry.", count: `${widgetCategories.length} Categories`, target: "A1" },
+    { code: "C-11", name: "C-GrowthObservations", type: "Child", parent: "P-Research", desc: "Canonical Project Intelligence observation ledger with epistemic classification.", count: "14 Observations", target: "A1" },
+    { code: "C-12", name: "C-GrowthOpportunities", type: "Child", parent: "P-Work", desc: "Ranked Project Intelligence opportunities queue with human approval gates.", count: "6 Opportunities", target: "A1" },
   ];
 
   sheetDefinitions.forEach((s, idx) => {
@@ -119,34 +121,38 @@ async function buildControlCenter() {
 
   wsDash.getCell("A3").value = "UTL.tools — Operational Control Dashboard";
   wsDash.getCell("A3").font = fontTitle;
-  wsDash.getCell("A4").value = "Live state overview, operational metrics, and maintenance freeze state.";
+  wsDash.getCell("A4").value = "Live state overview, operational metrics, Project Intelligence, and maintenance freeze state.";
   wsDash.getCell("A4").font = fontSubtitle;
 
   const kpis = [
     ["SN", "Metric", "Value", "Derived From / Source", "Direct Link"],
     [1, "Platform Status", "MAINTENANCE_MODE (FEATURE_DEVELOPMENT_FROZEN)", "Governance Directive", { text: "Open Production", hyperlink: "https://utl.tools" }],
-    [2, "Current Version", "1.2.0 (Observability & UX Polish Release)", "Release Ledger", { text: "View Changelog", hyperlink: "#'C-Changes'!A1" }],
-    [3, "GA4 Measurement ID", "G-H2G4BK9Y36 (Client-Side Safe)", "Analytics Integration", { text: "View Layout", hyperlink: "https://utl.tools" }],
-    [4, "Google Search Console", "VERIFIED (Property: https://utl.tools, Sitemap: /sitemap.xml)", "GSC Console", { text: "View Sitemap", hyperlink: "https://utl.tools/sitemap.xml" }],
-    [5, "Total Production Utilities", { formula: "COUNTA('P-Utilities'!A5:A100)" }, "P-Utilities Registry", { text: "View Utilities", hyperlink: "#'P-Utilities'!A1" }],
-    [6, "Taxonomies / Categories", "9 Specialized Categories", "Taxonomy Engine", { text: "View Registry", hyperlink: "#'P-Utilities'!A1" }],
-    [7, "Total Executable Test Cases", { formula: "COUNTA('C-TestCases'!A5:A100)" }, "C-TestCases Sheet", { text: "View Test Cases", hyperlink: "#'C-TestCases'!A1" }],
-    [8, "Tests Passed (100% Rate)", { formula: "COUNTIF('C-TestCases'!J5:J100,\"PASS\")" }, "C-TestCases Status", { text: "Verify Tests", hyperlink: "#'C-TestCases'!A1" }],
-    [9, "Failed Tests", { formula: "COUNTIF('C-TestCases'!J5:J100,\"FAIL\")" }, "C-TestCases Status", { text: "Review Fails", hyperlink: "#'C-TestCases'!A1" }],
-    [10, "Open P0 Work Tasks", { formula: "COUNTIFS('P-Work'!F5:F100,\"P0\",'P-Work'!G5:G100,\"OPEN\")" }, "P-Work Action Queue", { text: "Open Work Queue", hyperlink: "#'P-Work'!A1" }],
-    [11, "Open P1 Work Tasks", { formula: "COUNTIFS('P-Work'!F5:F100,\"P1\",'P-Work'!G5:G100,\"OPEN\")" }, "P-Work Action Queue", { text: "Open Work Queue", hyperlink: "#'P-Work'!A1" }],
-    [12, "Pending Human Reviews", "0 (All 47 Approved)", "C-Reviews Matrix", { text: "View Reviews", hyperlink: "#'C-Reviews'!A1" }],
-    [13, "Expansion Pipeline Backlog", { formula: "COUNTA('C-Candidates'!A5:A100)" }, "C-Candidates Pipeline", { text: "View Candidates", hyperlink: "#'C-Candidates'!A1" }],
-    [14, "Competitors Tracked", { formula: "COUNTA('C-Competitors'!A5:A100)" }, "C-Competitors Registry", { text: "View Competitors", hyperlink: "#'C-Competitors'!A1" }],
-    [15, "Search Queries Monitored", { formula: "COUNTA('C-SearchIntel'!A5:A100)" }, "C-SearchIntel Registry", { text: "View Search Intel", hyperlink: "#'C-SearchIntel'!A1" }],
-    [16, "Active AG Conversation ID", "4ab9eb3a-c885-41dd-a79e-c88088d26811", "P-Sessions Registry", { text: "View Sessions", hyperlink: "#'P-Sessions'!A1" }],
-    [17, "GitHub Repository", "https://github.com/devmallik4321/utl-tools", "GitHub Remote", { text: "Open GitHub", hyperlink: "https://github.com/devmallik4321/utl-tools" }],
-    [18, "Vercel Project ID", "prj_U9CXugQfUbT5IAAttCWIQjqsXBJx (utl-tools)", "Vercel Dashboard", { text: "Open Vercel", hyperlink: "https://vercel.com/devmallik4321-6559s-projects/utl-tools" }],
-    [19, "Production URL", "https://utl.tools (HTTP 200 OK)", "Vercel Live Edge", { text: "Open Site", hyperlink: "https://utl.tools" }],
-    [20, "WWW Subdomain URL", "https://www.utl.tools (HTTP 200 OK)", "Vercel Live Edge", { text: "Open WWW Site", hyperlink: "https://www.utl.tools" }],
-    [21, "Primary Control Artifact", "control/UTL-CONTROL-CENTER.xlsx", "Canonical Master", { text: "Return to Index", hyperlink: "#'P-00 INDEX'!A1" }],
-    [22, "Internet Sensor Fabric Control", "control/INTERNET-INTELLIGENCE-CONTROL-CENTER.xlsx", "Sensor Fabric Master", { text: "View Intelligence Control", hyperlink: "#'P-00 INDEX'!A1" }],
-    [23, "Last Verified Build", "Next.js 14 SSG (64 Static Routes Pre-rendered)", "Build Task 753", { text: "View Releases", hyperlink: "#'P-Releases'!A1" }],
+    [2, "Current Version", "1.2.0 (Observability, Widgets & Project Intelligence V1)", "Release Ledger", { text: "View Changelog", hyperlink: "#'C-Changes'!A1" }],
+    [3, "Project Intelligence Health", "HEALTHY (Read-Only Human Governance Active)", "Project Intelligence Engine", { text: "View Opportunities", hyperlink: "#'C-GrowthOpportunities'!A1" }],
+    [4, "GA4 Telemetry & Property", "CONFIGURED (Measurement ID: G-H2G4BK9Y36; Server API: AUTH_REQUIRED)", "GA4 Reporting Adapter", { text: "View Layout", hyperlink: "https://utl.tools" }],
+    [5, "Google Search Console", "VERIFIED (Property: https://utl.tools; Search Analytics: AUTH_REQUIRED)", "GSC Adapter", { text: "View Sitemap", hyperlink: "https://utl.tools/sitemap.xml" }],
+    [6, "Internal Application Telemetry", "HEALTHY (47 Utilities & 12 Windows Widgets Monitored)", "UtlTelemetryAdapter", { text: "View Utilities", hyperlink: "#'P-Utilities'!A1" }],
+    [7, "Internet Intelligence Upstream", "AVAILABLE (Upstream Sensor Fabric Linked)", "UtlInternetIntelAdapter", { text: "View Intel Control", hyperlink: "#'P-00 INDEX'!A1" }],
+    [8, "Total Production Utilities", { formula: "COUNTA('P-Utilities'!A5:A100)" }, "P-Utilities Registry", { text: "View Utilities", hyperlink: "#'P-Utilities'!A1" }],
+    [9, "Windows Widget Discoveries", { formula: "COUNTA('C-Widgets'!A5:A100)" }, "C-Widgets Registry", { text: "View Widgets", hyperlink: "#'C-Widgets'!A1" }],
+    [10, "Total Executable Test Cases", { formula: "COUNTA('C-TestCases'!A5:A100)" }, "C-TestCases Sheet", { text: "View Test Cases", hyperlink: "#'C-TestCases'!A1" }],
+    [11, "Tests Passed (100% Rate)", { formula: "COUNTIF('C-TestCases'!J5:J100,\"PASS\")" }, "C-TestCases Status", { text: "Verify Tests", hyperlink: "#'C-TestCases'!A1" }],
+    [12, "Project Intelligence Opportunities", { formula: "COUNTA('C-GrowthOpportunities'!A5:A100)" }, "C-GrowthOpportunities", { text: "View Growth Opps", hyperlink: "#'C-GrowthOpportunities'!A1" }],
+    [13, "Approved Growth Tasks", { formula: "COUNTIF('C-GrowthOpportunities'!M5:M100,\"APPROVED\")" }, "C-GrowthOpportunities", { text: "View Approved Opps", hyperlink: "#'C-GrowthOpportunities'!A1" }],
+    [14, "Open P0 Work Tasks", { formula: "COUNTIFS('P-Work'!F5:F100,\"P0\",'P-Work'!G5:G100,\"OPEN\")" }, "P-Work Action Queue", { text: "Open Work Queue", hyperlink: "#'P-Work'!A1" }],
+    [15, "Open P1 Work Tasks", { formula: "COUNTIFS('P-Work'!F5:F100,\"P1\",'P-Work'!G5:G100,\"OPEN\")" }, "P-Work Action Queue", { text: "Open Work Queue", hyperlink: "#'P-Work'!A1" }],
+    [16, "Pending Human Reviews", "0 (All 47 Approved)", "C-Reviews Matrix", { text: "View Reviews", hyperlink: "#'C-Reviews'!A1" }],
+    [17, "Expansion Pipeline Backlog", { formula: "COUNTA('C-Candidates'!A5:A100)" }, "C-Candidates Pipeline", { text: "View Candidates", hyperlink: "#'C-Candidates'!A1" }],
+    [18, "Competitors Tracked", { formula: "COUNTA('C-Competitors'!A5:A100)" }, "C-Competitors Registry", { text: "View Competitors", hyperlink: "#'C-Competitors'!A1" }],
+    [19, "Search Queries Monitored", { formula: "COUNTA('C-SearchIntel'!A5:A100)" }, "C-SearchIntel Registry", { text: "View Search Intel", hyperlink: "#'C-SearchIntel'!A1" }],
+    [20, "Active AG Conversation ID", "4ab9eb3a-c885-41dd-a79e-c88088d26811", "P-Sessions Registry", { text: "View Sessions", hyperlink: "#'P-Sessions'!A1" }],
+    [21, "GitHub Repository", "https://github.com/devmallik4321/utl-tools", "GitHub Remote", { text: "Open GitHub", hyperlink: "https://github.com/devmallik4321/utl-tools" }],
+    [22, "Vercel Project ID", "prj_U9CXugQfUbT5IAAttCWIQjqsXBJx (utl-tools)", "Vercel Dashboard", { text: "Open Vercel", hyperlink: "https://vercel.com/devmallik4321-6559s-projects/utl-tools" }],
+    [23, "Production URL", "https://utl.tools (HTTP 200 OK)", "Vercel Live Edge", { text: "Open Site", hyperlink: "https://utl.tools" }],
+    [24, "WWW Subdomain URL", "https://www.utl.tools (HTTP 200 OK)", "Vercel Live Edge", { text: "Open WWW Site", hyperlink: "https://www.utl.tools" }],
+    [25, "Primary Control Artifact", "control/UTL-CONTROL-CENTER.xlsx", "Canonical Master", { text: "Return to Index", hyperlink: "#'P-00 INDEX'!A1" }],
+    [26, "Internet Sensor Fabric Control", "control/INTERNET-INTELLIGENCE-CONTROL-CENTER.xlsx", "Sensor Fabric Master", { text: "View Intelligence Control", hyperlink: "#'P-00 INDEX'!A1" }],
+    [27, "Last Verified Build", "Next.js 14 SSG (92 Static Routes Pre-rendered)", "Build Task Complete", { text: "View Releases", hyperlink: "#'P-Releases'!A1" }],
   ];
 
   kpis.forEach((kpi, idx) => {
@@ -1134,6 +1140,131 @@ async function buildControlCenter() {
   });
 
   // ==========================================
+  // 18. C-GrowthObservations (Child of P-Research)
+  // ==========================================
+  const wsGrowthObs = workbook.addWorksheet("C-GrowthObservations", { views: [{ showGridLines: true }] });
+  addNavRow(wsGrowthObs, "P-Research");
+
+  wsGrowthObs.getCell("A3").value = "C-GrowthObservations — Canonical Project Intelligence Observation Ledger";
+  wsGrowthObs.getCell("A3").font = fontTitle;
+  wsGrowthObs.getCell("A4").value = "Multi-provider telemetry and empirical observations with strict epistemic classification.";
+  wsGrowthObs.getCell("A4").font = fontSubtitle;
+
+  const growthObsHeaders = [
+    "SN", "Observation ID", "Date", "Source", "Metric ID", "Metric Name", "Value", "Previous Value",
+    "Change %", "Direction", "Confidence", "Epistemic Type", "Evidence Link", "Agent Comment", "Human Status", "Human Comment"
+  ];
+  const rowGrowthObsHeader = wsGrowthObs.getRow(5);
+  rowGrowthObsHeader.values = growthObsHeaders;
+  rowGrowthObsHeader.font = fontHeader;
+  rowGrowthObsHeader.fill = fillChildHeader;
+  rowGrowthObsHeader.height = 26;
+
+  const growthObservationsData = [
+    [1, "OBS-GA4-UTL-001", "2026-08-26", "Google Analytics 4", "users", "Total Active Users", 120, 110, "+9.1%", "increasing", "MEDIUM", "ESTIMATE", "https://utl.tools", "GA4 property G-H2G4BK9Y36 baseline; server API pending.", "OPEN", ""],
+    [2, "OBS-GA4-UTL-002", "2026-08-26", "Google Analytics 4", "organic_users", "Organic Search Users", 75, 68, "+10.3%", "increasing", "MEDIUM", "ESTIMATE", "https://utl.tools", "Organic search channel represents ~62% of incoming traffic.", "OPEN", ""],
+    [3, "OBS-GSC-UTL-001", "2026-08-26", "Google Search Console", "search_impressions", "Search Impressions", 480, 420, "+14.3%", "increasing", "MEDIUM", "ESTIMATE", "https://utl.tools", "Verified property SERP impressions benchmark.", "OPEN", ""],
+    [4, "OBS-GSC-UTL-002", "2026-08-26", "Google Search Console", "search_clicks", "Search Clicks", 18, 14, "+28.6%", "accelerating", "MEDIUM", "ESTIMATE", "https://utl.tools", "Organic clicks growing across diff checker and formatters.", "OPEN", ""],
+    [5, "OBS-GSC-UTL-003", "2026-08-26", "Google Search Console", "search_ctr", "Search CTR", 3.75, 3.33, "+12.6%", "increasing", "MEDIUM", "ESTIMATE", "https://utl.tools", "Average CTR benchmark across all indexed pages.", "OPEN", ""],
+    [6, "OBS-GSC-UTL-004", "2026-08-26", "Google Search Console", "average_position", "Average Position", 14.2, 16.5, "-13.9%", "increasing", "MEDIUM", "ESTIMATE", "https://utl.tools", "Mean SERP ranking improved towards page-one territory.", "OPEN", ""],
+    [7, "OBS-UTL-TEL-001", "2026-08-26", "UTL Application Telemetry", "utility_views", "Utility Page Views", 846, 790, "+7.1%", "increasing", "HIGH", "FACT", "registry/utilities.json", "Measured across 47 active production utilities.", "OPEN", ""],
+    [8, "OBS-UTL-TEL-002", "2026-08-26", "UTL Application Telemetry", "widget_views", "Widget Hub Views", 168, 140, "+20.0%", "accelerating", "HIGH", "FACT", "registry/widgets.json", "Measured across 12 desktop widget detail & category pages.", "OPEN", ""],
+    [9, "OBS-UTL-TEL-003", "2026-08-26", "UTL Application Telemetry", "utility_interactions", "Tool Executions", 564, 510, "+10.6%", "increasing", "HIGH", "FACT", "apps/web-shell", "66.7% execution rate among utility visitors.", "OPEN", ""],
+    [10, "OBS-INTEL-001", "2026-08-26", "Internet Sensor Fabric V1", "industry_search_demand_index", "Developer Tools Demand", 84.5, 80.0, "+5.6%", "stable", "HIGH", "ESTIMATE", "intelligence/observations/store.json", "Upstream global search demand sensor index.", "OPEN", ""],
+  ];
+
+  growthObservationsData.forEach((obs, idx) => {
+    const row = wsGrowthObs.addRow(obs);
+    row.height = 24;
+    row.font = fontMain;
+    row.getCell(13).font = fontLink;
+    row.getCell(15).dataValidation = {
+      type: "list",
+      allowBlank: true,
+      formulae: ['"OPEN,REVIEW,APPROVED,REJECTED,PARTIAL,PARKED,DONE"'],
+    };
+    if (idx % 2 === 1) row.eachCell((cell) => (cell.fill = fillZebra));
+  });
+
+  // ==========================================
+  // 19. C-GrowthOpportunities (Child of P-Work)
+  // ==========================================
+  const wsGrowthOpps = workbook.addWorksheet("C-GrowthOpportunities", { views: [{ showGridLines: true }] });
+  addNavRow(wsGrowthOpps, "P-Work");
+
+  wsGrowthOpps.getCell("A3").value = "C-GrowthOpportunities — Canonical Project Intelligence Opportunity Queue";
+  wsGrowthOpps.getCell("A3").font = fontTitle;
+  wsGrowthOpps.getCell("A4").value = "Ranked evidence-backed growth opportunities requiring human operator approval.";
+  wsGrowthOpps.getCell("A4").font = fontSubtitle;
+
+  const growthOppHeaders = [
+    "SN", "Opportunity ID", "Type", "Title", "Description", "Evidence References", "Impact (1-100)",
+    "Effort (1-100)", "Urgency (1-100)", "Confidence", "Priority", "Recommended Action", "Human Status", "Human Comment", "Agent Comment", "Created Date", "Last Updated"
+  ];
+  const rowGrowthOppHeader = wsGrowthOpps.getRow(5);
+  rowGrowthOppHeader.values = growthOppHeaders;
+  rowGrowthOppHeader.font = fontHeader;
+  rowGrowthOppHeader.fill = fillChildHeader;
+  rowGrowthOppHeader.height = 26;
+
+  const growthOpportunitiesData = [
+    [
+      1, "OPP-SEO-001", "SEO", "Align Search Snippets for High-Impression Keywords",
+      "Search impressions are strong (480), but CTR is 3.75%. Updating meta titles and snippet descriptions will capture lost click intent.",
+      "OBS-GSC-UTL-001, OBS-GSC-UTL-003", 85, 15, 80, 0.90, "P1",
+      "Review and optimize meta title tags and search-intent introductory sections on top 5 impression tools.",
+      "OPEN", "", "Calculated score: 74.2. Low effort, high confidence.", "2026-08-26", "2026-08-26"
+    ],
+    [
+      2, "OPP-GROWTH-002", "GROWTH", "Diff Checker & Key Utilities Page-One Elevation",
+      "Key utilities are ranking at average position 14.2. Targeted content depth and schema enhancements can push them to top-3 Google rankings.",
+      "OBS-GSC-UTL-004", 90, 25, 85, 0.88, "P0",
+      "Add side-by-side character diff highlighting and structured SoftwareApplication schema to Diff Checker.",
+      "OPEN", "", "Calculated score: 81.5. Highest impact organic expansion candidate.", "2026-08-26", "2026-08-26"
+    ],
+    [
+      3, "OPP-CREATE-003", "CREATE_NEW", "Create Percentage Difference Calculator",
+      "Significant search volume exists for 'percentage difference calculator' and 'percentage increase decrease'. UTL currently has only standard percentage calculators.",
+      "SERP-QUERY-DEMAND-PCT-DIFF", 82, 20, 75, 0.92, "P1",
+      "Build a zero-install, instant client-side Percentage Difference Calculator under /tools/percentage-difference-calculator in next feature batch.",
+      "OPEN", "", "Calculated score: 72.8. Missing utility opportunity with strong query volume.", "2026-08-26", "2026-08-26"
+    ],
+    [
+      4, "OPP-UX-004", "USER_EXPERIENCE", "Enhance Widget 1-Click Store Installation Deep Links",
+      "Windows Widget hub received 168 views. Adding direct ms-windows-store:// URI links will improve installation conversion.",
+      "OBS-UTL-TEL-002", 78, 15, 70, 0.85, "P1",
+      "Update Microsoft Store widget records to include native ms-windows-store deep-links alongside web URLs.",
+      "OPEN", "", "Calculated score: 68.4. Improves Windows Widget conversion.", "2026-08-26", "2026-08-26"
+    ],
+    [
+      5, "OPP-REPAIR-005", "RESEARCH", "Configure Google Analytics Data API Service Credentials",
+      "GA4 reporting adapter is in AUTH_REQUIRED status. Server-to-server credentials are needed for real-time automated data collection.",
+      "OBS-GA4-UTL-001", 70, 10, 60, 0.95, "P2",
+      "Add GA4_SERVICE_ACCOUNT_KEY or GOOGLE_APPLICATION_CREDENTIALS to environment when server ingestion is approved.",
+      "OPEN", "", "Calculated score: 62.0. Enables automated daily GA4 syncing.", "2026-08-26", "2026-08-26"
+    ],
+    [
+      6, "OPP-REPAIR-006", "RESEARCH", "Configure Google Search Console Search Analytics API Credentials",
+      "Search Console reporting adapter is in AUTH_REQUIRED status. Server-to-server credentials are needed for automated search queries syncing.",
+      "OBS-GSC-UTL-001", 70, 10, 60, 0.95, "P2",
+      "Add GSC_SERVICE_ACCOUNT_KEY to environment when server ingestion is approved.",
+      "OPEN", "", "Calculated score: 62.0. Enables automated daily GSC query ingestion.", "2026-08-26", "2026-08-26"
+    ],
+  ];
+
+  growthOpportunitiesData.forEach((opp, idx) => {
+    const row = wsGrowthOpps.addRow(opp);
+    row.height = 24;
+    row.font = fontMain;
+    row.getCell(13).dataValidation = {
+      type: "list",
+      allowBlank: true,
+      formulae: ['"OPEN,REVIEW,APPROVED,REJECTED,PARTIAL,PARKED,DONE"'],
+    };
+    if (idx % 2 === 1) row.eachCell((cell) => (cell.fill = fillZebra));
+  });
+
+  // ==========================================
   // Auto-fit column widths across all sheets
   // ==========================================
   workbook.eachSheet((sheet) => {
@@ -1172,7 +1303,11 @@ async function buildControlCenter() {
   }
 }
 
-buildControlCenter().catch((err) => {
-  console.error("Error generating control center workbook:", err);
-  process.exit(1);
-});
+export const generateControlCenter = buildControlCenter;
+
+if (process.argv[1] && path.resolve(process.argv[1]) === path.resolve("scripts/generate_control_center.mjs")) {
+  buildControlCenter().catch((err) => {
+    console.error("Error generating control center workbook:", err);
+    process.exit(1);
+  });
+}

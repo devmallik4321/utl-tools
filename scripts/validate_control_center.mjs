@@ -40,7 +40,9 @@ async function validateControlCenter() {
     "C-Competitors",
     "C-SearchIntel",
     "C-Widgets",
-    "C-WidgetCategories"
+    "C-WidgetCategories",
+    "C-GrowthObservations",
+    "C-GrowthOpportunities"
   ];
 
   // 1. Check all expected sheets exist
@@ -49,7 +51,7 @@ async function validateControlCenter() {
       throw new Error(`Missing expected sheet: ${expected}`);
     }
   }
-  console.log("✅ [PASS] All 17 required parent and child sheets are present.");
+  console.log(`✅ [PASS] All ${expectedSheets.length} required parent and child sheets are present.`);
 
   // 2. Validate P-00 INDEX
   const wsIndex = workbook.getWorksheet("P-00 INDEX");
