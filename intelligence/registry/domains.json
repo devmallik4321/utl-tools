@@ -1,0 +1,98 @@
+[
+  {
+    "id": "traffic",
+    "name": "Traffic Intelligence",
+    "description": "Measures visitor volume, pageviews, session duration, device breakdown, and referral channels.",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "search",
+    "name": "Search Intelligence",
+    "description": "Tracks search query volume, SERP rankings, CTR, search intent, and organic impressions.",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "content",
+    "name": "Content Intelligence",
+    "description": "Audits published page counts, topic density, content completeness, and FAQ coverage.",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "domain",
+    "name": "Domain Intelligence",
+    "description": "Monitors DNS records, WHOIS registration dates, SSL certificates, and subdomains.",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "people",
+    "name": "People Intelligence",
+    "description": "Tracks public author attributions, open-source maintainers, and public organization roles.",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "company",
+    "name": "Company Intelligence",
+    "description": "Monitors corporate profiles, product portfolios, technology stacks, and business scale.",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "research",
+    "name": "Research Intelligence",
+    "description": "Tracks published preprints, academic papers, citations, and scientific dataset releases.",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "technology",
+    "name": "Technology Intelligence",
+    "description": "Monitors open-source GitHub repositories, npm package downloads, Web APIs, and frameworks.",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "product",
+    "name": "Product Intelligence",
+    "description": "Audits feature sets, pricing tiers, release notes, and user satisfaction signals.",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "social",
+    "name": "Social Intelligence",
+    "description": "Monitors public discussions, social media mention volume, and community sentiment shifts.",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "community",
+    "name": "Community Intelligence",
+    "description": "Tracks public forum activity (Reddit, Hacker News, Stack Overflow) and Q&A density.",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "geographic",
+    "name": "Geographic Intelligence",
+    "description": "Analyzes country-level traffic distribution, regional demand, and localization opportunities.",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "economic",
+    "name": "Economic Intelligence",
+    "description": "Measures industry advertising CPC rates, monetization models, and market spend.",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "knowledge",
+    "name": "Knowledge Intelligence",
+    "description": "Audits Wikipedia references, ontology term coverage, and technical documentation depth.",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "authority",
+    "name": "Authority Intelligence",
+    "description": "Measures domain rating, backlink quantity/quality, and authoritative citation counts.",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "trend",
+    "name": "Trend Intelligence",
+    "description": "Calculates signal velocity, acceleration, search interest spikes, and seasonal trends.",
+    "status": "ACTIVE"
+  }
+]
