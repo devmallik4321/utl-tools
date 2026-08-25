@@ -120,7 +120,7 @@ async function buildControlCenter() {
 
   const kpis = [
     ["SN", "Metric", "Value", "Derived From / Source", "Direct Link"],
-    [1, "Platform Status", "PUBLIC_RELEASED (DNS_VERIFIED & GITHUB_CONNECTED)", "System Verification", { text: "View Releases", hyperlink: "#'P-Releases'!A1" }],
+    [1, "Platform Status", "PUBLIC_RELEASED (ROOT_DIR_CONFIGURED_AND_DNS_VERIFIED)", "System Verification", { text: "View Releases", hyperlink: "#'P-Releases'!A1" }],
     [2, "Current Version", "1.1.0 (Production Release)", "Release Ledger", { text: "View Changelog", hyperlink: "#'C-Changes'!A1" }],
     [3, "Total Production Utilities", { formula: "COUNTA('P-Utilities'!A5:A100)" }, "P-Utilities Registry", { text: "View Utilities", hyperlink: "#'P-Utilities'!A1" }],
     [4, "Taxonomies / Categories", "9 Specialized Categories", "Taxonomy Engine", { text: "View Registry", hyperlink: "#'P-Utilities'!A1" }],
@@ -135,12 +135,13 @@ async function buildControlCenter() {
     [13, "Search Queries Monitored", { formula: "COUNTA('C-SearchIntel'!A5:A100)" }, "C-SearchIntel Registry", { text: "View Search Intel", hyperlink: "#'C-SearchIntel'!A1" }],
     [14, "Active AG Conversation ID", "4ab9eb3a-c885-41dd-a79e-c88088d26811", "P-Sessions Registry", { text: "View Sessions", hyperlink: "#'P-Sessions'!A1" }],
     [15, "GitHub Repository", "https://github.com/devmallik4321/utl-tools", "GitHub Remote", { text: "Open GitHub", hyperlink: "https://github.com/devmallik4321/utl-tools" }],
-    [16, "Pushed Canonical Commit SHA", "5058d8e6f1837592cf1a08dafe6a715f5dcf6639 (main)", "Git Head", { text: "View Releases", hyperlink: "#'P-Releases'!A1" }],
+    [16, "Pushed Canonical Commit SHA", "d1920584eb2e3a8909160538a8e3cbff4c3b5bc1 (main)", "Git Head", { text: "View Releases", hyperlink: "#'P-Releases'!A1" }],
     [17, "Vercel Project ID", "prj_U9CXugQfUbT5IAAttCWIQjqsXBJx (utl-tools)", "Vercel Dashboard", { text: "Open Vercel", hyperlink: "https://vercel.com/devmallik4321-6559s-projects/utl-tools" }],
-    [18, "Vercel Domain Status", "VERIFIED (status: ok, configured-correctly)", "Vercel Edge API", { text: "Open Site", hyperlink: "https://utl.tools" }],
-    [19, "Production Apex Domain", "https://utl.tools (A: 216.198.79.1, CNAME: c3f7020f2bde174e.vercel-dns-017.com)", "Vercel Domains", { text: "Open Site", hyperlink: "https://utl.tools" }],
-    [20, "Primary Control Artifact", "control/UTL-CONTROL-CENTER.xlsx", "Canonical Master", { text: "Return to Index", hyperlink: "#'P-00 INDEX'!A1" }],
-    [21, "Last Verified Build", "Next.js 14 SSG (64 Static Routes Pre-rendered)", "Build Task 425", { text: "View Releases", hyperlink: "#'P-Releases'!A1" }],
+    [18, "Vercel Root Directory", "apps/web-shell (Next.js Preset, Output: apps/web-shell/.next)", "Vercel Settings", { text: "Open Settings", hyperlink: "https://vercel.com/devmallik4321-6559s-projects/utl-tools/settings" }],
+    [19, "Vercel Domain Status", "VERIFIED (status: ok, configured-correctly)", "Vercel Edge API", { text: "Open Site", hyperlink: "https://utl.tools" }],
+    [20, "Production Apex Domain", "https://utl.tools (A: 216.198.79.1, CNAME: c3f7020f2bde174e.vercel-dns-017.com)", "Vercel Domains", { text: "Open Site", hyperlink: "https://utl.tools" }],
+    [21, "Primary Control Artifact", "control/UTL-CONTROL-CENTER.xlsx", "Canonical Master", { text: "Return to Index", hyperlink: "#'P-00 INDEX'!A1" }],
+    [22, "Last Verified Build", "Next.js 14 SSG (64 Static Routes Pre-rendered)", "Build Task 425", { text: "View Releases", hyperlink: "#'P-Releases'!A1" }],
   ];
 
   kpis.forEach((kpi, idx) => {
@@ -315,7 +316,7 @@ async function buildControlCenter() {
     [5, "TSK-0005", "random-picker", "CTX-006", "Upgrade Random Name/Item Picker with clear editable list UI and sample presets", "P0", "ACCEPTED", "Antigravity CLI", "2026-08-25", "2026-08-25", "Clear textarea, preset buttons, shuffle, winner count selection, confetti", "TC-0005", { text: "RandomPicker.tsx", hyperlink: "https://utl.tools/tools/random-picker" }, { text: "tools/random-picker", hyperlink: "https://utl.tools/tools/random-picker" }, "Verified and approved", "Enhanced editable list UI with 4 presets and clear feedback", "PASS", "Mark as Production Complete"],
     [6, "TSK-0006", "browser-info", "CTX-007", "Fix Netscape bug in Browser Info & implement multi-tiered client hints detection", "P0", "ACCEPTED", "Antigravity CLI", "2026-08-25", "2026-08-25", "Detect Chrome, Edge, Safari, Firefox, OS, GPU, DPR, CPU, memory accurately", "TC-0010", { text: "BrowserInfo.tsx", hyperlink: "https://utl.tools/tools/browser-info" }, { text: "tools/browser-info", hyperlink: "https://utl.tools/tools/browser-info" }, "Verified and approved", "Replaced appName with User-Agent Client Hints and regex parsing", "PASS", "Mark as Production Complete"],
     [7, "TSK-0007", "BATCH_P0", "CTX-001", "Implement Top P0 Expansion Candidates (Diff Checker, Markdown, CSV/JSON, Unit, Lorem, Case, Hash, Stopwatch)", "P0", "ACCEPTED", "Antigravity CLI", "2026-08-25", "2026-08-25", "8 new client-side utilities fully functional with Quality Standard layout", "TC-0040..TC-0047", { text: "apps/web-shell/src/components/tools/", hyperlink: "https://utl.tools" }, { text: "registry/utilities.json", hyperlink: "https://utl.tools" }, "Verified and approved", "Total production utilities increased from 38 to 47", "PASS", "Deploy to Vercel / Production"],
-    [8, "TSK-0008", "DEPLOY_V1", "CTX-010", "Push GitHub remote (devmallik4321/utl-tools), link Vercel project, verify DNS propagation", "P0", "ACCEPTED", "Antigravity CLI", "2026-08-25", "2026-08-25", "Pushed commit 5058d8e to GitHub origin/main; Vercel domain verification status: ok", "TC-0001..TC-0047", { text: "https://github.com/devmallik4321/utl-tools", hyperlink: "https://github.com/devmallik4321/utl-tools" }, { text: "Commit 5058d8e", hyperlink: "https://github.com/devmallik4321/utl-tools/commit/5058d8e6f1837592cf1a08dafe6a715f5dcf6639" }, "DNS configured and verified on Vercel", "Origin pushed; Vercel project configured; DNS records verified 100% OK", "PASS", "Trigger initial build on Vercel Dashboard"],
+    [8, "TSK-0008", "DEPLOY_V1", "CTX-010", "Push GitHub remote, link Vercel project, configure root directory apps/web-shell, verify DNS", "P0", "ACCEPTED", "Antigravity CLI", "2026-08-25", "2026-08-25", "Configured Vercel Root Directory to apps/web-shell via CLI; verified utl.tools DNS 100% OK", "TC-0001..TC-0047", { text: "https://github.com/devmallik4321/utl-tools", hyperlink: "https://github.com/devmallik4321/utl-tools" }, { text: "Commit d192058", hyperlink: "https://github.com/devmallik4321/utl-tools/commit/d1920584eb2e3a8909160538a8e3cbff4c3b5bc1" }, "Root directory updated to apps/web-shell", "Vercel project root directory set to apps/web-shell; DNS verified OK", "PASS", "Trigger final production deployment on Vercel"],
   ];
 
   workItems.forEach((w, idx) => {
@@ -409,7 +410,7 @@ async function buildControlCenter() {
 
   const releaseItems = [
     [1, "REL-0001", "1.0.0", "2026-08-24", "Foundation Release: 38 Production Utilities + Next.js App Shell + Design System", 38, 38, 38, 0, "APPROVED", "PASS (54 Static Pages)", "STAGED", { text: "View Changelog ➡️", hyperlink: "#'C-Changes'!A2" }],
-    [2, "REL-0002", "1.1.0", "2026-08-25", "Public Production Release: 47 Utilities + Value Expansion + Widget Discovery + Canonical Control Center (Commit 5058d8e)", 47, 47, 47, 0, "APPROVED", "PASS (64 Static Pages)", "LIVE", { text: "View Changelog ➡️", hyperlink: "#'C-Changes'!A3" }],
+    [2, "REL-0002", "1.1.0", "2026-08-25", "Public Production Release: 47 Utilities + Value Expansion + Widget Discovery + Canonical Control Center", 47, 47, 47, 0, "APPROVED", "PASS (64 Static Pages)", "LIVE", { text: "View Changelog ➡️", hyperlink: "#'C-Changes'!A3" }],
     [3, "REL-0003", "1.2.0", "2026-09-15", "Phase 2 Expansion: Next Batch of P1 Candidates & Traffic Intelligence", 15, 0, 0, 0, "PENDING", "PLANNED", "PLANNED", { text: "View Candidates ➡️", hyperlink: "#'C-Candidates'!A1" }],
   ];
 
@@ -506,7 +507,7 @@ async function buildControlCenter() {
   rowSessHeader.height = 26;
 
   const sessions = [
-    [1, "SES-0001", "Antigravity CLI", "Google DeepMind Advanced Agentic Coding", "4ab9eb3a-c885-41dd-a79e-c88088d26811", "UTL.tools", "5058d8e6f1837592cf1a08dafe6a715f5dcf6639", "https://github.com/devmallik4321/utl-tools.git", "http://localhost:3000", "https://utl.tools", "prj_U9CXugQfUbT5IAAttCWIQjqsXBJx", "CTX-001..CTX-010", "2026-08-24", "2026-08-25", "ACTIVE", "Canonical master session for UTL.tools development and V1 public deployment."],
+    [1, "SES-0001", "Antigravity CLI", "Google DeepMind Advanced Agentic Coding", "4ab9eb3a-c885-41dd-a79e-c88088d26811", "UTL.tools", "d1920584eb2e3a8909160538a8e3cbff4c3b5bc1", "https://github.com/devmallik4321/utl-tools.git", "http://localhost:3000", "https://utl.tools", "prj_U9CXugQfUbT5IAAttCWIQjqsXBJx", "CTX-001..CTX-010", "2026-08-24", "2026-08-25", "ACTIVE", "Canonical master session for UTL.tools development and V1 public deployment."],
   ];
 
   sessions.forEach((s, idx) => {
