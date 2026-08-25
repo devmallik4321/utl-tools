@@ -32,3 +32,6 @@ control/*.tmp.xlsx
 Thumbs.db
 .vscode/
 .idea/
+
+.vercel
+.env*
