@@ -1,0 +1,78 @@
+[
+  {
+    "id": "developer",
+    "title": "Software Developer",
+    "description": "Engineers and programmers who deal with payloads, timestamps, encoding, and regex daily.",
+    "recommendedTools": [
+      "json-formatter",
+      "json-validator",
+      "base64-encoder",
+      "base64-decoder",
+      "uuid-generator",
+      "timestamp-converter",
+      "url-encoder",
+      "url-decoder",
+      "token-counter"
+    ]
+  },
+  {
+    "id": "business-owner",
+    "title": "Founder & Freelancer",
+    "description": "Entrepreneurs and small business owners managing invoices, client signatures, and branding.",
+    "recommendedTools": [
+      "invoice-generator",
+      "qr-code-generator",
+      "email-signature-generator",
+      "business-name-generator",
+      "discount-calculator",
+      "percentage-calculator"
+    ]
+  },
+  {
+    "id": "sysadmin",
+    "title": "Network & DevOps Engineer",
+    "description": "Specialists managing network infrastructure, IP allocation, DNS records, and browser debugging.",
+    "recommendedTools": [
+      "my-ip",
+      "dns-lookup",
+      "ping-test",
+      "user-agent-checker",
+      "browser-info",
+      "screen-resolution"
+    ]
+  },
+  {
+    "id": "financial-planner",
+    "title": "Finance & Investor",
+    "description": "Individuals calculating compound interest, loan amortizations, yields, and personal budgets.",
+    "recommendedTools": [
+      "compound-interest-calculator",
+      "loan-calculator",
+      "percentage-calculator",
+      "discount-calculator"
+    ]
+  },
+  {
+    "id": "student-writer",
+    "title": "Student & Content Writer",
+    "description": "Academics and writers tracking word counts, GPA, reading speeds, and quick decisions.",
+    "recommendedTools": [
+      "word-counter",
+      "gpa-calculator",
+      "age-calculator",
+      "random-picker",
+      "spin-wheel"
+    ]
+  },
+  {
+    "id": "designer",
+    "title": "UI/UX & Graphic Designer",
+    "description": "Designers calculating screen aspect ratios, color models, and visual layouts.",
+    "recommendedTools": [
+      "color-converter",
+      "aspect-ratio-calculator",
+      "screen-resolution",
+      "qr-code-generator"
+    ]
+  }
+]

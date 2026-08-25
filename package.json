@@ -1,0 +1,28 @@
+{
+  "name": "utl-tools",
+  "version": "1.0.0",
+  "private": true,
+  "description": "UTL.tools — The Digital Toolbox: A large library of simple, fast, useful online utilities.",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "npm --workspace=apps/web-shell run dev",
+    "build": "npm --workspace=apps/web-shell run build",
+    "start": "npm --workspace=apps/web-shell run start",
+    "lint": "npm --workspace=apps/web-shell run lint"
+  },
+  "keywords": [
+    "utilities",
+    "tools",
+    "online-tools",
+    "developer-tools",
+    "calculator",
+    "converters"
+  ],
+  "author": "UTL.tools",
+  "license": "MIT",
+  "devDependencies": {
+    "exceljs": "^4.4.0"
+  }
+}

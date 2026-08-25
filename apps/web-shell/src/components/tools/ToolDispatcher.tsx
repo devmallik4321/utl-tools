@@ -1,0 +1,142 @@
+"use client";
+
+import dynamic from "next/dynamic";
+import { UtilityItem } from "@/lib/types";
+
+// Dynamic imports with instant client hydration
+const RandomNumberGenerator = dynamic(() => import("./fun/RandomNumberGenerator").then((m) => m.RandomNumberGenerator), { ssr: false });
+const SpinWheel = dynamic(() => import("./fun/SpinWheel").then((m) => m.SpinWheel), { ssr: false });
+const CoinFlip = dynamic(() => import("./fun/CoinFlip").then((m) => m.CoinFlip), { ssr: false });
+const DiceRoller = dynamic(() => import("./fun/DiceRoller").then((m) => m.DiceRoller), { ssr: false });
+const RandomPicker = dynamic(() => import("./fun/RandomPicker").then((m) => m.RandomPicker), { ssr: false });
+const PasswordGenerator = dynamic(() => import("./fun/PasswordGenerator").then((m) => m.PasswordGenerator), { ssr: false });
+const UsernameGenerator = dynamic(() => import("./fun/UsernameGenerator").then((m) => m.UsernameGenerator), { ssr: false });
+const TalkingAlarmClock = dynamic(() => import("./fun/TalkingAlarmClock").then((m) => m.TalkingAlarmClock), { ssr: false });
+const StopwatchTimer = dynamic(() => import("./fun/StopwatchTimer").then((m) => m.StopwatchTimer), { ssr: false });
+
+const MyIp = dynamic(() => import("./network/MyIp").then((m) => m.MyIp), { ssr: false });
+const BrowserInfo = dynamic(() => import("./network/BrowserInfo").then((m) => m.BrowserInfo), { ssr: false });
+const ScreenResolution = dynamic(() => import("./network/ScreenResolution").then((m) => m.ScreenResolution), { ssr: false });
+const PingTest = dynamic(() => import("./network/PingTest").then((m) => m.PingTest), { ssr: false });
+const DnsLookup = dynamic(() => import("./network/DnsLookup").then((m) => m.DnsLookup), { ssr: false });
+const UserAgentChecker = dynamic(() => import("./network/UserAgentChecker").then((m) => m.UserAgentChecker), { ssr: false });
+
+const JsonFormatter = dynamic(() => import("./developer/JsonFormatter").then((m) => m.JsonFormatter), { ssr: false });
+const JsonValidator = dynamic(() => import("./developer/JsonValidator").then((m) => m.JsonValidator), { ssr: false });
+const Base64Encoder = dynamic(() => import("./developer/Base64Encoder").then((m) => m.Base64Encoder), { ssr: false });
+const Base64Decoder = dynamic(() => import("./developer/Base64Decoder").then((m) => m.Base64Decoder), { ssr: false });
+const UuidGenerator = dynamic(() => import("./developer/UuidGenerator").then((m) => m.UuidGenerator), { ssr: false });
+const TimestampConverter = dynamic(() => import("./developer/TimestampConverter").then((m) => m.TimestampConverter), { ssr: false });
+const UrlEncoder = dynamic(() => import("./developer/UrlEncoder").then((m) => m.UrlEncoder), { ssr: false });
+const UrlDecoder = dynamic(() => import("./developer/UrlDecoder").then((m) => m.UrlDecoder), { ssr: false });
+const DiffChecker = dynamic(() => import("./developer/DiffChecker").then((m) => m.DiffChecker), { ssr: false });
+const MarkdownPreviewer = dynamic(() => import("./developer/MarkdownPreviewer").then((m) => m.MarkdownPreviewer), { ssr: false });
+const CsvJsonConverter = dynamic(() => import("./developer/CsvJsonConverter").then((m) => m.CsvJsonConverter), { ssr: false });
+const CaseConverter = dynamic(() => import("./developer/CaseConverter").then((m) => m.CaseConverter), { ssr: false });
+const HashGenerator = dynamic(() => import("./developer/HashGenerator").then((m) => m.HashGenerator), { ssr: false });
+
+const QrCodeGenerator = dynamic(() => import("./business/QrCodeGenerator").then((m) => m.QrCodeGenerator), { ssr: false });
+const EmailSignatureGenerator = dynamic(() => import("./business/EmailSignatureGenerator").then((m) => m.EmailSignatureGenerator), { ssr: false });
+const BusinessNameGenerator = dynamic(() => import("./business/BusinessNameGenerator").then((m) => m.BusinessNameGenerator), { ssr: false });
+const InvoiceGenerator = dynamic(() => import("./business/InvoiceGenerator").then((m) => m.InvoiceGenerator), { ssr: false });
+
+const PercentageCalculator = dynamic(() => import("./finance/PercentageCalculator").then((m) => m.PercentageCalculator), { ssr: false });
+const CompoundInterestCalculator = dynamic(() => import("./finance/CompoundInterestCalculator").then((m) => m.CompoundInterestCalculator), { ssr: false });
+const LoanCalculator = dynamic(() => import("./finance/LoanCalculator").then((m) => m.LoanCalculator), { ssr: false });
+const DiscountCalculator = dynamic(() => import("./finance/DiscountCalculator").then((m) => m.DiscountCalculator), { ssr: false });
+
+const BmiCalculator = dynamic(() => import("./health/BmiCalculator").then((m) => m.BmiCalculator), { ssr: false });
+const AgeCalculator = dynamic(() => import("./health/AgeCalculator").then((m) => m.AgeCalculator), { ssr: false });
+const WaterIntakeCalculator = dynamic(() => import("./health/WaterIntakeCalculator").then((m) => m.WaterIntakeCalculator), { ssr: false });
+
+const WordCounter = dynamic(() => import("./education/WordCounter").then((m) => m.WordCounter), { ssr: false });
+const GpaCalculator = dynamic(() => import("./education/GpaCalculator").then((m) => m.GpaCalculator), { ssr: false });
+const UnitConverter = dynamic(() => import("./education/UnitConverter").then((m) => m.UnitConverter), { ssr: false });
+
+const ColorConverter = dynamic(() => import("./creative/ColorConverter").then((m) => m.ColorConverter), { ssr: false });
+const AspectRatioCalculator = dynamic(() => import("./creative/AspectRatioCalculator").then((m) => m.AspectRatioCalculator), { ssr: false });
+const LoremIpsumGenerator = dynamic(() => import("./creative/LoremIpsumGenerator").then((m) => m.LoremIpsumGenerator), { ssr: false });
+
+const TokenCounter = dynamic(() => import("./ai/TokenCounter").then((m) => m.TokenCounter), { ssr: false });
+const PromptEnhancer = dynamic(() => import("./ai/PromptEnhancer").then((m) => m.PromptEnhancer), { ssr: false });
+
+const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
+  "random-number-generator": RandomNumberGenerator,
+  "spin-wheel": SpinWheel,
+  "coin-flip": CoinFlip,
+  "dice-roller": DiceRoller,
+  "random-picker": RandomPicker,
+  "password-generator": PasswordGenerator,
+  "username-generator": UsernameGenerator,
+  "talking-alarm-clock": TalkingAlarmClock,
+  "stopwatch-timer": StopwatchTimer,
+
+  "my-ip": MyIp,
+  "browser-info": BrowserInfo,
+  "screen-resolution": ScreenResolution,
+  "ping-test": PingTest,
+  "dns-lookup": DnsLookup,
+  "user-agent-checker": UserAgentChecker,
+
+  "json-formatter": JsonFormatter,
+  "json-validator": JsonValidator,
+  "base64-encoder": Base64Encoder,
+  "base64-decoder": Base64Decoder,
+  "uuid-generator": UuidGenerator,
+  "timestamp-converter": TimestampConverter,
+  "url-encoder": UrlEncoder,
+  "url-decoder": UrlDecoder,
+  "diff-checker": DiffChecker,
+  "markdown-previewer": MarkdownPreviewer,
+  "csv-json-converter": CsvJsonConverter,
+  "case-converter": CaseConverter,
+  "hash-generator": HashGenerator,
+
+  "qr-code-generator": QrCodeGenerator,
+  "email-signature-generator": EmailSignatureGenerator,
+  "business-name-generator": BusinessNameGenerator,
+  "invoice-generator": InvoiceGenerator,
+
+  "percentage-calculator": PercentageCalculator,
+  "compound-interest-calculator": CompoundInterestCalculator,
+  "loan-calculator": LoanCalculator,
+  "discount-calculator": DiscountCalculator,
+
+  "bmi-calculator": BmiCalculator,
+  "age-calculator": AgeCalculator,
+  "water-intake-calculator": WaterIntakeCalculator,
+
+  "word-counter": WordCounter,
+  "gpa-calculator": GpaCalculator,
+  "unit-converter": UnitConverter,
+
+  "color-converter": ColorConverter,
+  "aspect-ratio-calculator": AspectRatioCalculator,
+  "lorem-ipsum-generator": LoremIpsumGenerator,
+
+  "token-counter": TokenCounter,
+  "prompt-enhancer": PromptEnhancer,
+};
+
+interface ToolDispatcherProps {
+  utility: UtilityItem;
+}
+
+export function ToolDispatcher({ utility }: ToolDispatcherProps) {
+  const Component = TOOL_COMPONENTS[utility.slug];
+
+  if (!Component) {
+    return (
+      <div className="p-8 border border-border rounded-xl bg-card text-center space-y-2">
+        <p className="text-sm font-semibold text-foreground">Utility "{utility.name}" is loaded in registry.</p>
+        <p className="text-xs text-muted-foreground">Interactive component mounting...</p>
+      </div>
+    );
+  }
+
+  return (
+    <div className="w-full">
+      <Component />
+    </div>
+  );
+}

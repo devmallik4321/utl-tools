@@ -1,0 +1,83 @@
+[
+  {
+    "id": "fun",
+    "name": "Fun & Decision",
+    "slug": "fun",
+    "description": "Random generators, pickers, decision makers, and games of chance.",
+    "icon": "Dice5",
+    "color": "rose",
+    "badge": "Popular"
+  },
+  {
+    "id": "network",
+    "name": "Internet & Network",
+    "slug": "network",
+    "description": "IP lookup, DNS diagnostics, browser inspection, and connectivity tools.",
+    "icon": "Globe",
+    "color": "sky",
+    "badge": "Essential"
+  },
+  {
+    "id": "developer",
+    "name": "Developer Tools",
+    "slug": "developer",
+    "description": "Formatters, encoders, parsers, validators, and code utility essentials.",
+    "icon": "Code2",
+    "color": "emerald",
+    "badge": "High Usage"
+  },
+  {
+    "id": "business",
+    "name": "Business & Office",
+    "slug": "business",
+    "description": "Invoicing, signatures, QR codes, and entrepreneurial generators.",
+    "icon": "Briefcase",
+    "color": "amber",
+    "badge": "Productivity"
+  },
+  {
+    "id": "finance",
+    "name": "Finance & Math",
+    "slug": "finance",
+    "description": "Interest, loans, percentages, discounts, and money calculations.",
+    "icon": "DollarSign",
+    "color": "indigo",
+    "badge": "Calculators"
+  },
+  {
+    "id": "health",
+    "name": "Health & Daily Life",
+    "slug": "health",
+    "description": "Body metrics, age calculations, hydration trackers, and wellness tools.",
+    "icon": "HeartPulse",
+    "color": "teal",
+    "badge": "Daily"
+  },
+  {
+    "id": "education",
+    "name": "Education & Writing",
+    "slug": "education",
+    "description": "Word counting, reading time, GPA calculations, and academic tools.",
+    "icon": "GraduationCap",
+    "color": "violet",
+    "badge": "Academic"
+  },
+  {
+    "id": "creative",
+    "name": "Creative & Design",
+    "slug": "creative",
+    "description": "Color spaces, aspect ratios, image helpers, and visual utilities.",
+    "icon": "Palette",
+    "color": "fuchsia",
+    "badge": "Design"
+  },
+  {
+    "id": "ai",
+    "name": "AI & Prompting",
+    "slug": "ai",
+    "description": "Token counters, prompt formatters, text cleaners, and AI assistance utilities.",
+    "icon": "Sparkles",
+    "color": "cyan",
+    "badge": "Modern"
+  }
+]

@@ -1,0 +1,3066 @@
+[
+  {
+    "id": "random-number-generator",
+    "name": "Random Number Generator",
+    "slug": "random-number-generator",
+    "description": "Generate cryptographically secure or pseudo-random numbers within any custom range with sorting and uniqueness controls.",
+    "category": "fun",
+    "type": "Static Utility",
+    "technology": "HTML/CSS/JS (Web Crypto API)",
+    "keywords": [
+      "random number generator",
+      "rng",
+      "random integer",
+      "pick random number",
+      "secure rng",
+      "lottery number generator",
+      "crypto random number"
+    ],
+    "primaryKeywords": [
+      "random number generator",
+      "rng online",
+      "pick a number between 1 and 100",
+      "random integer generator"
+    ],
+    "secondaryKeywords": [
+      "cryptographically secure rng",
+      "lottery number picker",
+      "unbiased random numbers",
+      "batch number generator"
+    ],
+    "targetUsers": [
+      "Gamers",
+      "Students",
+      "Teachers",
+      "Developers",
+      "Raffle Organizers",
+      "Researchers"
+    ],
+    "badge": "Popular",
+    "userProblem": "Users need an unbiased, verifiable random integer or batch of numbers without relying on rigged or predictable seeds.",
+    "searchIntent": "Quickly generate one or more random numbers within a specific minimum and maximum range for drawings, games, or statistical sampling.",
+    "resultInterpretation": "Generated numbers are sampled with uniform distribution across your specified range [Min, Max]. If 'Unique numbers' is enabled, every number in the batch is guaranteed to appear at most once.",
+    "practicalGuidance": "For raffles and giveaways, set Min to 1 and Max to the total number of participants. Use the 'Ascending' sort option to easily check against ticket lists. Use the Copy button to export results directly to spreadsheets.",
+    "limitations": "Uses local client-side pseudo-random hardware entropy (Web Crypto). While cryptographically robust for drawings, games, and tokens, it should not be used as an air-gapped hardware random number generator (TRNG) for high-assurance military cryptography.",
+    "formula": "Uniform Distribution: integer = min + (cryptoRandom32 % (max - min + 1))",
+    "trustNotes": "100% Client-Side. Random generation is computed entirely in your browser memory via window.crypto.getRandomValues. No server transmission.",
+    "related": [
+      "dice-roller",
+      "coin-flip",
+      "spin-wheel",
+      "random-picker"
+    ],
+    "seo": {
+      "title": "Random Number Generator (RNG) — Fast, Secure & Unbiased Online Number Picker",
+      "metaDescription": "Generate truly random numbers with custom ranges, multiple outputs, uniqueness filters, and instant copy/export. Free, secure, client-side Web Crypto tool.",
+      "whatIsThis": "A high-speed random number generator (RNG) designed to produce unbiased random numbers within any integer range you specify. Uses the browser's native cryptographic entropy source (crypto.getRandomValues) for genuine statistical randomness.",
+      "howItWorks": "1. Set your minimum and maximum values (e.g., 1 to 100).\n2. Choose how many numbers to generate.\n3. Toggle whether numbers must be unique (no duplicates).\n4. Click 'Generate Numbers' to instantly view, sort, or copy the results.",
+      "whyUseIt": "Unlike simple algorithmic generators that repeat patterns, our tool leverages the browser's hardware-backed cryptographic random generator. It runs 100% locally on your machine with zero server lag and zero data tracking.",
+      "faqs": [
+        {
+          "question": "Is this random number generator truly random?",
+          "answer": "Yes. It uses the Web Cryptography API (window.crypto.getRandomValues), providing cryptographically secure pseudo-random values seeded by system hardware entropy."
+        },
+        {
+          "question": "Can I generate negative numbers or decimals?",
+          "answer": "You can set negative integer minimums and maximums (e.g. -50 to +50). Decimal support is available via custom step intervals."
+        },
+        {
+          "question": "Is there a limit on how many numbers I can generate?",
+          "answer": "You can generate up to 1,000 numbers in a single batch instantaneously."
+        }
+      ]
+    },
+    "futureImprovements": [
+      "Add Gaussian/Normal distribution curve options",
+      "Seedable PRNG export for reproducible simulations"
+    ]
+  },
+  {
+    "id": "spin-wheel",
+    "name": "Spin the Wheel",
+    "slug": "spin-wheel",
+    "description": "Customizable decision wheel to pick random winners, make choices, select giveaways, and resolve contests.",
+    "category": "fun",
+    "type": "Static Utility",
+    "technology": "HTML5 Canvas / CSS Animation",
+    "keywords": [
+      "spin wheel",
+      "decision wheel",
+      "random wheel picker",
+      "wheel of fortune",
+      "raffle wheel",
+      "choice maker",
+      "picker wheel"
+    ],
+    "primaryKeywords": [
+      "spin the wheel",
+      "wheel picker",
+      "random name wheel",
+      "decision maker wheel"
+    ],
+    "secondaryKeywords": [
+      "classroom wheel",
+      "giveaway picker wheel",
+      "customizable spin wheel",
+      "random choice generator"
+    ],
+    "targetUsers": [
+      "Streamers",
+      "Teachers",
+      "Event Hosts",
+      "Teams making lunch decisions",
+      "Giveaway Hosts"
+    ],
+    "badge": "Popular",
+    "userProblem": "Groups or individuals face decision paralysis or need an engaging, transparent way to pick a winner from a list of options.",
+    "searchIntent": "Enter custom options onto a virtual wheel, trigger a physics-based spin animation, and obtain a fair, indisputable winner.",
+    "resultInterpretation": "The winning slice is determined by the final landing position of the pointer at 0 radians after deceleration. Each slice occupies an equal angular segment (360° / N).",
+    "practicalGuidance": "Use 'Eliminate winner slice after spin' if running multi-round prize drawings so the same participant cannot win multiple times.",
+    "limitations": "Physics momentum deceleration is simulated on HTML5 canvas. All slices have equal probability weighting in standard mode.",
+    "formula": "Slice Angle = 2π / Number of Items; Winner = floor(((2π - NormalizedAngle) % 2π) / Slice Angle)",
+    "trustNotes": "Zero server communication. Slices and spin math are calculated 100% locally in your browser with no pre-determined outcomes.",
+    "related": [
+      "random-picker",
+      "coin-flip",
+      "dice-roller",
+      "random-number-generator"
+    ],
+    "seo": {
+      "title": "Spin the Wheel — Free Online Random Wheel Picker & Decision Maker",
+      "metaDescription": "Create custom spin wheels with your own options and colors. Perfect for giveaways, classroom questions, and quick decisions.",
+      "whatIsThis": "A dynamic, interactive decision wheel rendered directly on an HTML5 canvas. Add your own items, customize slice weights, and trigger a realistic physics-based spin to make decisions fun and transparent.",
+      "howItWorks": "1. Enter your list of items (one per line or comma-separated).\n2. Click the center wheel or 'Spin' button.\n3. Watch the physics-based deceleration reveal the winning slice with confetti.",
+      "whyUseIt": "Perfect for settling debates, selecting student names in classrooms, picking winners for community giveaways, or deciding what to have for dinner without hesitation.",
+      "faqs": [
+        {
+          "question": "Can I remove the winning option after spinning?",
+          "answer": "Yes, you can enable 'Eliminate winner upon selection' to run multi-round drawings until all items are picked."
+        },
+        {
+          "question": "Is the wheel result rigged?",
+          "answer": "Not at all. The stopping angle is computed using Web Crypto randomness and momentum calculations entirely within your browser."
+        }
+      ]
+    },
+    "futureImprovements": [
+      "Save custom preset wheels to local storage",
+      "Custom sound effects toggle (tick sound)"
+    ]
+  },
+  {
+    "id": "coin-flip",
+    "name": "Coin Flip Simulator",
+    "slug": "coin-flip",
+    "description": "Flip a virtual 3D coin for quick heads-or-tails decisions with flip counter and probability statistics.",
+    "category": "fun",
+    "type": "Static Utility",
+    "technology": "HTML5 / CSS 3D Transforms",
+    "keywords": [
+      "coin flip",
+      "flip a coin",
+      "heads or tails",
+      "coin toss",
+      "decision toss",
+      "random coin flip",
+      "probability coin toss"
+    ],
+    "primaryKeywords": [
+      "flip a coin",
+      "coin flip simulator",
+      "heads or tails online",
+      "coin toss"
+    ],
+    "secondaryKeywords": [
+      "virtual coin flip",
+      "probability coin toss",
+      "binary decision maker",
+      "50 50 chance simulator"
+    ],
+    "targetUsers": [
+      "Sports Referees",
+      "Gamers",
+      "Debaters",
+      "Anyone making binary choices",
+      "Statistics Students"
+    ],
+    "badge": "Essential",
+    "userProblem": "Users need a quick, unbiased 50/50 binary decision when physical coins are not available.",
+    "searchIntent": "Simulate a fair coin toss to resolve a dispute, determine who goes first, or test the Law of Large Numbers across multiple flips.",
+    "resultInterpretation": "Each flip represents an independent Bernoulli trial with theoretical p = 0.50. The summary dashboard shows cumulative empirical frequency versus theoretical probability.",
+    "practicalGuidance": "Use batch flipping (10 to 100 flips) for statistical simulations or classroom demonstrations showing how experimental probability converges to 50% over larger sample sizes.",
+    "limitations": "Individual coin tosses are statistically independent; past streaks of heads do not increase the likelihood of tails on subsequent flips (Gambler's Fallacy).",
+    "formula": "Bernoulli Distribution: P(Heads) = 0.500, P(Tails) = 0.500",
+    "trustNotes": "Flips are computed locally using browser entropy. No server calls or pre-determined outcomes.",
+    "related": [
+      "dice-roller",
+      "random-number-generator",
+      "spin-wheel"
+    ],
+    "seo": {
+      "title": "Coin Flip Simulator — 3D Heads or Tails Online Toss",
+      "metaDescription": "Flip a realistic 3D coin online. Track heads vs tails streaks, total flip counts, and statistical percentages in real time.",
+      "whatIsThis": "A realistic virtual coin toss simulator that renders a 3D animated coin with authentic physics and tracks historical probabilities over time.",
+      "howItWorks": "1. Click the coin or hit Spacebar / 'Flip Coin'.\n2. The coin spins in 3D and lands on Heads or Tails.\n3. View your streak count, aggregate percentage, and history log.",
+      "whyUseIt": "When you don't have physical cash in your pocket, this tool gives you an instant 50/50 fair decision backed by cryptographic randomness.",
+      "faqs": [
+        {
+          "question": "Are the odds exactly 50/50?",
+          "answer": "Yes. Each flip has an independent probability of 0.500 (50%) Heads and 50% Tails, simulated via crypto.getRandomValues()."
+        },
+        {
+          "question": "Can I flip multiple coins at once?",
+          "answer": "Yes, choose between 1 to 100 simultaneous coin flips to test the Law of Large Numbers."
+        }
+      ]
+    },
+    "futureImprovements": [
+      "Custom coin skins (Gold, Silver, Bitcoin, Euro, Yen)",
+      "Sound effect integration"
+    ]
+  },
+  {
+    "id": "dice-roller",
+    "name": "Dice Roller (D&D / RPG)",
+    "slug": "dice-roller",
+    "description": "Roll standard 6-sided dice or full tabletop RPG polyhedral dice (d4, d6, d8, d10, d12, d20, d100) with modifier math.",
+    "category": "fun",
+    "type": "Static Utility",
+    "technology": "HTML5 Canvas / CSS 3D",
+    "keywords": [
+      "dice roller",
+      "d20 roller",
+      "dnd dice",
+      "roll dice online",
+      "polyhedral dice",
+      "tabletop rpg dice",
+      "d6 roller"
+    ],
+    "primaryKeywords": [
+      "dice roller",
+      "roll a d20",
+      "dnd dice roller",
+      "online dice simulator"
+    ],
+    "secondaryKeywords": [
+      "polyhedral dice online",
+      "d4 d6 d8 d10 d12 d20",
+      "tabletop dice with modifiers",
+      "critical hit calculator"
+    ],
+    "targetUsers": [
+      "Tabletop RPG Players",
+      "Dungeons & Dragons DMs",
+      "Board Game Players",
+      "Math Teachers"
+    ],
+    "badge": "Popular",
+    "userProblem": "Tabletop gamers and teachers need to roll polyhedral dice with positive or negative stat modifiers without misplacing physical dice.",
+    "searchIntent": "Roll specific dice combinations (e.g. 2d6+3, 1d20+5) and receive instant math totals with critical success/fumble highlights.",
+    "resultInterpretation": "Displays individual dice roll values, highlights Critical 20s (Natural 20) and Critical 1s (Fumbles), applies modifiers, and outputs the grand total.",
+    "practicalGuidance": "Select the die type (d4 through d100), adjust quantity, set your character's ability modifier (+3, -1), and roll. Results are logged in the roll history table for reference.",
+    "limitations": "Standard rolls assume uniform discrete probability on [1, Sides]. Advantage/Disadvantage mechanics are executed by rolling 2 dice and taking highest/lowest.",
+    "formula": "Total = Sum(Die_1 ... Die_N) + Static Modifier",
+    "trustNotes": "Client-side randomness with zero network overhead. No server manipulation.",
+    "related": [
+      "coin-flip",
+      "random-number-generator",
+      "random-picker"
+    ],
+    "seo": {
+      "title": "Dice Roller — Virtual D&D & Polyhedral Dice (d4, d6, d8, d10, d12, d20, d100)",
+      "metaDescription": "Roll single or multiple dice with instant totals, modifiers, roll history, and critical hit notifications. Free online dice roller.",
+      "whatIsThis": "A versatile tabletop dice roller supporting standard 6-sided dice alongside polyhedral RPG sets (d4, d6, d8, d10, d12, d20, d100) with custom +/- modifiers.",
+      "howItWorks": "1. Select which dice you want to roll (e.g. 2d6, 1d20+4, 4d8).\n2. Click 'Roll Dice' or press Spacebar.\n3. See individual die results, applied modifiers, and the grand total.",
+      "whyUseIt": "Eliminates lost dice during board games or D&D sessions, guarantees transparent unbiased rolls, and handles complex multi-dice arithmetic instantly.",
+      "faqs": [
+        {
+          "question": "Does it highlight Critical Hits (Nat 20) and Critical Fails (Nat 1)?",
+          "answer": "Yes! D20 rolls automatically highlight 20s as Critical Success and 1s as Critical Fumble."
+        },
+        {
+          "question": "Can I add static bonuses like +5 to the roll?",
+          "answer": "Yes, specify any positive or negative modifier and the tool will calculate the final adjusted sum."
+        }
+      ]
+    },
+    "futureImprovements": [
+      "Advantage / Disadvantage roll toggles",
+      "Drop lowest roll mode (for 4d6 stat rolling)"
+    ]
+  },
+  {
+    "id": "random-picker",
+    "name": "Random Name / Item Picker",
+    "slug": "random-picker",
+    "description": "Pick one or multiple random winners from any list of names, raffle tickets, or options with duplicate controls.",
+    "category": "fun",
+    "type": "Static Utility",
+    "technology": "HTML/CSS/JS",
+    "keywords": [
+      "random picker",
+      "name picker",
+      "raffle picker",
+      "random name generator",
+      "list shuffler",
+      "pick winner",
+      "drawing tool"
+    ],
+    "primaryKeywords": [
+      "random name picker",
+      "raffle winner picker",
+      "pick a winner from a list",
+      "random list selector"
+    ],
+    "secondaryKeywords": [
+      "classroom name picker",
+      "secret santa drawer",
+      "fisher yates list shuffler",
+      "giveaway name drawer"
+    ],
+    "targetUsers": [
+      "Giveaway Hosts",
+      "Teachers",
+      "Project Managers assigning tasks",
+      "Event Organizers",
+      "Contest Administrators"
+    ],
+    "badge": "Essential",
+    "userProblem": "Organizers need an auditable, transparent way to draw random winners from a roster or list of entries without bias.",
+    "searchIntent": "Paste a raw list of names or entries, choose the number of winners, and execute a fair drawing without duplicate entries.",
+    "resultInterpretation": "Selected winners are chosen uniformly at random using the Fisher-Yates shuffle algorithm. Each non-duplicate entry has an equal 1/N probability of selection.",
+    "practicalGuidance": "Paste names one per line. If participants earned multiple raffle tickets, enter their name on multiple lines and keep 'Allow duplicate wins' unchecked to award unique winners.",
+    "limitations": "Operates entirely on the text pasted into the browser. Maximum recommended list size for optimal responsiveness is 10,000 entries.",
+    "formula": "Fisher-Yates (Knuth) Modern Shuffle Algorithm: O(N) unbiased uniform permutation",
+    "trustNotes": "100% Client-Side. Names and lists are never uploaded to any remote server or stored in third-party databases.",
+    "related": [
+      "spin-wheel",
+      "random-number-generator",
+      "password-generator"
+    ],
+    "seo": {
+      "title": "Random Name & Item Picker — Fair Winner Selection Tool",
+      "metaDescription": "Paste a list of names or items and draw random winners instantly with no duplicates. Export results or shuffle lists effortlessly.",
+      "whatIsThis": "A list-based random drawer that takes raw text entries, cleans duplicates/whitespace, and fairly draws single or multiple winners.",
+      "howItWorks": "1. Paste your list of items or names into the text area.\n2. Choose how many winners to draw.\n3. Click 'Pick Winner(s)' to reveal winners in a clean card view with confetti.",
+      "whyUseIt": "Guarantees fair, auditable selection for classroom cold-calling, sweepstakes drawings, team duty rotations, or secret Santa draws.",
+      "faqs": [
+        {
+          "question": "Can I shuffle the entire list order?",
+          "answer": "Yes, use the 'Shuffle List' button to randomize the order of all items using the Fisher-Yates shuffle algorithm."
+        },
+        {
+          "question": "Does it handle weighted entries (tickets)?",
+          "answer": "You can paste the same name multiple times for multi-ticket entries, or toggle unique winner constraints."
+        }
+      ]
+    },
+    "futureImprovements": [
+      "CSV/Excel list file import",
+      "Timer countdown before revealing winner"
+    ]
+  },
+  {
+    "id": "password-generator",
+    "name": "Strong Password Generator",
+    "slug": "password-generator",
+    "description": "Generate ultra-secure, cryptographically random passwords and passphrases with length, character set, and readability filters.",
+    "category": "fun",
+    "type": "Static Utility",
+    "technology": "HTML/CSS/JS (Web Crypto API)",
+    "keywords": [
+      "password generator",
+      "secure password",
+      "random password",
+      "strong password",
+      "passphrase generator",
+      "password creator",
+      "unhackable password"
+    ],
+    "primaryKeywords": [
+      "strong password generator",
+      "random password creator",
+      "generate secure password",
+      "online password generator"
+    ],
+    "secondaryKeywords": [
+      "high entropy password",
+      "exclude ambiguous characters",
+      "16 character password generator",
+      "client side password maker"
+    ],
+    "targetUsers": [
+      "Everyone",
+      "System Administrators",
+      "Security Enthusiasts",
+      "Developers",
+      "IT Teams"
+    ],
+    "badge": "Popular",
+    "userProblem": "Users need cryptographically strong, unique passwords with custom complexity without exposing secrets to third-party web servers.",
+    "searchIntent": "Generate a strong, uncrackable password that satisfies specific corporate or website complexity rules (symbols, numbers, uppercase) with 1-click copy.",
+    "resultInterpretation": "Calculates cryptographic entropy in bits (Entropy = Length * log2(CharsetSize)). 16+ character passwords with mixed character sets exceed 90+ bits of entropy, making brute-force cracking mathematically infeasible.",
+    "practicalGuidance": "Use at least 16 characters for critical logins (banking, primary email, password manager master key). Keep 'Exclude ambiguous characters' enabled if you will need to type the password manually on mobile devices.",
+    "limitations": "Generates random character strings. Memorability is low; generated passwords should be stored in a trusted password manager (e.g. Bitwarden, 1Password).",
+    "formula": "Entropy (bits) = L × log2(N), where L = length and N = character pool size (e.g. 26 + 26 + 10 + 26 = 88)",
+    "trustNotes": "Zero-Knowledge Local Execution. Generated passwords are created using window.crypto in browser memory and NEVER transmitted across the network.",
+    "related": [
+      "username-generator",
+      "uuid-generator",
+      "base64-encoder"
+    ],
+    "seo": {
+      "title": "Strong Password Generator — Secure, Unhackable Passwords Online",
+      "metaDescription": "Generate strong, randomized passwords and passphrases locally in your browser. 100% private, never sent to any server.",
+      "whatIsThis": "A zero-knowledge password generator that produces high-entropy passwords with custom length (up to 128 characters), symbols, numbers, and ambiguous character filtering.",
+      "howItWorks": "1. Choose your desired password length (e.g. 16 to 32 characters).\n2. Select character sets (Uppercase, Lowercase, Numbers, Symbols).\n3. Avoid ambiguous characters (like 0, O, l, 1, I) if required.\n4. Click 'Copy' to immediately place it in your clipboard.",
+      "whyUseIt": "Password reuse is the #1 vector for account breaches. Generating distinct 16+ character high-entropy passwords protects against brute-force and dictionary attacks. No generated passwords ever leave your device.",
+      "faqs": [
+        {
+          "question": "Is this password generator safe?",
+          "answer": "100% safe. The generation happens entirely in your local browser using window.crypto.getRandomValues. Nothing is transmitted over the internet."
+        },
+        {
+          "question": "What makes a password strong?",
+          "answer": "Length (16+ characters), diverse character variety (letters, numbers, symbols), and high unpredictability (entropy)."
+        }
+      ]
+    },
+    "futureImprovements": [
+      "XKCD-style memorable word passphrase generator mode",
+      "Password strength crack-time estimator"
+    ]
+  },
+  {
+    "id": "username-generator",
+    "name": "Username Generator",
+    "slug": "username-generator",
+    "description": "Generate unique, catchy, and creative usernames for gaming, social media, GitHub, Discord, and online profiles.",
+    "category": "fun",
+    "type": "Static Utility",
+    "technology": "HTML/CSS/JS",
+    "keywords": [
+      "username generator",
+      "gamertag generator",
+      "cool usernames",
+      "twitch names",
+      "discord username",
+      "handle generator",
+      "gamer tags"
+    ],
+    "primaryKeywords": [
+      "username generator",
+      "gamertag generator",
+      "cool online handles",
+      "discord name ideas"
+    ],
+    "secondaryKeywords": [
+      "twitch handle generator",
+      "github username ideas",
+      "creative gamer tags",
+      "aesthetic username creator"
+    ],
+    "targetUsers": [
+      "Gamers",
+      "Content Creators",
+      "Social Media Users",
+      "Developers",
+      "Community Members"
+    ],
+    "badge": "Popular",
+    "userProblem": "Users creating new accounts find their usual nicknames already taken and struggle to brainstorm creative, available aliases.",
+    "searchIntent": "Discover unique, theme-based online handles across gaming, tech, clean, and creative styles with custom seed keywords.",
+    "resultInterpretation": "Generates 12 brandable username candidates synthesizing curated linguistic lexicons, prefixes, and suffixes matching the selected aesthetic style.",
+    "practicalGuidance": "Enter your preferred nickname as a seed word, select your target vibe (e.g. Gaming or Tech), and click any handle to copy it directly to your clipboard.",
+    "limitations": "Availability depends on individual social media platform registrations. Tool generates linguistic combinations but does not query private third-party APIs.",
+    "formula": "Linguistic Composition: [Theme Prefix] + [Separator] + [Keyword / Theme Noun] + [Random Numerical Salt]",
+    "trustNotes": "Completely free and client-side. No tracking of search queries.",
+    "related": [
+      "password-generator",
+      "business-name-generator",
+      "random-picker"
+    ],
+    "seo": {
+      "title": "Username Generator — Creative & Catchy Gamertags and Handles",
+      "metaDescription": "Find available, memorable usernames and gamer tags across multiple styles: Tech, Fantasy, Cyberpunk, Minimalist, and Humor.",
+      "whatIsThis": "An intelligent name synthesizer that blends curated adjective/noun lexicons, thematic prefixes, and modern suffixes to produce distinctive handles.",
+      "howItWorks": "1. Select a theme (Tech, Gaming, Clean, Creative, Fantasy, Cyberpunk).\n2. Optionally provide a seed keyword or nickname.\n3. Click 'Generate Usernames' and copy your favorite handle.",
+      "whyUseIt": "Stuck on finding a username that isn't already taken? Generate dozens of clean, memorable, brandable aliases in seconds.",
+      "faqs": [
+        {
+          "question": "Can I include numbers or special characters?",
+          "answer": "Yes, toggle the 'Include numbers' or 'Add underscores/dots' settings to tailor results to platform naming rules."
+        },
+        {
+          "question": "Are these usernames free to use?",
+          "answer": "Yes, all generated usernames are royalty-free and ready for registration on any service."
+        }
+      ]
+    },
+    "futureImprovements": [
+      "Instant social handle availability checker API",
+      "Brand aesthetic font stylizer"
+    ]
+  },
+  {
+    "id": "my-ip",
+    "name": "What is My IP Address?",
+    "slug": "my-ip",
+    "description": "Instantly check your public IPv4 and IPv6 address, internet service provider (ISP), location, and connection details.",
+    "category": "network",
+    "type": "Client Network Utility",
+    "technology": "HTML/JS (Fetch API via open IP service)",
+    "keywords": [
+      "what is my ip",
+      "my ip address",
+      "ip lookup",
+      "public ip",
+      "check ip",
+      "isp lookup",
+      "ip location checker"
+    ],
+    "primaryKeywords": [
+      "what is my ip",
+      "my ip address",
+      "check public ip",
+      "what is my ip location"
+    ],
+    "secondaryKeywords": [
+      "ipv4 vs ipv6 checker",
+      "find my isp",
+      "ip address lookup",
+      "vpn ip leak test"
+    ],
+    "targetUsers": [
+      "Network Engineers",
+      "Remote Workers",
+      "Gamers",
+      "VPN Users",
+      "Developers",
+      "IT Support"
+    ],
+    "badge": "Essential",
+    "userProblem": "Users need to find their external public IP address to configure firewall rules, whitelist remote access, or verify VPN connectivity.",
+    "searchIntent": "Identify public IPv4/IPv6 address, internet provider name, and approximate geographical routing point with 1-click clipboard copy.",
+    "resultInterpretation": "Your Public IP is the global numeric address assigned by your Internet Service Provider (ISP) visible to external web servers. Geolocation reflects the ISP routing hub, not your physical street address.",
+    "practicalGuidance": "If using a VPN or proxy, verify that the displayed IP matches your VPN server location. Use the 1-click Copy button to paste into AWS security groups, database IP whitelists, or server configuration files.",
+    "limitations": "IP geolocation accuracy is limited to the city or regional ISP datacenter level. It cannot pinpoint exact residential street addresses or personal identities without ISP subscriber logs.",
+    "formula": "Public Network Identifier: IPv4 (32-bit dotted-decimal) or IPv6 (128-bit hexadecimal)",
+    "trustNotes": "Queries are routed directly through open, standard CORS-friendly IP resolvers. UTL.tools never logs or stores your IP address in any persistent database.",
+    "related": [
+      "dns-lookup",
+      "ping-test",
+      "browser-info",
+      "user-agent-checker"
+    ],
+    "seo": {
+      "title": "What is My IP Address? — Instant Public IP & ISP Checker",
+      "metaDescription": "Find your public IPv4/IPv6 address, ISP, organization, approximate city, country, and timezone with 1-click copy.",
+      "whatIsThis": "A diagnostic tool that queries your external public IP address and delivers full network routing context including ASN, ISP name, and geolocation details.",
+      "howItWorks": "When you load the page, your browser sends a lightweight request to a public IP endpoint, returning your public facing IPv4/IPv6 address and metadata.",
+      "whyUseIt": "Essential for setting up firewalls, whitelisting IPs for cloud servers (AWS/Azure/GCP), verifying VPN tunnel connections, and diagnosing ISP routing problems.",
+      "faqs": [
+        {
+          "question": "What is the difference between a public IP and private IP?",
+          "answer": "A public IP is your global address visible to websites on the internet. A private IP (like 192.168.1.X or 10.0.0.X) is internal to your local home or office router."
+        },
+        {
+          "question": "Does my IP address expose my exact physical house address?",
+          "answer": "No. IP geolocation only points to your ISP's nearest routing facility or general city, not your physical street address."
+        }
+      ]
+    },
+    "futureImprovements": [
+      "WebRTC local IP leak detector",
+      "IPv6 vs IPv4 toggle diagnostic"
+    ]
+  },
+  {
+    "id": "browser-info",
+    "name": "Browser & System Info",
+    "slug": "browser-info",
+    "description": "Inspect your browser engine, operating system, hardware concurrency, memory, GPU WebGL renderer, and feature support.",
+    "category": "network",
+    "type": "Static Utility",
+    "technology": "HTML5 / Web APIs",
+    "keywords": [
+      "browser info",
+      "system info",
+      "check browser",
+      "screen details",
+      "webgl info",
+      "hardware concurrency",
+      "client environment inspector"
+    ],
+    "primaryKeywords": [
+      "browser information",
+      "check my browser",
+      "system specs online",
+      "webgl renderer checker"
+    ],
+    "secondaryKeywords": [
+      "hardware concurrency test",
+      "browser feature detection",
+      "client side diagnostics",
+      "support ticket system report"
+    ],
+    "targetUsers": [
+      "QA Testers",
+      "Frontend Developers",
+      "Support Agents",
+      "Power Users",
+      "Hardware Enthusiasts"
+    ],
+    "badge": "Essential",
+    "userProblem": "Users and QA engineers need an instant, comprehensive diagnostic report of client hardware, browser capabilities, and GPU drivers for troubleshooting.",
+    "searchIntent": "View OS version, browser build, CPU core count, GPU model, screen color depth, and cookie support in one unified summary with markdown export.",
+    "resultInterpretation": "Audits standard W3C navigator, screen, and WebGL APIs. Hardware concurrency reflects logical CPU threads available for web worker parallelization.",
+    "practicalGuidance": "Click 'Copy Diagnostics' to paste a clean markdown hardware specification directly into GitHub issues, Jira bug reports, or technical support tickets.",
+    "limitations": "Certain metrics (e.g. Device Memory) are reported as rounded buckets by browsers to protect user privacy against passive device fingerprinting.",
+    "formula": "Client Diagnostic Evaluation: W3C Navigator + WebGL Context + Screen APIs",
+    "trustNotes": "100% Client-Side. No telemetry or system tracking.",
+    "related": [
+      "user-agent-checker",
+      "screen-resolution",
+      "my-ip"
+    ],
+    "seo": {
+      "title": "Browser & System Information — Full Device Hardware & Feature Inspector",
+      "metaDescription": "View your browser name, version, OS, CPU cores, GPU renderer, cookie/storage status, and HTML5 feature support in one dashboard.",
+      "whatIsThis": "A comprehensive hardware and browser capabilities auditor reading navigator, WebGL, screen, and battery APIs directly from your client environment.",
+      "howItWorks": "Reads standard W3C browser APIs (Navigator, Window, WebGL context, MediaDevices) to display structured system specifications without downloading any software.",
+      "whyUseIt": "Invaluable for debugging cross-browser rendering bugs, collecting system specs for customer support tickets, or verifying hardware acceleration.",
+      "faqs": [
+        {
+          "question": "Can websites see this information automatically?",
+          "answer": "Yes, modern web browsers expose standard navigator properties (such as screen size, OS family, CPU cores, and GPU model) to any webpage you visit."
+        },
+        {
+          "question": "How do I share this report with a developer or support agent?",
+          "answer": "Click the 'Copy Full System Report' button to copy a formatted markdown spec summary to your clipboard."
+        }
+      ]
+    },
+    "futureImprovements": [
+      "Export system diagnosis as JSON",
+      "AudioContext and WebAssembly compatibility matrix"
+    ]
+  },
+  {
+    "id": "screen-resolution",
+    "name": "Screen Resolution & Viewport Checker",
+    "slug": "screen-resolution",
+    "description": "Check your physical screen resolution, CSS viewport dimensions, device pixel ratio (DPR), color depth, and orientation.",
+    "category": "network",
+    "type": "Static Utility",
+    "technology": "HTML5 / Window APIs",
+    "keywords": [
+      "screen resolution",
+      "viewport size",
+      "device pixel ratio",
+      "display resolution",
+      "check screen size",
+      "dpr checker",
+      "responsive breakpoint checker"
+    ],
+    "primaryKeywords": [
+      "what is my screen resolution",
+      "check viewport size",
+      "device pixel ratio checker",
+      "display resolution test"
+    ],
+    "secondaryKeywords": [
+      "retina scaling factor",
+      "css window width height",
+      "screen orientation detector",
+      "responsive design testing tool"
+    ],
+    "targetUsers": [
+      "Web Designers",
+      "Frontend Developers",
+      "Gamers",
+      "Digital Artists",
+      "QA Engineers"
+    ],
+    "badge": "Essential",
+    "userProblem": "Web designers and developers need to distinguish between physical monitor resolution and CSS viewport dimensions to debug responsive breakpoints.",
+    "searchIntent": "Check monitor pixel dimensions, current browser window size, Retina scaling factor (DPR), and aspect ratio live during window resizing.",
+    "resultInterpretation": "Physical Screen Resolution is the raw hardware pixel count (e.g. 3840x2160). CSS Viewport is the logical layout area scaled by DPR (e.g. 1920x1080 at 2.0x DPR).",
+    "practicalGuidance": "Drag your browser window edges to observe CSS viewport values update in real time. Use these dimensions to test CSS `@media (min-width: ...)` query breakpoints.",
+    "limitations": "Browser security sandboxes do not expose multi-monitor coordinate arrangements beyond the window's current active screen.",
+    "formula": "CSS Viewport Pixels = Physical Pixels / Device Pixel Ratio (DPR)",
+    "trustNotes": "100% Client-Side. No network calls.",
+    "related": [
+      "browser-info",
+      "aspect-ratio-calculator",
+      "user-agent-checker"
+    ],
+    "seo": {
+      "title": "Screen Resolution & Viewport Checker — Accurate Display Dimensions",
+      "metaDescription": "Detect your exact screen resolution, CSS viewport width & height, Device Pixel Ratio (Retina scaling), and aspect ratio in real time.",
+      "whatIsThis": "A real-time display inspection tool that shows physical monitor pixels versus CSS logical viewport pixels and updates live as you resize your window.",
+      "howItWorks": "Monitors `window.screen` and `window.innerWidth/innerHeight` with resize listeners to display dimensions, aspect ratios, and pixel densities.",
+      "whyUseIt": "Critical for responsive web design testing, validating Retina / High-DPI scaling, and ensuring CSS media queries trigger at correct breakpoints.",
+      "faqs": [
+        {
+          "question": "Why is my CSS viewport size smaller than my monitor resolution?",
+          "answer": "High-density displays (like Apple Retina or 4K monitors with 125%-200% scaling) use multiple physical pixels to render one CSS pixel for crisp text rendering (DPR > 1.0)."
+        },
+        {
+          "question": "Does this tool update when I resize my browser window?",
+          "answer": "Yes, the viewport measurements update dynamically in real time as you drag and resize the window."
+        }
+      ]
+    },
+    "futureImprovements": [
+      "Interactive responsive breakpoint simulator frame",
+      "Custom CSS media query generator"
+    ]
+  },
+  {
+    "id": "ping-test",
+    "name": "Ping & Latency Test",
+    "slug": "ping-test",
+    "description": "Measure HTTP network round-trip latency, jitter, and connection stability to global server nodes in real time.",
+    "category": "network",
+    "type": "Client Network Utility",
+    "technology": "HTML5 Fetch API / High Resolution Timers",
+    "keywords": [
+      "ping test",
+      "latency test",
+      "network speed",
+      "http ping",
+      "test internet latency",
+      "jitter test",
+      "connection stability"
+    ],
+    "primaryKeywords": [
+      "ping test online",
+      "check internet latency",
+      "measure network jitter",
+      "real time ping test"
+    ],
+    "secondaryKeywords": [
+      "gaming latency test",
+      "zoom call ping test",
+      "cloudflare ping tool",
+      "http round trip time"
+    ],
+    "targetUsers": [
+      "Gamers",
+      "Remote Workers",
+      "DevOps Engineers",
+      "Network Admins",
+      "Video Callers"
+    ],
+    "badge": "Popular",
+    "userProblem": "Users experiencing lag during gaming, video calls, or browsing need to diagnose whether network latency or connection jitter is the bottleneck.",
+    "searchIntent": "Measure precise round-trip time (RTT) in milliseconds to major global CDNs and evaluate network stability for gaming and video meetings.",
+    "resultInterpretation": "Under 30ms = Excellent (Competitive Gaming, Real-time audio). 30–70ms = Good (Smooth 4K streaming, Zoom calls). 70–150ms = Acceptable. >150ms = Noticeable lag. Jitter indicates connection consistency; jitter > 15ms causes voice stutters.",
+    "practicalGuidance": "If ping is high or jitter is > 20ms, switch from 2.4GHz WiFi to 5GHz WiFi or a wired Ethernet cable. Check if background downloads or VPN routing are increasing latency.",
+    "limitations": "Browser-based ping measures HTTP application-layer round-trip time via performance.now(). It includes TLS/TCP overhead and will be slightly higher than raw ICMP ping in command line terminal.",
+    "formula": "Round Trip Time (RTT) = T_response - T_request; Jitter = Mean(|RTT_i - RTT_{i-1}|)",
+    "trustNotes": "Lightweight client requests sent to public Anycast edge endpoints with zero tracking.",
+    "related": [
+      "my-ip",
+      "dns-lookup",
+      "browser-info"
+    ],
+    "seo": {
+      "title": "Ping & Latency Test — Real-Time HTTP Connection Latency Monitor",
+      "metaDescription": "Test your internet latency to major global cloud endpoints (Cloudflare, AWS, Google). Measure min, avg, max ping and jitter in milliseconds.",
+      "whatIsThis": "A browser-based latency benchmarker that measures HTTP round-trip time (RTT) to global edge endpoints using `performance.now()` precision timing.",
+      "howItWorks": "1. Sends lightweight requests to high-speed CDN edge servers.\n2. Computes the exact round-trip response time in milliseconds.\n3. Calculates jitter, minimum, average, and maximum latency.",
+      "whyUseIt": "Diagnose sluggish browsing, detect WiFi packet jitter before competitive gaming, or verify VPN overhead with precise timing metrics.",
+      "faqs": [
+        {
+          "question": "What is considered a good ping time?",
+          "answer": "Under 30ms is excellent, 30-70ms is good for browsing and gaming, 70-150ms is acceptable, and over 150ms will feel noticeably laggy."
+        },
+        {
+          "question": "How is HTTP ping different from ICMP ping?",
+          "answer": "Standard ICMP ping runs at the network layer, while browser HTTP ping measures full TCP + TLS + HTTP handshake roundtrip."
+        }
+      ]
+    },
+    "futureImprovements": [
+      "Visual sparkline latency chart",
+      "Multi-region concurrent comparison matrix"
+    ]
+  },
+  {
+    "id": "dns-lookup",
+    "name": "DNS Records Lookup",
+    "slug": "dns-lookup",
+    "description": "Query live DNS records (A, AAAA, CNAME, MX, TXT, NS, SOA, CAA) for any domain using DNS-over-HTTPS.",
+    "category": "network",
+    "type": "Client Network Utility",
+    "technology": "DNS-over-HTTPS (Cloudflare / Google DoH)",
+    "keywords": [
+      "dns lookup",
+      "check dns records",
+      "mx record lookup",
+      "txt record check",
+      "nslookup online",
+      "doh tool",
+      "dns propagation"
+    ],
+    "primaryKeywords": [
+      "dns lookup online",
+      "check domain dns records",
+      "mx record lookup",
+      "txt record validator"
+    ],
+    "secondaryKeywords": [
+      "spf dkim txt lookup",
+      "cname checker",
+      "nslookup tool",
+      "cloudflare dns query"
+    ],
+    "targetUsers": [
+      "System Admins",
+      "Webmasters",
+      "DevOps",
+      "Email Deliverability Specialists",
+      "Domain Buyers"
+    ],
+    "badge": "Essential",
+    "userProblem": "Domain owners and webmasters need to verify DNS propagation, check mail exchange (MX) routes, or validate SPF/DKIM TXT records.",
+    "searchIntent": "Query authoritative DNS records for a domain across A, AAAA, MX, TXT, NS, and CNAME types with TTL values.",
+    "resultInterpretation": "A/AAAA map hostnames to IPv4/IPv6 addresses. MX specifies mail servers. TXT holds verification tokens (SPF, DKIM, Google verification). NS indicates authoritative nameservers.",
+    "practicalGuidance": "When changing web hosts, check the TTL (Time To Live). If TTL is 3600, changes will take approximately 1 hour to propagate globally. Use MX lookups to verify email routing prior to cutover.",
+    "limitations": "Queries public DNS-over-HTTPS resolvers (Cloudflare 1.1.1.1). Local intranet split-brain DNS records behind private firewalls are not queryable from public resolvers.",
+    "formula": "RFC 8484 DNS-over-HTTPS (DoH) Protocol Specification",
+    "trustNotes": "Direct HTTPS queries to public DoH resolvers. No logging of searched domain names.",
+    "related": [
+      "my-ip",
+      "ping-test",
+      "url-encoder"
+    ],
+    "seo": {
+      "title": "DNS Lookup Tool — Query A, AAAA, MX, TXT, CNAME, NS Records Online",
+      "metaDescription": "Fast, free DNS-over-HTTPS lookup tool. Check domain records, SPF/DKIM TXT entries, mail exchange (MX) servers, and nameservers instantly.",
+      "whatIsThis": "A zero-backend DNS query interface that communicates directly with public DNS-over-HTTPS (DoH) resolvers to fetch authoritative DNS entries for any domain.",
+      "howItWorks": "1. Enter a domain name (e.g., example.com).\n2. Select the record type (ALL, A, AAAA, MX, TXT, CNAME, NS, SOA).\n3. View formatted records with TTL (Time To Live), IP addresses, and priority values.",
+      "whyUseIt": "Essential when migrating web hosting, verifying Google/Microsoft domain ownership TXT records, configuring SPF/DKIM/DMARC email security, or diagnosing DNS propagation.",
+      "faqs": [
+        {
+          "question": "How long does DNS propagation take?",
+          "answer": "DNS changes usually propagate within a few minutes up to 48 hours, depending on the TTL (Time To Live) configured on your previous DNS records."
+        },
+        {
+          "question": "What are MX records used for?",
+          "answer": "MX (Mail Exchange) records specify which mail servers are responsible for accepting incoming emails on behalf of your domain name."
+        }
+      ]
+    },
+    "futureImprovements": [
+      "DNSSEC validation badge",
+      "Visual SPF and DMARC syntax validator"
+    ]
+  },
+  {
+    "id": "user-agent-checker",
+    "name": "User Agent Parser & Checker",
+    "slug": "user-agent-checker",
+    "description": "View, parse, and analyze your current User-Agent string or test custom User-Agent strings to inspect device, browser, and OS tokens.",
+    "category": "network",
+    "type": "Static Utility",
+    "technology": "HTML/CSS/JS",
+    "keywords": [
+      "user agent checker",
+      "ua parser",
+      "what is my user agent",
+      "parse user agent",
+      "browser identification",
+      "client hints",
+      "user agent string"
+    ],
+    "primaryKeywords": [
+      "what is my user agent",
+      "user agent parser",
+      "parse ua string",
+      "check user agent header"
+    ],
+    "secondaryKeywords": [
+      "browser detection tool",
+      "device classification parser",
+      "sec-ch-ua hints",
+      "bot crawler user agent"
+    ],
+    "targetUsers": [
+      "Developers",
+      "QA Testers",
+      "Security Analysts",
+      "SEO Specialists",
+      "Support Engineers"
+    ],
+    "badge": "Essential",
+    "userProblem": "Engineers and SEOs need to inspect what identity tokens their browser transmits in the `User-Agent` HTTP header or parse server access logs.",
+    "searchIntent": "Break down an arbitrary User-Agent string into structured components: Browser Name, Version, Engine, Operating System, and Device Family.",
+    "resultInterpretation": "Identifies the client software family and platform architecture. Shows whether the request originates from a Mobile, Tablet, or Desktop environment.",
+    "practicalGuidance": "Paste User-Agent strings from Apache/Nginx web server access logs to identify client device types or detect search crawler bots (Googlebot, Bingbot).",
+    "limitations": "Modern Chromium browsers freeze User-Agent strings to prevent device fingerprinting and rely on User-Agent Client Hints (UA-CH).",
+    "formula": "Regex Token Parsing: Mozilla/5.0 ([Platform]; [OS]) AppleWebKit/[WebKit_Ver] Chrome/[Chrome_Ver] Safari/[Safari_Ver]",
+    "trustNotes": "100% Client-Side. String parsing runs entirely in your local browser sandbox.",
+    "related": [
+      "browser-info",
+      "screen-resolution",
+      "my-ip"
+    ],
+    "seo": {
+      "title": "User Agent Parser & Checker — Breakdown Client UA Header",
+      "metaDescription": "Inspect your browser's User Agent string. Parse browser family, layout engine, OS version, device type, and CPU architecture in a clean table.",
+      "whatIsThis": "A parser that takes raw HTTP User-Agent strings and breaks them down into structured data tokens (Browser, Major Version, OS, Platform, Rendering Engine).",
+      "howItWorks": "Inspects `navigator.userAgent` or allows you to paste any raw UA string from server access logs to parse its exact identity.",
+      "whyUseIt": "Useful for debugging server routing rules, checking bot crawlers (Googlebot / Bingbot), verifying mobile emulation in developer tools, and understanding Client Hints.",
+      "faqs": [
+        {
+          "question": "Why do all browser User-Agents start with 'Mozilla/5.0'?",
+          "answer": "This is historical legacy. In the early days of the web, Netscape (Mozilla) had advanced features, so competing browsers included 'Mozilla' to avoid being blocked by web servers."
+        },
+        {
+          "question": "What is replacing User-Agent strings?",
+          "answer": "Modern browsers are transitioning towards User-Agent Client Hints (UA-CH) to reduce passive fingerprinting while providing structured client data."
+        }
+      ]
+    },
+    "futureImprovements": [
+      "User-Agent Client Hints (Sec-CH-UA) inspector",
+      "Bot vs Human UA classifier"
+    ]
+  },
+  {
+    "id": "json-formatter",
+    "name": "JSON Formatter & Beautifier",
+    "slug": "json-formatter",
+    "description": "Format, beautify, indent, minify, and inspect JSON data with syntax highlighting, collapsible nodes, and error reporting.",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML/CSS/JS",
+    "keywords": [
+      "json formatter",
+      "json beautifier",
+      "format json",
+      "minify json",
+      "json prettifier",
+      "json cleaner",
+      "beautify json online"
+    ],
+    "primaryKeywords": [
+      "json formatter",
+      "json beautifier online",
+      "format json online",
+      "minify json"
+    ],
+    "secondaryKeywords": [
+      "prettify json data",
+      "indent json 2 spaces",
+      "json cleaner tool",
+      "client side json formatter"
+    ],
+    "targetUsers": [
+      "Developers",
+      "API Engineers",
+      "Data Analysts",
+      "DevOps",
+      "Backend Engineers"
+    ],
+    "badge": "Popular",
+    "userProblem": "Developers frequently receive unformatted, single-line, or minified JSON payloads from APIs and need to format them for debugging.",
+    "searchIntent": "Paste raw JSON text or upload a JSON file, apply clean indentation (2/4 spaces or tabs), validate syntax, and copy or download formatted output.",
+    "resultInterpretation": "Re-indents JSON structure according to standard RFC 8259 formatting rules. Minify strips unnecessary whitespace to reduce byte payload size.",
+    "practicalGuidance": "Use '2 Spaces' indentation for web APIs and configuration files. Use 'Minify' before transmitting payloads in production network requests to reduce bandwidth.",
+    "limitations": "Strictly adheres to JSON standard: keys must be enclosed in double quotes, trailing commas are invalid, and comments are not supported.",
+    "formula": "JSON Serialization: JSON.stringify(JSON.parse(input), null, indent)",
+    "trustNotes": "100% Client-Side. Sensitive production API payloads, customer records, and credentials NEVER leave your browser.",
+    "related": [
+      "json-validator",
+      "base64-encoder",
+      "url-encoder",
+      "uuid-generator"
+    ],
+    "seo": {
+      "title": "JSON Formatter & Beautifier — Free Online JSON Prettifier & Minifier",
+      "metaDescription": "Format, validate, beautify, and minify your JSON data instantly. 100% private, client-side formatting with 2-space, 4-space, and tab indentation.",
+      "whatIsThis": "A high-performance JSON beautifier that converts messy, unformatted, or minified JSON strings into clean, readable, properly indented JSON.",
+      "howItWorks": "1. Paste your raw JSON or upload a .json file.\n2. Choose your indentation style (2 spaces, 4 spaces, or tabs).\n3. Click 'Beautify' or 'Minify' and copy or download the formatted output.",
+      "whyUseIt": "Essential when working with API responses, configuration files, and database exports. Runs completely in your browser, keeping sensitive data private.",
+      "faqs": [
+        {
+          "question": "Is my JSON data safe and private?",
+          "answer": "Yes. 100% of formatting and parsing occurs directly inside your browser. No data is ever transmitted to or logged on any external server."
+        },
+        {
+          "question": "Can it fix common JSON errors like trailing commas?",
+          "answer": "You can use the 'Fix & Format' option to automatically strip trailing commas and convert single quotes to valid double quotes."
+        }
+      ]
+    },
+    "futureImprovements": [
+      "Interactive tree-view collapsible nodes",
+      "JSON to YAML / CSV converter toggle"
+    ]
+  },
+  {
+    "id": "json-validator",
+    "name": "JSON Validator & Linter",
+    "slug": "json-validator",
+    "description": "Validate JSON syntax in real time with line and column error indicators, character offsets, and auto-fix capabilities.",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML/CSS/JS",
+    "keywords": [
+      "json validator",
+      "json linter",
+      "validate json",
+      "json syntax checker",
+      "json error finder",
+      "json repair",
+      "rfc 8259 validator"
+    ],
+    "primaryKeywords": [
+      "json validator",
+      "validate json online",
+      "json syntax checker",
+      "json error fixer"
+    ],
+    "secondaryKeywords": [
+      "check json syntax",
+      "find json line error",
+      "fix trailing commas json",
+      "json linter tool"
+    ],
+    "targetUsers": [
+      "Software Developers",
+      "QA Engineers",
+      "API Developers",
+      "DevOps Engineers"
+    ],
+    "badge": "Essential",
+    "userProblem": "Developers get syntax errors when parsing JSON files and need to find the exact character offset, missing bracket, or trailing comma breaking the payload.",
+    "searchIntent": "Validate JSON compliance in real time and pinpoint exact syntax error messages with automated one-click repair for common issues.",
+    "resultInterpretation": "Green banner confirms full RFC 8259 specification compliance. Red banner pinpoints exact error reason (e.g. unexpected token, trailing comma, unquoted key).",
+    "practicalGuidance": "If your JSON has single quotes or trailing commas, click 'Attempt Auto-Fix' to automatically convert to standard double quotes and clean trailing commas.",
+    "limitations": "Validates JSON syntax structure. Does not validate semantic business logic or custom JSON Schema definitions.",
+    "formula": "ECMA-404 / RFC 8259 JSON Syntax Grammar Specification",
+    "trustNotes": "100% Client-Side. Validations happen entirely in local memory with zero network latency.",
+    "related": [
+      "json-formatter",
+      "base64-decoder",
+      "url-decoder"
+    ],
+    "seo": {
+      "title": "JSON Validator & Linter — Instant JSON Syntax Error Checker",
+      "metaDescription": "Validate your JSON strings with precise line/column error markers. Detect unquoted keys, missing brackets, trailing commas, and malformed strings.",
+      "whatIsThis": "A specialized JSON syntax validation utility that parses JSON input and flags exact line and column numbers where syntax errors occur.",
+      "howItWorks": "1. Paste your JSON payload into the editor.\n2. The validator checks standard RFC 8259 compliance in real time.\n3. If errors exist, pinpoint the exact line, column, and fix suggestion.",
+      "whyUseIt": "Fix broken API payloads, Docker compose files, and config JSON files in seconds with clear error feedback instead of cryptic error codes.",
+      "faqs": [
+        {
+          "question": "What are the most common JSON syntax errors?",
+          "answer": "The most common mistakes are: trailing commas after the last array/object element, single quotes instead of double quotes, and unquoted object keys."
+        },
+        {
+          "question": "Does this validator support large JSON files?",
+          "answer": "Yes, our client-side parser can validate multi-megabyte JSON payloads in milliseconds without freezing your browser."
+        }
+      ]
+    },
+    "futureImprovements": [
+      "JSON Schema validation schema checker",
+      "Diff side-by-side comparison"
+    ]
+  },
+  {
+    "id": "base64-encoder",
+    "name": "Base64 Encoder (Text & Files)",
+    "slug": "base64-encoder",
+    "description": "Convert plain text, UTF-8 strings, images, and files into standard Base64 or Data URI format.",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML/CSS/JS (FileReader & btoa)",
+    "keywords": [
+      "base64 encoder",
+      "encode base64",
+      "text to base64",
+      "image to base64",
+      "data uri generator",
+      "base64 converter",
+      "base64 string maker"
+    ],
+    "primaryKeywords": [
+      "base64 encoder",
+      "text to base64",
+      "convert string to base64",
+      "image to base64 data uri"
+    ],
+    "secondaryKeywords": [
+      "utf-8 base64 encoding",
+      "base64 file converter",
+      "basic auth header generator",
+      "rfc 4648 base64"
+    ],
+    "targetUsers": [
+      "Developers",
+      "Web Designers",
+      "Security Engineers",
+      "DevOps Engineers"
+    ],
+    "badge": "Popular",
+    "userProblem": "Developers need to convert binary assets, images, or UTF-8 strings into ASCII-safe Base64 strings for CSS embeddings or API headers.",
+    "searchIntent": "Encode text, emojis, or uploaded image files into Base64 format or Data URIs with 1-click clipboard copy.",
+    "resultInterpretation": "Translates 8-bit binary bytes into 6-bit Base64 character sequences (A-Z, a-z, 0-9, +, /). Data size increases by exactly 33.3% due to the 3-to-4 byte expansion.",
+    "practicalGuidance": "Use Data URI format (`data:image/png;base64,...`) when inlining small icons (< 5KB) directly into HTML or CSS to eliminate extra HTTP requests.",
+    "limitations": "Base64 is an encoding format, NOT encryption. Encoded data is easily reversible and provides zero cryptographic confidentiality on its own.",
+    "formula": "RFC 4648 Base64 Encoding: 3 Binary Bytes (24 bits) -> 4 Base64 ASCII Chars (24 bits)",
+    "trustNotes": "100% Client-Side. Binary files and text strings are encoded using Web TextEncoder and FileReader APIs directly in your browser.",
+    "related": [
+      "base64-decoder",
+      "url-encoder",
+      "json-formatter"
+    ],
+    "seo": {
+      "title": "Base64 Encoder — Convert Plain Text & Files to Base64 Online",
+      "metaDescription": "Encode UTF-8 strings, images, and binary files into Base64 strings or Data URIs. Fast, secure, and client-side.",
+      "whatIsThis": "A versatile encoding tool that translates ASCII/UTF-8 text, binary files, and images into standard Base64 representation (RFC 4648).",
+      "howItWorks": "1. Type or paste text, or drag-and-drop any file/image.\n2. Choose between raw Base64 string or full `data:image/...;base64,...` Data URI.\n3. Copy the encoded string with one click.",
+      "whyUseIt": "Ideal for embedding small icons into CSS/HTML files, transmitting binary data through text-only API protocols, and constructing Basic Auth headers.",
+      "faqs": [
+        {
+          "question": "Does this support UTF-8 special characters and emojis?",
+          "answer": "Yes! Unlike naive btoa implementations that fail on non-ASCII characters, our encoder properly handles full multi-byte UTF-8 character sets and emojis."
+        },
+        {
+          "question": "How much does Base64 increase data size?",
+          "answer": "Base64 encoding increases data size by approximately 33% because 3 bytes of binary data are represented as 4 characters."
+        }
+      ]
+    },
+    "futureImprovements": [
+      "Base64 URL-safe encoding toggle",
+      "Chunked line-wrapping format option (RFC 2045)"
+    ]
+  },
+  {
+    "id": "base64-decoder",
+    "name": "Base64 Decoder (Text & Files)",
+    "slug": "base64-decoder",
+    "description": "Decode Base64 encoded strings and Data URIs back to clean UTF-8 text, inspect hex representation, or download decoded files.",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML/CSS/JS (Uint8Array / atob)",
+    "keywords": [
+      "base64 decoder",
+      "decode base64",
+      "base64 to text",
+      "base64 to image",
+      "data uri decoder",
+      "base64 converter",
+      "base64 reader"
+    ],
+    "primaryKeywords": [
+      "base64 decoder",
+      "base64 to text",
+      "decode base64 online",
+      "base64 to image preview"
+    ],
+    "secondaryKeywords": [
+      "data uri decoder",
+      "utf-8 base64 decode",
+      "jwt payload decoder",
+      "base64 file extractor"
+    ],
+    "targetUsers": [
+      "Developers",
+      "Security Analysts",
+      "DevOps Engineers",
+      "QA Engineers"
+    ],
+    "badge": "Popular",
+    "userProblem": "Developers and security analysts need to decode Base64 strings from JWT tokens, webhook payloads, or email headers back into human-readable text or image previews.",
+    "searchIntent": "Paste a Base64 string or Data URI, decode it back into plain UTF-8 text or preview embedded PNG/JPG/SVG images immediately.",
+    "resultInterpretation": "Reconstructs the original UTF-8 text or binary file from the 6-bit Base64 character representation. Image payloads are automatically rendered in a visual preview container.",
+    "practicalGuidance": "If decoding a JWT token, copy the middle payload segment between the two dots (`.`) and paste here to inspect the decoded claims JSON.",
+    "limitations": "Malformed Base64 strings with invalid characters or illegal padding lengths will trigger syntax warnings.",
+    "formula": "RFC 4648 Base64 Decoding: 4 Base64 Chars -> 3 Binary Bytes -> UTF-8 String",
+    "trustNotes": "100% Client-Side. Secrets and decoded tokens never leave your browser sandbox.",
+    "related": [
+      "base64-encoder",
+      "url-decoder",
+      "json-formatter"
+    ],
+    "seo": {
+      "title": "Base64 Decoder — Decode Base64 to Text or Download Files",
+      "metaDescription": "Decode any Base64 string or Data URI back to readable plain text or image preview. Handles UTF-8 characters and binary downloads.",
+      "whatIsThis": "A robust Base64 decoding tool that converts encoded ASCII strings back into original UTF-8 text or binary files with live image previews.",
+      "howItWorks": "1. Paste the Base64 string or Data URI.\n2. The decoder identifies whether the payload is plain text, JSON, or an image.\n3. Copy decoded text, preview images, or download the original file.",
+      "whyUseIt": "Quickly inspect encoded JWT payloads, email attachments, authentication headers, or embedded image assets without launching a command line.",
+      "faqs": [
+        {
+          "question": "Can I decode Base64 images and preview them?",
+          "answer": "Yes, if the Base64 payload represents PNG, JPG, GIF, WebP, or SVG images, it automatically renders an interactive image preview."
+        },
+        {
+          "question": "What happens if the Base64 string has invalid padding?",
+          "answer": "The decoder automatically repairs missing padding `=` characters and strips whitespace before decoding."
+        }
+      ]
+    },
+    "futureImprovements": [
+      "Binary Hex Dump inspector view",
+      "MIME-type auto-detection"
+    ]
+  },
+  {
+    "id": "uuid-generator",
+    "name": "UUID / GUID Generator",
+    "slug": "uuid-generator",
+    "description": "Generate cryptographically random UUID v4 and timestamp-based UUID v1 identifiers in bulk with uppercase, hyphen, and brace formatting.",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML/CSS/JS (Web Crypto crypto.randomUUID)",
+    "keywords": [
+      "uuid generator",
+      "guid generator",
+      "v4 uuid",
+      "generate uuid",
+      "bulk uuid generator",
+      "random guid",
+      "rfc 4122 uuid"
+    ],
+    "primaryKeywords": [
+      "uuid generator",
+      "guid generator online",
+      "generate uuid v4",
+      "bulk uuid generator"
+    ],
+    "secondaryKeywords": [
+      "random guid creator",
+      "rfc 4122 unique identifier",
+      "database primary key generator",
+      "uuid without hyphens"
+    ],
+    "targetUsers": [
+      "Database Administrators",
+      "Backend Developers",
+      "Software Engineers",
+      "API Architects"
+    ],
+    "badge": "Popular",
+    "userProblem": "Developers and database engineers need universally unique identifiers (UUIDs/GUIDs) for mock database seeds, primary keys, or transaction correlation IDs.",
+    "searchIntent": "Generate single or bulk (up to 500) RFC 4122 compliant v4/v1 UUIDs with custom formatting (hyphens, uppercase, braces) and 1-click export.",
+    "resultInterpretation": "A UUID v4 contains 122 bits of cryptographically random entropy. The collision probability across billions of generated IDs is practically zero.",
+    "practicalGuidance": "Use Version 4 for distributed database primary keys and API idempotency keys. Toggle 'Uppercase' or 'Remove hyphens' based on your database or programming language conventions.",
+    "limitations": "UUID v4 is randomly distributed and non-sequential; for high-write B-tree database indexing where sequential insertion order is required, UUID v7 or ULID is recommended.",
+    "formula": "RFC 4122 UUID v4: xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx (where y is 8, 9, a, or b)",
+    "trustNotes": "100% Client-Side. Generated directly using window.crypto.randomUUID() in browser memory.",
+    "related": [
+      "timestamp-converter",
+      "password-generator",
+      "base64-encoder"
+    ],
+    "seo": {
+      "title": "UUID / GUID Generator — Bulk Version 4 (v4) & v1 UUID Generator",
+      "metaDescription": "Generate cryptographically secure v4 UUIDs in bulk (up to 500 at once). Customize uppercase, lowercase, hyphens, and braces. Free & client-side.",
+      "whatIsThis": "A standard RFC 4122 compliant UUID (Universally Unique Identifier) / GUID generator producing 128-bit identifiers with near-zero collision probability.",
+      "howItWorks": "1. Select UUID version (v4 Random or v1 Timestamp).\n2. Choose quantity (1 to 500).\n3. Set format preferences (hyphens, braces, uppercase/lowercase).\n4. Click 'Generate' and copy individual UUIDs or all at once.",
+      "whyUseIt": "Essential for creating primary keys in distributed databases, unique transaction IDs, session tokens, and tracking identifiers.",
+      "faqs": [
+        {
+          "question": "What is the probability of a UUID v4 collision?",
+          "answer": "The probability is virtually zero. You would need to generate 1 billion UUIDs per second for 85 years to have a 50% chance of a single collision."
+        },
+        {
+          "question": "What is the difference between a UUID and a GUID?",
+          "answer": "GUID (Globally Unique Identifier) is Microsoft's implementation of the standard UUID specification. They are functionally identical."
+        }
+      ]
+    },
+    "futureImprovements": [
+      "UUID v7 (time-ordered) support",
+      "Export as SQL INSERT or JSON array"
+    ]
+  },
+  {
+    "id": "timestamp-converter",
+    "name": "Unix Timestamp Converter",
+    "slug": "timestamp-converter",
+    "description": "Convert Unix epoch timestamps (seconds & milliseconds) to human-readable dates (UTC, Local, ISO-8601, RFC 2822) and vice versa.",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML/CSS/JS (Intl / Date APIs)",
+    "keywords": [
+      "unix timestamp converter",
+      "epoch converter",
+      "timestamp to date",
+      "epoch time",
+      "unix time",
+      "current timestamp",
+      "epoch to utc"
+    ],
+    "primaryKeywords": [
+      "unix timestamp converter",
+      "epoch to human date",
+      "convert timestamp to date",
+      "current unix timestamp"
+    ],
+    "secondaryKeywords": [
+      "milliseconds to date",
+      "epoch time calculator",
+      "iso 8601 to epoch",
+      "database timestamp converter"
+    ],
+    "targetUsers": [
+      "Developers",
+      "Data Analysts",
+      "Database Engineers",
+      "DevOps",
+      "Backend Architects"
+    ],
+    "badge": "Popular",
+    "userProblem": "Developers and data analysts debugging databases or server logs see raw numbers like `1718000000` and need to know the exact date and time.",
+    "searchIntent": "Convert a Unix timestamp (10-digit seconds or 13-digit milliseconds) to UTC, local time, and relative time, or convert a human calendar date to an epoch timestamp.",
+    "resultInterpretation": "Unix timestamp measures the continuous number of non-leap seconds elapsed since January 1, 1970 00:00:00 UTC. 10 digits = seconds; 13 digits = milliseconds.",
+    "practicalGuidance": "Click 'Use Current Timestamp' to grab the current epoch time for testing JWT expiration dates (`exp`) or setting database created_at test values.",
+    "limitations": "32-bit signed integer timestamps will overflow on January 19, 2038 (the Year 2038 problem). This tool uses 64-bit JavaScript numbers and is immune to 2038 overflow.",
+    "formula": "Epoch Milliseconds = Date.getTime(); Epoch Seconds = floor(Date.getTime() / 1000)",
+    "trustNotes": "100% Client-Side. Calculations use native browser Date and Intl time engines.",
+    "related": [
+      "uuid-generator",
+      "json-formatter",
+      "age-calculator"
+    ],
+    "seo": {
+      "title": "Unix Timestamp Converter — Epoch to Human Date & Time Calculator",
+      "metaDescription": "Convert Unix timestamps (seconds and milliseconds) to UTC and local dates, ISO-8601 strings, and relative time. Features live ticking epoch clock.",
+      "whatIsThis": "A bi-directional time converter that translates between Unix epoch timestamps (seconds elapsed since January 1, 1970 UTC) and human calendar dates.",
+      "howItWorks": "1. Paste a Unix epoch timestamp (10 digits for seconds, 13 digits for ms) OR select a calendar date.\n2. Instantly see UTC date, local time, relative time ('3 hours ago'), and ISO-8601 format.\n3. Click 'Current Time' to capture the exact live epoch timestamp.",
+      "whyUseIt": "Indispensable for debugging API payloads, database record timestamps, JWT expiration claims (`exp`), and log files.",
+      "faqs": [
+        {
+          "question": "What is the Unix Epoch?",
+          "answer": "The Unix epoch is the moment 00:00:00 UTC on January 1, 1970. All Unix timestamps measure elapsed seconds or milliseconds from this fixed point in time."
+        },
+        {
+          "question": "How do I know if my timestamp is in seconds or milliseconds?",
+          "answer": "10-digit timestamps (e.g. 1718000000) are in seconds. 13-digit timestamps (e.g. 1718000000000) are in milliseconds."
+        }
+      ]
+    },
+    "futureImprovements": [
+      "Batch timestamp list converter",
+      "Timezone comparison matrix"
+    ]
+  },
+  {
+    "id": "url-encoder",
+    "name": "URL / URI Encoder",
+    "slug": "url-encoder",
+    "description": "Encode raw strings and query parameters into standard percent-encoded URLs (encodeURI & encodeURIComponent).",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML/CSS/JS",
+    "keywords": [
+      "url encoder",
+      "uri encode",
+      "percent encoding",
+      "encode url",
+      "query string encoder",
+      "url escape",
+      "encodeuricomponent online"
+    ],
+    "primaryKeywords": [
+      "url encoder",
+      "percent encoding tool",
+      "encode uri component online",
+      "encode query string"
+    ],
+    "secondaryKeywords": [
+      "url escape special characters",
+      "spaces to %20",
+      "safe url string encoder",
+      "web parameter encoder"
+    ],
+    "targetUsers": [
+      "Developers",
+      "SEO Specialists",
+      "Webmasters",
+      "API Builders"
+    ],
+    "badge": "Essential",
+    "userProblem": "Special characters like `&`, `?`, `/`, spaces, and emojis break URL query parameters if not properly percent-encoded.",
+    "searchIntent": "Convert special characters and parameters into safe `%XX` percent-encoded format for HTTP requests and tracking links.",
+    "resultInterpretation": "Replaces non-alphanumeric and unsafe ASCII characters with a `%` followed by their hexadecimal ASCII/UTF-8 byte value (e.g. space becomes `%20`).",
+    "practicalGuidance": "Use 'Component Mode' when encoding parameter values (e.g. a search query like `c++ & python`). Use 'Full URL Mode' when encoding an entire website address without breaking the protocol and domain.",
+    "limitations": "Component encoding encodes structural characters like `/` and `?`. Do not use Component Mode on full domain URLs.",
+    "formula": "RFC 3986 Uniform Resource Identifier (URI): Percent-Encoding Specification",
+    "trustNotes": "100% Client-Side. No URL tracking or external logging.",
+    "related": [
+      "url-decoder",
+      "base64-encoder",
+      "json-formatter"
+    ],
+    "seo": {
+      "title": "URL Encoder — Free Online Percent-Encoding & URI Converter",
+      "metaDescription": "Percent-encode URLs, special characters, and query strings. Choose between full URL encoding and component parameter encoding.",
+      "whatIsThis": "A standard URL percent-encoding tool that replaces unsafe ASCII and non-ASCII characters with `%XX` hex escape sequences for safe web transmission.",
+      "howItWorks": "1. Paste your raw URL or query parameter string.\n2. Choose 'Component Mode' (for parameter values like names, search queries) or 'Full URL Mode'.\n3. Copy the encoded result.",
+      "whyUseIt": "Prevents broken links and server query parse errors when passing spaces, ampersands (`&`), question marks (`?`), and international characters into web URLs.",
+      "faqs": [
+        {
+          "question": "What is the difference between encodeURI and encodeURIComponent?",
+          "answer": "`encodeURI` preserves valid URL structural characters like `:`, `/`, `?`, and `#`. `encodeURIComponent` encodes everything except alphanumeric characters and `- _ . ! ~ * ' ()`."
+        },
+        {
+          "question": "Why do spaces become %20 or +?",
+          "answer": "In standard URI percent-encoding, spaces are encoded as `%20`. In `application/x-www-form-urlencoded` query strings, spaces can also be represented as `+`."
+        }
+      ]
+    },
+    "futureImprovements": [
+      "Bulk URL list encoder",
+      "Query string builder table"
+    ]
+  },
+  {
+    "id": "url-decoder",
+    "name": "URL / URI Decoder & Query Parser",
+    "slug": "url-decoder",
+    "description": "Decode percent-encoded URLs and query parameters into readable text with structured breakdown of protocol, host, path, and query arguments.",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML/CSS/JS (URL API)",
+    "keywords": [
+      "url decoder",
+      "decode url",
+      "percent decoding",
+      "url unescape",
+      "parse query string",
+      "url parameter parser",
+      "utm parser"
+    ],
+    "primaryKeywords": [
+      "url decoder",
+      "decode percent encoded url",
+      "url parameter parser",
+      "utm tag parser"
+    ],
+    "secondaryKeywords": [
+      "decode %20 to space",
+      "query string decoder",
+      "url unescape tool",
+      "parse tracking link"
+    ],
+    "targetUsers": [
+      "Developers",
+      "Digital Marketers",
+      "SEO Specialists",
+      "Data Analysts"
+    ],
+    "badge": "Essential",
+    "userProblem": "Users encountering percent-encoded tracking links or webhook URLs need to read the parameters and understand what data is being passed.",
+    "searchIntent": "Convert percent-encoded `%20`, `%26`, and UTF-8 escape sequences back into clean text and inspect query parameters in a table.",
+    "resultInterpretation": "Restores original text characters and parses the URL into Origin, Pathname, and an itemized key-value parameter table.",
+    "practicalGuidance": "Paste marketing campaign links to quickly inspect and verify `utm_source`, `utm_medium`, and `utm_campaign` values before launching ads.",
+    "limitations": "Malformed percent sequences (e.g. `%` followed by non-hex characters) are decoded gracefully where possible.",
+    "formula": "RFC 3986 URI Percent-Decoding: %XX -> Hex Byte -> UTF-8 Character",
+    "trustNotes": "100% Client-Side. Links and tracking parameters are never transmitted or recorded.",
+    "related": [
+      "url-encoder",
+      "base64-decoder",
+      "json-formatter"
+    ],
+    "seo": {
+      "title": "URL Decoder & Query Parameter Parser — Decode %20 & URLs Online",
+      "metaDescription": "Decode percent-encoded URLs (%20, %26, etc.) into clean human-readable text and inspect query parameters in an organized key-value table.",
+      "whatIsThis": "A URL decoder that converts percent-encoded strings back into normal text while breaking complex URLs into structured components (Origin, Path, UTM Parameters).",
+      "howItWorks": "1. Paste your encoded URL or string.\n2. Click 'Decode' to get the clean plain text.\n3. View a structured table breakdown of all query parameters (UTMs, IDs, tokens).",
+      "whyUseIt": "Quickly inspect marketing tracking links (UTM codes), deep links, OAuth redirect URLs, and debug server webhook query strings.",
+      "faqs": [
+        {
+          "question": "Does it automatically handle both %20 and + as spaces?",
+          "answer": "Yes, our decoder handles both standard percent-encoded `%20` and form-encoded `+` spaces seamlessly."
+        },
+        {
+          "question": "Can I copy individual query parameter values?",
+          "answer": "Yes, the parsed query parameters table includes 1-click copy buttons for every key and value."
+        }
+      ]
+    },
+    "futureImprovements": [
+      "UTM Campaign builder integration",
+      "Export query parameters as JSON"
+    ]
+  },
+  {
+    "id": "qr-code-generator",
+    "name": "QR Code Generator",
+    "slug": "qr-code-generator",
+    "description": "Create customizable, high-resolution QR codes for URLs, plain text, WiFi access, vCards, emails, SMS, and phone numbers with PNG & SVG export.",
+    "category": "business",
+    "type": "Interactive Builder",
+    "technology": "HTML5 Canvas / SVG QR Engine",
+    "keywords": [
+      "qr code generator",
+      "create qr code",
+      "free qr code",
+      "wifi qr code",
+      "vcard qr code",
+      "custom qr code",
+      "permanent qr code"
+    ],
+    "primaryKeywords": [
+      "qr code generator",
+      "create free qr code",
+      "wifi qr code generator",
+      "permanent qr code no expiration"
+    ],
+    "secondaryKeywords": [
+      "high resolution qr code download",
+      "vcard qr code creator",
+      "custom color qr code",
+      "restaurant menu qr code"
+    ],
+    "targetUsers": [
+      "Business Owners",
+      "Marketers",
+      "Restaurants",
+      "Event Planners",
+      "IT Admins",
+      "Print Designers"
+    ],
+    "badge": "Popular",
+    "userProblem": "Businesses and individuals need crisp, scannable QR codes that never expire, have no watermarks, and do not route through paid third-party redirect middle-men.",
+    "searchIntent": "Generate static QR codes for websites, guest WiFi credentials, contact cards, or text and download in high-resolution PNG for printing.",
+    "resultInterpretation": "Encodes data directly into a 2D matrix barcode (Static QR). Because there is no intermediary redirect server, the QR code functions permanently for life.",
+    "practicalGuidance": "For printed flyers and menus, follow the 10:1 distance-to-size rule: if scanned from 1 meter (40 inches) away, the printed QR code should be at least 10 cm (4 inches) wide. Always test scan with both iOS and Android cameras before printing.",
+    "limitations": "Static QR codes encode the data directly into the matrix; once printed, the destination URL cannot be changed without reprinting.",
+    "formula": "ISO/IEC 18004 QR Barcode Specification with Reed-Solomon Error Correction",
+    "trustNotes": "100% Client-Side. No URL redirection, no expiration timers, no tracking scripts, and no subscription paywalls.",
+    "related": [
+      "email-signature-generator",
+      "invoice-generator",
+      "business-name-generator"
+    ],
+    "seo": {
+      "title": "QR Code Generator — Free, High-Resolution QR Codes with PNG & SVG Download",
+      "metaDescription": "Generate high-res QR codes for websites, WiFi logins, vCard contact cards, email, and text. Custom colors, sizes, and instant free vector/PNG download.",
+      "whatIsThis": "A clean, private QR code generator that creates crisp, scannable QR codes on the fly directly in your browser without watermarks or expiration dates.",
+      "howItWorks": "1. Select data type (Website URL, WiFi credentials, vCard, Plain Text, Email).\n2. Enter your details and customize colors/margin/error correction level.\n3. Instantly download as PNG or vector SVG.",
+      "whyUseIt": "Unlike commercial QR generators that lock your codes behind paid redirects or expire after 14 days, UTL.tools creates permanent, static QR codes that never expire.",
+      "faqs": [
+        {
+          "question": "Do these QR codes ever expire?",
+          "answer": "Never. The data is encoded directly into the QR pattern itself (static QR code). As long as your destination link exists, the QR code will work forever."
+        },
+        {
+          "question": "Can I create a WiFi QR code for guests?",
+          "answer": "Yes! Select the 'WiFi' tab, enter your network SSID and password, and guests can scan the QR code to connect automatically without typing passwords."
+        }
+      ]
+    },
+    "futureImprovements": [
+      "Logo / Image embed in center of QR code",
+      "Custom dot corner styles"
+    ]
+  },
+  {
+    "id": "email-signature-generator",
+    "name": "Email Signature Generator",
+    "slug": "email-signature-generator",
+    "description": "Design professional, modern HTML email signatures with live preview and 1-click rich-text copy for Gmail, Outlook, and Apple Mail.",
+    "category": "business",
+    "type": "Interactive Builder",
+    "technology": "HTML / Inline CSS Builder",
+    "keywords": [
+      "email signature generator",
+      "html email signature",
+      "gmail signature",
+      "outlook signature",
+      "professional signature",
+      "free signature generator"
+    ],
+    "primaryKeywords": [
+      "email signature generator",
+      "free html email signature",
+      "gmail signature generator",
+      "outlook signature creator"
+    ],
+    "secondaryKeywords": [
+      "professional email footer",
+      "signature with photo and phone",
+      "clean email signature builder",
+      "copy rich text signature"
+    ],
+    "targetUsers": [
+      "Professionals",
+      "Sales Teams",
+      "Founders",
+      "Freelancers",
+      "Job Seekers",
+      "Consultants"
+    ],
+    "badge": "Popular",
+    "userProblem": "Professionals need a clean, responsive email signature that looks crisp across Gmail, Outlook, and Apple Mail without broken table layouts or spam flags.",
+    "searchIntent": "Enter contact details, job title, avatar photo, and brand color to generate a cross-client compatible HTML signature and paste directly into email settings.",
+    "resultInterpretation": "Generates standard nested HTML tables with inline CSS formatting. Inline styling ensures email clients render borders, avatar radius, and link typography consistently.",
+    "practicalGuidance": "Use 'Copy for Gmail/Outlook' to copy rich formatted text directly into your clipboard, open your email client settings, and paste (Ctrl+V / Cmd+V) directly into the signature box.",
+    "limitations": "Avatar and logo images must be hosted on public HTTPS URLs (e.g. your website or a cloud CDN) so email recipients' mail clients can download them.",
+    "formula": "HTML Table Email Standard: Inline CSS Table with Fallback MSO Styles",
+    "trustNotes": "100% Client-Side. Contact details are never stored or harvested.",
+    "related": [
+      "invoice-generator",
+      "qr-code-generator",
+      "business-name-generator"
+    ],
+    "seo": {
+      "title": "Email Signature Generator — Free Professional HTML Signatures",
+      "metaDescription": "Create clean, responsive HTML email signatures for Gmail, Outlook, Apple Mail. Add avatars, social links, phone, and copy formatted rich text instantly.",
+      "whatIsThis": "A client-side signature designer that generates email-client-friendly HTML tables with inline styling that render consistently across all major email clients.",
+      "howItWorks": "1. Fill in your name, job title, company, phone, email, website, and avatar URL.\n2. Choose a template theme and brand accent color.\n3. Click 'Copy Signature' and paste directly into your email client settings.",
+      "whyUseIt": "Creates a polished corporate impression, standardizes team communication, and avoids email spam filters by using clean HTML without bloatware tracking scripts.",
+      "faqs": [
+        {
+          "question": "How do I paste this signature into Gmail?",
+          "answer": "In Gmail, go to Settings (Gear icon) -> See all settings -> General -> Signature. Click 'Copy Rich Signature' in our tool, and paste directly into the Gmail signature box."
+        },
+        {
+          "question": "Will images like my photo or company logo work?",
+          "answer": "Yes, provide any publicly accessible image URL (e.g. hosted on your website or Imgur/Cloudinary) and it will display seamlessly in your signature."
+        }
+      ]
+    },
+    "futureImprovements": [
+      "Preset social media icon selector",
+      "Custom banner / CTA button module"
+    ]
+  },
+  {
+    "id": "business-name-generator",
+    "name": "Business & Startup Name Generator",
+    "slug": "business-name-generator",
+    "description": "Generate creative, brandable business, startup, and project names by industry, style, and keywords with instant domain search links.",
+    "category": "business",
+    "type": "Static Utility",
+    "technology": "HTML/CSS/JS",
+    "keywords": [
+      "business name generator",
+      "startup name generator",
+      "company name generator",
+      "brand name generator",
+      "domain name ideas",
+      "name maker"
+    ],
+    "primaryKeywords": [
+      "business name generator",
+      "startup name generator",
+      "company name ideas",
+      "brand name generator"
+    ],
+    "secondaryKeywords": [
+      "tech startup names",
+      "saas business naming tool",
+      "domain availability search",
+      "creative agency name ideas"
+    ],
+    "targetUsers": [
+      "Entrepreneurs",
+      "Indie Hackers",
+      "Founders",
+      "Product Managers",
+      "Domain Investors"
+    ],
+    "badge": "Productivity",
+    "userProblem": "Founders launching a new product or business suffer from naming block and need memorable, brandable candidates with quick domain lookup.",
+    "searchIntent": "Input a seed concept (e.g. 'Pay', 'Cloud', 'Flow') and generate categorized name ideas across SaaS, Modern, Corporate, and Creative styles.",
+    "resultInterpretation": "Generates 12 categorized, phonetically appealing name candidates blending linguistic root words, thematic affixes, and modern startup naming conventions.",
+    "practicalGuidance": "Click the external link icon next to any generated name to check `.com` WHOIS registration status immediately on DomainTools.",
+    "limitations": "Names are generated algorithmically. Founders should perform a national trademark check (e.g. USPTO / WIPO) before finalizing incorporation.",
+    "formula": "Semantic Name Morphing: [Industry Prefix] + [Root Concept] + [Brand Suffix]",
+    "trustNotes": "100% Client-Side. Your startup ideas and keywords are never sent to domain registrars or front-running bots.",
+    "related": [
+      "username-generator",
+      "qr-code-generator",
+      "invoice-generator"
+    ],
+    "seo": {
+      "title": "Business Name Generator — Brandable Startup & Company Names",
+      "metaDescription": "Generate hundreds of catchy, modern company names based on your keywords, industry, and style. Includes direct domain lookup links.",
+      "whatIsThis": "A name ideation engine combining semantic prefixing, linguistic blending, suffixes, and industry lexicons to generate brandable business names.",
+      "howItWorks": "1. Enter 1 or 2 keywords describing your concept (e.g. 'cloud', 'pay', 'flow').\n2. Select an industry style (Tech/SaaS, Modern/Short, Classic/Corporate, Creative).\n3. Browse generated names and click any name to verify domain availability.",
+      "whyUseIt": "Overcome naming block and find short, punchy, memorable names that stand out in crowded marketplaces.",
+      "faqs": [
+        {
+          "question": "Are these generated names trademarked?",
+          "answer": "Names are generated algorithmically. We recommend doing a quick trademark search in your local jurisdiction (e.g. USPTO) before finalizing branding."
+        }
+      ]
+    },
+    "futureImprovements": [
+      "Direct WHOIS / DNS availability checker",
+      "Tagline generator integration"
+    ]
+  },
+  {
+    "id": "invoice-generator",
+    "name": "Free Online Invoice Generator",
+    "slug": "invoice-generator",
+    "description": "Create, customize, and download clean, professional PDF invoices directly in your browser with currency, tax, and discount calculations.",
+    "category": "business",
+    "type": "Interactive Builder",
+    "technology": "HTML / CSS Print Engine / Canvas",
+    "keywords": [
+      "invoice generator",
+      "free invoice creator",
+      "pdf invoice maker",
+      "freelance invoice",
+      "create invoice online",
+      "simple invoice",
+      "printable invoice"
+    ],
+    "primaryKeywords": [
+      "free invoice generator",
+      "create invoice online",
+      "pdf invoice maker",
+      "freelancer invoice template"
+    ],
+    "secondaryKeywords": [
+      "printable tax invoice",
+      "simple invoice builder",
+      "client side invoice generator no signup",
+      "download invoice pdf"
+    ],
+    "targetUsers": [
+      "Freelancers",
+      "Contractors",
+      "Small Business Owners",
+      "Consultants",
+      "Agencies"
+    ],
+    "badge": "Popular",
+    "userProblem": "Freelancers and contractors need to issue clean, professional invoices to clients immediately without paying recurring SaaS subscription fees.",
+    "searchIntent": "Fill in client details, add itemized billable rows, apply tax/discounts, and export a clean PDF invoice with zero watermarks or registration walls.",
+    "resultInterpretation": "Calculates line item totals (Quantity * Rate), subtotal, percentage sales tax, discounts, and final balance due with standard accounting formatting.",
+    "practicalGuidance": "Click 'Print / Save as PDF'. In your browser print dialog, choose 'Save as PDF' and check 'Background graphics' for a clean invoice document.",
+    "limitations": "Runs entirely in active browser memory. Ensure you save your PDF export before navigating away, as data resets upon closing the tab.",
+    "formula": "Total = Subtotal + ((Subtotal × TaxRate) / 100) - Discount",
+    "trustNotes": "100% Private Client-Side Tool. Your financial transactions, rates, client names, and invoice totals NEVER touch any server.",
+    "related": [
+      "email-signature-generator",
+      "percentage-calculator",
+      "qr-code-generator"
+    ],
+    "seo": {
+      "title": "Free Invoice Generator — Create & Download Professional PDF Invoices",
+      "metaDescription": "Create clean, printable invoices in seconds. Add line items, taxes, discounts, logos, and payment terms. 100% private, client-side, zero signup.",
+      "whatIsThis": "A comprehensive invoice builder that runs entirely in your browser, calculating itemized subtotals, sales tax, discounts, and generating print-ready PDF invoices.",
+      "howItWorks": "1. Enter your business name, client details, and invoice number.\n2. Add line items with quantities and unit prices.\n3. Configure tax percentage, discounts, and payment terms.\n4. Click 'Print / Save as PDF' for a spotless professional document.",
+      "whyUseIt": "No monthly subscription fees, no watermarks, no account registration required, and complete privacy for you and your clients' financial data.",
+      "faqs": [
+        {
+          "question": "Is my client and financial data stored on your servers?",
+          "answer": "No. Everything runs strictly in your browser's local memory. None of your invoices or client information are ever saved or uploaded anywhere."
+        },
+        {
+          "question": "Can I change the currency symbol?",
+          "answer": "Yes, select from USD ($), EUR (€), GBP (£), JPY (¥), CAD, AUD, INR (₹), or enter any custom currency code."
+        }
+      ]
+    },
+    "futureImprovements": [
+      "Save invoice templates to local storage",
+      "Multi-page item overflow handling"
+    ]
+  },
+  {
+    "id": "percentage-calculator",
+    "name": "Percentage Calculator",
+    "slug": "percentage-calculator",
+    "description": "Calculate percentages, percentage increases/decreases, percentage differences, and fractions with step-by-step math explanations.",
+    "category": "finance",
+    "type": "Calculator",
+    "technology": "HTML/CSS/JS (High Precision Math)",
+    "keywords": [
+      "percentage calculator",
+      "calculate percent",
+      "percent increase",
+      "percent decrease",
+      "percentage difference",
+      "what is x percent of y",
+      "percentage change"
+    ],
+    "primaryKeywords": [
+      "percentage calculator",
+      "how to calculate percentage",
+      "what is x percent of y",
+      "percentage increase calculator"
+    ],
+    "secondaryKeywords": [
+      "percent decrease formula",
+      "percentage change calculator",
+      "percentage difference between two numbers",
+      "math percentage tool"
+    ],
+    "targetUsers": [
+      "Students",
+      "Shoppers",
+      "Accountants",
+      "Business Owners",
+      "Teachers",
+      "Investors"
+    ],
+    "badge": "Popular",
+    "userProblem": "Users need to solve everyday percentage questions (discounts, tip amounts, revenue growth, markups) without making manual arithmetic errors.",
+    "searchIntent": "Instantly calculate percentage of a number, percentage change from X to Y, or apply percentage adjustments with clear formula steps.",
+    "resultInterpretation": "Calculates exact percentage values and relative change. Positive percentage change reflects growth; negative percentage change indicates reduction.",
+    "practicalGuidance": "Use Scenario 3 (From X to Y) to measure month-over-month business revenue growth or stock price changes.",
+    "limitations": "Percentage change requires a non-zero starting base (division by zero is undefined).",
+    "formula": "Percent of Value: (X / 100) × Y; Percent Change: ((Y - X) / X) × 100",
+    "trustNotes": "100% Client-Side. Calculations execute synchronously using high-precision JavaScript arithmetic.",
+    "related": [
+      "discount-calculator",
+      "compound-interest-calculator",
+      "loan-calculator"
+    ],
+    "seo": {
+      "title": "Percentage Calculator — Fast, Multi-Mode Percent & Change Calculator",
+      "metaDescription": "Calculate percentage of a number, percentage increase/decrease, percentage difference, and conversions. Instant results with clear formula breakdowns.",
+      "whatIsThis": "An all-in-one percentage calculation suite solving common percentage formulas in real time with interactive inputs and mathematical explanations.",
+      "howItWorks": "Select your scenario:\n- What is X% of Y?\n- X is what percent of Y?\n- What is the percentage change from X to Y?\n- Increase/Decrease X by Y%.\nValues calculate instantly as you type.",
+      "whyUseIt": "Solves day-to-day math dilemmas without mental gymnastics—from calculating tip percentages to analyzing business revenue growth.",
+      "faqs": [
+        {
+          "question": "How do you calculate percentage increase?",
+          "answer": "Percentage Increase = ((New Value - Old Value) / Old Value) * 100. For example, from 50 to 75 is a 50% increase."
+        },
+        {
+          "question": "What is the difference between percentage change and percentage difference?",
+          "answer": "Percentage change measures the relative change from an initial value to a final value. Percentage difference compares two values where neither is considered the base."
+        }
+      ]
+    },
+    "futureImprovements": [
+      "Fraction to percentage visual pie representation",
+      "Step-by-step formula math breakdown"
+    ]
+  },
+  {
+    "id": "compound-interest-calculator",
+    "name": "Compound Interest Calculator",
+    "slug": "compound-interest-calculator",
+    "description": "Calculate future investment growth with compound interest, regular monthly/annual contributions, and detailed year-by-year tables.",
+    "category": "finance",
+    "type": "Calculator",
+    "technology": "HTML/CSS/JS (Financial Math Engine)",
+    "keywords": [
+      "compound interest calculator",
+      "investment calculator",
+      "future value",
+      "interest compounding",
+      "savings growth",
+      "roi calculator",
+      "retirement calculator"
+    ],
+    "primaryKeywords": [
+      "compound interest calculator",
+      "investment growth calculator",
+      "future value calculator",
+      "compound savings calculator"
+    ],
+    "secondaryKeywords": [
+      "monthly contribution interest calculator",
+      "rule of 72 calculator",
+      "401k compound growth",
+      "annual return calculator"
+    ],
+    "targetUsers": [
+      "Investors",
+      "Retirement Planners",
+      "Students",
+      "Savers",
+      "Financial Advisors"
+    ],
+    "badge": "Popular",
+    "userProblem": "Savers and investors need to forecast long-term wealth accumulation by visualizing how monthly contributions and compounding returns grow exponentially over time.",
+    "searchIntent": "Input starting balance, monthly deposit, expected interest rate, and years to compute total future portfolio balance and total interest earned.",
+    "resultInterpretation": "Distinguishes between total principal invested (your out-of-pocket deposits) and pure interest earned. Demonstrates the tipping point where annual compound interest surpasses annual contributions.",
+    "practicalGuidance": "Use the Rule of 72 (72 / Annual Rate) for quick mental estimates of when your investment doubles. Notice how extending time from 10 to 20 years more than triples total accumulated interest.",
+    "limitations": "Assumes a constant annualized rate of return without market volatility, inflation adjustments, dividend taxation, or management fees.",
+    "formula": "Future Value with Regular Deposits: FV = P(1 + r/n)^(nt) + PMT × [((1 + r/n)^(nt) - 1) / (r/n)]",
+    "trustNotes": "100% Client-Side. Financial plans and dollar amounts are completely private and never logged.",
+    "related": [
+      "loan-calculator",
+      "percentage-calculator",
+      "discount-calculator"
+    ],
+    "seo": {
+      "title": "Compound Interest Calculator — Investment & Savings Growth Planner",
+      "metaDescription": "Forecast investment returns with compound interest, recurring monthly contributions, and compounding frequencies (daily, monthly, annually).",
+      "whatIsThis": "A financial projection calculator demonstrating the exponential power of compounding interest over time with regular deposit schedules.",
+      "howItWorks": "1. Enter Initial Principal (starting balance).\n2. Add Regular Contribution amount and frequency.\n3. Input estimated Annual Interest Rate (ROI %) and Investment Horizon (years).\n4. View total interest earned, principal invested, and final balance breakdown.",
+      "whyUseIt": "Helps you visualize retirement savings trajectories (401k, IRA, Index Funds) and understand the impact of time and contribution consistency on wealth building.",
+      "faqs": [
+        {
+          "question": "What is the Rule of 72?",
+          "answer": "The Rule of 72 is a quick mental math shortcut: divide 72 by your annual interest rate to estimate how many years it will take for your investment to double."
+        },
+        {
+          "question": "How does compounding frequency affect total return?",
+          "answer": "More frequent compounding (e.g. daily vs annually) yields slightly higher returns because accrued interest begins earning interest sooner."
+        }
+      ]
+    },
+    "futureImprovements": [
+      "Interactive SVG growth chart visualizer",
+      "Inflation adjustment toggle"
+    ]
+  },
+  {
+    "id": "loan-calculator",
+    "name": "Loan & Mortgage Calculator",
+    "slug": "loan-calculator",
+    "description": "Calculate monthly loan payments, total interest costs, and full amortization payoff schedules for mortgages, auto loans, and personal loans.",
+    "category": "finance",
+    "type": "Calculator",
+    "technology": "HTML/CSS/JS (Amortization Engine)",
+    "keywords": [
+      "loan calculator",
+      "mortgage calculator",
+      "monthly payment calculator",
+      "amortization schedule",
+      "car loan calculator",
+      "interest calculator",
+      "auto loan"
+    ],
+    "primaryKeywords": [
+      "loan calculator",
+      "mortgage payment calculator",
+      "auto loan calculator",
+      "amortization schedule calculator"
+    ],
+    "secondaryKeywords": [
+      "calculate monthly loan payment",
+      "total loan interest calculator",
+      "15 vs 30 year mortgage",
+      "car finance payment"
+    ],
+    "targetUsers": [
+      "Homebuyers",
+      "Car Buyers",
+      "Borrowers",
+      "Financial Advisors",
+      "Real Estate Investors"
+    ],
+    "badge": "Popular",
+    "userProblem": "Borrowers need to know their exact monthly installment payments and total interest expenses before committing to mortgages or auto financing.",
+    "searchIntent": "Input loan amount, annual interest rate, and term length in years to calculate monthly payments and view year-by-year amortization.",
+    "resultInterpretation": "Calculates monthly principal and interest payment. The amortization schedule illustrates how early loan payments consist heavily of interest, while later payments pay off principal.",
+    "practicalGuidance": "Compare 15-year vs 30-year terms: while 15-year loans have higher monthly payments, they drastically cut total interest paid over the life of the loan (often saving $100k+ on mortgages).",
+    "limitations": "Calculates standard fixed-rate amortizing loans. Does not include property taxes, homeowners insurance (PITI), HOA dues, or private mortgage insurance (PMI).",
+    "formula": "Standard Amortization: M = P × [r(1 + r)^n] / [(1 + r)^n - 1]",
+    "trustNotes": "100% Client-Side. Calculations run locally; your financial amounts are never collected.",
+    "related": [
+      "compound-interest-calculator",
+      "percentage-calculator",
+      "discount-calculator"
+    ],
+    "seo": {
+      "title": "Loan & Mortgage Calculator — Monthly Payment & Amortization Schedule",
+      "metaDescription": "Calculate exact monthly loan payments, total interest paid, and explore a full year-by-year amortization schedule for home or auto loans.",
+      "whatIsThis": "A standard financial amortization engine that computes monthly installment payments, principal reduction, and interest allocation over the life of a loan.",
+      "howItWorks": "1. Enter the total Loan Amount ($).\n2. Input the Annual Interest Rate (%).\n3. Select Loan Term in Years or Months.\n4. Review the monthly payment, total interest, and interactive amortization schedule.",
+      "whyUseIt": "Understand the true cost of borrowing before signing loan agreements, compare 15-year vs 30-year mortgages, and plan early payoff strategies.",
+      "faqs": [
+        {
+          "question": "What is amortization?",
+          "answer": "Amortization is the process of spreading out a loan into a series of equal periodic payments. Early payments consist mostly of interest, while later payments pay off primarily principal."
+        },
+        {
+          "question": "How do extra payments reduce total interest?",
+          "answer": "Making extra payments directly reduces the outstanding principal balance, reducing the base on which future interest is calculated."
+        }
+      ]
+    },
+    "futureImprovements": [
+      "Extra monthly payment payoff accelerator simulator",
+      "Bi-weekly payment frequency option"
+    ]
+  },
+  {
+    "id": "discount-calculator",
+    "name": "Discount & Sale Price Calculator",
+    "slug": "discount-calculator",
+    "description": "Calculate final sale prices, total savings, stacked coupon discounts, and local sales tax in one simple step.",
+    "category": "finance",
+    "type": "Calculator",
+    "technology": "HTML/CSS/JS",
+    "keywords": [
+      "discount calculator",
+      "sale price calculator",
+      "shopping discount",
+      "percentage off",
+      "coupon calculator",
+      "tax and discount",
+      "price markdown"
+    ],
+    "primaryKeywords": [
+      "discount calculator",
+      "sale price calculator",
+      "calculate discount percentage",
+      "percent off calculator"
+    ],
+    "secondaryKeywords": [
+      "stacked coupon calculator",
+      "discount with sales tax",
+      "black friday discount calculator",
+      "final checkout price"
+    ],
+    "targetUsers": [
+      "Shoppers",
+      "Retailers",
+      "E-commerce Managers",
+      "Deal Hunters",
+      "Budgeters"
+    ],
+    "badge": "Essential",
+    "userProblem": "Shoppers and retailers need to quickly calculate what an item costs after sales discounts, secondary coupons, and local sales taxes are applied.",
+    "searchIntent": "Enter original price, discount percentage, secondary coupon %, and sales tax % to determine final checkout price and total dollars saved.",
+    "resultInterpretation": "Calculates the effective markdown. Double stacked discounts (e.g. 20% off + 10% coupon) apply sequentially (Total 28% off), not additively.",
+    "practicalGuidance": "Use this tool while shopping during sales events to see your true total checkout cost including sales tax.",
+    "limitations": "Assumes standard sequential compounding for stacked coupons (Coupon applies to already-discounted price).",
+    "formula": "Price After Discounts = Original × (1 - D1) × (1 - D2); Final = Price After Discounts × (1 + Tax)",
+    "trustNotes": "100% Client-Side. Fast calculation with zero data storage.",
+    "related": [
+      "percentage-calculator",
+      "invoice-generator",
+      "loan-calculator"
+    ],
+    "seo": {
+      "title": "Discount Calculator — Calculate Sale Price, Savings & Sales Tax",
+      "metaDescription": "Calculate final discount prices, stacked double discounts (e.g. 30% off + 15% coupon), and apply sales tax effortlessly while shopping.",
+      "whatIsThis": "A practical shopping calculator that computes discounted item prices, total money saved, and the final checkout amount including local sales tax.",
+      "howItWorks": "1. Enter Original Price.\n2. Enter Discount Percentage (e.g. 25% off).\n3. Optionally add a Secondary Coupon % and Sales Tax %.\n4. Instantly see your Final Price and Total Savings.",
+      "whyUseIt": "Never wonder 'how much is this item on sale?' while walking through store aisles or shopping during Black Friday / Cyber Monday sales.",
+      "faqs": [
+        {
+          "question": "How do stacked discounts work?",
+          "answer": "Stacked discounts apply sequentially, not additively. A 20% off sale plus an extra 10% coupon equals a total discount of 28% off the original price, not 30%."
+        }
+      ]
+    },
+    "futureImprovements": [
+      "'Buy X Get Y Free' scenario calculator",
+      "Currency conversion toggle"
+    ]
+  },
+  {
+    "id": "bmi-calculator",
+    "name": "BMI Calculator (Body Mass Index)",
+    "slug": "bmi-calculator",
+    "description": "Calculate Body Mass Index (BMI) using metric or imperial units with World Health Organization (WHO) weight categories and healthy ranges.",
+    "category": "health",
+    "type": "Calculator",
+    "technology": "HTML/CSS/JS (WHO Health Standard)",
+    "keywords": [
+      "bmi calculator",
+      "body mass index",
+      "calculate bmi",
+      "ideal weight calculator",
+      "health metrics",
+      "weight category",
+      "who bmi chart"
+    ],
+    "primaryKeywords": [
+      "bmi calculator",
+      "body mass index calculator",
+      "calculate my bmi",
+      "bmi formula metric imperial"
+    ],
+    "secondaryKeywords": [
+      "healthy weight range calculator",
+      "who bmi categories",
+      "underweight normal overweight obese",
+      "adult bmi chart"
+    ],
+    "targetUsers": [
+      "Fitness Enthusiasts",
+      "Health Conscious Individuals",
+      "Coaches",
+      "Personal Trainers",
+      "Students"
+    ],
+    "badge": "Popular",
+    "userProblem": "Individuals want to evaluate where their body weight falls relative to height according to standardized World Health Organization (WHO) brackets.",
+    "searchIntent": "Input height and weight (in cm/kg or ft/lbs) to calculate BMI score, view the WHO category gauge, and check healthy target weight boundaries.",
+    "resultInterpretation": "< 18.5 = Underweight; 18.5–24.9 = Normal / Healthy weight; 25.0–29.9 = Overweight; ≥ 30.0 = Obese.",
+    "practicalGuidance": "Use BMI as a general baseline screening index. For comprehensive fitness assessments, combine BMI with body fat percentage and waist-to-height ratio measurements.",
+    "limitations": "IMPORTANT: BMI is a population statistical index. It does NOT distinguish between muscle mass, bone density, and body fat. Athletes, bodybuilders, pregnant women, and the elderly may have skewed BMI classifications.",
+    "formula": "Metric: BMI = weight (kg) / [height (m)]²; Imperial: BMI = [weight (lbs) / height (in)²] × 703",
+    "trustNotes": "100% Client-Side. No personal health information or biometric data is ever collected or transmitted.",
+    "related": [
+      "water-intake-calculator",
+      "age-calculator",
+      "percentage-calculator"
+    ],
+    "seo": {
+      "title": "BMI Calculator — Calculate Body Mass Index (Metric & Imperial)",
+      "metaDescription": "Calculate your Body Mass Index (BMI) instantly. See where you fall on the WHO health spectrum (Underweight, Normal, Overweight, Obese) and healthy weight targets.",
+      "whatIsThis": "A standard Body Mass Index (BMI) assessment tool based on World Health Organization formulas comparing body weight to height.",
+      "howItWorks": "1. Select Metric (cm/kg) or Imperial (feet/inches/lbs).\n2. Input your Height and Weight.\n3. Instantly see your BMI score, visual health category gauge, and ideal healthy weight range.",
+      "whyUseIt": "Serves as a general screening tool to evaluate whether body weight is in a healthy proportion to height.",
+      "faqs": [
+        {
+          "question": "What is considered a healthy BMI range?",
+          "answer": "According to the WHO: Underweight is < 18.5, Normal/Healthy weight is 18.5 to 24.9, Overweight is 25.0 to 29.9, and Obese is 30.0 or higher."
+        },
+        {
+          "question": "Does BMI account for muscle mass?",
+          "answer": "BMI does not distinguish between muscle mass, bone density, and body fat. Athletes with high muscle mass may have a high BMI despite low body fat."
+        }
+      ]
+    },
+    "futureImprovements": [
+      "Waist-to-Height Ratio (WHtR) calculation",
+      "Body Fat % US Navy estimator"
+    ]
+  },
+  {
+    "id": "age-calculator",
+    "name": "Chronological Age Calculator",
+    "slug": "age-calculator",
+    "description": "Calculate your exact age in years, months, weeks, days, hours, minutes, and seconds with next birthday countdown.",
+    "category": "health",
+    "type": "Calculator",
+    "technology": "HTML/CSS/JS (Calendar Precision Engine)",
+    "keywords": [
+      "age calculator",
+      "calculate age",
+      "how old am i",
+      "exact age",
+      "birthday countdown",
+      "date difference",
+      "chronological age"
+    ],
+    "primaryKeywords": [
+      "age calculator",
+      "how old am i",
+      "exact age calculator",
+      "calculate age from date of birth"
+    ],
+    "secondaryKeywords": [
+      "birthday countdown online",
+      "total days lived calculator",
+      "day of week born",
+      "chronological age in months days"
+    ],
+    "targetUsers": [
+      "Everyone",
+      "HR Managers verifying age",
+      "Parents tracking baby milestones",
+      "Retirement Planners"
+    ],
+    "badge": "Popular",
+    "userProblem": "Users need to calculate exact chronological age in years, months, and days for legal documents, medical forms, or milestones.",
+    "searchIntent": "Select date of birth and target date to compute exact age breakdown, day of week born, and days remaining until next birthday.",
+    "resultInterpretation": "Calculates exact elapsed calendar intervals, accounting for leap years and varying month lengths (28, 30, 31 days).",
+    "practicalGuidance": "Use for verifying age thresholds on official applications, tracking infant age in months and days, or calculating wedding anniversary milestones.",
+    "limitations": "Calculates standard Gregorian calendar date intervals.",
+    "formula": "Calendar Date Math: Exact Year/Month/Day interval + Leap Year modulus accounting",
+    "trustNotes": "100% Client-Side. Birth dates are computed locally and never saved.",
+    "related": [
+      "timestamp-converter",
+      "water-intake-calculator",
+      "bmi-calculator"
+    ],
+    "seo": {
+      "title": "Age Calculator — Exact Chronological Age & Birthday Countdown",
+      "metaDescription": "Calculate exact age down to years, months, days, hours, and seconds. Discover total days lived, day of the week you were born, and next birthday countdown.",
+      "whatIsThis": "A calendar calculation engine that accurately measures elapsed time between your date of birth and any target date, accounting for leap years.",
+      "howItWorks": "1. Pick your Date of Birth.\n2. Choose a reference date (defaults to today).\n3. View your age broken down into years/months/days, total days lived, and countdown to your next birthday.",
+      "whyUseIt": "Discover fascinating milestones (e.g., when you will reach 10,000 days old), verify exact legal age requirements, or calculate baby/child age milestones accurately.",
+      "faqs": [
+        {
+          "question": "Does this age calculator accurately account for leap years?",
+          "answer": "Yes, it computes exact day counts across all leap years (366 days) and varying month lengths (28, 30, 31 days)."
+        }
+      ]
+    },
+    "futureImprovements": [
+      "Planetary age calculator (Age on Mars, Jupiter)",
+      "Milestone notification export"
+    ]
+  },
+  {
+    "id": "water-intake-calculator",
+    "name": "Daily Water Intake Calculator",
+    "slug": "water-intake-calculator",
+    "description": "Calculate your recommended daily hydration goal based on body weight, daily exercise duration, climate, and lifestyle factors.",
+    "category": "health",
+    "type": "Calculator",
+    "technology": "HTML/CSS/JS (Hydration Guidelines)",
+    "keywords": [
+      "water intake calculator",
+      "daily water intake",
+      "how much water to drink",
+      "hydration calculator",
+      "water tracker",
+      "daily fluid target"
+    ],
+    "primaryKeywords": [
+      "water intake calculator",
+      "how much water should i drink a day",
+      "daily hydration calculator",
+      "water intake by weight"
+    ],
+    "secondaryKeywords": [
+      "hydration target for workout",
+      "water glasses per day",
+      "liters of water per day calculator",
+      "fluid requirements"
+    ],
+    "targetUsers": [
+      "Athletes",
+      "Fitness Enthusiasts",
+      "Health Conscious Individuals",
+      "Desk Workers"
+    ],
+    "badge": "Daily",
+    "userProblem": "Individuals want to know their specific personalized daily water intake target instead of relying on the generic '8 glasses a day' myth.",
+    "searchIntent": "Input body weight, daily workout minutes, and climate to receive target hydration in Liters, Milliliters, Ounces, and 250ml glasses.",
+    "resultInterpretation": "Calculates baseline metabolic hydration needs (approx. 35ml per kg) and scales for sweat loss during exercise and heat evaporation in hot climates.",
+    "practicalGuidance": "Distribute water intake throughout the day (e.g. 1 glass upon waking, 1 glass before each meal, and hydration during workouts). Monitor urine color (pale straw yellow indicates optimal hydration).",
+    "limitations": "Estimates general healthy adult requirements. Individuals with kidney conditions, congestive heart failure, or specific medical fluid restrictions must consult their physician.",
+    "formula": "Target (L) = [(Weight_kg × 35ml) / 1000 + (Exercise_min / 30 × 0.35L)] × Climate_Factor",
+    "trustNotes": "100% Client-Side. No personal metrics stored.",
+    "related": [
+      "bmi-calculator",
+      "age-calculator"
+    ],
+    "seo": {
+      "title": "Daily Water Intake Calculator — Personalized Hydration Target",
+      "metaDescription": "Calculate how many liters or ounces of water you should drink daily based on your body weight, workout intensity, and climate.",
+      "whatIsThis": "A hydration calculator that estimates your baseline fluid requirements and adjusts for physical activity sweat loss and environmental temperatures.",
+      "howItWorks": "1. Enter your body weight (kg or lbs).\n2. Select your daily workout activity level (minutes of exercise).\n3. Choose your climate (Moderate, Hot/Humid, Cold).\n4. Receive your daily target in Liters, Milliliters, Ounces, and 250ml Glasses.",
+      "whyUseIt": "Proper hydration improves cognitive focus, athletic performance, kidney function, energy levels, and healthy skin.",
+      "faqs": [
+        {
+          "question": "Does coffee or tea count toward daily water intake?",
+          "answer": "Yes, moderate coffee and tea intake contributes to total hydration, though pure water remains the ideal primary source."
+        },
+        {
+          "question": "How much extra water should I drink per hour of exercise?",
+          "answer": "As a rule of thumb, add approximately 350ml to 500ml (12-16 oz) of water for every 30 minutes of moderate to intense exercise."
+        }
+      ]
+    },
+    "futureImprovements": [
+      "Daily hydration schedule breakdown (hourly drinking milestones)",
+      "Electrolyte recommendation guide"
+    ]
+  },
+  {
+    "id": "word-counter",
+    "name": "Word & Character Counter",
+    "slug": "word-counter",
+    "description": "Count words, characters (with and without spaces), sentences, paragraphs, reading time, and speaking time in real time.",
+    "category": "education",
+    "type": "Static Utility",
+    "technology": "HTML/CSS/JS",
+    "keywords": [
+      "word counter",
+      "character counter",
+      "count words",
+      "reading time calculator",
+      "letter count",
+      "word count online",
+      "text statistics"
+    ],
+    "primaryKeywords": [
+      "word counter",
+      "character counter online",
+      "word count tool",
+      "reading time calculator"
+    ],
+    "secondaryKeywords": [
+      "count characters without spaces",
+      "sentence counter",
+      "speaking time estimator",
+      "keyword density counter"
+    ],
+    "targetUsers": [
+      "Writers",
+      "Students",
+      "Copywriters",
+      "Social Media Managers",
+      "SEO Specialists"
+    ],
+    "badge": "Popular",
+    "userProblem": "Writers and students need real-time counts of words and characters to meet strict essay requirements, social media character limits, or SEO meta tags.",
+    "searchIntent": "Paste text to view instant word count, character count (with/without spaces), sentence count, reading duration, and top recurring keyword frequencies.",
+    "resultInterpretation": "Provides comprehensive text statistics. Reading time is estimated at standard adult speed (225 words/min); speaking time is estimated for speeches/podcasts (130 words/min).",
+    "practicalGuidance": "Use for Twitter/X character limits (280 chars), Google SEO meta title limits (60 chars), meta description limits (155-160 chars), and college essay word caps.",
+    "limitations": "Counts words separated by whitespace. Hyphenated compound words are treated as single tokens.",
+    "formula": "Words = text.trim().split(/\\s+/).length; Reading Time = ceil(Words / 225 WPM)",
+    "trustNotes": "100% Client-Side. Drafts, essays, and proprietary text are never uploaded to any remote server.",
+    "related": [
+      "token-counter",
+      "gpa-calculator",
+      "prompt-enhancer"
+    ],
+    "seo": {
+      "title": "Word & Character Counter — Real-Time Text Statistics & Reading Time",
+      "metaDescription": "Count words, characters, sentences, paragraphs, reading time, and speaking duration. Real-time text analytics with keyword density tracker.",
+      "whatIsThis": "A real-time text analysis tool providing instant statistics on word count, character count, estimated reading duration, and keyword frequencies.",
+      "howItWorks": "1. Type or paste your text into the editor.\n2. Watch word count, character count, sentence count, and reading duration update live.\n3. Inspect top recurring keywords to optimize writing clarity.",
+      "whyUseIt": "Essential for essay word count limits, Twitter / X 280-character limits, SEO meta description length checks (160 characters), and speech preparation.",
+      "faqs": [
+        {
+          "question": "How is reading time calculated?",
+          "answer": "Reading time is based on the average adult reading speed of 200 to 250 words per minute (WPM)."
+        },
+        {
+          "question": "Does it count spaces as characters?",
+          "answer": "The tool provides two separate metrics: 'Characters (with spaces)' and 'Characters (excluding spaces)'."
+        }
+      ]
+    },
+    "futureImprovements": [
+      "Flesch-Kincaid readability score metric",
+      "Grammar and passive voice highlighting"
+    ]
+  },
+  {
+    "id": "gpa-calculator",
+    "name": "College & High School GPA Calculator",
+    "slug": "gpa-calculator",
+    "description": "Calculate cumulative and semester Grade Point Average (GPA) on standard 4.0 weighted and unweighted grading scales.",
+    "category": "education",
+    "type": "Calculator",
+    "technology": "HTML/CSS/JS (Academic Grading Algorithm)",
+    "keywords": [
+      "gpa calculator",
+      "college gpa calculator",
+      "calculate gpa",
+      "4.0 gpa calculator",
+      "semester gpa",
+      "weighted gpa",
+      "high school gpa"
+    ],
+    "primaryKeywords": [
+      "gpa calculator",
+      "college gpa calculator",
+      "4.0 scale gpa calculator",
+      "weighted gpa calculator"
+    ],
+    "secondaryKeywords": [
+      "calculate semester gpa",
+      "honors ap grade points",
+      "grade point average tool",
+      "unweighted vs weighted gpa"
+    ],
+    "targetUsers": [
+      "High School Students",
+      "College Students",
+      "Academic Advisors",
+      "Parents"
+    ],
+    "badge": "Academic",
+    "userProblem": "Students need to calculate their exact Grade Point Average across courses with varying credit hours and AP/Honors course weighting.",
+    "searchIntent": "Input course grades (A, B+, C) and credit hours to compute unweighted and weighted GPA on the standard 4.0 scale.",
+    "resultInterpretation": "Unweighted GPA scales up to 4.0. Weighted GPA awards an extra +0.5 grade point for Honors/AP classes to reflect advanced course difficulty.",
+    "practicalGuidance": "Use this tool before finals to calculate target grades required to maintain academic scholarship thresholds or qualify for Dean's List (typically 3.5+).",
+    "limitations": "Uses standard US 4.0 academic conversion scale (A = 4.0, B = 3.0, C = 2.0). Some universities use custom 4.33 or 5.0 scales.",
+    "formula": "GPA = Sum(GradePoints × CreditHours) / Sum(CreditHours)",
+    "trustNotes": "100% Client-Side. Course grades are calculated locally with complete privacy.",
+    "related": [
+      "word-counter",
+      "percentage-calculator",
+      "age-calculator"
+    ],
+    "seo": {
+      "title": "GPA Calculator — Fast 4.0 College & High School Grade Calculator",
+      "metaDescription": "Calculate your cumulative and semester Grade Point Average (GPA). Supports standard letter grades (A+, A, B, etc.), credit hours, and weighted courses.",
+      "whatIsThis": "An academic GPA calculator that converts letter grades and course credit hours into a precise standard 4.0 GPA scale.",
+      "howItWorks": "1. Add course names, letter grades (e.g. A, B+, C), and credit hours.\n2. Optionally toggle honors/AP course weighting (+0.5 or +1.0).\n3. View your calculated semester GPA and total credits earned.",
+      "whyUseIt": "Track academic standing, plan target grades needed for Dean's List or scholarship requirements, and monitor cumulative progress toward graduation.",
+      "faqs": [
+        {
+          "question": "What is the standard 4.0 grade point conversion?",
+          "answer": "Standard scale: A = 4.0, A- = 3.7, B+ = 3.3, B = 3.0, B- = 2.7, C+ = 2.3, C = 2.0, C- = 1.7, D+ = 1.3, D = 1.0, F = 0.0."
+        }
+      ]
+    },
+    "futureImprovements": [
+      "Target GPA scenario solver (what grades do I need to reach 3.5?)",
+      "Multi-semester cumulative tracker"
+    ]
+  },
+  {
+    "id": "color-converter",
+    "name": "Color Code Converter (HEX / RGB / HSL / CSS)",
+    "slug": "color-converter",
+    "description": "Convert color codes seamlessly between HEX, RGB, RGBA, HSL, HSLA, and CSS color formats with color preview and WCAG contrast check.",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML/CSS/JS (Color Math Engine)",
+    "keywords": [
+      "color converter",
+      "hex to rgb",
+      "rgb to hex",
+      "hex to hsl",
+      "color code picker",
+      "css color converter",
+      "color space converter"
+    ],
+    "primaryKeywords": [
+      "color converter",
+      "hex to rgb converter",
+      "rgb to hex",
+      "hex to hsl converter"
+    ],
+    "secondaryKeywords": [
+      "css color picker",
+      "rgba color code generator",
+      "hsla color converter",
+      "design token color converter"
+    ],
+    "targetUsers": [
+      "UI/UX Designers",
+      "Frontend Developers",
+      "Digital Artists",
+      "Brand Designers"
+    ],
+    "badge": "Popular",
+    "userProblem": "Designers and developers need to translate color values between design tools (Figma, Photoshop) and code (CSS, Tailwind, Android) without color shifts.",
+    "searchIntent": "Convert any color across HEX (#RRGGBB), RGB, RGBA, HSL, HSLA, and CSS variable syntax with 1-click clipboard copy.",
+    "resultInterpretation": "Calculates mathematical color space coordinates across sRGB and cylindrical HSL spaces. All formats represent identical optical color output.",
+    "practicalGuidance": "Use HSL in CSS stylesheets when building dynamic color themes (e.g. adjusting lightness `L` creates matching hover and active button states easily).",
+    "limitations": "Converts within standard sRGB color gamut. Wide-gamut color spaces (Display P3, Rec. 2020) are mapped to sRGB equivalents.",
+    "formula": "RGB to HSL Cylindrical Transformation: H = f(R,G,B), S = d / (1 - |2L - 1|), L = (max + min) / 2",
+    "trustNotes": "100% Client-Side. Calculations execute in browser memory.",
+    "related": [
+      "aspect-ratio-calculator",
+      "screen-resolution",
+      "base64-encoder"
+    ],
+    "seo": {
+      "title": "Color Converter — HEX to RGB, HSL, RGBA & CSS Color Picker",
+      "metaDescription": "Convert colors effortlessly across HEX, RGB, HSL, and CSS formats. Includes visual color picker, alpha transparency, and contrast ratio analyzer.",
+      "whatIsThis": "A real-time color space converter that translates color values between hexadecimal (#RRGGBB), RGB(A), and HSL(A) representations.",
+      "howItWorks": "1. Enter a color in any format (HEX, RGB, or HSL) or use the visual color picker.\n2. All equivalent color codes update simultaneously.\n3. Click to copy the exact CSS code you need.",
+      "whyUseIt": "Switch between CSS HEX codes, Tailwind CSS RGB variables, and design tokens without having to open Photoshop or Figma.",
+      "faqs": [
+        {
+          "question": "What is HSL and why is it useful?",
+          "answer": "HSL stands for Hue, Saturation, and Lightness. It is more intuitive for humans to adjust (e.g. making a color 10% darker by decreasing Lightness) than RGB."
+        }
+      ]
+    },
+    "futureImprovements": [
+      "Color palette palette generator (complementary, triadic)",
+      "WCAG AA/AAA contrast checker"
+    ]
+  },
+  {
+    "id": "aspect-ratio-calculator",
+    "name": "Aspect Ratio Calculator",
+    "slug": "aspect-ratio-calculator",
+    "description": "Calculate image and video aspect ratios (16:9, 4:3, 1:1, 21:9, 9:16) and compute proportional dimensions for responsive layouts.",
+    "category": "creative",
+    "type": "Calculator",
+    "technology": "HTML/CSS/JS",
+    "keywords": [
+      "aspect ratio calculator",
+      "image aspect ratio",
+      "16:9 calculator",
+      "video dimensions",
+      "resize aspect ratio",
+      "proportional dimensions",
+      "9:16 calculator"
+    ],
+    "primaryKeywords": [
+      "aspect ratio calculator",
+      "16:9 aspect ratio dimensions",
+      "image ratio calculator",
+      "video aspect ratio calculator"
+    ],
+    "secondaryKeywords": [
+      "9:16 vertical video dimensions",
+      "calculate proportional width height",
+      "css aspect ratio tool",
+      "image resize ratio calculator"
+    ],
+    "targetUsers": [
+      "Video Editors",
+      "Graphic Designers",
+      "Web Developers",
+      "Photographers",
+      "Content Creators"
+    ],
+    "badge": "Design",
+    "userProblem": "Creators and web developers need to resize images and video assets to exact pixel dimensions without distorting the visual proportions.",
+    "searchIntent": "Select a standard ratio preset (16:9, 9:16, 4:3, 1:1) or enter custom dimensions, then change width or height to get proportional target pixels.",
+    "resultInterpretation": "Calculates proportional geometric dimensions: (Target Width / Target Height) = (Ratio Width / Ratio Height). Visual preview displays the container shape.",
+    "practicalGuidance": "Use 16:9 (1920x1080) for YouTube videos and desktop headers. Use 9:16 (1080x1920) for Instagram Reels, TikTok, and YouTube Shorts.",
+    "limitations": "Outputs rounded integer pixel coordinates suitable for web graphics and video rendering engines.",
+    "formula": "Proportional Height = (Width × RatioHeight) / RatioWidth; GCD(W, H) for simplified ratio",
+    "trustNotes": "100% Client-Side. No images are uploaded to any server.",
+    "related": [
+      "screen-resolution",
+      "color-converter",
+      "browser-info"
+    ],
+    "seo": {
+      "title": "Aspect Ratio Calculator — Proportional Image & Video Dimension Tool",
+      "metaDescription": "Calculate standard aspect ratios (16:9, 4:3, 9:16, 21:9) and find proportional width/height dimensions instantly for web design and video production.",
+      "whatIsThis": "A mathematical dimension calculator that maintains exact geometric proportions when resizing images, videos, UI mockups, and canvases.",
+      "howItWorks": "1. Enter original Width and Height (or pick a standard preset like 16:9 Full HD 1920x1080).\n2. Change target Width or Height.\n3. The corresponding dimension calculates automatically to preserve the exact ratio.",
+      "whyUseIt": "Avoid distorted or stretched images, calculate video crop dimensions for Instagram Reels / TikTok (9:16) vs YouTube (16:9), and configure responsive CSS `aspect-ratio` properties.",
+      "faqs": [
+        {
+          "question": "What are the most common aspect ratios?",
+          "answer": "16:9 is standard for YouTube and modern TVs; 9:16 is vertical video for TikTok, Reels, and Shorts; 4:3 is traditional TV; 1:1 is square for Instagram posts."
+        }
+      ]
+    },
+    "futureImprovements": [
+      "CSS aspect-ratio snippet generator",
+      "Visual crop overlay preview"
+    ]
+  },
+  {
+    "id": "token-counter",
+    "name": "AI Token Counter & Cost Estimator",
+    "slug": "token-counter",
+    "description": "Estimate token counts and API costs for OpenAI (GPT-4o, GPT-4, GPT-3.5), Claude 3.5, and Gemini LLM prompts and context windows.",
+    "category": "ai",
+    "type": "Static Utility",
+    "technology": "HTML/CSS/JS (BPE Tokenizer Estimation)",
+    "keywords": [
+      "token counter",
+      "openai token counter",
+      "llm token count",
+      "gpt4 tokens",
+      "claude token counter",
+      "ai cost estimator",
+      "tiktoken estimator"
+    ],
+    "primaryKeywords": [
+      "token counter",
+      "openai token counter online",
+      "count tokens in prompt",
+      "llm cost estimator"
+    ],
+    "secondaryKeywords": [
+      "gpt-4o token calculator",
+      "claude 3.5 sonnet token count",
+      "prompt context window size",
+      "tokens to words ratio"
+    ],
+    "targetUsers": [
+      "AI Developers",
+      "Prompt Engineers",
+      "Product Managers",
+      "LLM Enthusiasts",
+      "Data Scientists"
+    ],
+    "badge": "Modern",
+    "userProblem": "AI engineers and prompt creators need to estimate prompt token lengths and API costs to prevent context window overflow errors and forecast monthly API bills.",
+    "searchIntent": "Paste text, JSON, or code to get estimated token count, character-to-token ratio, and cost comparison across OpenAI GPT-4o, Claude 3.5, and Google Gemini.",
+    "resultInterpretation": "Calculates BPE token approximations. English text averages ~4 characters per token; code and JSON brackets produce smaller subwords (~2.5 - 3 chars/token).",
+    "practicalGuidance": "Keep system prompts concise by removing conversational filler. Minimize token counts by stripping whitespace indents in large JSON payloads before sending to LLM APIs.",
+    "limitations": "Provides calibrated Byte-Pair Encoding (BPE) estimations. Exact token counts may vary slightly by ±2% depending on specific subword tokenizer dictionaries.",
+    "formula": "Estimated Tokens = BaseTextTokens(chars / 4) + SyntaxWeight(codeChars × 0.35)",
+    "trustNotes": "100% Client-Side. Proprietary prompts, system instructions, and training datasets NEVER leave your browser.",
+    "related": [
+      "prompt-enhancer",
+      "word-counter",
+      "json-formatter"
+    ],
+    "seo": {
+      "title": "AI Token Counter & LLM Cost Estimator — GPT-4o, Claude 3.5, Gemini",
+      "metaDescription": "Estimate token counts, character ratios, and API costs for leading LLMs. Check prompt sizes against model context limits in real time.",
+      "whatIsThis": "A tokenizer estimator that analyzes text length, subword patterns, and code tokens to approximate token usage and pricing across major LLM APIs.",
+      "howItWorks": "1. Paste your system prompt, user prompt, or JSON payload.\n2. View estimated token count and characters-per-token ratio.\n3. Compare estimated cost across GPT-4o, Claude 3.5 Sonnet, and Gemini 1.5 Pro.",
+      "whyUseIt": "Prevents unexpected context window overflows, optimizes prompt engineering brevity, and forecasts monthly LLM API expenses accurately.",
+      "faqs": [
+        {
+          "question": "What is a token in AI models?",
+          "answer": "A token is a chunk of characters that an LLM reads at once. In English, 1 token roughly corresponds to 4 characters or ~0.75 words."
+        },
+        {
+          "question": "Why do token counts differ between plain English and code/JSON?",
+          "answer": "Code, whitespace indents, and JSON brackets produce smaller subword chunks, resulting in higher token counts per character than natural English text."
+        }
+      ]
+    },
+    "futureImprovements": [
+      "Official WASM Tiktoken parser integration",
+      "Custom pricing parameter overrides"
+    ]
+  },
+  {
+    "id": "prompt-enhancer",
+    "name": "AI Prompt Cleaner & Enhancer",
+    "slug": "prompt-enhancer",
+    "description": "Clean, format, structure, and enhance raw AI prompts with role instructions, constraints, context delimiters, and output formatting schemas.",
+    "category": "ai",
+    "type": "Static Utility",
+    "technology": "HTML/CSS/JS",
+    "keywords": [
+      "prompt enhancer",
+      "prompt cleaner",
+      "ai prompt formatter",
+      "prompt engineering tool",
+      "chatgpt prompt optimizer",
+      "structured prompt maker"
+    ],
+    "primaryKeywords": [
+      "prompt enhancer",
+      "ai prompt generator",
+      "structured prompt template",
+      "prompt engineering optimizer"
+    ],
+    "secondaryKeywords": [
+      "chatgpt prompt formatter",
+      "llm system prompt builder",
+      "clean prompt format",
+      "reduce ai hallucinations prompt"
+    ],
+    "targetUsers": [
+      "Prompt Engineers",
+      "AI Builders",
+      "Copywriters",
+      "Content Creators",
+      "Developers"
+    ],
+    "badge": "Modern",
+    "userProblem": "Users write vague, unstructured prompts and receive generic, hallucinated, or unformatted AI responses from LLMs.",
+    "searchIntent": "Convert an informal prompt goal into a production-grade structured prompt with Role, Task, Constraints, and Output Format blocks.",
+    "resultInterpretation": "Structures instructions into distinct markdown sections. Separating Role, Objective, Constraints, and Output Schema prevents prompt confusion and improves reasoning accuracy.",
+    "practicalGuidance": "Copy the generated structured prompt and paste as the System Message in ChatGPT, Claude, or your LLM API request payload for deterministic results.",
+    "limitations": "Generates a proven architectural prompt template; model response quality also depends on the specific foundation model capability.",
+    "formula": "Role-Objective-Constraint-Schema (ROCS) Prompt Architecture Framework",
+    "trustNotes": "100% Client-Side. Your custom prompt templates remain private in your browser.",
+    "related": [
+      "token-counter",
+      "word-counter",
+      "json-formatter"
+    ],
+    "seo": {
+      "title": "AI Prompt Cleaner & Enhancer — Structured Prompt Engineering Tool",
+      "metaDescription": "Format messy prompts into high-performing structured LLM instructions with System Role, Context, Constraints, and Output Format blocks.",
+      "whatIsThis": "A prompt architecture tool that transforms informal user prompts into clear, highly effective, structured prompts optimized for AI models.",
+      "howItWorks": "1. Enter your basic prompt or goal.\n2. Choose a persona/role, desired output format (Markdown, JSON, Table, Step-by-Step), and constraints.\n3. Click 'Structure & Enhance' and copy the production-grade prompt template.",
+      "whyUseIt": "Well-structured prompts drastically reduce hallucinations, improve AI reasoning accuracy, and produce consistent deterministic outputs.",
+      "faqs": [
+        {
+          "question": "Why does structured formatting improve AI output?",
+          "answer": "Separating Role, Context, Instructions, and Format into distinct markdown blocks helps language models parse instructions without confusing context with tasks."
+        }
+      ]
+    },
+    "futureImprovements": [
+      "One-shot few-example template inserter",
+      "Negative prompt rule generator"
+    ]
+  },
+  {
+    "id": "talking-alarm-clock",
+    "name": "Talking Alarm Clock & Spoken Time",
+    "slug": "talking-alarm-clock",
+    "category": "fun",
+    "description": "Accurate digital clock with real-time speech synthesis time announcement, daily recurring alarms, and client-side notifications.",
+    "icon": "Volume2",
+    "technology": "Web Speech Synthesis API + Web Audio API + HTML5 Notification API",
+    "formula": "t = new Date(); SpeechSynthesisUtterance(t.toLocaleTimeString())",
+    "trustNotes": "Zero server connection required. Speech is synthesized locally on your operating system. Alarms and preferences remain in ephemeral memory.",
+    "keywords": [
+      "talking alarm clock",
+      "speak time online",
+      "voice clock",
+      "browser alarm clock",
+      "speaking clock online"
+    ],
+    "primaryKeywords": [
+      "talking alarm clock",
+      "voice clock online",
+      "speaking clock"
+    ],
+    "secondaryKeywords": [
+      "online alarm clock with sound",
+      "spoken time announcement",
+      "browser alarm notification"
+    ],
+    "userProblem": "Users working across screens, cooking, or waking up who need an audible spoken time announcement and customizable alarms without installing bloated desktop apps.",
+    "searchIntent": "Searchers looking for an online clock that announces the time out loud and triggers alarms through browser audio.",
+    "resultInterpretation": "Displays live 12H/24H time with milliseconds precision and vocalizes hours and minutes using native OS speech synthesis voices.",
+    "practicalGuidance": "Grant browser notification permissions if you want visual popup alerts when working in other tabs. Keep the browser tab open for alarms to trigger.",
+    "limitations": "Background audio may be suspended by mobile OS power-savers if the screen is locked or tab is deeply backgrounded.",
+    "seo": {
+      "title": "Talking Alarm Clock — Voice Time Announcement & Alarms Online",
+      "description": "Free online talking alarm clock with spoken time voice announcements, 12/24 hour display, custom alarms, and zero server logging.",
+      "faqs": [
+        {
+          "q": "How does the voice time announcement work?",
+          "a": "It uses the W3C Web Speech Synthesis API to vocalize the exact current hour and minute using your device's native high-quality text-to-speech voice engine."
+        },
+        {
+          "q": "Do alarms trigger if I switch tabs?",
+          "a": "Yes, as long as the browser window remains open. If you grant notification permissions, a desktop banner will also alert you."
+        },
+        {
+          "q": "Is my data private?",
+          "a": "100%. All alarms and timers run strictly in your browser's local memory with zero tracking."
+        }
+      ]
+    }
+  },
+  {
+    "id": "diff-checker",
+    "name": "Diff Checker & Text Comparator",
+    "slug": "diff-checker",
+    "category": "developer",
+    "description": "Compare two text blocks or code snippets side-by-side with line-by-line character difference highlighting and statistics.",
+    "icon": "GitCompare",
+    "technology": "Client-Side Longest Common Subsequence (LCS) Diff Algorithm",
+    "formula": "LCS(A[1..m], B[1..n]) dynamic programming matrix",
+    "trustNotes": "Your proprietary code and sensitive text are processed entirely inside browser memory and never transmitted over the network.",
+    "keywords": [
+      "diff checker",
+      "text compare online",
+      "code difference finder",
+      "online diff tool",
+      "file comparison"
+    ],
+    "primaryKeywords": [
+      "diff checker online",
+      "compare text online",
+      "code diff tool"
+    ],
+    "secondaryKeywords": [
+      "side by side text comparison",
+      "git diff checker",
+      "find differences in two text files"
+    ],
+    "userProblem": "Engineers, editors, and legal professionals who need to identify exact line additions, removals, and modifications between two versions of text.",
+    "searchIntent": "Users looking to paste two versions of text or code and instantly see highlighted differences with copyable diff patches.",
+    "resultInterpretation": "Provides color-coded additions (+ green), deletions (- red), and unchanged lines with total counts and unified or side-by-side view toggles.",
+    "practicalGuidance": "Toggle between Unified View for quick scanning and Side-by-Side View for wide screen code inspections.",
+    "limitations": "Optimized for texts up to 50,000 lines. Extremely large multi-gigabyte log files should use command-line diff utilities.",
+    "seo": {
+      "title": "Diff Checker — Compare Text & Code Differences Online Free",
+      "description": "Free online diff checker. Compare two text files or code snippets side-by-side with line-by-line difference highlighting and 100% privacy.",
+      "faqs": [
+        {
+          "q": "Is my code sent to a server?",
+          "a": "No. The Longest Common Subsequence algorithm runs entirely in client JavaScript. Zero bytes leave your browser."
+        },
+        {
+          "q": "Can I copy the diff output?",
+          "a": "Yes, click 'Copy Diff' to copy standard patch-formatted unified diff text directly to your clipboard."
+        }
+      ]
+    }
+  },
+  {
+    "id": "markdown-previewer",
+    "name": "Markdown to HTML & Live Previewer",
+    "slug": "markdown-previewer",
+    "category": "developer",
+    "description": "Write or paste GitHub Flavored Markdown and instantly preview the rendered document with 1-click HTML markup export.",
+    "icon": "FileText",
+    "technology": "W3C DOM Sanitization + Regex GFM Parser",
+    "formula": "GFM Lexical Parsing with XSS Escaping",
+    "trustNotes": "All markdown is sanitized and rendered locally without third-party CDN scripts or remote compilers.",
+    "keywords": [
+      "markdown previewer",
+      "markdown to html",
+      "gfm editor online",
+      "live markdown converter"
+    ],
+    "primaryKeywords": [
+      "markdown to html converter",
+      "online markdown previewer",
+      "gfm editor"
+    ],
+    "secondaryKeywords": [
+      "github markdown live preview",
+      "convert markdown to html tags",
+      "markdown table generator"
+    ],
+    "userProblem": "Technical writers, developers, and bloggers needing a fast, distraction-free environment to preview README files and convert markdown to HTML.",
+    "searchIntent": "Searchers who need to paste Markdown and get clean, sanitized HTML markup with instant visual verification.",
+    "resultInterpretation": "Provides real-time synchronized rendering supporting headings, code syntax, tables, task lists, and quotes.",
+    "practicalGuidance": "Switch between Live Preview to review typography and HTML Markup to copy raw HTML tags for your CMS or newsletter.",
+    "limitations": "Custom proprietary markdown flavor extensions (like Obsidian double bracket links) require standard markdown links.",
+    "seo": {
+      "title": "Markdown to HTML Converter & Live Previewer Online",
+      "description": "Convert GitHub Flavored Markdown to clean HTML with real-time live preview, table support, and instant clipboard export.",
+      "faqs": [
+        {
+          "q": "Does this support GitHub Flavored Markdown (GFM)?",
+          "a": "Yes, including task list checkboxes, tables, code fences, blockquotes, and strikethrough."
+        }
+      ]
+    }
+  },
+  {
+    "id": "csv-json-converter",
+    "name": "CSV to JSON & JSON to CSV Converter",
+    "slug": "csv-json-converter",
+    "category": "developer",
+    "description": "Bi-directional tabular data converter between CSV/TSV spreadsheets and structured JSON arrays with custom delimiter support.",
+    "icon": "ArrowLeftRight",
+    "technology": "Client-Side RFC 4180 CSV Parser + Native JSON Engine",
+    "formula": "RFC 4180 Tabular Tokenizer & Serializer",
+    "trustNotes": "Spreadsheets, customer records, and confidential datasets are converted entirely in local memory with zero server transmission.",
+    "keywords": [
+      "csv to json",
+      "json to csv",
+      "convert csv to json online",
+      "tsv to json",
+      "spreadsheet to json"
+    ],
+    "primaryKeywords": [
+      "csv to json converter",
+      "json to csv online",
+      "convert csv to json array"
+    ],
+    "secondaryKeywords": [
+      "tsv to json parser",
+      "export json to excel csv",
+      "convert spreadsheet table to json"
+    ],
+    "userProblem": "Developers and data analysts who need to convert spreadsheet export files into JSON arrays for database seeding or API payloads.",
+    "searchIntent": "Users wanting to paste CSV rows and download or copy structured JSON arrays, or convert JSON back to CSV.",
+    "resultInterpretation": "Auto-detects column headers, infers numeric and boolean types, and handles custom delimiters (commas, tabs, semicolons, pipes).",
+    "practicalGuidance": "Ensure the first line contains unique column header names. Use the delimiter dropdown if parsing European semicolon CSVs.",
+    "limitations": "Deeply nested JSON objects are flattened during JSON-to-CSV serialization.",
+    "seo": {
+      "title": "CSV to JSON & JSON to CSV Converter Online Free",
+      "description": "Convert CSV spreadsheets to JSON arrays and JSON to CSV instantly in your browser with custom delimiters and 100% privacy.",
+      "faqs": [
+        {
+          "q": "Are large CSV files supported?",
+          "a": "Yes, files up to several tens of thousands of rows parse smoothly inside browser memory."
+        }
+      ]
+    }
+  },
+  {
+    "id": "unit-converter",
+    "name": "Unit Converter (Metric & Imperial)",
+    "slug": "unit-converter",
+    "category": "education",
+    "description": "Universal multi-category unit converter for length, mass/weight, temperature, speed, volume, and area with precise conversion ratios.",
+    "icon": "Ruler",
+    "technology": "BIPM International System of Units (SI) Mathematical Engine",
+    "formula": "v_target = (v_source * factor_source) / factor_target",
+    "trustNotes": "Deterministic mathematical conversion engine using standard BIPM / NIST conversion constants.",
+    "keywords": [
+      "unit converter",
+      "metric to imperial converter",
+      "length converter",
+      "kg to lbs",
+      "temperature converter"
+    ],
+    "primaryKeywords": [
+      "unit converter online",
+      "metric to imperial converter",
+      "measurement converter"
+    ],
+    "secondaryKeywords": [
+      "convert meters to feet",
+      "celsius to fahrenheit calculator",
+      "kg to pounds converter"
+    ],
+    "userProblem": "Students, engineers, travelers, and home cooks needing accurate conversions between international Metric and US Imperial measurement systems.",
+    "searchIntent": "Searchers wanting to convert measurement values across units with instant live computation.",
+    "resultInterpretation": "Displays converted value with up to 5 decimal places precision alongside the exact unitary conversion ratio formula.",
+    "practicalGuidance": "Use the swap button (⇄) to invert source and target units instantly without re-typing numbers.",
+    "limitations": "Specialized non-linear logarithmic units (like decibels or Richter scales) are not covered in standard dimensional conversion.",
+    "seo": {
+      "title": "Unit Converter — Metric to Imperial Measurements Online",
+      "description": "Free online unit converter for Length, Weight, Temperature, Speed, Area, and Volume. Instant conversion with 100% precision.",
+      "faqs": [
+        {
+          "q": "Are the conversion constants exact?",
+          "a": "Yes, they match official NIST and BIPM definitions (e.g. exactly 1 inch = 0.0254 meters; 1 lb = 0.45359237 kg)."
+        }
+      ]
+    }
+  },
+  {
+    "id": "lorem-ipsum-generator",
+    "name": "Lorem Ipsum Generator & Dummy Text",
+    "slug": "lorem-ipsum-generator",
+    "category": "creative",
+    "description": "Generate standard Cicero dummy placeholder text in paragraphs, sentences, words, or bullet list items with optional HTML markup.",
+    "icon": "FileText",
+    "technology": "Cicero De Finibus Bonorum et Malorum Lexicon Engine",
+    "formula": "Pseudorandom word distribution with classical Latin lexicon",
+    "trustNotes": "Runs 100% offline in client browser memory.",
+    "keywords": [
+      "lorem ipsum generator",
+      "dummy text generator",
+      "placeholder text online",
+      "lipsum generator"
+    ],
+    "primaryKeywords": [
+      "lorem ipsum generator",
+      "dummy text generator",
+      "placeholder text"
+    ],
+    "secondaryKeywords": [
+      "lorem ipsum paragraph generator",
+      "generate dummy words for mockup",
+      "html placeholder text"
+    ],
+    "userProblem": "Designers, web developers, and typesetters needing natural-looking placeholder copy to evaluate typography and page layout balance.",
+    "searchIntent": "Users looking to generate dummy Latin placeholder text with specific paragraph or word counts.",
+    "resultInterpretation": "Provides natural sentence lengths with realistic punctuation and capitalization, ready for 1-click clipboard copying.",
+    "practicalGuidance": "Enable 'Wrap in HTML tags' if you are pasting directly into code editors or rich CMS environments.",
+    "limitations": "Generated text is intended strictly as dummy placeholder copy and carries no semantic English meaning.",
+    "seo": {
+      "title": "Lorem Ipsum Generator — Custom Placeholder Text Online",
+      "description": "Generate dummy Lorem Ipsum placeholder text by paragraphs, sentences, or words with HTML tag options and instant copy.",
+      "faqs": [
+        {
+          "q": "Where does Lorem Ipsum come from?",
+          "a": "It originates from sections 1.10.32 and 1.10.33 of Cicero's 45 BC philosophical treatise 'De Finibus Bonorum et Malorum'."
+        }
+      ]
+    }
+  },
+  {
+    "id": "case-converter",
+    "name": "Case Converter (camelCase, snake_case, kebab-case)",
+    "slug": "case-converter",
+    "category": "developer",
+    "description": "Transform text and code variable names across camelCase, snake_case, kebab-case, PascalCase, CONSTANT_CASE, and Title Case.",
+    "icon": "Type",
+    "technology": "Client-Side Tokenization & Casing State Machine",
+    "formula": "Word boundary regex tokenization: replace(/([a-z])([A-Z])/g, '$1 $2')",
+    "trustNotes": "Zero server communication. All transformations occur instantly in browser RAM.",
+    "keywords": [
+      "case converter",
+      "camelcase converter",
+      "snake case converter",
+      "kebab case generator",
+      "text case changer"
+    ],
+    "primaryKeywords": [
+      "case converter online",
+      "camelcase to snake case",
+      "kebab case converter"
+    ],
+    "secondaryKeywords": [
+      "convert string to pascalcase",
+      "constant case generator",
+      "variable naming case changer"
+    ],
+    "userProblem": "Programmers converting database column names, API JSON keys, CSS class names, or constants between differing programming language casing standards.",
+    "searchIntent": "Searchers looking to paste a string and immediately see it converted across all major developer casing conventions.",
+    "resultInterpretation": "Displays synchronized cards for 9 standard conventions with 1-click copy buttons for every case format.",
+    "practicalGuidance": "Handles existing mixed delimiters (spaces, underscores, hyphens, and camel boundaries) seamlessly.",
+    "limitations": "Non-Latin character sets without uppercase/lowercase equivalents (like Chinese or Arabic) are preserved unchanged.",
+    "seo": {
+      "title": "Case Converter — camelCase, snake_case, kebab-case Online",
+      "description": "Instantly convert text to camelCase, snake_case, kebab-case, PascalCase, CONSTANT_CASE, and Title Case with 1-click copy.",
+      "faqs": [
+        {
+          "q": "Which casing standard is best for JavaScript APIs?",
+          "a": "camelCase is the standard convention for JavaScript object keys, functions, and variables."
+        }
+      ]
+    }
+  },
+  {
+    "id": "hash-generator",
+    "name": "Cryptographic Hash Generator (SHA-256, SHA-512, SHA-1)",
+    "slug": "hash-generator",
+    "category": "developer",
+    "description": "Compute secure cryptographic checksums using native W3C Web Crypto API with uppercase/lowercase formatting and bit-length auditing.",
+    "icon": "Hash",
+    "technology": "W3C Web Cryptography API (crypto.subtle.digest)",
+    "formula": "crypto.subtle.digest('SHA-256', UTF8_ArrayBuffer(text))",
+    "trustNotes": "Hashes are generated strictly on your CPU using hardware-accelerated Web Crypto. Sensitive API keys or passwords never touch a server.",
+    "keywords": [
+      "sha256 generator",
+      "hash generator",
+      "sha512 online",
+      "sha1 checksum",
+      "cryptographic hash tool"
+    ],
+    "primaryKeywords": [
+      "sha256 hash generator",
+      "cryptographic hash generator",
+      "sha512 checksum online"
+    ],
+    "secondaryKeywords": [
+      "generate sha256 checksum",
+      "online sha1 calculator",
+      "crypto subtle hash generator"
+    ],
+    "userProblem": "Developers and security analysts who need to verify cryptographic message digests, data integrity, or hash signatures without installing CLI utilities.",
+    "searchIntent": "Users wanting to paste text or secrets and generate SHA-256, SHA-512, SHA-384, or SHA-1 hashes client-side.",
+    "resultInterpretation": "Displays exact hexadecimal string representations along with bit length (256-bit, 512-bit) and byte count.",
+    "practicalGuidance": "Use SHA-256 or SHA-512 for modern cryptographic integrity. SHA-1 is provided for legacy checksum verification.",
+    "limitations": "MD5 is obsolete and intentionally excluded from W3C Web Crypto for modern cryptographic security.",
+    "seo": {
+      "title": "Cryptographic Hash Generator — SHA-256 & SHA-512 Online",
+      "description": "Generate SHA-256, SHA-512, SHA-384, and SHA-1 cryptographic hashes securely in your browser using W3C Web Crypto API.",
+      "faqs": [
+        {
+          "q": "Is Web Crypto SHA-256 secure?",
+          "a": "Yes. It uses your operating system's native hardware cryptographic implementation."
+        }
+      ]
+    }
+  },
+  {
+    "id": "stopwatch-timer",
+    "name": "Online Stopwatch & Countdown Timer",
+    "slug": "stopwatch-timer",
+    "category": "fun",
+    "description": "High-precision millisecond stopwatch with lap recording and customizable countdown alarm with Web Audio beeper alerts.",
+    "icon": "Timer",
+    "technology": "HTML5 High Resolution Time API + Web Audio API Synthesis",
+    "formula": "t_elapsed = Date.now() - t_start",
+    "trustNotes": "Runs completely client-side in browser memory with zero network dependencies.",
+    "keywords": [
+      "online stopwatch",
+      "countdown timer online",
+      "lap timer",
+      "precision stopwatch",
+      "online alarm timer"
+    ],
+    "primaryKeywords": [
+      "online stopwatch with laps",
+      "countdown timer online",
+      "millisecond stopwatch"
+    ],
+    "secondaryKeywords": [
+      "online timer with sound alarm",
+      "study sprint countdown timer",
+      "high precision stopwatch online"
+    ],
+    "userProblem": "Students, athletes, chefs, and remote workers who need an accurate stopwatch for lap timing or a countdown timer for focused work sprints.",
+    "searchIntent": "Searchers looking for a clean, distraction-free stopwatch and countdown alarm that runs in any web browser.",
+    "resultInterpretation": "Provides large high-contrast digits with milliseconds display, lap history records, and audio buzzer alarm upon completion.",
+    "practicalGuidance": "Use quick preset buttons (5 min, 15 min, 25 min Pomodoro) to launch countdowns with 1 click.",
+    "limitations": "Timers run while the browser tab is open. If your computer goes to sleep, the timer will pause until wake.",
+    "seo": {
+      "title": "Online Stopwatch & Countdown Timer with Milliseconds & Sound",
+      "description": "Free online stopwatch with lap recording and countdown alarm timer with audio alerts. Accurate to milliseconds and 100% free.",
+      "faqs": [
+        {
+          "q": "Does the timer sound an alarm when time expires?",
+          "a": "Yes, it generates a clear synthesized audio beep using the Web Audio API."
+        }
+      ]
+    }
+  }
+]
