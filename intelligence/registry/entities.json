@@ -1,0 +1,14 @@
+[
+  { "id": "ENT-001", "name": "UTL.tools", "type": "website", "domain": "utl.tools", "description": "Primary consumer application for free online utilities." },
+  { "id": "ENT-002", "name": "mylocation.org", "type": "website", "domain": "mylocation.org", "description": "Public IP & location competitor website." },
+  { "id": "ENT-003", "name": "plaintoolbox.com", "type": "website", "domain": "plaintoolbox.com", "description": "Public online developer toolbox competitor website." },
+  { "id": "ENT-004", "name": "top10k.com", "type": "website", "domain": "top10k.com", "description": "Public high-traffic utility aggregator site." },
+  { "id": "ENT-005", "name": "10015.io", "type": "website", "domain": "10015.io", "description": "All-in-one online tool competitor." },
+  { "id": "ENT-006", "name": "diff-checker", "type": "utility", "domain": "developer", "description": "Side-by-side text diff checking utility." },
+  { "id": "ENT-007", "name": "json-formatter", "type": "utility", "domain": "developer", "description": "JSON formatting & validation utility." },
+  { "id": "ENT-008", "name": "password-generator", "type": "utility", "domain": "security", "description": "Web Crypto password generator." },
+  { "id": "ENT-009", "name": "talking-alarm-clock", "type": "utility", "domain": "fun", "description": "W3C Web Speech synthesis alarm clock." },
+  { "id": "ENT-010", "name": "diff checker online", "type": "search_query", "domain": "search", "description": "High-volume evergreen developer search term." },
+  { "id": "ENT-011", "name": "United States", "type": "country", "domain": "geographic", "description": "Primary geographical market." },
+  { "id": "ENT-012", "name": "Google Analytics 4", "type": "technology", "domain": "technology", "description": "Web analytics telemetry platform." }
+]

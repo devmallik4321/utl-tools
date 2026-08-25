@@ -141,7 +141,8 @@ async function buildControlCenter() {
     [19, "Production URL", "https://utl.tools (HTTP 200 OK)", "Vercel Live Edge", { text: "Open Site", hyperlink: "https://utl.tools" }],
     [20, "WWW Subdomain URL", "https://www.utl.tools (HTTP 200 OK)", "Vercel Live Edge", { text: "Open WWW Site", hyperlink: "https://www.utl.tools" }],
     [21, "Primary Control Artifact", "control/UTL-CONTROL-CENTER.xlsx", "Canonical Master", { text: "Return to Index", hyperlink: "#'P-00 INDEX'!A1" }],
-    [22, "Last Verified Build", "Next.js 14 SSG (64 Static Routes Pre-rendered)", "Build Task 753", { text: "View Releases", hyperlink: "#'P-Releases'!A1" }],
+    [22, "Internet Sensor Fabric Control", "control/INTERNET-INTELLIGENCE-CONTROL-CENTER.xlsx", "Sensor Fabric Master", { text: "View Intelligence Control", hyperlink: "#'P-00 INDEX'!A1" }],
+    [23, "Last Verified Build", "Next.js 14 SSG (64 Static Routes Pre-rendered)", "Build Task 753", { text: "View Releases", hyperlink: "#'P-Releases'!A1" }],
   ];
 
   kpis.forEach((kpi, idx) => {
