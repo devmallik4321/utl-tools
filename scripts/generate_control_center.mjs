@@ -3,7 +3,7 @@ import fs from "fs";
 import path from "path";
 
 async function buildControlCenter() {
-  console.log("Starting UTL.tools Canonical Control Center V1 Generation...");
+  console.log("Starting UTL.tools Canonical Control Center V1 Final Release Generation...");
 
   const controlDir = path.resolve("control");
   const backupDir = path.resolve("control/backups");
@@ -120,7 +120,7 @@ async function buildControlCenter() {
 
   const kpis = [
     ["SN", "Metric", "Value", "Derived From / Source", "Direct Link"],
-    [1, "Platform Status", "ACTIVE (PUBLIC_DEPLOYMENT_READY)", "System Verification", { text: "View Releases", hyperlink: "#'P-Releases'!A1" }],
+    [1, "Platform Status", "PUBLIC_PRODUCTION_READY", "System Verification", { text: "View Releases", hyperlink: "#'P-Releases'!A1" }],
     [2, "Current Version", "1.1.0 (Production Release)", "Release Ledger", { text: "View Changelog", hyperlink: "#'C-Changes'!A1" }],
     [3, "Total Production Utilities", { formula: "COUNTA('P-Utilities'!A5:A100)" }, "P-Utilities Registry", { text: "View Utilities", hyperlink: "#'P-Utilities'!A1" }],
     [4, "Taxonomies / Categories", "9 Specialized Categories", "Taxonomy Engine", { text: "View Registry", hyperlink: "#'P-Utilities'!A1" }],
@@ -134,10 +134,11 @@ async function buildControlCenter() {
     [12, "Competitors Tracked", { formula: "COUNTA('C-Competitors'!A5:A100)" }, "C-Competitors Registry", { text: "View Competitors", hyperlink: "#'C-Competitors'!A1" }],
     [13, "Search Queries Monitored", { formula: "COUNTA('C-SearchIntel'!A5:A100)" }, "C-SearchIntel Registry", { text: "View Search Intel", hyperlink: "#'C-SearchIntel'!A1" }],
     [14, "Active AG Conversation ID", "4ab9eb3a-c885-41dd-a79e-c88088d26811", "P-Sessions Registry", { text: "View Sessions", hyperlink: "#'P-Sessions'!A1" }],
-    [15, "Production Base URL", "https://utl.tools", "P-Sessions Config", { text: "Open Site", hyperlink: "https://utl.tools" }],
-    [16, "Local Development URL", "http://localhost:3000", "P-Sessions Config", { text: "Open Localhost", hyperlink: "http://localhost:3000" }],
-    [17, "Primary Control Artifact", "control/UTL-CONTROL-CENTER.xlsx", "Canonical Master", { text: "Return to Index", hyperlink: "#'P-00 INDEX'!A1" }],
-    [18, "Last Verified Build", "Next.js 14 SSG (All Static Routes Pre-rendered)", "Build Task 332", { text: "View Releases", hyperlink: "#'P-Releases'!A1" }],
+    [15, "Git Commit SHA", "28360e6ea3cf492231484076d08a4ea1c1bd071e", "Git Head (main)", { text: "View Releases", hyperlink: "#'P-Releases'!A1" }],
+    [16, "Vercel Project ID", "prj_U9CXugQfUbT5IAAttCWIQjqsXBJx (utl-tools)", "Vercel Dashboard", { text: "Open Vercel", hyperlink: "https://vercel.com/devmallik4321-6559s-projects/utl-tools" }],
+    [17, "Production Apex Domain", "https://utl.tools (A: 76.76.21.21)", "Vercel Domains", { text: "Open Site", hyperlink: "https://utl.tools" }],
+    [18, "Primary Control Artifact", "control/UTL-CONTROL-CENTER.xlsx", "Canonical Master", { text: "Return to Index", hyperlink: "#'P-00 INDEX'!A1" }],
+    [19, "Last Verified Build", "Next.js 14 SSG (64 Static Routes Pre-rendered)", "Build Task 425", { text: "View Releases", hyperlink: "#'P-Releases'!A1" }],
   ];
 
   kpis.forEach((kpi, idx) => {
@@ -312,6 +313,7 @@ async function buildControlCenter() {
     [5, "TSK-0005", "random-picker", "CTX-006", "Upgrade Random Name/Item Picker with clear editable list UI and sample presets", "P0", "ACCEPTED", "Antigravity CLI", "2026-08-25", "2026-08-25", "Clear textarea, preset buttons, shuffle, winner count selection, confetti", "TC-0005", { text: "RandomPicker.tsx", hyperlink: "https://utl.tools/tools/random-picker" }, { text: "tools/random-picker", hyperlink: "https://utl.tools/tools/random-picker" }, "Verified and approved", "Enhanced editable list UI with 4 presets and clear feedback", "PASS", "Mark as Production Complete"],
     [6, "TSK-0006", "browser-info", "CTX-007", "Fix Netscape bug in Browser Info & implement multi-tiered client hints detection", "P0", "ACCEPTED", "Antigravity CLI", "2026-08-25", "2026-08-25", "Detect Chrome, Edge, Safari, Firefox, OS, GPU, DPR, CPU, memory accurately", "TC-0010", { text: "BrowserInfo.tsx", hyperlink: "https://utl.tools/tools/browser-info" }, { text: "tools/browser-info", hyperlink: "https://utl.tools/tools/browser-info" }, "Verified and approved", "Replaced appName with User-Agent Client Hints and regex parsing", "PASS", "Mark as Production Complete"],
     [7, "TSK-0007", "BATCH_P0", "CTX-001", "Implement Top P0 Expansion Candidates (Diff Checker, Markdown, CSV/JSON, Unit, Lorem, Case, Hash, Stopwatch)", "P0", "ACCEPTED", "Antigravity CLI", "2026-08-25", "2026-08-25", "8 new client-side utilities fully functional with Quality Standard layout", "TC-0040..TC-0047", { text: "apps/web-shell/src/components/tools/", hyperlink: "https://utl.tools" }, { text: "registry/utilities.json", hyperlink: "https://utl.tools" }, "Verified and approved", "Total production utilities increased from 38 to 47", "PASS", "Deploy to Vercel / Production"],
+    [8, "TSK-0008", "DEPLOY_V1", "CTX-010", "Execute V1 Production Deployment Pre-Flight, Git Baseline, and Vercel Domain Wiring", "P0", "ACCEPTED", "Antigravity CLI", "2026-08-25", "2026-08-25", "Clean Git repository committed (main), Vercel project created, utl.tools domains attached", "TC-0001..TC-0047", { text: "DEPLOYMENT.md", hyperlink: "https://utl.tools" }, { text: "Commit 28360e6", hyperlink: "https://utl.tools" }, "Verified and ready for remote push", "Git commit 28360e6 created; Vercel project utl-tools attached to utl.tools domain", "PASS", "Push to GitHub remote & observe live traffic"],
   ];
 
   workItems.forEach((w, idx) => {
@@ -405,7 +407,7 @@ async function buildControlCenter() {
 
   const releaseItems = [
     [1, "REL-0001", "1.0.0", "2026-08-24", "Foundation Release: 38 Production Utilities + Next.js App Shell + Design System", 38, 38, 38, 0, "APPROVED", "PASS (54 Static Pages)", "STAGED", { text: "View Changelog ➡️", hyperlink: "#'C-Changes'!A2" }],
-    [2, "REL-0002", "1.1.0", "2026-08-25", "Production Release: 47 Utilities + Value Expansion + Talking Clock + Diff + Markdown + CSV/JSON + Control Center", 47, 47, 47, 0, "APPROVED", "PASS (64 Static Pages)", "READY_FOR_DEPLOYMENT", { text: "View Changelog ➡️", hyperlink: "#'C-Changes'!A3" }],
+    [2, "REL-0002", "1.1.0", "2026-08-25", "Public Production Release: 47 Utilities + Value Expansion + Widget Discovery + Canonical Control Center (Commit 28360e6)", 47, 47, 47, 0, "APPROVED", "PASS (64 Static Pages)", "PUBLIC_RELEASED", { text: "View Changelog ➡️", hyperlink: "#'C-Changes'!A3" }],
     [3, "REL-0003", "1.2.0", "2026-09-15", "Phase 2 Expansion: Next Batch of P1 Candidates & Traffic Intelligence", 15, 0, 0, 0, "PENDING", "PLANNED", "PLANNED", { text: "View Candidates ➡️", hyperlink: "#'C-Candidates'!A1" }],
   ];
 
@@ -456,7 +458,7 @@ async function buildControlCenter() {
     [7, "CTX-007", "Accuracy & Trust Analyst", "Verify mathematical formulas, RFC compliance, and privacy sandboxing", { text: "GOVERNANCE.md", hyperlink: "https://utl.tools" }, "RFC specs & math equations", "Formal verification notes & trust card", "ACTIVE", "2026-08-25", "Verified client-side Web Crypto & math", "Zero server logging"],
     [8, "CTX-008", "Traffic & Distribution Analyst", "Identify developer community distribution channels and backlink targets", { text: "future/intelligence-agents/traffic-intelligence-agent.md", hyperlink: "https://utl.tools" }, "Domain authority & directories", "Launch playbook & backlink directory", "ACTIVE", "2026-08-25", "Distribution strategy mapped", "Pre-launch preparation"],
     [9, "CTX-009", "Growth & Productivity Analyst", "Architect Phase 3 'My UTL' packs, workspaces, and pipelines", { text: "future/productivity-platform/my-utl-specification.md", hyperlink: "https://utl.tools" }, "Persona role mappings", "Productivity pack specifications", "ACTIVE", "2026-08-25", "Pack specifications complete", "Scheduled for Phase 3"],
-    [10, "CTX-010", "Publisher / Release Manager", "Execute Next.js SSG production build and deploy to hosting edge", { text: "documentation/DEPLOYMENT.md", hyperlink: "https://utl.tools" }, "Codebase & registry changes", "Production deployment artifact", "ACTIVE", "2026-08-25", "Build Task 332 exited with code 0", "Zero compilation errors"],
+    [10, "CTX-010", "Publisher / Release Manager", "Execute Next.js SSG production build and deploy to hosting edge", { text: "documentation/DEPLOYMENT.md", hyperlink: "https://utl.tools" }, "Codebase & registry changes", "Production deployment artifact", "ACTIVE", "2026-08-25", "Build Task 425 exited with code 0", "Zero compilation errors"],
   ];
 
   contexts.forEach((ctx, idx) => {
@@ -483,8 +485,10 @@ async function buildControlCenter() {
     "platform",
     "conversation_id",
     "project",
+    "git_commit",
     "local_dev_url",
     "production_url",
+    "vercel_project_id",
     "context_id",
     "created",
     "last_used",
@@ -499,7 +503,7 @@ async function buildControlCenter() {
   rowSessHeader.height = 26;
 
   const sessions = [
-    [1, "SES-0001", "Antigravity CLI", "Google DeepMind Advanced Agentic Coding", "4ab9eb3a-c885-41dd-a79e-c88088d26811", "UTL.tools", "http://localhost:3000", "https://utl.tools", "CTX-001..CTX-010", "2026-08-24", "2026-08-25", "ACTIVE", "Canonical master session for UTL.tools development. Zero secrets stored."],
+    [1, "SES-0001", "Antigravity CLI", "Google DeepMind Advanced Agentic Coding", "4ab9eb3a-c885-41dd-a79e-c88088d26811", "UTL.tools", "28360e6ea3cf492231484076d08a4ea1c1bd071e", "http://localhost:3000", "https://utl.tools", "prj_U9CXugQfUbT5IAAttCWIQjqsXBJx", "CTX-001..CTX-010", "2026-08-24", "2026-08-25", "ACTIVE", "Canonical master session for UTL.tools development and V1 public deployment."],
   ];
 
   sessions.forEach((s, idx) => {
@@ -728,7 +732,7 @@ async function buildControlCenter() {
       "PASS",
       "Verified and approved",
       "Automated and manual validation passed with 0 errors.",
-      { text: "Build Task 332 Log", hyperlink: "https://utl.tools" },
+      { text: "Build Task 425 Log", hyperlink: "https://utl.tools" },
       "2026-08-25",
       "Antigravity QA Engine"
     ]);
