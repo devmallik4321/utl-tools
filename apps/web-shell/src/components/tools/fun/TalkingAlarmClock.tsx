@@ -293,8 +293,15 @@ export function TalkingAlarmClock() {
         </div>
       )}
 
-      {/* Alarm Management Section */}
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
+        {/* Alarm Management Section */}
+        <div className="p-4 bg-muted/30 border border-border rounded-xl flex items-start gap-2.5 text-xs text-muted-foreground">
+          <AlertCircle className="w-4 h-4 text-amber-500 shrink-0 mt-0.5" />
+          <span>
+            <strong>Browser Background Note:</strong> Keep this browser tab open for alarms to sound reliably. Modern mobile and desktop browsers throttle background timers or suspend audio when a tab is discarded or the device enters deep sleep.
+          </span>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
         {/* Create New Alarm */}
         <div className="md:col-span-5 p-6 bg-card border border-border rounded-xl space-y-4">
           <span className="text-xs font-semibold text-foreground uppercase tracking-wider flex items-center gap-1.5">

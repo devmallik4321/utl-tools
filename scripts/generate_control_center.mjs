@@ -3,7 +3,7 @@ import fs from "fs";
 import path from "path";
 
 async function buildControlCenter() {
-  console.log("Starting UTL.tools Canonical Control Center V1.2 Observability & UX Polish Generation...");
+  console.log("Starting UTL.tools Canonical Control Center V1.2 Maintenance Freeze Generation...");
 
   const controlDir = path.resolve("control");
   const backupDir = path.resolve("control/backups");
@@ -72,7 +72,7 @@ async function buildControlCenter() {
 
   const sheetDefinitions = [
     { code: "P-00", name: "P-00 INDEX", type: "Parent", parent: "ROOT", desc: "Canonical navigation directory registering all worksheets.", count: "17 Sheets", target: "A1" },
-    { code: "P-01", name: "P-Dashboard", type: "Parent", parent: "P-00 INDEX", desc: "Operational KPIs, live status, GA4 analytics, Search Console state, and system health.", count: "Formula KPIs", target: "A1" },
+    { code: "P-01", name: "P-Dashboard", type: "Parent", parent: "P-00 INDEX", desc: "Operational KPIs, live status, GA4 analytics, Search Console state, and maintenance freeze.", count: "Formula KPIs", target: "A1" },
     { code: "P-02", name: "P-Charter", type: "Parent", parent: "P-00 INDEX", desc: "Project mission, philosophy, design rules, non-goals, and governance.", count: "Charter Doc", target: "A1" },
     { code: "P-03", name: "P-Utilities", type: "Parent", parent: "P-00 INDEX", desc: "Master registry of all 47 production utilities with live status & URLs.", count: "47 Utilities", target: "A1" },
     { code: "P-04", name: "P-Work", type: "Parent", parent: "P-00 INDEX", desc: "Primary actionable work queue, task states, acceptance criteria, assignments.", count: "Work Queue", target: "A1" },
@@ -115,12 +115,12 @@ async function buildControlCenter() {
 
   wsDash.getCell("A3").value = "UTL.tools — Operational Control Dashboard";
   wsDash.getCell("A3").font = fontTitle;
-  wsDash.getCell("A4").value = "Live state overview and operational metrics derived from control center tables.";
+  wsDash.getCell("A4").value = "Live state overview, operational metrics, and maintenance freeze state.";
   wsDash.getCell("A4").font = fontSubtitle;
 
   const kpis = [
     ["SN", "Metric", "Value", "Derived From / Source", "Direct Link"],
-    [1, "Platform Status", "LIVE & OPERATIONAL (V1.2 OBSERVABILITY & POLISH)", "System Verification", { text: "Open Production", hyperlink: "https://utl.tools" }],
+    [1, "Platform Status", "MAINTENANCE_MODE (FEATURE_DEVELOPMENT_FROZEN)", "Governance Directive", { text: "Open Production", hyperlink: "https://utl.tools" }],
     [2, "Current Version", "1.2.0 (Observability & UX Polish Release)", "Release Ledger", { text: "View Changelog", hyperlink: "#'C-Changes'!A1" }],
     [3, "GA4 Measurement ID", "G-H2G4BK9Y36 (Client-Side Safe)", "Analytics Integration", { text: "View Layout", hyperlink: "https://utl.tools" }],
     [4, "Google Search Console", "VERIFIED (Property: https://utl.tools, Sitemap: /sitemap.xml)", "GSC Console", { text: "View Sitemap", hyperlink: "https://utl.tools/sitemap.xml" }],
@@ -141,7 +141,7 @@ async function buildControlCenter() {
     [19, "Production URL", "https://utl.tools (HTTP 200 OK)", "Vercel Live Edge", { text: "Open Site", hyperlink: "https://utl.tools" }],
     [20, "WWW Subdomain URL", "https://www.utl.tools (HTTP 200 OK)", "Vercel Live Edge", { text: "Open WWW Site", hyperlink: "https://www.utl.tools" }],
     [21, "Primary Control Artifact", "control/UTL-CONTROL-CENTER.xlsx", "Canonical Master", { text: "Return to Index", hyperlink: "#'P-00 INDEX'!A1" }],
-    [22, "Last Verified Build", "Next.js 14 SSG (64 Static Routes Pre-rendered)", "Build Task 714", { text: "View Releases", hyperlink: "#'P-Releases'!A1" }],
+    [22, "Last Verified Build", "Next.js 14 SSG (64 Static Routes Pre-rendered)", "Build Task 753", { text: "View Releases", hyperlink: "#'P-Releases'!A1" }],
   ];
 
   kpis.forEach((kpi, idx) => {
@@ -167,7 +167,7 @@ async function buildControlCenter() {
 
   wsCharter.getCell("A3").value = "UTL.tools — Canonical Project Charter";
   wsCharter.getCell("A3").font = fontTitle;
-  wsCharter.getCell("A4").value = "Permanent architectural tenets, mission constraints, and non-negotiable standards.";
+  wsCharter.getCell("A4").value = "Permanent architectural tenets, mission constraints, and maintenance governance.";
   wsCharter.getCell("A4").font = fontSubtitle;
 
   const charterSections = [
@@ -182,6 +182,7 @@ async function buildControlCenter() {
     [8, "Tenet 4", "Search-Destination Complete", "Every utility page is an independent landing asset with clear purpose, result interpretation, guidance, and transparent limitations."],
     [9, "Tenet 5", "Zero Maintenance Fragility", "Pure static generation (SSG) with sub-100ms load times and full offline execution resilience."],
     [10, "Tenet 6", "Hosting Portability", "Zero vendor lock-in. Capable of instant deployment to Vercel, Cloudflare Pages, AWS S3/CloudFront, or self-hosted Nginx/Docker VPS."],
+    [11, "Maintenance Policy", "Controlled Maintenance Mode", "Permitted: security fixes, browser compatibility, factual corrections, performance fixes, and Control Center-approved items. Speculative features frozen."],
   ];
 
   charterSections.forEach((s, idx) => {
@@ -261,7 +262,7 @@ async function buildControlCenter() {
       0,
       0,
       "APPROVED",
-      "Maintain evergreen state; observe live search traffic & GA4 events",
+      "Maintain evergreen state; observe live search traffic & GA4 telemetry",
       { text: "View Full Review ➡️", hyperlink: `#'C-Reviews'!A${idx + 5}` }
     ]);
     row.height = 24;
@@ -312,12 +313,12 @@ async function buildControlCenter() {
     [1, "TSK-0001", "ALL_38", "CTX-001", "Implement Phase 1 Foundation: 38 production utilities with Next.js web shell", "P0", "ACCEPTED", "Antigravity CLI", "2026-08-24", "2026-08-24", "All 38 tools interactive, client-side, with SSG build", "TC-0001..TC-0038", { text: "Task 229 Log", hyperlink: "https://utl.tools" }, { text: "apps/web-shell/", hyperlink: "https://utl.tools" }, "Approved V1.0 baseline", "Completed initial batch with 0 build errors", "PASS", "Proceed to V1.1 Value Expansion"],
     [2, "TSK-0002", "ALL_38", "CTX-003", "Implement Version 1.1: Search Intent, Result Interpretation, Guidance, Limitations, and Trust Standards", "P0", "ACCEPTED", "Antigravity CLI", "2026-08-25", "2026-08-25", "Rich Value Model across all 38 tools with 0 filler", "TC-0001..TC-0038", { text: "Task 279 Log", hyperlink: "https://utl.tools" }, { text: "registry/utilities.json", hyperlink: "https://utl.tools" }, "Approved V1.1 expansion", "All 54 static routes compiled with zero errors", "PASS", "Create Canonical Control Center"],
     [3, "TSK-0003", "ALL_38", "CTX-002", "Verify Schema.org JSON-LD (SoftwareApplication + FAQPage + Breadcrumbs) across all routes", "P0", "ACCEPTED", "Antigravity CLI", "2026-08-25", "2026-08-25", "Valid JSON-LD schema injected into static HTML heads", "TC-0001..TC-0038", { text: "tools/[slug]/page.tsx", hyperlink: "https://utl.tools" }, { text: "SEO Playbook", hyperlink: "https://utl.tools" }, "Verified schema tags", "All 38 utilities inject valid structured data", "PASS", "Monitor Google Search Console upon launch"],
-    [4, "TSK-0004", "talking-alarm-clock", "CTX-001", "Implement Talking Alarm Clock with Web Speech Synthesis & Web Audio beeper alerts", "P0", "ACCEPTED", "Antigravity CLI", "2026-08-25", "2026-08-25", "Live 12H/24H clock, vocalize time, recurring alarms, audio fallback", "TC-0039", { text: "TalkingAlarmClock.tsx", hyperlink: "https://utl.tools/tools/talking-alarm-clock" }, { text: "tools/talking-alarm-clock", hyperlink: "https://utl.tools/tools/talking-alarm-clock" }, "Verified and approved", "100% client-side speech synthesis and audio beeps verified", "PASS", "Mark as Production Complete"],
+    [4, "TSK-0004", "talking-alarm-clock", "CTX-001", "Implement Talking Alarm Clock with Web Speech Synthesis, repeat alarms, 12/24H mode & Web Audio beeper", "P0", "ACCEPTED", "Antigravity CLI", "2026-08-25", "2026-08-25", "Live 12H/24H clock, vocalize time, recurring alarms, audio fallback, background throttling note", "TC-0039", { text: "TalkingAlarmClock.tsx", hyperlink: "https://utl.tools/tools/talking-alarm-clock" }, { text: "tools/talking-alarm-clock", hyperlink: "https://utl.tools/tools/talking-alarm-clock" }, "Verified and approved", "100% client-side speech synthesis and audio beeps verified with background note", "PASS", "Mark as Production Complete"],
     [5, "TSK-0005", "random-picker", "CTX-006", "Upgrade Random Name/Item Picker with clear editable list UI and sample presets", "P0", "ACCEPTED", "Antigravity CLI", "2026-08-25", "2026-08-25", "Clear textarea, preset buttons, shuffle, winner count selection, confetti", "TC-0005", { text: "RandomPicker.tsx", hyperlink: "https://utl.tools/tools/random-picker" }, { text: "tools/random-picker", hyperlink: "https://utl.tools/tools/random-picker" }, "Verified and approved", "Enhanced editable list UI with 4 presets and clear feedback", "PASS", "Mark as Production Complete"],
-    [6, "TSK-0006", "browser-info", "CTX-007", "Fix Netscape bug in Browser Info & implement multi-tiered client hints detection", "P0", "ACCEPTED", "Antigravity CLI", "2026-08-25", "2026-08-25", "Detect Chrome, Edge, Safari, Firefox, OS, GPU, DPR, CPU, memory accurately", "TC-0010", { text: "BrowserInfo.tsx", hyperlink: "https://utl.tools/tools/browser-info" }, { text: "tools/browser-info", hyperlink: "https://utl.tools/tools/browser-info" }, "Verified and approved", "Replaced appName with User-Agent Client Hints and regex parsing", "PASS", "Mark as Production Complete"],
+    [6, "TSK-0006", "browser-info", "CTX-007", "Fix Netscape bug in Browser Info & overhaul into 5 capability domains with reliability badges", "P0", "ACCEPTED", "Antigravity CLI", "2026-08-25", "2026-08-25", "Detect Chrome, Edge, Safari, Firefox, OS, GPU, DPR, CPU, memory, Client Hints accurately", "TC-0010", { text: "BrowserInfo.tsx", hyperlink: "https://utl.tools/tools/browser-info" }, { text: "tools/browser-info", hyperlink: "https://utl.tools/tools/browser-info" }, "Verified and approved", "Structured capability groups with reliable vs inferred badges", "PASS", "Mark as Production Complete"],
     [7, "TSK-0007", "BATCH_P0", "CTX-001", "Implement Top P0 Expansion Candidates (Diff Checker, Markdown, CSV/JSON, Unit, Lorem, Case, Hash, Stopwatch)", "P0", "ACCEPTED", "Antigravity CLI", "2026-08-25", "2026-08-25", "8 new client-side utilities fully functional with Quality Standard layout", "TC-0040..TC-0047", { text: "apps/web-shell/src/components/tools/", hyperlink: "https://utl.tools" }, { text: "registry/utilities.json", hyperlink: "https://utl.tools" }, "Verified and approved", "Total production utilities increased from 38 to 47", "PASS", "Deploy to Vercel / Production"],
     [8, "TSK-0008", "DEPLOY_V1", "CTX-010", "Deploy UTL.tools V1 to Vercel production edge with custom domains https://utl.tools", "P0", "ACCEPTED", "Antigravity CLI", "2026-08-25", "2026-08-25", "Live at https://utl.tools and https://www.utl.tools with HTTP 200 OK responses", "TC-0001..TC-0047", { text: "https://utl.tools", hyperlink: "https://utl.tools" }, { text: "Deployment dpl_FkypS4PW1rSYTNR715KnA9YNgBTJ", hyperlink: "https://utl-tools-q2gt0a44c-devmallik4321-6559s-projects.vercel.app" }, "Live and verified in production", "All 64 static routes live with HTTP 200 OK; SSL/TLS active; Vercel edge caching confirmed", "PASS", "Transition to V1.2 Observability & Polish"],
-    [9, "TSK-0009", "V1.2_POLISH", "CTX-002", "Integrate GA4 (G-H2G4BK9Y36), GSC readiness, intent discovery, semantic category accents, and ResultState", "P0", "ACCEPTED", "Antigravity CLI", "2026-08-25", "2026-08-25", "Zero sensitive payload tracking; client navigation tracked; 100% SSG pass", "TC-0001..TC-0047", { text: "https://utl.tools", hyperlink: "https://utl.tools" }, { text: "apps/web-shell/src/lib/analytics.ts", hyperlink: "https://utl.tools" }, "Approved V1.2 Observability & UX Polish", "GA4 + GSC ready; ResultState & BrowserInfo overhauled; 64 routes pre-rendered with 0 errors", "PASS", "Freeze for Traffic & Visibility Review"],
+    [9, "TSK-0009", "V1.2_POLISH", "CTX-002", "Integrate GA4 (G-H2G4BK9Y36), GSC readiness, intent discovery, semantic category accents, and ResultState", "P0", "ACCEPTED", "Antigravity CLI", "2026-08-25", "2026-08-25", "Zero sensitive payload tracking; client navigation tracked; 100% SSG pass", "TC-0001..TC-0047", { text: "https://utl.tools", hyperlink: "https://utl.tools" }, { text: "apps/web-shell/src/lib/analytics.ts", hyperlink: "https://utl.tools" }, "Approved V1.2 Observability & UX Polish", "GA4 + GSC ready; ResultState & BrowserInfo overhauled; 64 routes pre-rendered with 0 errors", "PASS", "Freeze for Maintenance Mode"],
   ];
 
   workItems.forEach((w, idx) => {
@@ -413,7 +414,7 @@ async function buildControlCenter() {
   const releaseItems = [
     [1, "REL-0001", "1.0.0", "2026-08-24", "Foundation Release: 38 Production Utilities + Next.js App Shell + Design System", 38, 38, 38, 0, "APPROVED", "PASS (54 Static Pages)", "STAGED", { text: "View Changelog ➡️", hyperlink: "#'C-Changes'!A2" }],
     [2, "REL-0002", "1.1.0", "2026-08-25", "Public Production Release: 47 Utilities + Value Expansion + Widget Discovery + Canonical Control Center", 47, 47, 47, 0, "APPROVED", "PASS (64 Static Pages)", "LIVE", { text: "View Changelog ➡️", hyperlink: "#'C-Changes'!A3" }],
-    [3, "REL-0003", "1.2.0", "2026-08-25", "Observability & UX Polish Release: GA4 (G-H2G4BK9Y36), GSC Setup, Intent Discovery, Semantic Themes, ResultState", 47, 47, 47, 0, "APPROVED", "PASS (64 Static Pages)", "LIVE", { text: "View Changelog ➡️", hyperlink: "#'C-Changes'!A4" }],
+    [3, "REL-0003", "1.2.0", "2026-08-25", "Observability & UX Polish Release: GA4 (G-H2G4BK9Y36), GSC Setup, Intent Discovery, Semantic Themes, ResultState, Maintenance Freeze", 47, 47, 47, 0, "APPROVED", "PASS (64 Static Pages)", "LIVE", { text: "View Changelog ➡️", hyperlink: "#'C-Changes'!A4" }],
     [4, "REL-0004", "1.3.0", "2026-09-15", "Phase 2 Expansion: Next Batch of P1 Candidates & Traffic Intelligence", 15, 0, 0, 0, "PENDING", "PLANNED", "PLANNED", { text: "View Candidates ➡️", hyperlink: "#'C-Candidates'!A1" }],
   ];
 
@@ -464,7 +465,7 @@ async function buildControlCenter() {
     [7, "CTX-007", "Accuracy & Trust Analyst", "Verify mathematical formulas, RFC compliance, and privacy sandboxing", { text: "GOVERNANCE.md", hyperlink: "https://utl.tools" }, "RFC specs & math equations", "Formal verification notes & trust card", "ACTIVE", "2026-08-25", "Verified client-side Web Crypto & math + Precise privacy wording", "Zero server logging"],
     [8, "CTX-008", "Traffic & Distribution Analyst", "Identify developer community distribution channels and backlink targets", { text: "future/intelligence-agents/traffic-intelligence-agent.md", hyperlink: "https://utl.tools" }, "Domain authority & directories", "Launch playbook & backlink directory", "ACTIVE", "2026-08-25", "Distribution strategy mapped; next activity: Traffic Review", "Pre-launch preparation"],
     [9, "CTX-009", "Growth & Productivity Analyst", "Architect Phase 3 'My UTL' packs, workspaces, and pipelines", { text: "future/productivity-platform/my-utl-specification.md", hyperlink: "https://utl.tools" }, "Persona role mappings", "Productivity pack specifications", "ACTIVE", "2026-08-25", "Pack specifications complete", "Scheduled for Phase 3"],
-    [10, "CTX-010", "Publisher / Release Manager", "Execute Next.js SSG production build and deploy to hosting edge", { text: "documentation/DEPLOYMENT.md", hyperlink: "https://utl.tools" }, "Codebase & registry changes", "Production deployment artifact", "ACTIVE", "2026-08-25", "Build Task 714 exited with code 0", "Zero compilation errors"],
+    [10, "CTX-010", "Publisher / Release Manager", "Execute Next.js SSG production build and deploy to hosting edge", { text: "documentation/DEPLOYMENT.md", hyperlink: "https://utl.tools" }, "Codebase & registry changes", "Production deployment artifact", "ACTIVE", "2026-08-25", "Build Task 753 exited with code 0", "Zero compilation errors"],
   ];
 
   contexts.forEach((ctx, idx) => {
@@ -510,7 +511,7 @@ async function buildControlCenter() {
   rowSessHeader.height = 26;
 
   const sessions = [
-    [1, "SES-0001", "Antigravity CLI", "Google DeepMind Advanced Agentic Coding", "4ab9eb3a-c885-41dd-a79e-c88088d26811", "UTL.tools", "5215f583569eead690467a840e69b5220c52f6f5", "https://github.com/devmallik4321/utl-tools.git", "http://localhost:3000", "https://utl.tools", "prj_U9CXugQfUbT5IAAttCWIQjqsXBJx", "CTX-001..CTX-010", "2026-08-24", "2026-08-25", "ACTIVE", "Canonical master session for UTL.tools development, deployment, and V1.2 Observability & UX Polish."],
+    [1, "SES-0001", "Antigravity CLI", "Google DeepMind Advanced Agentic Coding", "4ab9eb3a-c885-41dd-a79e-c88088d26811", "UTL.tools", "40d58778d910793bdf51b2e8a15fc4b4ae022137", "https://github.com/devmallik4321/utl-tools.git", "http://localhost:3000", "https://utl.tools", "prj_U9CXugQfUbT5IAAttCWIQjqsXBJx", "CTX-001..CTX-010", "2026-08-24", "2026-08-25", "MAINTENANCE_MODE", "Canonical master session for UTL.tools development, deployment, and V1.2 Observability & UX Polish (Maintenance Mode Active)."],
   ];
 
   sessions.forEach((s, idx) => {
@@ -738,7 +739,7 @@ async function buildControlCenter() {
       "PASS",
       "Verified live in production",
       "Automated and manual validation passed with HTTP 200 OK on Vercel Edge with GA4.",
-      { text: "Deployment dpl_FkypS4PW1rSYTNR715KnA9YNgBTJ", hyperlink: "https://utl.tools" },
+      { text: "Deployment dpl_Dkj9WZJ7LFMzFxq512i853E9py16", hyperlink: "https://utl.tools" },
       "2026-08-25",
       "Antigravity QA Engine"
     ]);
