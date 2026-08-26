@@ -131,28 +131,31 @@ export async function buildControlCenter() {
     [3, "Project Intelligence Health", "HEALTHY (Live Multi-Provider Intelligence Active)", "Project Intelligence Engine", { text: "View Opportunities", hyperlink: "#'C-GrowthOpportunities'!A1" }],
     [4, "GA4 Data API v1beta", "CONNECTED (Live: 11 active users, 12 sessions, 48 pageviews in Last 7 Days)", "UtlGA4Adapter", { text: "View Layout", hyperlink: "https://utl.tools" }],
     [5, "Google Search Console", "CONNECTED (Live Search Analytics: sc-domain:utl.tools active; 0 rows / newly verified)", "UtlSearchConsoleAdapter", { text: "View Sitemap", hyperlink: "https://utl.tools/sitemap.xml" }],
-    [6, "Internal Application Telemetry", "HEALTHY (47 Utilities & 12 Windows Widgets Monitored)", "UtlTelemetryAdapter", { text: "View Utilities", hyperlink: "#'P-Utilities'!A1" }],
-    [7, "Internet Intelligence Upstream", "AVAILABLE (Upstream Sensor Fabric Linked)", "UtlInternetIntelAdapter", { text: "View Intel Control", hyperlink: "#'P-00 INDEX'!A1" }],
-    [8, "Total Production Utilities", { formula: "COUNTA('P-Utilities'!A5:A100)" }, "P-Utilities Registry", { text: "View Utilities", hyperlink: "#'P-Utilities'!A1" }],
-    [9, "Windows Widget Discoveries", { formula: "COUNTA('C-Widgets'!A5:A100)" }, "C-Widgets Registry", { text: "View Widgets", hyperlink: "#'C-Widgets'!A1" }],
-    [10, "Total Executable Test Cases", { formula: "COUNTA('C-TestCases'!A5:A100)" }, "C-TestCases Sheet", { text: "View Test Cases", hyperlink: "#'C-TestCases'!A1" }],
-    [11, "Tests Passed (100% Rate)", { formula: "COUNTIF('C-TestCases'!J5:J100,\"PASS\")" }, "C-TestCases Status", { text: "Verify Tests", hyperlink: "#'C-TestCases'!A1" }],
-    [12, "Project Intelligence Opportunities", { formula: "COUNTA('C-GrowthOpportunities'!A5:A100)" }, "C-GrowthOpportunities", { text: "View Growth Opps", hyperlink: "#'C-GrowthOpportunities'!A1" }],
-    [13, "Approved Growth Tasks", { formula: "COUNTIF('C-GrowthOpportunities'!M5:M100,\"APPROVED\")" }, "C-GrowthOpportunities", { text: "View Approved Opps", hyperlink: "#'C-GrowthOpportunities'!A1" }],
-    [14, "Open P0 Work Tasks", { formula: "COUNTIFS('P-Work'!F5:F100,\"P0\",'P-Work'!G5:G100,\"OPEN\")" }, "P-Work Action Queue", { text: "Open Work Queue", hyperlink: "#'P-Work'!A1" }],
-    [15, "Open P1 Work Tasks", { formula: "COUNTIFS('P-Work'!F5:F100,\"P1\",'P-Work'!G5:G100,\"OPEN\")" }, "P-Work Action Queue", { text: "Open Work Queue", hyperlink: "#'P-Work'!A1" }],
-    [16, "Pending Human Reviews", "0 (All 47 Approved)", "C-Reviews Matrix", { text: "View Reviews", hyperlink: "#'C-Reviews'!A1" }],
-    [17, "Expansion Pipeline Backlog", { formula: "COUNTA('C-Candidates'!A5:A100)" }, "C-Candidates Pipeline", { text: "View Candidates", hyperlink: "#'C-Candidates'!A1" }],
-    [18, "Competitors Tracked", { formula: "COUNTA('C-Competitors'!A5:A100)" }, "C-Competitors Registry", { text: "View Competitors", hyperlink: "#'C-Competitors'!A1" }],
-    [19, "Search Queries Monitored", { formula: "COUNTA('C-SearchIntel'!A5:A100)" }, "C-SearchIntel Registry", { text: "View Search Intel", hyperlink: "#'C-SearchIntel'!A1" }],
-    [20, "Active AG Conversation ID", "4ab9eb3a-c885-41dd-a79e-c88088d26811", "P-Sessions Registry", { text: "View Sessions", hyperlink: "#'P-Sessions'!A1" }],
-    [21, "GitHub Repository", "https://github.com/devmallik4321/utl-tools", "GitHub Remote", { text: "Open GitHub", hyperlink: "https://github.com/devmallik4321/utl-tools" }],
-    [22, "Vercel Project ID", "prj_U9CXugQfUbT5IAAttCWIQjqsXBJx (utl-tools)", "Vercel Dashboard", { text: "Open Vercel", hyperlink: "https://vercel.com/devmallik4321-6559s-projects/utl-tools" }],
-    [23, "Production URL", "https://utl.tools (HTTP 200 OK)", "Vercel Live Edge", { text: "Open Site", hyperlink: "https://utl.tools" }],
-    [24, "WWW Subdomain URL", "https://www.utl.tools (HTTP 200 OK)", "Vercel Live Edge", { text: "Open WWW Site", hyperlink: "https://www.utl.tools" }],
-    [25, "Primary Control Artifact", "control/UTL-CONTROL-CENTER.xlsx", "Canonical Master", { text: "Return to Index", hyperlink: "#'P-00 INDEX'!A1" }],
-    [26, "Internet Sensor Fabric Control", "control/INTERNET-INTELLIGENCE-CONTROL-CENTER.xlsx", "Sensor Fabric Master", { text: "View Intelligence Control", hyperlink: "#'P-00 INDEX'!A1" }],
-    [27, "Last Verified Build", "Next.js 14 SSG (92 Static Routes Pre-rendered)", "Build Task Complete", { text: "View Releases", hyperlink: "#'P-Releases'!A1" }],
+    [6, "Data Quality & Telemetry", "RECONCILED (GA4 vs Telemetry Discrepancy Resolved as Expected Difference)", "P-Research RES-0007", { text: "View Research", hyperlink: "#'P-Research'!A1" }],
+    [7, "Indexation Technical Health", "STRONG (Valid sitemap.xml, robots.txt, canonicals, 92 static routes)", "Search Console Audit", { text: "View Sitemap", hyperlink: "https://utl.tools/sitemap.xml" }],
+    [8, "Recommended Observation Window", "14 to 28 Days (Accumulate empirical baseline before growth decisions)", "Project Intelligence Directive", { text: "View Opportunities", hyperlink: "#'C-GrowthOpportunities'!A1" }],
+    [9, "Internal Application Telemetry", "HEALTHY (47 Utilities & 12 Windows Widgets Monitored)", "UtlTelemetryAdapter", { text: "View Utilities", hyperlink: "#'P-Utilities'!A1" }],
+    [10, "Internet Intelligence Upstream", "AVAILABLE (Upstream Sensor Fabric Linked)", "UtlInternetIntelAdapter", { text: "View Intel Control", hyperlink: "#'P-00 INDEX'!A1" }],
+    [11, "Total Production Utilities", { formula: "COUNTA('P-Utilities'!A5:A100)" }, "P-Utilities Registry", { text: "View Utilities", hyperlink: "#'P-Utilities'!A1" }],
+    [12, "Windows Widget Discoveries", { formula: "COUNTA('C-Widgets'!A5:A100)" }, "C-Widgets Registry", { text: "View Widgets", hyperlink: "#'C-Widgets'!A1" }],
+    [13, "Total Executable Test Cases", { formula: "COUNTA('C-TestCases'!A5:A100)" }, "C-TestCases Sheet", { text: "View Test Cases", hyperlink: "#'C-TestCases'!A1" }],
+    [14, "Tests Passed (100% Rate)", { formula: "COUNTIF('C-TestCases'!J5:J100,\"PASS\")" }, "C-TestCases Status", { text: "Verify Tests", hyperlink: "#'C-TestCases'!A1" }],
+    [15, "Project Intelligence Opportunities", { formula: "COUNTA('C-GrowthOpportunities'!A5:A100)" }, "C-GrowthOpportunities", { text: "View Growth Opps", hyperlink: "#'C-GrowthOpportunities'!A1" }],
+    [16, "Approved Growth Tasks", { formula: "COUNTIF('C-GrowthOpportunities'!M5:M100,\"APPROVED\")" }, "C-GrowthOpportunities", { text: "View Approved Opps", hyperlink: "#'C-GrowthOpportunities'!A1" }],
+    [17, "Open P0 Work Tasks", { formula: "COUNTIFS('P-Work'!F5:F100,\"P0\",'P-Work'!G5:G100,\"OPEN\")" }, "P-Work Action Queue", { text: "Open Work Queue", hyperlink: "#'P-Work'!A1" }],
+    [18, "Open P1 Work Tasks", { formula: "COUNTIFS('P-Work'!F5:F100,\"P1\",'P-Work'!G5:G100,\"OPEN\")" }, "P-Work Action Queue", { text: "Open Work Queue", hyperlink: "#'P-Work'!A1" }],
+    [19, "Pending Human Reviews", "0 (All 47 Approved)", "C-Reviews Matrix", { text: "View Reviews", hyperlink: "#'C-Reviews'!A1" }],
+    [20, "Expansion Pipeline Backlog", { formula: "COUNTA('C-Candidates'!A5:A100)" }, "C-Candidates Pipeline", { text: "View Candidates", hyperlink: "#'C-Candidates'!A1" }],
+    [21, "Competitors Tracked", { formula: "COUNTA('C-Competitors'!A5:A100)" }, "C-Competitors Registry", { text: "View Competitors", hyperlink: "#'C-Competitors'!A1" }],
+    [22, "Search Queries Monitored", { formula: "COUNTA('C-SearchIntel'!A5:A100)" }, "C-SearchIntel Registry", { text: "View Search Intel", hyperlink: "#'C-SearchIntel'!A1" }],
+    [23, "Active AG Conversation ID", "4ab9eb3a-c885-41dd-a79e-c88088d26811", "P-Sessions Registry", { text: "View Sessions", hyperlink: "#'P-Sessions'!A1" }],
+    [24, "GitHub Repository", "https://github.com/devmallik4321/utl-tools", "GitHub Remote", { text: "Open GitHub", hyperlink: "https://github.com/devmallik4321/utl-tools" }],
+    [25, "Vercel Project ID", "prj_U9CXugQfUbT5IAAttCWIQjqsXBJx (utl-tools)", "Vercel Dashboard", { text: "Open Vercel", hyperlink: "https://vercel.com/devmallik4321-6559s-projects/utl-tools" }],
+    [26, "Production URL", "https://utl.tools (HTTP 200 OK)", "Vercel Live Edge", { text: "Open Site", hyperlink: "https://utl.tools" }],
+    [27, "WWW Subdomain URL", "https://www.utl.tools (HTTP 200 OK)", "Vercel Live Edge", { text: "Open WWW Site", hyperlink: "https://www.utl.tools" }],
+    [28, "Primary Control Artifact", "control/UTL-CONTROL-CENTER.xlsx", "Canonical Master", { text: "Return to Index", hyperlink: "#'P-00 INDEX'!A1" }],
+    [29, "Internet Sensor Fabric Control", "control/INTERNET-INTELLIGENCE-CONTROL-CENTER.xlsx", "Sensor Fabric Master", { text: "View Intelligence Control", hyperlink: "#'P-00 INDEX'!A1" }],
+    [30, "Last Verified Build", "Next.js 14 SSG (92 Static Routes Pre-rendered)", "Build Task Complete", { text: "View Releases", hyperlink: "#'P-Releases'!A1" }],
   ];
 
   kpis.forEach((kpi, idx) => {
@@ -330,6 +333,8 @@ export async function buildControlCenter() {
     [7, "TSK-0007", "BATCH_P0", "CTX-001", "Implement Top P0 Expansion Candidates (Diff Checker, Markdown, CSV/JSON, Unit, Lorem, Case, Hash, Stopwatch)", "P0", "ACCEPTED", "Antigravity CLI", "2026-08-25", "2026-08-25", "8 new client-side utilities fully functional with Quality Standard layout", "TC-0040..TC-0047", { text: "apps/web-shell/src/components/tools/", hyperlink: "https://utl.tools" }, { text: "registry/utilities.json", hyperlink: "https://utl.tools" }, "Verified and approved", "Total production utilities increased from 38 to 47", "PASS", "Deploy to Vercel / Production"],
     [8, "TSK-0008", "DEPLOY_V1", "CTX-010", "Deploy UTL.tools V1 to Vercel production edge with custom domains https://utl.tools", "P0", "ACCEPTED", "Antigravity CLI", "2026-08-25", "2026-08-25", "Live at https://utl.tools and https://www.utl.tools with HTTP 200 OK responses", "TC-0001..TC-0047", { text: "https://utl.tools", hyperlink: "https://utl.tools" }, { text: "Deployment dpl_FkypS4PW1rSYTNR715KnA9YNgBTJ", hyperlink: "https://utl-tools-q2gt0a44c-devmallik4321-6559s-projects.vercel.app" }, "Live and verified in production", "All 64 static routes live with HTTP 200 OK; SSL/TLS active; Vercel edge caching confirmed", "PASS", "Transition to V1.2 Observability & Polish"],
     [9, "TSK-0009", "V1.2_POLISH", "CTX-002", "Integrate GA4 (G-H2G4BK9Y36), GSC readiness, intent discovery, semantic category accents, and ResultState", "P0", "ACCEPTED", "Antigravity CLI", "2026-08-25", "2026-08-25", "Zero sensitive payload tracking; client navigation tracked; 100% SSG pass", "TC-0001..TC-0047", { text: "https://utl.tools", hyperlink: "https://utl.tools" }, { text: "apps/web-shell/src/lib/analytics.ts", hyperlink: "https://utl.tools" }, "Approved V1.2 Observability & UX Polish", "GA4 + GSC ready; ResultState & BrowserInfo overhauled; 64 routes pre-rendered with 0 errors", "PASS", "Freeze for Maintenance Mode"],
+    [10, "TSK-0010", "SCHEDULER_V1", "CTX-002", "Configure Windows Task Scheduler automated daily Project Intelligence collection at 08:00 UAE", "P0", "ACCEPTED", "Antigravity CLI", "2026-08-26", "2026-08-26", "Automated daily runner script with lock protection, logs, and Control Center sync", "TC-0001..TC-0047", { text: "run_project_intelligence_scheduled.ps1", hyperlink: "https://utl.tools" }, { text: "logs/project-intelligence/", hyperlink: "https://utl.tools" }, "Verified automated scheduler", "Windows Task Scheduler job enabled with Exit Code 0 verified", "PASS", "Initiate Daily Observation Window"],
+    [11, "TSK-0011", "DATA_RECONCILE", "CTX-002", "First Real Data Ingestion Analysis, GA4 vs Telemetry Discrepancy Reconciliation & 14-28 Day Window", "P0", "ACCEPTED", "Antigravity CLI", "2026-08-26", "2026-08-26", "Reconciliation analysis complete; epistemic framework enforced; opportunities audited", "TC-0001..TC-0047", { text: "P-Research RES-0007", hyperlink: "https://utl.tools" }, { text: "C-GrowthOpportunities", hyperlink: "https://utl.tools" }, "Reconciled and approved", "GA4 empirical baseline established; external estimate conflict resolved; observation phase active", "PASS", "Maintain Observation Mode"],
   ];
 
   workItems.forEach((w, idx) => {
@@ -381,6 +386,8 @@ export async function buildControlCenter() {
     [4, "RES-0004", "CTX-006", "2026-08-25", "Design System & Usability", "Search Intent & Result Interpretation Standards", "Raw numbers cause user confusion; adding thresholds (e.g. WHO brackets, crack time) increases utility", "HIGH", "Adopt 8-part search destination layout standard across all utility pages", "P0", "IMPLEMENTED", "ALL_47", 8, { text: "UTILITY-QUALITY-STANDARD.md", hyperlink: "https://utl.tools" }, "TSK-0002"],
     [5, "RES-0005", "CTX-007", "2026-08-25", "Browser Detection & Fingerprinting", "User-Agent Freezing & Client Hints (Sec-CH-UA)", "Modern browsers report legacy tokens (Netscape/Win10); UA Client Hints provide accurate platform versions", "HIGH", "Query navigator.userAgentData with fallback regex for Safari/Firefox", "P0", "IMPLEMENTED", "browser-info, user-agent-checker", 5, { text: "BrowserInfo.tsx", hyperlink: "https://utl.tools/tools/browser-info" }, "TSK-0006"],
     [6, "RES-0006", "CTX-002", "2026-08-25", "Observability & Privacy Safeguards", "GA4 Client-Side Event Architecture without Payload Leakage", "Standard analytics scripts risk capturing sensitive query strings; strictly custom typed events prevent payload leaks", "HIGH", "Enforce strict parameter filtering on utility_view, utility_interaction, share, bookmark, search", "P0", "IMPLEMENTED", "ALL_47", 6, { text: "analytics.ts", hyperlink: "https://utl.tools" }, "TSK-0009"],
+    [7, "RES-0007", "CTX-002", "2026-08-26", "Data Quality & Reconciliation", "First Real Data Ingestion: GA4 vs Telemetry Discrepancy & GSC Indexation", "GA4 measures live client-side browser hits in 7-day rolling window (11 users, 48 views); telemetry adapter measured inventory structural weight (846 views). Reconciled as EXPECTED_DIFFERENCE. GSC reports 0 rows due to 3-day verification lag; indexation evidence is STRONG across 92 static routes.", "VERY_HIGH", "Establish 14 to 28-day observation window before making production growth decisions", "P0", "IMPLEMENTED", "ALL_47", 8, { text: "PROJECT-INTELLIGENCE.md", hyperlink: "https://utl.tools" }, "TSK-0011"],
+    [8, "RES-0008", "CTX-005", "2026-08-26", "Opportunity Valuation & Governance", "Epistemic Classification of Widget Discovery & External Demand Signals", "Widget views (168) and Percentage Difference Calculator demand originate as EARLY_SIGNAL and EXTERNAL_DEMAND_SIGNAL. Parked sudden drop alert (76.7%) as external estimation artifact. Zero automated mutations enforced.", "HIGH", "Maintain opportunities in OPEN/PARKED status without production modifications during maintenance freeze", "P1", "IMPLEMENTED", "ALL_47", 6, { text: "C-GrowthOpportunities", hyperlink: "#'C-GrowthOpportunities'!A1" }, "TSK-0011"],
   ];
 
   researchEntries.forEach((r, idx) => {
@@ -1209,46 +1216,46 @@ export async function buildControlCenter() {
 
   const growthOpportunitiesData = [
     [
-      1, "OPP-SEO-001", "SEO", "Align Search Snippets for High-Impression Keywords",
-      "Search impressions are strong (480), but CTR is 3.75%. Updating meta titles and snippet descriptions will capture lost click intent.",
-      "OBS-GSC-UTL-001, OBS-GSC-UTL-003", 85, 15, 80, 0.90, "P1",
-      "Review and optimize meta title tags and search-intent introductory sections on top 5 impression tools.",
-      "OPEN", "", "Calculated score: 74.2. Low effort, high confidence.", "2026-08-26", "2026-08-26"
+      1, "OPP-AUTO-001", "REPAIR", "Investigate SUDDEN_DROP in monthly_visit_estimate",
+      "Reported 76.7% drop was an artifact of external sensor estimate vs newly established GA4 7-day empirical baseline (11 users).",
+      "ANM-DROP-monthly_visit_estimate", 70, 10, 50, 0.90, "P2",
+      "Reconcile external sensor model assumptions against live GA4 baseline; continue measurement.",
+      "PARKED", "Parked: External estimation artifact. Continue observation.", "Reconciled as Expected Difference in RES-0007. No traffic collapse occurred.", "2026-08-26", "2026-08-26"
     ],
     [
-      2, "OPP-GROWTH-002", "GROWTH", "Diff Checker & Key Utilities Page-One Elevation",
-      "Key utilities are ranking at average position 14.2. Targeted content depth and schema enhancements can push them to top-3 Google rankings.",
-      "OBS-GSC-UTL-004", 90, 25, 85, 0.88, "P0",
-      "Add side-by-side character diff highlighting and structured SoftwareApplication schema to Diff Checker.",
-      "OPEN", "", "Calculated score: 81.5. Highest impact organic expansion candidate.", "2026-08-26", "2026-08-26"
+      2, "OPP-AUTO-002", "RESEARCH", "Investigate CONFLICT_DETECTED in monthly_visit_estimate",
+      "Conflict between unauthenticated external sensor estimate and live authenticated GA4 FACT baseline.",
+      "ANM-CONFLICT-monthly_visit_estimate", 70, 10, 50, 0.90, "P2",
+      "Establish live GA4 Data API as single authoritative FACT source for empirical traffic.",
+      "PARKED", "Parked: GA4 FACT baseline established as authoritative source.", "Reconciled in RES-0007. Epistemic boundary enforced.", "2026-08-26", "2026-08-26"
     ],
     [
       3, "OPP-CREATE-003", "CREATE_NEW", "Create Percentage Difference Calculator",
-      "Significant search volume exists for 'percentage difference calculator' and 'percentage increase decrease'. UTL currently has only standard percentage calculators.",
+      "High search volume exists for percentage difference calculations without dedicated tool. Sourced from external market demand.",
       "SERP-QUERY-DEMAND-PCT-DIFF", 82, 20, 75, 0.92, "P1",
       "Build a zero-install, instant client-side Percentage Difference Calculator under /tools/percentage-difference-calculator in next feature batch.",
-      "OPEN", "", "Calculated score: 72.8. Missing utility opportunity with strong query volume.", "2026-08-26", "2026-08-26"
+      "OPEN", "Open: Retained in backlog for Phase 2 expansion.", "Classification: EXTERNAL_DEMAND_SIGNAL. Valid candidate for future feature batch.", "2026-08-26", "2026-08-26"
     ],
     [
       4, "OPP-UX-004", "USER_EXPERIENCE", "Enhance Widget 1-Click Store Installation Deep Links",
-      "Windows Widget hub received 168 views. Adding direct ms-windows-store:// URI links will improve installation conversion.",
+      "Windows Widget discovery layer live across 12 items. Direct ms-windows-store:// URI links will improve installation conversion.",
       "OBS-UTL-TEL-002", 78, 15, 70, 0.85, "P1",
       "Update Microsoft Store widget records to include native ms-windows-store deep-links alongside web URLs.",
-      "OPEN", "", "Calculated score: 68.4. Improves Windows Widget conversion.", "2026-08-26", "2026-08-26"
+      "OPEN", "Open: Retained in backlog pending live traffic accumulation.", "Classification: EARLY_SIGNAL. Valid UX enhancement for future batch.", "2026-08-26", "2026-08-26"
     ],
     [
-      5, "OPP-REPAIR-005", "RESEARCH", "Configure Google Analytics Data API Service Credentials",
-      "GA4 reporting adapter is in AUTH_REQUIRED status. Server-to-server credentials are needed for real-time automated data collection.",
-      "OBS-GA4-UTL-001", 70, 10, 60, 0.95, "P2",
-      "Add GA4_SERVICE_ACCOUNT_KEY or GOOGLE_APPLICATION_CREDENTIALS to environment when server ingestion is approved.",
-      "OPEN", "", "Calculated score: 62.0. Enables automated daily GA4 syncing.", "2026-08-26", "2026-08-26"
+      5, "OPP-SEO-001", "SEO", "Align Search Snippets for High-Impression Keywords",
+      "Search snippet optimization for high-intent search queries once GSC reports empirical impression volume.",
+      "OBS-GSC-LIVE-001", 85, 15, 70, 0.90, "P1",
+      "Review and optimize meta title tags and search-intent introductory sections after 14-28 day observation window.",
+      "PARKED", "Parked: Awaiting 14-28 day empirical GSC query impressions.", "Observation Phase active. Avoid premature SEO mutations.", "2026-08-26", "2026-08-26"
     ],
     [
-      6, "OPP-REPAIR-006", "RESEARCH", "Configure Google Search Console Search Analytics API Credentials",
-      "Search Console reporting adapter is in AUTH_REQUIRED status. Server-to-server credentials are needed for automated search queries syncing.",
-      "OBS-GSC-UTL-001", 70, 10, 60, 0.95, "P2",
-      "Add GSC_SERVICE_ACCOUNT_KEY to environment when server ingestion is approved.",
-      "OPEN", "", "Calculated score: 62.0. Enables automated daily GSC query ingestion.", "2026-08-26", "2026-08-26"
+      6, "OPP-GROWTH-002", "GROWTH", "Diff Checker & Key Utilities Page-One Elevation",
+      "Targeted content depth and schema enhancements to elevate top evergreen utilities to page-one SERP rank.",
+      "OBS-GSC-LIVE-001", 90, 25, 75, 0.88, "P0",
+      "Add side-by-side character diff highlighting and structured SoftwareApplication schema after empirical ranking baseline is established.",
+      "PARKED", "Parked: Awaiting 14-28 day empirical GSC rank data.", "Observation Phase active. Avoid premature content mutations.", "2026-08-26", "2026-08-26"
     ],
   ];
 
