@@ -9,6 +9,7 @@ import { UtlTelemetryAdapter } from "../intelligence/project/adapters/UtlTelemet
 import { UtlGA4Adapter } from "../intelligence/project/adapters/UtlGA4Adapter.mjs";
 import { UtlSearchConsoleAdapter } from "../intelligence/project/adapters/UtlSearchConsoleAdapter.mjs";
 import { UtlInternetIntelAdapter } from "../intelligence/project/adapters/UtlInternetIntelAdapter.mjs";
+import { GoogleAuthClient } from "../intelligence/project/googleAuth.mjs";
 import { utlOpportunityRules } from "../intelligence/project/rules.mjs";
 import { runUtlProjectIntelligence } from "../intelligence/project/runner.mjs";
 
@@ -16,12 +17,19 @@ test("UTL.tools Project Contract - Canonical Invariants", () => {
   assert.equal(utlProjectContract.project_id, "UTL");
   assert.equal(utlProjectContract.project_name, "UTL.tools");
   assert.equal(utlProjectContract.project_type, "WEB_PLATFORM");
-  assert.equal(utlProjectContract.approval_required, true); // Strict Human Governance
+  assert.equal(utlProjectContract.approval_required, true);
   assert.equal(utlProjectContract.goals.length >= 5, true);
   assert.equal(utlProjectContract.non_goals.length >= 5, true);
   assert.equal(utlProjectContract.available_data_sources.includes("SRC-GA4-UTL"), true);
   assert.equal(utlProjectContract.available_data_sources.includes("SRC-GSC-UTL"), true);
   assert.equal(utlProjectContract.available_data_sources.includes("SRC-UTL-TELEMETRY"), true);
+});
+
+test("Google Auth Client - Safe Handling without Credentials", async () => {
+  const auth = new GoogleAuthClient();
+  assert.equal(auth.hasCredentials(), false);
+  const token = await auth.getAccessToken();
+  assert.equal(token, null);
 });
 
 test("UTL Provider Adapters - Epistemic & Auth Required Transparency", async () => {
@@ -88,13 +96,11 @@ test("UTL Project Intelligence Engine - End-to-End Pipeline & Governance", async
   assert.equal(result.opportunities.length >= 4, true);
   assert.equal(result.recommendations.length >= 4, true);
 
-  // Verify that all recommendations mandate human approval
   for (const rec of result.recommendations) {
     assert.equal(rec.approval_required, true);
     assert.equal(rec.status, "PROPOSED");
   }
 
-  // Verify Human Decision Workflow
   const topRec = result.recommendations[0];
   const dec = await result.engine.recordHumanDecision(
     topRec,
@@ -108,7 +114,6 @@ test("UTL Project Intelligence Engine - End-to-End Pipeline & Governance", async
   assert.equal(dec.executionHandoff !== undefined, true);
   assert.equal(dec.executionHandoff?.status, "READY");
 
-  // Verify Validation Closed Loop
   const val = await result.engine.validateOutcome(
     dec.executionHandoff,
     480,
