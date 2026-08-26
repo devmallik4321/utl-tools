@@ -5,16 +5,17 @@ export class UtlGA4Adapter {
     this.provider_id = "SRC-GA4-UTL";
     this.provider_type = "ANALYTICS_DATA_API";
     this.measurementId = options.measurementId || process.env.GA4_MEASUREMENT_ID || "G-H2G4BK9Y36";
-    this.propertyId = options.propertyId || process.env.GA4_PROPERTY_ID || null;
+    this.propertyId = options.propertyId || process.env.GA4_PROPERTY_ID || "551527574";
     this.authClient = new GoogleAuthClient();
   }
 
   /**
-   * Collect observations from Google Analytics 4 Data API v1beta or report AUTH_REQUIRED.
+   * Collect observations from Google Analytics 4 Data API v1beta.
    */
   async collect(project, dateWindow = "7daysAgo") {
     const now = new Date().toISOString();
-    const periodStart = new Date(Date.now() - 86400000 * (dateWindow === "90daysAgo" ? 90 : dateWindow === "28daysAgo" ? 28 : 7)).toISOString();
+    const days = dateWindow === "90daysAgo" ? 90 : dateWindow === "28daysAgo" ? 28 : 7;
+    const periodStart = new Date(Date.now() - 86400000 * days).toISOString();
 
     const token = await this.authClient.getAccessToken(["https://www.googleapis.com/auth/analytics.readonly"]);
 
@@ -46,6 +47,7 @@ export class UtlGA4Adapter {
           const sessions = parseInt(row[1]?.value || "0", 10);
           const pageviews = parseInt(row[2]?.value || "0", 10);
           const engagedSessions = parseInt(row[3]?.value || "0", 10);
+          const eventCount = parseInt(row[4]?.value || "0", 10);
 
           return [
             {
@@ -62,7 +64,7 @@ export class UtlGA4Adapter {
               dimensions: { property_id: this.propertyId, window: dateWindow },
               status: "SUCCESS",
               confidence: "VERY_HIGH",
-              confidence_score: 0.98,
+              confidence_score: 0.99,
               freshness_hours: 4,
               epistemic_type: "FACT",
               provenance: {
@@ -85,7 +87,53 @@ export class UtlGA4Adapter {
               dimensions: { property_id: this.propertyId, engaged_sessions: engagedSessions },
               status: "SUCCESS",
               confidence: "VERY_HIGH",
-              confidence_score: 0.98,
+              confidence_score: 0.99,
+              freshness_hours: 4,
+              epistemic_type: "FACT",
+              provenance: {
+                source_name: `Google Analytics 4 (${this.measurementId})`,
+                collection_method: "GA4_RUN_REPORT_API",
+              },
+              collection_run_id: `RUN-${Date.now()}`,
+            },
+            {
+              observation_id: `OBS-GA4-LIVE-VIEWS-${Date.now()}`,
+              project_id: project.project_id,
+              source_id: this.provider_id,
+              source_type: "GA4_DATA_API_V1BETA",
+              metric_id: "landing_page_views",
+              timestamp: now,
+              period_start: periodStart,
+              period_end: now,
+              value: pageviews,
+              unit: "views",
+              dimensions: { property_id: this.propertyId, event_count: eventCount },
+              status: "SUCCESS",
+              confidence: "VERY_HIGH",
+              confidence_score: 0.99,
+              freshness_hours: 4,
+              epistemic_type: "FACT",
+              provenance: {
+                source_name: `Google Analytics 4 (${this.measurementId})`,
+                collection_method: "GA4_RUN_REPORT_API",
+              },
+              collection_run_id: `RUN-${Date.now()}`,
+            },
+            {
+              observation_id: `OBS-GA4-LIVE-ENGAGED-${Date.now()}`,
+              project_id: project.project_id,
+              source_id: this.provider_id,
+              source_type: "GA4_DATA_API_V1BETA",
+              metric_id: "engaged_sessions",
+              timestamp: now,
+              period_start: periodStart,
+              period_end: now,
+              value: engagedSessions,
+              unit: "sessions",
+              dimensions: { property_id: this.propertyId },
+              status: "SUCCESS",
+              confidence: "VERY_HIGH",
+              confidence_score: 0.99,
               freshness_hours: 4,
               epistemic_type: "FACT",
               provenance: {
@@ -104,7 +152,7 @@ export class UtlGA4Adapter {
       }
     }
 
-    // Explicit AUTH_REQUIRED fallback with strict epistemic transparency
+    // Fallback if token unavailable
     return [
       {
         observation_id: `OBS-GA4-UTL-001-${Date.now()}`,
@@ -118,30 +166,6 @@ export class UtlGA4Adapter {
         value: 120,
         unit: "users",
         dimensions: { measurement_id: this.measurementId, auth_state: "AUTH_REQUIRED" },
-        status: "AUTH_REQUIRED",
-        confidence: "MEDIUM",
-        confidence_score: 0.70,
-        freshness_hours: 24,
-        epistemic_type: "ESTIMATE",
-        provenance: {
-          source_name: `Google Analytics 4 (${this.measurementId})`,
-          collection_method: "CLIENT_SIDE_BEACON_BASELINE",
-          transformation: "Auth pending; Google Service Account Key required for live API sync",
-        },
-        collection_run_id: `RUN-${Date.now()}`,
-      },
-      {
-        observation_id: `OBS-GA4-UTL-002-${Date.now()}`,
-        project_id: project.project_id,
-        source_id: this.provider_id,
-        source_type: "GA4_REPORTING_ADAPTER",
-        metric_id: "organic_users",
-        timestamp: now,
-        period_start: periodStart,
-        period_end: now,
-        value: 75,
-        unit: "users",
-        dimensions: { channel: "Organic Search", auth_state: "AUTH_REQUIRED" },
         status: "AUTH_REQUIRED",
         confidence: "MEDIUM",
         confidence_score: 0.70,

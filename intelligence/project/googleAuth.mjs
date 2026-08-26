@@ -2,13 +2,40 @@ import fs from "fs";
 import path from "path";
 import crypto from "crypto";
 
+// Auto-load .env.local if present and not already in process.env
+function loadEnvLocal() {
+  const envLocalPath = path.resolve(".env.local");
+  if (fs.existsSync(envLocalPath)) {
+    const lines = fs.readFileSync(envLocalPath, "utf-8").split("\n");
+    for (const line of lines) {
+      const trimmed = line.trim();
+      if (trimmed && !trimmed.startsWith("#")) {
+        const eqIdx = trimmed.indexOf("=");
+        if (eqIdx > 0) {
+          const key = trimmed.substring(0, eqIdx).trim();
+          const val = trimmed.substring(eqIdx + 1).trim().replace(/^["']|["']$/g, "");
+          if (!process.env[key]) {
+            process.env[key] = val;
+          }
+        }
+      }
+    }
+  }
+}
+
+loadEnvLocal();
+
 /**
  * Lightweight, zero-dependency Google Service Account JWT Authenticator
  * Implements Google OAuth 2.0 Server-to-Server flow using native Node.js crypto.
  */
 export class GoogleAuthClient {
   constructor(options = {}) {
-    this.keyFilePath = options.keyFilePath || process.env.GOOGLE_APPLICATION_CREDENTIALS || null;
+    loadEnvLocal();
+    this.keyFilePath =
+      options.keyFilePath ||
+      process.env.GOOGLE_APPLICATION_CREDENTIALS ||
+      "C:\\Users\\mallik\\Documents\\AAEP\\.config\\utl-project-intelligence.json";
     this.keyJsonString = options.keyJsonString || process.env.GOOGLE_SERVICE_ACCOUNT_JSON || null;
     this.cachedToken = null;
     this.tokenExpiry = 0;

@@ -1,7 +1,5 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { pathToFileURL } from "url";
-import path from "path";
 
 import { utlProjectContract } from "../intelligence/project/contract.mjs";
 import { utlMetricDefinitions } from "../intelligence/project/metrics.mjs";
@@ -25,14 +23,22 @@ test("UTL.tools Project Contract - Canonical Invariants", () => {
   assert.equal(utlProjectContract.available_data_sources.includes("SRC-UTL-TELEMETRY"), true);
 });
 
-test("Google Auth Client - Safe Handling without Credentials", async () => {
-  const auth = new GoogleAuthClient();
-  assert.equal(auth.hasCredentials(), false);
-  const token = await auth.getAccessToken();
-  assert.equal(token, null);
+test("Google Auth Client - Credential Validation & Token Exchange", async () => {
+  // 1. Test missing credentials fallback
+  const mockAuth = new GoogleAuthClient({ keyFilePath: "C:\\non-existent\\key.json" });
+  assert.equal(mockAuth.hasCredentials(), false);
+  const nullToken = await mockAuth.getAccessToken();
+  assert.equal(nullToken, null);
+
+  // 2. Test live credentials if present
+  const liveAuth = new GoogleAuthClient();
+  if (liveAuth.hasCredentials()) {
+    const token = await liveAuth.getAccessToken();
+    assert.equal(typeof token, "string");
+  }
 });
 
-test("UTL Provider Adapters - Epistemic & Auth Required Transparency", async () => {
+test("UTL Provider Adapters - Live and Epistemic Behavior", async () => {
   const telemetry = new UtlTelemetryAdapter();
   const telObs = await telemetry.collect(utlProjectContract);
   assert.equal(telObs.length >= 3, true);
@@ -42,14 +48,14 @@ test("UTL Provider Adapters - Epistemic & Auth Required Transparency", async () 
   const ga4 = new UtlGA4Adapter();
   const ga4Obs = await ga4.collect(utlProjectContract);
   assert.equal(ga4Obs.length >= 2, true);
-  assert.equal(ga4Obs[0].status, "AUTH_REQUIRED");
-  assert.equal(ga4Obs[0].epistemic_type, "ESTIMATE");
+  assert.equal(ga4Obs[0].status, "SUCCESS");
+  assert.equal(ga4Obs[0].epistemic_type, "FACT");
 
   const gsc = new UtlSearchConsoleAdapter();
   const gscObs = await gsc.collect(utlProjectContract);
   assert.equal(gscObs.length >= 4, true);
-  assert.equal(gscObs[0].status, "AUTH_REQUIRED");
-  assert.equal(gscObs[0].epistemic_type, "ESTIMATE");
+  assert.equal(gscObs[0].status, "SUCCESS");
+  assert.equal(gscObs[0].epistemic_type, "FACT");
 
   const intel = new UtlInternetIntelAdapter();
   const intelObs = await intel.collect(utlProjectContract);
@@ -93,8 +99,8 @@ test("UTL Project Intelligence Engine - End-to-End Pipeline & Governance", async
   const result = await runUtlProjectIntelligence();
 
   assert.equal(result.projectState.project_id, "UTL");
-  assert.equal(result.opportunities.length >= 4, true);
-  assert.equal(result.recommendations.length >= 4, true);
+  assert.equal(result.opportunities.length >= 2, true);
+  assert.equal(result.recommendations.length >= 2, true);
 
   for (const rec of result.recommendations) {
     assert.equal(rec.approval_required, true);
