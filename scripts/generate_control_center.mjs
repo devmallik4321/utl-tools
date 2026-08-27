@@ -1,6 +1,7 @@
 import ExcelJS from "exceljs";
 import fs from "fs";
 import path from "path";
+import { loadDailyStatistics } from "../intelligence/project/dailyStatisticsStore.mjs";
 
 export async function buildControlCenter() {
   console.log("Starting UTL.tools Canonical Control Center V1.2 Maintenance Freeze Generation...");
@@ -73,7 +74,7 @@ export async function buildControlCenter() {
   rowIdxHeader.height = 26;
 
   const sheetDefinitions = [
-    { code: "P-00", name: "P-00 INDEX", type: "Parent", parent: "ROOT", desc: "Canonical navigation directory registering all worksheets.", count: "19 Sheets", target: "A1" },
+    { code: "P-00", name: "P-00 INDEX", type: "Parent", parent: "ROOT", desc: "Canonical navigation directory registering all worksheets.", count: "22 Sheets", target: "A1" },
     { code: "P-01", name: "P-Dashboard", type: "Parent", parent: "P-00 INDEX", desc: "Operational KPIs, live status, GA4 analytics, Search Console state, and maintenance freeze.", count: "Formula KPIs", target: "A1" },
     { code: "P-02", name: "P-Charter", type: "Parent", parent: "P-00 INDEX", desc: "Project mission, philosophy, design rules, non-goals, and governance.", count: "Charter Doc", target: "A1" },
     { code: "P-03", name: "P-Utilities", type: "Parent", parent: "P-00 INDEX", desc: "Master registry of all 47 production utilities with live status & URLs.", count: "47 Utilities", target: "A1" },
@@ -92,8 +93,9 @@ export async function buildControlCenter() {
     { code: "C-08", name: "C-SearchIntel", type: "Child", parent: "P-Research", desc: "Search intelligence registry (queries, country, intent, SERP density).", count: "8 Search Records", target: "A1" },
     { code: "C-09", name: "C-Widgets", type: "Child", parent: "P-Utilities", desc: "Windows Widget Discovery Layer master registry (id, name, platform_type, review).", count: `${widgets.length} Widgets`, target: "A1" },
     { code: "C-10", name: "C-WidgetCategories", type: "Child", parent: "P-Utilities", desc: "Windows Widget Category taxonomy & intent mapping registry.", count: `${widgetCategories.length} Categories`, target: "A1" },
-    { code: "C-11", name: "C-GrowthObservations", type: "Child", parent: "P-Research", desc: "Canonical Project Intelligence observation ledger with epistemic classification.", count: "14 Observations", target: "A1" },
+    { code: "C-11", name: "C-GrowthObservations", type: "Child", parent: "P-Research", desc: "Canonical Project Intelligence observation ledger with epistemic classification.", count: "10 Observations", target: "A1" },
     { code: "C-12", name: "C-GrowthOpportunities", type: "Child", parent: "P-Work", desc: "Ranked Project Intelligence opportunities queue with human approval gates.", count: "6 Opportunities", target: "A1" },
+    { code: "C-13", name: "C-DailyStatistics", type: "Child", parent: "P-Dashboard", desc: "Authoritative daily chronological time-series tracking GA4, GSC, and telemetry.", count: "Daily Log", target: "A1" },
   ];
 
   sheetDefinitions.forEach((s, idx) => {
@@ -1270,6 +1272,88 @@ export async function buildControlCenter() {
     };
     if (idx % 2 === 1) row.eachCell((cell) => (cell.fill = fillZebra));
   });
+
+  // ==========================================
+  // 20. C-DailyStatistics (Child of P-Dashboard)
+  // ==========================================
+  const wsDailyStats = workbook.addWorksheet("C-DailyStatistics", { views: [{ showGridLines: true }] });
+  addNavRow(wsDailyStats, "P-Dashboard");
+
+  wsDailyStats.getCell("A3").value = "C-DailyStatistics — Canonical Daily Intelligence Time-Series";
+  wsDailyStats.getCell("A3").font = fontTitle;
+  wsDailyStats.getCell("A4").value = "Authoritative daily chronological record of multi-provider observations and collection status.";
+  wsDailyStats.getCell("A4").font = fontSubtitle;
+
+  const dailyStatsHeaders = [
+    "SN", "date", "collection_timestamp", "ga4_active_users", "ga4_sessions", "ga4_screen_page_views",
+    "ga4_engaged_sessions", "gsc_impressions", "gsc_clicks", "gsc_ctr", "gsc_average_position",
+    "utl_utility_views", "utl_tool_executions", "widget_views", "widget_routes",
+    "tool_execution_view_ratio", "collection_status", "data_quality_status", "notes"
+  ];
+  const rowDailyStatsHeader = wsDailyStats.getRow(5);
+  rowDailyStatsHeader.values = dailyStatsHeaders;
+  rowDailyStatsHeader.font = fontHeader;
+  rowDailyStatsHeader.fill = fillChildHeader;
+  rowDailyStatsHeader.height = 26;
+
+  const dailyRecords = loadDailyStatistics();
+  dailyRecords.forEach((rec, idx) => {
+    const row = wsDailyStats.addRow([
+      idx + 1,
+      rec.date,
+      rec.collection_timestamp,
+      rec.ga4_active_users,
+      rec.ga4_sessions,
+      rec.ga4_screen_page_views,
+      rec.ga4_engaged_sessions,
+      rec.gsc_impressions,
+      rec.gsc_clicks,
+      rec.gsc_ctr,
+      rec.gsc_average_position,
+      rec.utl_utility_views,
+      rec.utl_tool_executions,
+      rec.widget_views,
+      rec.widget_routes,
+      rec.tool_execution_view_ratio,
+      rec.collection_status,
+      rec.data_quality_status,
+      rec.notes,
+    ]);
+    row.height = 24;
+    row.font = fontMain;
+    if (idx % 2 === 1) row.eachCell((cell) => (cell.fill = fillZebra));
+  });
+
+  // ==========================================
+  // Preserve custom/manually added worksheets
+  // ==========================================
+  const canonicalSheetNames = [
+    "P-00 INDEX", "P-Dashboard", "P-Charter", "P-Utilities", "P-Work", "P-Research", "P-Releases", "P-Contexts", "P-Sessions",
+    "C-Reviews", "C-Changes", "C-TestCases", "C-SEO", "C-Trust", "C-Candidates", "C-Competitors", "C-SearchIntel",
+    "C-Widgets", "C-WidgetCategories", "C-GrowthObservations", "C-GrowthOpportunities", "C-DailyStatistics"
+  ];
+
+  const existingWbFile = path.resolve("control/UTL-CONTROL-CENTER.xlsx");
+  if (fs.existsSync(existingWbFile)) {
+    try {
+      const existingWb = new ExcelJS.Workbook();
+      await existingWb.xlsx.readFile(existingWbFile);
+      for (const customSheet of existingWb.worksheets) {
+        if (!canonicalSheetNames.includes(customSheet.name) && !workbook.getWorksheet(customSheet.name)) {
+          const newSheet = workbook.addWorksheet(customSheet.name, { views: [{ showGridLines: true }] });
+          customSheet.eachRow({ includeEmpty: false }, (row, rowNum) => {
+            const newRow = newSheet.getRow(rowNum);
+            newRow.values = row.values;
+            newRow.height = row.height;
+            newRow.font = row.font;
+          });
+          console.log(`Preserved manual custom worksheet: "${customSheet.name}"`);
+        }
+      }
+    } catch (readErr) {
+      // Non-fatal notice
+    }
+  }
 
   // ==========================================
   // Auto-fit column widths across all sheets

@@ -42,7 +42,8 @@ async function validateControlCenter() {
     "C-Widgets",
     "C-WidgetCategories",
     "C-GrowthObservations",
-    "C-GrowthOpportunities"
+    "C-GrowthOpportunities",
+    "C-DailyStatistics"
   ];
 
   // 1. Check all expected sheets exist

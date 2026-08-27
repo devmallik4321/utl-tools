@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import { runUtlProjectIntelligence } from "../intelligence/project/runner.mjs";
+import { recordDailyStatistics } from "../intelligence/project/dailyStatisticsStore.mjs";
 import { generateControlCenter } from "./generate_control_center.mjs";
 
 async function main() {
@@ -30,7 +31,11 @@ async function main() {
   fs.writeFileSync(snapshotPath, JSON.stringify(snapshotData, null, 2));
   console.log(`\nSaved run snapshot to: ${snapshotPath}`);
 
-  // 3. Re-generate and synchronize canonical Control Center workbook
+  // 3. Record / update daily statistics history store
+  recordDailyStatistics(result.observations);
+  console.log("Updated daily statistics historical store.");
+
+  // 4. Re-generate and synchronize canonical Control Center workbook
   console.log("\nSynchronizing UTL-CONTROL-CENTER.xlsx...");
   await generateControlCenter();
 
