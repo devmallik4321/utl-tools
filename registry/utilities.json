@@ -3773,5 +3773,708 @@
         }
       ]
     }
+  },
+  {
+    "id": "freelance-hourly-rate-calculator",
+    "name": "Freelance Hourly Rate & Project Pricing Calculator",
+    "slug": "freelance-hourly-rate-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "freelance hourly rate calculator",
+      "how much should i charge freelance",
+      "freelance day rate calculator",
+      "hourly rate from annual salary",
+      "freelance pricing estimator",
+      "consultant hourly rate formula"
+    ],
+    "primaryKeywords": [
+      "freelance hourly rate calculator",
+      "freelance day rate calculator",
+      "how to calculate freelance rate",
+      "freelancer pricing calculator"
+    ],
+    "secondaryKeywords": [
+      "self employed hourly rate",
+      "billable hours calculator",
+      "freelance profit margin formula"
+    ],
+    "targetUsers": [
+      "Freelancers",
+      "Contractors",
+      "Consultants",
+      "Creative Agencies",
+      "Self-Employed"
+    ],
+    "badge": "Productivity",
+    "userProblem": "Freelancers and consultants often undercharge because they divide desired salary by 2,080 hours without accounting for unpaid non-billable time, self-employment taxes, overhead, and vacation.",
+    "searchIntent": "Calculate the exact minimum hourly and daily rates needed to hit target annual take-home pay after taxes and overhead.",
+    "resultInterpretation": "Calculates required minimum hourly rate, standard day rate, total annual gross invoicing target, and multi-tier project pricing sprints (10h, 25h, 50h, 100h retainers).",
+    "practicalGuidance": "Average full-time freelancers can only bill 20 to 25 hours per week; the remaining hours are consumed by administrative work, client proposals, and marketing.",
+    "limitations": "Tax rate is an estimate. Consult a qualified certified accountant for exact regional tax filing rules.",
+    "formula": "Min Hourly = (Target Net + Overhead) / (1 - Tax%) * (1 + Margin%) / (Weeks * Billable Hours/Week)",
+    "trustNotes": "100% Client-Side calculation. Zero financial data stored or transmitted.",
+    "related": [
+      "salary-hourly-converter",
+      "break-even-calculator",
+      "invoice-generator",
+      "vat-sales-tax-calculator"
+    ],
+    "seo": {
+      "title": "Freelance Hourly Rate Calculator — Day Rate & Project Pricing Estimator",
+      "metaDescription": "Calculate your ideal freelance hourly and daily rates based on target annual income, billable hours, taxes, and business overhead. Free and 100% client-side.",
+      "whatIsThis": "A financial planning calculator that reverse-engineers target net income, billable client hours, business overhead, and taxes into a sustainable freelance rate.",
+      "howItWorks": "1. Enter desired annual net income and business expenses.\n2. Set your estimated tax rate and realistic billable hours per week (default 25 hrs).\n3. View minimum hourly rate, day rate, and project quote pricing tiers.",
+      "whyUseIt": "Prevents freelancing burnout by ensuring all non-billable hours, vacation weeks, and tax liabilities are built into your client quotes.",
+      "faqs": [
+        {
+          "question": "How many billable hours are in a freelance year?",
+          "answer": "A realistic freelance year consists of 46 to 48 working weeks at 20 to 25 billable hours per week, totaling approximately 1,000 to 1,200 billable hours per year."
+        },
+        {
+          "question": "Why is freelance hourly rate higher than full-time employee wage?",
+          "answer": "Freelancers must cover their own health insurance, equipment, software, retirement, paid time off, and both halves of self-employment taxes."
+        }
+      ]
+    }
+  },
+  {
+    "id": "social-media-image-resizer",
+    "name": "Social Media Image Resizer & Safe Zones Previewer",
+    "slug": "social-media-image-resizer",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 Canvas / React / TypeScript",
+    "keywords": [
+      "social media image resizer",
+      "youtube banner resizer",
+      "twitter header size 2026",
+      "opengraph image resizer",
+      "instagram post crop",
+      "linkedin banner size"
+    ],
+    "primaryKeywords": [
+      "social media image resizer",
+      "youtube thumbnail resizer",
+      "twitter header resizer",
+      "crop image for social media"
+    ],
+    "secondaryKeywords": [
+      "1200x630 image resizer",
+      "youtube banner safe zone",
+      "linkedin post image dimensions"
+    ],
+    "targetUsers": [
+      "Content Creators",
+      "Social Media Managers",
+      "Designers",
+      "Digital Marketers"
+    ],
+    "badge": "Design",
+    "userProblem": "Creators need to crop and scale graphics to exact pixel dimensions for Twitter, YouTube, Instagram, and LinkedIn without blurry scaling or clipping safe zones.",
+    "searchIntent": "Resize, crop, and export images for specific social media platform dimensions (YouTube banners, OpenGraph previews, Instagram stories) in 1 click.",
+    "resultInterpretation": "Scales and center-crops images to standard platform dimensions on an HTML5 canvas with safe zone guides, exporting PNG/JPG files directly.",
+    "practicalGuidance": "Use 'OpenGraph / Social Preview' (1200x630) for article thumbnails and link share cards on Twitter, LinkedIn, and Facebook.",
+    "limitations": "Canvas executes in client browser memory. Large images (>25 MB) may take 1-2 seconds to decode.",
+    "formula": "Cover Scaling: Scale = max(CanvasWidth/ImgWidth, CanvasHeight/ImgHeight)",
+    "trustNotes": "100% Client-Side. Images are never uploaded to any server or cloud storage.",
+    "related": [
+      "aspect-ratio-calculator",
+      "screen-ppi-calculator",
+      "color-converter"
+    ],
+    "seo": {
+      "title": "Social Media Image Resizer — YouTube, Twitter, Instagram & LinkedIn Dimensions",
+      "metaDescription": "Resize and crop images instantly for YouTube banners, Twitter headers, OpenGraph share cards, Instagram posts, and LinkedIn. 100% private in-browser Canvas.",
+      "whatIsThis": "A client-side image editor that resizes, center-crops, and exports images for all standard social media platform dimensions.",
+      "howItWorks": "1. Choose your platform preset (YouTube Banner, Twitter Header, OpenGraph 1200x630, Instagram).\n2. Drag and drop any image file.\n3. Preview canvas output with safe zone guidelines and click 'Download PNG' or 'Download JPG'.",
+      "whyUseIt": "Zero image upload delays, zero account signups, and exact pixel-perfect social banner formatting.",
+      "faqs": [
+        {
+          "question": "What is the best dimension for OpenGraph social share cards?",
+          "answer": "The recommended size for OpenGraph preview images is 1200 x 630 pixels (aspect ratio 1.91:1)."
+        },
+        {
+          "question": "What is the safe zone for YouTube channel banners?",
+          "answer": "While the total banner canvas is 2560 x 1440 pixels, the central safe area visible on all desktop and mobile devices is 1546 x 423 pixels."
+        }
+      ]
+    }
+  },
+  {
+    "id": "curl-to-fetch-converter",
+    "name": "cURL to Fetch / Python / Axios Converter",
+    "slug": "curl-to-fetch-converter",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "curl to fetch",
+      "curl to python requests",
+      "convert curl to axios",
+      "curl to javascript converter",
+      "curl command to code",
+      "convert curl to node fetch"
+    ],
+    "primaryKeywords": [
+      "curl to fetch converter",
+      "curl to python converter",
+      "convert curl to axios",
+      "curl to code generator"
+    ],
+    "secondaryKeywords": [
+      "curl command to fetch request",
+      "curl to requests python online",
+      "convert curl headers to javascript"
+    ],
+    "targetUsers": [
+      "Developers",
+      "API Engineers",
+      "QA Engineers",
+      "DevOps"
+    ],
+    "badge": "High Usage",
+    "userProblem": "Developers testing API documentation see cURL shell commands and need to translate them into clean, copyable JavaScript `fetch`, `axios`, or Python `requests` code.",
+    "searchIntent": "Paste a cURL command and instantly convert it into idiomatic JavaScript Fetch, Python Requests, or Axios snippets.",
+    "resultInterpretation": "Parses HTTP methods, URLs, query parameters, header key-values, and JSON payload bodies into formatted syntax-highlighted code.",
+    "practicalGuidance": "Supports multiline shell syntax with backslash (`\\`) line continuations and raw JSON strings.",
+    "limitations": "Parses standard HTTP cURL commands. Advanced binary multipart uploads or custom SSL flags may require manual library adjustments.",
+    "formula": "Parser: AST Tokenizer extracting URL, -X (Method), -H (Headers), and -d (Payload)",
+    "trustNotes": "100% Client-Side. API keys and headers in cURL strings are never sent over the network.",
+    "related": [
+      "json-formatter",
+      "jwt-debugger",
+      "base64-encoder",
+      "url-encoder"
+    ],
+    "seo": {
+      "title": "cURL to Fetch Converter — Convert cURL to JavaScript, Python & Axios",
+      "metaDescription": "Convert cURL commands into JavaScript Fetch, Python Requests, and Axios code snippets. Fast, free, and 100% private client-side parsing.",
+      "whatIsThis": "A developer utility that parses command-line cURL syntax into modern, ready-to-run code snippets across JavaScript and Python.",
+      "howItWorks": "1. Paste any cURL command (including headers and JSON payload).\n2. Select your target language (JavaScript Fetch, Python Requests, or Axios).\n3. Click 'Copy Code' to paste directly into your codebase.",
+      "whyUseIt": "Speeds up API integration and eliminates manual syntax conversion mistakes.",
+      "faqs": [
+        {
+          "question": "Does this tool support POST requests with JSON payloads?",
+          "answer": "Yes, it parses `-d` and `--data` flags and formats the payload into `JSON.stringify(...)` in JavaScript and `json=...` in Python."
+        },
+        {
+          "question": "Is my API token or authorization header sent to a server?",
+          "answer": "No. The conversion executes entirely in your local browser with zero server calls."
+        }
+      ]
+    }
+  },
+  {
+    "id": "psu-wattage-calculator",
+    "name": "PC Power Supply (PSU) Wattage Calculator",
+    "slug": "psu-wattage-calculator",
+    "category": "hardware",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "psu wattage calculator",
+      "power supply calculator",
+      "pc power calculator",
+      "how many watts for rtx 4090",
+      "psu size for 7800x3d",
+      "pc build power estimator"
+    ],
+    "primaryKeywords": [
+      "psu wattage calculator",
+      "pc power supply calculator",
+      "power supply calculator gaming pc",
+      "what size psu do i need"
+    ],
+    "secondaryKeywords": [
+      "rtx 4070 super power supply",
+      "80 plus gold psu calculator",
+      "transient spike psu wattage"
+    ],
+    "targetUsers": [
+      "PC Builders",
+      "Gamers",
+      "Hardware Enthusiasts",
+      "System Integrators"
+    ],
+    "badge": "Hardware",
+    "userProblem": "PC builders selecting components (Intel/AMD CPUs, NVIDIA/AMD GPUs, SSDs, liquid coolers) need to know the required power supply wattage and safety headroom before buying a PSU.",
+    "searchIntent": "Calculate peak electrical power draw (Watts) for PC components and determine the recommended power supply wattage tier (650W, 750W, 850W, 1000W).",
+    "resultInterpretation": "Calculates total raw peak component draw and applies a recommended 20-30% transient safety headroom, recommending 80+ Gold / Platinum power supply ratings.",
+    "practicalGuidance": "Modern high-end graphics cards (RTX 4080/4090) experience brief microsecond transient power spikes; choosing a PSU with 25%+ headroom prevents unexpected shutdowns.",
+    "limitations": "Estimates peak load gaming scenarios. Extreme sub-zero liquid nitrogen overclocking requires specialized high-wattage custom PSUs.",
+    "formula": "Recommended_PSU = ceil((CPU_TDP + GPU_TDP + System_Watts) * (1 + Headroom%) / 50) * 50",
+    "trustNotes": "100% Client-Side. Calculations based on manufacturer TDP benchmarks.",
+    "related": [
+      "gpu-vram-ai-calculator",
+      "screen-ppi-calculator",
+      "storage-converter"
+    ],
+    "seo": {
+      "title": "PC Power Supply (PSU) Wattage Calculator — Gaming PC Power Estimator",
+      "metaDescription": "Calculate total system power draw and recommended PSU wattage for your PC build. Includes RTX 4090, 4080, Ryzen 7800X3D, and Core i9 TDP specifications.",
+      "whatIsThis": "A hardware power planning tool that computes total electrical power draw and recommends appropriate power supply units (PSU) with safety headroom.",
+      "howItWorks": "1. Select your CPU and GPU models.\n2. Choose your RAM configuration, M.2 SSD count, and cooler type.\n3. View estimated raw peak wattage and recommended PSU size (750W, 850W, 1000W) with 80 PLUS efficiency guidance.",
+      "whyUseIt": "Ensures system stability, prevents gaming shutdowns, and avoids overpaying for unnecessary oversized power supplies.",
+      "faqs": [
+        {
+          "question": "Why should I add 20% to 30% headroom to my PSU calculation?",
+          "answer": "Headroom accounts for power supply efficiency curves (PSUs run coolest and most efficiently at 50-70% load) and absorbs transient power spikes from modern GPUs."
+        },
+        {
+          "question": "What PSU is recommended for an RTX 4070 Super and Ryzen 7 7800X3D?",
+          "answer": "A quality 750W 80+ Gold power supply provides optimal power delivery and headroom for this configuration."
+        }
+      ]
+    }
+  },
+  {
+    "id": "discount-stacking-calculator",
+    "name": "Discount Stacking & Sequential Price Calculator",
+    "slug": "discount-stacking-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "discount stacking calculator",
+      "stacked discount calculator",
+      "multiple discounts calculator",
+      "sequential discount calculator",
+      "double discount price",
+      "coupon stacking calculator"
+    ],
+    "primaryKeywords": [
+      "discount stacking calculator",
+      "stacked discount calculator",
+      "multiple discounts on an item",
+      "sequential discount formula"
+    ],
+    "secondaryKeywords": [
+      "how to calculate stacked discounts",
+      "20 percent off plus 10 percent off",
+      "coupon stacking math"
+    ],
+    "targetUsers": [
+      "Shoppers",
+      "E-commerce Managers",
+      "Retailers",
+      "Deal Hunters"
+    ],
+    "badge": "Popular",
+    "userProblem": "Shoppers with multiple coupons (e.g. 20% storewide + $15 coupon + 5% member discount) struggle to calculate their true final payable price and total savings.",
+    "searchIntent": "Calculate the final price when multiple percentage and fixed dollar discounts are applied sequentially.",
+    "resultInterpretation": "Calculates final payable price, total cash saved, effective net percentage discount, and step-by-step price breakdowns after each discount layer.",
+    "practicalGuidance": "Discounts apply sequentially (compound deduction), not additively. For example, 20% off plus an additional 20% off equals a 36% total discount, not 40%.",
+    "limitations": "Calculation assumes standard e-commerce top-down sequential discounting.",
+    "formula": "Step_N_Price = Step_(N-1)_Price * (1 - Percent/100) OR Step_(N-1)_Price - FixedAmount",
+    "trustNotes": "100% Client-Side. Instant math calculations.",
+    "related": [
+      "discount-calculator",
+      "percentage-difference-calculator",
+      "vat-sales-tax-calculator",
+      "percentage-calculator"
+    ],
+    "seo": {
+      "title": "Discount Stacking Calculator — Multiple Coupons & Sequential Discounts",
+      "metaDescription": "Calculate final prices with stacked percentage and fixed dollar discounts. Shows step-by-step savings and true effective percentage discount.",
+      "whatIsThis": "A retail pricing calculator that computes the true final price when stacking multiple coupons, seasonal sales, and loyalty discounts.",
+      "howItWorks": "1. Enter the original item or cart price.\n2. Add your stacked discount layers (percentage or fixed dollar amounts).\n3. View final payable price, total money saved, and step-by-step pricing breakdown.",
+      "whyUseIt": "Reveals the exact out-of-pocket price and prevents calculation mistakes from additive percentage assumptions.",
+      "faqs": [
+        {
+          "question": "Is 20% off plus 20% off equal to 40% off?",
+          "answer": "No. The second 20% discount is applied to the already reduced price (80%), yielding an effective total discount of 36% (paying 64% of original price)."
+        },
+        {
+          "question": "Does the order of discounts matter?",
+          "answer": "When combining fixed dollar discounts and percentage discounts, applying fixed coupons first yields a different total than applying percentage discounts first. You can re-order layers to compare."
+        }
+      ]
+    }
+  },
+  {
+    "id": "ai-system-prompt-generator",
+    "name": "Structured LLM System Prompt Generator",
+    "slug": "ai-system-prompt-generator",
+    "category": "ai",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "system prompt generator",
+      "llm prompt builder",
+      "structured prompt generator",
+      "ai system prompt creator",
+      "prompt engineering tool",
+      "few shot prompt builder"
+    ],
+    "primaryKeywords": [
+      "system prompt generator",
+      "llm system prompt builder",
+      "ai prompt engineering generator",
+      "prompt generator for chatgpt"
+    ],
+    "secondaryKeywords": [
+      "claude system prompt template",
+      "few shot prompt generator",
+      "structured json prompt creator"
+    ],
+    "targetUsers": [
+      "AI Engineers",
+      "Prompt Designers",
+      "Product Developers",
+      "ChatGPT Power Users"
+    ],
+    "badge": "Modern",
+    "userProblem": "AI developers and builders struggle to write structured system prompts that reliably enforce output schemas, prevent hallucinations, and maintain consistency.",
+    "searchIntent": "Build production-ready LLM system prompts with explicit persona roles, behavioral invariants, output formatting rules, and few-shot examples.",
+    "resultInterpretation": "Generates clean, production-grade system prompts formatted in Markdown, strict JSON schema instructions, or XML semantic tags.",
+    "practicalGuidance": "Use negative behavioral constraints (e.g. 'Never output conversational filler') to make LLM outputs significantly more deterministic.",
+    "limitations": "Generates prompt text. Test prompt performance in your target model (GPT-4o, Claude 3.5, Gemini 1.5) to fine-tune temperature.",
+    "formula": "Prompt = Role + Primary_Objective + Invariant_Rules + Output_Format + Few_Shot_Examples",
+    "trustNotes": "100% Client-Side. Prompts are generated locally in browser memory.",
+    "related": [
+      "prompt-enhancer",
+      "token-counter",
+      "llm-token-cost-calculator",
+      "json-formatter"
+    ],
+    "seo": {
+      "title": "Structured LLM System Prompt Generator — Prompt Engineering Builder",
+      "metaDescription": "Create production-ready system prompts for GPT-4o, Claude 3.5, and Gemini. Build role definitions, behavioral constraints, schemas, and few-shot examples.",
+      "whatIsThis": "A prompt engineering tool that generates structured, highly reliable system prompts for AI models and LLM agent pipelines.",
+      "howItWorks": "1. Define role persona and primary objective.\n2. Choose output style (Markdown, Strict JSON, or XML tags).\n3. Add negative rules/constraints and few-shot input/output examples.\n4. Click 'Copy System Prompt' for your AI agent configuration.",
+      "whyUseIt": "Standardizes prompt architecture and dramatically reduces model hallucination and schema drift.",
+      "faqs": [
+        {
+          "question": "What makes a good LLM system prompt?",
+          "answer": "A strong system prompt clearly establishes the model's role, primary mission, explicit negative constraints ('do not do X'), output schema rules, and concrete few-shot examples."
+        },
+        {
+          "question": "Why use XML tags in system prompts?",
+          "answer": "Models like Claude and GPT-4 parse structured XML tags (e.g. <rules>, <context>, <examples>) with very high adherence, preventing prompt injection and confusion."
+        }
+      ]
+    }
+  },
+  {
+    "id": "break-even-calculator",
+    "name": "Break-Even & Margin Profitability Calculator",
+    "slug": "break-even-calculator",
+    "category": "business",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "break even calculator",
+      "break even point calculator",
+      "contribution margin calculator",
+      "business profitability calculator",
+      "break even units calculator",
+      "calculate break even revenue"
+    ],
+    "primaryKeywords": [
+      "break even calculator",
+      "break even point formula",
+      "contribution margin ratio",
+      "break even sales volume"
+    ],
+    "secondaryKeywords": [
+      "how to calculate break even point",
+      "fixed cost variable cost calculator",
+      "business profit simulator"
+    ],
+    "targetUsers": [
+      "Entrepreneurs",
+      "Small Business Owners",
+      "Financial Analysts",
+      "Product Managers",
+      "Startups"
+    ],
+    "badge": "Productivity",
+    "userProblem": "Business founders and product managers need to know how many units they must sell at a specific price to cover all fixed and variable costs before becoming profitable.",
+    "searchIntent": "Calculate break-even unit sales, break-even gross revenue, and contribution margin per unit with profit volume simulation.",
+    "resultInterpretation": "Calculates exact break-even units, revenue threshold, contribution margin ($ and %), and interactive monthly net profit/loss projections.",
+    "practicalGuidance": "Increasing selling price or decreasing variable costs increases the contribution margin, dramatically reducing the number of units required to break even.",
+    "limitations": "Assumes linear variable cost per unit without economies of scale volume discounts.",
+    "formula": "Break-Even Units = Fixed Costs / (Price - Variable Cost); CM Ratio = (Price - Variable Cost) / Price",
+    "trustNotes": "100% Client-Side financial modeling. Zero data stored.",
+    "related": [
+      "freelance-hourly-rate-calculator",
+      "invoice-generator",
+      "vat-sales-tax-calculator",
+      "discount-calculator"
+    ],
+    "seo": {
+      "title": "Break-Even Calculator — Break-Even Point, Revenue & Profit Simulator",
+      "metaDescription": "Calculate your business break-even point in units and revenue. Features contribution margin analysis and interactive profit simulation. 100% free.",
+      "whatIsThis": "A managerial economics calculator that determines the exact sales volume needed to cover fixed and variable business costs.",
+      "howItWorks": "1. Enter Total Fixed Costs (monthly overhead).\n2. Enter Variable Cost per unit and Selling Price per unit.\n3. Instantly view Break-Even Units, Break-Even Revenue, and adjust the profit simulator slider.",
+      "whyUseIt": "Essential for pricing strategy, startup financial modeling, product launch validation, and business plans.",
+      "faqs": [
+        {
+          "question": "What is the break-even point?",
+          "answer": "The break-even point is the production or sales level where total revenue exactly equals total costs (both fixed and variable), resulting in zero net profit and zero net loss."
+        },
+        {
+          "question": "What is contribution margin?",
+          "answer": "Contribution margin is the selling price per unit minus the variable cost per unit. It represents the portion of sales revenue that contributes toward covering fixed overhead costs."
+        }
+      ]
+    }
+  },
+  {
+    "id": "timezone-meeting-planner",
+    "name": "Visual Multi-Timezone Meeting Planner",
+    "slug": "timezone-meeting-planner",
+    "category": "education",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "timezone meeting planner",
+      "world meeting planner",
+      "timezone overlap planner",
+      "international meeting time calculator",
+      "find best meeting time across timezones",
+      "remote team timezone planner"
+    ],
+    "primaryKeywords": [
+      "timezone meeting planner",
+      "world meeting time calculator",
+      "timezone overlap visualizer",
+      "best meeting time across time zones"
+    ],
+    "secondaryKeywords": [
+      "remote work meeting time planner",
+      "utc meeting time converter",
+      "cross timezone scheduling tool"
+    ],
+    "targetUsers": [
+      "Remote Teams",
+      "Global Project Managers",
+      "Distributed Companies",
+      "International Contractors"
+    ],
+    "badge": "Productivity",
+    "userProblem": "Remote teams distributed across multiple countries struggle to find reasonable working hours that overlap without scheduling meetings in the middle of the night for colleagues.",
+    "searchIntent": "Find overlapping business hours across global timezones using an interactive 24-hour visual slider without account signups.",
+    "resultInterpretation": "Displays a color-coded 24-hour visual grid across timezones (Green: 9-18 Work, Amber: 7-9 / 18-21 Extended, Muted: Night), with 1-click meeting time schedule copying.",
+    "practicalGuidance": "Use UTC as the anchor reference when coordinating calendar invites across teams spanning the Americas, Europe, Middle East, and Asia.",
+    "limitations": "Standard calculation based on standard city timezone UTC offsets.",
+    "formula": "Local Time = (Selected UTC Hour + City UTC Offset + 24) % 24",
+    "trustNotes": "100% Client-Side. Calculations use standard UTC offsets in browser memory.",
+    "related": [
+      "timestamp-converter",
+      "working-days-calculator",
+      "talking-alarm-clock",
+      "stopwatch-timer"
+    ],
+    "seo": {
+      "title": "Timezone Meeting Planner — Visual Overlapping Hours for Remote Teams",
+      "metaDescription": "Find the best overlapping meeting times across multiple world timezones. Interactive 24-hour visual color grid for remote teams. Free and fast.",
+      "whatIsThis": "A global meeting scheduler that visualizes working hours across multiple international cities to find friendly overlapping meeting slots.",
+      "howItWorks": "1. Slide the 24-hour meeting time bar.\n2. View local converted times across San Francisco, New York, London, Dubai, Tokyo, and more.\n3. Identify green working hour overlaps and copy the finalized schedule in 1 click.",
+      "whyUseIt": "Eliminates timezone math errors and awkward late-night meeting requests for remote distributed companies.",
+      "faqs": [
+        {
+          "question": "What is the best time for a meeting between US Pacific and London?",
+          "answer": "Between 16:00 and 17:00 UTC (9:00 - 10:00 AM PST and 5:00 - 6:00 PM BST) provides a common working overlap."
+        },
+        {
+          "question": "How does the color-coding work?",
+          "answer": "Green indicates standard working hours (9:00 AM – 5:59 PM), amber indicates early morning or evening (7:00–9:00 AM / 6:00–9:00 PM), and dark indicates sleep/night."
+        }
+      ]
+    }
+  },
+  {
+    "id": "storage-converter",
+    "name": "Usable Drive Storage & Format Capacity Calculator",
+    "slug": "storage-converter",
+    "category": "hardware",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "usable drive storage calculator",
+      "ssd actual capacity calculator",
+      "why is my 1tb ssd 931 gb",
+      "decimal vs binary storage calculator",
+      "hard drive usable space",
+      "gib to gb converter"
+    ],
+    "primaryKeywords": [
+      "usable drive storage calculator",
+      "actual hard drive capacity calculator",
+      "why is 1tb only 931gb",
+      "formatted drive capacity"
+    ],
+    "secondaryKeywords": [
+      "decimal to binary storage difference",
+      "ssd formatted size in windows",
+      "ntfs format overhead calculation"
+    ],
+    "targetUsers": [
+      "PC Builders",
+      "Gamers",
+      "IT Administrators",
+      "Hardware Buyers"
+    ],
+    "badge": "Hardware",
+    "userProblem": "Consumers buying a 500GB, 1TB, or 2TB SSD/hard drive are confused why Windows Explorer reports significantly less available space (e.g. 931 GB for 1TB).",
+    "searchIntent": "Calculate the true formatted operating system capacity of any advertised drive and understand the Decimal vs Binary calculation discrepancy.",
+    "resultInterpretation": "Calculates real Windows reported GiB/TiB capacity, decimal byte totals, file system table overhead (NTFS, APFS, ext4), and practical file capacity (4K movies, RAW photos, songs).",
+    "practicalGuidance": "Drive manufacturers market in decimal base-10 ($10^9 = 1,000,000,000$ bytes = 1 GB), while Windows measures in binary base-2 ($2^{30} = 1,073,741,824$ bytes = 1 GiB), causing an apparent ~7% to 9% reduction.",
+    "limitations": "Actual file system overhead depends on drive cluster allocation size and partition table layout.",
+    "formula": "Usable_GiB = (Advertised_GB * 10^9) / (1024^3) * (1 - FS_Overhead%)",
+    "trustNotes": "100% Client-Side calculation.",
+    "related": [
+      "psu-wattage-calculator",
+      "screen-ppi-calculator",
+      "gpu-vram-ai-calculator"
+    ],
+    "seo": {
+      "title": "Usable Drive Storage Calculator — Real SSD & Hard Drive Capacity",
+      "metaDescription": "Calculate actual formatted storage in Windows for 256GB, 500GB, 1TB, 2TB, and 4TB SSDs. Explains decimal vs binary capacity and file system overhead.",
+      "whatIsThis": "A hardware storage utility that converts advertised decimal drive sizes into real formatted operating system capacity.",
+      "howItWorks": "1. Enter advertised drive capacity (e.g. 1 TB) or pick a preset.\n2. Choose file system format (Windows NTFS, macOS APFS, Linux ext4).\n3. View actual reported space in Windows and estimates of how many 4K movies and photos fit.",
+      "whyUseIt": "Eliminates buyer confusion over 'missing' hard drive space and helps plan storage needs accurately.",
+      "faqs": [
+        {
+          "question": "Why does a 1TB hard drive only show 931GB in Windows?",
+          "answer": "Drive makers define 1TB as 1,000,000,000,000 bytes (decimal). Windows calculates 1GB as 1,073,741,824 bytes (binary). Dividing 1,000,000,000,000 by 1,073,741,824 yields 931.32 GiB."
+        },
+        {
+          "question": "Is missing drive space caused by bad sectors or fraud?",
+          "answer": "No. It is purely a mathematical difference between Decimal (base-10) and Binary (base-2) measurement units."
+        }
+      ]
+    }
+  },
+  {
+    "id": "salary-hourly-converter",
+    "name": "Salary to Hourly & Paycheck Wage Converter",
+    "slug": "salary-hourly-converter",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "salary to hourly converter",
+      "hourly to salary calculator",
+      "annual salary to hourly wage",
+      "salary to biweekly paycheck",
+      "convert 75k to hourly",
+      "hourly wage to annual income"
+    ],
+    "primaryKeywords": [
+      "salary to hourly converter",
+      "hourly to salary calculator",
+      "annual salary to hourly rate",
+      "convert salary to paycheck"
+    ],
+    "secondaryKeywords": [
+      "40 hours per week salary to hourly",
+      "biweekly paycheck from annual salary",
+      "monthly income from hourly wage"
+    ],
+    "targetUsers": [
+      "Job Seekers",
+      "Employees",
+      "Hiring Managers",
+      "Contractors"
+    ],
+    "badge": "Popular",
+    "userProblem": "Job applicants evaluating offer letters and hourly workers negotiating wages need to convert between annual salary, monthly income, bi-weekly paychecks, and hourly rates.",
+    "searchIntent": "Convert any compensation figure into hourly, daily, weekly, bi-weekly, monthly, and annual wage equivalents.",
+    "resultInterpretation": "Calculates equivalent pay rates across all common pay periods (Hourly, Daily, Weekly, Bi-Weekly, Monthly, Annual) with customizable working hours.",
+    "practicalGuidance": "Standard full-time employment is calculated at 40 hours per week across 52 weeks (2,080 working hours per year).",
+    "limitations": "Calculations represent gross pre-tax income. Overtime, bonuses, and tax deductions vary by employer.",
+    "formula": "Annual = Hourly * Hours/Wk * Weeks/Yr; Hourly = Annual / (Hours/Wk * Weeks/Yr)",
+    "trustNotes": "100% Client-Side. Private and secure.",
+    "related": [
+      "freelance-hourly-rate-calculator",
+      "percentage-difference-calculator",
+      "loan-emi-calculator",
+      "break-even-calculator"
+    ],
+    "seo": {
+      "title": "Salary to Hourly Converter — Annual Wage to Hourly Paycheck Calculator",
+      "metaDescription": "Convert annual salary to hourly wage, monthly income, and bi-weekly paychecks. Compare job offers and calculate true hourly compensation instantly.",
+      "whatIsThis": "A wage conversion calculator that translates between annual salaries, hourly pay rates, and periodic paychecks.",
+      "howItWorks": "1. Enter your salary or wage amount.\n2. Select frequency type (Annual, Hourly, or Monthly).\n3. Adjust hours per week (default 40h) to view the complete equivalent pay matrix.",
+      "whyUseIt": "Empowers workers during salary negotiations and job offer evaluations.",
+      "faqs": [
+        {
+          "question": "What is a $75,000 salary converted to an hourly rate?",
+          "answer": "At 40 hours per week and 52 weeks per year (2,080 hours), a $75,000 annual salary equals approximately $36.06 per hour."
+        },
+        {
+          "question": "How many working hours are in a standard year?",
+          "answer": "A standard full-time year has 2,080 working hours (40 hours/week x 52 weeks)."
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-to-markdown-converter",
+    "name": "HTML to Markdown Converter & Clean Text Extractor",
+    "slug": "html-to-markdown-converter",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 DOMParser / React / TypeScript",
+    "keywords": [
+      "html to markdown converter",
+      "convert html to markdown",
+      "html to md online",
+      "clean html to markdown",
+      "html to markdown table",
+      "html to plain text converter"
+    ],
+    "primaryKeywords": [
+      "html to markdown converter",
+      "convert html to markdown online",
+      "html to md tool",
+      "html table to markdown"
+    ],
+    "secondaryKeywords": [
+      "strip html tags to markdown",
+      "webpage html to markdown text",
+      "client side html to markdown"
+    ],
+    "targetUsers": [
+      "Developers",
+      "Technical Writers",
+      "Content Creators",
+      "Documentation Teams"
+    ],
+    "badge": "High Usage",
+    "userProblem": "Developers and writers copy rich web HTML snippets and need clean, standardized Markdown format without bloated inline tags or tracking attributes.",
+    "searchIntent": "Convert raw HTML code into standard GitHub-flavored Markdown text with headings, lists, links, bold, code blocks, and blockquotes.",
+    "resultInterpretation": "Parses HTML DOM nodes client-side and outputs standardized, readable Markdown text.",
+    "practicalGuidance": "Paste raw HTML snippets or copied webpage inspector source to strip away bloated div/span wrapper tags while preserving semantic markdown formatting.",
+    "limitations": "Converts standard semantic HTML elements. Custom proprietary web components are converted based on text content.",
+    "formula": "DOM Tree Walk: Node_Element ➔ Semantic Markdown Syntax String",
+    "trustNotes": "100% Client-Side. HTML is parsed in local browser memory with zero network transmission.",
+    "related": [
+      "markdown-previewer",
+      "json-formatter",
+      "curl-to-fetch-converter",
+      "diff-checker"
+    ],
+    "seo": {
+      "title": "HTML to Markdown Converter — Convert HTML Code to Markdown Online",
+      "metaDescription": "Convert raw HTML code into clean GitHub-flavored Markdown. Preserves headings, lists, links, bold, italic, code blocks, and tables. 100% private.",
+      "whatIsThis": "A developer tool that parses raw HTML markup and transforms it into clean, standardized Markdown syntax.",
+      "howItWorks": "1. Paste raw HTML code into the input editor.\n2. View live converted Markdown in the output pane.\n3. Click 'Copy Markdown' to paste directly into README files, blogs, or documentation.",
+      "whyUseIt": "Saves hours converting web articles, CMS content, and HTML snippets into clean documentation.",
+      "faqs": [
+        {
+          "question": "Does this tool preserve headings and lists?",
+          "answer": "Yes. It translates <h1>-<h6> to # headers, <ul>/<ol> to bullet and numbered lists, and <a> to markdown link syntax."
+        },
+        {
+          "question": "Is my HTML data sent to any server?",
+          "answer": "No. The parsing is done entirely in your browser using the native browser DOMParser engine."
+        }
+      ]
+    }
   }
 ]

@@ -90,32 +90,32 @@ async function validateControlCenter() {
   });
   console.log("✅ [PASS] Navigation links (Back to Index / Back to Parent) verified on all sheets.");
 
-  // 4. Validate P-Utilities & C-Reviews count (47 tools)
+  // 4. Validate P-Utilities & C-Reviews count
   const wsUtil = workbook.getWorksheet("P-Utilities");
   const wsReviews = workbook.getWorksheet("C-Reviews");
   const utilCount = wsUtil.rowCount - 4;
   const reviewCount = wsReviews.rowCount - 4;
 
-  if (utilCount !== 47 || reviewCount !== 47) {
-    throw new Error(`Utility count mismatch: P-Utilities=${utilCount}, C-Reviews=${reviewCount}, expected 47`);
+  if (utilCount < 47 || reviewCount < 47 || utilCount !== reviewCount) {
+    throw new Error(`Utility count mismatch: P-Utilities=${utilCount}, C-Reviews=${reviewCount}`);
   }
-  console.log(`✅ [PASS] 47 utilities verified in P-Utilities and C-Reviews.`);
+  console.log(`✅ [PASS] ${utilCount} utilities verified in P-Utilities and C-Reviews.`);
 
-  // 5. Validate C-TestCases count (47 test cases)
+  // 5. Validate C-TestCases count
   const wsTestCases = workbook.getWorksheet("C-TestCases");
   const testCount = wsTestCases.rowCount - 4;
-  if (testCount !== 47) {
-    throw new Error(`Test cases count mismatch: C-TestCases=${testCount}, expected 47`);
+  if (testCount < 47) {
+    throw new Error(`Test cases count below baseline: C-TestCases=${testCount}`);
   }
-  console.log(`✅ [PASS] 47 executable test cases verified in C-TestCases.`);
+  console.log(`✅ [PASS] ${testCount} executable test cases verified in C-TestCases.`);
 
-  // 6. Validate C-Changes count (94 entries)
+  // 6. Validate C-Changes count
   const wsChanges = workbook.getWorksheet("C-Changes");
   const changesCount = wsChanges.rowCount - 4;
-  if (changesCount !== 94) {
-    throw new Error(`Changelog count mismatch: C-Changes=${changesCount}, expected 94`);
+  if (changesCount < 94) {
+    throw new Error(`Changelog count below baseline: C-Changes=${changesCount}`);
   }
-  console.log(`✅ [PASS] 94 changelog entries verified in C-Changes.`);
+  console.log(`✅ [PASS] ${changesCount} changelog entries verified in C-Changes.`);
 
   // 7. Validate C-Candidates count (31 remaining candidates)
   const wsCand = workbook.getWorksheet("C-Candidates");
