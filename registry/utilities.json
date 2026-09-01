@@ -6465,5 +6465,649 @@
         }
       ]
     }
+  },
+  {
+    "id": "unix-timestamp-batch-converter",
+    "name": "Unix Timestamp Batch Converter & Date Matrix",
+    "slug": "unix-timestamp-batch-converter",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "unix timestamp batch converter",
+      "bulk timestamp converter",
+      "convert list of epoch timestamps",
+      "epoch to iso converter bulk",
+      "batch unix time converter",
+      "timestamp to date csv"
+    ],
+    "primaryKeywords": [
+      "unix timestamp batch converter",
+      "bulk epoch converter",
+      "timestamp list converter",
+      "batch timestamp to date"
+    ],
+    "secondaryKeywords": [
+      "convert list of timestamps to utc",
+      "epoch milliseconds batch tool",
+      "export timestamp dates to csv"
+    ],
+    "targetUsers": [
+      "Backend Developers",
+      "Database Administrators",
+      "Data Engineers",
+      "DevOps Engineers"
+    ],
+    "badge": "High Usage",
+    "userProblem": "Engineers analyzing database dumps and server logs need to convert dozens of Unix epoch timestamps into UTC ISO 8601 strings and local times simultaneously without converting them one by one.",
+    "searchIntent": "Convert a list of Unix timestamps into human-readable UTC and local dates in bulk with CSV export.",
+    "resultInterpretation": "Converts multi-line timestamp lists into structured rows showing Epoch seconds, Epoch milliseconds, UTC ISO 8601 dates, and local formatted times.",
+    "practicalGuidance": "Supports 10-digit seconds (e.g. 1772496000), 13-digit milliseconds, and ISO date strings.",
+    "limitations": "Processes lists client-side up to several thousand lines instantaneously in memory.",
+    "formula": "Batch Date Parsing: Timestamp_ms = Epoch_s * 1000 ➔ Date(Timestamp_ms).toISOString()",
+    "trustNotes": "100% Client-Side. Sensitive database logs never leave your browser.",
+    "related": [
+      "timestamp-converter",
+      "list-cleaner-deduplicator",
+      "csv-json-converter",
+      "cron-schedule-tester"
+    ],
+    "seo": {
+      "title": "Unix Timestamp Batch Converter — Bulk Epoch to Date Tool",
+      "metaDescription": "Convert lists of Unix timestamps to human-readable UTC and local dates in bulk. Features 1-click CSV export and 100% private in-browser conversion.",
+      "whatIsThis": "A developer productivity utility that converts batches of Unix timestamps into structured dates simultaneously.",
+      "howItWorks": "1. Paste a list of timestamps (seconds, ms, or ISO strings) into the input box.\n2. View the synchronized conversion matrix instantly.\n3. Export as CSV or copy all dates in 1 click.",
+      "whyUseIt": "Saves hours when debugging database queries, server logs, and API payloads.",
+      "faqs": [
+        {
+          "question": "Can I convert timestamps in milliseconds?",
+          "answer": "Yes. The batch converter automatically distinguishes between 10-digit seconds and 13-digit milliseconds."
+        },
+        {
+          "question": "Can I export the converted dates to Excel or CSV?",
+          "answer": "Yes. Click 'Download CSV' to export the converted timestamps, UTC strings, and local dates."
+        }
+      ]
+    }
+  },
+  {
+    "id": "salary-after-tax-take-home-calculator",
+    "name": "Salary After-Tax & Take-Home Paycheck Calculator",
+    "slug": "salary-after-tax-take-home-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "salary after tax calculator",
+      "take home paycheck calculator",
+      "calculate net pay after taxes",
+      "salary to paycheck calculator",
+      "gross to net salary calculator",
+      "after tax income estimator"
+    ],
+    "primaryKeywords": [
+      "salary after tax calculator",
+      "take home pay calculator",
+      "paycheck tax calculator",
+      "gross to net pay calculator"
+    ],
+    "secondaryKeywords": [
+      "biweekly paycheck after taxes",
+      "federal and state tax deduction calculator",
+      "fica payroll tax calculator"
+    ],
+    "targetUsers": [
+      "Job Seekers",
+      "Employees Negotiating Offers",
+      "Freelancers",
+      "Financial Planners"
+    ],
+    "badge": "Popular",
+    "userProblem": "Job seekers and employees negotiating new salary offers need to calculate their exact take-home paycheck amount after Federal income tax, State tax, FICA, and 401(k) deductions across annual, monthly, and bi-weekly frequencies.",
+    "searchIntent": "Calculate net take-home salary after Federal, State, and FICA taxes across weekly, bi-weekly, and monthly payroll schedules.",
+    "resultInterpretation": "Calculates take-home net pay per paycheck, total annual taxes withheld, effective overall tax rate, and itemized deductions.",
+    "practicalGuidance": "Standard US FICA tax is 7.65% (6.2% Social Security + 1.45% Medicare).",
+    "limitations": "Calculates estimated effective tax withholdings. Actual tax returns may vary based on itemized deductions.",
+    "formula": "Net Pay = Gross - (Federal_Tax + State_Tax + FICA_Tax + Pre_Tax_Deductions)",
+    "trustNotes": "100% Client-Side financial modeling. No salary figures are stored or transmitted.",
+    "related": [
+      "salary-hourly-converter",
+      "freelance-hourly-rate-calculator",
+      "car-loan-affordability-calculator",
+      "mortgage-payment-calculator"
+    ],
+    "seo": {
+      "title": "Salary After-Tax Calculator — Take-Home Paycheck Estimator",
+      "metaDescription": "Calculate your take-home paycheck after federal tax, state tax, and FICA. Free, private salary calculator with bi-weekly, monthly, and annual breakdowns.",
+      "whatIsThis": "A payroll finance calculator that estimates net take-home pay from gross annual salary.",
+      "howItWorks": "1. Enter your gross annual salary.\n2. Select pay frequency (Bi-Weekly, Monthly, Weekly, Annual).\n3. Adjust estimated Federal, State, and FICA tax rates to view your exact paycheck take-home amount.",
+      "whyUseIt": "Reveals your true spendable income before accepting a job offer or budgeting monthly expenses.",
+      "faqs": [
+        {
+          "question": "What is the difference between gross pay and net pay?",
+          "answer": "Gross pay is your total compensation before any taxes or deductions. Net pay (take-home pay) is the actual cash deposited into your bank account after all taxes and benefits are withheld."
+        },
+        {
+          "question": "How many bi-weekly paychecks are in a year?",
+          "answer": "There are 26 bi-weekly paychecks in a standard calendar year (every two weeks)."
+        }
+      ]
+    }
+  },
+  {
+    "id": "social-share-link-generator",
+    "name": "Social Share Link & Direct URL Generator",
+    "slug": "social-share-link-generator",
+    "category": "business",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "social share link generator",
+      "whatsapp share link generator",
+      "twitter share url generator",
+      "linkedin share link creator",
+      "social media share url builder",
+      "telegram share link"
+    ],
+    "primaryKeywords": [
+      "social share link generator",
+      "share link generator",
+      "social url generator",
+      "whatsapp share link builder"
+    ],
+    "secondaryKeywords": [
+      "create 1 click social share links",
+      "share url generator for newsletters",
+      "prefilled message share link"
+    ],
+    "targetUsers": [
+      "Marketers",
+      "Content Creators",
+      "Newsletter Authors",
+      "Web Developers",
+      "Community Managers"
+    ],
+    "badge": "Marketing",
+    "userProblem": "Content marketers and website developers need to create 1-click sharing URLs with pre-filled messages and hashtags for WhatsApp, Twitter/X, LinkedIn, Telegram, Reddit, Facebook, and Email without using heavy JavaScript plugins.",
+    "searchIntent": "Generate direct social sharing links with custom destination URLs, pre-filled text, and hashtags across all major platforms.",
+    "resultInterpretation": "Generates 1-click direct sharing endpoints for WhatsApp, Twitter/X, LinkedIn, Telegram, Reddit, Facebook, and Mailto with live preview test buttons.",
+    "practicalGuidance": "Direct sharing URLs avoid bulky tracking scripts and improve page load speed.",
+    "limitations": "Generates standard URL-encoded web sharing intents.",
+    "formula": "Social Intent Encoding: Platform_Base_URL + URL_Encoded(Target_URL + Message + Hashtags)",
+    "trustNotes": "100% Client-Side. Instant offline link generation.",
+    "related": [
+      "utm-builder",
+      "qr-code-generator",
+      "slug-generator",
+      "social-media-image-resizer"
+    ],
+    "seo": {
+      "title": "Social Share Link Generator — Create 1-Click Share URLs",
+      "metaDescription": "Generate direct 1-click social share links for WhatsApp, Twitter/X, LinkedIn, Telegram, Reddit, and Facebook. Zero-tracking, lightweight URL builder.",
+      "whatIsThis": "A digital marketing utility that creates direct, lightweight social sharing links with pre-filled messages.",
+      "howItWorks": "1. Enter your target destination URL.\n2. Write your pre-filled message and optional hashtags.\n3. Copy the 1-click share URLs or test them directly in your browser.",
+      "whyUseIt": "Boosts viral distribution in email newsletters, blog footers, and thank-you pages without external tracking scripts.",
+      "faqs": [
+        {
+          "question": "Why use direct share links instead of widget plugins?",
+          "answer": "Direct share links use standard HTML hyperlinks, requiring zero external JavaScript libraries, zero cookie banners, and zero third-party tracking."
+        },
+        {
+          "question": "Can I use these share links in email newsletters?",
+          "answer": "Yes. Direct share links work in email clients (Substack, Mailchimp, ConvertKit) where JavaScript is blocked."
+        }
+      ]
+    }
+  },
+  {
+    "id": "ip-geolocation-lookup",
+    "name": "IP Geolocation & Network ASN Inspector",
+    "slug": "ip-geolocation-lookup",
+    "category": "network",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "ip geolocation lookup",
+      "ip address inspector",
+      "whois ip lookup",
+      "check ip country and city",
+      "ip asn lookup online",
+      "private ip rfc 1918 checker"
+    ],
+    "primaryKeywords": [
+      "ip geolocation lookup",
+      "ip address lookup",
+      "ip location finder",
+      "network asn inspector"
+    ],
+    "secondaryKeywords": [
+      "check if ip is private or public",
+      "reverse dns arpa pointer lookup",
+      "client side ip analysis"
+    ],
+    "targetUsers": [
+      "Network Engineers",
+      "Cybersecurity Analysts",
+      "Sysadmins",
+      "Web Developers"
+    ],
+    "badge": "Network",
+    "userProblem": "Engineers and cybersecurity analysts investigating network traffic need to classify IPv4/IPv6 address scopes (RFC 1918 private, Carrier-Grade NAT, loopback, public) and inspect reverse DNS ARPA pointers with zero data leakage.",
+    "searchIntent": "Analyze IPv4/IPv6 addresses client-side with scope classification, binary structures, reverse DNS ARPA generation, and optional public geolocation.",
+    "resultInterpretation": "Classifies IP addresses into public or private RFC scopes, generates reverse DNS PTR records, renders 32-bit binary octet streams, and optionally queries public city/country/ISP data.",
+    "practicalGuidance": "RFC 1918 subnets (10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16) are private non-routable ranges and do not have public geolocation.",
+    "limitations": "Client-side scope analyzer executes locally. External geolocation requires an active internet connection to query public WHOIS.",
+    "formula": "Deterministic IP Scope Classification: Octet Parsing ➔ CIDR Matching ➔ ARPA Generation",
+    "trustNotes": "100% Zero-Knowledge. Client-side analysis executes in browser memory without server transmission.",
+    "related": [
+      "my-ip",
+      "subnet-mask-calculator",
+      "dns-lookup",
+      "network-port-reference"
+    ],
+    "seo": {
+      "title": "IP Geolocation Lookup — IP Address Scope & Network Inspector",
+      "metaDescription": "Analyze IPv4 & IPv6 addresses, inspect RFC 1918 private scopes, reverse DNS PTR pointers, binary structures, and public geolocation. Zero-knowledge tool.",
+      "whatIsThis": "A networking utility that classifies IP address ranges, scopes, and network routing metadata.",
+      "howItWorks": "1. Enter an IPv4 or IPv6 address.\n2. View deterministic client-side analysis (scope, RFC 1918 status, reverse ARPA, binary breakdown).\n3. Optionally click 'Query Public Geolocation' to look up city, country, and ISP.",
+      "whyUseIt": "Quickly determines whether an IP address in firewall logs is internal, carrier-grade NAT, or external.",
+      "faqs": [
+        {
+          "question": "What is an RFC 1918 private IP address?",
+          "answer": "RFC 1918 defines private IP ranges (10.x.x.x, 172.16.x.x–172.31.x.x, 192.168.x.x) reserved for internal local networks that cannot be routed directly over the public internet."
+        },
+        {
+          "question": "What is a reverse DNS ARPA pointer?",
+          "answer": "An in-addr.arpa pointer reverses the IPv4 octets (e.g. 8.8.8.8 ➔ 8.8.8.8.in-addr.arpa) used by DNS servers to perform reverse IP-to-hostname lookups."
+        }
+      ]
+    }
+  },
+  {
+    "id": "compound-savings-goal-calculator",
+    "name": "Compound Savings Goal & Target Deposit Calculator",
+    "slug": "compound-savings-goal-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "savings goal calculator",
+      "compound savings calculator",
+      "how much to save per month",
+      "target savings deposit calculator",
+      "financial goal calculator with interest",
+      "compound interest savings plan"
+    ],
+    "primaryKeywords": [
+      "savings goal calculator",
+      "compound savings calculator",
+      "monthly savings goal calculator",
+      "target savings calculator"
+    ],
+    "secondaryKeywords": [
+      "calculate monthly deposit for 50k goal",
+      "savings plan with compound interest",
+      "future value goal planner"
+    ],
+    "targetUsers": [
+      "Budgeters",
+      "Home Buyers",
+      "Retirement Savers",
+      "Financial Planners",
+      "Investors"
+    ],
+    "badge": "Popular",
+    "userProblem": "Savers with a specific financial goal (e.g. $50,000 for a house down payment in 3 years) need to calculate the exact monthly deposit required when factoring in compound interest growth.",
+    "searchIntent": "Calculate the required monthly contribution to reach a specific financial savings target within a given timeframe and interest rate.",
+    "resultInterpretation": "Calculates required monthly deposit, total out-of-pocket principal deposited, total interest earned from compounding, and year-by-year compounding progression schedule.",
+    "practicalGuidance": "Using a High-Yield Savings Account (HYSA at 4–5% APY) significantly reduces the monthly cash you need to deposit compared to a standard 0.01% checking account.",
+    "limitations": "Calculates constant annualized compounding interest.",
+    "formula": "Annuity PMT Formula: PMT = [FV - PV*(1+r)^n] / [((1+r)^n - 1) / r]",
+    "trustNotes": "100% Client-Side financial modeling. Zero data stored.",
+    "related": [
+      "compound-interest-calculator",
+      "cagr-calculator",
+      "roi-investment-calculator",
+      "inflation-calculator"
+    ],
+    "seo": {
+      "title": "Savings Goal Calculator — Monthly Deposit & Compound Interest Planner",
+      "metaDescription": "Calculate how much you need to save each month to reach your financial goal. Free compound savings planner with starting balance, APY interest, and schedule.",
+      "whatIsThis": "A financial planning utility that calculates the monthly deposit needed to reach a target savings balance with compound interest.",
+      "howItWorks": "1. Enter your target savings goal ($).\n2. Enter starting balance and time horizon (years).\n3. Enter expected annual interest rate (% APY) to view your required monthly deposit and interest earnings.",
+      "whyUseIt": "Takes the guesswork out of saving for a house down payment, emergency fund, or wedding.",
+      "faqs": [
+        {
+          "question": "How does compound interest help me reach my savings goal faster?",
+          "answer": "Compound interest earns interest on your previous interest earnings, reducing the total amount of out-of-pocket cash you need to deposit."
+        },
+        {
+          "question": "How much should I save per month to reach $50,000 in 3 years at 5% interest?",
+          "answer": "Starting with $5,000, you would need to save approximately $1,152/month at 5% APY, earning over $3,500 in free compound interest."
+        }
+      ]
+    }
+  },
+  {
+    "id": "jwt-payload-inspector-signer",
+    "name": "JWT Payload Inspector & Client-Side HMAC Validator",
+    "slug": "jwt-payload-inspector-signer",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "jwt inspector online",
+      "jwt payload decoder",
+      "verify jwt signature online",
+      "hmac sha256 jwt validator",
+      "decode jwt token privately",
+      "jwt expiration checker"
+    ],
+    "primaryKeywords": [
+      "jwt inspector",
+      "jwt payload decoder",
+      "jwt signature validator",
+      "decode jwt online"
+    ],
+    "secondaryKeywords": [
+      "client side jwt debugger",
+      "verify hs256 signature in browser",
+      "jwt expiration time calculator"
+    ],
+    "targetUsers": [
+      "Backend Engineers",
+      "Full-Stack Developers",
+      "API Integrators",
+      "Security Researchers"
+    ],
+    "badge": "High Usage",
+    "userProblem": "Developers debugging authentication tokens need to inspect JWT headers, claims, and payload data, check expiration status, and verify HMAC-SHA256 signatures without sending sensitive authentication tokens to remote third-party servers.",
+    "searchIntent": "Inspect and decode JWT headers and payload claims with live expiration status and client-side HMAC-SHA256 signature verification.",
+    "resultInterpretation": "Decodes JSON Web Tokens locally, formats header and payload claims, computes real-time expiration timelines, and verifies HS256 signatures using the browser Web Crypto API.",
+    "practicalGuidance": "Never paste production JWT secrets or user tokens into untrusted third-party online decoders. This tool executes 100% client-side.",
+    "limitations": "Supports HS256 (HMAC-SHA256) signature verification via native Web Crypto API.",
+    "formula": "Web Crypto HMAC-SHA256: Signature = HMAC_SHA256(Base64URL(Header) + '.' + Base64URL(Payload), Secret)",
+    "trustNotes": "100% Client-Side Web Crypto execution. Private claims and secret keys never leave your device.",
+    "related": [
+      "jwt-debugger",
+      "base64-decoder",
+      "hash-generator",
+      "json-formatter"
+    ],
+    "seo": {
+      "title": "JWT Payload Inspector — Private JSON Web Token & HMAC Validator",
+      "metaDescription": "Decode and inspect JSON Web Tokens (JWT) locally. Check expiration status and verify HMAC-SHA256 signatures in your browser with 100% private Web Crypto API.",
+      "whatIsThis": "A zero-knowledge developer utility that decodes JWTs, checks expiration claims, and validates HMAC-SHA256 signatures in browser memory.",
+      "howItWorks": "1. Paste your encoded JWT.\n2. View decoded header and payload claims with live expiration status.\n3. Enter your secret key to verify HMAC-SHA256 signature integrity locally.",
+      "whyUseIt": "Protects sensitive user authentication tokens and JWT secrets from third-party server logging.",
+      "faqs": [
+        {
+          "question": "Is it safe to paste real authentication tokens here?",
+          "answer": "Yes. Unlike many web decoders, this utility runs 100% inside your local web browser using native JavaScript and Web Crypto APIs with zero network requests."
+        },
+        {
+          "question": "What is the 'exp' claim in a JWT?",
+          "answer": "The 'exp' (expiration time) claim identifies the expiration timestamp on or after which the JWT must not be accepted for authentication processing."
+        }
+      ]
+    }
+  },
+  {
+    "id": "percentage-of-total-calculator",
+    "name": "Percentage of Total & Category Share Calculator",
+    "slug": "percentage-of-total-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "percentage of total calculator",
+      "calculate percentage share of budget",
+      "what percent of total",
+      "proportion of total calculator",
+      "multi category percentage breakdown",
+      "share of wallet calculator"
+    ],
+    "primaryKeywords": [
+      "percentage of total calculator",
+      "percent of total calculator",
+      "category percentage calculator",
+      "percentage share calculator"
+    ],
+    "secondaryKeywords": [
+      "budget category percentage breakdown",
+      "calculate item share of whole sum",
+      "multi item percentage bar"
+    ],
+    "targetUsers": [
+      "Budgeters",
+      "Accountants",
+      "Business Analysts",
+      "Project Managers",
+      "Students"
+    ],
+    "badge": "Popular",
+    "userProblem": "Individuals and business analysts budgeting expenses or analyzing revenue streams need to calculate what percentage each item represents out of a grand total sum with a visual proportional bar.",
+    "searchIntent": "Calculate the exact percentage share of individual items or categories out of a whole total sum with visual breakdown.",
+    "resultInterpretation": "Calculates grand total sum, percentage share of each line item, and renders an interactive multi-colored proportional percentage bar.",
+    "practicalGuidance": "Helps ensure budget allocations (e.g. 50/30/20 rule: 50% needs, 30% wants, 20% savings) align with financial targets.",
+    "limitations": "Supports dynamic addition and deletion of arbitrary rows.",
+    "formula": "Percentage Share = (Item_Value / Grand_Total_Sum) * 100",
+    "trustNotes": "100% Client-Side calculation.",
+    "related": [
+      "percentage-calculator",
+      "percentage-difference-calculator",
+      "tip-bill-splitter",
+      "sales-margin-markup-calculator"
+    ],
+    "seo": {
+      "title": "Percentage of Total Calculator — Category Share & Budget Breakdown",
+      "metaDescription": "Calculate what percentage each item represents out of a total sum. Free online tool with dynamic row builder, visual proportion bar, and 1-click summary copy.",
+      "whatIsThis": "A financial and arithmetic utility that calculates the percentage share of multiple items out of a whole sum.",
+      "howItWorks": "1. Enter your category names and dollar amounts.\n2. Add or remove rows dynamically.\n3. View grand total sum, individual percentage shares, and the visual proportional bar.",
+      "whyUseIt": "Instantly visualizes where money, time, or resources are distributed across categories.",
+      "faqs": [
+        {
+          "question": "How do you calculate percentage of a total?",
+          "answer": "Divide the individual item amount by the grand total of all items, then multiply the result by 100."
+        },
+        {
+          "question": "What is the 50/30/20 budget rule?",
+          "answer": "It is a budgeting guideline allocating 50% of income to Needs (housing, groceries), 30% to Wants (entertainment), and 20% to Savings and debt payoff."
+        }
+      ]
+    }
+  },
+  {
+    "id": "json-minify-compressor",
+    "name": "JSON Minifier & White-Space Compressor",
+    "slug": "json-minify-compressor",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "json minifier",
+      "minify json online",
+      "json compressor online",
+      "remove whitespace from json",
+      "compact json generator",
+      "json size reducer"
+    ],
+    "primaryKeywords": [
+      "json minifier",
+      "minify json",
+      "json compressor",
+      "compact json tool"
+    ],
+    "secondaryKeywords": [
+      "compress json for api payload",
+      "calculate json compression byte savings",
+      "download minified json file"
+    ],
+    "targetUsers": [
+      "Frontend Developers",
+      "API Engineers",
+      "Mobile Developers",
+      "DevOps Specialists"
+    ],
+    "badge": "High Usage",
+    "userProblem": "Web and mobile developers optimizing API bandwidth need to minify formatted JSON payloads into single-line compact strings, removing all unnecessary whitespace and calculating byte savings.",
+    "searchIntent": "Minify and compress formatted JSON into a single compact line with byte savings statistics and 1-click download.",
+    "resultInterpretation": "Compresses JSON objects, eliminates white-space formatting, calculates original vs minified byte sizes, and reports percentage space saved.",
+    "practicalGuidance": "Minifying JSON reduces network transfer payload sizes, lowering cloud egress costs and mobile latency.",
+    "limitations": "Validates and parses standard JSON data.",
+    "formula": "JSON Serialization: Minified = JSON.stringify(JSON.parse(Input))",
+    "trustNotes": "100% Client-Side. Large payloads are compressed in browser memory with zero network overhead.",
+    "related": [
+      "json-formatter",
+      "json-validator",
+      "json-yaml-converter",
+      "json-to-typescript-converter"
+    ],
+    "seo": {
+      "title": "JSON Minifier — Compress & Remove Whitespace from JSON Online",
+      "metaDescription": "Minify and compress JSON payloads online. Remove whitespace, calculate byte savings, and download compact .min.json files. 100% private in-browser tool.",
+      "whatIsThis": "A developer productivity tool that strips whitespace and newlines from JSON to minimize file size.",
+      "howItWorks": "1. Paste formatted JSON into the input box.\n2. View instantaneous single-line minified JSON with byte savings stats.\n3. Copy or download as a `.min.json` file in 1 click.",
+      "whyUseIt": "Reduces API payload sizes and improves mobile network transfer speeds.",
+      "faqs": [
+        {
+          "question": "Does minifying JSON change the underlying data?",
+          "answer": "No. Minification only strips non-functional whitespace, tabs, and newlines outside of string values without altering data types or values."
+        },
+        {
+          "question": "How much bandwidth does JSON minification save?",
+          "answer": "Minification typically reduces JSON payload file sizes by 20% to 50%, depending on the level of indentation."
+        }
+      ]
+    }
+  },
+  {
+    "id": "reading-speed-test",
+    "name": "Reading Speed Test & Words Per Minute (WPM) Meter",
+    "slug": "reading-speed-test",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "reading speed test",
+      "words per minute reading test",
+      "wpm reading calculator",
+      "test my reading speed online",
+      "reading stopwatch test",
+      "average reading speed test"
+    ],
+    "primaryKeywords": [
+      "reading speed test",
+      "wpm reading test",
+      "reading speed calculator",
+      "words per minute reader"
+    ],
+    "secondaryKeywords": [
+      "how fast do i read wpm",
+      "reading speed benchmarks adult",
+      "speed reading proficiency test"
+    ],
+    "targetUsers": [
+      "Students",
+      "Book Lovers",
+      "Speed Readers",
+      "Writers",
+      "Professionals"
+    ],
+    "badge": "Everyday",
+    "userProblem": "Readers and students want to measure their reading speed in Words Per Minute (WPM) and compare their performance against standardized adult and academic reading benchmarks.",
+    "searchIntent": "Measure reading speed in Words Per Minute (WPM) with an interactive stopwatch timer and benchmark proficiency ranking.",
+    "resultInterpretation": "Calculates exact reading velocity in Words Per Minute (WPM), tracks elapsed seconds, and ranks proficiency (Careful, Average, High-Speed, Elite Speed Reader).",
+    "practicalGuidance": "The average adult reads non-technical text at approximately 200 to 250 words per minute.",
+    "limitations": "Measures reading speed. Comprehension questions can be reviewed independently.",
+    "formula": "Reading Velocity: WPM = (Total_Words / Elapsed_Seconds) * 60",
+    "trustNotes": "100% Client-Side stopwatch and calculation.",
+    "related": [
+      "content-reading-time-calculator",
+      "word-counter",
+      "character-frequency-counter",
+      "stopwatch-timer"
+    ],
+    "seo": {
+      "title": "Reading Speed Test — Measure Words Per Minute (WPM) Online",
+      "metaDescription": "Test your reading speed in Words Per Minute (WPM). Free interactive reading stopwatch with proficiency rankings and standardized adult reading benchmarks.",
+      "whatIsThis": "A self-assessment educational utility that measures how many words per minute you read.",
+      "howItWorks": "1. Click 'Start Reading Timer' and read the passage at your natural pace.\n2. Click 'I Finished Reading!' when done.\n3. View your exact WPM score, time taken, and reader proficiency ranking.",
+      "whyUseIt": "Helps readers baseline their reading speed and estimate how long it takes to complete books and articles.",
+      "faqs": [
+        {
+          "question": "What is a normal reading speed in Words Per Minute?",
+          "answer": "Most adults read between 200 and 250 words per minute. College students average ~300 WPM, while trained speed readers reach 450 to 700+ WPM."
+        },
+        {
+          "question": "How do you calculate WPM?",
+          "answer": "Divide the total word count by the time in seconds taken to read the passage, then multiply by 60."
+        }
+      ]
+    }
+  },
+  {
+    "id": "dns-record-generator",
+    "name": "DNS Record Generator (SPF, DMARC, DKIM, MX)",
+    "slug": "dns-record-generator",
+    "category": "network",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "dns record generator",
+      "spf record generator",
+      "dmarc record generator",
+      "mx record generator online",
+      "email deliverability dns records",
+      "dmarc policy generator"
+    ],
+    "primaryKeywords": [
+      "dns record generator",
+      "spf record generator",
+      "dmarc record generator",
+      "email dns record builder"
+    ],
+    "secondaryKeywords": [
+      "google workspace mx record generator",
+      "dmarc quarantine reject txt record",
+      "full dns zone configuration email"
+    ],
+    "targetUsers": [
+      "Domain Administrators",
+      "DevOps Engineers",
+      "Email Deliverability Specialists",
+      "Webmasters"
+    ],
+    "badge": "Network",
+    "userProblem": "Domain owners configuring email for Google Workspace, Microsoft 365, or SendGrid need to generate valid SPF, DMARC, and MX DNS TXT records to prevent email spoofing and guarantee deliverability.",
+    "searchIntent": "Generate valid SPF, DMARC, and MX DNS records for custom domains with email provider presets and security policies.",
+    "resultInterpretation": "Generates formatted DNS TXT and MX records (SPF, DMARC with Quarantine/Reject policy, Mail Exchangers) with 1-click zone file copying.",
+    "practicalGuidance": "Google and Yahoo require all domain senders to have active SPF and DMARC records to prevent bulk email rejection.",
+    "limitations": "Generates standard RFC-compliant DNS zone records for copy-pasting into domain registrars (Cloudflare, Namecheap, GoDaddy, Route53).",
+    "formula": "DNS Zone Formatter: SPF = 'v=spf1 include:... ~all'; DMARC = 'v=DMARC1; p=' + Policy + '; rua=mailto:' + Email",
+    "trustNotes": "100% Client-Side. Domain credentials never leave your browser.",
+    "related": [
+      "dns-lookup",
+      "network-port-reference",
+      "subnet-mask-calculator",
+      "ping-test"
+    ],
+    "seo": {
+      "title": "DNS Record Generator — SPF, DMARC, DKIM & MX Tool",
+      "metaDescription": "Generate valid SPF, DMARC, and MX DNS records for your domain. Supports Google Workspace, Microsoft 365, and SendGrid presets with 1-click zone export.",
+      "whatIsThis": "A domain management utility that builds standard email authentication DNS records.",
+      "howItWorks": "1. Enter your root domain name.\n2. Choose your email provider (Google Workspace, Microsoft 365, SendGrid, Custom).\n3. Copy the generated SPF, DMARC, and MX records directly into your DNS manager.",
+      "whyUseIt": "Prevents phishing and guarantees your business emails avoid the spam folder.",
+      "faqs": [
+        {
+          "question": "What is the purpose of a DMARC record?",
+          "answer": "DMARC (Domain-based Message Authentication, Reporting, and Conformance) tells recipient mail servers how to handle emails that fail SPF or DKIM checks (e.g. Quarantine or Reject)."
+        },
+        {
+          "question": "Can I have more than one SPF record on a domain?",
+          "answer": "No. A domain should only have a single SPF TXT record. If using multiple email services, combine them using multiple 'include:' mechanisms in the same record."
+        }
+      ]
+    }
   }
 ]

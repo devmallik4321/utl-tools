@@ -23,6 +23,8 @@ const UserAgentChecker = dynamic(() => import("./network/UserAgentChecker").then
 const BandwidthCalculator = dynamic(() => import("./network/BandwidthCalculator").then((m) => m.BandwidthCalculator), { ssr: false });
 const NetworkPortReference = dynamic(() => import("./network/NetworkPortReference").then((m) => m.NetworkPortReference), { ssr: false });
 const SubnetCalculator = dynamic(() => import("./network/SubnetCalculator").then((m) => m.SubnetCalculator), { ssr: false });
+const IpGeolocationLookup = dynamic(() => import("./network/IpGeolocationLookup").then((m) => m.IpGeolocationLookup), { ssr: false });
+const DnsRecordGenerator = dynamic(() => import("./network/DnsRecordGenerator").then((m) => m.DnsRecordGenerator), { ssr: false });
 
 const JsonFormatter = dynamic(() => import("./developer/JsonFormatter").then((m) => m.JsonFormatter), { ssr: false });
 const JsonValidator = dynamic(() => import("./developer/JsonValidator").then((m) => m.JsonValidator), { ssr: false });
@@ -30,6 +32,7 @@ const Base64Encoder = dynamic(() => import("./developer/Base64Encoder").then((m)
 const Base64Decoder = dynamic(() => import("./developer/Base64Decoder").then((m) => m.Base64Decoder), { ssr: false });
 const UuidGenerator = dynamic(() => import("./developer/UuidGenerator").then((m) => m.UuidGenerator), { ssr: false });
 const TimestampConverter = dynamic(() => import("./developer/TimestampConverter").then((m) => m.TimestampConverter), { ssr: false });
+const BatchTimestampConverter = dynamic(() => import("./developer/BatchTimestampConverter").then((m) => m.BatchTimestampConverter), { ssr: false });
 const UrlEncoder = dynamic(() => import("./developer/UrlEncoder").then((m) => m.UrlEncoder), { ssr: false });
 const UrlDecoder = dynamic(() => import("./developer/UrlDecoder").then((m) => m.UrlDecoder), { ssr: false });
 const DiffChecker = dynamic(() => import("./developer/DiffChecker").then((m) => m.DiffChecker), { ssr: false });
@@ -41,6 +44,7 @@ const HashGenerator = dynamic(() => import("./developer/HashGenerator").then((m)
 const CronExpressionGenerator = dynamic(() => import("./developer/CronExpressionGenerator").then((m) => m.CronExpressionGenerator), { ssr: false });
 const CronScheduleTester = dynamic(() => import("./developer/CronScheduleTester").then((m) => m.CronScheduleTester), { ssr: false });
 const JwtDebugger = dynamic(() => import("./developer/JwtDebugger").then((m) => m.JwtDebugger), { ssr: false });
+const JwtInspector = dynamic(() => import("./developer/JwtInspector").then((m) => m.JwtInspector), { ssr: false });
 const CurlToFetchConverter = dynamic(() => import("./developer/CurlToFetchConverter").then((m) => m.CurlToFetchConverter), { ssr: false });
 const HtmlToMarkdownConverter = dynamic(() => import("./developer/HtmlToMarkdownConverter").then((m) => m.HtmlToMarkdownConverter), { ssr: false });
 const RegexTester = dynamic(() => import("./developer/RegexTester").then((m) => m.RegexTester), { ssr: false });
@@ -50,6 +54,7 @@ const ListCleaner = dynamic(() => import("./developer/ListCleaner").then((m) => 
 const JsonYamlConverter = dynamic(() => import("./developer/JsonYamlConverter").then((m) => m.JsonYamlConverter), { ssr: false });
 const BaseConverter = dynamic(() => import("./developer/BaseConverter").then((m) => m.BaseConverter), { ssr: false });
 const SlugGenerator = dynamic(() => import("./developer/SlugGenerator").then((m) => m.SlugGenerator), { ssr: false });
+const JsonMinifier = dynamic(() => import("./developer/JsonMinifier").then((m) => m.JsonMinifier), { ssr: false });
 
 const QrCodeGenerator = dynamic(() => import("./business/QrCodeGenerator").then((m) => m.QrCodeGenerator), { ssr: false });
 const EmailSignatureGenerator = dynamic(() => import("./business/EmailSignatureGenerator").then((m) => m.EmailSignatureGenerator), { ssr: false });
@@ -58,9 +63,11 @@ const InvoiceGenerator = dynamic(() => import("./business/InvoiceGenerator").the
 const UtmBuilder = dynamic(() => import("./business/UtmBuilder").then((m) => m.UtmBuilder), { ssr: false });
 const BreakEvenCalculator = dynamic(() => import("./business/BreakEvenCalculator").then((m) => m.BreakEvenCalculator), { ssr: false });
 const MeetingCostCalculator = dynamic(() => import("./business/MeetingCostCalculator").then((m) => m.MeetingCostCalculator), { ssr: false });
+const SocialShareLinkGenerator = dynamic(() => import("./business/SocialShareLinkGenerator").then((m) => m.SocialShareLinkGenerator), { ssr: false });
 
 const PercentageCalculator = dynamic(() => import("./finance/PercentageCalculator").then((m) => m.PercentageCalculator), { ssr: false });
 const PercentageDifferenceCalculator = dynamic(() => import("./finance/PercentageDifferenceCalculator").then((m) => m.PercentageDifferenceCalculator), { ssr: false });
+const PercentageOfTotalCalculator = dynamic(() => import("./finance/PercentageOfTotalCalculator").then((m) => m.PercentageOfTotalCalculator), { ssr: false });
 const CompoundInterestCalculator = dynamic(() => import("./finance/CompoundInterestCalculator").then((m) => m.CompoundInterestCalculator), { ssr: false });
 const LoanCalculator = dynamic(() => import("./finance/LoanCalculator").then((m) => m.LoanCalculator), { ssr: false });
 const LoanEmiCalculator = dynamic(() => import("./finance/LoanEmiCalculator").then((m) => m.LoanEmiCalculator), { ssr: false });
@@ -70,6 +77,7 @@ const SalesMarginMarkupCalculator = dynamic(() => import("./finance/SalesMarginM
 const VatSalesTaxCalculator = dynamic(() => import("./finance/VatSalesTaxCalculator").then((m) => m.VatSalesTaxCalculator), { ssr: false });
 const FreelanceHourlyRateCalculator = dynamic(() => import("./finance/FreelanceHourlyRateCalculator").then((m) => m.FreelanceHourlyRateCalculator), { ssr: false });
 const SalaryHourlyConverter = dynamic(() => import("./finance/SalaryHourlyConverter").then((m) => m.SalaryHourlyConverter), { ssr: false });
+const TakeHomePayCalculator = dynamic(() => import("./finance/TakeHomePayCalculator").then((m) => m.TakeHomePayCalculator), { ssr: false });
 const MortgagePaymentCalculator = dynamic(() => import("./finance/MortgagePaymentCalculator").then((m) => m.MortgagePaymentCalculator), { ssr: false });
 const InflationCalculator = dynamic(() => import("./finance/InflationCalculator").then((m) => m.InflationCalculator), { ssr: false });
 const TipBillSplitter = dynamic(() => import("./finance/TipBillSplitter").then((m) => m.TipBillSplitter), { ssr: false });
@@ -77,6 +85,7 @@ const RoiCalculator = dynamic(() => import("./finance/RoiCalculator").then((m) =
 const CarLoanCalculator = dynamic(() => import("./finance/CarLoanCalculator").then((m) => m.CarLoanCalculator), { ssr: false });
 const CagrCalculator = dynamic(() => import("./finance/CagrCalculator").then((m) => m.CagrCalculator), { ssr: false });
 const CreditCardPayoffCalculator = dynamic(() => import("./finance/CreditCardPayoffCalculator").then((m) => m.CreditCardPayoffCalculator), { ssr: false });
+const SavingsGoalCalculator = dynamic(() => import("./finance/SavingsGoalCalculator").then((m) => m.SavingsGoalCalculator), { ssr: false });
 
 const BmiCalculator = dynamic(() => import("./health/BmiCalculator").then((m) => m.BmiCalculator), { ssr: false });
 const AgeCalculator = dynamic(() => import("./health/AgeCalculator").then((m) => m.AgeCalculator), { ssr: false });
@@ -99,6 +108,7 @@ const AspectRatioCropper = dynamic(() => import("./creative/AspectRatioCropper")
 const LoremIpsumGenerator = dynamic(() => import("./creative/LoremIpsumGenerator").then((m) => m.LoremIpsumGenerator), { ssr: false });
 const LoremMarkdownGenerator = dynamic(() => import("./creative/LoremMarkdownGenerator").then((m) => m.LoremMarkdownGenerator), { ssr: false });
 const ContentReadingTimeCalculator = dynamic(() => import("./creative/ContentReadingTimeCalculator").then((m) => m.ContentReadingTimeCalculator), { ssr: false });
+const ReadingSpeedTest = dynamic(() => import("./creative/ReadingSpeedTest").then((m) => m.ReadingSpeedTest), { ssr: false });
 const SocialMediaImageResizer = dynamic(() => import("./creative/SocialMediaImageResizer").then((m) => m.SocialMediaImageResizer), { ssr: false });
 
 const TokenCounter = dynamic(() => import("./ai/TokenCounter").then((m) => m.TokenCounter), { ssr: false });
@@ -134,6 +144,8 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "bandwidth-file-transfer-calculator": BandwidthCalculator,
   "network-port-reference": NetworkPortReference,
   "subnet-mask-calculator": SubnetCalculator,
+  "ip-geolocation-lookup": IpGeolocationLookup,
+  "dns-record-generator": DnsRecordGenerator,
 
   "json-formatter": JsonFormatter,
   "json-validator": JsonValidator,
@@ -141,6 +153,7 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "base64-decoder": Base64Decoder,
   "uuid-generator": UuidGenerator,
   "timestamp-converter": TimestampConverter,
+  "unix-timestamp-batch-converter": BatchTimestampConverter,
   "url-encoder": UrlEncoder,
   "url-decoder": UrlDecoder,
   "diff-checker": DiffChecker,
@@ -152,6 +165,7 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "cron-expression-generator": CronExpressionGenerator,
   "cron-schedule-tester": CronScheduleTester,
   "jwt-debugger": JwtDebugger,
+  "jwt-payload-inspector-signer": JwtInspector,
   "curl-to-fetch-converter": CurlToFetchConverter,
   "html-to-markdown-converter": HtmlToMarkdownConverter,
   "regex-tester": RegexTester,
@@ -161,6 +175,7 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "json-yaml-converter": JsonYamlConverter,
   "hex-decimal-binary-converter": BaseConverter,
   "slug-generator": SlugGenerator,
+  "json-minify-compressor": JsonMinifier,
 
   "qr-code-generator": QrCodeGenerator,
   "email-signature-generator": EmailSignatureGenerator,
@@ -169,9 +184,11 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "utm-builder": UtmBuilder,
   "break-even-calculator": BreakEvenCalculator,
   "meeting-cost-calculator": MeetingCostCalculator,
+  "social-share-link-generator": SocialShareLinkGenerator,
 
   "percentage-calculator": PercentageCalculator,
   "percentage-difference-calculator": PercentageDifferenceCalculator,
+  "percentage-of-total-calculator": PercentageOfTotalCalculator,
   "compound-interest-calculator": CompoundInterestCalculator,
   "loan-calculator": LoanCalculator,
   "loan-emi-calculator": LoanEmiCalculator,
@@ -181,6 +198,7 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "vat-sales-tax-calculator": VatSalesTaxCalculator,
   "freelance-hourly-rate-calculator": FreelanceHourlyRateCalculator,
   "salary-hourly-converter": SalaryHourlyConverter,
+  "salary-after-tax-take-home-calculator": TakeHomePayCalculator,
   "mortgage-payment-calculator": MortgagePaymentCalculator,
   "inflation-calculator": InflationCalculator,
   "tip-bill-splitter": TipBillSplitter,
@@ -188,6 +206,7 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "car-loan-affordability-calculator": CarLoanCalculator,
   "cagr-calculator": CagrCalculator,
   "credit-card-payoff-calculator": CreditCardPayoffCalculator,
+  "compound-savings-goal-calculator": SavingsGoalCalculator,
 
   "bmi-calculator": BmiCalculator,
   "age-calculator": AgeCalculator,
@@ -210,6 +229,7 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "lorem-ipsum-generator": LoremIpsumGenerator,
   "lorem-markdown-generator": LoremMarkdownGenerator,
   "content-reading-time-calculator": ContentReadingTimeCalculator,
+  "reading-speed-test": ReadingSpeedTest,
   "social-media-image-resizer": SocialMediaImageResizer,
 
   "token-counter": TokenCounter,
