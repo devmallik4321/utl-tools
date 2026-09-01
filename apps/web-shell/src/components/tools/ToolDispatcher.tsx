@@ -21,6 +21,8 @@ const PingTest = dynamic(() => import("./network/PingTest").then((m) => m.PingTe
 const DnsLookup = dynamic(() => import("./network/DnsLookup").then((m) => m.DnsLookup), { ssr: false });
 const UserAgentChecker = dynamic(() => import("./network/UserAgentChecker").then((m) => m.UserAgentChecker), { ssr: false });
 const BandwidthCalculator = dynamic(() => import("./network/BandwidthCalculator").then((m) => m.BandwidthCalculator), { ssr: false });
+const NetworkPortReference = dynamic(() => import("./network/NetworkPortReference").then((m) => m.NetworkPortReference), { ssr: false });
+const SubnetCalculator = dynamic(() => import("./network/SubnetCalculator").then((m) => m.SubnetCalculator), { ssr: false });
 
 const JsonFormatter = dynamic(() => import("./developer/JsonFormatter").then((m) => m.JsonFormatter), { ssr: false });
 const JsonValidator = dynamic(() => import("./developer/JsonValidator").then((m) => m.JsonValidator), { ssr: false });
@@ -45,6 +47,9 @@ const RegexTester = dynamic(() => import("./developer/RegexTester").then((m) => 
 const SqlFormatter = dynamic(() => import("./developer/SqlFormatter").then((m) => m.SqlFormatter), { ssr: false });
 const JsonToTypeScriptConverter = dynamic(() => import("./developer/JsonToTypeScriptConverter").then((m) => m.JsonToTypeScriptConverter), { ssr: false });
 const ListCleaner = dynamic(() => import("./developer/ListCleaner").then((m) => m.ListCleaner), { ssr: false });
+const JsonYamlConverter = dynamic(() => import("./developer/JsonYamlConverter").then((m) => m.JsonYamlConverter), { ssr: false });
+const BaseConverter = dynamic(() => import("./developer/BaseConverter").then((m) => m.BaseConverter), { ssr: false });
+const SlugGenerator = dynamic(() => import("./developer/SlugGenerator").then((m) => m.SlugGenerator), { ssr: false });
 
 const QrCodeGenerator = dynamic(() => import("./business/QrCodeGenerator").then((m) => m.QrCodeGenerator), { ssr: false });
 const EmailSignatureGenerator = dynamic(() => import("./business/EmailSignatureGenerator").then((m) => m.EmailSignatureGenerator), { ssr: false });
@@ -69,6 +74,9 @@ const MortgagePaymentCalculator = dynamic(() => import("./finance/MortgagePaymen
 const InflationCalculator = dynamic(() => import("./finance/InflationCalculator").then((m) => m.InflationCalculator), { ssr: false });
 const TipBillSplitter = dynamic(() => import("./finance/TipBillSplitter").then((m) => m.TipBillSplitter), { ssr: false });
 const RoiCalculator = dynamic(() => import("./finance/RoiCalculator").then((m) => m.RoiCalculator), { ssr: false });
+const CarLoanCalculator = dynamic(() => import("./finance/CarLoanCalculator").then((m) => m.CarLoanCalculator), { ssr: false });
+const CagrCalculator = dynamic(() => import("./finance/CagrCalculator").then((m) => m.CagrCalculator), { ssr: false });
+const CreditCardPayoffCalculator = dynamic(() => import("./finance/CreditCardPayoffCalculator").then((m) => m.CreditCardPayoffCalculator), { ssr: false });
 
 const BmiCalculator = dynamic(() => import("./health/BmiCalculator").then((m) => m.BmiCalculator), { ssr: false });
 const AgeCalculator = dynamic(() => import("./health/AgeCalculator").then((m) => m.AgeCalculator), { ssr: false });
@@ -80,12 +88,14 @@ const WorkingDaysCalculator = dynamic(() => import("./education/WorkingDaysCalcu
 const GpaCalculator = dynamic(() => import("./education/GpaCalculator").then((m) => m.GpaCalculator), { ssr: false });
 const UnitConverter = dynamic(() => import("./education/UnitConverter").then((m) => m.UnitConverter), { ssr: false });
 const TimezoneMeetingPlanner = dynamic(() => import("./everyday/TimezoneMeetingPlanner").then((m) => m.TimezoneMeetingPlanner), { ssr: false });
+const GasTripCalculator = dynamic(() => import("./everyday/GasTripCalculator").then((m) => m.GasTripCalculator), { ssr: false });
 
 const ColorConverter = dynamic(() => import("./creative/ColorConverter").then((m) => m.ColorConverter), { ssr: false });
 const ColorContrastChecker = dynamic(() => import("./creative/ColorContrastChecker").then((m) => m.ColorContrastChecker), { ssr: false });
 const HexRgbHslPicker = dynamic(() => import("./creative/HexRgbHslPicker").then((m) => m.HexRgbHslPicker), { ssr: false });
 const AspectRatioCalculator = dynamic(() => import("./creative/AspectRatioCalculator").then((m) => m.AspectRatioCalculator), { ssr: false });
 const AspectRatioResizer = dynamic(() => import("./creative/AspectRatioResizer").then((m) => m.AspectRatioResizer), { ssr: false });
+const AspectRatioCropper = dynamic(() => import("./creative/AspectRatioCropper").then((m) => m.AspectRatioCropper), { ssr: false });
 const LoremIpsumGenerator = dynamic(() => import("./creative/LoremIpsumGenerator").then((m) => m.LoremIpsumGenerator), { ssr: false });
 const LoremMarkdownGenerator = dynamic(() => import("./creative/LoremMarkdownGenerator").then((m) => m.LoremMarkdownGenerator), { ssr: false });
 const ContentReadingTimeCalculator = dynamic(() => import("./creative/ContentReadingTimeCalculator").then((m) => m.ContentReadingTimeCalculator), { ssr: false });
@@ -98,6 +108,7 @@ const AiSystemPromptGenerator = dynamic(() => import("./ai/AiSystemPromptGenerat
 
 const GpuVramAiCalculator = dynamic(() => import("./hardware/GpuVramAiCalculator").then((m) => m.GpuVramAiCalculator), { ssr: false });
 const ScreenPpiCalculator = dynamic(() => import("./hardware/ScreenPpiCalculator").then((m) => m.ScreenPpiCalculator), { ssr: false });
+const ScreenComparator = dynamic(() => import("./hardware/ScreenComparator").then((m) => m.ScreenComparator), { ssr: false });
 const PsuWattageCalculator = dynamic(() => import("./hardware/PsuWattageCalculator").then((m) => m.PsuWattageCalculator), { ssr: false });
 const StorageConverter = dynamic(() => import("./hardware/StorageConverter").then((m) => m.StorageConverter), { ssr: false });
 const PcBottleneckCalculator = dynamic(() => import("./hardware/PcBottleneckCalculator").then((m) => m.PcBottleneckCalculator), { ssr: false });
@@ -121,6 +132,8 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "dns-lookup": DnsLookup,
   "user-agent-checker": UserAgentChecker,
   "bandwidth-file-transfer-calculator": BandwidthCalculator,
+  "network-port-reference": NetworkPortReference,
+  "subnet-mask-calculator": SubnetCalculator,
 
   "json-formatter": JsonFormatter,
   "json-validator": JsonValidator,
@@ -145,6 +158,9 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "sql-formatter": SqlFormatter,
   "json-to-typescript-converter": JsonToTypeScriptConverter,
   "list-cleaner-deduplicator": ListCleaner,
+  "json-yaml-converter": JsonYamlConverter,
+  "hex-decimal-binary-converter": BaseConverter,
+  "slug-generator": SlugGenerator,
 
   "qr-code-generator": QrCodeGenerator,
   "email-signature-generator": EmailSignatureGenerator,
@@ -169,6 +185,9 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "inflation-calculator": InflationCalculator,
   "tip-bill-splitter": TipBillSplitter,
   "roi-investment-calculator": RoiCalculator,
+  "car-loan-affordability-calculator": CarLoanCalculator,
+  "cagr-calculator": CagrCalculator,
+  "credit-card-payoff-calculator": CreditCardPayoffCalculator,
 
   "bmi-calculator": BmiCalculator,
   "age-calculator": AgeCalculator,
@@ -180,12 +199,14 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "gpa-calculator": GpaCalculator,
   "unit-converter": UnitConverter,
   "timezone-meeting-planner": TimezoneMeetingPlanner,
+  "gas-trip-cost-calculator": GasTripCalculator,
 
   "color-converter": ColorConverter,
   "color-contrast-checker": ColorContrastChecker,
   "hex-rgb-hsl-picker": HexRgbHslPicker,
   "aspect-ratio-calculator": AspectRatioCalculator,
   "aspect-ratio-resizer": AspectRatioResizer,
+  "aspect-ratio-crop-previewer": AspectRatioCropper,
   "lorem-ipsum-generator": LoremIpsumGenerator,
   "lorem-markdown-generator": LoremMarkdownGenerator,
   "content-reading-time-calculator": ContentReadingTimeCalculator,
@@ -198,6 +219,7 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
 
   "gpu-vram-ai-calculator": GpuVramAiCalculator,
   "screen-ppi-calculator": ScreenPpiCalculator,
+  "screen-aspect-ratio-comparator": ScreenComparator,
   "psu-wattage-calculator": PsuWattageCalculator,
   "storage-converter": StorageConverter,
   "pc-bottleneck-calculator": PcBottleneckCalculator,

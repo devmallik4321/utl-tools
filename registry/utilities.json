@@ -5757,5 +5757,713 @@
         }
       ]
     }
+  },
+  {
+    "id": "json-yaml-converter",
+    "name": "JSON to YAML & YAML to JSON Converter",
+    "slug": "json-yaml-converter",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "json to yaml converter",
+      "yaml to json converter",
+      "convert json to yaml online",
+      "yaml parser online",
+      "kubernetes yaml to json",
+      "docker compose yaml converter"
+    ],
+    "primaryKeywords": [
+      "json to yaml converter",
+      "yaml to json converter",
+      "convert json to yaml",
+      "online yaml converter"
+    ],
+    "secondaryKeywords": [
+      "kubernetes yaml validator online",
+      "json to yaml with indentation",
+      "bidirectional json yaml tool"
+    ],
+    "targetUsers": [
+      "DevOps Engineers",
+      "Cloud Architects",
+      "Backend Developers",
+      "Kubernetes Administrators"
+    ],
+    "badge": "High Usage",
+    "userProblem": "Cloud engineers and developers working with Kubernetes manifests, GitHub Actions, and API payloads need to convert between JSON and YAML formats with accurate indentation and zero server transmission.",
+    "searchIntent": "Convert JSON data to YAML and YAML to JSON with syntax validation and 1-click output copying.",
+    "resultInterpretation": "Bi-directionally translates JSON objects to clean YAML format (and vice-versa) with customizable 2 or 4 space indentation.",
+    "practicalGuidance": "Use 2-space indentation for Kubernetes manifests and OpenAPI Swagger specifications.",
+    "limitations": "Parses standard YAML key-value dictionaries, arrays, strings, booleans, and numbers.",
+    "formula": "Bidirectional AST Serializer: JSON Object ➔ YAML Block Structure",
+    "trustNotes": "100% Client-Side. Sensitive infrastructure credentials and manifests never leave your browser.",
+    "related": [
+      "json-formatter",
+      "json-validator",
+      "json-to-typescript-converter",
+      "diff-checker"
+    ],
+    "seo": {
+      "title": "JSON to YAML Converter — Convert JSON & YAML Online",
+      "metaDescription": "Convert JSON to YAML and YAML to JSON instantly online. Features indentation control (2/4 spaces), syntax validation, and 100% private in-browser conversion.",
+      "whatIsThis": "A developer productivity utility that bi-directionally converts structured data between JSON and YAML formats.",
+      "howItWorks": "1. Paste your JSON or YAML data into the input pane.\n2. Choose conversion direction (JSON ➔ YAML or YAML ➔ JSON).\n3. Copy the converted output in 1 click.",
+      "whyUseIt": "Essential for writing Docker Compose, Kubernetes manifests, and CI/CD pipelines without formatting errors.",
+      "faqs": [
+        {
+          "question": "Can I convert YAML back into JSON?",
+          "answer": "Yes. Click 'Swap Input/Output' or choose the 'YAML ➔ JSON' mode to parse YAML into valid JSON format."
+        },
+        {
+          "question": "Is my proprietary configuration data secure?",
+          "answer": "Yes. All conversion executes entirely in your local web browser with zero network requests."
+        }
+      ]
+    }
+  },
+  {
+    "id": "car-loan-affordability-calculator",
+    "name": "Auto Loan & Monthly Car Payment Calculator",
+    "slug": "car-loan-affordability-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "car loan calculator",
+      "auto loan payment calculator",
+      "monthly car payment estimator",
+      "car financing calculator",
+      "auto loan interest calculator",
+      "vehicle total cost calculator"
+    ],
+    "primaryKeywords": [
+      "car loan calculator",
+      "auto loan payment calculator",
+      "monthly car payment calculator",
+      "car financing estimator"
+    ],
+    "secondaryKeywords": [
+      "calculate car payment with trade in",
+      "car loan sales tax and fees calculator",
+      "60 month auto loan calculation"
+    ],
+    "targetUsers": [
+      "Car Buyers",
+      "Auto Dealership Customers",
+      "Vehicle Leasers",
+      "Financial Planners"
+    ],
+    "badge": "Popular",
+    "userProblem": "Car shoppers negotiating auto financing need to calculate exact monthly payments, total interest costs, and out-of-pocket expenses based on vehicle price, trade-in, down payment, sales tax, and dealer fees.",
+    "searchIntent": "Calculate monthly car loan payments, total financed principal, lifetime interest, and overall vehicle purchase cost.",
+    "resultInterpretation": "Calculates monthly amortized payment across 36 to 84-month terms, itemizes trade-in equity, sales taxes, dealer documentation fees, and total interest paid.",
+    "practicalGuidance": "Aiming for a 48 to 60-month term prevents owing more on the vehicle than it is worth (negative equity).",
+    "limitations": "Calculates fixed-rate standard auto loan amortization.",
+    "formula": "Monthly Payment = Principal * [r(1+r)^n] / [(1+r)^n - 1]; Total Cost = Price + Tax + Fees + Interest",
+    "trustNotes": "100% Client-Side financial modeling. Zero data stored or transmitted.",
+    "related": [
+      "loan-emi-calculator",
+      "mortgage-payment-calculator",
+      "salary-hourly-converter",
+      "sales-margin-markup-calculator"
+    ],
+    "seo": {
+      "title": "Car Loan Calculator — Monthly Auto Payment & Interest Estimator",
+      "metaDescription": "Calculate monthly car payments, total financed principal, interest costs, and taxes. Free, private auto loan calculator with down payment and trade-in support.",
+      "whatIsThis": "An automotive finance calculator that determines monthly payments and total ownership costs for new or used vehicles.",
+      "howItWorks": "1. Enter vehicle purchase price and cash down payment.\n2. Add trade-in vehicle equity, interest rate (APR), and loan term.\n3. Include optional sales tax and dealer fees to view total out-of-pocket costs.",
+      "whyUseIt": "Reveals the true total cost of financing a vehicle before negotiating with auto dealerships.",
+      "faqs": [
+        {
+          "question": "What is a good auto loan term length?",
+          "answer": "A 48 to 60-month loan term offers a balanced monthly payment while minimizing total interest paid and avoiding negative vehicle equity."
+        },
+        {
+          "question": "How does trade-in equity affect my car loan?",
+          "answer": "Trade-in equity reduces the total principal amount you need to borrow, lowering your monthly payment and total interest charges."
+        }
+      ]
+    }
+  },
+  {
+    "id": "hex-decimal-binary-converter",
+    "name": "Hex, Decimal, Binary & Octal Number Base Converter",
+    "slug": "hex-decimal-binary-converter",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "hex to decimal converter",
+      "binary to decimal converter",
+      "hex to binary converter",
+      "octal to decimal converter",
+      "base 16 to base 10",
+      "number base converter online"
+    ],
+    "primaryKeywords": [
+      "hex to decimal converter",
+      "binary to decimal converter",
+      "hex decimal binary octal converter",
+      "number base converter"
+    ],
+    "secondaryKeywords": [
+      "convert hex 0x to binary",
+      "4 bit nibble binary converter",
+      "bitwise base converter online"
+    ],
+    "targetUsers": [
+      "Software Engineers",
+      "Computer Science Students",
+      "Embedded Systems Developers",
+      "Cybersecurity Analysts"
+    ],
+    "badge": "High Usage",
+    "userProblem": "Engineers and computer science students need an instant, synchronized 4-way base converter that translates values simultaneously between Hexadecimal (Base 16), Decimal (Base 10), Binary (Base 2), and Octal (Base 8).",
+    "searchIntent": "Convert numbers between Hexadecimal, Decimal, Binary, and Octal formats in real time with bitwise breakdowns.",
+    "resultInterpretation": "Calculates real-time values across all 4 numerical bases, displays 4-bit nibble binary grouping, bit length, bytes required, and ASCII character representations.",
+    "practicalGuidance": "Hexadecimal numbers use digits 0–9 and letters A–F. Binary values are formatted with 4-bit nibble spaces for easy byte inspection.",
+    "limitations": "Supports integer conversions up to standard JavaScript safe integer limits (2^53 - 1).",
+    "formula": "Positional Base Notation: Value = Sum(digit_i * base^i)",
+    "trustNotes": "100% Client-Side. Calculations execute in browser memory.",
+    "related": [
+      "base64-encoder",
+      "base64-decoder",
+      "hash-generator",
+      "storage-converter"
+    ],
+    "seo": {
+      "title": "Hex to Decimal & Binary Converter — 4-Way Number Base Tool",
+      "metaDescription": "Convert numbers between Hexadecimal (Base 16), Decimal (Base 10), Binary (Base 2), and Octal (Base 8). Real-time synchronized conversion with bitwise inspection.",
+      "whatIsThis": "A developer utility that converts numerical values across standard computer numbering bases.",
+      "howItWorks": "1. Type any number into the Decimal, Hex, Binary, or Octal input field.\n2. Watch all other 3 bases update instantaneously.\n3. Inspect bit length, byte requirements, and copy formatted values.",
+      "whyUseIt": "Essential for low-level memory debugging, network packet analysis, and bitwise programming.",
+      "faqs": [
+        {
+          "question": "What is 255 in Hex and Binary?",
+          "answer": "Decimal 255 equals 'FF' in Hexadecimal (Base 16) and '1111 1111' in Binary (Base 2)."
+        },
+        {
+          "question": "What is a binary nibble?",
+          "answer": "A nibble is a four-bit aggregation, or half an octet (byte). Each hex digit represents exactly one binary nibble."
+        }
+      ]
+    }
+  },
+  {
+    "id": "aspect-ratio-crop-previewer",
+    "name": "Visual Aspect Ratio Crop Previewer & Frame Guide",
+    "slug": "aspect-ratio-crop-previewer",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "aspect ratio crop previewer",
+      "image crop ratio visualizer",
+      "16:9 crop tool online",
+      "instagram 4:5 crop preview",
+      "youtube thumbnail crop guide",
+      "visual aspect ratio frame"
+    ],
+    "primaryKeywords": [
+      "aspect ratio crop previewer",
+      "image aspect ratio cropper",
+      "16:9 image crop preview",
+      "photo crop aspect ratio tool"
+    ],
+    "secondaryKeywords": [
+      "rule of thirds crop preview",
+      "instagram crop framing guide",
+      "export cropped aspect ratio"
+    ],
+    "targetUsers": [
+      "Photographers",
+      "Content Creators",
+      "Graphic Designers",
+      "Social Media Managers"
+    ],
+    "badge": "Design",
+    "userProblem": "Creators and photographers preparing images for YouTube, Instagram, or TikTok need to preview how an image will crop into 16:9, 1:1, 4:5, 9:16, or 21:9 before publishing.",
+    "searchIntent": "Upload images and visually preview proportional crop boundaries with rule-of-thirds gridlines and 1-click export.",
+    "resultInterpretation": "Renders live canvas overlay showing exact active crop boundaries, darkened bleed margins, rule-of-thirds composition guidelines, and exports pixel-perfect cropped files.",
+    "practicalGuidance": "Use 4:5 for high-engagement Instagram feed portraits, 16:9 for YouTube thumbnails, and 9:16 for TikTok/Reels.",
+    "limitations": "Canvas operations execute locally in browser memory. Supports standard JPG, PNG, and WebP images.",
+    "formula": "Proportional Canvas Framing: Crop_Dim = Min(Width, Height * Target_Ratio)",
+    "trustNotes": "100% Client-Side. Images are processed locally on your device and never uploaded to an external server.",
+    "related": [
+      "aspect-ratio-resizer",
+      "social-media-image-resizer",
+      "aspect-ratio-calculator",
+      "screen-aspect-ratio-comparator"
+    ],
+    "seo": {
+      "title": "Aspect Ratio Crop Previewer — Visual Composition & Framing Guide",
+      "metaDescription": "Preview aspect ratio crops (16:9, 1:1, 4:5, 9:16, 21:9) on any image. Features rule-of-thirds gridlines, positioning slider, and 1-click cropped PNG export.",
+      "whatIsThis": "A visual design tool that overlays standard aspect ratio crop frames on images with composition guidelines.",
+      "howItWorks": "1. Select target aspect ratio (16:9, 1:1, 4:5, 9:16, 21:9).\n2. Upload your image (or use the built-in demo canvas).\n3. Adjust the framing position slider and export the cropped image in 1 click.",
+      "whyUseIt": "Prevents awkward head cutoffs and broken framing on social media platforms.",
+      "faqs": [
+        {
+          "question": "What is the best aspect ratio for Instagram feed posts?",
+          "answer": "The 4:5 portrait aspect ratio (1080 x 1350 px) occupies the maximum vertical screen space on mobile devices, resulting in higher user engagement."
+        },
+        {
+          "question": "Are my uploaded photos private?",
+          "answer": "Yes. All image processing and cropping happen locally in your web browser with HTML5 Canvas. Zero images are transmitted over the internet."
+        }
+      ]
+    }
+  },
+  {
+    "id": "cagr-calculator",
+    "name": "Compound Annual Growth Rate (CAGR) Calculator",
+    "slug": "cagr-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "cagr calculator",
+      "compound annual growth rate calculator",
+      "calculate cagr online",
+      "annualized growth rate formula",
+      "business revenue growth cagr",
+      "investment cagr estimator"
+    ],
+    "primaryKeywords": [
+      "cagr calculator",
+      "compound annual growth rate calculator",
+      "annualized growth rate calculator",
+      "cagr formula tool"
+    ],
+    "secondaryKeywords": [
+      "how to calculate cagr for revenue",
+      "5 year cagr calculator",
+      "investment compounding growth rate"
+    ],
+    "targetUsers": [
+      "Business Owners",
+      "Financial Analysts",
+      "Investors",
+      "Startup Founders",
+      "Accountants"
+    ],
+    "badge": "Popular",
+    "userProblem": "Business owners and investors evaluating revenue or portfolio growth over multiple years need to calculate the smoothed Compound Annual Growth Rate (CAGR) to compare performance accurately.",
+    "searchIntent": "Calculate the Compound Annual Growth Rate (CAGR) from initial value, final value, and number of years.",
+    "resultInterpretation": "Calculates the smoothed annual percentage growth rate, absolute dollar gain, total cumulative percentage growth, and year-by-year compounding trajectory schedule.",
+    "practicalGuidance": "CAGR provides a smoothed geometric annual growth rate, eliminating the distortion of volatile single-year swings.",
+    "limitations": "Calculates geometric constant annual growth. Real-world business growth fluctuates across quarters.",
+    "formula": "CAGR = (Ending_Value / Beginning_Value)^(1 / Years) - 1",
+    "trustNotes": "100% Client-Side financial modeling.",
+    "related": [
+      "roi-investment-calculator",
+      "compound-interest-calculator",
+      "inflation-calculator",
+      "sales-margin-markup-calculator"
+    ],
+    "seo": {
+      "title": "CAGR Calculator — Compound Annual Growth Rate Estimator",
+      "metaDescription": "Calculate Compound Annual Growth Rate (CAGR) for investments, business revenue, and portfolios. Free in-browser tool with year-by-year compounding schedule.",
+      "whatIsThis": "A financial metrics calculator that computes the geometric annual growth rate of an investment or business over multiple years.",
+      "howItWorks": "1. Enter Beginning (Initial) Value.\n2. Enter Ending (Final) Value.\n3. Enter Number of Years to view CAGR %, total gain, and year-by-year compounding trajectory.",
+      "whyUseIt": "Standardizes financial performance metrics across different time horizons and investment sizes.",
+      "faqs": [
+        {
+          "question": "What is CAGR?",
+          "answer": "CAGR (Compound Annual Growth Rate) represents the annualized rate of return required for an investment or business metric to grow from its beginning balance to its ending balance."
+        },
+        {
+          "question": "How is CAGR different from average annual growth rate?",
+          "answer": "Simple average growth ignores compounding and distorts volatile swings. CAGR measures true geometric annual compounding."
+        }
+      ]
+    }
+  },
+  {
+    "id": "network-port-reference",
+    "name": "Common Network Port & Protocol Quick Reference",
+    "slug": "network-port-reference",
+    "category": "network",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "network port reference",
+      "common network ports list",
+      "tcp udp port list",
+      "port 443 80 22 reference",
+      "database port numbers",
+      "network port lookup online"
+    ],
+    "primaryKeywords": [
+      "network port reference",
+      "common network ports",
+      "tcp udp port list",
+      "port number lookup tool"
+    ],
+    "secondaryKeywords": [
+      "postgres mysql port number",
+      "ssh rdp default ports",
+      "standard web ports reference"
+    ],
+    "targetUsers": [
+      "Network Engineers",
+      "Sysadmins",
+      "Cloud Architects",
+      "Cybersecurity Professionals",
+      "Developers"
+    ],
+    "badge": "Network",
+    "userProblem": "Engineers and system administrators configuring firewalls, security groups, and reverse proxies need a fast, searchable reference of standard TCP and UDP port numbers with security guidance.",
+    "searchIntent": "Search standard network port numbers, protocols (TCP/UDP), default services, and security hardening recommendations.",
+    "resultInterpretation": "Provides an interactive, filterable database of over 24 core network ports (HTTP 80, HTTPS 443, SSH 22, DNS 53, Postgres 5432, Redis 6379, MySQL 3306, MongoDB 27017).",
+    "practicalGuidance": "Database ports (5432, 3306, 6379, 27017) should NEVER be bound to 0.0.0.0 or exposed to the public internet.",
+    "limitations": "Lists standard IANA registered and widely adopted service ports.",
+    "formula": "Search Index: Port ➔ Protocol (TCP/UDP) ➔ Service ➔ Security Invariant",
+    "trustNotes": "100% Client-Side. Instant offline port lookup.",
+    "related": [
+      "subnet-mask-calculator",
+      "ping-test",
+      "dns-lookup",
+      "bandwidth-file-transfer-calculator"
+    ],
+    "seo": {
+      "title": "Network Port Reference — Common TCP & UDP Ports Quick Lookup",
+      "metaDescription": "Search common TCP & UDP network port numbers, protocols, services, and security hardening notes. Filter by Web, Database, Remote Access, Email, and DevOps.",
+      "whatIsThis": "A networking reference tool that indexes standard IANA port numbers and default application protocols.",
+      "howItWorks": "1. Type a port number (e.g. 5432) or service name (e.g. SSH) into the search bar.\n2. Filter by category (Web, Database, Remote, Email, DevOps).\n3. Click any port card to copy its configuration details.",
+      "whyUseIt": "Speeds up firewall rule configuration, VPC security group setup, and infrastructure audits.",
+      "faqs": [
+        {
+          "question": "What port does PostgreSQL use?",
+          "answer": "PostgreSQL uses standard port 5432 over TCP."
+        },
+        {
+          "question": "What is the difference between port 80 and port 443?",
+          "answer": "Port 80 is used for unencrypted HTTP traffic, while port 443 is used for secure, encrypted HTTPS traffic over TLS."
+        }
+      ]
+    }
+  },
+  {
+    "id": "subnet-mask-calculator",
+    "name": "IPv4 Subnet Mask & CIDR Prefix Calculator",
+    "slug": "subnet-mask-calculator",
+    "category": "network",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "subnet calculator",
+      "ipv4 subnet mask calculator",
+      "cidr calculator online",
+      "ip subnet range calculator",
+      "cidr to subnet mask",
+      "usable ip address range"
+    ],
+    "primaryKeywords": [
+      "subnet calculator",
+      "ipv4 subnet calculator",
+      "cidr calculator",
+      "subnet mask calculator"
+    ],
+    "secondaryKeywords": [
+      "calculate usable hosts from cidr",
+      "24 subnet mask usable ips",
+      "network and broadcast address calculator"
+    ],
+    "targetUsers": [
+      "Network Administrators",
+      "DevOps Engineers",
+      "Cloud Infrastructure Specialists",
+      "IT Students"
+    ],
+    "badge": "Network",
+    "userProblem": "Network engineers designing VPC subnets and routing tables need to calculate Network Address, Broadcast Address, Usable Host IP Range, and Total Usable Hosts from an IPv4 address and CIDR prefix.",
+    "searchIntent": "Calculate IPv4 subnet boundaries, network addresses, broadcast addresses, usable host ranges, and wildcard masks from CIDR prefixes.",
+    "resultInterpretation": "Calculates network address, broadcast address, first usable IP, last usable IP, total usable hosts, subnet mask (e.g. 255.255.255.0), and wildcard mask.",
+    "practicalGuidance": "A /24 subnet provides 254 usable host addresses; a /16 provides 65,534 usable addresses.",
+    "limitations": "Calculates standard IPv4 32-bit subnets (/8 to /30).",
+    "formula": "Network = IP & Mask; Broadcast = Network | ~Mask; Usable = 2^(32-CIDR) - 2",
+    "trustNotes": "100% Client-Side calculation.",
+    "related": [
+      "network-port-reference",
+      "my-ip",
+      "ping-test",
+      "dns-lookup"
+    ],
+    "seo": {
+      "title": "IPv4 Subnet Calculator — CIDR Prefix & Host Range Tool",
+      "metaDescription": "Calculate IPv4 subnet masks, network addresses, broadcast addresses, and usable host IP ranges from CIDR prefixes (/8 to /30). Free, instant networking tool.",
+      "whatIsThis": "A networking utility that calculates IPv4 subnet allocations and host address ranges.",
+      "howItWorks": "1. Enter an IPv4 address (e.g. 192.168.1.15).\n2. Select CIDR prefix size (e.g. /24 for 255.255.255.0).\n3. View exact Network IP, Broadcast IP, Usable Host Range, and Total Host Capacity.",
+      "whyUseIt": "Eliminates binary calculation errors when configuring AWS VPCs, Azure VNets, and local routers.",
+      "faqs": [
+        {
+          "question": "How many usable hosts are in a /24 subnet?",
+          "answer": "A /24 subnet has 256 total IP addresses, of which 254 are usable for host devices (the first is the Network address and the last is the Broadcast address)."
+        },
+        {
+          "question": "What is a CIDR notation?",
+          "answer": "CIDR (Classless Inter-Domain Routing) notation specifies an IP address followed by a slash and the number of bits in the subnet mask (e.g. 10.0.0.0/16)."
+        }
+      ]
+    }
+  },
+  {
+    "id": "credit-card-payoff-calculator",
+    "name": "Credit Card Payoff & Debt Interest Calculator",
+    "slug": "credit-card-payoff-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "credit card payoff calculator",
+      "credit card debt calculator",
+      "how long to pay off credit card",
+      "credit card interest calculator",
+      "credit card minimum payment trap",
+      "debt payoff timeline tool"
+    ],
+    "primaryKeywords": [
+      "credit card payoff calculator",
+      "credit card debt calculator",
+      "how to pay off credit card debt",
+      "credit card interest estimator"
+    ],
+    "secondaryKeywords": [
+      "credit card minimum payment interest calculation",
+      "calculate months to pay off credit card",
+      "debt payoff strategy calculator"
+    ],
+    "targetUsers": [
+      "Credit Card Holders",
+      "Debt Eliminators",
+      "Financial Planners",
+      "Budgeters"
+    ],
+    "badge": "Popular",
+    "userProblem": "Individuals carrying high-interest credit card balances need to calculate how long it will take to become debt-free based on their monthly payments and avoid the minimum payment trap.",
+    "searchIntent": "Calculate the exact number of months and total interest required to pay off credit card balances at high APR rates.",
+    "resultInterpretation": "Calculates payoff timeline in months and years, total interest paid, total out-of-pocket debt cost, and warns if monthly payment is lower than monthly accumulating interest.",
+    "practicalGuidance": "Paying even $50 to $100 extra per month above the minimum payment can cut payoff times by over 10 years and save thousands in interest.",
+    "limitations": "Calculates payoff assuming no new purchases are added to the credit card balance.",
+    "formula": "Monthly Interest = Balance * (APR / 12); Amortization Loop: Balance = Balance + Interest - Payment",
+    "trustNotes": "100% Client-Side financial modeling. No financial data is ever transmitted.",
+    "related": [
+      "loan-calculator",
+      "loan-emi-calculator",
+      "car-loan-affordability-calculator",
+      "compound-interest-calculator"
+    ],
+    "seo": {
+      "title": "Credit Card Payoff Calculator — Debt Interest & Timeline Estimator",
+      "metaDescription": "Calculate how long it will take to pay off your credit card balance and how much interest you will pay. Model fixed monthly payments or target payoff dates.",
+      "whatIsThis": "A personal finance tool that computes credit card debt payoff schedules, interest charges, and debt-free timelines.",
+      "howItWorks": "1. Enter current credit card balance and APR interest rate.\n2. Choose fixed monthly payment ($/mo) or target payoff duration (months).\n3. View total months to become debt-free, total interest paid, and payoff strategy.",
+      "whyUseIt": "Helps consumers escape the high-interest credit card debt cycle faster.",
+      "faqs": [
+        {
+          "question": "What is the minimum payment trap?",
+          "answer": "Credit card minimum payments (typically 2-3% of the balance) mostly cover interest with very little going toward principal, extending debt payoff to 15-25 years and doubling or tripling the total cost."
+        },
+        {
+          "question": "How much does a $5,000 credit card balance cost at 24.99% APR with $200/mo payments?",
+          "answer": "Paying $200/month on a $5,000 balance at 24.99% APR takes approximately 36 months (3 years) and costs ~$1,830 in interest, for a total payoff of ~$6,830."
+        }
+      ]
+    }
+  },
+  {
+    "id": "slug-generator",
+    "name": "URL Slug Generator & Clean Permalinks Tool",
+    "slug": "slug-generator",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "slug generator",
+      "url slug generator",
+      "convert title to slug",
+      "seo friendly url generator",
+      "permalink generator online",
+      "kebab case slug generator"
+    ],
+    "primaryKeywords": [
+      "slug generator",
+      "url slug generator",
+      "title to slug converter",
+      "seo permalink generator"
+    ],
+    "secondaryKeywords": [
+      "remove stop words from url slug",
+      "clean url string generator",
+      "kebab case url tool"
+    ],
+    "targetUsers": [
+      "Bloggers",
+      "SEO Specialists",
+      "Web Developers",
+      "Content Creators",
+      "CMS Editors"
+    ],
+    "badge": "High Usage",
+    "userProblem": "Writers and web developers need to convert article headlines, product titles, and raw strings into clean, sanitized, SEO-friendly URL slugs (kebab-case) with accents normalized and punctuation removed.",
+    "searchIntent": "Convert text titles into clean, URL-safe permalinks with custom separators, stop-words removal, and accent normalization.",
+    "resultInterpretation": "Transforms raw text into clean kebab-case or snake_case slugs, removes punctuation/emojis, normalizes Unicode diacritics, and formats clean URLs.",
+    "practicalGuidance": "Keep URL slugs concise (3 to 5 words) and use hyphens (-) as standard search-engine separators.",
+    "limitations": "Processes Unicode strings and normalizes Latin diacritics.",
+    "formula": "Slugify AST: Normalize Diacritics ➔ Remove Symbols ➔ Lowercase ➔ Hyphenate",
+    "trustNotes": "100% Client-Side. Instant text sanitization.",
+    "related": [
+      "case-converter",
+      "url-encoder",
+      "url-decoder",
+      "character-frequency-counter"
+    ],
+    "seo": {
+      "title": "URL Slug Generator — Create Clean SEO Permalinks Online",
+      "metaDescription": "Convert article titles and headlines into clean, SEO-friendly URL slugs. Normalizes accents, removes punctuation, and supports kebab-case/snake_case formatting.",
+      "whatIsThis": "A web publishing utility that generates standardized, clean URL slugs from raw article titles.",
+      "howItWorks": "1. Paste or type your article title or heading.\n2. Choose separator (Hyphen, Underscore, Slash) and toggle stop-words removal.\n3. Instantly copy the generated clean URL slug.",
+      "whyUseIt": "Ensures clean, readable permalinks that improve organic search click-through rates.",
+      "faqs": [
+        {
+          "question": "Why should I use hyphens instead of underscores in URLs?",
+          "answer": "Google and major search engines treat hyphens (-) as word separators, whereas underscores (_) are treated as character connectors."
+        },
+        {
+          "question": "Does this tool handle accented characters like 'café'?",
+          "answer": "Yes. It normalizes Unicode diacritics (e.g. 'café' becomes 'cafe') for maximum browser and web compatibility."
+        }
+      ]
+    }
+  },
+  {
+    "id": "screen-aspect-ratio-comparator",
+    "name": "Dual Screen Size & Aspect Ratio Visualizer",
+    "slug": "screen-aspect-ratio-comparator",
+    "category": "hardware",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "screen size comparator",
+      "monitor size comparison",
+      "aspect ratio screen comparison",
+      "27 vs 34 inch monitor size",
+      "ultrawide vs standard monitor area",
+      "display size comparison visualizer"
+    ],
+    "primaryKeywords": [
+      "screen size comparator",
+      "monitor size comparison",
+      "display area comparator",
+      "aspect ratio comparison tool"
+    ],
+    "secondaryKeywords": [
+      "27 16:9 vs 34 21:9 monitor comparison",
+      "compare monitor surface area",
+      "screen dimension width height calculator"
+    ],
+    "targetUsers": [
+      "PC Gamers",
+      "Remote Workers",
+      "Hardware Enthusiasts",
+      "Display Buyers",
+      "Video Editors"
+    ],
+    "badge": "Hardware",
+    "userProblem": "Consumers buying computer monitors or laptops need to compare the physical width, height, and total surface area between different diagonal sizes and aspect ratios (e.g. 27\" 16:9 vs 34\" 21:9 ultrawide).",
+    "searchIntent": "Compare physical screen dimensions, surface area, and proportional visual scale between two display sizes and aspect ratios.",
+    "resultInterpretation": "Calculates exact width & height (inches/cm), total surface area, percentage area difference, pixel density (PPI), and displays an interactive proportional scale overlay.",
+    "practicalGuidance": "A 34-inch 21:9 ultrawide monitor has the exact same vertical height as a 27-inch 16:9 monitor, but is ~33% wider.",
+    "limitations": "Calculates geometric rectangular display dimensions based on diagonal and aspect ratio trigonometrics.",
+    "formula": "Width = Diag * Cos(Atan(H/W)); Height = Diag * Sin(Atan(H/W)); Area = Width * Height",
+    "trustNotes": "100% Client-Side trigonometric calculation.",
+    "related": [
+      "screen-ppi-calculator",
+      "aspect-ratio-resizer",
+      "aspect-ratio-crop-previewer",
+      "screen-resolution"
+    ],
+    "seo": {
+      "title": "Screen Size Comparator — Compare Monitor Dimensions & Area",
+      "metaDescription": "Compare physical screen dimensions, surface area, and aspect ratios between two monitors (e.g. 27\" 16:9 vs 34\" 21:9). Includes proportional scale visual overlay.",
+      "whatIsThis": "A display hardware utility that compares physical dimensions and surface area between two screens.",
+      "howItWorks": "1. Enter diagonal size and aspect ratio for Display A (e.g. 27\" 16:9).\n2. Enter diagonal size and aspect ratio for Display B (e.g. 34\" 21:9).\n3. View surface area delta, width/height differences, and visual scale silhouette overlay.",
+      "whyUseIt": "Helps you choose the right monitor size and aspect ratio for gaming, programming, and productivity desks.",
+      "faqs": [
+        {
+          "question": "Is a 34-inch ultrawide bigger than a 27-inch monitor?",
+          "answer": "Yes. A 34-inch 21:9 ultrawide has approximately 33% more surface area than a 27-inch 16:9 monitor, with identical vertical screen height."
+        },
+        {
+          "question": "What is the aspect ratio of standard vs ultrawide monitors?",
+          "answer": "Standard monitors use 16:9 (1.78:1). Ultrawide monitors use 21:9 (2.33:1), and super ultrawide monitors use 32:9 (3.56:1)."
+        }
+      ]
+    }
+  },
+  {
+    "id": "gas-trip-cost-calculator",
+    "name": "Road Trip Gas & Fuel Cost Calculator",
+    "slug": "gas-trip-cost-calculator",
+    "category": "education",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "gas trip calculator",
+      "fuel cost calculator",
+      "road trip fuel cost",
+      "gas cost per mile",
+      "split gas money calculator",
+      "driving cost estimator"
+    ],
+    "primaryKeywords": [
+      "gas trip calculator",
+      "road trip fuel calculator",
+      "fuel cost calculator",
+      "gas money splitter"
+    ],
+    "secondaryKeywords": [
+      "how much gas for 300 mile trip",
+      "calculate driving fuel cost",
+      "split road trip gas between friends"
+    ],
+    "targetUsers": [
+      "Road Trippers",
+      "Commuters",
+      "Travelers",
+      "Carpoolers",
+      "Fleet Drivers"
+    ],
+    "badge": "Everyday",
+    "userProblem": "Drivers planning a road trip or carpooling with friends need to calculate how much gas their trip will cost, how many gallons or liters they will burn, and how to split fuel costs fairly.",
+    "searchIntent": "Calculate total fuel expense, volume of gas needed, and per-person cost for driving trips.",
+    "resultInterpretation": "Calculates total trip fuel cost, required fuel volume (Gallons or Liters), per-person fuel share, and cost per mile/kilometer.",
+    "practicalGuidance": "Supports both Imperial (Miles, MPG, $/gallon) and Metric (Kilometers, L/100km, $/liter) measurements.",
+    "limitations": "Calculates fuel costs. Tolls, parking, and vehicle depreciation can be added separately.",
+    "formula": "Fuel Needed = Distance / MPG; Total Cost = Fuel Needed * Gas Price; Per Person = Total / Passengers",
+    "trustNotes": "100% Client-Side calculation.",
+    "related": [
+      "tip-bill-splitter",
+      "timezone-meeting-planner",
+      "unit-converter"
+    ],
+    "seo": {
+      "title": "Gas Trip Calculator — Road Trip Fuel & Carpool Cost Estimator",
+      "metaDescription": "Calculate the gas cost for any driving trip. Enter distance (miles/km), vehicle MPG, gas price, and number of passengers to split fuel costs fairly. Free tool.",
+      "whatIsThis": "A travel and transportation utility that calculates fuel expenses and splits road trip gas costs among passengers.",
+      "howItWorks": "1. Enter trip distance and vehicle fuel economy (MPG or L/100km).\n2. Enter current gas pump price per gallon or liter.\n3. Enter number of passengers to view exact per-person fuel share and total trip cost.",
+      "whyUseIt": "Eliminates confusion when budgeting for road trips or splitting driving costs with friends.",
+      "faqs": [
+        {
+          "question": "How do you calculate gas cost for a road trip?",
+          "answer": "Divide the total trip distance by your car's fuel efficiency (MPG) to find the gallons needed, then multiply by the gas price per gallon."
+        },
+        {
+          "question": "How much does a 350-mile road trip cost at 28 MPG and $3.65/gal?",
+          "answer": "A 350-mile trip at 28 MPG requires 12.5 gallons of fuel. At $3.65/gallon, the total fuel cost is $45.63 (or $22.82 per person for 2 passengers)."
+        }
+      ]
+    }
   }
 ]
