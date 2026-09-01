@@ -7753,5 +7753,647 @@
         }
       ]
     }
+  },
+  {
+    "id": "auto-loan-early-payoff-calculator",
+    "name": "Auto Loan Early Payoff & Extra Payment Calculator",
+    "slug": "auto-loan-early-payoff-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "auto loan early payoff calculator",
+      "car loan extra payment calculator",
+      "pay off car early calculator",
+      "extra principal payment auto loan",
+      "car loan interest savings calculator",
+      "how to pay off car faster"
+    ],
+    "primaryKeywords": [
+      "auto loan early payoff calculator",
+      "car loan extra payment calculator",
+      "pay off car early calculator",
+      "auto loan payoff calculator"
+    ],
+    "secondaryKeywords": [
+      "extra 100 a month on car loan",
+      "lump sum car payment calculator",
+      "shorten car loan term calculator"
+    ],
+    "targetUsers": [
+      "Car Owners",
+      "Auto Borrowers",
+      "Financial Planners",
+      "Budgeters"
+    ],
+    "badge": "Popular",
+    "userProblem": "Car loan borrowers want to calculate how much interest they will save and how many months earlier they can pay off their auto loan by making extra monthly payments or an upfront lump sum.",
+    "searchIntent": "Calculate the interest savings and shortened loan payoff term resulting from extra monthly auto loan payments or lump sum contributions.",
+    "resultInterpretation": "Calculates total interest saved ($), number of months/years shaved off the auto loan, and new accelerated payoff timeline.",
+    "practicalGuidance": "Check with your auto lender that extra payments are applied directly to principal rather than advancing the next due date.",
+    "limitations": "Calculates standard daily or monthly compounding amortized auto loans.",
+    "formula": "Accelerated Amortization: Loop monthly balance reduction with Principal = (Payment + Extra) - Interest",
+    "trustNotes": "100% Client-Side financial modeling. Zero data stored or transmitted.",
+    "related": [
+      "car-loan-affordability-calculator",
+      "loan-refinance-savings-calculator",
+      "credit-card-payoff-calculator",
+      "loan-calculator"
+    ],
+    "seo": {
+      "title": "Auto Loan Early Payoff Calculator — Extra Payment Savings Tool",
+      "metaDescription": "Calculate how much interest you save and how many months you shave off your car loan with extra monthly payments or lump sums. Free, private calculator.",
+      "whatIsThis": "A personal finance calculator that computes the acceleration and interest savings of making extra principal payments on a car loan.",
+      "howItWorks": "1. Enter current auto loan balance, APR, and remaining months.\n2. Enter extra monthly payment ($/mo) or one-time lump sum payment ($).\n3. View your total interest saved, months shaved off, and new payoff date.",
+      "whyUseIt": "Reveals the exact return on investment of putting spare cash toward auto loan principal.",
+      "faqs": [
+        {
+          "question": "How much does paying an extra $100/month save on a car loan?",
+          "answer": "On a $25,000 48-month car loan at 6.5% APR, paying an extra $100/month saves over $600 in interest and pays off the vehicle 7 months early."
+        },
+        {
+          "question": "Do extra car payments go toward principal or interest?",
+          "answer": "Most auto lenders apply extra payments to the loan principal balance when specified, reducing the balance that accrues future daily interest."
+        }
+      ]
+    }
+  },
+  {
+    "id": "sql-in-clause-batch-formatter",
+    "name": "SQL IN Clause Batch Formatter & Query Builder",
+    "slug": "sql-in-clause-batch-formatter",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "sql in clause formatter",
+      "convert list to sql in clause",
+      "sql in list generator",
+      "format ids for sql query",
+      "sql where in clause builder",
+      "batch sql in clause chunker"
+    ],
+    "primaryKeywords": [
+      "sql in clause formatter",
+      "convert list to sql in",
+      "sql in query generator",
+      "sql in list formatter"
+    ],
+    "secondaryKeywords": [
+      "split sql in clause 1000 items oracle",
+      "quote list of strings for sql in",
+      "deduplicate ids for sql query"
+    ],
+    "targetUsers": [
+      "Database Administrators",
+      "Backend Developers",
+      "Data Analysts",
+      "BI Engineers"
+    ],
+    "badge": "High Usage",
+    "userProblem": "Engineers and data analysts copying lists of IDs from Excel, logs, or CSVs need to format them into SQL `WHERE column_id IN ('id1', 'id2', ...)` clauses with proper quotes, deduplication, and 1000-item batch chunking.",
+    "searchIntent": "Convert raw multi-line lists of strings or numbers into valid SQL IN (...) clauses with custom quote styles and batch chunking.",
+    "resultInterpretation": "Generates valid SQL IN query clauses with customizable single/double quotes, numeric unquoted mode, deduplication, and database chunking (e.g. 1000 max items per IN clause).",
+    "practicalGuidance": "Databases like Oracle throw `ORA-01795: maximum number of expressions in a list is 1000` if an IN clause exceeds 1000 items. This tool automatically chunks with `OR`.",
+    "limitations": "Formats up to tens of thousands of items instantaneously in browser memory.",
+    "formula": "String Tokenizer ➔ Set Deduplication ➔ Quotation Mapping ➔ Array Chunking ➔ SQL String Synthesis",
+    "trustNotes": "100% Client-Side. Sensitive database IDs and queries never leave your local browser.",
+    "related": [
+      "sql-formatter",
+      "list-cleaner-deduplicator",
+      "csv-json-converter",
+      "csv-column-extractor-filter"
+    ],
+    "seo": {
+      "title": "SQL IN Clause Formatter — Convert List of IDs to SQL IN ('...')",
+      "metaDescription": "Convert lists of IDs or strings into SQL WHERE IN ('a', 'b') queries online. Features automatic deduplication, quotation styles, and 1000-item batch chunking.",
+      "whatIsThis": "A database productivity utility that formats raw text lists into copy-pasteable SQL `IN (...)` query clauses.",
+      "howItWorks": "1. Paste a list of IDs (one per line, comma or tab separated).\n2. Select column name, quote style ('single', \"double\", or unquoted numeric).\n3. Copy the formatted SQL query in 1 click.",
+      "whyUseIt": "Saves time when querying production databases for specific lists of user IDs, emails, or order numbers.",
+      "faqs": [
+        {
+          "question": "What is the maximum number of items in a SQL IN clause?",
+          "answer": "Oracle limits IN clauses to 1,000 items. Other databases (PostgreSQL, MySQL, SQL Server) handle more but perform better when chunked with `OR column IN (...)`."
+        },
+        {
+          "question": "Does this tool remove duplicate IDs?",
+          "answer": "Yes. Toggling 'Deduplicate' automatically filters out duplicate entries before building the SQL clause."
+        }
+      ]
+    }
+  },
+  {
+    "id": "css-glassmorphism-generator",
+    "name": "CSS Glassmorphism & Frosted Glass Generator",
+    "slug": "css-glassmorphism-generator",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "css glassmorphism generator",
+      "frosted glass css generator",
+      "glassmorphism css tool",
+      "backdrop filter blur generator",
+      "tailwind glassmorphism generator",
+      "glass card generator online"
+    ],
+    "primaryKeywords": [
+      "css glassmorphism generator",
+      "glassmorphism generator",
+      "frosted glass css",
+      "backdrop filter generator"
+    ],
+    "secondaryKeywords": [
+      "tailwind frosted glass classes",
+      "glass card css copy paste",
+      "blur backdrop filter css online"
+    ],
+    "targetUsers": [
+      "Frontend Developers",
+      "UI Designers",
+      "Web Designers",
+      "Tailwind CSS Users"
+    ],
+    "badge": "Design",
+    "userProblem": "Frontend developers and UI designers creating modern translucent frosted-glass cards need an interactive visual tool to tweak blur, opacity, border reflection, and shadows with 1-click Vanilla CSS and Tailwind exports.",
+    "searchIntent": "Generate frosted-glass UI effects with live visual preview and copy-pasteable CSS and Tailwind code.",
+    "resultInterpretation": "Renders a live frosted glass card over vibrant gradients and outputs clean cross-browser `backdrop-filter: blur()`, `rgba()` background, and specular border CSS.",
+    "practicalGuidance": "Always include `-webkit-backdrop-filter` for full Safari and iOS mobile browser compatibility.",
+    "limitations": "Generates modern CSS3 backdrop-filter styles.",
+    "formula": "CSS Backdrop Filter: background: rgba(R,G,B, Alpha); backdrop-filter: blur(Npx); border: 1px solid rgba(R,G,B, BorderAlpha)",
+    "trustNotes": "100% Client-Side interactive CSS engine.",
+    "related": [
+      "color-converter",
+      "hex-rgb-hsl-picker",
+      "aspect-ratio-calculator",
+      "svg-path-visualizer-optimizer"
+    ],
+    "seo": {
+      "title": "CSS Glassmorphism Generator — Frosted Glass & Backdrop Filter Tool",
+      "metaDescription": "Create modern frosted-glass UI effects with live preview. Customize blur radius, opacity, border reflections, and copy Vanilla CSS or Tailwind classes in 1 click.",
+      "whatIsThis": "A design productivity utility that generates modern glassmorphic translucent CSS styles with live preview.",
+      "howItWorks": "1. Adjust blur radius, background opacity, and border edge sliders.\n2. Choose glass tint color preset (Frost White, Dark Smoke, Cyan, Neon Violet).\n3. Copy the Vanilla CSS or Tailwind CSS code snippet.",
+      "whyUseIt": "Quickly dials in the perfect translucent depth and contrast for hero banners, modals, and navbar headers.",
+      "faqs": [
+        {
+          "question": "What CSS properties create the glassmorphism effect?",
+          "answer": "Glassmorphism is created using `backdrop-filter: blur()`, semi-transparent `rgba()` background colors, subtle specular borders, and soft box shadows."
+        },
+        {
+          "question": "Is backdrop-filter supported in modern browsers?",
+          "answer": "Yes. `backdrop-filter` is supported across all modern browsers including Chrome, Edge, Firefox, Safari, and iOS Safari."
+        }
+      ]
+    }
+  },
+  {
+    "id": "svg-path-visualizer-optimizer",
+    "name": "SVG Path Visualizer, Bounding Box & Minifier",
+    "slug": "svg-path-visualizer-optimizer",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "svg path visualizer",
+      "svg path viewer online",
+      "inspect svg path d",
+      "svg minifier online",
+      "svg path command breakdown",
+      "clean svg path code"
+    ],
+    "primaryKeywords": [
+      "svg path visualizer",
+      "svg path viewer",
+      "svg path inspector",
+      "svg path minifier"
+    ],
+    "secondaryKeywords": [
+      "view svg path d string online",
+      "svg bezier curve previewer",
+      "minify svg xml path"
+    ],
+    "targetUsers": [
+      "Frontend Engineers",
+      "Icon Designers",
+      "SVG Animators",
+      "Web Developers"
+    ],
+    "badge": "High Usage",
+    "userProblem": "Frontend developers and UI designers inspecting raw SVG path strings (`d=\"M...\"`) need to visualize the path on an interactive canvas, customize stroke/fill styling, inspect path segment commands, and minify the SVG XML.",
+    "searchIntent": "Visualize raw SVG path data, adjust stroke/fill styles in real-time, inspect path command statistics, and copy minified SVG code.",
+    "resultInterpretation": "Renders raw SVG path strings on a scalable canvas with real-time command breakdown (M, L, C, Q, S, T, A, Z) and outputs optimized SVG XML.",
+    "practicalGuidance": "Pasting full `<svg>` XML or just the raw `d=\"...\"` string works seamlessly.",
+    "limitations": "Visualizes and parses standard SVG 1.1 / 2.0 path commands.",
+    "formula": "SVG Path Grammar Parser: d String ➔ Tokenize Commands ➔ Dynamic ViewBox Render",
+    "trustNotes": "100% Client-Side. SVG assets are rendered and minified in local browser memory.",
+    "related": [
+      "css-glassmorphism-generator",
+      "aspect-ratio-scale-multiplier",
+      "color-converter",
+      "html-entity-encoder-decoder"
+    ],
+    "seo": {
+      "title": "SVG Path Visualizer & Minifier — Inspect & Preview SVG Paths Online",
+      "metaDescription": "Preview and visualize SVG path data (d='M...') on an interactive canvas. Customize stroke and fill, inspect command breakdown, and copy minified SVG code.",
+      "whatIsThis": "A developer tool that renders, inspects, and minifies SVG path data strings in real-time.",
+      "howItWorks": "1. Paste an SVG path string (`d=\"M...\"`) or full `<svg>` code.\n2. Adjust stroke color, stroke width, and viewBox size.\n3. View live rendered vector graphic and copy minified SVG XML.",
+      "whyUseIt": "Debugs broken vector icons and optimizes path data for web performance.",
+      "faqs": [
+        {
+          "question": "What do the letters M, C, Q, and Z mean in an SVG path?",
+          "answer": "`M` means Move To, `L` is Line To, `C` is Cubic Bézier Curve, `Q` is Quadratic Bézier Curve, and `Z` Closes the path."
+        },
+        {
+          "question": "Can I paste a full <svg> tag into this tool?",
+          "answer": "Yes. The tool automatically extracts the `d` path attribute from full `<svg><path .../></svg>` code snippets."
+        }
+      ]
+    }
+  },
+  {
+    "id": "compound-annual-growth-rate-matrix",
+    "name": "CAGR Asset Comparison Matrix & Growth Analyzer",
+    "slug": "compound-annual-growth-rate-matrix",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "cagr comparison calculator",
+      "compound annual growth rate matrix",
+      "compare investment asset cagr",
+      "multi asset cagr calculator",
+      "cagr portfolio comparison",
+      "annualized return comparison tool"
+    ],
+    "primaryKeywords": [
+      "cagr comparison calculator",
+      "cagr matrix calculator",
+      "compare cagr online",
+      "asset growth rate calculator"
+    ],
+    "secondaryKeywords": [
+      "compare stocks vs real estate cagr",
+      "multi year annualized return table",
+      "portfolio asset cagr ranking"
+    ],
+    "targetUsers": [
+      "Investors",
+      "Financial Analysts",
+      "Portfolio Managers",
+      "Economics Students"
+    ],
+    "badge": "Popular",
+    "userProblem": "Investors comparing multiple assets (e.g. S&P 500 ETF, Tech stocks, Real Estate, Crypto, High-Yield Savings) need a side-by-side matrix calculating CAGR %, total absolute gain $, and percentage return over multi-year horizons.",
+    "searchIntent": "Compare the Compound Annual Growth Rate (CAGR) and total returns of multiple investment assets side by side in a comparative matrix.",
+    "resultInterpretation": "Calculates exact CAGR %, total return %, and absolute dollar gains across multiple custom portfolio assets with 1-click summary copy.",
+    "practicalGuidance": "CAGR smooths out year-over-year market volatility, providing the single constant annual growth rate that yields the final balance.",
+    "limitations": "Calculates annualized compound growth between starting and ending values.",
+    "formula": "CAGR = (Ending_Value / Beginning_Value)^(1 / Years) - 1",
+    "trustNotes": "100% Client-Side financial modeling.",
+    "related": [
+      "cagr-calculator",
+      "compound-interest-calculator",
+      "roi-investment-calculator",
+      "investment-doubling-rule-of-72-calculator"
+    ],
+    "seo": {
+      "title": "CAGR Comparison Calculator — Multi-Asset Growth Matrix",
+      "metaDescription": "Compare Compound Annual Growth Rate (CAGR) across multiple investment assets side by side. Free portfolio analysis tool with total returns and visual cards.",
+      "whatIsThis": "A portfolio finance utility that compares the annualized CAGR performance of multiple investments side by side.",
+      "howItWorks": "1. Enter initial starting value, final value, and time horizon for each asset.\n2. Add or remove assets dynamically.\n3. View side-by-side CAGR % rankings, total return %, and copy the comparison report.",
+      "whyUseIt": "Determines which investment vehicle actually delivered the highest risk-adjusted annualized compound return.",
+      "faqs": [
+        {
+          "question": "What is CAGR and why is it better than average return?",
+          "answer": "CAGR (Compound Annual Growth Rate) accounts for the effects of compounding over time, whereas simple average returns can severely distort true investment growth."
+        },
+        {
+          "question": "How do you calculate CAGR for a 5-year investment?",
+          "answer": "Divide the final ending value by the initial starting value, raise the result to the power of 1/5 (0.2), and subtract 1."
+        }
+      ]
+    }
+  },
+  {
+    "id": "csv-column-extractor-filter",
+    "name": "CSV Column Extractor, Reorderer & Row Filter",
+    "slug": "csv-column-extractor-filter",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "csv column extractor",
+      "extract specific columns from csv",
+      "reorder csv columns online",
+      "filter csv columns client side",
+      "csv column selector tool",
+      "remove columns from csv online"
+    ],
+    "primaryKeywords": [
+      "csv column extractor",
+      "extract columns from csv",
+      "csv column filter",
+      "reorder csv columns"
+    ],
+    "secondaryKeywords": [
+      "select specific headers from csv",
+      "filter csv rows and export",
+      "client side private csv editor"
+    ],
+    "targetUsers": [
+      "Data Analysts",
+      "Marketing Specialists",
+      "Developers",
+      "Product Managers"
+    ],
+    "badge": "High Usage",
+    "userProblem": "Data analysts and marketers working with large CSV exports need to select specific columns, drop unwanted fields, reorder columns, filter rows, and download a clean CSV without uploading sensitive data to third-party servers.",
+    "searchIntent": "Select, reorder, and filter specific columns from a CSV dataset entirely in the browser with 1-click CSV download.",
+    "resultInterpretation": "Parses CSV datasets in browser memory, provides interactive column selection toggles, row search filtering, and exports cleaned CSV files.",
+    "practicalGuidance": "Ideal for stripping PII (Personally Identifiable Information) before sharing datasets with contractors or AI models.",
+    "limitations": "Processes CSV datasets locally in browser memory up to tens of thousands of rows.",
+    "formula": "CSV Parser: Rows.map(row => SelectedColumns.map(col => row[col]).join(','))",
+    "trustNotes": "100% Zero-Knowledge. CSV data is processed locally in browser RAM without server upload.",
+    "related": [
+      "csv-json-converter",
+      "list-cleaner-deduplicator",
+      "sql-in-clause-batch-formatter",
+      "json-formatter"
+    ],
+    "seo": {
+      "title": "CSV Column Extractor — Select, Reorder & Filter CSV Columns Online",
+      "metaDescription": "Extract and reorder specific columns from CSV datasets online. Filter rows, drop empty values, and download clean CSVs. 100% private in-browser tool.",
+      "whatIsThis": "A zero-knowledge data manipulation utility that extracts specific columns and filters rows from CSV files.",
+      "howItWorks": "1. Paste or load your CSV dataset.\n2. Click column badges to select or deselect headers.\n3. Filter rows and download the extracted CSV file in 1 click.",
+      "whyUseIt": "Quickly trims bloated CSV database exports down to only the fields you actually need.",
+      "faqs": [
+        {
+          "question": "Is it safe to paste confidential customer data here?",
+          "answer": "Yes. This utility runs 100% in your local web browser with zero server transmission, keeping your CSV data completely private."
+        },
+        {
+          "question": "Can I filter out empty or blank rows?",
+          "answer": "Yes. Checking 'Drop rows with missing values' automatically filters out any rows missing data in your selected columns."
+        }
+      ]
+    }
+  },
+  {
+    "id": "morse-code-translator",
+    "name": "Morse Code Translator & Audio Sound Synthesizer",
+    "slug": "morse-code-translator",
+    "category": "fun",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "morse code translator",
+      "text to morse code audio",
+      "morse code decoder online",
+      "morse code sound generator",
+      "english to morse code converter",
+      "morse code alphabet chart"
+    ],
+    "primaryKeywords": [
+      "morse code translator",
+      "text to morse code",
+      "morse code decoder",
+      "morse code audio player"
+    ],
+    "secondaryKeywords": [
+      "morse code beeps sound online",
+      "itu international morse code table",
+      "decode dots and dashes to text"
+    ],
+    "targetUsers": [
+      "Radio Operators",
+      "Scouts",
+      "Students",
+      "Gamers",
+      "Puzzle Solvers"
+    ],
+    "badge": "Everyday",
+    "userProblem": "Users and puzzle solvers need to translate English text into International Morse code (and decode dots and dashes back into English) with Web Audio sound playback and an ITU alphabet reference.",
+    "searchIntent": "Translate text to Morse code and Morse code to text with audio sound playback and ITU lookup alphabet chart.",
+    "resultInterpretation": "Bi-directionally translates between plain text and International Morse Code (`.` and `-`), plays 750Hz audio beeps via Web Audio API, and provides a quick lookup chart.",
+    "practicalGuidance": "Standard Morse code uses `/` to denote word spaces and single spaces between letters.",
+    "limitations": "Translates standard alphanumeric ITU-R Morse characters and common punctuation.",
+    "formula": "ITU-R Translation Map: Character ➔ Dit/Dah Bitstream Sequence",
+    "trustNotes": "100% Client-Side audio synthesis.",
+    "related": [
+      "base64-encoder",
+      "hex-decimal-binary-converter",
+      "talking-alarm-clock",
+      "stopwatch-timer"
+    ],
+    "seo": {
+      "title": "Morse Code Translator — Text to Morse with Audio Playback",
+      "metaDescription": "Translate text to Morse code and decode Morse code back to English. Includes real-time Web Audio sound beeps playback and full ITU Morse alphabet chart.",
+      "whatIsThis": "An interactive communication utility that encodes and decodes International Morse Code with real-time audio playback.",
+      "howItWorks": "1. Select 'Text to Morse' or 'Morse to Text' mode.\n2. Type your message.\n3. Click 'Play Audio' to hear Morse beeps or copy the translated code in 1 click.",
+      "whyUseIt": "Learn Morse code rhythms and quickly decode messages in escape rooms and puzzles.",
+      "faqs": [
+        {
+          "question": "What is SOS in Morse code?",
+          "answer": "SOS in Morse code is `... --- ...` (three short dots, three long dashes, three short dots)."
+        },
+        {
+          "question": "What is the audio frequency for Morse code beeps?",
+          "answer": "Standard Morse code practice tone oscillators use audio frequencies between 700 Hz and 800 Hz (this tool uses 750 Hz)."
+        }
+      ]
+    }
+  },
+  {
+    "id": "credit-utilization-ratio-calculator",
+    "name": "Credit Card Utilization Ratio & Score Tier Calculator",
+    "slug": "credit-utilization-ratio-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "credit utilization calculator",
+      "credit card utilization ratio",
+      "calculate credit utilization rate",
+      "how to lower credit utilization",
+      "credit score utilization sweet spot",
+      "credit card balance to limit ratio"
+    ],
+    "primaryKeywords": [
+      "credit utilization calculator",
+      "credit card utilization calculator",
+      "credit utilization ratio",
+      "credit score utilization calculator"
+    ],
+    "secondaryKeywords": [
+      "calculate paydown for 30 percent utilization",
+      "optimal credit utilization for 800 score",
+      "multi card balance to limit ratio"
+    ],
+    "targetUsers": [
+      "Credit Builders",
+      "Mortgage Applicants",
+      "Cardholders",
+      "Financial Planners"
+    ],
+    "badge": "Popular",
+    "userProblem": "Cardholders looking to optimize their credit scores need to calculate their aggregate credit utilization ratio across all cards and determine the exact paydown amount needed to reach optimal tiers (<30% or <10%).",
+    "searchIntent": "Calculate total credit utilization ratio across multiple credit cards and find target paydown amounts for credit score improvement.",
+    "resultInterpretation": "Calculates overall revolving utilization %, individual card utilization ratios, credit score health tier (Optimal, Good, Fair, High Risk), and required dollar paydown.",
+    "practicalGuidance": "Credit scoring models (FICO & VantageScore) consider 30% utilization the maximum recommended threshold, with <10% providing optimal score boost.",
+    "limitations": "Calculates revolving credit utilization ratios.",
+    "formula": "Credit Utilization = (Total_Revolving_Balances / Total_Credit_Limits) * 100",
+    "trustNotes": "100% Client-Side financial modeling. Zero data stored or transmitted.",
+    "related": [
+      "credit-card-payoff-calculator",
+      "loan-refinance-savings-calculator",
+      "salary-after-tax-take-home-calculator",
+      "auto-loan-early-payoff-calculator"
+    ],
+    "seo": {
+      "title": "Credit Utilization Calculator — Credit Card Balance Ratio Tool",
+      "metaDescription": "Calculate your aggregate credit utilization ratio across all credit cards. Discover your credit score health tier and exact paydown needed to reach under 30% and 10%.",
+      "whatIsThis": "A personal credit utility that calculates revolving credit utilization percentages and targets paydowns for credit score optimization.",
+      "howItWorks": "1. Enter balances and limits for each credit card.\n2. View aggregate utilization % and credit health tier ranking.\n3. See exact dollar amounts needed to reach optimal &lt;10% or &lt;30% tiers.",
+      "whyUseIt": "Helps boost your credit score before applying for a mortgage, auto loan, or premium credit card.",
+      "faqs": [
+        {
+          "question": "What is a good credit utilization ratio?",
+          "answer": "Under 30% is generally considered good by lenders, but keeping utilization under 10% provides the highest boost to FICO credit scores."
+        },
+        {
+          "question": "Does credit utilization look at individual cards or total limit?",
+          "answer": "FICO algorithms evaluate both: your overall aggregate utilization ratio across all cards AND your highest individual card utilization ratio."
+        }
+      ]
+    }
+  },
+  {
+    "id": "url-parser-query-parameter-builder",
+    "name": "URL Parser, Query Parameter Builder & Visualizer",
+    "slug": "url-parser-query-parameter-builder",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "url query parameter builder",
+      "url parser online",
+      "parse url query string",
+      "url parameter editor",
+      "build query string url",
+      "inspect url components online"
+    ],
+    "primaryKeywords": [
+      "url query parameter builder",
+      "url parser",
+      "query string builder",
+      "url parameter editor"
+    ],
+    "secondaryKeywords": [
+      "break down url into query params",
+      "url encode query parameters online",
+      "interactive url builder tool"
+    ],
+    "targetUsers": [
+      "Web Developers",
+      "API Engineers",
+      "Digital Marketers",
+      "QA Testers"
+    ],
+    "badge": "High Usage",
+    "userProblem": "Developers and marketers debugging API endpoints and campaign URLs need to visually parse URLs into components (origin, path, params, hash), dynamically edit key-value query parameters, and reconstruct clean encoded URLs.",
+    "searchIntent": "Visually parse URLs into query parameters, edit or add key-value pairs, and reconstruct the complete encoded URL in 1 click.",
+    "resultInterpretation": "Deconstructs URL structures, provides an interactive query parameter table with active toggles, and live-rebuilds RFC-compliant URL strings.",
+    "practicalGuidance": "Automatically handles proper URL-encoding of spaces (`+` or `%20`) and special characters in parameter values.",
+    "limitations": "Parses standard HTTP and HTTPS web URLs.",
+    "formula": "URL Deconstruction: URL(Input) ➔ URLSearchParams ➔ Reconstructed Encoded String",
+    "trustNotes": "100% Client-Side. URLs and query parameters are processed in local browser memory.",
+    "related": [
+      "url-encoder",
+      "url-decoder",
+      "utm-builder",
+      "social-share-link-generator"
+    ],
+    "seo": {
+      "title": "URL Query Parameter Builder — Parse & Edit Query Strings Online",
+      "metaDescription": "Parse URLs and visually edit query parameters. Add, toggle, and encode key-value pairs with live reconstructed URL output. 100% private developer tool.",
+      "whatIsThis": "A developer productivity utility that breaks URLs into editable query parameters and reconstructs clean encoded URLs.",
+      "howItWorks": "1. Paste any URL into the input box.\n2. Add, remove, or modify query parameter key-value pairs.\n3. Copy the reconstructed target URL in 1 click.",
+      "whyUseIt": "Simplifies building complex API request URLs and testing webhooks without manual string formatting.",
+      "faqs": [
+        {
+          "question": "What is a query parameter in a URL?",
+          "answer": "A query parameter is a key-value pair appended to a URL after a `?` symbol (e.g. `?category=finance&sort=popular`) used to pass data to web applications."
+        },
+        {
+          "question": "Does this tool automatically URL-encode special characters?",
+          "answer": "Yes. It uses the browser's standard `URLSearchParams` API to ensure proper encoding of spaces, ampersands, and punctuation."
+        }
+      ]
+    }
+  },
+  {
+    "id": "roman-numeral-converter",
+    "name": "Roman Numeral to Number & Arabic Converter",
+    "slug": "roman-numeral-converter",
+    "category": "education",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "roman numeral converter",
+      "convert roman numerals to numbers",
+      "number to roman numeral calculator",
+      "roman numerals translator",
+      "mmxxvi in numbers",
+      "roman numeral date converter"
+    ],
+    "primaryKeywords": [
+      "roman numeral converter",
+      "roman numeral to number",
+      "number to roman numeral",
+      "roman numeral translator"
+    ],
+    "secondaryKeywords": [
+      "convert year to roman numerals",
+      "super bowl roman numerals converter",
+      "roman numeral symbols chart"
+    ],
+    "targetUsers": [
+      "Students",
+      "Historians",
+      "Writers",
+      "Movie Enthusiasts",
+      "Gamers"
+    ],
+    "badge": "Everyday",
+    "userProblem": "Students, writers, and movie enthusiasts need to convert standard Arabic numbers (1–3,999) into Roman numerals (e.g. 2026 ➔ MMXXVI) and decode Roman numeral strings with step-by-step subtraction explanation.",
+    "searchIntent": "Convert numbers to Roman numerals and Roman numerals to numbers with step-by-step subtraction breakdown and reference chart.",
+    "resultInterpretation": "Bi-directionally converts between Arabic numbers and Roman numerals (I, V, X, L, C, D, M) with arithmetic subtraction step breakdown.",
+    "practicalGuidance": "Roman numerals use additive notation (e.g. VI = 5 + 1) and subtractive notation (e.g. IV = 5 - 1, IX = 10 - 1).",
+    "limitations": "Supports standard Roman numerals from 1 to 3,999.",
+    "formula": "Roman Numeral Parsing: Subtractive Notation Loop (M=1000, CM=900, D=500, CD=400, C=100, XC=90, L=50, XL=40, X=10, IX=9, V=5, IV=4, I=1)",
+    "trustNotes": "100% Client-Side calculation.",
+    "related": [
+      "decimal-to-fraction-converter",
+      "hex-decimal-binary-converter",
+      "unit-converter",
+      "gpa-calculator"
+    ],
+    "seo": {
+      "title": "Roman Numeral Converter — Convert Numbers to Roman Numerals",
+      "metaDescription": "Convert numbers to Roman numerals and Roman numerals to numbers (e.g. 2026 ➔ MMXXVI). Free online calculator with step-by-step arithmetic and symbols chart.",
+      "whatIsThis": "An educational utility that converts numbers into Roman numerals and translates Roman numerals back into integers.",
+      "howItWorks": "1. Select 'Number to Roman' or 'Roman to Number' mode.\n2. Enter your number (e.g. 2026) or Roman numeral (e.g. MMXXVI).\n3. View translated result and step-by-step arithmetic subtraction breakdown.",
+      "whyUseIt": "Deciphers Roman numerals on clocks, copyright dates, Super Bowl titles, and historic monuments.",
+      "faqs": [
+        {
+          "question": "What is the Roman numeral for 2026?",
+          "answer": "The Roman numeral for 2026 is `MMXXVI` (M = 1000, M = 1000, X = 10, X = 10, V = 5, I = 1)."
+        },
+        {
+          "question": "What are the 7 basic Roman numeral symbols?",
+          "answer": "The 7 basic symbols are I (1), V (5), X (10), L (50), C (100), D (500), and M (1000)."
+        }
+      ]
+    }
   }
 ]
