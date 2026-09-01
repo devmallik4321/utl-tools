@@ -38,6 +38,9 @@ const CronExpressionGenerator = dynamic(() => import("./developer/CronExpression
 const JwtDebugger = dynamic(() => import("./developer/JwtDebugger").then((m) => m.JwtDebugger), { ssr: false });
 const CurlToFetchConverter = dynamic(() => import("./developer/CurlToFetchConverter").then((m) => m.CurlToFetchConverter), { ssr: false });
 const HtmlToMarkdownConverter = dynamic(() => import("./developer/HtmlToMarkdownConverter").then((m) => m.HtmlToMarkdownConverter), { ssr: false });
+const RegexTester = dynamic(() => import("./developer/RegexTester").then((m) => m.RegexTester), { ssr: false });
+const SqlFormatter = dynamic(() => import("./developer/SqlFormatter").then((m) => m.SqlFormatter), { ssr: false });
+const JsonToTypeScriptConverter = dynamic(() => import("./developer/JsonToTypeScriptConverter").then((m) => m.JsonToTypeScriptConverter), { ssr: false });
 
 const QrCodeGenerator = dynamic(() => import("./business/QrCodeGenerator").then((m) => m.QrCodeGenerator), { ssr: false });
 const EmailSignatureGenerator = dynamic(() => import("./business/EmailSignatureGenerator").then((m) => m.EmailSignatureGenerator), { ssr: false });
@@ -56,6 +59,9 @@ const DiscountStackingCalculator = dynamic(() => import("./finance/DiscountStack
 const VatSalesTaxCalculator = dynamic(() => import("./finance/VatSalesTaxCalculator").then((m) => m.VatSalesTaxCalculator), { ssr: false });
 const FreelanceHourlyRateCalculator = dynamic(() => import("./finance/FreelanceHourlyRateCalculator").then((m) => m.FreelanceHourlyRateCalculator), { ssr: false });
 const SalaryHourlyConverter = dynamic(() => import("./finance/SalaryHourlyConverter").then((m) => m.SalaryHourlyConverter), { ssr: false });
+const MortgagePaymentCalculator = dynamic(() => import("./finance/MortgagePaymentCalculator").then((m) => m.MortgagePaymentCalculator), { ssr: false });
+const InflationCalculator = dynamic(() => import("./finance/InflationCalculator").then((m) => m.InflationCalculator), { ssr: false });
+const TipBillSplitter = dynamic(() => import("./finance/TipBillSplitter").then((m) => m.TipBillSplitter), { ssr: false });
 
 const BmiCalculator = dynamic(() => import("./health/BmiCalculator").then((m) => m.BmiCalculator), { ssr: false });
 const AgeCalculator = dynamic(() => import("./health/AgeCalculator").then((m) => m.AgeCalculator), { ssr: false });
@@ -68,8 +74,11 @@ const UnitConverter = dynamic(() => import("./education/UnitConverter").then((m)
 const TimezoneMeetingPlanner = dynamic(() => import("./everyday/TimezoneMeetingPlanner").then((m) => m.TimezoneMeetingPlanner), { ssr: false });
 
 const ColorConverter = dynamic(() => import("./creative/ColorConverter").then((m) => m.ColorConverter), { ssr: false });
+const ColorContrastChecker = dynamic(() => import("./creative/ColorContrastChecker").then((m) => m.ColorContrastChecker), { ssr: false });
 const AspectRatioCalculator = dynamic(() => import("./creative/AspectRatioCalculator").then((m) => m.AspectRatioCalculator), { ssr: false });
+const AspectRatioResizer = dynamic(() => import("./creative/AspectRatioResizer").then((m) => m.AspectRatioResizer), { ssr: false });
 const LoremIpsumGenerator = dynamic(() => import("./creative/LoremIpsumGenerator").then((m) => m.LoremIpsumGenerator), { ssr: false });
+const LoremMarkdownGenerator = dynamic(() => import("./creative/LoremMarkdownGenerator").then((m) => m.LoremMarkdownGenerator), { ssr: false });
 const ContentReadingTimeCalculator = dynamic(() => import("./creative/ContentReadingTimeCalculator").then((m) => m.ContentReadingTimeCalculator), { ssr: false });
 const SocialMediaImageResizer = dynamic(() => import("./creative/SocialMediaImageResizer").then((m) => m.SocialMediaImageResizer), { ssr: false });
 
@@ -82,6 +91,7 @@ const GpuVramAiCalculator = dynamic(() => import("./hardware/GpuVramAiCalculator
 const ScreenPpiCalculator = dynamic(() => import("./hardware/ScreenPpiCalculator").then((m) => m.ScreenPpiCalculator), { ssr: false });
 const PsuWattageCalculator = dynamic(() => import("./hardware/PsuWattageCalculator").then((m) => m.PsuWattageCalculator), { ssr: false });
 const StorageConverter = dynamic(() => import("./hardware/StorageConverter").then((m) => m.StorageConverter), { ssr: false });
+const PcBottleneckCalculator = dynamic(() => import("./hardware/PcBottleneckCalculator").then((m) => m.PcBottleneckCalculator), { ssr: false });
 
 const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "random-number-generator": RandomNumberGenerator,
@@ -118,6 +128,9 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "jwt-debugger": JwtDebugger,
   "curl-to-fetch-converter": CurlToFetchConverter,
   "html-to-markdown-converter": HtmlToMarkdownConverter,
+  "regex-tester": RegexTester,
+  "sql-formatter": SqlFormatter,
+  "json-to-typescript-converter": JsonToTypeScriptConverter,
 
   "qr-code-generator": QrCodeGenerator,
   "email-signature-generator": EmailSignatureGenerator,
@@ -136,6 +149,9 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "vat-sales-tax-calculator": VatSalesTaxCalculator,
   "freelance-hourly-rate-calculator": FreelanceHourlyRateCalculator,
   "salary-hourly-converter": SalaryHourlyConverter,
+  "mortgage-payment-calculator": MortgagePaymentCalculator,
+  "inflation-calculator": InflationCalculator,
+  "tip-bill-splitter": TipBillSplitter,
 
   "bmi-calculator": BmiCalculator,
   "age-calculator": AgeCalculator,
@@ -148,8 +164,11 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "timezone-meeting-planner": TimezoneMeetingPlanner,
 
   "color-converter": ColorConverter,
+  "color-contrast-checker": ColorContrastChecker,
   "aspect-ratio-calculator": AspectRatioCalculator,
+  "aspect-ratio-resizer": AspectRatioResizer,
   "lorem-ipsum-generator": LoremIpsumGenerator,
+  "lorem-markdown-generator": LoremMarkdownGenerator,
   "content-reading-time-calculator": ContentReadingTimeCalculator,
   "social-media-image-resizer": SocialMediaImageResizer,
 
@@ -162,6 +181,7 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "screen-ppi-calculator": ScreenPpiCalculator,
   "psu-wattage-calculator": PsuWattageCalculator,
   "storage-converter": StorageConverter,
+  "pc-bottleneck-calculator": PcBottleneckCalculator,
 };
 
 interface ToolDispatcherProps {

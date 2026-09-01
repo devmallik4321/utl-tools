@@ -4476,5 +4476,643 @@
         }
       ]
     }
+  },
+  {
+    "id": "regex-tester",
+    "name": "Regular Expression (Regex) Tester & Match Explainer",
+    "slug": "regex-tester",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "regex tester",
+      "regular expression tester",
+      "regex match online",
+      "javascript regex tester",
+      "regex capture groups",
+      "test regex pattern"
+    ],
+    "primaryKeywords": [
+      "regex tester",
+      "online regex tester",
+      "regular expression test tool",
+      "regex capture group tester"
+    ],
+    "secondaryKeywords": [
+      "email regex pattern test",
+      "url regex test online",
+      "javascript regex flags test"
+    ],
+    "targetUsers": [
+      "Developers",
+      "Software Engineers",
+      "QA Engineers",
+      "Data Analysts"
+    ],
+    "badge": "High Usage",
+    "userProblem": "Developers writing regular expressions need an instant, client-side sandbox to test patterns against sample strings, inspect capture groups, and detect syntax errors in real-time.",
+    "searchIntent": "Test and debug regular expressions in real-time with visual match highlighting and capture group tables.",
+    "resultInterpretation": "Highlights all pattern matches in text, lists match indices and capture groups, and validates JavaScript RegExp flag compliance.",
+    "practicalGuidance": "Use preset patterns (Email, URL, IPv4, Date, Hex Color) as verified starting points for form validation.",
+    "limitations": "Uses standard ECMAScript (JavaScript) RegExp engine. Non-JS PCRE features (lookbehinds in older browsers) are governed by the browser engine.",
+    "formula": "RegExp: new RegExp(pattern, flags).exec(testText)",
+    "trustNotes": "100% Client-Side. No test strings or regex patterns are ever sent over the network.",
+    "related": [
+      "diff-checker",
+      "case-converter",
+      "json-validator",
+      "html-to-markdown-converter"
+    ],
+    "seo": {
+      "title": "Regex Tester — Online Regular Expression Matcher & Debugger",
+      "metaDescription": "Test and debug regular expressions in real time. Features syntax highlighting, capture groups, presets (email, URL, IP), and 100% private in-browser evaluation.",
+      "whatIsThis": "A developer testing tool for building, validating, and debugging regular expressions with live visual match highlights.",
+      "howItWorks": "1. Enter your regex pattern and select flags (g, i, m, s).\n2. Paste sample text to match against.\n3. View real-time highlighted matches and detailed capture group breakdown table.",
+      "whyUseIt": "Eliminates regex syntax bugs before deploying code to production applications.",
+      "faqs": [
+        {
+          "question": "What regex flags are supported?",
+          "answer": "Supports standard JavaScript RegExp flags: 'g' (global match), 'i' (ignore case), 'm' (multiline), and 's' (dotAll - allow dot to match newlines)."
+        },
+        {
+          "question": "Are regex capture groups displayed separately?",
+          "answer": "Yes. Each capture group ($1, $2, etc.) is listed in a structured match table alongside start indices."
+        }
+      ]
+    }
+  },
+  {
+    "id": "color-contrast-checker",
+    "name": "WCAG Color Contrast Checker & Accessibility Ratio Evaluator",
+    "slug": "color-contrast-checker",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "color contrast checker",
+      "wcag contrast ratio",
+      "accessibility color contrast",
+      "aa aaa contrast checker",
+      "hex contrast calculator",
+      "web accessibility colors"
+    ],
+    "primaryKeywords": [
+      "color contrast checker",
+      "wcag contrast checker",
+      "accessible color ratio",
+      "color contrast ratio calculator"
+    ],
+    "secondaryKeywords": [
+      "wcag 2.1 aa compliance check",
+      "text contrast ratio tool",
+      "accessible button contrast"
+    ],
+    "targetUsers": [
+      "UI/UX Designers",
+      "Frontend Developers",
+      "Accessibility Specialists",
+      "Product Managers"
+    ],
+    "badge": "Design",
+    "userProblem": "Designers and developers need to verify that text colors meet WCAG 2.1 AA and AAA accessibility contrast standards (4.5:1 for normal text, 3.0:1 for large text) against backgrounds.",
+    "searchIntent": "Check the contrast ratio between foreground and background colors to ensure WCAG AA/AAA accessibility compliance.",
+    "resultInterpretation": "Calculates exact relative luminance contrast ratio (e.g. 7.42:1) and passes/fails AA Normal, AA Large, AAA Normal, and UI Component criteria.",
+    "practicalGuidance": "A minimum contrast ratio of 4.5:1 is required for body text under 18pt to pass standard WCAG Level AA compliance.",
+    "limitations": "Calculations follow the standard WCAG 2.1 relative luminance mathematical formula.",
+    "formula": "Contrast Ratio = (L1 + 0.05) / (L2 + 0.05), where L is relative luminance",
+    "trustNotes": "100% Client-Side. Calculations execute in local browser memory.",
+    "related": [
+      "color-converter",
+      "aspect-ratio-resizer",
+      "screen-ppi-calculator"
+    ],
+    "seo": {
+      "title": "WCAG Color Contrast Checker — Accessibility Ratio & AA/AAA Compliance",
+      "metaDescription": "Test color contrast ratios for WCAG 2.1 AA and AAA accessibility standards. Features live typography preview, hex color pickers, and 1-click color swapping.",
+      "whatIsThis": "A design accessibility utility that evaluates color combinations against official WCAG contrast ratio guidelines.",
+      "howItWorks": "1. Pick or enter foreground (text) and background hex colors.\n2. Instantly see the calculated contrast ratio score and AA/AAA pass/fail badges.\n3. View a live visual typography rendering with sample buttons and body text.",
+      "whyUseIt": "Ensures digital products are legible for users with low vision or color vision deficiencies, avoiding accessibility lawsuits.",
+      "faqs": [
+        {
+          "question": "What contrast ratio is required to pass WCAG AA?",
+          "answer": "WCAG 2.1 Level AA requires a contrast ratio of at least 4.5:1 for normal body text and at least 3.0:1 for large text (18pt+ or 14pt+ bold) and graphical UI components."
+        },
+        {
+          "question": "What is the difference between WCAG AA and AAA?",
+          "answer": "Level AA is the standard legal compliance benchmark for web applications. Level AAA is an enhanced standard requiring a 7.0:1 ratio for normal text."
+        }
+      ]
+    }
+  },
+  {
+    "id": "sql-formatter",
+    "name": "SQL Query Formatter & Minifier",
+    "slug": "sql-formatter",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "sql formatter",
+      "format sql query",
+      "beautify sql online",
+      "sql query prettifier",
+      "minify sql query",
+      "sql indenter online"
+    ],
+    "primaryKeywords": [
+      "sql formatter",
+      "format sql online",
+      "sql query beautifier",
+      "sql minifier"
+    ],
+    "secondaryKeywords": [
+      "prettify sql query online",
+      "format postgresql mysql query",
+      "uppercase sql keywords tool"
+    ],
+    "targetUsers": [
+      "Backend Developers",
+      "Database Administrators",
+      "Data Engineers",
+      "SQL Analysts"
+    ],
+    "badge": "High Usage",
+    "userProblem": "Developers and database engineers looking at unformatted, single-line SQL queries need to beautify them with clean line breaks, indentation, and standardized uppercase keywords.",
+    "searchIntent": "Format and beautify raw SQL queries with customizable indentation and keyword casing.",
+    "resultInterpretation": "Beautifies SQL clauses (SELECT, FROM, WHERE, JOIN, GROUP BY, ORDER BY) with proper indentation or minifies to single-line queries.",
+    "practicalGuidance": "Standardizes SQL keywords to UPPERCASE for readability in code reviews and database logs.",
+    "limitations": "Supports standard ANSI SQL, MySQL, PostgreSQL, SQLite, and MS SQL syntax patterns.",
+    "formula": "Lexical clause tokenizer breaking clauses into indented block lines",
+    "trustNotes": "100% Client-Side. SQL queries and database schemas are never sent to a server.",
+    "related": [
+      "json-formatter",
+      "curl-to-fetch-converter",
+      "json-to-typescript-converter",
+      "diff-checker"
+    ],
+    "seo": {
+      "title": "SQL Formatter — Format & Beautify SQL Queries Online",
+      "metaDescription": "Beautify and format messy SQL queries online. Standardize keyword casing (SELECT, WHERE, JOIN), configure indentation, or minify SQL. 100% private.",
+      "whatIsThis": "A developer tool that parses raw SQL code and structures it with standardized indentation, clause line breaks, and keyword formatting.",
+      "howItWorks": "1. Paste raw or messy SQL code into the editor.\n2. Choose keyword casing (UPPERCASE or lowercase) and indent size (2 or 4 spaces).\n3. Copy the formatted SQL query in 1 click.",
+      "whyUseIt": "Improves SQL query readability and speeds up database debugging.",
+      "faqs": [
+        {
+          "question": "Does this SQL formatter support JOINs and subqueries?",
+          "answer": "Yes. It formats standard major clauses including SELECT, FROM, WHERE, JOIN, LEFT JOIN, GROUP BY, ORDER BY, and HAVING."
+        },
+        {
+          "question": "Is my proprietary SQL database query private?",
+          "answer": "Yes. Formatting is performed completely in your browser without any network requests."
+        }
+      ]
+    }
+  },
+  {
+    "id": "aspect-ratio-resizer",
+    "name": "Aspect Ratio & Responsive Dimension Scaler",
+    "slug": "aspect-ratio-resizer",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "aspect ratio resizer",
+      "aspect ratio dimension calculator",
+      "16:9 dimension calculator",
+      "aspect ratio to width height",
+      "responsive padding bottom calculator",
+      "css aspect ratio generator"
+    ],
+    "primaryKeywords": [
+      "aspect ratio resizer",
+      "aspect ratio calculator",
+      "16:9 aspect ratio dimensions",
+      "aspect ratio scaler"
+    ],
+    "secondaryKeywords": [
+      "convert width to aspect ratio",
+      "padding bottom aspect ratio formula",
+      "4k 16:9 pixel dimensions"
+    ],
+    "targetUsers": [
+      "Web Developers",
+      "Video Editors",
+      "Graphic Designers",
+      "Photographers"
+    ],
+    "badge": "Design",
+    "userProblem": "Creators and web developers need to calculate matching height for a given width (or vice versa) across standard aspect ratios (16:9, 4:3, 21:9, 9:16) and generate responsive CSS code.",
+    "searchIntent": "Calculate pixel dimensions for standard aspect ratios and generate modern CSS aspect-ratio snippets.",
+    "resultInterpretation": "Calculates target width/height, decimal ratio, megapixels, and provides modern CSS `aspect-ratio` and legacy container `padding-bottom` snippets.",
+    "practicalGuidance": "Use 16:9 for standard video/YouTube, 9:16 for vertical TikTok/Reels, and 21:9 for cinematic ultrawide content.",
+    "limitations": "Calculations round to integer pixel dimensions.",
+    "formula": "Height = round((Width * Ratio_H) / Ratio_W); Padding% = (Ratio_H / Ratio_W) * 100",
+    "trustNotes": "100% Client-Side calculation.",
+    "related": [
+      "aspect-ratio-calculator",
+      "social-media-image-resizer",
+      "screen-ppi-calculator"
+    ],
+    "seo": {
+      "title": "Aspect Ratio Resizer — Dimension Scaler & CSS Generator",
+      "metaDescription": "Calculate pixel dimensions for 16:9, 4:3, 21:9, and custom aspect ratios. Generate modern CSS aspect-ratio and responsive iframe padding-bottom code.",
+      "whatIsThis": "A design and development tool that scales pixel dimensions proportionally and generates web CSS responsive embed rules.",
+      "howItWorks": "1. Pick a preset ratio (16:9, 9:16, 4:3, 21:9) or enter custom proportions.\n2. Enter desired Width to calculate Height (or Height to calculate Width).\n3. Copy exact dimensions and ready-to-use CSS snippets.",
+      "whyUseIt": "Eliminates image distortion and broken responsive video containers.",
+      "faqs": [
+        {
+          "question": "What is the padding-bottom percentage for a 16:9 video?",
+          "answer": "For a 16:9 container, padding-bottom is 56.25% (calculated as 9 / 16 * 100)."
+        },
+        {
+          "question": "What is the modern CSS property for aspect ratios?",
+          "answer": "Modern browsers support the native CSS property `aspect-ratio: 16 / 9;`, eliminating the need for legacy padding hacks."
+        }
+      ]
+    }
+  },
+  {
+    "id": "mortgage-payment-calculator",
+    "name": "Mortgage Payment & Monthly PITI Calculator",
+    "slug": "mortgage-payment-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "mortgage payment calculator",
+      "piti mortgage calculator",
+      "monthly mortgage payment",
+      "mortgage interest calculator",
+      "home loan monthly payment",
+      "30 year mortgage calculator"
+    ],
+    "primaryKeywords": [
+      "mortgage payment calculator",
+      "piti calculator",
+      "monthly mortgage calculator",
+      "home loan payment estimator"
+    ],
+    "secondaryKeywords": [
+      "mortgage property tax and insurance",
+      "30 year fixed mortgage calculation",
+      "pmi calculator on mortgage"
+    ],
+    "targetUsers": [
+      "Homebuyers",
+      "Real Estate Investors",
+      "Homeowners",
+      "Loan Officers"
+    ],
+    "badge": "Popular",
+    "userProblem": "Homebuyers estimating home affordability need to calculate total monthly housing costs including Principal, Interest, Property Taxes, Homeowners Insurance (PITI), and PMI.",
+    "searchIntent": "Calculate complete monthly mortgage payment (PITI) based on home purchase price, down payment, interest rate, taxes, and insurance.",
+    "resultInterpretation": "Calculates monthly P&I, monthly property tax, insurance, PMI, total loan interest paid, and total lifetime cost of home ownership.",
+    "practicalGuidance": "Putting at least 20% down avoids Private Mortgage Insurance (PMI) fees, saving $100-$250 per month.",
+    "limitations": "Calculations represent standard fixed-rate amortized mortgages. Variable ARM loans adjust over time.",
+    "formula": "Monthly P&I = Principal * [r(1+r)^n] / [(1+r)^n - 1]; PITI = P&I + Tax/12 + Ins/12 + PMI",
+    "trustNotes": "100% Client-Side financial modeling. Zero data stored or transmitted.",
+    "related": [
+      "loan-emi-calculator",
+      "loan-calculator",
+      "compound-interest-calculator",
+      "salary-hourly-converter"
+    ],
+    "seo": {
+      "title": "Mortgage Payment Calculator — Monthly PITI & Amortization Estimator",
+      "metaDescription": "Calculate total monthly mortgage payments including Principal, Interest, Property Taxes, and Insurance (PITI). Free, 100% private in-browser estimator.",
+      "whatIsThis": "A real estate finance tool that calculates true monthly home ownership costs across fixed loan terms.",
+      "howItWorks": "1. Enter Home Purchase Price and Down Payment %.\n2. Set Interest Rate APR and Loan Term (30, 20, or 15 Years).\n3. Add annual property taxes and homeowners insurance to view complete itemized PITI monthly payments.",
+      "whyUseIt": "Reveals the true out-of-pocket monthly payment before making an offer on a house.",
+      "faqs": [
+        {
+          "question": "What does PITI stand for in a mortgage?",
+          "answer": "PITI stands for Principal, Interest, Taxes, and Insurance — the four core components of a standard monthly mortgage payment."
+        },
+        {
+          "question": "How much does a $450,000 mortgage cost per month at 6.75%?",
+          "answer": "With a 20% down payment ($90,000) on a 30-year fixed loan at 6.75%, the monthly Principal & Interest is approximately $2,335/mo. Adding typical property taxes and insurance brings total PITI to ~$2,935/mo."
+        }
+      ]
+    }
+  },
+  {
+    "id": "pc-bottleneck-calculator",
+    "name": "CPU & GPU Bottleneck Resolution Matcher",
+    "slug": "pc-bottleneck-calculator",
+    "category": "hardware",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "pc bottleneck calculator",
+      "cpu gpu bottleneck calculator",
+      "is my cpu bottlenecking my gpu",
+      "rtx 4070 bottleneck 7800x3d",
+      "pc gaming balance calculator",
+      "1080p vs 1440p cpu bottleneck"
+    ],
+    "primaryKeywords": [
+      "pc bottleneck calculator",
+      "cpu gpu bottleneck calculator",
+      "gaming pc bottleneck test",
+      "cpu bottleneck checker"
+    ],
+    "secondaryKeywords": [
+      "is rtx 4080 bottlenecked by cpu",
+      "1440p gaming cpu gpu balance",
+      "how to fix pc bottleneck"
+    ],
+    "targetUsers": [
+      "Gamers",
+      "PC Builders",
+      "Hardware Upgraders",
+      "System Integrators"
+    ],
+    "badge": "Hardware",
+    "userProblem": "Gamers planning PC upgrades need to know whether pairing a specific CPU (e.g. Ryzen 7800X3D or Core i5) with a high-end GPU (e.g. RTX 4080/4070) will cause performance bottlenecks at 1080p, 1440p, or 4K.",
+    "searchIntent": "Evaluate CPU and GPU hardware pairing balance and identify potential resolution-dependent performance bottlenecks.",
+    "resultInterpretation": "Identifies whether a system is CPU-bound, GPU-bound, or Well-Balanced across 1080p, 1440p, and 4K resolutions with practical upgrade guidance.",
+    "practicalGuidance": "At 4K, almost all gaming workloads are GPU-bound. At 1080p high FPS esports, the CPU draw-call rate determines performance limits.",
+    "limitations": "Estimates architectural balance across AAA games. Game engine optimization and RAM speed also influence real-world frame rates.",
+    "formula": "Bottleneck = Abs(GPU_Score * Resolution_Factor - CPU_Score) * Weight",
+    "trustNotes": "100% Client-Side calculation based on architectural compute benchmarks.",
+    "related": [
+      "psu-wattage-calculator",
+      "gpu-vram-ai-calculator",
+      "screen-ppi-calculator",
+      "storage-converter"
+    ],
+    "seo": {
+      "title": "PC Bottleneck Calculator — CPU & GPU Resolution Matcher",
+      "metaDescription": "Check if your CPU bottlenecks your GPU for gaming. Compare hardware pairings across 1080p, 1440p, and 4K with honest architectural analysis.",
+      "whatIsThis": "A PC hardware diagnostic tool that analyzes CPU and GPU pairing balance across various display resolutions.",
+      "howItWorks": "1. Select your processor (CPU) and graphics card (GPU).\n2. Choose your primary gaming resolution (1080p, 1440p, or 4K).\n3. View bottleneck percentage score and detailed architectural pairing advice.",
+      "whyUseIt": "Helps you invest upgrade money wisely in the component that actually holds back your gaming performance.",
+      "faqs": [
+        {
+          "question": "Is a GPU bottleneck bad for gaming?",
+          "answer": "No. In fact, a GPU bottleneck is the ideal scenario for PC gaming, ensuring your graphics card is 99-100% utilized to produce maximum visual fidelity."
+        },
+        {
+          "question": "Why does playing at 1440p or 4K reduce CPU bottleneck?",
+          "answer": "Higher resolutions increase GPU rendering load significantly without increasing CPU physics/draw-call calculations, bringing CPU and GPU utilization into balance."
+        }
+      ]
+    }
+  },
+  {
+    "id": "json-to-typescript-converter",
+    "name": "JSON to TypeScript Interface & Type Converter",
+    "slug": "json-to-typescript-converter",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "json to typescript",
+      "convert json to ts interface",
+      "json to typescript type",
+      "json schema to typescript",
+      "generate typescript from json",
+      "json to ts converter online"
+    ],
+    "primaryKeywords": [
+      "json to typescript",
+      "json to ts converter",
+      "convert json to typescript interface",
+      "json to ts generator"
+    ],
+    "secondaryKeywords": [
+      "typescript interface from json object",
+      "nested json to typescript types",
+      "free json to typescript online"
+    ],
+    "targetUsers": [
+      "TypeScript Developers",
+      "Full-Stack Engineers",
+      "Frontend Developers",
+      "API Engineers"
+    ],
+    "badge": "High Usage",
+    "userProblem": "Frontend developers working with REST or GraphQL APIs receive raw JSON payloads and need to write strongly-typed TypeScript interfaces without manually typing dozens of nested fields.",
+    "searchIntent": "Convert raw JSON sample payloads into clean, nested TypeScript interface and type declarations in 1 click.",
+    "resultInterpretation": "Recursively parses JSON properties, arrays, booleans, numbers, nulls, and nested sub-objects into idiomatic TypeScript interface definitions.",
+    "practicalGuidance": "Supports custom Root Interface naming and toggling between `interface` and `type` alias styles.",
+    "limitations": "Infers types from sample JSON values. Fields with mixed runtime types are mapped to safe unions.",
+    "formula": "AST Type Inferrer: Object Key-Value Tree ➔ TypeScript Interface Declarations",
+    "trustNotes": "100% Client-Side. JSON data is parsed locally in browser memory.",
+    "related": [
+      "json-formatter",
+      "json-validator",
+      "curl-to-fetch-converter",
+      "jwt-debugger"
+    ],
+    "seo": {
+      "title": "JSON to TypeScript Converter — Generate TS Interfaces Online",
+      "metaDescription": "Convert JSON objects into strongly-typed TypeScript interfaces and types. Supports nested objects, arrays, and custom root naming. 100% client-side.",
+      "whatIsThis": "A developer productivity tool that automatically generates TypeScript interface definitions from raw JSON API responses.",
+      "howItWorks": "1. Paste any valid JSON object into the editor.\n2. Choose Root Name and type style (Interface or Type Alias).\n3. Instantly copy generated TypeScript code.",
+      "whyUseIt": "Saves developer time and eliminates manual TypeScript typing errors when integrating new backend APIs.",
+      "faqs": [
+        {
+          "question": "Does this tool support nested JSON objects?",
+          "answer": "Yes. It automatically extracts nested JSON structures into separate, cleanly named sub-interfaces."
+        },
+        {
+          "question": "Is my API payload data uploaded to a server?",
+          "answer": "No. The conversion is performed entirely in your browser using local JavaScript."
+        }
+      ]
+    }
+  },
+  {
+    "id": "inflation-calculator",
+    "name": "Historical Inflation & Purchasing Power Calculator",
+    "slug": "inflation-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "inflation calculator",
+      "purchasing power calculator",
+      "future value of money inflation",
+      "calculate inflation over time",
+      "money depreciation calculator",
+      "cost of living inflation tool"
+    ],
+    "primaryKeywords": [
+      "inflation calculator",
+      "purchasing power calculator",
+      "inflation future cost calculator",
+      "money value over time"
+    ],
+    "secondaryKeywords": [
+      "how much will 10000 be worth in 20 years",
+      "compound inflation formula",
+      "cumulative inflation calculation"
+    ],
+    "targetUsers": [
+      "Savers",
+      "Investors",
+      "Financial Planners",
+      "Retirees",
+      "Consumers"
+    ],
+    "badge": "Popular",
+    "userProblem": "Individuals planning retirement or savings need to understand how compound annual inflation erodes the real purchasing power of cash over 5, 10, 20, or 30 years.",
+    "searchIntent": "Calculate future price inflation and purchasing power loss over multi-year horizons.",
+    "resultInterpretation": "Calculates equivalent future costs, remaining purchasing power of cash, cumulative inflation percentage, and milestone multi-decade comparisons.",
+    "practicalGuidance": "Over 20 years at a 3.2% historical inflation rate, cash loses approximately 47% of its real purchasing power.",
+    "limitations": "Calculations model constant compound inflation rates. Real-world inflation fluctuates by economic cycle.",
+    "formula": "Future_Cost = Amount * (1 + Rate/100)^Years; Purchasing_Power = Amount / (1 + Rate/100)^Years",
+    "trustNotes": "100% Client-Side mathematical modeling.",
+    "related": [
+      "compound-interest-calculator",
+      "salary-hourly-converter",
+      "freelance-hourly-rate-calculator",
+      "mortgage-payment-calculator"
+    ],
+    "seo": {
+      "title": "Inflation Calculator — Purchasing Power & Future Cost Estimator",
+      "metaDescription": "Calculate how inflation affects the future value and purchasing power of your money. Model multi-decade price changes with customizable inflation rates.",
+      "whatIsThis": "A financial planning utility that projects future purchasing power and price increases under compound inflation.",
+      "howItWorks": "1. Enter initial dollar amount (e.g. $10,000).\n2. Set expected annual inflation rate (default 3.2%) and time horizon in years.\n3. View equivalent future cost, purchasing power loss, and decade milestone tables.",
+      "whyUseIt": "Essential for setting realistic long-term investment goals and retirement budget projections.",
+      "faqs": [
+        {
+          "question": "What is the average historical US inflation rate?",
+          "answer": "The long-term historical average annual US inflation rate (CPI) is approximately 3.0% to 3.3%."
+        },
+        {
+          "question": "How does inflation erode cash savings?",
+          "answer": "As prices rise over time, each dollar buys fewer goods and services. At 3.5% inflation, the purchasing power of $10,000 is halved in approximately 20 years."
+        }
+      ]
+    }
+  },
+  {
+    "id": "tip-bill-splitter",
+    "name": "Tip & Bill Splitter with Custom Tax and Currency",
+    "slug": "tip-bill-splitter",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "tip calculator",
+      "bill splitter",
+      "restaurant tip calculator",
+      "split bill per person",
+      "tip and tax calculator",
+      "dining cost splitter"
+    ],
+    "primaryKeywords": [
+      "tip calculator",
+      "bill splitter",
+      "split check calculator",
+      "restaurant bill splitter"
+    ],
+    "secondaryKeywords": [
+      "how much tip for 120 dollar bill",
+      "split restaurant bill equally",
+      "tip percentage calculator with tax"
+    ],
+    "targetUsers": [
+      "Diners",
+      "Friends Splitting Bills",
+      "Travelers",
+      "Event Organizers"
+    ],
+    "badge": "Everyday",
+    "userProblem": "Groups dining out need to calculate the correct tip amount (15%, 18%, 20%), add local tax, and split the final check evenly among attendees without awkward manual math.",
+    "searchIntent": "Calculate restaurant tips, sales tax, total payable bill, and per-person split with 1-click round-up.",
+    "resultInterpretation": "Calculates total bill, tip amount, tax amount, per-person share, and formatted split summary.",
+    "practicalGuidance": "Standard tipping etiquette in North America ranges from 15% (standard) to 18-20% (great service).",
+    "limitations": "Calculates equal splits across all dining group members.",
+    "formula": "Per_Person = (Subtotal + Subtotal*Tax% + Subtotal*Tip%) / People_Count",
+    "trustNotes": "100% Client-Side. Instant private calculation.",
+    "related": [
+      "discount-stacking-calculator",
+      "vat-sales-tax-calculator",
+      "percentage-calculator"
+    ],
+    "seo": {
+      "title": "Tip & Bill Splitter — Restaurant Check & Group Split Calculator",
+      "metaDescription": "Calculate restaurant tip amounts, sales tax, and split the final bill evenly among friends. Features preset tip buttons (15%, 18%, 20%) and cash round-up.",
+      "whatIsThis": "A dining utility that computes tip amounts, taxes, and divides the check equally among group members.",
+      "howItWorks": "1. Enter bill subtotal amount.\n2. Choose tip percentage (15%, 18%, 20%) and tax rate.\n3. Set number of people to view exact per-person share and total bill.",
+      "whyUseIt": "Eliminates bill-splitting headaches and ensures fair tipping for service staff.",
+      "faqs": [
+        {
+          "question": "Is tip calculated before or after sales tax?",
+          "answer": "Traditional tipping etiquette calculates the tip percentage on the pre-tax food and beverage subtotal."
+        },
+        {
+          "question": "What is the standard tip for a group dinner?",
+          "answer": "18% to 20% is the standard gratuity for group dining service."
+        }
+      ]
+    }
+  },
+  {
+    "id": "lorem-markdown-generator",
+    "name": "Rich Lorem Ipsum Markdown & Placeholder Generator",
+    "slug": "lorem-markdown-generator",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "markdown lorem ipsum generator",
+      "lorem markdown generator",
+      "sample markdown document",
+      "markdown placeholder text",
+      "test markdown renderer",
+      "sample markdown with tables"
+    ],
+    "primaryKeywords": [
+      "markdown lorem ipsum generator",
+      "sample markdown generator",
+      "markdown placeholder generator",
+      "dummy markdown text"
+    ],
+    "secondaryKeywords": [
+      "sample markdown with code blocks",
+      "markdown table generator placeholder",
+      "markdown checklist sample"
+    ],
+    "targetUsers": [
+      "Web Developers",
+      "Technical Writers",
+      "Content Creators",
+      "Theme Designers"
+    ],
+    "badge": "Design",
+    "userProblem": "Designers and developers building markdown renderers, blog themes, and documentation systems need rich sample Markdown documents containing headings, tables, task lists, code blocks, and quotes to test styling.",
+    "searchIntent": "Generate formatted sample Markdown documents with headers, tables, task lists, code snippets, and blockquotes for CMS testing.",
+    "resultInterpretation": "Generates complete, syntactically valid GitHub-flavored Markdown text with customizable elements.",
+    "practicalGuidance": "Use this tool to stress-test typography styling, code syntax highlighting, and responsive table overflow in web apps.",
+    "limitations": "Generates standard placeholder Latin text with real structural markdown elements.",
+    "formula": "Template Builder: Headers + Paragraphs + Checklists + Code + Table + Blockquote",
+    "trustNotes": "100% Client-Side. Instant text generation.",
+    "related": [
+      "lorem-ipsum-generator",
+      "markdown-previewer",
+      "html-to-markdown-converter",
+      "content-reading-time-calculator"
+    ],
+    "seo": {
+      "title": "Rich Markdown Placeholder Generator — Sample Markdown with Tables & Code",
+      "metaDescription": "Generate rich sample Markdown documents for testing blog themes, CMS renderers, and documentation. Includes headers, tables, checklists, and code blocks.",
+      "whatIsThis": "A developer tool that generates complete, structured Markdown files with headings, tables, task lists, and code blocks for theme testing.",
+      "howItWorks": "1. Toggle elements to include (Headings, Task Lists, Markdown Tables, TypeScript Code, Blockquotes).\n2. View live generated Markdown content.\n3. Click 'Copy Markdown' to test in your app or CMS.",
+      "whyUseIt": "Speeds up UI testing for Markdown parsers, Next.js blogs, and documentation platforms.",
+      "faqs": [
+        {
+          "question": "Does the generated markdown support GitHub Flavored Markdown (GFM)?",
+          "answer": "Yes. It includes GFM tables, task lists (- [x]), strikethroughs, and fenced code blocks."
+        },
+        {
+          "question": "Can I use this for testing blog themes?",
+          "answer": "Yes. It is specifically designed to provide a complete typography test suite for web design."
+        }
+      ]
+    }
   }
 ]
