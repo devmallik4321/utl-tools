@@ -79,5 +79,14 @@
     "icon": "Sparkles",
     "color": "cyan",
     "badge": "Modern"
+  },
+  {
+    "id": "hardware",
+    "name": "Hardware & Systems",
+    "slug": "hardware",
+    "description": "GPU memory calculators, PC building estimators, monitor PPI tools, and display geometry.",
+    "icon": "Cpu",
+    "color": "orange",
+    "badge": "Hardware"
   }
 ]

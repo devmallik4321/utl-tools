@@ -15,6 +15,7 @@ import { FaqAccordion } from "@/components/FaqAccordion";
 import { BookmarkButton } from "@/components/BookmarkButton";
 import { ShareButton } from "@/components/ShareButton";
 import { UtilityViewTracker } from "@/components/UtilityViewTracker";
+import { UtilityFeedback } from "@/components/UtilityFeedback";
 import { getCategoryTheme } from "@/lib/categoryThemes";
 import {
   ChevronRight,
@@ -201,6 +202,9 @@ export default function UtilityPage({ params }: UtilityPageProps) {
             </span>
           )}
         </div>
+
+        {/* User Satisfaction & Anonymous Feedback */}
+        <UtilityFeedback utilityId={utility.id} utilityName={utility.name} />
 
         {/* VALUE MODEL: RESULT INTERPRETATION & PRACTICAL GUIDANCE */}
         {(utility.resultInterpretation || utility.practicalGuidance) && (

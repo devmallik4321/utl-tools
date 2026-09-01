@@ -3054,11 +3054,722 @@
     "limitations": "Timers run while the browser tab is open. If your computer goes to sleep, the timer will pause until wake.",
     "seo": {
       "title": "Online Stopwatch & Countdown Timer with Milliseconds & Sound",
-      "description": "Free online stopwatch with lap recording and countdown alarm timer with audio alerts. Accurate to milliseconds and 100% free.",
+      "metaDescription": "Free online stopwatch with lap recording and countdown alarm timer with audio alerts. Accurate to milliseconds and 100% free.",
+      "whatIsThis": "A high-precision millisecond stopwatch and countdown alarm timer with customizable lap recording.",
+      "howItWorks": "1. Click Start to track elapsed time with millisecond precision.\n2. Record lap splits with 1 click.\n3. Switch to Countdown mode for Pomodoro and work sprints with audio alerts.",
+      "whyUseIt": "Clean, distraction-free timing without popup ads or battery-draining apps.",
       "faqs": [
         {
-          "q": "Does the timer sound an alarm when time expires?",
-          "a": "Yes, it generates a clear synthesized audio beep using the Web Audio API."
+          "question": "Does the timer sound an alarm when time expires?",
+          "answer": "Yes, it generates a clear synthesized audio beep using the Web Audio API."
+        }
+      ]
+    }
+  },
+  {
+    "id": "percentage-difference-calculator",
+    "name": "Percentage Difference & Change Calculator",
+    "slug": "percentage-difference-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "percentage difference calculator",
+      "percentage change calculator",
+      "percent difference between two numbers",
+      "percentage increase calculator",
+      "percentage decrease calculator",
+      "calculate percent change"
+    ],
+    "primaryKeywords": [
+      "percentage difference calculator",
+      "percentage change calculator",
+      "percent difference formula",
+      "percentage increase or decrease"
+    ],
+    "secondaryKeywords": [
+      "how to calculate percentage difference",
+      "relative difference calculator",
+      "absolute difference percentage"
+    ],
+    "targetUsers": [
+      "Students",
+      "Financial Analysts",
+      "Business Owners",
+      "Shoppers",
+      "Researchers"
+    ],
+    "badge": "Popular",
+    "userProblem": "People frequently confuse percentage difference (symmetric comparison relative to average) with percentage change (directional growth or drop from an initial value).",
+    "searchIntent": "Quickly calculate both the percentage difference between two numbers and the directional percentage increase/decrease with visual explanation.",
+    "resultInterpretation": "Percentage Difference compares two quantities without regard to order (|V1 - V2| / Average * 100). Percentage Change indicates growth or decline from V1 to V2.",
+    "practicalGuidance": "Use Percentage Difference when comparing benchmark figures (e.g. comparing two store prices). Use Percentage Change when measuring historical performance or sales growth over time.",
+    "limitations": "Percentage difference cannot be calculated when both values are zero.",
+    "formula": "Pct Diff = |V1 - V2| / ((V1 + V2) / 2) * 100; Pct Change = (V2 - V1) / |V1| * 100",
+    "trustNotes": "100% Client-Side. Instant calculations without data storage.",
+    "related": [
+      "percentage-calculator",
+      "discount-calculator",
+      "vat-sales-tax-calculator",
+      "loan-emi-calculator"
+    ],
+    "seo": {
+      "title": "Percentage Difference Calculator — Percent Change & Increase / Decrease",
+      "metaDescription": "Calculate percentage difference, percentage change, and absolute difference between two numbers with step-by-step mathematical formulas and visual explanation.",
+      "whatIsThis": "A dual-mode percentage calculator that instantly computes both symmetric percentage difference and directional percentage increase or decrease.",
+      "howItWorks": "1. Enter Value 1 (initial or benchmark number).\n2. Enter Value 2 (final or compared number).\n3. Instantly see Percentage Difference, Percentage Change (+/-%), and Absolute Difference.",
+      "whyUseIt": "Eliminates mathematical confusion between percent difference and percent change with clear visual breakdowns and copyable summaries.",
+      "faqs": [
+        {
+          "question": "What is the difference between percentage difference and percentage change?",
+          "answer": "Percentage difference is used when comparing two values where neither is considered the 'original' value (divided by their average). Percentage change measures growth or decline from a specific starting number to a new number."
+        },
+        {
+          "question": "How do you calculate percentage difference?",
+          "answer": "Subtract the two numbers, take the absolute value, and divide by their average: |V1 - V2| / ((V1 + V2) / 2) × 100."
+        }
+      ]
+    }
+  },
+  {
+    "id": "llm-token-cost-calculator",
+    "name": "LLM Token & API Cost Calculator",
+    "slug": "llm-token-cost-calculator",
+    "category": "ai",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "llm token calculator",
+      "ai token cost calculator",
+      "openai cost calculator",
+      "claude pricing calculator",
+      "gpt-4o token counter",
+      "gemini api cost",
+      "deepseek pricing calculator"
+    ],
+    "primaryKeywords": [
+      "llm token cost calculator",
+      "ai api pricing estimator",
+      "openai token calculator",
+      "token to word calculator"
+    ],
+    "secondaryKeywords": [
+      "how much does gpt-4o cost",
+      "claude 3.5 sonnet api cost",
+      "llm cost per 1000 requests"
+    ],
+    "targetUsers": [
+      "AI Developers",
+      "Prompt Engineers",
+      "Product Managers",
+      "Startup Founders"
+    ],
+    "badge": "Essential",
+    "userProblem": "AI developers and businesses need to estimate per-call, daily, and monthly API expenses across different LLM providers (OpenAI, Anthropic, Google, DeepSeek).",
+    "searchIntent": "Calculate token counts and dollar API costs for input prompts and completion responses across major frontier models.",
+    "resultInterpretation": "Calculates exact cost per single inference request, daily burn, and 30-day monthly projected cost based on token volumes and request frequency.",
+    "practicalGuidance": "Paste prompt drafts into the optional estimator box to get instant approximate token counts before deploying production prompts.",
+    "limitations": "Token counts are heuristic approximations (~4 characters/token for English). Actual tokenization varies slightly by provider BPE tokenizers.",
+    "formula": "Single Cost = (Input Tokens / 1M * Input Rate) + (Output Tokens / 1M * Output Rate)",
+    "trustNotes": "100% Client-Side. Prompts are never sent to external servers or logged.",
+    "related": [
+      "token-counter",
+      "prompt-enhancer",
+      "gpu-vram-ai-calculator",
+      "json-formatter"
+    ],
+    "seo": {
+      "title": "LLM Token & API Cost Calculator — OpenAI, Claude, Gemini & DeepSeek",
+      "metaDescription": "Calculate LLM token counts and API costs across GPT-4o, Claude 3.5 Sonnet, Gemini 1.5 Pro, and DeepSeek V3. Features per-call and monthly cost projections.",
+      "whatIsThis": "An interactive AI pricing calculator that translates prompt and completion tokens into exact dollar costs across all major frontier LLM APIs.",
+      "howItWorks": "1. Select your AI model (GPT-4o, Claude 3.5 Sonnet, Gemini 1.5, DeepSeek, or Custom).\n2. Enter your estimated input and output tokens (or paste prompt text).\n3. Set daily request volume to see instant per-call, daily, and monthly costs.",
+      "whyUseIt": "Prevents API billing surprises and helps engineering teams budget LLM infrastructure accurately.",
+      "faqs": [
+        {
+          "question": "How many words is 1,000 tokens?",
+          "answer": "In standard English text, 1,000 tokens corresponds to approximately 750 words (or about 4,000 characters)."
+        },
+        {
+          "question": "Why are output tokens more expensive than input tokens?",
+          "answer": "Generating output tokens requires iterative autoregressive decoding on GPU clusters, which is computationally heavier than parallel prefilling of input tokens."
+        }
+      ]
+    }
+  },
+  {
+    "id": "gpu-vram-ai-calculator",
+    "name": "Local AI / LLM GPU VRAM Calculator",
+    "slug": "gpu-vram-ai-calculator",
+    "category": "hardware",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "vram calculator for llm",
+      "gpu vram ai calculator",
+      "how much vram for llama 3",
+      "local llm hardware requirements",
+      "gpu for 70b model",
+      "quantization vram estimator",
+      "ollama gpu requirements"
+    ],
+    "primaryKeywords": [
+      "gpu vram calculator llm",
+      "local ai vram estimator",
+      "vram required for llama 3 70b",
+      "quantization memory calculator"
+    ],
+    "secondaryKeywords": [
+      "can i run llama 3 on rtx 3060",
+      "gpu for local ai",
+      "kv cache vram calculation"
+    ],
+    "targetUsers": [
+      "Machine Learning Engineers",
+      "PC Builders",
+      "Homelab Enthusiasts",
+      "Local LLM Users"
+    ],
+    "badge": "Hardware",
+    "userProblem": "Users wanting to run open-weight AI models (Llama 3, Qwen 2.5, Mistral, DeepSeek) locally do not know how much GPU video memory (VRAM) is needed for different quantizations and context lengths.",
+    "searchIntent": "Calculate required GPU VRAM for any model parameter size (3B to 70B+) and find compatible consumer GPUs and Apple Silicon hardware.",
+    "resultInterpretation": "Calculates total required VRAM broken down by model weights, KV cache memory, and CUDA runtime overhead, matching requirements to specific hardware tiers.",
+    "practicalGuidance": "4-bit quantization (Q4_K_M) is the standard sweet spot offering 95%+ of full precision intelligence at less than one-third the memory footprint.",
+    "limitations": "Estimates assume standard GGUF / AWQ architectures. Specialized multi-expert (MoE) architectures with sparse activation may run with lower active memory.",
+    "formula": "Total VRAM = (Params_B * Quant_Bytes) + KV_Cache(Context, Layers) + Overhead_GB",
+    "trustNotes": "100% Client-Side. Calculations based on empirical llama.cpp and Ollama benchmarks.",
+    "related": [
+      "llm-token-cost-calculator",
+      "screen-ppi-calculator",
+      "token-counter"
+    ],
+    "seo": {
+      "title": "Local AI / GPU VRAM Calculator — Hardware Estimator for Llama 3 & LLMs",
+      "metaDescription": "Calculate exact GPU VRAM needed to run local AI models (3B, 8B, 14B, 70B) across FP16, Q8, Q4 quantizations and context lengths. Recommends compatible GPUs.",
+      "whatIsThis": "A hardware planning utility for local AI that calculates the exact video memory required to load and infer open-source LLMs on NVIDIA GPUs and Apple Silicon.",
+      "howItWorks": "1. Select or slide model parameter size (e.g. 8B, 70B).\n2. Choose quantization bit-depth (FP16, Q8, Q5, Q4, Q3).\n3. Set your desired context window size (2k to 128k tokens).\n4. View total required VRAM and compatible GPU recommendations.",
+      "whyUseIt": "Prevents out-of-memory (OOM) crashes and guides smart hardware purchasing decisions for local AI setups.",
+      "faqs": [
+        {
+          "question": "Can I run an 8B model on an 8GB GPU?",
+          "answer": "Yes, an 8B model with 4-bit quantization (Q4_K_M) requires ~5.5 GB of VRAM, fitting comfortably on an 8GB GPU like the RTX 4060 or RTX 3060."
+        },
+        {
+          "question": "How much VRAM is needed for Llama 3 70B?",
+          "answer": "At 4-bit quantization (Q4), Llama 3 70B requires ~42-45 GB of VRAM. It can run on dual 24GB GPUs (e.g. 2x RTX 3090/4090) or an Apple Mac Studio with 64GB+ unified memory."
+        }
+      ]
+    }
+  },
+  {
+    "id": "loan-emi-calculator",
+    "name": "Loan EMI & Amortization Calculator",
+    "slug": "loan-emi-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "loan emi calculator",
+      "mortgage payment calculator",
+      "amortization schedule calculator",
+      "car loan calculator",
+      "home loan emi",
+      "monthly loan payment calculator"
+    ],
+    "primaryKeywords": [
+      "loan emi calculator",
+      "monthly emi calculator",
+      "loan amortization schedule",
+      "home loan payment calculator"
+    ],
+    "secondaryKeywords": [
+      "calculate loan interest",
+      "fixed rate loan calculator",
+      "total loan repayment formula"
+    ],
+    "targetUsers": [
+      "Home Buyers",
+      "Car Buyers",
+      "Borrowers",
+      "Financial Planners"
+    ],
+    "badge": "Essential",
+    "userProblem": "Borrowers need to know their exact monthly loan payment (EMI), total interest cost, and a full month-by-month repayment schedule before committing to a mortgage or loan.",
+    "searchIntent": "Calculate monthly loan EMI and view full principal vs interest amortization breakdown.",
+    "resultInterpretation": "Calculates exact fixed monthly installment, total interest payable over the lifetime of the loan, and total repayment amount.",
+    "practicalGuidance": "Use the month-by-month amortization table to see how early payments primarily pay down interest, while later payments pay down principal.",
+    "limitations": "Calculations assume fixed interest rate. Property taxes, insurance, and bank origination fees are not included in base mathematical calculations.",
+    "formula": "EMI = P * r * (1 + r)^n / ((1 + r)^n - 1)",
+    "trustNotes": "100% Client-Side mathematical calculation. Not financial advice.",
+    "related": [
+      "percentage-difference-calculator",
+      "compound-interest-calculator",
+      "percentage-calculator",
+      "vat-sales-tax-calculator"
+    ],
+    "seo": {
+      "title": "Loan EMI & Amortization Calculator — Monthly Payment & Interest Schedule",
+      "metaDescription": "Calculate monthly loan EMI payments, total interest costs, and full month-by-month amortization schedules for mortgages, personal loans, and auto financing.",
+      "whatIsThis": "A comprehensive financial calculator that computes monthly loan installments and visualizes the complete amortization schedule over the loan tenure.",
+      "howItWorks": "1. Enter Loan Amount (Principal).\n2. Enter Annual Interest Rate (% p.a.).\n3. Enter Loan Tenure in Years.\n4. Instantly view monthly EMI, interest breakdown, and full month-by-month schedule.",
+      "whyUseIt": "Gives borrowers full transparency into total financing costs and repayment timelines without signing up or submitting personal financial data.",
+      "faqs": [
+        {
+          "question": "What is EMI?",
+          "answer": "EMI stands for Equated Monthly Installment. It is the fixed payment amount made by a borrower to a lender at a specified date each calendar month."
+        },
+        {
+          "question": "How is loan EMI calculated?",
+          "answer": "EMI is calculated using the formula: EMI = [P x r x (1+r)^n]/[(1+r)^n-1], where P is Principal, r is monthly interest rate, and n is number of monthly installments."
+        }
+      ]
+    }
+  },
+  {
+    "id": "working-days-calculator",
+    "name": "Working Days & Business Days Calculator",
+    "slug": "working-days-calculator",
+    "category": "education",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "working days calculator",
+      "business days calculator",
+      "count working days between dates",
+      "add business days to date",
+      "workdays calculator",
+      "days between dates excluding weekends"
+    ],
+    "primaryKeywords": [
+      "working days calculator",
+      "business days between dates",
+      "add business days calculator",
+      "workdays between two dates"
+    ],
+    "secondaryKeywords": [
+      "how many working days until",
+      "calculate business days",
+      "deadline business days calculator"
+    ],
+    "targetUsers": [
+      "Project Managers",
+      "Freelancers",
+      "HR Professionals",
+      "Legal Teams",
+      "Students"
+    ],
+    "badge": "Productivity",
+    "userProblem": "Professionals and contractors need to calculate project deadlines, notice periods, and delivery dates excluding weekends without manual calendar counting.",
+    "searchIntent": "Count working days between two dates or add/subtract N business days to find an exact future completion date.",
+    "resultInterpretation": "Outputs total working days, weekend days, and calendar days, with customizable weekend models (Sat-Sun, Fri-Sat, Sun only).",
+    "practicalGuidance": "Use 'Add Business Days' mode when a contract specifies 'delivery within 15 business days' to calculate the exact calendar delivery date.",
+    "limitations": "Standard calculation excludes weekends. Public holidays vary by local jurisdiction and country.",
+    "formula": "Working Days = Total Days - Weekend Days (based on chosen workweek model)",
+    "trustNotes": "100% Client-Side. Operates instantly with browser date engines.",
+    "related": [
+      "timestamp-converter",
+      "age-calculator",
+      "content-reading-time-calculator",
+      "utm-builder"
+    ],
+    "seo": {
+      "title": "Working Days Calculator — Business Days Between Dates & Deadline Planner",
+      "metaDescription": "Calculate working days and business days between any two dates or add business days to find exact completion deadlines. Supports flexible weekend configurations.",
+      "whatIsThis": "A calendar utility that counts business working days between dates and computes exact delivery deadlines excluding weekends.",
+      "howItWorks": "1. Select 'Count Working Days' or 'Add/Subtract Business Days'.\n2. Pick your start and end dates (or specify number of business days to add).\n3. Choose your weekend pattern (Saturday-Sunday, Friday-Saturday, or Sunday only).\n4. View total working days and target calendar dates.",
+      "whyUseIt": "Saves time planning project sprints, SLA deliverables, employee leave, and contractual business deadlines.",
+      "faqs": [
+        {
+          "question": "How many business days are in a typical month?",
+          "answer": "A standard calendar month typically contains between 20 and 22 working business days depending on weekend distribution and month length."
+        },
+        {
+          "question": "Can I calculate business days for Friday-Saturday weekends?",
+          "answer": "Yes, you can toggle the weekend pattern to Friday & Saturday for Middle Eastern business schedules."
+        }
+      ]
+    }
+  },
+  {
+    "id": "cron-expression-generator",
+    "name": "Cron Expression Generator & Schedule Explainer",
+    "slug": "cron-expression-generator",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "cron expression generator",
+      "crontab generator",
+      "cron schedule builder",
+      "cron syntax explainer",
+      "crontab guru alternative",
+      "cron job timing generator"
+    ],
+    "primaryKeywords": [
+      "cron expression generator",
+      "crontab generator online",
+      "cron syntax builder",
+      "explain cron expression"
+    ],
+    "secondaryKeywords": [
+      "every 5 minutes cron",
+      "cron daily at midnight",
+      "cron expression format"
+    ],
+    "targetUsers": [
+      "DevOps Engineers",
+      "Backend Developers",
+      "System Administrators",
+      "Cloud Architects"
+    ],
+    "badge": "High Usage",
+    "userProblem": "Cron syntax (5-field string like `*/15 0 1 * *`) is difficult to memorize and error-prone when setting up server cronjobs and cloud schedulers.",
+    "searchIntent": "Generate accurate 5-field cron syntax using visual controls or translate raw cron expressions into plain English descriptions.",
+    "resultInterpretation": "Generates valid 5-field cron expressions (`minute hour day-of-month month day-of-week`) and describes the schedule in human English.",
+    "practicalGuidance": "Use quick presets (Every 5 min, Daily at Midnight, Every Monday at 9 AM) to create common production cron patterns in one click.",
+    "limitations": "Generates standard POSIX/UNIX 5-field cron syntax. 6-field/7-field Quartz syntax (seconds/year) is not used in standard Linux crontabs.",
+    "formula": "Cron Format: [Minute] [Hour] [Day of Month] [Month] [Day of Week]",
+    "trustNotes": "100% Client-Side. No server validation calls or data tracking.",
+    "related": [
+      "timestamp-converter",
+      "jwt-debugger",
+      "base64-encoder",
+      "json-formatter"
+    ],
+    "seo": {
+      "title": "Cron Expression Generator — Interactive Crontab Schedule Builder",
+      "metaDescription": "Build, test, and explain 5-field cron expressions with an interactive visual builder and plain-English schedule descriptions. Free, fast, and 100% client-side.",
+      "whatIsThis": "An interactive developer utility for creating, verifying, and translating POSIX crontab schedule expressions into plain English.",
+      "howItWorks": "1. Pick a common preset OR adjust the 5 fields (Minute, Hour, Day, Month, Day of Week).\n2. View the generated cron string in real-time.\n3. Read the plain-English explanation to verify your schedule.\n4. Click 'Copy Expression' to paste directly into your crontab or cloud scheduler.",
+      "whyUseIt": "Eliminates scheduling mistakes and syntax errors when configuring automated backend jobs and background workers.",
+      "faqs": [
+        {
+          "question": "What do the 5 cron fields represent?",
+          "answer": "The 5 fields in standard cron represent: 1) Minute (0-59), 2) Hour (0-23), 3) Day of the month (1-31), 4) Month of the year (1-12), and 5) Day of the week (0-6, where 0 is Sunday)."
+        },
+        {
+          "question": "How do I run a cron job every 15 minutes?",
+          "answer": "The cron expression for every 15 minutes is: */15 * * * *"
+        }
+      ]
+    }
+  },
+  {
+    "id": "jwt-debugger",
+    "name": "JWT Token Debugger & Claims Inspector",
+    "slug": "jwt-debugger",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "jwt debugger",
+      "jwt decoder online",
+      "decode json web token",
+      "jwt inspector",
+      "jwt expiration checker",
+      "jwt claims viewer"
+    ],
+    "primaryKeywords": [
+      "jwt debugger",
+      "jwt decoder",
+      "decode jwt token online",
+      "jwt claims inspector"
+    ],
+    "secondaryKeywords": [
+      "check jwt expiration date",
+      "view jwt payload",
+      "client side jwt decoder"
+    ],
+    "targetUsers": [
+      "Web Developers",
+      "Security Engineers",
+      "API Developers",
+      "QA Testers"
+    ],
+    "badge": "Essential",
+    "userProblem": "Developers testing authentication and authorization APIs need to inspect JWT headers and payload claims without risking token leakage to untrusted third-party servers.",
+    "searchIntent": "Decode and format JSON Web Tokens (JWT) locally to view header algorithms, payload claims, and expiration timestamps.",
+    "resultInterpretation": "Decodes Base64Url header and payload into formatted JSON, checking `exp` timestamps to display active vs expired token status.",
+    "practicalGuidance": "Because this tool executes 100% locally in your browser with zero network requests, it is safe for inspecting developer authorization tokens.",
+    "limitations": "Inspects and decodes Header and Payload. Signature cryptographic verification requires providing a shared secret or public key.",
+    "formula": "JWT = Base64Url(Header) . Base64Url(Payload) . Signature",
+    "trustNotes": "100% Client-Side Zero-Knowledge. Tokens are never transmitted across the network.",
+    "related": [
+      "base64-decoder",
+      "base64-encoder",
+      "json-formatter",
+      "timestamp-converter"
+    ],
+    "seo": {
+      "title": "JWT Debugger — Client-Side JSON Web Token Decoder & Claims Inspector",
+      "metaDescription": "Decode and inspect JSON Web Tokens (JWT) locally in your browser. View formatted header algorithms, payload claims, and check expiration status securely.",
+      "whatIsThis": "A zero-knowledge client-side developer utility for decoding and inspecting JSON Web Token (JWT) headers and payloads without transmitting data over the internet.",
+      "howItWorks": "1. Paste any encoded JWT string (eyJhbGciOi...).\n2. Instantly see formatted Header (algorithm, token type) and Payload (user claims, scopes, timestamps).\n3. View live expiration status (Active or Expired) and copy formatted JSON claims.",
+      "whyUseIt": "Provides a secure, private alternative to server-hosted token inspectors for API debugging and token verification.",
+      "faqs": [
+        {
+          "question": "Is it safe to paste my JWT token here?",
+          "answer": "Yes. This utility executes 100% in your local browser using JavaScript. No tokens or payloads are ever transmitted to any server."
+        },
+        {
+          "question": "What is the 'exp' claim in a JWT?",
+          "answer": "The 'exp' (Expiration Time) claim identifies the Unix epoch timestamp after which the JWT must not be accepted for processing."
+        }
+      ]
+    }
+  },
+  {
+    "id": "screen-ppi-calculator",
+    "name": "Screen PPI & Display Geometry Calculator",
+    "slug": "screen-ppi-calculator",
+    "category": "hardware",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "screen ppi calculator",
+      "pixel density calculator",
+      "monitor ppi",
+      "pixels per inch calculator",
+      "display aspect ratio calculator",
+      "dot pitch calculator"
+    ],
+    "primaryKeywords": [
+      "screen ppi calculator",
+      "pixel density calculator",
+      "monitor ppi calculator",
+      "pixels per inch display"
+    ],
+    "secondaryKeywords": [
+      "4k monitor ppi",
+      "optimal viewing distance calculator",
+      "display dot pitch in mm"
+    ],
+    "targetUsers": [
+      "PC Gamers",
+      "Graphic Designers",
+      "Hardware Enthusiasts",
+      "Display Buyers"
+    ],
+    "badge": "Hardware",
+    "userProblem": "Monitor and laptop buyers want to know the sharpness (pixels per inch), dot pitch, and optimal viewing distance for different screen sizes and resolutions before purchasing.",
+    "searchIntent": "Calculate exact PPI (pixels per inch), pixel pitch, and aspect ratio from screen resolution and diagonal display size.",
+    "resultInterpretation": "Calculates pixel density (PPI), dot pitch in millimeters, total megapixels, simplified aspect ratio, and recommended ergonomic viewing distance.",
+    "practicalGuidance": "110 PPI is standard desktop sharpness (27\" 1440p). 160+ PPI (27\" 4K) provides crisp retina-like text clarity.",
+    "limitations": "Calculations assume standard rectangular square pixels (1:1 pixel aspect ratio).",
+    "formula": "PPI = sqrt(Width^2 + Height^2) / Diagonal_Inches",
+    "trustNotes": "100% Client-Side geometric calculations.",
+    "related": [
+      "aspect-ratio-calculator",
+      "screen-resolution",
+      "gpu-vram-ai-calculator"
+    ],
+    "seo": {
+      "title": "Screen PPI Calculator — Pixel Density, Aspect Ratio & Dot Pitch",
+      "metaDescription": "Calculate display PPI (pixels per inch), dot pitch, total megapixels, aspect ratios, and optimal viewing distance from screen resolution and diagonal size.",
+      "whatIsThis": "A hardware display calculator that computes pixel density (PPI), pixel pitch, and visual acuity viewing distances for monitors, laptops, and mobile screens.",
+      "howItWorks": "1. Enter screen resolution (Width and Height in pixels) or choose a preset (4K, 1440p, 1080p, Ultrawide).\n2. Enter diagonal screen size in inches.\n3. Instantly view PPI, dot pitch in mm, total megapixels, and ergonomic viewing distance.",
+      "whyUseIt": "Helps users choose the right monitor size and resolution for sharp text, gaming immersion, and design workflows.",
+      "faqs": [
+        {
+          "question": "What is a good PPI for a computer monitor?",
+          "answer": "For standard desktop viewing (20-28 inches away), 108-110 PPI (like 27\" 1440p) is considered good, while 160-220 PPI (like 27\" 4K or MacBook displays) provides razor-sharp 'Retina' clarity."
+        },
+        {
+          "question": "How is screen PPI calculated?",
+          "answer": "PPI is calculated using the Pythagorean theorem on pixel dimensions divided by diagonal inches: sqrt(width^2 + height^2) / diagonal."
+        }
+      ]
+    }
+  },
+  {
+    "id": "content-reading-time-calculator",
+    "name": "Content Reading & Speaking Time Calculator",
+    "slug": "content-reading-time-calculator",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "reading time calculator",
+      "speaking time calculator",
+      "speech time estimator",
+      "words to minutes calculator",
+      "article reading time",
+      "podcast script duration calculator"
+    ],
+    "primaryKeywords": [
+      "reading time calculator",
+      "speaking time calculator",
+      "words to minutes speech",
+      "estimate reading time online"
+    ],
+    "secondaryKeywords": [
+      "how long to read 1000 words",
+      "speech duration calculator",
+      "presentation word count time"
+    ],
+    "targetUsers": [
+      "Writers",
+      "Content Creators",
+      "Public Speakers",
+      "Podcasters",
+      "Students"
+    ],
+    "badge": "Productivity",
+    "userProblem": "Bloggers, public speakers, and voiceover artists need to know how many minutes it will take to read or present a written script.",
+    "searchIntent": "Calculate silent reading time and spoken presentation duration from text word count with customizable speed controls.",
+    "resultInterpretation": "Calculates silent reading time (default 220 WPM) and spoken delivery time (default 130 WPM), alongside word, character, sentence, and paragraph counts.",
+    "practicalGuidance": "Use 130 WPM when preparing presentations or podcast scripts to ensure comfortable pacing without rushing.",
+    "limitations": "Speaking and reading speeds vary by individual and topic complexity. Adjustable sliders allow customizing WPM.",
+    "formula": "Reading Minutes = Word Count / Reading WPM; Speaking Minutes = Word Count / Speaking WPM",
+    "trustNotes": "100% Client-Side. Text is analyzed locally in browser memory.",
+    "related": [
+      "word-counter",
+      "working-days-calculator",
+      "lorem-ipsum-generator"
+    ],
+    "seo": {
+      "title": "Reading & Speaking Time Calculator — Estimate Article & Speech Duration",
+      "metaDescription": "Calculate silent reading time and spoken speech duration for articles, essays, and presentations. Features customizable WPM speeds and full word count metrics.",
+      "whatIsThis": "A content duration estimator that converts written text into precise silent reading time and spoken presentation duration.",
+      "howItWorks": "1. Paste your article, speech, essay, or script into the text area.\n2. Adjust silent reading (WPM) or speaking speed (WPM) sliders if desired.\n3. Instantly view estimated reading time, speech time, and detailed document metrics.",
+      "whyUseIt": "Essential for timing conference talks, keynote speeches, blog post headers, and video script recordings.",
+      "faqs": [
+        {
+          "question": "What is the average silent reading speed?",
+          "answer": "The average adult reads silently at approximately 200 to 250 words per minute (WPM) for standard non-technical text."
+        },
+        {
+          "question": "How long does it take to deliver a 1,000-word speech?",
+          "answer": "At a standard comfortable speaking rate of 130 words per minute, a 1,000-word speech takes approximately 7 minutes and 40 seconds."
+        }
+      ]
+    }
+  },
+  {
+    "id": "vat-sales-tax-calculator",
+    "name": "VAT & Sales Tax Reverse Calculator",
+    "slug": "vat-sales-tax-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "vat calculator",
+      "sales tax calculator",
+      "reverse vat calculator",
+      "remove vat calculator",
+      "add tax calculator",
+      "calculate tax from gross price"
+    ],
+    "primaryKeywords": [
+      "vat calculator",
+      "sales tax calculator",
+      "reverse vat calculator",
+      "tax inclusive to exclusive calculator"
+    ],
+    "secondaryKeywords": [
+      "how to remove vat from total",
+      "reverse sales tax calculation",
+      "vat rate calculator"
+    ],
+    "targetUsers": [
+      "Small Business Owners",
+      "Accountants",
+      "Freelancers",
+      "Shoppers",
+      "Contractors"
+    ],
+    "badge": "Calculators",
+    "userProblem": "Business owners and consumers need to add VAT/tax to net invoices or reverse-calculate the pre-tax net price and tax amount from a gross receipt.",
+    "searchIntent": "Add tax to net amount or remove/reverse VAT from gross total with standard country tax presets.",
+    "resultInterpretation": "Calculates Net (exclusive), Tax Amount, and Gross (inclusive) totals with single-click operation toggles and country rate presets.",
+    "practicalGuidance": "Use 'Remove / Reverse VAT' when you have a gross receipt of $120 (at 20% VAT) to extract the true pre-tax net amount ($100.00) and tax paid ($20.00).",
+    "limitations": "Applies standard flat percentage tax calculations. Compound or multi-tiered local sales taxes must be entered as a combined rate.",
+    "formula": "Add Tax: Gross = Net * (1 + Rate/100); Reverse Tax: Net = Gross / (1 + Rate/100)",
+    "trustNotes": "100% Client-Side mathematical calculation.",
+    "related": [
+      "percentage-difference-calculator",
+      "discount-calculator",
+      "invoice-generator",
+      "percentage-calculator"
+    ],
+    "seo": {
+      "title": "VAT & Sales Tax Calculator — Add or Remove / Reverse Tax Online",
+      "metaDescription": "Calculate VAT and sales tax easily. Add tax to net prices or reverse-calculate pre-tax amounts from gross totals with country tax presets (UAE, UK, US, EU).",
+      "whatIsThis": "A bi-directional tax calculator that computes sales tax additions (Net to Gross) and reverse VAT deductions (Gross to Net).",
+      "howItWorks": "1. Select 'Add Tax' (Net to Gross) or 'Remove / Reverse VAT' (Gross to Net).\n2. Enter the amount and choose your tax rate (or click a country preset like 5%, 8.25%, 20%).\n3. Instantly see Net Amount, Tax Amount, and Gross Amount.",
+      "whyUseIt": "Simplifies invoicing, bookkeeping, tax filing, and expense reconciliation without complex manual algebra.",
+      "faqs": [
+        {
+          "question": "How do you calculate reverse VAT from a gross total?",
+          "answer": "To extract pre-tax net price from a gross total, divide the gross amount by (1 + Tax Rate / 100). For example, $120 with 20% VAT = $120 / 1.20 = $100.00 Net, with $20.00 VAT."
+        },
+        {
+          "question": "What is the standard VAT rate in the UAE and GCC?",
+          "answer": "The standard VAT rate in the UAE and GCC is 5%."
+        }
+      ]
+    }
+  },
+  {
+    "id": "utm-builder",
+    "name": "Campaign UTM Link Builder & URL Tagging Tool",
+    "slug": "utm-builder",
+    "category": "business",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "utm builder",
+      "campaign url builder",
+      "google analytics url builder",
+      "utm link generator",
+      "utm tracking creator",
+      "custom campaign url"
+    ],
+    "primaryKeywords": [
+      "utm builder",
+      "campaign url builder",
+      "utm tag generator",
+      "google analytics campaign url"
+    ],
+    "secondaryKeywords": [
+      "how to create utm links",
+      "utm parameters generator",
+      "social media utm link builder"
+    ],
+    "targetUsers": [
+      "Digital Marketers",
+      "Content Creators",
+      "Growth Leads",
+      "Affiliates",
+      "Social Media Managers"
+    ],
+    "badge": "Productivity",
+    "userProblem": "Marketers and creators launching advertising, email newsletters, and social media campaigns need to generate clean, standard UTM-tagged links for Google Analytics (GA4) tracking.",
+    "searchIntent": "Generate standard UTM tracking URLs with presets for Google Ads, Facebook, LinkedIn, Twitter, and email campaigns.",
+    "resultInterpretation": "Constructs valid RFC-compliant tracking URLs with `utm_source`, `utm_medium`, `utm_campaign`, `utm_term`, and `utm_content` query parameters.",
+    "practicalGuidance": "Keep UTM parameters all-lowercase without spaces (use underscores `_` or dashes `-`) to ensure clean reporting in Google Analytics 4.",
+    "limitations": "UTM parameters are tracked when users click through to websites instrumented with Google Analytics (GA4) or standard web analytics.",
+    "formula": "Target_URL?utm_source=...&utm_medium=...&utm_campaign=...",
+    "trustNotes": "100% Client-Side. No URLs or campaign data are logged or sent to servers.",
+    "related": [
+      "url-encoder",
+      "qr-code-generator",
+      "email-signature-generator",
+      "working-days-calculator"
+    ],
+    "seo": {
+      "title": "Campaign UTM Link Builder — Google Analytics 4 URL Tagging Tool",
+      "metaDescription": "Generate clean, error-free UTM tracking URLs for Google Analytics 4 (GA4). Features presets for Google Ads, newsletters, social media, and 1-click copying.",
+      "whatIsThis": "A digital marketing utility that constructs standardized UTM tracking parameters for campaign performance measurement in Google Analytics 4.",
+      "howItWorks": "1. Enter your website target URL.\n2. Fill in Campaign Source (e.g. google), Medium (e.g. cpc), and Campaign Name (e.g. spring_sale) or select a channel preset.\n3. Click 'Copy Campaign Link' to deploy in your marketing campaigns.",
+      "whyUseIt": "Eliminates broken query string formatting and ensures consistent attribution across marketing channels.",
+      "faqs": [
+        {
+          "question": "What are UTM parameters?",
+          "answer": "UTM (Urchin Tracking Module) parameters are five standardized query parameters added to URLs that allow Google Analytics to track where traffic originated and which campaigns were effective."
+        },
+        {
+          "question": "Are UTM tags case-sensitive?",
+          "answer": "Yes. Google Analytics treats 'Email', 'email', and 'EMAIL' as separate mediums. It is best practice to always use lowercase letters for UTM tags."
         }
       ]
     }

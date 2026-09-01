@@ -98,3 +98,12 @@ export function trackWidgetRelatedUtilityClick(widgetSlug: string, utilitySlug: 
     utility_slug: utilitySlug,
   });
 }
+
+// USER FEEDBACK ANALYTICS (Zero user input / payload transmission)
+export function trackUtilityFeedback(utilityId: string, isUseful: boolean, reason?: string) {
+  trackEvent("utility_feedback", {
+    utility_id: utilityId,
+    useful: isUseful ? 1 : 0,
+    reason: reason || "none",
+  });
+}

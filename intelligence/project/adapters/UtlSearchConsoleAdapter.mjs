@@ -24,7 +24,9 @@ export class UtlSearchConsoleAdapter {
       try {
         const encodedSite = encodeURIComponent(this.siteUrl);
         const url = `https://searchconsole.googleapis.com/webmasters/v3/sites/${encodedSite}/searchAnalytics/query`;
-        const response = await fetch(url, {
+
+        // 1. Authoritative Property-Level Total Query (without query dimension truncation)
+        const totalResponse = await fetch(url, {
           method: "POST",
           headers: {
             "Authorization": `Bearer ${token}`,
@@ -33,43 +35,73 @@ export class UtlSearchConsoleAdapter {
           body: JSON.stringify({
             startDate: startDateStr,
             endDate: endDateStr,
-            dimensions: ["query"],
-            rowLimit: 25,
           }),
         });
 
-        if (response.ok) {
-          const report = await response.json();
-          const rows = report.rows || [];
-          const totalClicks = rows.reduce((sum, r) => sum + (r.clicks || 0), 0);
-          const totalImpressions = rows.reduce((sum, r) => sum + (r.impressions || 0), 0);
-          const avgCtr = totalImpressions > 0 ? parseFloat(((totalClicks / totalImpressions) * 100).toFixed(2)) : 0;
-          const avgPos = rows.length > 0 ? parseFloat((rows.reduce((sum, r) => sum + (r.position || 0), 0) / rows.length).toFixed(1)) : 0;
+        let totalImpressions = 0;
+        let totalClicks = 0;
+        let avgCtr = 0;
+        let avgPos = 0;
 
-          return [
-            {
-              observation_id: `OBS-GSC-LIVE-IMPRESSIONS-${Date.now()}`,
-              project_id: project.project_id,
-              source_id: this.provider_id,
-              source_type: "GSC_SEARCH_ANALYTICS_API",
-              metric_id: "search_impressions",
-              timestamp: now,
-              period_start: periodStart,
-              period_end: now,
-              value: totalImpressions,
-              unit: "impressions",
-              dimensions: { property: this.siteUrl, top_queries_count: rows.length, window: dateWindow },
-              status: "SUCCESS",
-              confidence: "VERY_HIGH",
-              confidence_score: 0.99,
-              freshness_hours: 48,
-              epistemic_type: "FACT",
-              provenance: {
-                source_name: `Google Search Console (${this.siteUrl})`,
-                collection_method: "SEARCH_ANALYTICS_QUERY_API",
-              },
-              collection_run_id: `RUN-${Date.now()}`,
+        if (totalResponse.ok) {
+          const totalReport = await totalResponse.json();
+          const totalRow = totalReport.rows?.[0];
+          if (totalRow) {
+            totalImpressions = totalRow.impressions || 0;
+            totalClicks = totalRow.clicks || 0;
+            avgCtr = totalImpressions > 0 ? parseFloat(((totalClicks / totalImpressions) * 100).toFixed(2)) : 0;
+            avgPos = totalRow.position ? parseFloat(totalRow.position.toFixed(1)) : 0;
+          }
+        }
+
+        // 2. Query-Level Discovery (separate query for keyword opportunity analysis)
+        let topQueriesCount = 0;
+        try {
+          const queryResponse = await fetch(url, {
+            method: "POST",
+            headers: {
+              "Authorization": `Bearer ${token}`,
+              "Content-Type": "application/json",
             },
+            body: JSON.stringify({
+              startDate: startDateStr,
+              endDate: endDateStr,
+              dimensions: ["query"],
+              rowLimit: 50,
+            }),
+          });
+          if (queryResponse.ok) {
+            const queryReport = await queryResponse.json();
+            topQueriesCount = queryReport.rows?.length || 0;
+          }
+        } catch (qErr) {
+          console.warn("GSC query-level breakdown notice:", qErr.message);
+        }
+
+        return [
+          {
+            observation_id: `OBS-GSC-LIVE-IMPRESSIONS-${Date.now()}`,
+            project_id: project.project_id,
+            source_id: this.provider_id,
+            source_type: "GSC_SEARCH_ANALYTICS_API",
+            metric_id: "search_impressions",
+            timestamp: now,
+            period_start: periodStart,
+            period_end: now,
+            value: totalImpressions,
+            unit: "impressions",
+            dimensions: { property: this.siteUrl, top_queries_count: topQueriesCount, window: dateWindow },
+            status: "SUCCESS",
+            confidence: "VERY_HIGH",
+            confidence_score: 0.99,
+            freshness_hours: 48,
+            epistemic_type: "FACT",
+            provenance: {
+              source_name: `Google Search Console (${this.siteUrl})`,
+              collection_method: "SEARCH_ANALYTICS_PROPERTY_TOTAL_API",
+            },
+            collection_run_id: `RUN-${Date.now()}`,
+          },
             {
               observation_id: `OBS-GSC-LIVE-CLICKS-${Date.now()}`,
               project_id: project.project_id,
@@ -140,10 +172,6 @@ export class UtlSearchConsoleAdapter {
               collection_run_id: `RUN-${Date.now()}`,
             },
           ];
-        } else {
-          const errBody = await response.text();
-          console.warn(`Google Search Console API call failed [${response.status}]: ${errBody}`);
-        }
       } catch (callErr) {
         console.warn("GSC API network error:", callErr.message);
       }

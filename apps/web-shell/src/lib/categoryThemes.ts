@@ -86,6 +86,22 @@ export const categoryThemes: Record<string, CategoryTheme> = {
     borderHoverClass: "hover:border-purple-300 dark:hover:border-purple-700",
     accentTextClass: "text-purple-600 dark:text-purple-400",
   },
+  hardware: {
+    slug: "hardware",
+    badgeClass: "bg-orange-50 text-orange-700 dark:bg-orange-950/60 dark:text-orange-300 border-orange-200 dark:border-orange-800/40",
+    iconBgClass: "bg-orange-50 dark:bg-orange-950/50",
+    iconColorClass: "text-orange-600 dark:text-orange-400",
+    borderHoverClass: "hover:border-orange-300 dark:hover:border-orange-700",
+    accentTextClass: "text-orange-600 dark:text-orange-400",
+  },
+  everyday: {
+    slug: "everyday",
+    badgeClass: "bg-emerald-50 text-emerald-700 dark:bg-emerald-950/60 dark:text-emerald-300 border-emerald-200 dark:border-emerald-800/40",
+    iconBgClass: "bg-emerald-50 dark:bg-emerald-950/50",
+    iconColorClass: "text-emerald-600 dark:text-emerald-400",
+    borderHoverClass: "hover:border-emerald-300 dark:hover:border-emerald-700",
+    accentTextClass: "text-emerald-600 dark:text-emerald-400",
+  },
 };
 
 export function getCategoryTheme(slug: string): CategoryTheme {
