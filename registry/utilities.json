@@ -7109,5 +7109,649 @@
         }
       ]
     }
+  },
+  {
+    "id": "loan-refinance-savings-calculator",
+    "name": "Loan Refinance & Break-Even Savings Calculator",
+    "slug": "loan-refinance-savings-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "loan refinance calculator",
+      "mortgage refinance savings calculator",
+      "refinance break even calculator",
+      "should i refinance my loan",
+      "auto loan refinance calculator",
+      "refinance closing costs calculator"
+    ],
+    "primaryKeywords": [
+      "loan refinance calculator",
+      "refinance savings calculator",
+      "refinance break even calculator",
+      "mortgage refinance calculator"
+    ],
+    "secondaryKeywords": [
+      "calculate months to break even on refinance",
+      "lower interest rate monthly savings",
+      "roll closing costs into refinance loan"
+    ],
+    "targetUsers": [
+      "Homeowners",
+      "Car Loan Borrowers",
+      "Mortgage Brokers",
+      "Financial Advisors"
+    ],
+    "badge": "Popular",
+    "userProblem": "Borrowers considering refinancing a mortgage or auto loan need to know how much money they will save per month, total interest saved over the loan life, and exactly how many months it takes to break even on closing costs.",
+    "searchIntent": "Compare existing loan terms against new refinance offers to calculate monthly cash savings, lifetime interest reduction, and closing cost break-even timeline.",
+    "resultInterpretation": "Calculates monthly payment delta, new amortized payment, lifetime interest savings, and exact break-even recovery months.",
+    "practicalGuidance": "If you plan to move or sell the asset before the break-even period (e.g. 36 months), refinancing may cost more than it saves.",
+    "limitations": "Calculates fixed-rate loan amortization.",
+    "formula": "Monthly Savings = Current_Payment - New_Payment; Break-Even Months = Closing_Costs / Monthly_Savings",
+    "trustNotes": "100% Client-Side financial modeling. Zero data transmitted.",
+    "related": [
+      "mortgage-payment-calculator",
+      "car-loan-affordability-calculator",
+      "loan-calculator",
+      "loan-emi-calculator"
+    ],
+    "seo": {
+      "title": "Loan Refinance Calculator — Monthly Savings & Break-Even Tool",
+      "metaDescription": "Calculate monthly payment savings, lifetime interest reduction, and closing costs break-even period when refinancing a mortgage or car loan. Free, private tool.",
+      "whatIsThis": "A financial comparison calculator that computes the cost-benefit of refinancing an existing loan into a lower interest rate.",
+      "howItWorks": "1. Enter current loan balance, APR, and monthly payment.\n2. Enter new refinance APR, loan term, and closing costs.\n3. View your monthly cash savings, lifetime interest delta, and break-even timeframe in months.",
+      "whyUseIt": "Determines whether refinancing is financially worthwhile after accounting for upfront lender fees.",
+      "faqs": [
+        {
+          "question": "What is a refinance break-even point?",
+          "answer": "The break-even point is the number of months of monthly payment savings required to fully recover the upfront closing costs paid to refinance."
+        },
+        {
+          "question": "When is it a good time to refinance?",
+          "answer": "Refinancing is typically advantageous when you can lower your interest rate by 0.75% to 1.0% or more and plan to stay in the home longer than the break-even period."
+        }
+      ]
+    }
+  },
+  {
+    "id": "curl-to-python-requests-converter",
+    "name": "cURL to Python Requests Code Converter",
+    "slug": "curl-to-python-requests-converter",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "curl to python converter",
+      "convert curl to python requests",
+      "curl to python online",
+      "curl command to python script",
+      "curl bash to python requests",
+      "api curl to python"
+    ],
+    "primaryKeywords": [
+      "curl to python converter",
+      "convert curl to python",
+      "curl to python requests",
+      "curl to python script"
+    ],
+    "secondaryKeywords": [
+      "convert curl headers and json to python",
+      "curl post request to python code",
+      "python requests code generator from curl"
+    ],
+    "targetUsers": [
+      "Python Developers",
+      "Backend Engineers",
+      "Data Scientists",
+      "API Integrators"
+    ],
+    "badge": "High Usage",
+    "userProblem": "Developers reading API documentation with bash cURL snippets need to convert them into idiomatic Python `requests` code with proper headers, JSON payloads, auth tokens, and response handling.",
+    "searchIntent": "Convert bash cURL commands into clean, copy-pasteable Python `requests` scripts with headers and JSON body parsing.",
+    "resultInterpretation": "Parses cURL commands into standard Python `requests.get/post/put/delete` syntax with structured dictionary headers and JSON payload formatting.",
+    "practicalGuidance": "Supports `-H` headers, `-d`/`--data` JSON payloads, and `-X` HTTP methods.",
+    "limitations": "Parses standard HTTP cURL flags and JSON payloads.",
+    "formula": "CLI AST Parser: cURL String ➔ Python requests AST Object",
+    "trustNotes": "100% Client-Side. Sensitive API keys and tokens never leave your browser.",
+    "related": [
+      "curl-to-fetch-converter",
+      "json-formatter",
+      "jwt-payload-inspector-signer",
+      "http-status-codes"
+    ],
+    "seo": {
+      "title": "cURL to Python Converter — Convert cURL to Python Requests",
+      "metaDescription": "Convert cURL commands to clean Python requests code instantly online. Parses headers, JSON data, and query parameters. 100% private in-browser tool.",
+      "whatIsThis": "A developer code translation utility that converts bash cURL commands into Python `requests` syntax.",
+      "howItWorks": "1. Paste your cURL command into the input box.\n2. Instantly receive formatted Python `requests` script with headers and payload dictionaries.\n3. Copy the Python code in 1 click.",
+      "whyUseIt": "Speeds up API integration and eliminates manual copy-pasting of headers and query parameters.",
+      "faqs": [
+        {
+          "question": "Does this tool support POST requests with JSON payloads?",
+          "answer": "Yes. It automatically detects JSON data in `-d` or `--data-raw` flags and formats it as a native Python dictionary passed to `json=json_data`."
+        },
+        {
+          "question": "Are my API keys and bearer tokens safe?",
+          "answer": "Yes. All conversion executes entirely in your local web browser with zero server transmission."
+        }
+      ]
+    }
+  },
+  {
+    "id": "uuid-v4-batch-generator",
+    "name": "Bulk UUID v4 & GUID Batch Generator",
+    "slug": "uuid-v4-batch-generator",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "uuid v4 batch generator",
+      "bulk uuid generator",
+      "generate multiple uuids online",
+      "guid batch generator",
+      "bulk guid generator",
+      "uuid v4 csv generator"
+    ],
+    "primaryKeywords": [
+      "uuid v4 batch generator",
+      "bulk uuid generator",
+      "generate 100 uuids",
+      "bulk guid generator"
+    ],
+    "secondaryKeywords": [
+      "uuid without hyphens generator",
+      "uppercase uuid batch tool",
+      "generate uuid array json"
+    ],
+    "targetUsers": [
+      "Database Administrators",
+      "Backend Engineers",
+      "QA Testers",
+      "Data Engineers"
+    ],
+    "badge": "High Usage",
+    "userProblem": "Engineers and database administrators seeding mock datasets or provisioning primary keys need to generate dozens or hundreds of cryptographically secure UUID v4 / GUID identifiers in bulk with custom delimiters.",
+    "searchIntent": "Generate batches of 1 to 500 UUID v4 identifiers with customization for hyphens, uppercase, braces, CSV, or JSON array format.",
+    "resultInterpretation": "Generates cryptographically random UUID v4 identifiers in browser memory using Web Crypto APIs with 1-click download.",
+    "practicalGuidance": "UUID v4 provides 122 bits of cryptographic entropy, guaranteeing near-zero collision probability across distributed systems.",
+    "limitations": "Generates standard RFC 4122 Version 4 random UUIDs.",
+    "formula": "Cryptographic Entropy: UUID v4 = 128-bit random bitstream formatted as 8-4-4-4-12 hex",
+    "trustNotes": "100% Client-Side Web Crypto generation.",
+    "related": [
+      "uuid-generator",
+      "random-string-token-generator",
+      "hash-generator",
+      "base64-encoder"
+    ],
+    "seo": {
+      "title": "Bulk UUID Generator — Generate UUID v4 & GUIDs in Batch",
+      "metaDescription": "Generate up to 500 cryptographically secure UUID v4 / GUIDs in bulk. Supports uppercase, no hyphens, braces, CSV, and JSON array formatting. Free tool.",
+      "whatIsThis": "A developer productivity utility that produces batches of RFC 4122 compliant UUID v4 identifiers.",
+      "howItWorks": "1. Select quantity (1 to 500 UUIDs).\n2. Toggle hyphens, uppercase casing, or GUID braces.\n3. Copy all generated UUIDs or download as a `.txt` / `.json` file in 1 click.",
+      "whyUseIt": "Quickly generates mock primary keys and seed data for SQL databases and APIs.",
+      "faqs": [
+        {
+          "question": "What is the difference between UUID and GUID?",
+          "answer": "UUID (Universally Unique Identifier) and GUID (Globally Unique Identifier) are essentially identical 128-bit identifiers, with GUID being Microsoft's implementation term."
+        },
+        {
+          "question": "Are these UUIDs cryptographically random?",
+          "answer": "Yes. All UUIDs are generated locally using your browser's native `crypto.randomUUID()` or `crypto.getRandomValues()` API."
+        }
+      ]
+    }
+  },
+  {
+    "id": "aspect-ratio-scale-multiplier",
+    "name": "Aspect Ratio Scale Multiplier & Resolution Upscaler",
+    "slug": "aspect-ratio-scale-multiplier",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "aspect ratio scale multiplier",
+      "resolution scale calculator",
+      "image resize scale multiplier",
+      "retina 2x 3x resolution scaler",
+      "aspect ratio multiplier tool",
+      "downscale resolution calculator"
+    ],
+    "primaryKeywords": [
+      "aspect ratio scale multiplier",
+      "resolution scale multiplier",
+      "image dimension multiplier",
+      "scale aspect ratio online"
+    ],
+    "secondaryKeywords": [
+      "2x 3x asset scaling dimensions",
+      "calculate 50 percent image resolution",
+      "video resolution scale matrix"
+    ],
+    "targetUsers": [
+      "Game Developers",
+      "UI/UX Designers",
+      "Video Editors",
+      "App Developers",
+      "Graphic Designers"
+    ],
+    "badge": "Design",
+    "userProblem": "Designers and developers building responsive apps or video assets need to calculate exact scaled pixel dimensions across standard multipliers (0.5x, 0.75x, 1x, 1.5x, 2x Retina, 3x, 4x) while preserving aspect ratio lock.",
+    "searchIntent": "Scale base image or video dimensions across a comprehensive matrix of fractional and multiple scale factors.",
+    "resultInterpretation": "Calculates scaled widths and heights across 10 preset multipliers (0.25x to 4.0x) and custom percentages with Megapixel (MP) calculations.",
+    "practicalGuidance": "Mobile app UI assets require @1x, @2x (Retina), and @3x (Plus/Max) pixel asset exports.",
+    "limitations": "Calculates integer pixel dimensions rounded to nearest whole pixel.",
+    "formula": "Proportional Scaling: Scaled_W = Round(Base_W * Scale); Scaled_H = Round(Base_H * Scale)",
+    "trustNotes": "100% Client-Side calculation.",
+    "related": [
+      "aspect-ratio-calculator",
+      "aspect-ratio-resizer",
+      "aspect-ratio-crop-previewer",
+      "social-media-image-resizer"
+    ],
+    "seo": {
+      "title": "Aspect Ratio Scale Multiplier — Resolution & Asset Scaler",
+      "metaDescription": "Scale image and video resolutions by custom multipliers (0.5x, 1.5x, 2x Retina, 3x, 4x). Locks aspect ratio and calculates Megapixel dimensions. Free tool.",
+      "whatIsThis": "A design utility that calculates proportional pixel dimensions across multiple scaling factors.",
+      "howItWorks": "1. Enter original base width and height.\n2. View full scale multiplier matrix from 0.25x downscales to 4x upscales.\n3. Adjust custom percentage slider to view specific target dimensions.",
+      "whyUseIt": "Eliminates math errors when exporting responsive icon sets, video renders, and HiDPI graphic assets.",
+      "faqs": [
+        {
+          "question": "What does @2x and @3x scale mean in app design?",
+          "answer": "@2x and @3x refer to 200% and 300% asset resolutions designed for high-density Apple Retina and Android high-DPI displays."
+        },
+        {
+          "question": "How do you scale a 1920x1080 video by 150%?",
+          "answer": "Multiplying 1920 by 1.5 gives 2880 px width, and 1080 by 1.5 gives 1620 px height (2880 x 1620 px @ 16:9)."
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-cleaner-formatter",
+    "name": "Text Cleaner, Whitespace Stripper & Formatter",
+    "slug": "text-cleaner-formatter",
+    "category": "education",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "text cleaner",
+      "remove extra spaces from text",
+      "strip blank lines online",
+      "clean text whitespace",
+      "normalize smart quotes online",
+      "remove html tags from text"
+    ],
+    "primaryKeywords": [
+      "text cleaner",
+      "whitespace stripper",
+      "clean text online",
+      "remove empty lines from text"
+    ],
+    "secondaryKeywords": [
+      "normalize curly quotes to straight quotes",
+      "strip html tags from copied text",
+      "collapse multiple spaces tool"
+    ],
+    "targetUsers": [
+      "Writers",
+      "Copywriters",
+      "Students",
+      "Developers",
+      "Editors"
+    ],
+    "badge": "Everyday",
+    "userProblem": "Writers and programmers copying text from PDFs, emails, or CMS editors end up with unwanted blank lines, double spaces, curly smart quotes, and rogue HTML tags that need instant cleanup.",
+    "searchIntent": "Clean and format messy text by stripping blank lines, collapsing multiple spaces, trimming line edges, and normalizing punctuation in 1 click.",
+    "resultInterpretation": "Applies real-time text sanitization rules (strips blank lines, collapses spaces, removes HTML tags, normalizes quotes/dashes, applies casing) with word count statistics.",
+    "practicalGuidance": "Straightening smart quotes (`“”` to `\"\"`) prevents syntax errors in programming scripts and code snippets.",
+    "limitations": "Processes plaintext and sanitized HTML strings in browser memory.",
+    "formula": "Regex Normalizer: Text.replace(/\\s+/g, ' ').replace(/[“”]/g, '\"')",
+    "trustNotes": "100% Client-Side. Your private drafts and documents never leave your browser.",
+    "related": [
+      "case-converter",
+      "word-counter",
+      "list-cleaner-deduplicator",
+      "slug-generator"
+    ],
+    "seo": {
+      "title": "Text Cleaner — Strip Blank Lines & Remove Extra Spaces Online",
+      "metaDescription": "Clean messy text online. Strip empty lines, remove duplicate spaces, trim line edges, remove HTML tags, and normalize curly quotes. 100% private in-browser tool.",
+      "whatIsThis": "A text sanitization utility that strips formatting artifacts, extra whitespace, and inconsistent punctuation from copied text.",
+      "howItWorks": "1. Paste messy text into the input pane.\n2. Toggle cleaning filters (strip blank lines, collapse spaces, remove HTML, straighten quotes).\n3. Copy the cleaned text in 1 click.",
+      "whyUseIt": "Fixes broken copy-pasted text from PDFs and websites in seconds.",
+      "faqs": [
+        {
+          "question": "Does this tool remove HTML tags from copied text?",
+          "answer": "Yes. Toggling 'Strip HTML Tags' removes all `<p>`, `<span>`, `<div>`, and inline formatting tags while preserving plain text content."
+        },
+        {
+          "question": "Can I convert smart curly quotes to straight quotes?",
+          "answer": "Yes. It automatically normalizes curly quotes (“ ” ‘ ’) into standard straight ASCII quotes (\" ')."
+        }
+      ]
+    }
+  },
+  {
+    "id": "investment-doubling-rule-of-72-calculator",
+    "name": "Rule of 72 & Compound Doubling Time Calculator",
+    "slug": "investment-doubling-rule-of-72-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "rule of 72 calculator",
+      "compound doubling time calculator",
+      "how long to double money calculator",
+      "rule of 72 formula online",
+      "investment doubling schedule",
+      "compound interest doubling rate"
+    ],
+    "primaryKeywords": [
+      "rule of 72 calculator",
+      "doubling time calculator",
+      "how long to double money",
+      "rule of 72 formula"
+    ],
+    "secondaryKeywords": [
+      "exact logarithmic compound doubling time",
+      "rule of 72 vs exact formula",
+      "investment doubling milestones table"
+    ],
+    "targetUsers": [
+      "Investors",
+      "Retirement Savers",
+      "Financial Advisors",
+      "Economics Students"
+    ],
+    "badge": "Popular",
+    "userProblem": "Investors evaluating compound growth want to calculate how many years it will take for their money to double at a given annual interest rate using the Rule of 72 mental shortcut and exact logarithmic formulas.",
+    "searchIntent": "Calculate the exact and approximate number of years required to double an investment principal based on annual compound return rate.",
+    "resultInterpretation": "Calculates Rule of 72 approximate doubling years, exact logarithmic compound doubling time, accuracy delta, and multi-decade doubling milestones (1x, 2x, 4x, 8x, 16x).",
+    "practicalGuidance": "The Rule of 72 is most accurate for return rates between 6% and 10%.",
+    "limitations": "Calculates constant annual compounding returns without additional deposits or withdrawals.",
+    "formula": "Rule of 72: Years ≈ 72 / r; Exact Formula: Years = ln(2) / ln(1 + r)",
+    "trustNotes": "100% Client-Side financial modeling.",
+    "related": [
+      "cagr-calculator",
+      "compound-interest-calculator",
+      "roi-investment-calculator",
+      "compound-savings-goal-calculator"
+    ],
+    "seo": {
+      "title": "Rule of 72 Calculator — Investment Doubling Time Estimator",
+      "metaDescription": "Calculate how long it takes to double your money with compound interest. Compares Rule of 72 vs exact logarithmic formulas with multi-year milestone schedule.",
+      "whatIsThis": "A personal finance calculator that computes the time required for an investment to double in value.",
+      "howItWorks": "1. Enter your expected annual return rate (% APY).\n2. Enter starting principal amount.\n3. View Rule of 72 doubling years, exact compounding time, and milestone projections.",
+      "whyUseIt": "Demonstrates the long-term exponential power of compound interest for retirement planning.",
+      "faqs": [
+        {
+          "question": "What is the Rule of 72?",
+          "answer": "The Rule of 72 is a mental math rule stating that dividing 72 by your annual interest rate gives the approximate number of years required to double your investment."
+        },
+        {
+          "question": "How long does it take to double money at 8% interest?",
+          "answer": "At 8% annual return, it takes approximately 9.0 years (Rule of 72: 72/8 = 9) or exactly 9.01 years using compound logarithms."
+        }
+      ]
+    }
+  },
+  {
+    "id": "decimal-to-fraction-converter",
+    "name": "Decimal to Fraction & Mixed Number Converter",
+    "slug": "decimal-to-fraction-converter",
+    "category": "education",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "decimal to fraction converter",
+      "convert decimal to fraction",
+      "decimal to mixed number calculator",
+      "simplify decimal to fraction",
+      "0.375 as a fraction",
+      "fraction calculator online"
+    ],
+    "primaryKeywords": [
+      "decimal to fraction converter",
+      "decimal to fraction",
+      "convert decimal to fraction",
+      "decimal to mixed number"
+    ],
+    "secondaryKeywords": [
+      "simplify fraction using gcd",
+      "decimal to proper and improper fraction",
+      "fraction percentage converter"
+    ],
+    "targetUsers": [
+      "Students",
+      "Carpenters",
+      "Machinists",
+      "Chefs",
+      "Engineers"
+    ],
+    "badge": "Everyday",
+    "userProblem": "Students, carpenters, and engineers working with decimal measurements need to convert decimals into simplified fractions and mixed numbers (e.g. `0.375` to `3/8` or `2.625` to `2 5/8`) with GCD reduction.",
+    "searchIntent": "Convert decimal numbers into simplified proper fractions, improper fractions, and mixed numbers with step-by-step GCD breakdown.",
+    "resultInterpretation": "Reduces decimal numbers into lowest-term simplified fractions, mixed numbers, and percentage equivalents using Euclidean Greatest Common Divisor (GCD) math.",
+    "practicalGuidance": "Essential for woodworking and mechanical fabrication where imperial ruler measurements use fractions (1/8\", 1/16\", 1/32\", 1/64\").",
+    "limitations": "Supports terminating and recurring decimal approximations.",
+    "formula": "Euclidean GCD Algorithm: GCD(A, B) ➔ Numerator / GCD, Denominator / GCD",
+    "trustNotes": "100% Client-Side calculation.",
+    "related": [
+      "unit-converter",
+      "percentage-calculator",
+      "hex-decimal-binary-converter",
+      "aspect-ratio-calculator"
+    ],
+    "seo": {
+      "title": "Decimal to Fraction Converter — Simplified & Mixed Number Tool",
+      "metaDescription": "Convert decimals to simplified fractions and mixed numbers (e.g. 0.375 ➔ 3/8). Free math calculator with step-by-step GCD reduction and percentage equivalents.",
+      "whatIsThis": "A mathematical utility that converts decimal numbers into simplified lowest-term fractions.",
+      "howItWorks": "1. Enter any decimal number (e.g. 0.375, 2.625).\n2. Instantly view simplified fraction, mixed number, and percentage.\n3. Copy the fraction in 1 click.",
+      "whyUseIt": "Eliminates guesswork when converting metric/decimal numbers to fraction ruler measurements.",
+      "faqs": [
+        {
+          "question": "What is 0.375 as a fraction?",
+          "answer": "0.375 equals 3/8 in simplified fraction form (375/1000 reduced by dividing numerator and denominator by 125)."
+        },
+        {
+          "question": "What is a mixed number?",
+          "answer": "A mixed number combines a whole integer and a proper fraction (for example, 2.625 is written as 2 5/8)."
+        }
+      ]
+    }
+  },
+  {
+    "id": "html-entity-encoder-decoder",
+    "name": "HTML Entity Encoder & Decoder Tool",
+    "slug": "html-entity-encoder-decoder",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "html entity encoder",
+      "html entity decoder",
+      "encode html special characters",
+      "decode html entities online",
+      "html escape unescape tool",
+      "html entities reference"
+    ],
+    "primaryKeywords": [
+      "html entity encoder",
+      "html entity decoder",
+      "encode html entities",
+      "decode html entities"
+    ],
+    "secondaryKeywords": [
+      "html special characters table",
+      "escape quotes and brackets html",
+      "browser domparser entity decoder"
+    ],
+    "targetUsers": [
+      "Web Developers",
+      "Frontend Engineers",
+      "Technical Writers",
+      "Security Analysts"
+    ],
+    "badge": "High Usage",
+    "userProblem": "Web developers and technical writers writing HTML code snippets need to escape special characters (`<`, `>`, `&`, `\"`, `'`) into HTML entities to prevent XSS vulnerabilities and render code cleanly on web pages.",
+    "searchIntent": "Bi-directionally encode and decode HTML special characters, named entities, and ASCII symbols with a quick reference matrix.",
+    "resultInterpretation": "Translates raw code characters into HTML entity representations (`&lt;`, `&gt;`, `&amp;`, `&quot;`, `&#39;`) and decodes entities back into plain text.",
+    "practicalGuidance": "Always escape user-submitted HTML inputs to prevent Cross-Site Scripting (XSS) injection attacks.",
+    "limitations": "Processes standard named, decimal, and hexadecimal HTML5 entities.",
+    "formula": "Entity Translation Map: Char ➔ &name; / &#decimal;",
+    "trustNotes": "100% Client-Side. Text is processed in browser memory.",
+    "related": [
+      "html-to-markdown-converter",
+      "url-encoder",
+      "url-decoder",
+      "base64-encoder"
+    ],
+    "seo": {
+      "title": "HTML Entity Encoder & Decoder — Escape HTML Characters Online",
+      "metaDescription": "Encode and decode HTML special characters and named entities (&lt;, &gt;, &amp;, &quot;). Free developer tool with quick reference entity lookup matrix.",
+      "whatIsThis": "A developer tool that encodes raw characters into HTML entities and decodes HTML entities into plaintext.",
+      "howItWorks": "1. Select 'Encode' or 'Decode' mode.\n2. Paste your text or HTML code.\n3. Copy the converted string or copy individual entities from the quick reference table.",
+      "whyUseIt": "Prevents XSS attacks and ensures HTML code blocks display correctly without breaking web page layouts.",
+      "faqs": [
+        {
+          "question": "What is the HTML entity for an ampersand (&)?",
+          "answer": "The HTML entity for an ampersand is `&amp;`."
+        },
+        {
+          "question": "Why do I need to escape HTML characters?",
+          "answer": "Escaping characters like `<` and `>` prevents web browsers from interpreting them as executable HTML tags, preventing XSS security flaws."
+        }
+      ]
+    }
+  },
+  {
+    "id": "simple-interest-calculator",
+    "name": "Simple Interest Formula (I = P × r × t) Calculator",
+    "slug": "simple-interest-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "simple interest calculator",
+      "simple interest formula calculator",
+      "calculate simple interest online",
+      "i = prt calculator",
+      "simple vs compound interest calculator",
+      "short term loan interest calculator"
+    ],
+    "primaryKeywords": [
+      "simple interest calculator",
+      "simple interest formula",
+      "calculate simple interest",
+      "i prt calculator"
+    ],
+    "secondaryKeywords": [
+      "simple interest vs compound comparison",
+      "annual simple interest schedule",
+      "fixed rate simple interest tool"
+    ],
+    "targetUsers": [
+      "Students",
+      "Borrowers",
+      "Lenders",
+      "Accountants",
+      "Financial Planners"
+    ],
+    "badge": "Popular",
+    "userProblem": "Students learning financial mathematics and borrowers taking short-term simple interest loans need to compute exact interest earned ($I = P \times r \times t$), final total balance, and compare against compound growth.",
+    "searchIntent": "Calculate simple interest from principal, rate, and time, and compare against compound growth over time.",
+    "resultInterpretation": "Calculates simple interest ($I = P \times r \times t$), total future balance, year-by-year schedule, and shows the compound interest delta.",
+    "practicalGuidance": "Simple interest does not compound: interest is calculated only on the original principal balance each period.",
+    "limitations": "Calculates non-compounding simple interest.",
+    "formula": "Simple Interest: I = Principal * Rate * Time; Total Balance = Principal + I",
+    "trustNotes": "100% Client-Side calculation.",
+    "related": [
+      "compound-interest-calculator",
+      "cagr-calculator",
+      "loan-calculator",
+      "investment-doubling-rule-of-72-calculator"
+    ],
+    "seo": {
+      "title": "Simple Interest Calculator — Formula (I = P × r × t) & Schedule",
+      "metaDescription": "Calculate simple interest using the I = P × r × t formula. Free online calculator with total balance, year-by-year schedule, and compound interest comparison.",
+      "whatIsThis": "A financial mathematics utility that computes simple non-compounding interest on principal loans and deposits.",
+      "howItWorks": "1. Enter starting principal amount ($).\n2. Enter annual interest rate (% APR) and time duration (years).\n3. View total simple interest earned, future balance, and compound interest delta.",
+      "whyUseIt": "Essential for calculating auto loans, short-term promissory notes, and classroom math assignments.",
+      "faqs": [
+        {
+          "question": "What is the simple interest formula?",
+          "answer": "The formula is `I = P × r × t`, where `I` is Interest, `P` is Principal, `r` is Annual Interest Rate (as a decimal), and `t` is Time in years."
+        },
+        {
+          "question": "How does simple interest differ from compound interest?",
+          "answer": "Simple interest is paid only on the original principal. Compound interest earns interest on both the principal and previously accumulated interest."
+        }
+      ]
+    }
+  },
+  {
+    "id": "random-string-token-generator",
+    "name": "Random String, Secret Key & API Token Generator",
+    "slug": "random-string-token-generator",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "random string generator",
+      "api token generator",
+      "secret key generator online",
+      "cryptographic random token generator",
+      "hex string generator",
+      "alphanumeric random string"
+    ],
+    "primaryKeywords": [
+      "random string generator",
+      "api token generator",
+      "secret key generator",
+      "random token generator"
+    ],
+    "secondaryKeywords": [
+      "generate 32 char hex token",
+      "cryptographic entropy token tool",
+      "base64 url random string builder"
+    ],
+    "targetUsers": [
+      "Backend Developers",
+      "DevOps Engineers",
+      "Cybersecurity Specialists",
+      "API Designers"
+    ],
+    "badge": "High Usage",
+    "userProblem": "Developers and system administrators provisioning API keys, webhook secrets, encryption salts, and session tokens need cryptographically secure random strings with custom lengths and character sets.",
+    "searchIntent": "Generate cryptographically secure random alphanumeric, hexadecimal, or symbol strings with entropy metrics and 1-click copy.",
+    "resultInterpretation": "Generates cryptographically random string tokens using native Web Crypto APIs (`window.crypto.getRandomValues`) with entropy bit calculations.",
+    "practicalGuidance": "A 32-character alphanumeric token provides ~190 bits of cryptographic entropy, making brute-force attacks mathematically infeasible.",
+    "limitations": "Generates tokens up to 256 characters locally in browser memory.",
+    "formula": "Cryptographic Entropy: Bits = Length * log2(Charset_Size)",
+    "trustNotes": "100% Client-Side Web Crypto generation. Private keys never leave your device.",
+    "related": [
+      "password-generator",
+      "uuid-v4-batch-generator",
+      "hash-generator",
+      "jwt-payload-inspector-signer"
+    ],
+    "seo": {
+      "title": "Random String & API Token Generator — Cryptographic Secret Keys",
+      "metaDescription": "Generate cryptographically secure random strings, API keys, and secret tokens online. Supports alphanumeric, hex, and base64url charsets with entropy metrics.",
+      "whatIsThis": "A cybersecurity developer utility that produces cryptographically random string tokens for API authentication.",
+      "howItWorks": "1. Select token length (8 to 256 chars).\n2. Choose character set preset (Alphanumeric, Hexadecimal, Base64URL, Symbols).\n3. Generate and copy secure tokens in 1 click.",
+      "whyUseIt": "Generates secure API secrets and webhook keys without using third-party server endpoints.",
+      "faqs": [
+        {
+          "question": "How are these random tokens generated?",
+          "answer": "Tokens are generated using your browser's cryptographically secure pseudo-random number generator (`window.crypto.getRandomValues`)."
+        },
+        {
+          "question": "What is the recommended length for an API secret token?",
+          "answer": "A minimum length of 32 characters (alphanumeric or hex) is standard practice for secure API secret keys and session tokens."
+        }
+      ]
+    }
   }
 ]
