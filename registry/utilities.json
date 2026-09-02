@@ -14799,5 +14799,645 @@
         }
       ]
     }
+  },
+  {
+    "id": "curl-to-r-httr-converter",
+    "name": "cURL to R (httr & httr2) Code Converter",
+    "slug": "curl-to-r-httr-converter",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "curl to r converter",
+      "convert curl to httr2",
+      "curl to r httr code online",
+      "r language api request from curl",
+      "httr2 req_perform from curl command",
+      "data science curl to r translation"
+    ],
+    "primaryKeywords": [
+      "curl to r converter",
+      "convert curl to r",
+      "curl to httr2",
+      "curl to httr"
+    ],
+    "secondaryKeywords": [
+      "r stats api request headers json",
+      "httr2 native pipe request builder",
+      "convert bash curl to r data frame api"
+    ],
+    "targetUsers": [
+      "Data Scientists",
+      "R Programmers",
+      "Bioinformatics Researchers",
+      "Quantitative Analysts"
+    ],
+    "badge": "High Usage",
+    "userProblem": "Data scientists, academic researchers, and R programmers consuming web APIs need to translate bash cURL commands into idiomatic R code using modern `httr2` or classic `httr` packages.",
+    "searchIntent": "Convert bash cURL commands into clean R httr2 and httr HTTP request code.",
+    "resultInterpretation": "Parses cURL commands into native R `httr2` request pipelines using the modern native pipe (`|>`), custom headers, JSON body payloads, and response JSON parsing.",
+    "practicalGuidance": "Generates clean R code compatible with modern tidyverse workflows and R 4.1+ native pipes.",
+    "limitations": "Parses standard HTTP/HTTPS cURL CLI syntax.",
+    "formula": "CLI AST Parser: cURL Command ➔ R httr2 / httr Code Synthesis",
+    "trustNotes": "100% Client-Side. Zero API keys or tokens transmitted.",
+    "related": [
+      "curl-to-python-requests-converter",
+      "curl-to-powershell-restmethod-converter",
+      "curl-to-ruby-net-http-converter",
+      "curl-to-go-http-converter"
+    ],
+    "seo": {
+      "title": "cURL to R Converter — Convert cURL to R (httr2 & httr) Online",
+      "metaDescription": "Convert cURL commands to R httr2 and httr code online. Formats headers, JSON payloads, and response parsing for data science workflows. Free tool.",
+      "whatIsThis": "A developer data science utility that translates bash cURL commands into clean R code.",
+      "howItWorks": "1. Choose between modern `httr2` or classic `httr`.\n2. Paste your cURL command into the editor.\n3. Copy the clean R script in 1 click for RStudio.",
+      "whyUseIt": "Eliminates repetitive API integration boilerplate when pulling external datasets into R data frames.",
+      "faqs": [
+        {
+          "question": "What is the difference between httr and httr2 in R?",
+          "answer": "httr2 is the modern, faster redesign of httr by Posit/RStudio designed specifically to work with R's native pipe (`|>`) and explicit request pipelines."
+        },
+        {
+          "question": "Does this tool transmit my secret API tokens?",
+          "answer": "No. All conversion is processed 100% client-side in your local browser JavaScript engine. No code or API tokens are sent over the network."
+        }
+      ]
+    }
+  },
+  {
+    "id": "custodial-account-ugma-utma-tax-calculator",
+    "name": "Custodial Account (UGMA/UTMA) Growth & Kiddie Tax Calculator",
+    "slug": "custodial-account-ugma-utma-tax-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "ugma utma calculator",
+      "custodial account calculator",
+      "kiddie tax calculator ugma utma",
+      "ugma utma growth calculator",
+      "custodial account tax on dividends",
+      "minor custodial investment account calculator"
+    ],
+    "primaryKeywords": [
+      "ugma utma calculator",
+      "custodial account calculator",
+      "kiddie tax calculator",
+      "utma growth calculator"
+    ],
+    "secondaryKeywords": [
+      "unearned income tax threshold child minor",
+      "transfer age 18 21 custodial account",
+      "ugma vs 529 plan wealth projection"
+    ],
+    "targetUsers": [
+      "Parents",
+      "Grandparents",
+      "Estate Planners",
+      "High-Net-Worth Families"
+    ],
+    "badge": "Popular",
+    "userProblem": "Parents and grandparents gifting wealth to minors through UGMA/UTMA custodial accounts need to project portfolio growth to the age of majority (18 or 21) while calculating IRS 'Kiddie Tax' liabilities on unearned investment gains.",
+    "searchIntent": "Calculate UGMA/UTMA custodial investment growth and estimate annual IRS Kiddie Tax liabilities on minor dividends.",
+    "resultInterpretation": "Calculates future custodial account value at legal transfer age, total deposited principal, compound growth, and estimates annual IRS Kiddie Tax across tax-free, child-rate, and parent-rate brackets.",
+    "practicalGuidance": "Unlike a 529 plan, custodial assets become the irrevocable property of the beneficiary at the age of majority to spend on anything.",
+    "limitations": "Models standard IRS Form 8615 unearned income rules.",
+    "formula": "FV = PV*(1+r/12)^(12*y) + PMT*(((1+r/12)^(12*y) - 1)/(r/12)); KiddieTax evaluated on unearned income brackets ($1,300 thresholds)",
+    "trustNotes": "100% Client-Side financial modeling.",
+    "related": [
+      "529-college-savings-growth-calculator",
+      "compound-savings-goal-calculator",
+      "target-date-fund-allocation-calculator",
+      "traditional-vs-roth-401k-calculator"
+    ],
+    "seo": {
+      "title": "UGMA UTMA Calculator — Custodial Account Growth & Kiddie Tax Tool",
+      "metaDescription": "Calculate UGMA/UTMA custodial account growth to age 18 or 21 and estimate annual IRS Kiddie Tax on unearned dividends. Free family finance tool.",
+      "whatIsThis": "A wealth transfer utility that models custodial account compound growth and IRS Kiddie Tax obligations for minors.",
+      "howItWorks": "1. Enter child's age, transfer age (18 or 21), initial principal, and monthly deposit.\n2. Select parent's marginal tax bracket.\n3. View projected account balance at adulthood and estimated annual Kiddie Tax.",
+      "whyUseIt": "Helps parents plan generational wealth transfers while understanding minor tax liabilities.",
+      "faqs": [
+        {
+          "question": "What is the IRS Kiddie Tax?",
+          "answer": "The Kiddie Tax prevents parents from avoiding taxes by transferring investment assets to children. The first $1,300 of a child's unearned income is tax-free, the next $1,300 is taxed at the child's rate (10%), and any excess is taxed at the parents' marginal rate."
+        },
+        {
+          "question": "What is the key difference between UGMA and UTMA?",
+          "answer": "UGMA (Uniform Gifts to Minors Act) is limited to financial cash, stocks, and bonds and transfers at age 18. UTMA (Uniform Transfers to Minors Act) allows any asset including real estate, fine art, and patents, and typically transfers at age 21."
+        }
+      ]
+    }
+  },
+  {
+    "id": "css-mesh-gradient-generator",
+    "name": "CSS Mesh Gradient Background Generator",
+    "slug": "css-mesh-gradient-generator",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "css mesh gradient generator",
+      "mesh gradient background css",
+      "pure css mesh gradient generator",
+      "radial gradient mesh generator online",
+      "modern saas background gradient generator",
+      "aurora gradient css generator"
+    ],
+    "primaryKeywords": [
+      "css mesh gradient generator",
+      "mesh gradient generator",
+      "css background gradient maker",
+      "aurora gradient css"
+    ],
+    "secondaryKeywords": [
+      "multi point radial gradient blend css",
+      "modern web3 landing page mesh background",
+      "pure css zero javascript mesh gradient"
+    ],
+    "targetUsers": [
+      "UI Designers",
+      "Frontend Developers",
+      "Landing Page Creators",
+      "Web Developers"
+    ],
+    "badge": "Design",
+    "userProblem": "Web designers and frontend developers creating modern SaaS landing pages and dark-mode dashboards need an interactive visual tool to generate pure CSS multi-point radial mesh gradients without heavy image assets.",
+    "searchIntent": "Design multi-point pure CSS radial mesh gradient backgrounds with live canvas controls and copyable code.",
+    "resultInterpretation": "Configures 4-point radial coordinates (X%, Y%), color stops, spread blur radius, and base color, rendering an interactive preview and clean copyable CSS.",
+    "practicalGuidance": "Pure CSS mesh gradients render instantly, adapt smoothly to responsive screen sizes, and add 0 KB to network image download budgets.",
+    "limitations": "Generates cross-browser CSS3 multi-radial background layers.",
+    "formula": "Layered Radial Synthesis: background-image: radial-gradient(at P1), radial-gradient(at P2), ...",
+    "trustNotes": "100% Client-Side visual rendering.",
+    "related": [
+      "css-conic-gradient-pie-chart-generator",
+      "css-stripes-and-patterns-generator",
+      "css-gradient-generator",
+      "css-glassmorphism-generator"
+    ],
+    "seo": {
+      "title": "CSS Mesh Gradient Generator — Pure CSS Background Maker Online",
+      "metaDescription": "Create modern multi-color CSS mesh gradient backgrounds with interactive canvas controls. Generates pure CSS code with zero images or JavaScript. Free tool.",
+      "whatIsThis": "A visual design utility that creates multi-layered radial mesh gradient backgrounds for modern web interfaces.",
+      "howItWorks": "1. Pick a preset (Aurora Glow, Sunset, Cyberpunk) or adjust point colors and coordinates.\n2. Inspect real-time rendering on the interactive preview canvas.\n3. Copy the production CSS snippet in 1 click.",
+      "whyUseIt": "Delivers the trendy SaaS landing page gradient look with pure CSS rather than bloated image files.",
+      "faqs": [
+        {
+          "question": "Does this require any external images or Canvas libraries?",
+          "answer": "No. The entire mesh effect is created using pure CSS `background-image: radial-gradient(...)` layers and renders with zero dependencies."
+        },
+        {
+          "question": "Can I animate CSS mesh gradients?",
+          "answer": "Yes. You can animate the `background-position` or color stops using standard CSS `@keyframes` animations for a dynamic ambient glow."
+        }
+      ]
+    }
+  },
+  {
+    "id": "reverse-dns-ptr-record-generator",
+    "name": "Reverse DNS (PTR) Record & in-addr.arpa Zone Generator",
+    "slug": "reverse-dns-ptr-record-generator",
+    "category": "network",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "reverse dns ptr generator",
+      "in addr arpa generator",
+      "reverse dns record maker",
+      "ip6 arpa ptr generator online",
+      "bind reverse dns zone file generator",
+      "mail server reverse dns ptr format"
+    ],
+    "primaryKeywords": [
+      "reverse dns ptr generator",
+      "in-addr.arpa generator",
+      "reverse dns record",
+      "ptr record generator"
+    ],
+    "secondaryKeywords": [
+      "ipv4 reversed octets in addr arpa",
+      "ipv6 nibble reversed ip6 arpa zone file",
+      "dig reverse dns lookup test command"
+    ],
+    "targetUsers": [
+      "Mail Server Administrators",
+      "System Engineers",
+      "DevOps Professionals",
+      "Network Administrators"
+    ],
+    "badge": "Network",
+    "userProblem": "Mail server administrators and network engineers configuring email deliverability (SPF/DKIM/rDNS) need to generate valid `in-addr.arpa` and `ip6.arpa` reverse DNS PTR zone records and verification dig commands.",
+    "searchIntent": "Generate valid IPv4 and IPv6 Reverse DNS PTR records, zone file syntax, and terminal verification commands.",
+    "resultInterpretation": "Reverses IPv4 octets into `in-addr.arpa.` and expands/reverses IPv6 nibbles into `ip6.arpa.`, generating standard BIND PTR zone records and terminal `dig -x` verification commands.",
+    "practicalGuidance": "Major mail providers (Google, Microsoft, Yahoo) immediately reject or spam incoming SMTP mail from servers lacking a valid Forward-Confirmed Reverse DNS (FCrDNS) PTR record.",
+    "limitations": "Generates RFC 1035 and RFC 3596 standard reverse DNS records.",
+    "formula": "IPv4: [d.c.b.a.in-addr.arpa. TTL IN PTR host.]; IPv6: [nibbles_reversed.ip6.arpa. TTL IN PTR host.]",
+    "trustNotes": "100% Client-Side. Zero DNS queries transmitted.",
+    "related": [
+      "ipv4-to-ipv6-mapping-converter",
+      "dns-record-generator",
+      "email-dns-records-generator",
+      "ip-address-to-binary-hex-converter"
+    ],
+    "seo": {
+      "title": "Reverse DNS PTR Generator — in-addr.arpa & ip6.arpa Zone Tool",
+      "metaDescription": "Generate valid Reverse DNS PTR records and BIND zone file lines for IPv4 and IPv6. Includes terminal dig verification commands. 100% private. Free tool.",
+      "whatIsThis": "A network engineering utility that constructs reverse DNS PTR records and zone files for IP addresses.",
+      "howItWorks": "1. Enter an IPv4 or IPv6 address and the target FQDN hostname (e.g. mail.example.com).\n2. Set TTL (default 3600s).\n3. Copy the BIND PTR record and terminal `dig -x` test command in 1 click.",
+      "whyUseIt": "Guarantees proper email server deliverability by preventing reverse DNS misconfigurations.",
+      "faqs": [
+        {
+          "question": "Why is a Reverse DNS (PTR) record critical for email servers?",
+          "answer": "Spam filters check whether the sending server's IP address resolves backwards to the domain claimed in the HELO/EHLO handshake. Missing or mismatched PTR records cause severe email deliverability failures."
+        },
+        {
+          "question": "Who controls my Reverse DNS PTR records?",
+          "answer": "Reverse DNS is controlled by the entity that owns the IP address allocation (usually your hosting provider, VPS provider, or ISP), not your domain registrar."
+        }
+      ]
+    }
+  },
+  {
+    "id": "real-estate-70-percent-rule-house-flipping-calculator",
+    "name": "Real Estate 70% Rule & House Flipping MAO Calculator",
+    "slug": "real-estate-70-percent-rule-house-flipping-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "70 percent rule calculator real estate",
+      "house flipping calculator",
+      "maximum allowable offer mao calculator",
+      "70 rule house flip calculator",
+      "after repair value arv 70 rule calculator",
+      "wholesaling real estate offer calculator"
+    ],
+    "primaryKeywords": [
+      "70 percent rule calculator",
+      "house flipping calculator",
+      "maximum allowable offer calculator",
+      "mao calculator"
+    ],
+    "secondaryKeywords": [
+      "arv times 70 percent minus repairs formula",
+      "real estate flipper profit margin calculator",
+      "holding costs and closing fees real estate flip"
+    ],
+    "targetUsers": [
+      "House Flippers",
+      "Real Estate Wholesalers",
+      "Property Investors",
+      "Real Estate Agents"
+    ],
+    "badge": "Popular",
+    "userProblem": "House flippers and real estate wholesalers analyzing distressed off-market properties need to calculate their Maximum Allowable Offer (MAO) using the classic 70% Rule to ensure adequate profit margins after renovation costs.",
+    "searchIntent": "Calculate the Maximum Allowable Offer (MAO) for a house flip using the 70% rule, estimated repairs, and target profit.",
+    "resultInterpretation": "Calculates the strict Maximum Allowable Offer (MAO), projected net flipping profit after holding/closing fees, and return on invested capital across 65%, 70%, and 75% rule models.",
+    "practicalGuidance": "Bidding above the 70% MAO substantially increases the risk of taking a financial loss if renovation surprises or market downturns occur.",
+    "limitations": "Calculates standard rule-of-thumb MAO guidelines.",
+    "formula": "MAO = (ARV * Rule_Percentage) - Estimated_Repairs; Net_Profit = ARV - (MAO + Repairs + Carrying_Costs)",
+    "trustNotes": "100% Client-Side financial calculation.",
+    "related": [
+      "real-estate-cash-on-cash-return-calculator",
+      "real-estate-cap-rate-noi-calculator",
+      "home-affordability-debt-to-income-calculator",
+      "roi-investment-calculator"
+    ],
+    "seo": {
+      "title": "70% Rule Calculator — House Flipping & Maximum Allowable Offer (MAO)",
+      "metaDescription": "Calculate your Maximum Allowable Offer (MAO) for house flips using the 70% rule. Estimate repairs, holding costs, and net profit margins. Free real estate tool.",
+      "whatIsThis": "A real estate acquisition utility that calculates maximum acquisition offers for house flipping and wholesaling.",
+      "howItWorks": "1. Enter After Repair Value (ARV $) and estimated repair costs.\n2. Choose rule threshold (65%, 70%, 75%) and enter carrying fees.\n3. Instantly view your ceiling Maximum Allowable Offer (MAO) and projected profit.",
+      "whyUseIt": "Protects real estate investors from overpaying on renovation projects and losing capital.",
+      "faqs": [
+        {
+          "question": "What is the 70% rule in house flipping?",
+          "answer": "The 70% rule states that an investor should pay no more than 70% of the property's estimated After Repair Value (ARV), minus the cost of repairs needed. The remaining 30% covers holding costs, financing fees, realtor commissions, and the investor's profit margin."
+        },
+        {
+          "question": "When should an investor use a 65% or 75% rule instead?",
+          "answer": "In high interest rate environments or heavily distressed markets, conservative investors use a 65% rule for safety. In ultra-competitive, fast-appreciating markets, investors may stretch to a 75% rule."
+        }
+      ]
+    }
+  },
+  {
+    "id": "aspect-ratio-cinema-anamorphic-calculator",
+    "name": "Cinema Anamorphic Lens Desqueeze & Aspect Ratio Calculator",
+    "slug": "aspect-ratio-cinema-anamorphic-calculator",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "anamorphic lens calculator",
+      "anamorphic desqueeze calculator",
+      "2.39 cinemascope aspect ratio calculator",
+      "anamorphic squeeze factor aspect ratio",
+      "4 3 open gate anamorphic calculator",
+      "cinematography anamorphic timeline resolution"
+    ],
+    "primaryKeywords": [
+      "anamorphic calculator",
+      "anamorphic lens calculator",
+      "anamorphic desqueeze calculator",
+      "cinemascope aspect ratio calculator"
+    ],
+    "secondaryKeywords": [
+      "1.33x 1.5x 1.8x 2.0x anamorphic squeeze factor",
+      "timeline canvas resolution for anamorphic editing",
+      "sensor aspect ratio times squeeze factor formula"
+    ],
+    "targetUsers": [
+      "Cinematographers",
+      "Directors of Photography",
+      "Video Editors",
+      "Colorists"
+    ],
+    "badge": "Design",
+    "userProblem": "Cinematographers and video editors shooting with anamorphic lenses (1.33x, 1.5x, 1.8x, 2.0x) on 4:3, 16:9, or 3:2 camera sensors need to calculate the desqueezed aspect ratio, timeline canvas resolutions, and crop deltas for 2.39:1 Cinemascope.",
+    "searchIntent": "Calculate anamorphic lens desqueeze aspect ratios, timeline resolutions, and crop loss for cinematic delivery.",
+    "resultInterpretation": "Calculates final uncompressed desqueezed aspect ratio, square-pixel timeline editing resolution, standard 2.39:1 Cinemascope delivery canvas, and frame crop loss percentage.",
+    "practicalGuidance": "Shooting 2.0x squeeze lenses on 4:3 open-gate sensors produces a native 2.66:1 frame that requires only a modest 10% horizontal crop to achieve standard 2.39:1 Cinemascope.",
+    "limitations": "Calculates geometric aspect ratios and timeline canvas pixel resolutions.",
+    "formula": "Desqueezed_Ratio = Sensor_Ratio * Squeeze_Factor; Canvas_Width = Round(Height * Desqueezed_Ratio)",
+    "trustNotes": "100% Client-Side calculation.",
+    "related": [
+      "aspect-ratio-css-aspect-ratio-generator",
+      "aspect-ratio-print-dpi-resolution-calculator",
+      "aspect-ratio-letterbox-pillarbox-previewer",
+      "video-bitrate-file-size-calculator"
+    ],
+    "seo": {
+      "title": "Anamorphic Lens Calculator — Cinema Desqueeze & Aspect Ratio Tool",
+      "metaDescription": "Calculate anamorphic lens desqueeze aspect ratios, timeline canvas resolutions, and 2.39:1 Cinemascope crop deltas for 1.33x, 1.5x, and 2.0x lenses. Free tool.",
+      "whatIsThis": "A cinematography geometry utility that calculates anamorphic lens desqueeze dimensions and timeline editing resolutions.",
+      "howItWorks": "1. Select camera sensor mode (4:3 Open Gate, 3:2 Full Frame, 16:9, 17:9 DCI).\n2. Select anamorphic lens squeeze factor (1.33x, 1.5x, 1.6x, 1.8x, 2.0x).\n3. View final desqueezed ratio, timeline resolution, and 2.39:1 crop loss.",
+      "whyUseIt": "Determines the exact square-pixel canvas dimensions needed in DaVinci Resolve or Premiere Pro before shooting.",
+      "faqs": [
+        {
+          "question": "What is the standard aspect ratio for widescreen cinema?",
+          "answer": "The modern theatrical widescreen standard is 2.39:1 (often called 2.40:1 or Cinemascope)."
+        },
+        {
+          "question": "What happens when you use a 2.0x anamorphic lens on a 16:9 sensor?",
+          "answer": "A 2.0x anamorphic lens on a standard 16:9 (1.78:1) sensor produces a super-wide 3.56:1 frame. To deliver in 2.39:1, you must crop off roughly 33% of the sides of the frame."
+        }
+      ]
+    }
+  },
+  {
+    "id": "crontab-to-systemd-timer-converter",
+    "name": "Crontab to systemd Timer Unit Converter",
+    "slug": "crontab-to-systemd-timer-converter",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "cron to systemd converter",
+      "convert crontab to systemd timer",
+      "systemd oncalendar generator from cron",
+      "crontab to systemd timer unit file",
+      "migrate cron to systemd timer online",
+      "linux systemd timer generator"
+    ],
+    "primaryKeywords": [
+      "cron to systemd converter",
+      "convert cron to systemd",
+      "systemd timer generator",
+      "oncalendar generator"
+    ],
+    "secondaryKeywords": [
+      "systemd service and timer unit generator",
+      "migrate linux crontab to modern systemd timer",
+      "systemctl enable now timer commands"
+    ],
+    "targetUsers": [
+      "Linux System Administrators",
+      "DevOps Engineers",
+      "Site Reliability Engineers",
+      "Backend Developers"
+    ],
+    "badge": "High Usage",
+    "userProblem": "Linux administrators and DevOps engineers migrating legacy crontab jobs to modern `systemd` timers need a tool to translate 5-part cron syntax into `OnCalendar=...` expressions and generate complete `.timer` and `.service` unit files.",
+    "searchIntent": "Convert Linux crontab expressions into systemd OnCalendar syntax, .timer files, and .service files.",
+    "resultInterpretation": "Translates cron syntax into systemd `OnCalendar=` timestamps, generates production-ready `.timer` and `.service` unit files, and outputs `systemctl` installation commands.",
+    "practicalGuidance": "systemd timers provide superior reliability over cron with built-in execution logging in `journalctl`, cgroup resource limits, and missed-run recovery.",
+    "limitations": "Translates standard 5-part POSIX cron syntax.",
+    "formula": "Syntax Mapping: Cron [* * * * *] ➔ systemd [OnCalendar=*-*-* HH:MM:SS] Unit Synthesis",
+    "trustNotes": "100% Client-Side generation.",
+    "related": [
+      "crontab-schedule-next-runs-calculator",
+      "cron-schedule-human-expression-builder",
+      "crontab-generator-and-validator",
+      "cron-job-human-readable-explainer"
+    ],
+    "seo": {
+      "title": "Crontab to systemd Timer Converter — Migrate Cron to systemd Units",
+      "metaDescription": "Convert Linux crontab expressions into modern systemd OnCalendar timers, .service units, and systemctl commands online. Free Linux sysadmin tool.",
+      "whatIsThis": "A Linux system administration utility that translates legacy crontabs into modern systemd timer and service unit files.",
+      "howItWorks": "1. Enter a crontab expression, service name, and command path.\n2. Instantly generate both `.timer` and `.service` systemd unit files.\n3. Copy the files and deployment bash script in 1 click.",
+      "whyUseIt": "Modernizes scheduled tasks with unified journalctl logging, dependencies, and execution tracking.",
+      "faqs": [
+        {
+          "question": "Why use systemd timers instead of cron?",
+          "answer": "Systemd timers offer centralized logging in `journalctl`, execution failure alerts, dependency ordering (waiting for network), resource limits (CPU/RAM cgroups), and persistent catch-up if the server was powered off."
+        },
+        {
+          "question": "What does Persistent=true do in a systemd timer?",
+          "answer": "If the computer was asleep or turned off when the timer was supposed to trigger, `Persistent=true` immediately executes the missed service once the machine boots back up."
+        }
+      ]
+    }
+  },
+  {
+    "id": "commute-cost-calculator",
+    "name": "Daily & Annual Work Commute Cost & Time Calculator",
+    "slug": "commute-cost-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "commute cost calculator",
+      "how much does driving to work cost calculator",
+      "work commute annual cost calculator",
+      "commute time value calculator",
+      "wfh vs office commute savings calculator",
+      "driving to work wear and tear calculator"
+    ],
+    "primaryKeywords": [
+      "commute cost calculator",
+      "driving commute calculator",
+      "work commute cost",
+      "commute savings calculator"
+    ],
+    "secondaryKeywords": [
+      "calculate wear and tear per mile commute",
+      "annual hours lost commuting to work",
+      "hybrid work 2 days remote financial savings"
+    ],
+    "targetUsers": [
+      "Commuters",
+      "Job Seekers Evaluating Offers",
+      "Hybrid Workers",
+      "Everyday Drivers"
+    ],
+    "badge": "Popular",
+    "userProblem": "Employees, job seekers comparing offers, and hybrid workers need to calculate the true daily and annual cost of commuting (fuel, tolls, parking, vehicle depreciation) and evaluate the monetary value of hours lost in traffic.",
+    "searchIntent": "Calculate daily and annual work commuting expenses, vehicle wear and tear, and time value lost.",
+    "resultInterpretation": "Calculates daily direct commute cost, monthly and annual expense totals, annual hours lost in traffic, time value of lost hours based on wage, and financial savings from remote work days.",
+    "practicalGuidance": "Vehicle wear and tear (depreciation, tires, brakes, oil) typically adds $0.15 to $0.25 per mile on top of gasoline costs.",
+    "limitations": "Models standard vehicle maintenance and fixed 50-week work years.",
+    "formula": "Daily_Cost = (Miles / MPG * Gas_Price) + (Miles * Wear_Rate) + Tolls; Annual_Cost = Daily_Cost * Days_Per_Wk * 50",
+    "trustNotes": "100% Client-Side financial modeling.",
+    "related": [
+      "electric-vehicle-ev-savings-calculator",
+      "gas-trip-cost-calculator",
+      "salary-after-tax-take-home-calculator",
+      "freelance-hourly-rate-calculator"
+    ],
+    "seo": {
+      "title": "Commute Cost Calculator — Driving & Hybrid Work Savings Tool",
+      "metaDescription": "Calculate how much your work commute truly costs in gas, vehicle depreciation, tolls, and lost time. See annual savings from 2 remote work days. Free tool.",
+      "whatIsThis": "A personal finance utility that calculates the true out-of-pocket and time costs of commuting to work.",
+      "howItWorks": "1. Enter round-trip miles, in-office days per week, car MPG, and gas price.\n2. Enter daily tolls/parking and one-way commute minutes.\n3. View daily and annual financial costs, commute hours lost, and hybrid WFH savings.",
+      "whyUseIt": "Reveals the hidden thousands of dollars spent commuting when evaluating competing job offers.",
+      "faqs": [
+        {
+          "question": "What is the average annual cost of commuting by car in the US?",
+          "answer": "According to transportation studies, the average American worker driving 30 miles round-trip spends between $3,500 and $6,000 annually when factoring in gas, insurance, tolls, parking, and vehicle depreciation."
+        },
+        {
+          "question": "How much money does working from home 2 days a week save?",
+          "answer": "Working remotely just 2 days per week typically saves workers between $1,400 and $2,500 in direct out-of-pocket vehicle expenses annually, plus 70+ hours of reclaimed time."
+        }
+      ]
+    }
+  },
+  {
+    "id": "base32-encode-decode-utility",
+    "name": "Base32 Encoder & Decoder (RFC 4648)",
+    "slug": "base32-encode-decode-utility",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "base32 encoder",
+      "base32 decoder online",
+      "base32 converter rfc 4648",
+      "totp secret base32 decoder",
+      "google authenticator base32 key decoder",
+      "base32 string tool"
+    ],
+    "primaryKeywords": [
+      "base32 encoder",
+      "base32 decoder",
+      "base32 converter",
+      "base32 online"
+    ],
+    "secondaryKeywords": [
+      "rfc 4648 base32 alphabet a z 2 7",
+      "decode 2fa totp secret key base32",
+      "base32 padding equals sign toggle"
+    ],
+    "targetUsers": [
+      "Security Engineers",
+      "Cryptographers",
+      "Backend Developers",
+      "System Administrators"
+    ],
+    "badge": "High Usage",
+    "userProblem": "Security professionals, backend developers, and system administrators working with Two-Factor Authentication (TOTP/2FA) secret keys, Tor Onion routing addresses, or DNS labels need to encode and decode RFC 4648 Base32 strings.",
+    "searchIntent": "Encode plaintext into RFC 4648 Base32 and decode Base32 strings into plaintext with padding options.",
+    "resultInterpretation": "Converts binary byte streams and UTF-8 strings into 5-bit RFC 4648 Base32 characters (`A-Z`, `2-7`) and vice-versa with optional trailing padding (`=`).",
+    "practicalGuidance": "Base32 is chosen over Base64 for 2FA authenticator secret keys because it is case-insensitive and omits visually confusing characters like 0, 1, 8, and 9.",
+    "limitations": "Implements standard RFC 4648 Base32 encoding specifications.",
+    "formula": "RFC 4648 5-bit Quantization: 8-bit octet stream ➔ 5-bit chunks mapped to [A-Z2-7]",
+    "trustNotes": "100% Client-Side. Zero keys or strings transmitted.",
+    "related": [
+      "base64-encoder",
+      "base64-decoder",
+      "hex-decimal-binary-converter",
+      "password-generator"
+    ],
+    "seo": {
+      "title": "Base32 Encoder & Decoder — RFC 4648 2FA & TOTP String Tool",
+      "metaDescription": "Encode and decode RFC 4648 Base32 strings online. Decode Two-Factor Authentication (2FA/TOTP) secret keys and Tor addresses. 100% client-side. Free tool.",
+      "whatIsThis": "A cryptographic data formatting utility that encodes and decodes standard RFC 4648 Base32 strings.",
+      "howItWorks": "1. Select 'Encode Text to Base32' or 'Decode Base32 to Text'.\n2. Enter or paste string.\n3. View instant converted output and copy in 1 click.",
+      "whyUseIt": "Safely inspects and generates 2FA authentication secret keys without sending sensitive keys over the network.",
+      "faqs": [
+        {
+          "question": "Why is Base32 used for Two-Factor Authentication (TOTP) keys?",
+          "answer": "Base32 uses only uppercase letters A-Z and digits 2-7. It excludes digits 0 and 1 and 8 and 9 to avoid visual confusion with letters O, I, B, and g, making it easy for humans to type manually."
+        },
+        {
+          "question": "Is my secret key sent to your servers?",
+          "answer": "No. All encoding and decoding operates 100% inside your local browser's memory using JavaScript bitwise operations. No data is transmitted."
+        }
+      ]
+    }
+  },
+  {
+    "id": "macronutrient-macro-split-calculator",
+    "name": "Macronutrient Macro Split & Calorie Calculator",
+    "slug": "macronutrient-macro-split-calculator",
+    "category": "health",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "macro split calculator",
+      "macronutrient calculator",
+      "calculate protein carbs fat grams",
+      "macro ratio calculator bodybuilding",
+      "cutting bulking macro split calculator",
+      "daily macro gram calculator"
+    ],
+    "primaryKeywords": [
+      "macro split calculator",
+      "macro calculator",
+      "macronutrient calculator",
+      "protein carbs fat calculator"
+    ],
+    "secondaryKeywords": [
+      "cutting macro ratio 40 30 30",
+      "lean bulk macro split 30 45 25",
+      "per meal protein distribution calculator"
+    ],
+    "targetUsers": [
+      "Fitness Enthusiasts",
+      "Bodybuilders",
+      "Personal Trainers",
+      "Dieters Tracking Food"
+    ],
+    "badge": "Popular",
+    "userProblem": "Fitness enthusiasts, athletes, and dieters tracking daily nutrition need to calculate their exact daily gram targets for Protein, Carbohydrates, and Healthy Fats based on their daily calorie target and fitness goals (cutting, bulking, maintenance).",
+    "searchIntent": "Calculate daily Protein, Carbohydrate, and Fat gram targets and per-meal distributions from a calorie budget.",
+    "resultInterpretation": "Calculates total daily grams and per-meal gram targets for Protein (4 kcal/g), Carbohydrates (4 kcal/g), and Fat (9 kcal/g) based on target daily calories and percentage macro split.",
+    "practicalGuidance": "Distributing protein evenly across 3 to 4 meals (e.g. 30g - 45g per meal) optimizes Muscle Protein Synthesis (MPS) throughout the day.",
+    "limitations": "Calculates dietary macronutrient distributions based on standard nutritional energy densities.",
+    "formula": "Protein_g = (Calories * %P) / 4; Carbs_g = (Calories * %C) / 4; Fat_g = (Calories * %F) / 9",
+    "trustNotes": "100% Client-Side calculation. Zero health data stored.",
+    "related": [
+      "bmi-calculator",
+      "ideal-body-weight-devine-calculator",
+      "walking-steps-to-miles-calories-calculator",
+      "water-intake-calculator"
+    ],
+    "seo": {
+      "title": "Macro Split Calculator — Daily Protein, Carbs & Fat Gram Tool",
+      "metaDescription": "Calculate your daily Protein, Carbs, and Fat gram targets and per-meal split for fat loss, muscle building, or maintenance. Free fitness nutrition tool.",
+      "whatIsThis": "A fitness nutrition utility that translates daily calorie budgets into exact macronutrient gram targets and meal distributions.",
+      "howItWorks": "1. Pick a goal preset (Cutting, Maintenance, Lean Bulk, Keto) or adjust percentages.\n2. Enter target daily calories and number of meals per day.\n3. View exact daily grams and per-meal targets for Protein, Carbs, and Fat.",
+      "whyUseIt": "Eliminates guesswork when setting up food tracking apps like MyFitnessPal or MacroFactor.",
+      "faqs": [
+        {
+          "question": "How many calories are in 1 gram of protein, carb, and fat?",
+          "answer": "Protein and Carbohydrates contain 4 calories per gram, while Dietary Fat contains 9 calories per gram."
+        },
+        {
+          "question": "What is the best macro split for fat loss (cutting)?",
+          "answer": "A common recommended cutting macro split is 40% Protein, 30% Carbohydrates, and 30% Healthy Fats. High protein protects lean muscle mass while operating in a caloric deficit."
+        }
+      ]
+    }
   }
 ]

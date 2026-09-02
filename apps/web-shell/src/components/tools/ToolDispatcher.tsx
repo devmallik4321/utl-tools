@@ -36,12 +36,14 @@ const DnsResolversReference = dynamic(() => import("./network/DnsResolversRefere
 const IpBinaryConverter = dynamic(() => import("./network/IpBinaryConverter").then((m) => m.IpBinaryConverter), { ssr: false });
 const WhoisParser = dynamic(() => import("./network/WhoisParser").then((m) => m.WhoisParser), { ssr: false });
 const Ipv4ToIpv6Converter = dynamic(() => import("./network/Ipv4ToIpv6Converter").then((m) => m.Ipv4ToIpv6Converter), { ssr: false });
+const ReverseDnsPtrGenerator = dynamic(() => import("./network/ReverseDnsPtrGenerator").then((m) => m.ReverseDnsPtrGenerator), { ssr: false });
 
 const JsonFormatter = dynamic(() => import("./developer/JsonFormatter").then((m) => m.JsonFormatter), { ssr: false });
 const JsonValidator = dynamic(() => import("./developer/JsonValidator").then((m) => m.JsonValidator), { ssr: false });
 const Base64Encoder = dynamic(() => import("./developer/Base64Encoder").then((m) => m.Base64Encoder), { ssr: false });
 const Base64Decoder = dynamic(() => import("./developer/Base64Decoder").then((m) => m.Base64Decoder), { ssr: false });
 const Base64ImageConverter = dynamic(() => import("./developer/Base64ImageConverter").then((m) => m.Base64ImageConverter), { ssr: false });
+const Base32Converter = dynamic(() => import("./developer/Base32Converter").then((m) => m.Base32Converter), { ssr: false });
 const UuidGenerator = dynamic(() => import("./developer/UuidGenerator").then((m) => m.UuidGenerator), { ssr: false });
 const BatchUuidGenerator = dynamic(() => import("./developer/BatchUuidGenerator").then((m) => m.BatchUuidGenerator), { ssr: false });
 const TimestampConverter = dynamic(() => import("./developer/TimestampConverter").then((m) => m.TimestampConverter), { ssr: false });
@@ -68,6 +70,7 @@ const CronExplainer = dynamic(() => import("./developer/CronExplainer").then((m)
 const CrontabValidator = dynamic(() => import("./developer/CrontabValidator").then((m) => m.CrontabValidator), { ssr: false });
 const CronScheduleBuilder = dynamic(() => import("./developer/CronScheduleBuilder").then((m) => m.CronScheduleBuilder), { ssr: false });
 const CronNextRunsCalculator = dynamic(() => import("./developer/CronNextRunsCalculator").then((m) => m.CronNextRunsCalculator), { ssr: false });
+const CronToSystemdConverter = dynamic(() => import("./developer/CronToSystemdConverter").then((m) => m.CronToSystemdConverter), { ssr: false });
 const JwtDebugger = dynamic(() => import("./developer/JwtDebugger").then((m) => m.JwtDebugger), { ssr: false });
 const JwtInspector = dynamic(() => import("./developer/JwtInspector").then((m) => m.JwtInspector), { ssr: false });
 const CurlToFetchConverter = dynamic(() => import("./developer/CurlToFetchConverter").then((m) => m.CurlToFetchConverter), { ssr: false });
@@ -82,6 +85,7 @@ const CurlToDartConverter = dynamic(() => import("./developer/CurlToDartConverte
 const CurlToKotlinConverter = dynamic(() => import("./developer/CurlToKotlinConverter").then((m) => m.CurlToKotlinConverter), { ssr: false });
 const CurlToSwiftConverter = dynamic(() => import("./developer/CurlToSwiftConverter").then((m) => m.CurlToSwiftConverter), { ssr: false });
 const CurlToPowerShellConverter = dynamic(() => import("./developer/CurlToPowerShellConverter").then((m) => m.CurlToPowerShellConverter), { ssr: false });
+const CurlToRConverter = dynamic(() => import("./developer/CurlToRConverter").then((m) => m.CurlToRConverter), { ssr: false });
 const HtmlToMarkdownConverter = dynamic(() => import("./developer/HtmlToMarkdownConverter").then((m) => m.HtmlToMarkdownConverter), { ssr: false });
 const HtmlEntityConverter = dynamic(() => import("./developer/HtmlEntityConverter").then((m) => m.HtmlEntityConverter), { ssr: false });
 const RegexTester = dynamic(() => import("./developer/RegexTester").then((m) => m.RegexTester), { ssr: false });
@@ -139,9 +143,12 @@ const TargetDateFundCalculator = dynamic(() => import("./finance/TargetDateFundC
 const HomeAffordabilityCalculator = dynamic(() => import("./finance/HomeAffordabilityCalculator").then((m) => m.HomeAffordabilityCalculator), { ssr: false });
 const CapRateCalculator = dynamic(() => import("./finance/CapRateCalculator").then((m) => m.CapRateCalculator), { ssr: false });
 const CashOnCashCalculator = dynamic(() => import("./finance/CashOnCashCalculator").then((m) => m.CashOnCashCalculator), { ssr: false });
+const HouseFlippingCalculator = dynamic(() => import("./finance/HouseFlippingCalculator").then((m) => m.HouseFlippingCalculator), { ssr: false });
 const SolarPaybackCalculator = dynamic(() => import("./finance/SolarPaybackCalculator").then((m) => m.SolarPaybackCalculator), { ssr: false });
 const EvSavingsCalculator = dynamic(() => import("./finance/EvSavingsCalculator").then((m) => m.EvSavingsCalculator), { ssr: false });
 const FiveTwoNineCalculator = dynamic(() => import("./finance/FiveTwoNineCalculator").then((m) => m.FiveTwoNineCalculator), { ssr: false });
+const UgmaUtmaCalculator = dynamic(() => import("./finance/UgmaUtmaCalculator").then((m) => m.UgmaUtmaCalculator), { ssr: false });
+const CommuteCostCalculator = dynamic(() => import("./finance/CommuteCostCalculator").then((m) => m.CommuteCostCalculator), { ssr: false });
 const SalaryInflationCalculator = dynamic(() => import("./finance/SalaryInflationCalculator").then((m) => m.SalaryInflationCalculator), { ssr: false });
 const OvertimeCalculator = dynamic(() => import("./finance/OvertimeCalculator").then((m) => m.OvertimeCalculator), { ssr: false });
 const DebtPayoffCalculator = dynamic(() => import("./finance/DebtPayoffCalculator").then((m) => m.DebtPayoffCalculator), { ssr: false });
@@ -180,6 +187,7 @@ const StepsToMilesConverter = dynamic(() => import("./health/StepsToMilesConvert
 const SleepCycleCalculator = dynamic(() => import("./health/SleepCycleCalculator").then((m) => m.SleepCycleCalculator), { ssr: false });
 const CaffeineHalfLifeCalculator = dynamic(() => import("./health/CaffeineHalfLifeCalculator").then((m) => m.CaffeineHalfLifeCalculator), { ssr: false });
 const IdealBodyWeightCalculator = dynamic(() => import("./health/IdealBodyWeightCalculator").then((m) => m.IdealBodyWeightCalculator), { ssr: false });
+const MacroSplitCalculator = dynamic(() => import("./health/MacroSplitCalculator").then((m) => m.MacroSplitCalculator), { ssr: false });
 
 const WordCounter = dynamic(() => import("./education/WordCounter").then((m) => m.WordCounter), { ssr: false });
 const CharacterFrequencyCounter = dynamic(() => import("./education/CharacterFrequencyCounter").then((m) => m.CharacterFrequencyCounter), { ssr: false });
@@ -212,6 +220,7 @@ const AspectRatioScaleFactor = dynamic(() => import("./creative/ScaleFactorCalcu
 const AspectRatioCssObjectFit = dynamic(() => import("./creative/ObjectFitPreviewer").then((m) => m.ObjectFitPreviewer), { ssr: false });
 const AspectRatioPrintDpi = dynamic(() => import("./creative/PrintResolutionCalculator").then((m) => m.PrintResolutionCalculator), { ssr: false });
 const AspectRatioCssGenerator = dynamic(() => import("./creative/CssAspectRatioGenerator").then((m) => m.CssAspectRatioGenerator), { ssr: false });
+const AspectRatioCinemaAnamorphic = dynamic(() => import("./creative/AnamorphicCalculator").then((m) => m.AnamorphicCalculator), { ssr: false });
 const CssPaddingHack = dynamic(() => import("./creative/CssPaddingHackCalculator").then((m) => m.CssPaddingHackCalculator), { ssr: false });
 const DeviceDimensionsReference = dynamic(() => import("./creative/DeviceDimensionsReference").then((m) => m.DeviceDimensionsReference), { ssr: false });
 const FluidTypographyCalculator = dynamic(() => import("./creative/FluidTypographyCalculator").then((m) => m.FluidTypographyCalculator), { ssr: false });
@@ -221,6 +230,7 @@ const BoxReflectionGenerator = dynamic(() => import("./creative/BoxReflectionGen
 const ScrollbarGenerator = dynamic(() => import("./creative/ScrollbarGenerator").then((m) => m.ScrollbarGenerator), { ssr: false });
 const CssStripesGenerator = dynamic(() => import("./creative/CssStripesGenerator").then((m) => m.CssStripesGenerator), { ssr: false });
 const ConicGradientGenerator = dynamic(() => import("./creative/ConicGradientGenerator").then((m) => m.ConicGradientGenerator), { ssr: false });
+const MeshGradientGenerator = dynamic(() => import("./creative/MeshGradientGenerator").then((m) => m.MeshGradientGenerator), { ssr: false });
 const GradientGenerator = dynamic(() => import("./creative/GradientGenerator").then((m) => m.GradientGenerator), { ssr: false });
 const CssTriangleGenerator = dynamic(() => import("./creative/CssTriangleGenerator").then((m) => m.CssTriangleGenerator), { ssr: false });
 const ClipPathGenerator = dynamic(() => import("./creative/ClipPathGenerator").then((m) => m.ClipPathGenerator), { ssr: false });
@@ -279,12 +289,14 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "ip-address-to-binary-hex-converter": IpBinaryConverter,
   "whois-asn-format-parser": WhoisParser,
   "ipv4-to-ipv6-mapping-converter": Ipv4ToIpv6Converter,
+  "reverse-dns-ptr-record-generator": ReverseDnsPtrGenerator,
 
   "json-formatter": JsonFormatter,
   "json-validator": JsonValidator,
   "base64-encoder": Base64Encoder,
   "base64-decoder": Base64Decoder,
   "base64-image-encoder-decoder": Base64ImageConverter,
+  "base32-encode-decode-utility": Base32Converter,
   "uuid-generator": UuidGenerator,
   "uuid-v4-batch-generator": BatchUuidGenerator,
   "timestamp-converter": TimestampConverter,
@@ -311,6 +323,7 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "crontab-generator-and-validator": CrontabValidator,
   "cron-schedule-human-expression-builder": CronScheduleBuilder,
   "crontab-schedule-next-runs-calculator": CronNextRunsCalculator,
+  "crontab-to-systemd-timer-converter": CronToSystemdConverter,
   "jwt-debugger": JwtDebugger,
   "jwt-payload-inspector-signer": JwtInspector,
   "curl-to-fetch-converter": CurlToFetchConverter,
@@ -325,6 +338,7 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "curl-to-kotlin-okhttp-converter": CurlToKotlinConverter,
   "curl-to-swift-urlsession-converter": CurlToSwiftConverter,
   "curl-to-powershell-restmethod-converter": CurlToPowerShellConverter,
+  "curl-to-r-httr-converter": CurlToRConverter,
   "html-to-markdown-converter": HtmlToMarkdownConverter,
   "html-entity-encoder-decoder": HtmlEntityConverter,
   "regex-tester": RegexTester,
@@ -382,9 +396,12 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "home-affordability-debt-to-income-calculator": HomeAffordabilityCalculator,
   "real-estate-cap-rate-noi-calculator": CapRateCalculator,
   "real-estate-cash-on-cash-return-calculator": CashOnCashCalculator,
+  "real-estate-70-percent-rule-house-flipping-calculator": HouseFlippingCalculator,
   "solar-panel-payback-period-calculator": SolarPaybackCalculator,
   "electric-vehicle-ev-savings-calculator": EvSavingsCalculator,
   "529-college-savings-growth-calculator": FiveTwoNineCalculator,
+  "custodial-account-ugma-utma-tax-calculator": UgmaUtmaCalculator,
+  "commute-cost-calculator": CommuteCostCalculator,
   "salary-inflation-calculator": SalaryInflationCalculator,
   "hourly-paycheck-overtime-calculator": OvertimeCalculator,
   "debt-snowball-vs-avalanche-payoff-calculator": DebtPayoffCalculator,
@@ -423,6 +440,7 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "sleep-cycle-calculator": SleepCycleCalculator,
   "caffeine-half-life-sleep-calculator": CaffeineHalfLifeCalculator,
   "ideal-body-weight-devine-calculator": IdealBodyWeightCalculator,
+  "macronutrient-macro-split-calculator": MacroSplitCalculator,
 
   "word-counter": WordCounter,
   "character-frequency-counter": CharacterFrequencyCounter,
@@ -455,6 +473,7 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "aspect-ratio-css-object-fit-previewer": AspectRatioCssObjectFit,
   "aspect-ratio-print-dpi-resolution-calculator": AspectRatioPrintDpi,
   "aspect-ratio-css-aspect-ratio-generator": AspectRatioCssGenerator,
+  "aspect-ratio-cinema-anamorphic-calculator": AspectRatioCinemaAnamorphic,
   "aspect-ratio-css-padding-hack-calculator": CssPaddingHack,
   "device-screen-dimensions-reference": DeviceDimensionsReference,
   "aspect-ratio-device-screen-dimensions-reference": DeviceDimensionsReference,
@@ -465,6 +484,7 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "css-custom-scrollbar-generator": ScrollbarGenerator,
   "css-stripes-and-patterns-generator": CssStripesGenerator,
   "css-conic-gradient-pie-chart-generator": ConicGradientGenerator,
+  "css-mesh-gradient-generator": MeshGradientGenerator,
   "css-gradient-generator": GradientGenerator,
   "css-triangle-generator": CssTriangleGenerator,
   "css-clip-path-polygon-generator": ClipPathGenerator,
