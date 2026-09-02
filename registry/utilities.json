@@ -9681,5 +9681,647 @@
         }
       ]
     }
+  },
+  {
+    "id": "curl-to-go-http-converter",
+    "name": "cURL to Go net/http Code Converter",
+    "slug": "curl-to-go-http-converter",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "curl to go converter",
+      "convert curl to golang http",
+      "curl command to go net http",
+      "curl to go code online",
+      "golang http request from curl",
+      "api curl to go client"
+    ],
+    "primaryKeywords": [
+      "curl to go converter",
+      "convert curl to golang",
+      "curl to go code",
+      "curl to go http request"
+    ],
+    "secondaryKeywords": [
+      "convert curl post json to golang",
+      "curl headers to go req header add",
+      "golang io readall response body snippet"
+    ],
+    "targetUsers": [
+      "Golang Developers",
+      "Backend Engineers",
+      "DevOps Engineers",
+      "Microservice Architects"
+    ],
+    "badge": "High Usage",
+    "userProblem": "Golang developers integrating REST APIs need to convert bash cURL commands into idiomatic Go code using standard library `net/http`, `io.ReadAll`, header maps, and proper error handling.",
+    "searchIntent": "Convert bash cURL commands into clean, idiomatic Go code using standard library `net/http`.",
+    "resultInterpretation": "Parses cURL commands into standard Go `http.NewRequest`, `req.Header.Add`, `client.Do`, and `defer resp.Body.Close()` boilerplate.",
+    "practicalGuidance": "Uses standard Go libraries without external dependencies (no third-party HTTP client libraries required).",
+    "limitations": "Parses standard HTTP/HTTPS cURL CLI syntax.",
+    "formula": "CLI AST Parser: cURL Command ➔ Golang net/http Code Synthesis",
+    "trustNotes": "100% Client-Side. API keys and bearer tokens never leave your browser.",
+    "related": [
+      "curl-to-python-requests-converter",
+      "curl-to-javascript-axios-converter",
+      "curl-to-php-curl-converter",
+      "json-to-typescript-converter"
+    ],
+    "seo": {
+      "title": "cURL to Go Converter — Convert cURL to Golang net/http Code",
+      "metaDescription": "Convert cURL commands to clean, idiomatic Go (Golang) code online. Uses standard library net/http with headers and JSON body parsing. 1-click copy.",
+      "whatIsThis": "A developer code translation utility that converts bash cURL commands into idiomatic Golang `net/http` code.",
+      "howItWorks": "1. Paste your cURL command into the input box.\n2. View generated Golang script with request headers and error handling.\n3. Copy the clean Go code in 1 click.",
+      "whyUseIt": "Eliminates tedious manual translation of HTTP headers and JSON bodies into Go boilerplate.",
+      "faqs": [
+        {
+          "question": "Does this require any third-party Go packages?",
+          "answer": "No. The generated code strictly uses the Go standard library (`net/http`, `io`, `strings`, `fmt`)."
+        },
+        {
+          "question": "Does it handle POST requests with JSON payloads?",
+          "answer": "Yes. It wraps the JSON payload in a `strings.NewReader` and passes it directly to `http.NewRequest`."
+        }
+      ]
+    }
+  },
+  {
+    "id": "fire-financial-independence-retire-early-calculator",
+    "name": "FIRE Calculator — Financial Independence Retire Early",
+    "slug": "fire-financial-independence-retire-early-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "fire calculator",
+      "financial independence retire early calculator",
+      "calculate my fire number",
+      "leanfire vs fatfire calculator",
+      "safe withdrawal rate calculator",
+      "how long until i can retire early"
+    ],
+    "primaryKeywords": [
+      "fire calculator",
+      "financial independence calculator",
+      "fire number calculator",
+      "retire early calculator"
+    ],
+    "secondaryKeywords": [
+      "calculate 4 percent rule retirement target",
+      "leanfire and fatfire target numbers",
+      "years to financial independence savings rate"
+    ],
+    "targetUsers": [
+      "FIRE Community",
+      "Early Retirees",
+      "Young Professionals",
+      "Index Fund Investors",
+      "Tech Workers"
+    ],
+    "badge": "Popular",
+    "userProblem": "Individuals pursuing Financial Independence / Retire Early (FIRE) need to calculate their exact FIRE freedom number (based on the 4% Safe Withdrawal Rule / 25x annual expenses), LeanFIRE, FatFIRE, and exact years to retirement given their current savings rate.",
+    "searchIntent": "Calculate the portfolio net worth required to achieve financial independence and determine the exact number of years to early retirement.",
+    "resultInterpretation": "Calculates FIRE target number, LeanFIRE (frugal 75%), FatFIRE (luxury 140%), real inflation-adjusted investment return, and years/months to financial independence.",
+    "practicalGuidance": "The 4% Safe Withdrawal Rule (from the Trinity Study) states you can safely withdraw 4% of your initial portfolio each year, adjusted for inflation, with near-zero historical failure over 30+ years.",
+    "limitations": "Calculates projections based on constant annual savings contributions and real average market returns.",
+    "formula": "FIRE Target = Annual_Expenses / SWR_Rate; Real_Return = Return - Inflation",
+    "trustNotes": "100% Client-Side financial modeling. Zero portfolio data stored or tracked.",
+    "related": [
+      "net-worth-milestone-tracker",
+      "emergency-fund-runway-calculator",
+      "compound-savings-goal-calculator",
+      "investment-fee-expense-ratio-calculator"
+    ],
+    "seo": {
+      "title": "FIRE Calculator — Financial Independence Retire Early & 4% Rule Tool",
+      "metaDescription": "Calculate your FIRE number, LeanFIRE/FatFIRE targets, and years to financial independence using the 4% Safe Withdrawal Rule. Free, private retirement tool.",
+      "whatIsThis": "A wealth forecasting utility that computes your retirement number and timeline to Financial Independence.",
+      "howItWorks": "1. Enter annual living expenses and current invested net worth.\n2. Enter annual savings contributions and select Safe Withdrawal Rate (3.0% to 4.5%).\n3. View your FIRE target number, Lean/Fat tiers, and estimated years to retirement.",
+      "whyUseIt": "Clarifies your exact freedom number and reveals how increasing savings rate dramatically cuts years off your career.",
+      "faqs": [
+        {
+          "question": "What is the 4% rule in FIRE?",
+          "answer": "The 4% rule states that if you accumulate 25 times your annual living expenses in an investment portfolio, you can withdraw 4% annually without running out of money."
+        },
+        {
+          "question": "What is the difference between LeanFIRE and FatFIRE?",
+          "answer": "LeanFIRE covers essential, minimalist living expenses (typically 75% of average spend), while FatFIRE funds an abundant lifestyle with generous discretionary spending (140%+ of average spend)."
+        }
+      ]
+    }
+  },
+  {
+    "id": "css-gradient-generator",
+    "name": "CSS Gradient Generator — Linear & Radial Background Builder",
+    "slug": "css-gradient-generator",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "css gradient generator",
+      "linear gradient css generator",
+      "radial gradient generator online",
+      "css background gradient tool",
+      "multi stop gradient builder",
+      "css color blend generator"
+    ],
+    "primaryKeywords": [
+      "css gradient generator",
+      "linear gradient generator",
+      "radial gradient generator",
+      "css gradient background builder"
+    ],
+    "secondaryKeywords": [
+      "interactive angle dial linear gradient",
+      "multi color stop css gradient tool",
+      "copy css background gradient snippet"
+    ],
+    "targetUsers": [
+      "Frontend Developers",
+      "UI Designers",
+      "Web Developers",
+      "CSS Illustrators"
+    ],
+    "badge": "Design",
+    "userProblem": "Frontend developers and UI designers need an interactive visual tool to construct multi-stop linear and radial CSS gradients, adjust angle dials and stop percentages, and copy production-ready CSS code.",
+    "searchIntent": "Build custom linear and radial CSS gradients visually with angle controls, color stops, and 1-click CSS code export.",
+    "resultInterpretation": "Renders a live gradient preview canvas, allows fine-tuning of angles and up to 6 color stops, and generates cross-browser `background: linear-gradient(...)` rules.",
+    "practicalGuidance": "Linear gradients are great for headers and hero sections; radial gradients create localized lighting and vignette spotlight effects.",
+    "limitations": "Generates standard CSS3 gradient syntax supported by all modern web browsers.",
+    "formula": "CSS Gradient: background: linear-gradient(Angle deg, Color1 Stop1%, Color2 Stop2%);",
+    "trustNotes": "100% Client-Side visual rendering.",
+    "related": [
+      "css-box-shadow-generator",
+      "css-glassmorphism-generator",
+      "color-converter",
+      "hex-rgb-hsl-picker"
+    ],
+    "seo": {
+      "title": "CSS Gradient Generator — Linear & Radial CSS Background Tool",
+      "metaDescription": "Create beautiful Linear and Radial CSS gradients online. Visual angle controls, multi-color stops, design presets, and 1-click CSS code export.",
+      "whatIsThis": "A visual design utility that creates clean CSS gradient background rules.",
+      "howItWorks": "1. Select Linear or Radial gradient mode.\n2. Adjust angle dial and color stop positions.\n3. Copy the cross-browser CSS gradient snippet in 1 click.",
+      "whyUseIt": "Creates stunning web backgrounds and button hover gradients in seconds.",
+      "faqs": [
+        {
+          "question": "What is the difference between linear and radial gradients?",
+          "answer": "Linear gradients transition colors along a straight directional line (e.g. 135deg), while radial gradients radiate colors outward in a circle or ellipse from a central origin point."
+        },
+        {
+          "question": "Does this work in all modern browsers?",
+          "answer": "Yes. Standard CSS3 gradients are natively supported in all modern versions of Chrome, Safari, Firefox, and Edge without vendor prefixes."
+        }
+      ]
+    }
+  },
+  {
+    "id": "email-dns-records-generator",
+    "name": "Email DNS Records Generator — SPF, DKIM & DMARC Builder",
+    "slug": "email-dns-records-generator",
+    "category": "network",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "email dns record generator",
+      "spf record generator online",
+      "dkim record builder",
+      "dmarc record generator",
+      "google workspace spf dkim generator",
+      "email deliverability dns tool"
+    ],
+    "primaryKeywords": [
+      "email dns record generator",
+      "spf dkim dmarc generator",
+      "dmarc record generator",
+      "spf record builder"
+    ],
+    "secondaryKeywords": [
+      "google workspace dkim txt record",
+      "microsoft 365 spf record generator",
+      "dmarc policy reject quarantine generator"
+    ],
+    "targetUsers": [
+      "System Administrators",
+      "Domain Owners",
+      "Email Deliverability Engineers",
+      "DevOps Engineers"
+    ],
+    "badge": "Network",
+    "userProblem": "Domain administrators and website owners setting up Google Workspace, Microsoft 365, or SendGrid need to generate correct DNS TXT records for SPF, DKIM, and DMARC to prevent spoofing and ensure 100% email inbox deliverability.",
+    "searchIntent": "Generate accurate SPF, DKIM, and DMARC DNS TXT records for custom domains across major email providers.",
+    "resultInterpretation": "Generates copy-pasteable DNS TXT records for SPF (`v=spf1 ... ~all`), DKIM (`selector._domainkey`), and DMARC (`v=DMARC1; p=...; rua=mailto:...`).",
+    "practicalGuidance": "Google and Yahoo mandate valid SPF, DKIM, and DMARC records for all domains sending bulk email.",
+    "limitations": "Generates standard DNS TXT syntax according to RFC 7208 (SPF), RFC 6376 (DKIM), and RFC 7489 (DMARC).",
+    "formula": "Email Auth Protocol: SPF + DKIM + DMARC Policy = Strict Inbox Deliverability",
+    "trustNotes": "100% Client-Side generation. Zero domain configuration data transmitted.",
+    "related": [
+      "dns-record-generator",
+      "dns-lookup",
+      "ip-geolocation-lookup",
+      "subnet-mask-calculator"
+    ],
+    "seo": {
+      "title": "Email DNS Records Generator — SPF, DKIM & DMARC Builder Tool",
+      "metaDescription": "Generate SPF, DKIM, and DMARC DNS TXT records for Google Workspace, Microsoft 365, SendGrid, and Mailgun. Free email deliverability security tool.",
+      "whatIsThis": "A domain networking utility that builds standard email authentication DNS TXT records.",
+      "howItWorks": "1. Enter your domain name (e.g. `example.com`).\n2. Select email provider (Google Workspace, M365, SendGrid, Mailgun) and DMARC policy.\n3. Copy the generated SPF, DKIM, and DMARC TXT records directly into your DNS registrar.",
+      "whyUseIt": "Stops phishing and domain spoofing while guaranteeing your outbound emails land in the primary inbox.",
+      "faqs": [
+        {
+          "question": "What is the purpose of DMARC?",
+          "answer": "DMARC (Domain-based Message Authentication, Reporting, and Conformance) tells recipient mail servers what to do (monitor, quarantine, or reject) when an email fails SPF or DKIM checks."
+        },
+        {
+          "question": "Can I have multiple SPF records on one domain?",
+          "answer": "No. A domain must only have ONE SPF TXT record. If using multiple email services, combine them inside a single `v=spf1 include:... include:... ~all` string."
+        }
+      ]
+    }
+  },
+  {
+    "id": "car-lease-vs-buy-calculator",
+    "name": "Car Lease vs Buy Financial Comparison Calculator",
+    "slug": "car-lease-vs-buy-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "car lease vs buy calculator",
+      "lease or buy car calculator",
+      "auto lease vs finance comparison",
+      "is it better to lease or buy a car",
+      "total cost of car ownership lease vs buy",
+      "car lease payment vs loan payment"
+    ],
+    "primaryKeywords": [
+      "car lease vs buy calculator",
+      "lease vs buy car",
+      "auto lease vs loan calculator",
+      "car lease comparison calculator"
+    ],
+    "secondaryKeywords": [
+      "calculate annual net cost of car lease",
+      "car resale equity after 5 year loan",
+      "lease down payment vs buy down payment"
+    ],
+    "targetUsers": [
+      "Car Buyers",
+      "Commuters",
+      "Dealership Shoppers",
+      "Financial Planners"
+    ],
+    "badge": "Popular",
+    "userProblem": "Car shoppers deciding between leasing and buying a new vehicle need a side-by-side financial comparison tool to evaluate monthly payments, total out-of-pocket costs, residual equity, and annual net cost.",
+    "searchIntent": "Compare the total multi-year cost of buying a car with an auto loan versus leasing to find the financially optimal choice.",
+    "resultInterpretation": "Calculates monthly payments, total out-of-pocket outlay, residual resale equity recovery, net annualized cost for both options, and provides a clear mathematical recommendation.",
+    "practicalGuidance": "Buying is almost always cheaper in the long run if you hold the car for 5+ years; leasing offers lower monthly payments for drivers who upgrade every 3 years.",
+    "limitations": "Does not account for local state excise taxes or excess mileage lease penalty fees.",
+    "formula": "Net Cost: Buy = (Down + Loan_Payments) - Resale_Value; Lease = Down + Lease_Payments + Fees",
+    "trustNotes": "100% Client-Side financial modeling.",
+    "related": [
+      "car-loan-affordability-calculator",
+      "auto-loan-early-payoff-calculator",
+      "loan-calculator",
+      "loan-refinance-savings-calculator"
+    ],
+    "seo": {
+      "title": "Car Lease vs Buy Calculator — Auto Loan vs Lease Comparison",
+      "metaDescription": "Compare the total financial cost of leasing vs buying a new car. Side-by-side monthly payments, residual value, and annual net cost analysis.",
+      "whatIsThis": "An automotive finance utility that compares the true total cost of ownership between leasing and purchasing a vehicle.",
+      "howItWorks": "1. Enter vehicle price and buy parameters (down payment, loan term, APR, estimated future value).\n2. Enter lease parameters (due at signing, term, monthly lease payment, fees).\n3. View side-by-side annual costs and a mathematical recommendation.",
+      "whyUseIt": "Prevents dealership sales tactics by calculating the true long-term financial difference between leasing and buying.",
+      "faqs": [
+        {
+          "question": "Is it financially better to lease or buy a car?",
+          "answer": "Buying is generally more cost-effective over a 5 to 10-year period because you retain residual equity once the loan is paid off, whereas leasing leaves you with zero equity."
+        },
+        {
+          "question": "When does leasing a car make sense?",
+          "answer": "Leasing makes sense if you always want a new car under manufacturer warranty every 3 years, drive predictable low mileage, or can write off lease payments as a business expense."
+        }
+      ]
+    }
+  },
+  {
+    "id": "lorem-markdown-documentation-generator",
+    "name": "Lorem Markdown Documentation Page Generator",
+    "slug": "lorem-markdown-documentation-generator",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "lorem markdown generator",
+      "dummy documentation generator",
+      "mock api docs markdown generator",
+      "markdown changelog template generator",
+      "developer docs markdown template",
+      "sample technical markdown generator"
+    ],
+    "primaryKeywords": [
+      "lorem markdown generator",
+      "dummy documentation generator",
+      "mock technical documentation markdown",
+      "markdown doc template generator"
+    ],
+    "secondaryKeywords": [
+      "rest api endpoint documentation template",
+      "developer quickstart guide markdown",
+      "admonition notes github markdown generator"
+    ],
+    "targetUsers": [
+      "Frontend Developers",
+      "Technical Writers",
+      "Documentation Architects",
+      "Open Source Maintainers"
+    ],
+    "badge": "High Usage",
+    "userProblem": "Frontend developers building documentation websites (Docusaurus, VitePress, Nextra) or mock UI components need realistic, structured Markdown documentation pages (REST API endpoints, Quickstart guides, Changelogs) with tables, code blocks, and admonitions.",
+    "searchIntent": "Generate structured, realistic dummy technical documentation in Markdown for UI prototyping and template testing.",
+    "resultInterpretation": "Generates rich Markdown documentation templates complete with headings, tables of contents, syntax-highlighted code blocks, parameter tables, and GitHub-style alert callouts.",
+    "practicalGuidance": "Use dummy documentation pages to test typography styling, code syntax highlighters, and sidebar navigation trees.",
+    "limitations": "Generates standard GitHub Flavored Markdown (GFM) documents.",
+    "formula": "Doc Synthesizer: Template ➔ GFM Formatter ➔ Clipboard Export",
+    "trustNotes": "100% Client-Side generation.",
+    "related": [
+      "markdown-previewer",
+      "markdown-table-generator",
+      "lorem-markdown-generator",
+      "html-to-markdown-converter"
+    ],
+    "seo": {
+      "title": "Lorem Markdown Docs Generator — Mock API & Guide Templates",
+      "metaDescription": "Generate structured dummy technical documentation in Markdown (API references, Quickstart guides, Changelogs). Includes tables, code blocks, and callout notes.",
+      "whatIsThis": "A developer productivity utility that generates structured dummy Markdown documentation pages for website prototyping.",
+      "howItWorks": "1. Select documentation template (REST API Reference, Developer Quickstart, Changelog).\n2. View formatted Markdown code with tables and code blocks.\n3. Copy the Markdown code in 1 click.",
+      "whyUseIt": "Speeds up prototyping documentation sites without writing dummy technical content from scratch.",
+      "faqs": [
+        {
+          "question": "What templates are available?",
+          "answer": "It includes REST API Endpoint References, Developer Quickstart Guides, and Changelog / Release Notes templates."
+        },
+        {
+          "question": "Does it support GitHub-style callout alerts?",
+          "answer": "Yes. It includes `> [!NOTE]` and `> [!TIP]` syntax supported by GitHub and modern documentation engines."
+        }
+      ]
+    }
+  },
+  {
+    "id": "aspect-ratio-pixel-density-converter",
+    "name": "Pixel Density & Unit Converter (PX, PT, DP, REM)",
+    "slug": "aspect-ratio-pixel-density-converter",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "pixel density converter",
+      "px to dp converter",
+      "px to pt converter",
+      "px to rem converter",
+      "retina asset export scale calculator",
+      "screen density unit converter"
+    ],
+    "primaryKeywords": [
+      "pixel density converter",
+      "px to dp converter",
+      "px to rem converter",
+      "screen density unit calculator"
+    ],
+    "secondaryKeywords": [
+      "calculate 1x 2x 3x 4x physical pixel size",
+      "figma pt to css px converter",
+      "android dp to ios pt unit converter"
+    ],
+    "targetUsers": [
+      "UI/UX Designers",
+      "Mobile App Developers",
+      "Frontend Developers",
+      "Flutter & React Native Engineers"
+    ],
+    "badge": "Design",
+    "userProblem": "Designers and mobile engineers working across Web, iOS, and Android need to convert design tokens between CSS Pixels (`px`), Points (`pt`), Density-Independent Pixels (`dp`), Root EM (`rem`), and export scales (@1x, @2x Retina, @3x Super Retina, @4x Ultra HD).",
+    "searchIntent": "Convert design measurements between CSS Pixels, Points, Android DP, REM units, and physical asset export densities.",
+    "resultInterpretation": "Calculates synchronized conversions for REM (at customizable root font size), Points (72 dpi), Android DP (160 dpi baseline), and physical pixel asset export sizes (@1x, @2x, @3x, @4x).",
+    "practicalGuidance": "1 CSS Pixel equals 1 Android DP and 0.75 iOS Points at standard 1x density.",
+    "limitations": "Calculates standard digital UI layout unit conversions.",
+    "formula": "Unit Conversions: REM = PX / Base_REM; PT = PX * 0.75; DP = PX; @Nx = PX * N",
+    "trustNotes": "100% Client-Side calculation.",
+    "related": [
+      "screen-ppi-calculator",
+      "aspect-ratio-calculator",
+      "screen-aspect-ratio-comparator",
+      "aspect-ratio-scale-multiplier"
+    ],
+    "seo": {
+      "title": "Pixel Density Converter — Convert PX to DP, PT, REM & Retina Scales",
+      "metaDescription": "Convert UI design units between CSS Pixels (px), Points (pt), Android DP (dp), REM units, and Retina asset scales (@1x, @2x, @3x, @4x). Free designer tool.",
+      "whatIsThis": "A UI design and development utility that translates layout dimensions across web and mobile platform units.",
+      "howItWorks": "1. Enter CSS pixel value (or adjust slider) and set root font size (16px default).\n2. View instant conversion to REM, Points, and Android DP.\n3. View physical pixel asset export dimensions (@1x, @2x, @3x, @4x).",
+      "whyUseIt": "Bridges the gap between Figma design files and native iOS/Android/Web codebases.",
+      "faqs": [
+        {
+          "question": "What is the difference between PX and DP?",
+          "answer": "A CSS pixel (px) is a standard web measurement unit, while a Density-Independent Pixel (dp) is an Android unit that scales proportionally on screens of varying physical pixel densities."
+        },
+        {
+          "question": "How do you convert PX to REM?",
+          "answer": "Divide the pixel value by the browser root font size (typically 16px). For example, 24px / 16px = 1.5rem."
+        }
+      ]
+    }
+  },
+  {
+    "id": "compound-inflation-purchasing-power-calculator",
+    "name": "Inflation Purchasing Power & Cash Decay Calculator",
+    "slug": "compound-inflation-purchasing-power-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "inflation purchasing power calculator",
+      "cash decay inflation calculator",
+      "how much will my money be worth in 20 years",
+      "real value of cash inflation calculator",
+      "future cost of goods inflation tool",
+      "cumulative inflation impact calculator"
+    ],
+    "primaryKeywords": [
+      "inflation purchasing power calculator",
+      "purchasing power calculator",
+      "cash inflation decay calculator",
+      "future value of money inflation"
+    ],
+    "secondaryKeywords": [
+      "calculate purchasing power loss 20 years",
+      "future basket of goods price calculator",
+      "impact of 3.5 percent inflation on cash"
+    ],
+    "targetUsers": [
+      "Savers",
+      "Retirees",
+      "Investors",
+      "Financial Planners",
+      "Economists"
+    ],
+    "badge": "Popular",
+    "userProblem": "Savers holding cash in low-yield bank accounts need to calculate the invisible wealth decay caused by annual inflation over 5 to 30 years and compute the future cost required to buy the same basket of goods.",
+    "searchIntent": "Calculate the erosion of purchasing power and future equivalent cost of living caused by compound inflation over multi-decade horizons.",
+    "resultInterpretation": "Calculates future real purchasing power ($), percentage of wealth lost to inflation (%), future price of today's basket of goods, and 5-year decay milestones.",
+    "practicalGuidance": "At a standard 3.5% inflation rate, cash loses approximately 50% of its real purchasing power every 20 years.",
+    "limitations": "Calculates compound annualized inflation without local CPI commodity weighting.",
+    "formula": "Purchasing Power: Real_Value = Cash / (1 + Inflation_Rate)^Years",
+    "trustNotes": "100% Client-Side financial modeling.",
+    "related": [
+      "inflation-calculator",
+      "emergency-fund-runway-calculator",
+      "cagr-calculator",
+      "compound-interest-calculator"
+    ],
+    "seo": {
+      "title": "Inflation Purchasing Power Calculator — Cash Decay & Future Value Tool",
+      "metaDescription": "Calculate how inflation erodes your cash purchasing power over 5, 10, 20, and 30 years. Free, private financial calculator with future basket cost projections.",
+      "whatIsThis": "A macroeconomic finance utility that quantifies the real purchasing power loss of uninvested cash due to compound inflation.",
+      "howItWorks": "1. Enter current cash sum and expected annual inflation rate.\n2. Set time horizon in years (1 to 50 years).\n3. View future real purchasing power, future basket costs, and 5-year milestone decay schedules.",
+      "whyUseIt": "Reveals the hidden cost of holding excessive cash and emphasizes the necessity of inflation-beating investments.",
+      "faqs": [
+        {
+          "question": "How much purchasing power does cash lose over 20 years at 3.5% inflation?",
+          "answer": "At a 3.5% annual inflation rate, $100,000 in cash loses approximately 50% of its purchasing power, dropping to an equivalent real value of about $50,250 after 20 years."
+        },
+        {
+          "question": "How can I protect my savings from inflation decay?",
+          "answer": "Protect savings by investing in assets that historically outpace inflation, such as broad-market index stock funds, Treasury Inflation-Protected Securities (TIPS), Series I Bonds, and real estate."
+        }
+      ]
+    }
+  },
+  {
+    "id": "subnet-cidr-to-ip-range-expander",
+    "name": "IPv4 CIDR to IP Range & Subnet Host Expander",
+    "slug": "subnet-cidr-to-ip-range-expander",
+    "category": "network",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "cidr to ip range expander",
+      "subnet cidr block calculator",
+      "calculate usable hosts from cidr",
+      "cidr broadcast network address tool",
+      "ipv4 wildcard mask calculator",
+      "cidr prefix to subnet mask converter"
+    ],
+    "primaryKeywords": [
+      "cidr to ip range expander",
+      "cidr calculator",
+      "cidr to subnet mask",
+      "ipv4 cidr host range calculator"
+    ],
+    "secondaryKeywords": [
+      "calculate first and last usable ip cidr",
+      "slash 24 slash 16 usable hosts list",
+      "cisco wildcard mask from cidr prefix"
+    ],
+    "targetUsers": [
+      "Network Engineers",
+      "Cloud Architects (AWS, GCP, Azure)",
+      "DevOps Engineers",
+      "System Administrators"
+    ],
+    "badge": "Network",
+    "userProblem": "Cloud architects configuring VPC subnets and network engineers creating firewall rules need to expand IPv4 CIDR blocks (e.g. `10.0.0.0/22`, `192.168.1.0/24`) into first/last usable IP addresses, broadcast addresses, subnet masks, and wildcard masks.",
+    "searchIntent": "Expand IPv4 CIDR notation into network IP, broadcast IP, usable host range, and subnet mask.",
+    "resultInterpretation": "Calculates network address, broadcast address, first and last usable host IPs, total and usable host capacities, dotted-decimal subnet masks, and Cisco wildcard masks.",
+    "practicalGuidance": "In standard IPv4 subnets (/30 and below), 2 IP addresses are reserved: the network address (first) and the broadcast address (last).",
+    "limitations": "Calculates standard IPv4 CIDR blocks (prefix lengths /0 to /32).",
+    "formula": "CIDR Bitmasking: Netmask = (~0 << (32 - Prefix)); Usable_Hosts = 2^(32 - Prefix) - 2",
+    "trustNotes": "100% Client-Side calculation.",
+    "related": [
+      "subnet-mask-calculator",
+      "network-port-reference",
+      "ip-geolocation-lookup",
+      "ping-test"
+    ],
+    "seo": {
+      "title": "CIDR to IP Range Expander — IPv4 Subnet Mask & Host Calculator",
+      "metaDescription": "Expand IPv4 CIDR notation (e.g. 192.168.1.0/24) into usable IP ranges, broadcast IPs, subnet masks, and wildcard masks. Free cloud network engineer tool.",
+      "whatIsThis": "A networking utility that translates IPv4 CIDR block notation into detailed subnet IP ranges and host capacities.",
+      "howItWorks": "1. Enter any IPv4 CIDR notation (e.g. `192.168.1.0/24` or `10.0.0.0/16`).\n2. View network address, broadcast address, first usable IP, last usable IP, and total host capacity.\n3. Copy the subnet breakdown in 1 click.",
+      "whyUseIt": "Essential for setting up AWS VPCs, Azure VNets, Kubernetes pod CIDRs, and Cisco ACLs.",
+      "faqs": [
+        {
+          "question": "How many usable hosts are in a /24 subnet?",
+          "answer": "A `/24` subnet contains 256 total IP addresses, of which 254 are usable for host devices (reserving the network address `.0` and broadcast address `.255`)."
+        },
+        {
+          "question": "What is a wildcard mask in networking?",
+          "answer": "A wildcard mask is the bitwise inverse of a subnet mask (e.g. a `255.255.255.0` netmask has a wildcard mask of `0.0.0.255`), used in Cisco router ACLs and OSPF network statements."
+        }
+      ]
+    }
+  },
+  {
+    "id": "javascript-regex-cheat-sheet-reference",
+    "name": "JavaScript Regular Expression Cheat Sheet & Tester",
+    "slug": "javascript-regex-cheat-sheet-reference",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "javascript regex cheat sheet",
+      "regular expression reference online",
+      "regex syntax quick reference",
+      "regex character classes quantifiers lookahead",
+      "interactive regex cheat sheet",
+      "javascript regex tester and reference"
+    ],
+    "primaryKeywords": [
+      "javascript regex cheat sheet",
+      "regex cheat sheet",
+      "regex reference online",
+      "regular expressions quick reference"
+    ],
+    "secondaryKeywords": [
+      "positive lookahead negative lookbehind regex cheat sheet",
+      "regex character classes word boundary digits",
+      "interactive regex sandbox tester"
+    ],
+    "targetUsers": [
+      "JavaScript Developers",
+      "Backend Engineers",
+      "QA Testers",
+      "Full-Stack Developers"
+    ],
+    "badge": "High Usage",
+    "userProblem": "Developers writing data validation, text parsers, or search filters need a fast, searchable reference for JavaScript regular expression tokens (character classes, quantifiers, lookarounds, anchors) with an interactive quick-testing sandbox.",
+    "searchIntent": "Search standard JavaScript regex tokens, syntax patterns, lookaheads, and test regular expressions in an interactive sandbox.",
+    "resultInterpretation": "Provides a searchable master directory of regex tokens with descriptions, 1-click token copy, and a live pattern vs string test validator.",
+    "practicalGuidance": "Lookaheads `(?=...)` and lookbehinds `(?<=...)` match patterns without consuming characters from the target string.",
+    "limitations": "Tests standard JavaScript ECMAScript RegExp engine syntax.",
+    "formula": "RegExp Engine: /pattern/flags ➔ RegExp.prototype.test(string)",
+    "trustNotes": "100% Client-Side syntax evaluation. Zero input strings logged.",
+    "related": [
+      "regex-tester",
+      "text-cleaner-formatter",
+      "javascript-event-keycodes-reference",
+      "diff-checker"
+    ],
+    "seo": {
+      "title": "JavaScript Regex Cheat Sheet — Regular Expressions Reference & Tester",
+      "metaDescription": "Searchable JavaScript regular expression (Regex) cheat sheet. Character classes, quantifiers, lookaheads, anchors, and flags with interactive quick tester.",
+      "whatIsThis": "A developer reference utility that catalogs JavaScript regular expression tokens and provides an instant pattern testing sandbox.",
+      "howItWorks": "1. Search for regex tokens or browse categories (Character Classes, Quantifiers, Lookarounds, Anchors).\n2. Test regex patterns against sample strings in the sandbox.\n3. Copy regex tokens in 1 click.",
+      "whyUseIt": "Quickly recalls complex regex syntax without searching through lengthy documentation.",
+      "faqs": [
+        {
+          "question": "What is the difference between \\d and \\D in regex?",
+          "answer": "`\\d` matches any digit character (0-9), while `\\D` matches any character that is NOT a digit."
+        },
+        {
+          "question": "What is a positive lookahead in regular expressions?",
+          "answer": "A positive lookahead `(?=...)` asserts that a given sub-pattern immediately follows the current match position without including those characters in the returned match."
+        }
+      ]
+    }
   }
 ]
