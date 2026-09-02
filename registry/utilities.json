@@ -10323,5 +10323,644 @@
         }
       ]
     }
+  },
+  {
+    "id": "curl-to-ruby-net-http-converter",
+    "name": "cURL to Ruby Net::HTTP Code Converter",
+    "slug": "curl-to-ruby-net-http-converter",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "curl to ruby converter",
+      "convert curl to ruby net http",
+      "curl command to ruby script",
+      "curl to ruby code online",
+      "ruby http request from curl",
+      "ruby on rails curl to net http"
+    ],
+    "primaryKeywords": [
+      "curl to ruby converter",
+      "convert curl to ruby",
+      "curl to ruby code",
+      "ruby net http curl converter"
+    ],
+    "secondaryKeywords": [
+      "ruby net http ssl post request",
+      "convert curl headers to ruby request headers",
+      "ruby uri parse curl generator"
+    ],
+    "targetUsers": [
+      "Ruby Developers",
+      "Ruby on Rails Engineers",
+      "Backend Developers",
+      "DevOps Engineers"
+    ],
+    "badge": "High Usage",
+    "userProblem": "Ruby and Rails developers integrating third-party APIs need to convert bash cURL commands into clean Ruby `Net::HTTP` code with SSL options, headers, JSON body serialization, and error handling.",
+    "searchIntent": "Convert bash cURL commands into clean, standard library Ruby Net::HTTP code.",
+    "resultInterpretation": "Parses cURL commands into standard Ruby `Net::HTTP::Get` / `Post`, `URI.parse`, request headers, and SSL context boilerplate.",
+    "practicalGuidance": "Uses standard Ruby `net/http` without requiring external gems (no Farady or HTTParty gems required).",
+    "limitations": "Parses standard HTTP/HTTPS cURL CLI syntax.",
+    "formula": "CLI AST Parser: cURL Command ➔ Ruby Net::HTTP Code Synthesis",
+    "trustNotes": "100% Client-Side. API keys and bearer tokens never leave your browser.",
+    "related": [
+      "curl-to-python-requests-converter",
+      "curl-to-javascript-axios-converter",
+      "curl-to-php-curl-converter",
+      "curl-to-go-http-converter"
+    ],
+    "seo": {
+      "title": "cURL to Ruby Converter — Convert cURL to Ruby Net::HTTP Code",
+      "metaDescription": "Convert cURL commands to clean Ruby Net::HTTP scripts online. Standard library Ruby code with headers, SSL options, and JSON body parsing. 1-click copy.",
+      "whatIsThis": "A developer code translation utility that converts bash cURL commands into standard Ruby `Net::HTTP` code.",
+      "howItWorks": "1. Paste your cURL command into the input box.\n2. View generated Ruby script with request headers and SSL configuration.\n3. Copy the clean Ruby code in 1 click.",
+      "whyUseIt": "Eliminates tedious manual translation of HTTP headers and API payloads into Ruby boilerplate.",
+      "faqs": [
+        {
+          "question": "Does this require any Ruby gems?",
+          "answer": "No. The generated code strictly uses the Ruby standard library (`net/http`, `uri`, `json`)."
+        },
+        {
+          "question": "Does it support HTTPS requests with SSL?",
+          "answer": "Yes. It automatically configures `use_ssl: uri.scheme == 'https'` for secure API endpoints."
+        }
+      ]
+    }
+  },
+  {
+    "id": "annuity-payout-present-value-calculator",
+    "name": "Annuity Calculator — Fixed Payout & Present Value Tool",
+    "slug": "annuity-payout-present-value-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "annuity calculator",
+      "fixed annuity payout calculator",
+      "annuity present value calculator",
+      "calculate monthly annuity payment",
+      "retirement annuity return calculator",
+      "immediate annuity income calculator"
+    ],
+    "primaryKeywords": [
+      "annuity calculator",
+      "fixed annuity payout calculator",
+      "annuity income calculator",
+      "retirement annuity calculator"
+    ],
+    "secondaryKeywords": [
+      "calculate principal needed for monthly retirement income",
+      "guaranteed lifetime annuity payout",
+      "annuity interest earned vs principal"
+    ],
+    "targetUsers": [
+      "Retirees",
+      "Financial Planners",
+      "Pre-Retirees",
+      "Pension Beneficiaries"
+    ],
+    "badge": "Popular",
+    "userProblem": "Retirees considering a fixed immediate annuity need to calculate guaranteed monthly cash payouts from a lump-sum premium or calculate the upfront principal required to generate a specific target monthly income.",
+    "searchIntent": "Calculate guaranteed monthly annuity payouts, lifetime income, and present value for retirement planning.",
+    "resultInterpretation": "Calculates monthly annuity payout, annual income, total lifetime payments, guaranteed interest earned, or required upfront principal.",
+    "practicalGuidance": "Fixed annuities provide guaranteed predictable monthly income for life or a fixed period, shielding retirees from stock market volatility.",
+    "limitations": "Calculates fixed period-certain annuities based on constant guaranteed annual return rates.",
+    "formula": "Annuity PMT = (Principal * (r * (1 + r)^n)) / ((1 + r)^n - 1)",
+    "trustNotes": "100% Client-Side financial modeling. Zero financial data stored or transmitted.",
+    "related": [
+      "fire-financial-independence-retire-early-calculator",
+      "compound-savings-goal-calculator",
+      "net-worth-milestone-tracker",
+      "emergency-fund-runway-calculator"
+    ],
+    "seo": {
+      "title": "Annuity Calculator — Fixed Payout & Lump Sum Present Value Tool",
+      "metaDescription": "Calculate guaranteed monthly annuity payouts or determine the lump sum required for your retirement income goal. Free, private retirement finance tool.",
+      "whatIsThis": "A retirement finance utility that calculates guaranteed annuity income streams and lump-sum present values.",
+      "howItWorks": "1. Choose calculation mode (Calculate Payout from Lump Sum vs Calculate Principal Needed).\n2. Enter principal or target monthly income, guaranteed return rate, and payout years.\n3. View monthly payout, total lifetime income, and interest earned.",
+      "whyUseIt": "Determines whether an immediate annuity provides sufficient guaranteed income for retirement living expenses.",
+      "faqs": [
+        {
+          "question": "What is a fixed immediate annuity?",
+          "answer": "A fixed immediate annuity is an insurance contract where you deposit a lump sum in exchange for guaranteed regular income payments starting immediately for a set period or for life."
+        },
+        {
+          "question": "How is the monthly annuity payout calculated?",
+          "answer": "Payouts are determined by the upfront premium, payout duration, and the insurance company's guaranteed interest rate using standard amortization present-value formulas."
+        }
+      ]
+    }
+  },
+  {
+    "id": "css-triangle-generator",
+    "name": "CSS Triangle Generator — Border Shapes & Arrow Builder",
+    "slug": "css-triangle-generator",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "css triangle generator",
+      "css border triangle builder",
+      "tooltip arrow css generator",
+      "pure css triangle generator",
+      "css triangle pointing up down left right",
+      "css shape border width tool"
+    ],
+    "primaryKeywords": [
+      "css triangle generator",
+      "css border triangle",
+      "tooltip arrow css",
+      "css triangle arrow generator"
+    ],
+    "secondaryKeywords": [
+      "css triangle pointing down snippet",
+      "css border width transparent triangle",
+      "copy pure css triangle shape"
+    ],
+    "targetUsers": [
+      "Frontend Developers",
+      "UI Designers",
+      "Web Developers"
+    ],
+    "badge": "Design",
+    "userProblem": "Frontend developers creating tooltips, dropdown carets, speech bubbles, and custom UI arrows need a visual generator to create pure CSS triangles using transparent border hacks without images or SVG bloat.",
+    "searchIntent": "Generate pure CSS triangles and tooltip arrows with custom direction, width, height, and color.",
+    "resultInterpretation": "Renders an interactive triangle canvas, supports 8 directional orientations, custom dimensions, hex fill color, and generates clean, cross-browser CSS border rules.",
+    "practicalGuidance": "CSS triangles use `width: 0; height: 0` with transparent borders and one colored border to create lightweight vector-like shapes.",
+    "limitations": "Generates standard CSS border-style rules supported by all modern and legacy browsers.",
+    "formula": "CSS Border Hack: width: 0; height: 0; border-width: ...; border-color: transparent transparent [color] transparent;",
+    "trustNotes": "100% Client-Side visual rendering.",
+    "related": [
+      "css-box-shadow-generator",
+      "css-gradient-generator",
+      "css-glassmorphism-generator",
+      "color-converter"
+    ],
+    "seo": {
+      "title": "CSS Triangle Generator — Pure CSS Border Arrow & Tooltip Tool",
+      "metaDescription": "Create pure CSS triangles and tooltip arrows online. Visual direction selector (up, down, left, right, diagonals), dimensions, color picker, and 1-click CSS export.",
+      "whatIsThis": "A visual design utility that creates lightweight, pure CSS border triangles and tooltip pointers.",
+      "howItWorks": "1. Select triangle orientation direction (Up, Down, Left, Right, Diagonals).\n2. Adjust width, height, and fill color.\n3. Copy the pure CSS code snippet in 1 click.",
+      "whyUseIt": "Creates crisp UI carets and speech bubble arrows without external icon fonts or SVG assets.",
+      "faqs": [
+        {
+          "question": "How do CSS border triangles work?",
+          "answer": "When an element has zero width and height with thick borders, the borders meet at diagonal 45-degree angles. Setting three sides to `transparent` leaves one visible triangular wedge."
+        },
+        {
+          "question": "Can I use CSS triangles in pseudo-elements?",
+          "answer": "Yes. They are commonly applied to `::before` or `::after` pseudo-elements on tooltips and popovers."
+        }
+      ]
+    }
+  },
+  {
+    "id": "csv-to-sqlite-ddl-converter",
+    "name": "CSV to SQL DDL Generator — SQLite, Postgres & MySQL",
+    "slug": "csv-to-sqlite-ddl-converter",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "csv to sqlite converter",
+      "csv to sql ddl generator",
+      "convert csv to create table sql",
+      "csv to postgresql table generator",
+      "csv to mysql insert statements",
+      "generate sql schema from csv online"
+    ],
+    "primaryKeywords": [
+      "csv to sqlite converter",
+      "csv to sql ddl",
+      "csv to create table generator",
+      "csv to postgres sql generator"
+    ],
+    "secondaryKeywords": [
+      "infer sql column data types from csv",
+      "batch insert into sql from csv",
+      "convert csv table to sqlite schema"
+    ],
+    "targetUsers": [
+      "Database Administrators",
+      "Data Engineers",
+      "Backend Developers",
+      "Full-Stack Engineers"
+    ],
+    "badge": "High Usage",
+    "userProblem": "Developers and data analysts importing raw CSV files into relational databases (SQLite, PostgreSQL, MySQL) need to automatically infer column types and generate `CREATE TABLE` DDL and batch `INSERT INTO` statements.",
+    "searchIntent": "Convert raw CSV files into SQL CREATE TABLE schema definitions and batch INSERT statements.",
+    "resultInterpretation": "Inspects CSV column headers, detects numbers, booleans, floats, and strings, and generates production-ready SQL DDL statements for SQLite, Postgres, or MySQL.",
+    "practicalGuidance": "Automatically escapes single quotes in text fields to prevent SQL syntax errors.",
+    "limitations": "Parses standard comma-separated values (CSV) format.",
+    "formula": "Type Inference Engine: CSV Header & Rows ➔ SQL Dialect DDL Schema",
+    "trustNotes": "100% Client-Side parsing. Zero database records uploaded or stored.",
+    "related": [
+      "csv-json-converter",
+      "tsv-to-json-csv-converter",
+      "sql-formatter",
+      "sql-in-clause-batch-formatter"
+    ],
+    "seo": {
+      "title": "CSV to SQL DDL Generator — SQLite, Postgres & MySQL Converter",
+      "metaDescription": "Convert CSV data to SQL CREATE TABLE and batch INSERT statements online. Automatically infers column data types for SQLite, PostgreSQL, and MySQL. Free tool.",
+      "whatIsThis": "A database developer utility that converts CSV tables into relational SQL table schemas and insert scripts.",
+      "howItWorks": "1. Enter table name and choose target SQL dialect (SQLite, PostgreSQL, MySQL).\n2. Paste CSV data into the input box.\n3. Copy the generated `CREATE TABLE` schema and `INSERT INTO` statements in 1 click.",
+      "whyUseIt": "Saves hours of manual SQL schema typing when seeding databases from CSV exports.",
+      "faqs": [
+        {
+          "question": "How does it determine column types?",
+          "answer": "It samples the values in each column to detect if all entries are integers, decimal floats, booleans, or general text strings, mapping them to the appropriate dialect data type."
+        },
+        {
+          "question": "Does it support large CSVs?",
+          "answer": "Yes. It processes CSV parsing entirely in browser memory without sending data to an external server."
+        }
+      ]
+    }
+  },
+  {
+    "id": "mortgage-amortization-schedule-visualizer",
+    "name": "Mortgage Amortization Schedule & Early Payoff Tool",
+    "slug": "mortgage-amortization-schedule-visualizer",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "mortgage amortization schedule visualizer",
+      "amortization schedule calculator with extra payments",
+      "home loan principal and interest breakdown",
+      "mortgage early payoff savings calculator",
+      "year by year mortgage amortization table",
+      "how much interest saved extra mortgage payment"
+    ],
+    "primaryKeywords": [
+      "mortgage amortization schedule",
+      "amortization schedule calculator",
+      "mortgage extra payment calculator",
+      "home loan amortization table"
+    ],
+    "secondaryKeywords": [
+      "calculate years saved by paying extra mortgage",
+      "yearly mortgage principal balance schedule",
+      "amortization schedule early payoff"
+    ],
+    "targetUsers": [
+      "Homeowners",
+      "Home Buyers",
+      "Mortgage Borrowers",
+      "Real Estate Investors"
+    ],
+    "badge": "Popular",
+    "userProblem": "Homeowners and mortgage borrowers need a clear year-by-year amortization breakdown of principal versus interest and want to see how small extra monthly payments accelerate loan payoff and save thousands in interest.",
+    "searchIntent": "Visualize full year-by-year mortgage amortization schedules and calculate time and interest saved by making extra principal payments.",
+    "resultInterpretation": "Calculates base monthly payment (P&I), total interest saved, years shaved off the loan, and provides an interactive year-by-year amortization balance schedule.",
+    "practicalGuidance": "Making even a modest extra payment of $100 to $200 per month directly toward principal can shave 4 to 6 years off a 30-year mortgage.",
+    "limitations": "Calculates fixed-rate mortgages and excludes property taxes, homeowners insurance, and private mortgage insurance (PMI).",
+    "formula": "Amortization: Monthly_P&I = (Loan * (r * (1 + r)^n)) / ((1 + r)^n - 1); Balance[t] = Balance[t-1] - Principal_Paid",
+    "trustNotes": "100% Client-Side financial calculations.",
+    "related": [
+      "mortgage-payment-calculator",
+      "home-equity-loan-heloc-calculator",
+      "loan-refinance-savings-calculator",
+      "auto-loan-early-payoff-calculator"
+    ],
+    "seo": {
+      "title": "Mortgage Amortization Schedule — Early Payoff & Savings Visualizer",
+      "metaDescription": "Calculate and visualize your year-by-year mortgage amortization schedule. See how extra monthly payments reduce your loan term and save thousands in interest.",
+      "whatIsThis": "A real estate finance utility that displays complete mortgage amortization schedules and models early payoff acceleration.",
+      "howItWorks": "1. Enter loan amount, interest rate, and term (30, 20, 15, or 10 years).\n2. Add optional extra monthly principal payment.\n3. View base monthly payment, total interest saved, years shaved off, and the complete yearly schedule.",
+      "whyUseIt": "Reveals the powerful compounding savings of paying extra principal early in a mortgage.",
+      "faqs": [
+        {
+          "question": "How does an extra payment affect my mortgage?",
+          "answer": "Extra payments go directly toward reducing the loan principal balance, meaning subsequent interest charges are calculated on a smaller balance, shortening the loan term."
+        },
+        {
+          "question": "Why is interest so high in the early years of a mortgage?",
+          "answer": "In standard amortization, early payments consist mostly of interest because the outstanding loan principal is at its peak. Over time, the principal portion steadily increases."
+        }
+      ]
+    }
+  },
+  {
+    "id": "bcrypt-hash-cost-factor-benchmark",
+    "name": "Bcrypt Work Factor & Latency Security Calculator",
+    "slug": "bcrypt-hash-cost-factor-benchmark",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "bcrypt cost factor calculator",
+      "bcrypt work factor benchmark",
+      "bcrypt iterations calculation",
+      "owasp bcrypt cost recommendation",
+      "bcrypt hash latency per core",
+      "password hashing benchmark tool"
+    ],
+    "primaryKeywords": [
+      "bcrypt cost factor calculator",
+      "bcrypt work factor benchmark",
+      "bcrypt iterations calculator",
+      "owasp bcrypt recommendation"
+    ],
+    "secondaryKeywords": [
+      "calculate bcrypt rounds 2 to the power of cost",
+      "bcrypt login latency response time",
+      "password hashing work factor evaluation"
+    ],
+    "targetUsers": [
+      "Security Engineers",
+      "Backend Architects",
+      "DevOps Engineers",
+      "Full-Stack Developers"
+    ],
+    "badge": "High Usage",
+    "userProblem": "Backend developers and security engineers configuring user authentication systems need to evaluate Bcrypt work factors (cost 8 through 16), calculate key derivation iterations ($2^{\\text{cost}}$), estimate verification latency, and verify OWASP security compliance.",
+    "searchIntent": "Evaluate Bcrypt cost factors, compute iteration rounds, estimate hashing latency, and check OWASP security recommendations.",
+    "resultInterpretation": "Calculates key derivation rounds, estimated server latency in milliseconds, maximum hash verifications per CPU core per second, and provides an OWASP security evaluation.",
+    "practicalGuidance": "OWASP recommends a minimum work factor of 10, with 12 being the optimal balance between brute-force protection and server latency.",
+    "limitations": "Latency estimates are based on standard server CPU benchmarks.",
+    "formula": "Bcrypt Iterations = 2^(Cost); Latency[ms] = Base_Latency * 2^(Cost - 10)",
+    "trustNotes": "100% Client-Side mathematical analysis. Zero passwords processed or stored.",
+    "related": [
+      "hash-generator",
+      "jwt-payload-inspector-signer",
+      "password-generator",
+      "random-string-token-generator"
+    ],
+    "seo": {
+      "title": "Bcrypt Cost Factor Calculator — Work Factor & Latency Benchmark",
+      "metaDescription": "Calculate Bcrypt iteration rounds (2^cost), estimate server hashing latency, and check OWASP security recommendations for password hashing. Free developer tool.",
+      "whatIsThis": "A cryptographic security utility that models Bcrypt key derivation cost factors and CPU latency.",
+      "howItWorks": "1. Adjust the Bcrypt cost factor slider (4 to 16).\n2. View total key derivation rounds, estimated latency per hash, and single-core throughput.\n3. Check OWASP compliance status and copy benchmark summary.",
+      "whyUseIt": "Helps backend teams tune password hashing parameters to prevent brute-force attacks without degrading login responsiveness.",
+      "faqs": [
+        {
+          "question": "What is the Bcrypt cost factor?",
+          "answer": "The cost factor (work factor) determines how many key expansion iterations ($2^{\\text{cost}}$) Bcrypt performs to hash a password, making offline GPU brute-force attacks computationally expensive."
+        },
+        {
+          "question": "What happens if the cost factor is set too high?",
+          "answer": "Setting the cost factor too high (e.g. 15 or 16) can cause each password verification to take multiple seconds, creating a severe CPU bottleneck and exposing the server to denial-of-service (DoS) risks."
+        }
+      ]
+    }
+  },
+  {
+    "id": "video-bitrate-file-size-calculator",
+    "name": "Video Bitrate & File Size Target Calculator",
+    "slug": "video-bitrate-file-size-calculator",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "video bitrate calculator",
+      "calculate video file size target bitrate",
+      "discord 25mb video bitrate calculator",
+      "video encoding bitrate tool",
+      "ffmpeg bitrate calculator",
+      "video duration to target file size"
+    ],
+    "primaryKeywords": [
+      "video bitrate calculator",
+      "video file size calculator",
+      "target bitrate calculator",
+      "discord video compressor calculator"
+    ],
+    "secondaryKeywords": [
+      "calculate ffmpeg video bitrate for 25mb upload",
+      "video duration and audio bitrate calculation",
+      "kbps to mbps video bitrate conversion"
+    ],
+    "targetUsers": [
+      "Video Editors",
+      "Content Creators",
+      "Discord & Slack Users",
+      "Media Streamers"
+    ],
+    "badge": "Design",
+    "userProblem": "Video editors and content creators need to compress videos to fit specific platform upload limits (Discord 25 MB, Email 25 MB, WhatsApp 64 MB) and calculate the exact video encoding bitrate (kbps) for FFmpeg or HandBrake.",
+    "searchIntent": "Calculate the exact video and audio bitrate required to fit a video of specific duration under a target file size limit.",
+    "resultInterpretation": "Calculates target video bitrate in kbps and Mbps, accounts for audio stream overhead, displays ready-to-use FFmpeg CLI encoding flags, and warns if quality will be compromised.",
+    "practicalGuidance": "Subtract audio bitrate (typically 128 kbps) from total available bandwidth to prevent file size overages.",
+    "limitations": "Calculates two-pass average bitrate (VBR) targets.",
+    "formula": "Target Video Bitrate (kbps) = ((Target_MB * 8 * 1024) / Total_Seconds) - Audio_Bitrate",
+    "trustNotes": "100% Client-Side calculation.",
+    "related": [
+      "bandwidth-file-transfer-calculator",
+      "aspect-ratio-calculator",
+      "storage-converter",
+      "aspect-ratio-resizer"
+    ],
+    "seo": {
+      "title": "Video Bitrate Calculator — Target File Size & FFmpeg Tool",
+      "metaDescription": "Calculate the exact video bitrate required to fit your video under file size limits (Discord 25MB, Email, WhatsApp). Generates FFmpeg encoding flags. Free tool.",
+      "whatIsThis": "A media encoding utility that calculates target video bitrates given video duration and maximum upload file size.",
+      "howItWorks": "1. Select platform preset (Discord 25MB, WhatsApp, Email) or enter custom size limit.\n2. Enter video duration in minutes and seconds.\n3. View recommended video bitrate and copy the FFmpeg CLI encoding parameters.",
+      "whyUseIt": "Ensures video exports never fail platform upload size limits.",
+      "faqs": [
+        {
+          "question": "How do I compress a video to under 25 MB for Discord?",
+          "answer": "Enter the video duration, select the 25 MB Discord preset, and set the resulting video bitrate in your video export settings or HandBrake encoder."
+        },
+        {
+          "question": "What audio bitrate should I use?",
+          "answer": "128 kbps is the industry standard for AAC/Opus audio in web videos, offering great audio quality while leaving maximum bandwidth for video frames."
+        }
+      ]
+    }
+  },
+  {
+    "id": "ssl-tls-certificate-decoder-inspector",
+    "name": "SSL / TLS X.509 Certificate Decoder & Inspector",
+    "slug": "ssl-tls-certificate-decoder-inspector",
+    "category": "network",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "ssl certificate decoder",
+      "x509 certificate inspector",
+      "decode pem certificate online",
+      "check ssl cert expiration date",
+      "tls certificate san domain parser",
+      "view ssl certificate common name issuer"
+    ],
+    "primaryKeywords": [
+      "ssl certificate decoder",
+      "tls certificate decoder",
+      "x509 certificate decoder",
+      "ssl cert inspector online"
+    ],
+    "secondaryKeywords": [
+      "parse pem certificate begin certificate",
+      "check days remaining ssl certificate",
+      "view subject alternative names sans certificate"
+    ],
+    "targetUsers": [
+      "System Administrators",
+      "DevOps Engineers",
+      "Security Analysts",
+      "Web Developers"
+    ],
+    "badge": "Network",
+    "userProblem": "System administrators and DevOps engineers need to inspect PEM-encoded X.509 SSL/TLS certificates to verify Subject Common Name (CN), Issuer CA, Subject Alternative Names (SANs), public key algorithms, and remaining expiration days.",
+    "searchIntent": "Decode and inspect PEM-encoded X.509 SSL/TLS certificates to verify validity dates, issuer, and domain coverage.",
+    "resultInterpretation": "Parses PEM certificate strings, displays Common Name, CA issuer, public key type, signature algorithm, serial number, and remaining expiration days with color-coded status.",
+    "practicalGuidance": "Never paste private keys (`-----BEGIN PRIVATE KEY-----`). Only paste public certificates (`-----BEGIN CERTIFICATE-----`).",
+    "limitations": "Parses standard PEM-encoded X.509 public certificates.",
+    "formula": "X.509 Parser: ASN.1 / PEM Decoder ➔ Subject, Issuer, Validity Dates, SANs",
+    "trustNotes": "100% Client-Side decoding. Zero certificate data or keys transmitted.",
+    "related": [
+      "dns-lookup",
+      "email-dns-records-generator",
+      "dns-record-generator",
+      "ip-geolocation-lookup"
+    ],
+    "seo": {
+      "title": "SSL Certificate Decoder — Inspect X.509 TLS Certificates Online",
+      "metaDescription": "Decode and inspect PEM X.509 SSL/TLS certificates online. Verify Common Name, Issuer CA, Subject Alternative Names (SANs), and expiration dates. 100% private.",
+      "whatIsThis": "A networking security utility that decodes PEM-encoded public X.509 SSL/TLS certificates in browser memory.",
+      "howItWorks": "1. Paste your PEM certificate (`-----BEGIN CERTIFICATE-----...`).\n2. View decoded attributes (Common Name, Issuer, SANs, Validity Dates, Expiration Days).\n3. Copy the certificate summary in 1 click.",
+      "whyUseIt": "Quickly verifies certificate attributes without needing local OpenSSL CLI tools.",
+      "faqs": [
+        {
+          "question": "Is it safe to paste my certificate here?",
+          "answer": "Yes. This tool runs 100% client-side in your browser. Furthermore, public certificates contain only public information and do not expose private keys."
+        },
+        {
+          "question": "What are Subject Alternative Names (SANs)?",
+          "answer": "SANs allow a single SSL certificate to secure multiple domain names, subdomains, and IP addresses."
+        }
+      ]
+    }
+  },
+  {
+    "id": "hex-color-shades-tints-generator",
+    "name": "Hex Color Shades & Tints Palette Generator",
+    "slug": "hex-color-shades-tints-generator",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "color shades and tints generator",
+      "hex color shades generator",
+      "tailwind color palette generator from hex",
+      "color tints generator online",
+      "generate lighter and darker shades of a color",
+      "css color scale builder"
+    ],
+    "primaryKeywords": [
+      "color shades generator",
+      "color tints generator",
+      "hex shades and tints",
+      "tailwind color palette generator"
+    ],
+    "secondaryKeywords": [
+      "generate 50 to 950 color scale",
+      "tints mix with white shades mix with black",
+      "1 click copy hex color shades"
+    ],
+    "targetUsers": [
+      "UI/UX Designers",
+      "Frontend Developers",
+      "Design System Architects",
+      "Graphic Designers"
+    ],
+    "badge": "Design",
+    "userProblem": "Designers and frontend engineers building design systems or Tailwind CSS themes need to generate cohesive palettes of tints (mixed with white) and shades (mixed with black) from any brand hex color.",
+    "searchIntent": "Generate monochromatic tints, shades, and Tailwind 50-950 design scales from a single hex color.",
+    "resultInterpretation": "Calculates 9 tints (10% to 90% white mix), 9 shades (10% to 90% black mix), and an 11-step Tailwind CSS design palette (50, 100, 200, ..., 950) with 1-click hex copy.",
+    "practicalGuidance": "Tints are ideal for hover states and subtle backgrounds; shades provide contrast for text and active borders.",
+    "limitations": "Calculates RGB mathematical color interpolation.",
+    "formula": "Color Mixing: Tint = Color * (1 - w) + White * w; Shade = Color * (1 - w) + Black * w",
+    "trustNotes": "100% Client-Side color palette generation.",
+    "related": [
+      "color-converter",
+      "hex-rgb-hsl-picker",
+      "css-gradient-generator",
+      "color-contrast-checker"
+    ],
+    "seo": {
+      "title": "Color Shades & Tints Generator — Tailwind CSS Palette Builder",
+      "metaDescription": "Generate tints, shades, and Tailwind CSS 50-950 design palettes from any hex color online. Visual preview and 1-click hex copy. Free designer tool.",
+      "whatIsThis": "A visual design system utility that generates monochromatic color scales, tints, and shades from a base hex color.",
+      "howItWorks": "1. Pick or enter any base hex color.\n2. View generated Tailwind 50-950 palette, tints (+ white), and shades (+ black).\n3. Click any color swatch to copy its hex code to clipboard.",
+      "whyUseIt": "Eliminates guesswork when creating consistent UI color hierarchies and design system tokens.",
+      "faqs": [
+        {
+          "question": "What is the difference between a tint and a shade in color theory?",
+          "answer": "A tint is created by adding white to a pure hue to make it lighter, while a shade is created by adding black to make it darker."
+        },
+        {
+          "question": "Can I use these colors in Tailwind CSS?",
+          "answer": "Yes. The generated 50-950 scale directly maps to Tailwind CSS's default color palette structure."
+        }
+      ]
+    }
+  },
+  {
+    "id": "kitchen-cooking-unit-converter",
+    "name": "Kitchen Cooking & Baking Unit Converter",
+    "slug": "kitchen-cooking-unit-converter",
+    "category": "education",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "kitchen unit converter",
+      "cooking measurement converter",
+      "baking unit converter cups to grams",
+      "cups to tablespoons teaspoons converter",
+      "oven temperature fahrenheit to celsius",
+      "fluid ounces to milliliters kitchen converter"
+    ],
+    "primaryKeywords": [
+      "kitchen unit converter",
+      "cooking converter",
+      "baking measurement converter",
+      "cups to tablespoons converter"
+    ],
+    "secondaryKeywords": [
+      "oven fahrenheit to celsius gas mark",
+      "fl oz to ml kitchen volume",
+      "tablespoons to teaspoons cooking measurement"
+    ],
+    "targetUsers": [
+      "Home Cooks",
+      "Bakers",
+      "Culinary Students",
+      "Recipe Creators"
+    ],
+    "badge": "Popular",
+    "userProblem": "Home cooks and bakers following international recipes need to quickly convert culinary volumes (cups, tablespoons, teaspoons, fluid ounces, milliliters, liters) and oven temperatures (Fahrenheit, Celsius, Gas Mark).",
+    "searchIntent": "Convert culinary cooking and baking measurements between cups, tablespoons, teaspoons, milliliters, and oven temperatures.",
+    "resultInterpretation": "Calculates synchronized conversions for Cups, Tablespoons (tbsp), Teaspoons (tsp), Fluid Ounces (fl oz), Milliliters (ml), Liters (L), and oven temperatures (°F, °C, Gas Mark).",
+    "practicalGuidance": "1 US Cup equals 16 Tablespoons, 48 Teaspoons, 8 Fluid Ounces, or approximately 237 milliliters.",
+    "limitations": "Uses standard US customary and metric liquid volume conversions.",
+    "formula": "Volume Ratios: 1 Cup = 16 Tbsp = 48 Tsp = 8 Fl Oz = 236.588 mL; Temp: °C = (°F - 32) * 5/9",
+    "trustNotes": "100% Client-Side calculation.",
+    "related": [
+      "unit-converter",
+      "decimal-to-fraction-converter",
+      "percentage-calculator",
+      "water-intake-calculator"
+    ],
+    "seo": {
+      "title": "Kitchen Unit Converter — Cooking & Baking Measurement Tool",
+      "metaDescription": "Convert cooking and baking measurements online. Cups to tablespoons, teaspoons, fluid ounces, milliliters, and oven temperature (°F to °C). Free kitchen tool.",
+      "whatIsThis": "A culinary measurement utility that translates cooking volumes and oven baking temperatures across US and metric units.",
+      "howItWorks": "1. Select category (Liquid & Dry Volume vs Oven Temperature).\n2. Enter quantity and base unit (Cups, Tbsp, Tsp, Fl Oz, mL, Liters).\n3. View instant conversions across all equivalent units and copy with 1 click.",
+      "whyUseIt": "Bakes and cooks with precision when translating between American and European recipe measurements.",
+      "faqs": [
+        {
+          "question": "How many tablespoons are in one cup?",
+          "answer": "There are exactly 16 tablespoons in 1 US cup (or 48 teaspoons)."
+        },
+        {
+          "question": "What is 350°F in Celsius for baking?",
+          "answer": "350°F is approximately 177°C (standard baking temperature, corresponding to Gas Mark 4)."
+        }
+      ]
+    }
   }
 ]
