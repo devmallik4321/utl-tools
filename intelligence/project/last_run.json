@@ -1,5 +1,5 @@
 {
-  "executed_at": "2026-09-02T20:42:39.673Z",
+  "executed_at": "2026-09-02T20:50:22.461Z",
   "project_id": "UTL",
   "project_name": "UTL.tools",
   "project_health": "ATTENTION_REQUIRED",
@@ -10,13 +10,13 @@
   "recommendations_count": 4,
   "opportunities": [
     {
-      "opportunity_id": "OPP-AUTO-1788381759670-1",
+      "opportunity_id": "OPP-AUTO-1788382222459-1",
       "project_id": "UTL",
       "type": "REPAIR",
       "title": "Investigate SUDDEN_DROP in monthly_visit_estimate",
       "description": "Sudden drop of 76.7% detected in metric monthly_visit_estimate.",
       "evidence_ids": [
-        "ANM-DROP-monthly_visit_estimate-1788381759668"
+        "ANM-DROP-monthly_visit_estimate-1788382222457"
       ],
       "impact_score": 90,
       "effort_score": 20,
@@ -26,18 +26,18 @@
       "priority": "P1",
       "recommended_action": "Perform root cause audit for metric monthly_visit_estimate.",
       "approval_status": "PROPOSED",
-      "created_at": "2026-09-02T20:42:39.669Z",
-      "updated_at": "2026-09-02T20:42:39.669Z",
+      "created_at": "2026-09-02T20:50:22.458Z",
+      "updated_at": "2026-09-02T20:50:22.458Z",
       "explanation": "Priority P1 (Score: 74.1) because impact=90/100, confidence=90%, urgency=95/100, effort=20/100 (1 evidence sources)."
     },
     {
-      "opportunity_id": "OPP-AUTO-1788381759670-2",
+      "opportunity_id": "OPP-AUTO-1788382222459-2",
       "project_id": "UTL",
       "type": "RESEARCH",
       "title": "Investigate CONFLICT_DETECTED in monthly_visit_estimate",
       "description": "Conflicting observations detected across sources for metric monthly_visit_estimate.",
       "evidence_ids": [
-        "ANM-CONFLICT-monthly_visit_estimate-1788381759668"
+        "ANM-CONFLICT-monthly_visit_estimate-1788382222457"
       ],
       "impact_score": 90,
       "effort_score": 20,
@@ -47,12 +47,12 @@
       "priority": "P1",
       "recommended_action": "Perform root cause audit for metric monthly_visit_estimate.",
       "approval_status": "PROPOSED",
-      "created_at": "2026-09-02T20:42:39.669Z",
-      "updated_at": "2026-09-02T20:42:39.669Z",
+      "created_at": "2026-09-02T20:50:22.458Z",
+      "updated_at": "2026-09-02T20:50:22.458Z",
       "explanation": "Priority P1 (Score: 74.1) because impact=90/100, confidence=90%, urgency=95/100, effort=20/100 (1 evidence sources)."
     },
     {
-      "opportunity_id": "OPP-CAND-1788381759670-3",
+      "opportunity_id": "OPP-CAND-1788382222459-3",
       "project_id": "UTL",
       "type": "CREATE_NEW",
       "title": "Create Percentage Difference Calculator",
@@ -68,18 +68,18 @@
       "priority": "P1",
       "recommended_action": "Build a zero-install, instant client-side Percentage Difference Calculator under /tools/percentage-difference-calculator in next feature batch.",
       "approval_status": "PROPOSED",
-      "created_at": "2026-09-02T20:42:39.669Z",
-      "updated_at": "2026-09-02T20:42:39.669Z",
+      "created_at": "2026-09-02T20:50:22.458Z",
+      "updated_at": "2026-09-02T20:50:22.458Z",
       "explanation": "Priority P1 (Score: 67.5) because impact=82/100, confidence=92%, urgency=75/100, effort=20/100 (1 evidence sources)."
     },
     {
-      "opportunity_id": "OPP-CAND-1788381759670-4",
+      "opportunity_id": "OPP-CAND-1788382222459-4",
       "project_id": "UTL",
       "type": "USER_EXPERIENCE",
       "title": "Enhance Widget 1-Click Store Installation Deep Links",
       "description": "Windows Widget hub received 168 views. Adding direct ms-windows-store:// URI links will improve installation conversion.",
       "evidence_ids": [
-        "OBS-UTL-TEL-002-1788381758157"
+        "OBS-UTL-TEL-002-1788382220944"
       ],
       "impact_score": 78,
       "effort_score": 15,
@@ -89,20 +89,20 @@
       "priority": "P2",
       "recommended_action": "Update Microsoft Store widget records to include native ms-windows-store deep-links alongside web URLs.",
       "approval_status": "PROPOSED",
-      "created_at": "2026-09-02T20:42:39.669Z",
-      "updated_at": "2026-09-02T20:42:39.669Z",
+      "created_at": "2026-09-02T20:50:22.458Z",
+      "updated_at": "2026-09-02T20:50:22.458Z",
       "explanation": "Priority P2 (Score: 64.9) because impact=78/100, confidence=85%, urgency=70/100, effort=15/100 (1 evidence sources)."
     }
   ],
   "recommendations": [
     {
-      "recommendation_id": "REC-OPP-AUTO-1788381759670-1",
-      "opportunity_id": "OPP-AUTO-1788381759670-1",
+      "recommendation_id": "REC-OPP-AUTO-1788382222459-1",
+      "opportunity_id": "OPP-AUTO-1788382222459-1",
       "project_id": "UTL",
       "action": "Perform root cause audit for metric monthly_visit_estimate.",
       "reason": "Sudden drop of 76.7% detected in metric monthly_visit_estimate.",
       "evidence_ids": [
-        "ANM-DROP-monthly_visit_estimate-1788381759668"
+        "ANM-DROP-monthly_visit_estimate-1788382222457"
       ],
       "confidence": "VERY_HIGH",
       "confidence_score": 0.9,
@@ -110,16 +110,16 @@
       "risk_level": "LOW",
       "approval_required": true,
       "status": "PROPOSED",
-      "created_at": "2026-09-02T20:42:39.671Z"
+      "created_at": "2026-09-02T20:50:22.459Z"
     },
     {
-      "recommendation_id": "REC-OPP-AUTO-1788381759670-2",
-      "opportunity_id": "OPP-AUTO-1788381759670-2",
+      "recommendation_id": "REC-OPP-AUTO-1788382222459-2",
+      "opportunity_id": "OPP-AUTO-1788382222459-2",
       "project_id": "UTL",
       "action": "Perform root cause audit for metric monthly_visit_estimate.",
       "reason": "Conflicting observations detected across sources for metric monthly_visit_estimate.",
       "evidence_ids": [
-        "ANM-CONFLICT-monthly_visit_estimate-1788381759668"
+        "ANM-CONFLICT-monthly_visit_estimate-1788382222457"
       ],
       "confidence": "VERY_HIGH",
       "confidence_score": 0.9,
@@ -127,11 +127,11 @@
       "risk_level": "LOW",
       "approval_required": true,
       "status": "PROPOSED",
-      "created_at": "2026-09-02T20:42:39.671Z"
+      "created_at": "2026-09-02T20:50:22.459Z"
     },
     {
-      "recommendation_id": "REC-OPP-CAND-1788381759670-3",
-      "opportunity_id": "OPP-CAND-1788381759670-3",
+      "recommendation_id": "REC-OPP-CAND-1788382222459-3",
+      "opportunity_id": "OPP-CAND-1788382222459-3",
       "project_id": "UTL",
       "action": "Build a zero-install, instant client-side Percentage Difference Calculator under /tools/percentage-difference-calculator in next feature batch.",
       "reason": "Significant search volume exists for 'percentage difference calculator' and 'percentage increase decrease'. UTL currently has only standard percentage calculators.",
@@ -144,16 +144,16 @@
       "risk_level": "LOW",
       "approval_required": true,
       "status": "PROPOSED",
-      "created_at": "2026-09-02T20:42:39.671Z"
+      "created_at": "2026-09-02T20:50:22.459Z"
     },
     {
-      "recommendation_id": "REC-OPP-CAND-1788381759670-4",
-      "opportunity_id": "OPP-CAND-1788381759670-4",
+      "recommendation_id": "REC-OPP-CAND-1788382222459-4",
+      "opportunity_id": "OPP-CAND-1788382222459-4",
       "project_id": "UTL",
       "action": "Update Microsoft Store widget records to include native ms-windows-store deep-links alongside web URLs.",
       "reason": "Windows Widget hub received 168 views. Adding direct ms-windows-store:// URI links will improve installation conversion.",
       "evidence_ids": [
-        "OBS-UTL-TEL-002-1788381758157"
+        "OBS-UTL-TEL-002-1788382220944"
       ],
       "confidence": "HIGH",
       "confidence_score": 0.85,
@@ -161,7 +161,7 @@
       "risk_level": "LOW",
       "approval_required": true,
       "status": "PROPOSED",
-      "created_at": "2026-09-02T20:42:39.671Z"
+      "created_at": "2026-09-02T20:50:22.459Z"
     }
   ]
 }
