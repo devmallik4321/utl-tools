@@ -12241,5 +12241,644 @@
         }
       ]
     }
+  },
+  {
+    "id": "curl-to-dart-http-converter",
+    "name": "cURL to Dart & Flutter http Code Converter",
+    "slug": "curl-to-dart-http-converter",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "curl to dart converter",
+      "convert curl to flutter http",
+      "curl to dart http post request",
+      "flutter api request from curl command",
+      "curl to dart code online",
+      "dart package http request generator"
+    ],
+    "primaryKeywords": [
+      "curl to dart converter",
+      "convert curl to dart",
+      "curl to flutter http",
+      "dart http code generator"
+    ],
+    "secondaryKeywords": [
+      "dart package http post headers from curl",
+      "async sendRequest flutter curl translation",
+      "convert curl json post to flutter dart"
+    ],
+    "targetUsers": [
+      "Flutter Developers",
+      "Dart Programmers",
+      "Mobile App Engineers",
+      "Cross-Platform Developers"
+    ],
+    "badge": "High Usage",
+    "userProblem": "Flutter and Dart mobile developers connecting mobile frontends to REST APIs need to translate bash cURL terminal commands into clean, async Dart code using `package:http/http.dart`.",
+    "searchIntent": "Convert bash cURL commands into clean, asynchronous Dart and Flutter HTTP requests.",
+    "resultInterpretation": "Parses cURL commands into idiomatic Dart `http.Client` / `http.post` methods, URI parsing, headers map, request bodies, and try-catch error handling.",
+    "practicalGuidance": "Generates production-grade Dart code compatible with Flutter 3.x and Dart 3.x.",
+    "limitations": "Parses standard HTTP/HTTPS cURL CLI syntax.",
+    "formula": "CLI AST Parser: cURL Command ➔ Dart package:http Code Synthesis",
+    "trustNotes": "100% Client-Side. Zero API keys or tokens transmitted.",
+    "related": [
+      "curl-to-csharp-httpclient-converter",
+      "curl-to-rust-reqwest-converter",
+      "curl-to-javascript-axios-converter",
+      "json-to-typescript-converter"
+    ],
+    "seo": {
+      "title": "cURL to Dart Converter — Convert cURL to Flutter http Code",
+      "metaDescription": "Convert cURL commands to modern Dart and Flutter HTTP client code online. Includes headers, JSON body, URI parsing, and async/await syntax. Free developer tool.",
+      "whatIsThis": "A developer code generation utility that converts bash cURL commands into clean Dart and Flutter HTTP requests.",
+      "howItWorks": "1. Paste your cURL command into the editor.\n2. View generated Flutter Dart code using `package:http`.\n3. Copy the clean Dart snippet in 1 click.",
+      "whyUseIt": "Eliminates manual parameter mapping and URL escaping when building Flutter mobile apps.",
+      "faqs": [
+        {
+          "question": "Which Dart library does this use?",
+          "answer": "It uses the official `package:http/http.dart`, the standard HTTP package maintained by the Dart team."
+        },
+        {
+          "question": "How do I add http to pubspec.yaml?",
+          "answer": "Run `flutter pub add http` in your project terminal to add the latest version to your `pubspec.yaml`."
+        }
+      ]
+    }
+  },
+  {
+    "id": "hsa-investment-growth-calculator",
+    "name": "HSA Investment Growth & Triple Tax Advantage Calculator",
+    "slug": "hsa-investment-growth-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "hsa calculator",
+      "hsa investment growth calculator",
+      "hsa triple tax advantage calculator",
+      "how much will my hsa be worth at 65",
+      "hsa retirement medical nest egg calculator",
+      "max annual hsa contribution limits"
+    ],
+    "primaryKeywords": [
+      "hsa calculator",
+      "hsa investment calculator",
+      "hsa triple tax advantage",
+      "health savings account growth calculator"
+    ],
+    "secondaryKeywords": [
+      "calculate hsa balance at age 65",
+      "compound growth on max family hsa contribution",
+      "tax deduction on hsa contributions"
+    ],
+    "targetUsers": [
+      "HDHP Plan Holders",
+      "Smart Savers",
+      "Retirees",
+      "Financial Independence Savers"
+    ],
+    "badge": "Popular",
+    "userProblem": "High-Deductible Health Plan (HDHP) participants need to project long-term Health Savings Account (HSA) compound investment growth, quantify the 'triple tax advantage', and estimate annual tax deductions.",
+    "searchIntent": "Calculate projected HSA balance at retirement, compound investment gains, and annual income tax savings.",
+    "resultInterpretation": "Calculates projected tax-free medical nest egg at retirement age, total personal contributions, compound stock growth, and immediate annual tax deduction.",
+    "practicalGuidance": "HSA is the only account in the US tax code offering triple tax benefits: tax-deductible deposits, tax-free investment growth, and tax-free withdrawals for medical care.",
+    "limitations": "Calculates annual compounding projections based on constant contribution rates and average investment returns.",
+    "formula": "HSA Simulation: Balance[t] = (Balance[t-1] + Annual_Contribution) * (1 + r); Annual_Tax_Saved = Annual_Contribution * Tax_Bracket",
+    "trustNotes": "100% Client-Side financial modeling.",
+    "related": [
+      "roth-ira-growth-and-contribution-calculator",
+      "401k-retirement-growth-calculator",
+      "fire-financial-independence-retire-early-calculator",
+      "emergency-fund-runway-calculator"
+    ],
+    "seo": {
+      "title": "HSA Calculator — Health Savings Account Growth & Tax Advantage Tool",
+      "metaDescription": "Calculate how your Health Savings Account (HSA) will grow by retirement with compound interest and annual contributions. Calculate your triple tax savings. Free tool.",
+      "whatIsThis": "A healthcare wealth utility that models compound HSA growth and tax deductions across decades.",
+      "howItWorks": "1. Select individual vs family coverage.\n2. Enter current age, retirement age, balance, and annual contribution.\n3. View projected tax-free medical nest egg, total contributions, and annual tax deductions.",
+      "whyUseIt": "Reveals how treating an HSA as a long-term investment vehicle creates an enormous tax-free healthcare fund for retirement.",
+      "faqs": [
+        {
+          "question": "What is the HSA triple tax advantage?",
+          "answer": "Contributions are 100% tax-deductible (pre-tax), investments compound completely tax-free, and withdrawals for qualified medical expenses are 100% tax-free."
+        },
+        {
+          "question": "What happens to HSA funds after age 65?",
+          "answer": "After age 65, you can withdraw funds for non-medical expenses penalty-free, taxed just like an ordinary traditional 401(k) or IRA, while medical withdrawals remain 100% tax-free."
+        }
+      ]
+    }
+  },
+  {
+    "id": "css-box-reflection-generator",
+    "name": "CSS Box Reflection & Mirror Effect Generator",
+    "slug": "css-box-reflection-generator",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "css box reflection generator",
+      "webkit box reflect generator online",
+      "css mirror reflection generator",
+      "css image reflection with gradient fade",
+      "css card reflection effect",
+      "box reflect below generator"
+    ],
+    "primaryKeywords": [
+      "css box reflection generator",
+      "webkit box reflect",
+      "css mirror effect generator",
+      "css card reflection tool"
+    ],
+    "secondaryKeywords": [
+      "css box reflect below linear gradient",
+      "cross browser css reflection pseudo element",
+      "interactive css mirror reflection preview"
+    ],
+    "targetUsers": [
+      "Frontend Developers",
+      "UI Designers",
+      "Creative Coders"
+    ],
+    "badge": "Design",
+    "userProblem": "Web designers and frontend developers creating sleek product showcases, glossy cards, and hero elements need an interactive generator to configure `-webkit-box-reflect` and modern cross-browser CSS pseudo-element mirror reflections.",
+    "searchIntent": "Generate CSS box reflections with visual direction, offset, gradient masks, and copyable CSS snippets.",
+    "resultInterpretation": "Renders interactive mirror reflections in a live canvas and outputs both standard `-webkit-box-reflect` rules and universal CSS pseudo-element fallbacks.",
+    "practicalGuidance": "Box reflections add high-end depth and glossy polish to luxury ecommerce product photos and 3D landing pages.",
+    "limitations": "Generates CSS reflection and mask rules.",
+    "formula": "CSS Reflection: -webkit-box-reflect: [direction] [offset] [mask];",
+    "trustNotes": "100% Client-Side visual rendering.",
+    "related": [
+      "css-glassmorphism-generator",
+      "css-box-shadow-generator",
+      "css-gradient-generator",
+      "css-triangle-generator"
+    ],
+    "seo": {
+      "title": "CSS Box Reflection Generator — Mirror & Gradient Fade Tool",
+      "metaDescription": "Create sleek CSS box reflections and mirror effects online. Control direction, offset, and linear gradient fade with cross-browser code export. Free tool.",
+      "whatIsThis": "A visual CSS generator that crafts mirror reflection effects for cards, images, and UI components.",
+      "howItWorks": "1. Select reflection direction (below, above, left, right).\n2. Adjust offset gap and gradient fade opacity sliders.\n3. Copy the cross-browser CSS snippet in 1 click.",
+      "whyUseIt": "Adds realistic glass and mirror reflections to website components without heavy graphic design software.",
+      "faqs": [
+        {
+          "question": "Which browsers support -webkit-box-reflect?",
+          "answer": "The `-webkit-box-reflect` property is supported in Chrome, Safari, Edge, and Opera. For Firefox, this tool provides a universal CSS `::after` pseudo-element fallback."
+        },
+        {
+          "question": "Can I apply reflections to images and text?",
+          "answer": "Yes. CSS box reflections work on any HTML element, including `<img>`, `<div>` cards, and heading text."
+        }
+      ]
+    }
+  },
+  {
+    "id": "yaml-to-json-online-converter",
+    "name": "YAML to JSON Online Converter",
+    "slug": "yaml-to-json-online-converter",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "yaml to json converter",
+      "convert yaml to json online",
+      "yaml to json parser",
+      "client side yaml to json parser",
+      "download yaml as json file",
+      "kubernetes yaml to json converter"
+    ],
+    "primaryKeywords": [
+      "yaml to json converter",
+      "convert yaml to json",
+      "yaml to json online",
+      "yaml parser online"
+    ],
+    "secondaryKeywords": [
+      "docker compose yaml to json",
+      "kubernetes manifest yaml to json",
+      "download converted yaml as json"
+    ],
+    "targetUsers": [
+      "DevOps Engineers",
+      "Kubernetes Administrators",
+      "Backend Developers",
+      "Cloud Architects"
+    ],
+    "badge": "High Usage",
+    "userProblem": "DevOps engineers and cloud developers working with Kubernetes manifests, Docker Compose files, and CI/CD pipelines need to convert YAML configuration files into JSON objects in-browser with syntax validation.",
+    "searchIntent": "Convert YAML configuration syntax into formatted JSON objects with 1-click download.",
+    "resultInterpretation": "Parses YAML keys, dictionaries, lists, booleans, and strings in browser memory and formats into clean, indented JSON.",
+    "practicalGuidance": "Processes data entirely on the client, making it safe for private server configurations and environment variables.",
+    "limitations": "Parses standard YAML key-value and collection syntax.",
+    "formula": "AST Tokenizer: YAML Lexical Tree ➔ JSON AST Object Serialization",
+    "trustNotes": "100% Client-Side execution. Zero configurations transmitted.",
+    "related": [
+      "json-yaml-converter",
+      "json-formatter",
+      "json-validator",
+      "json-to-csv-table-converter"
+    ],
+    "seo": {
+      "title": "YAML to JSON Converter — Convert YAML to JSON Online Free",
+      "metaDescription": "Convert YAML files and Kubernetes configurations into clean, formatted JSON online. Instant syntax validation and 1-click file download. 100% private. Free tool.",
+      "whatIsThis": "A developer configuration utility that transforms YAML markup into valid JSON data.",
+      "howItWorks": "1. Paste YAML text into the input box.\n2. Preview the formatted JSON output.\n3. Copy the JSON snippet or download the `.json` file in 1 click.",
+      "whyUseIt": "Quickly prepares Kubernetes manifests and CI/CD configurations for automated JSON API consumption.",
+      "faqs": [
+        {
+          "question": "Is my YAML configuration sent to any server?",
+          "answer": "No. The parsing and translation happen 100% locally in your browser's JavaScript engine. No data is ever transmitted over the network."
+        },
+        {
+          "question": "Does it support Kubernetes YAML files?",
+          "answer": "Yes. It supports standard multi-level nested dictionaries, lists, strings, and booleans typical of Kubernetes manifests."
+        }
+      ]
+    }
+  },
+  {
+    "id": "down-payment-savings-timeline-calculator",
+    "name": "Home Down Payment Savings Timeline Calculator",
+    "slug": "down-payment-savings-timeline-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "down payment savings calculator",
+      "how long to save for house down payment",
+      "home down payment timeline calculator",
+      "save 20 percent down payment calculator",
+      "how much house down payment can i save",
+      "house savings goal calculator with interest"
+    ],
+    "primaryKeywords": [
+      "down payment calculator",
+      "down payment savings timeline",
+      "house down payment calculator",
+      "how long to save down payment"
+    ],
+    "secondaryKeywords": [
+      "calculate ready date for 20 percent down payment",
+      "high yield savings account interest on house fund",
+      "home purchase down payment goal planner"
+    ],
+    "targetUsers": [
+      "First-Time Homebuyers",
+      "Renters",
+      "Couples",
+      "Prospective Real Estate Buyers"
+    ],
+    "badge": "Popular",
+    "userProblem": "Prospective homebuyers saving for a down payment need to calculate how many months it will take to reach their goal based on purchase price, down payment percentage (3.5% to 20%), monthly savings, and HYSA compound interest.",
+    "searchIntent": "Determine the exact timeline and ready date to save a home purchase down payment.",
+    "resultInterpretation": "Calculates target down payment dollar amount, remaining savings gap, months to reach goal, estimated ready month/year, and bonus interest earned from a high-yield savings account.",
+    "practicalGuidance": "Saving 20% eliminates Private Mortgage Insurance (PMI), reducing monthly mortgage payments significantly.",
+    "limitations": "Calculates compound monthly savings growth with constant monthly contributions.",
+    "formula": "Down Payment Simulation: Target = Price * Pct; Balance[m] = Balance[m-1] + Monthly_Savings + (Balance * APY/12)",
+    "trustNotes": "100% Client-Side calculation. Zero financial data stored.",
+    "related": [
+      "mortgage-payment-calculator",
+      "mortgage-amortization-schedule-visualizer",
+      "compound-savings-goal-calculator",
+      "car-loan-affordability-calculator"
+    ],
+    "seo": {
+      "title": "Home Down Payment Calculator — Savings Timeline & Ready Date Tool",
+      "metaDescription": "Calculate how long it will take to save for a home down payment (20%, 10%, 5%) with monthly savings and HYSA interest. Discover your home purchase ready date. Free tool.",
+      "whatIsThis": "A real estate planning utility that calculates down payment targets, savings timelines, and compound interest earnings.",
+      "howItWorks": "1. Enter target home purchase price and down payment percentage (e.g. 20%).\n2. Enter current savings, monthly savings budget, and HYSA APY.\n3. View total months required, estimated ready date, and compound interest earned.",
+      "whyUseIt": "Gives aspiring homeowners a concrete, mathematical date for when they can afford their dream home.",
+      "faqs": [
+        {
+          "question": "Do I have to put 20% down on a home?",
+          "answer": "No. Conventional loans often allow as little as 3% to 5% down, and FHA loans require 3.5%. However, putting 20% down eliminates Private Mortgage Insurance (PMI)."
+        },
+        {
+          "question": "Where should I keep my down payment fund?",
+          "answer": "A High-Yield Savings Account (HYSA) or CD ladder is best for timelines under 5 years because funds are FDIC-insured and earn guaranteed passive yield without stock market risk."
+        }
+      ]
+    }
+  },
+  {
+    "id": "mac-address-format-converter",
+    "name": "MAC Address Format Converter & OUI Inspector",
+    "slug": "mac-address-format-converter",
+    "category": "network",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "mac address format converter",
+      "convert mac address colon to hyphen",
+      "cisco mac address format converter",
+      "mac address normalizer online",
+      "oui vendor prefix inspector",
+      "multicast unicast mac address checker"
+    ],
+    "primaryKeywords": [
+      "mac address format converter",
+      "mac address converter",
+      "mac address normalizer",
+      "cisco mac address converter"
+    ],
+    "secondaryKeywords": [
+      "convert mac address to cisco dot notation",
+      "identify unicast vs multicast mac address",
+      "extract oui vendor prefix from mac"
+    ],
+    "targetUsers": [
+      "Network Engineers",
+      "System Administrators",
+      "IT Technicians",
+      "Security Analysts"
+    ],
+    "badge": "Network",
+    "userProblem": "Network engineers and IT administrators working across Linux, Windows, and Cisco switches need to normalize MAC hardware addresses between colon, hyphen, Cisco dot, and bare hex notations, and inspect OUI vendor prefixes.",
+    "searchIntent": "Convert MAC addresses between colon, hyphen, Cisco dot, and bare hex formats and inspect hardware scopes.",
+    "resultInterpretation": "Converts any delimiter format into standard Linux Colon (`00:1A:2B:3C:4D:5E`), Windows Hyphen (`00-1A-2B-3C-4D-5E`), Cisco Dot (`001a.2b3c.4d5e`), and bare hex, with OUI/NIC breakdown and Multicast/Unicast detection.",
+    "practicalGuidance": "Cisco network equipment requires dot notation with 4-character groups (`001a.2b3c.4d5e`).",
+    "limitations": "Parses standard 48-bit EUI-48 MAC addresses.",
+    "formula": "MAC Normalization: Strip non-hex chars ➔ Format into 2-byte or 4-byte delimiter groups; Bit 0: Multicast; Bit 1: Local Admin",
+    "trustNotes": "100% Client-Side calculation.",
+    "related": [
+      "ipv6-subnet-prefix-calculator",
+      "subnet-cidr-to-ip-range-expander",
+      "network-port-reference",
+      "ping-test"
+    ],
+    "seo": {
+      "title": "MAC Address Converter — Normalize Colon, Hyphen & Cisco Dot Formats",
+      "metaDescription": "Convert MAC hardware addresses between Linux colon, Windows hyphen, and Cisco dot notation online. Inspect OUI vendor prefixes and cast types. Free tool.",
+      "whatIsThis": "A network engineering utility that normalizes hardware MAC addresses across operating system conventions.",
+      "howItWorks": "1. Enter a MAC address in any format.\n2. View synchronized Linux, Windows, Cisco, and bare hex notations.\n3. Copy desired format or inspect OUI vendor and cast scope in 1 click.",
+      "whyUseIt": "Instantly translates MAC addresses into the exact format required by switch configurations, DHCP reservations, and firewall ACLs.",
+      "faqs": [
+        {
+          "question": "What format does Cisco IOS use for MAC addresses?",
+          "answer": "Cisco IOS uses three groups of four hexadecimal digits separated by dots (e.g. `001a.2b3c.4d5e`)."
+        },
+        {
+          "question": "What is an OUI in a MAC address?",
+          "answer": "An Organizationally Unique Identifier (OUI) is the first 24 bits (3 octets) of a MAC address assigned by IEEE to identify the hardware manufacturer (e.g. Apple, Cisco, Intel)."
+        }
+      ]
+    }
+  },
+  {
+    "id": "aspect-ratio-scale-factor-dimension-calculator",
+    "name": "Aspect Ratio Scale Factor & Resizing Multiplier",
+    "slug": "aspect-ratio-scale-factor-dimension-calculator",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "aspect ratio scale factor calculator",
+      "image resize percentage calculator",
+      "scale width and height by percentage",
+      "scale factor dimension multiplier",
+      "scale 1920x1080 by 50 percent",
+      "proportional dimension scaler online"
+    ],
+    "primaryKeywords": [
+      "aspect ratio scale factor",
+      "dimension scale factor calculator",
+      "scale dimensions by percentage",
+      "image scale multiplier"
+    ],
+    "secondaryKeywords": [
+      "scale resolution by 150 percent",
+      "proportional width height multiplier",
+      "css transform scale dimension generator"
+    ],
+    "targetUsers": [
+      "Graphic Designers",
+      "Game Developers",
+      "Frontend Developers",
+      "Video Editors"
+    ],
+    "badge": "Design",
+    "userProblem": "Graphic designers, game developers, and UI engineers resizing 2D assets need to scale image and canvas dimensions up or down by precise percentage factors (50%, 75%, 150%, 200%) while preserving strict proportional aspect ratio lock.",
+    "searchIntent": "Scale pixel dimensions up or down by percentage factors and calculate megapixels.",
+    "resultInterpretation": "Calculates scaled width and height in whole pixels, scale multiplier, total megapixels change, and CSS transform scale code.",
+    "practicalGuidance": "Scaling by integer multiples (200%, 300%) prevents blurry pixel interpolation when scaling pixel art or UI assets.",
+    "limitations": "Calculates integer-rounded pixel dimensions.",
+    "formula": "Scaled Dimension = round(Original * (Percentage / 100))",
+    "trustNotes": "100% Client-Side calculation.",
+    "related": [
+      "aspect-ratio-calculator",
+      "aspect-ratio-resizer",
+      "aspect-ratio-multiplier",
+      "screen-ppi-calculator"
+    ],
+    "seo": {
+      "title": "Aspect Ratio Scale Factor Calculator — Proportional Dimension Tool",
+      "metaDescription": "Scale image and UI dimensions up or down by percentage factors (50%, 150%, 200%) while preserving aspect ratio. View megapixel change and copy CSS. Free tool.",
+      "whatIsThis": "A design measurement utility that calculates proportional pixel dimensions when scaling assets by percentage multipliers.",
+      "howItWorks": "1. Enter original width and height in pixels.\n2. Choose or enter a scale percentage (e.g. 50%, 150%, 200%).\n3. View scaled pixel dimensions, total megapixels, and copy CSS transform code in 1 click.",
+      "whyUseIt": "Prevents distorted images and uneven pixel stretching when scaling design assets.",
+      "faqs": [
+        {
+          "question": "What is 1920x1080 scaled down by 50%?",
+          "answer": "1920 × 1080 scaled by 50% is 960 × 540 pixels (qHD resolution)."
+        },
+        {
+          "question": "What is 1080p scaled up by 200%?",
+          "answer": "1920 × 1080 scaled by 200% (2x) is 3840 × 2160 pixels, which equals standard 4K UHD resolution."
+        }
+      ]
+    }
+  },
+  {
+    "id": "cd-ladder-yield-calculator",
+    "name": "Certificate of Deposit (CD) Ladder Strategy Calculator",
+    "slug": "cd-ladder-yield-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "cd ladder calculator",
+      "certificate of deposit ladder calculator",
+      "cd ladder strategy yield",
+      "how does a cd ladder work",
+      "blended apy cd ladder calculator",
+      "rolling cd maturity liquidity calculator"
+    ],
+    "primaryKeywords": [
+      "cd ladder calculator",
+      "certificate of deposit calculator",
+      "cd ladder yield calculator",
+      "cd laddering strategy tool"
+    ],
+    "secondaryKeywords": [
+      "calculate blended apy for 5 year cd ladder",
+      "annual interest income on cd ladder",
+      "predictable rolling cash liquidity schedule"
+    ],
+    "targetUsers": [
+      "Conservative Savers",
+      "Retirees",
+      "Fixed Income Investors",
+      "Treasury/Cash Managers"
+    ],
+    "badge": "Popular",
+    "userProblem": "Conservative investors and retirees seeking guaranteed, FDIC-insured returns need to model a CD laddering strategy across rolling maturities (1 to 5 years) to calculate blended APY, annual interest income, and scheduled liquidity.",
+    "searchIntent": "Model a Certificate of Deposit (CD) laddering strategy with blended APY and annual passive interest income.",
+    "resultInterpretation": "Calculates amount per tranche, blended portfolio APY, annual passive interest income, cumulative maturity earnings, and rolling liquidity intervals.",
+    "practicalGuidance": "A CD ladder provides higher interest rates of long-term CDs while freeing up a portion of your cash every 6 or 12 months for regular liquidity.",
+    "limitations": "Models standard fixed-rate Certificate of Deposit compound yields.",
+    "formula": "Tranche = Capital / N; Blended_APY = sum(APY_i) / N; Maturity_Value = Tranche * (1 + APY_i)^(Years_i)",
+    "trustNotes": "100% Client-Side financial modeling.",
+    "related": [
+      "compound-savings-goal-calculator",
+      "down-payment-savings-timeline-calculator",
+      "emergency-fund-runway-calculator",
+      "simple-interest-calculator"
+    ],
+    "seo": {
+      "title": "CD Ladder Calculator — Certificate of Deposit Strategy & Yield Tool",
+      "metaDescription": "Calculate blended APY, annual interest income, and rolling liquidity for a Certificate of Deposit (CD) ladder strategy. Free, private fixed-income financial tool.",
+      "whatIsThis": "A fixed-income investment utility that calculates yields and rolling maturities for CD ladder strategies.",
+      "howItWorks": "1. Enter total capital to invest (e.g. $25,000).\n2. Customize APY rates across 1 to 5-year CD tranches.\n3. View blended APY, annual interest income, and rolling maturity liquidity.",
+      "whyUseIt": "Combines maximum long-term CD yields with predictable short-term cash access.",
+      "faqs": [
+        {
+          "question": "What is a CD ladder?",
+          "answer": "A CD ladder is an investment strategy where you divide a sum of money into equal portions across multiple Certificates of Deposit with different maturity dates (e.g. 1, 2, 3, 4, and 5 years)."
+        },
+        {
+          "question": "Are CDs safe from stock market crashes?",
+          "answer": "Yes. CDs from FDIC-insured banks or NCUA-insured credit unions are backed by the full faith and credit of the US government up to $250,000 per depositor."
+        }
+      ]
+    }
+  },
+  {
+    "id": "json-schema-to-zod-schema-converter",
+    "name": "JSON to Zod Schema & TypeScript Type Generator",
+    "slug": "json-schema-to-zod-schema-converter",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "json to zod converter",
+      "generate zod schema from json online",
+      "json to zod schema generator",
+      "convert api payload to zod schema",
+      "zod infer typescript type from json",
+      "typescript runtime schema generator"
+    ],
+    "primaryKeywords": [
+      "json to zod converter",
+      "json to zod schema",
+      "zod schema generator",
+      "generate zod from json"
+    ],
+    "secondaryKeywords": [
+      "zod object with string email and url heuristics",
+      "zod infer type from json payload",
+      "react hook form zod schema from sample data"
+    ],
+    "targetUsers": [
+      "TypeScript Developers",
+      "Next.js Engineers",
+      "Full-Stack Developers",
+      "API Designers"
+    ],
+    "badge": "High Usage",
+    "userProblem": "Full-stack TypeScript developers building Next.js applications, server actions, and tRPC routers need to convert raw JSON payloads into strongly typed Zod validation schemas (`z.object({ ... })`) with email and URL heuristics.",
+    "searchIntent": "Generate production-ready Zod validation schemas and inferred TypeScript types from JSON payloads.",
+    "resultInterpretation": "Parses JSON in browser memory, detects primitive types, generates nested `z.object` and `z.array` definitions, applies email/URL heuristics, and produces `z.infer` TypeScript types.",
+    "practicalGuidance": "Zod schemas provide runtime input validation for Next.js server actions, tRPC endpoints, and React Hook Form.",
+    "limitations": "Parses standard valid JSON objects and arrays.",
+    "formula": "AST Schema Synthesis: JSON Structure ➔ Zod Validation Schema Tree",
+    "trustNotes": "100% Client-Side. Zero payload data transmitted.",
+    "related": [
+      "json-schema-to-typescript-type-converter",
+      "json-to-typescript-converter",
+      "json-formatter",
+      "mock-json-generator"
+    ],
+    "seo": {
+      "title": "JSON to Zod Schema Converter — TypeScript Type Generator Online",
+      "metaDescription": "Convert JSON objects and API payloads into TypeScript Zod validation schemas online. Supports nested objects, arrays, and type inference. Free developer tool.",
+      "whatIsThis": "A TypeScript productivity utility that converts JSON payloads into Zod validation schemas and inferred types.",
+      "howItWorks": "1. Enter desired schema variable name.\n2. Paste JSON object or array into the editor.\n3. Copy the generated Zod validation schema and TypeScript type in 1 click.",
+      "whyUseIt": "Eliminates repetitive manual typing of Zod runtime validation schemas for API endpoints and forms.",
+      "faqs": [
+        {
+          "question": "What is Zod in TypeScript?",
+          "answer": "Zod is a TypeScript-first schema declaration and validation library that ensures runtime type safety for web applications and APIs."
+        },
+        {
+          "question": "Does it automatically detect emails and URLs?",
+          "answer": "Yes. The parser identifies strings matching email and URL patterns and automatically attaches `.email()` and `.url()` validation constraints."
+        }
+      ]
+    }
+  },
+  {
+    "id": "walking-steps-to-miles-calories-calculator",
+    "name": "Walking Steps to Miles, Kilometers & Calories Calculator",
+    "slug": "walking-steps-to-miles-calories-calculator",
+    "category": "health",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "steps to miles calculator",
+      "convert steps to kilometers online",
+      "how many miles is 10000 steps",
+      "steps to calories burned calculator",
+      "walking distance from steps calculator",
+      "pedometer steps to miles converter"
+    ],
+    "primaryKeywords": [
+      "steps to miles calculator",
+      "steps to km converter",
+      "steps to calories calculator",
+      "10000 steps to miles"
+    ],
+    "secondaryKeywords": [
+      "calculate stride length from height",
+      "walking duration for 10000 steps",
+      "calories burned walking by body weight"
+    ],
+    "targetUsers": [
+      "Fitness Enthusiasts",
+      "Walkers",
+      "Health Trackers",
+      "Apple Watch / Fitbit Users"
+    ],
+    "badge": "Popular",
+    "userProblem": "Fitness walkers, runners, and smartwatch users tracking daily step counts (such as 10,000 steps) need an accurate calculator to convert steps into miles, kilometers, active walking duration, and calories burned based on individual height, weight, and pace.",
+    "searchIntent": "Convert daily walking steps into miles, kilometers, active duration, and calories burned.",
+    "resultInterpretation": "Calculates personalized stride length from height, converts steps to miles and kilometers, estimates active walking duration, and computes caloric expenditure using metabolic MET equations.",
+    "practicalGuidance": "For an average adult (5 ft 10 in), 10,000 steps equals roughly 4.7 to 5.0 miles and burns ~400 to 500 calories.",
+    "limitations": "Estimates stride length and energy expenditure based on standard biomechanical models.",
+    "formula": "Stride = Height * 0.414; Miles = (Steps * Stride) / 63360; Calories = (MET * 3.5 * Weight_kg / 200) * Minutes",
+    "trustNotes": "100% Client-Side calculation. Zero health or biometric data stored.",
+    "related": [
+      "bmi-calculator",
+      "water-intake-calculator",
+      "hours-minutes-time-duration-calculator",
+      "age-calculator"
+    ],
+    "seo": {
+      "title": "Steps to Miles Calculator — Convert Steps to Distance & Calories",
+      "metaDescription": "Convert daily walking steps to miles, kilometers, and calories burned online. Personalized by your height, weight, and walking pace. Free health calculator.",
+      "whatIsThis": "A health and fitness utility that converts pedometer step counts into distance, active duration, and calories burned.",
+      "howItWorks": "1. Enter your daily step count (e.g. 10,000).\n2. Enter your height and body weight.\n3. View miles walked, kilometers, active walking time, and estimated calories burned.",
+      "whyUseIt": "Translates abstract step counts into concrete distance and caloric progress for fitness goals.",
+      "faqs": [
+        {
+          "question": "How many miles is 10,000 steps?",
+          "answer": "For an average person with a stride length of 2.2 to 2.5 feet, 10,000 steps is approximately 4.7 to 5.0 miles (around 7.5 to 8.0 kilometers)."
+        },
+        {
+          "question": "How many calories do 10,000 steps burn?",
+          "answer": "Depending on your body weight and walking pace, 10,000 steps burns between 350 and 500 calories for most adults."
+        }
+      ]
+    }
   }
 ]
