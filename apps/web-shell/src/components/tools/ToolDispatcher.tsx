@@ -31,6 +31,7 @@ const JsonFormatter = dynamic(() => import("./developer/JsonFormatter").then((m)
 const JsonValidator = dynamic(() => import("./developer/JsonValidator").then((m) => m.JsonValidator), { ssr: false });
 const Base64Encoder = dynamic(() => import("./developer/Base64Encoder").then((m) => m.Base64Encoder), { ssr: false });
 const Base64Decoder = dynamic(() => import("./developer/Base64Decoder").then((m) => m.Base64Decoder), { ssr: false });
+const Base64ImageConverter = dynamic(() => import("./developer/Base64ImageConverter").then((m) => m.Base64ImageConverter), { ssr: false });
 const UuidGenerator = dynamic(() => import("./developer/UuidGenerator").then((m) => m.UuidGenerator), { ssr: false });
 const BatchUuidGenerator = dynamic(() => import("./developer/BatchUuidGenerator").then((m) => m.BatchUuidGenerator), { ssr: false });
 const TimestampConverter = dynamic(() => import("./developer/TimestampConverter").then((m) => m.TimestampConverter), { ssr: false });
@@ -40,6 +41,7 @@ const UrlDecoder = dynamic(() => import("./developer/UrlDecoder").then((m) => m.
 const DiffChecker = dynamic(() => import("./developer/DiffChecker").then((m) => m.DiffChecker), { ssr: false });
 const TextDiffHighlighter = dynamic(() => import("./developer/TextDiffHighlighter").then((m) => m.TextDiffHighlighter), { ssr: false });
 const MarkdownPreviewer = dynamic(() => import("./developer/MarkdownPreviewer").then((m) => m.MarkdownPreviewer), { ssr: false });
+const MarkdownTableGenerator = dynamic(() => import("./developer/MarkdownTableGenerator").then((m) => m.MarkdownTableGenerator), { ssr: false });
 const CsvJsonConverter = dynamic(() => import("./developer/CsvJsonConverter").then((m) => m.CsvJsonConverter), { ssr: false });
 const CaseConverter = dynamic(() => import("./developer/CaseConverter").then((m) => m.CaseConverter), { ssr: false });
 const HashGenerator = dynamic(() => import("./developer/HashGenerator").then((m) => m.HashGenerator), { ssr: false });
@@ -49,6 +51,7 @@ const JwtDebugger = dynamic(() => import("./developer/JwtDebugger").then((m) => 
 const JwtInspector = dynamic(() => import("./developer/JwtInspector").then((m) => m.JwtInspector), { ssr: false });
 const CurlToFetchConverter = dynamic(() => import("./developer/CurlToFetchConverter").then((m) => m.CurlToFetchConverter), { ssr: false });
 const CurlToPythonConverter = dynamic(() => import("./developer/CurlToPythonConverter").then((m) => m.CurlToPythonConverter), { ssr: false });
+const CurlToAxiosConverter = dynamic(() => import("./developer/CurlToAxiosConverter").then((m) => m.CurlToAxiosConverter), { ssr: false });
 const HtmlToMarkdownConverter = dynamic(() => import("./developer/HtmlToMarkdownConverter").then((m) => m.HtmlToMarkdownConverter), { ssr: false });
 const HtmlEntityConverter = dynamic(() => import("./developer/HtmlEntityConverter").then((m) => m.HtmlEntityConverter), { ssr: false });
 const RegexTester = dynamic(() => import("./developer/RegexTester").then((m) => m.RegexTester), { ssr: false });
@@ -64,6 +67,8 @@ const RandomTokenGenerator = dynamic(() => import("./developer/RandomTokenGenera
 const SvgPathVisualizer = dynamic(() => import("./developer/SvgPathVisualizer").then((m) => m.SvgPathVisualizer), { ssr: false });
 const CsvColumnExtractor = dynamic(() => import("./developer/CsvColumnExtractor").then((m) => m.CsvColumnExtractor), { ssr: false });
 const UrlQueryParamBuilder = dynamic(() => import("./developer/UrlQueryParamBuilder").then((m) => m.UrlQueryParamBuilder), { ssr: false });
+const BinaryHexAsciiTranslator = dynamic(() => import("./developer/BinaryHexAsciiTranslator").then((m) => m.BinaryHexAsciiTranslator), { ssr: false });
+const KeycodeVisualizer = dynamic(() => import("./developer/KeycodeVisualizer").then((m) => m.KeycodeVisualizer), { ssr: false });
 
 const QrCodeGenerator = dynamic(() => import("./business/QrCodeGenerator").then((m) => m.QrCodeGenerator), { ssr: false });
 const EmailSignatureGenerator = dynamic(() => import("./business/EmailSignatureGenerator").then((m) => m.EmailSignatureGenerator), { ssr: false });
@@ -101,6 +106,9 @@ const CagrMatrixCalculator = dynamic(() => import("./finance/CagrMatrixCalculato
 const CreditCardPayoffCalculator = dynamic(() => import("./finance/CreditCardPayoffCalculator").then((m) => m.CreditCardPayoffCalculator), { ssr: false });
 const SavingsGoalCalculator = dynamic(() => import("./finance/SavingsGoalCalculator").then((m) => m.SavingsGoalCalculator), { ssr: false });
 const RuleOf72Calculator = dynamic(() => import("./finance/RuleOf72Calculator").then((m) => m.RuleOf72Calculator), { ssr: false });
+const CryptoPnlCalculator = dynamic(() => import("./finance/CryptoPnlCalculator").then((m) => m.CryptoPnlCalculator), { ssr: false });
+const EmergencyFundCalculator = dynamic(() => import("./finance/EmergencyFundCalculator").then((m) => m.EmergencyFundCalculator), { ssr: false });
+const ExpenseRatioCalculator = dynamic(() => import("./finance/ExpenseRatioCalculator").then((m) => m.ExpenseRatioCalculator), { ssr: false });
 
 const BmiCalculator = dynamic(() => import("./health/BmiCalculator").then((m) => m.BmiCalculator), { ssr: false });
 const AgeCalculator = dynamic(() => import("./health/AgeCalculator").then((m) => m.AgeCalculator), { ssr: false });
@@ -114,6 +122,7 @@ const UnitConverter = dynamic(() => import("./education/UnitConverter").then((m)
 const DecimalFractionConverter = dynamic(() => import("./education/DecimalFractionConverter").then((m) => m.DecimalFractionConverter), { ssr: false });
 const TextCleaner = dynamic(() => import("./education/TextCleaner").then((m) => m.TextCleaner), { ssr: false });
 const RomanNumeralConverter = dynamic(() => import("./education/RomanNumeralConverter").then((m) => m.RomanNumeralConverter), { ssr: false });
+const TimeDurationCalculator = dynamic(() => import("./education/TimeDurationCalculator").then((m) => m.TimeDurationCalculator), { ssr: false });
 const TimezoneMeetingPlanner = dynamic(() => import("./everyday/TimezoneMeetingPlanner").then((m) => m.TimezoneMeetingPlanner), { ssr: false });
 const GasTripCalculator = dynamic(() => import("./everyday/GasTripCalculator").then((m) => m.GasTripCalculator), { ssr: false });
 
@@ -125,6 +134,7 @@ const AspectRatioResizer = dynamic(() => import("./creative/AspectRatioResizer")
 const AspectRatioCropper = dynamic(() => import("./creative/AspectRatioCropper").then((m) => m.AspectRatioCropper), { ssr: false });
 const AspectRatioMultiplier = dynamic(() => import("./creative/AspectRatioMultiplier").then((m) => m.AspectRatioMultiplier), { ssr: false });
 const GlassmorphismGenerator = dynamic(() => import("./creative/GlassmorphismGenerator").then((m) => m.GlassmorphismGenerator), { ssr: false });
+const LetterboxPreviewer = dynamic(() => import("./creative/LetterboxPreviewer").then((m) => m.LetterboxPreviewer), { ssr: false });
 const LoremIpsumGenerator = dynamic(() => import("./creative/LoremIpsumGenerator").then((m) => m.LoremIpsumGenerator), { ssr: false });
 const LoremMarkdownGenerator = dynamic(() => import("./creative/LoremMarkdownGenerator").then((m) => m.LoremMarkdownGenerator), { ssr: false });
 const ContentReadingTimeCalculator = dynamic(() => import("./creative/ContentReadingTimeCalculator").then((m) => m.ContentReadingTimeCalculator), { ssr: false });
@@ -172,6 +182,7 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "json-validator": JsonValidator,
   "base64-encoder": Base64Encoder,
   "base64-decoder": Base64Decoder,
+  "base64-image-encoder-decoder": Base64ImageConverter,
   "uuid-generator": UuidGenerator,
   "uuid-v4-batch-generator": BatchUuidGenerator,
   "timestamp-converter": TimestampConverter,
@@ -181,6 +192,7 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "diff-checker": DiffChecker,
   "text-diff-highlighter": TextDiffHighlighter,
   "markdown-previewer": MarkdownPreviewer,
+  "markdown-table-generator": MarkdownTableGenerator,
   "csv-json-converter": CsvJsonConverter,
   "case-converter": CaseConverter,
   "hash-generator": HashGenerator,
@@ -190,6 +202,7 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "jwt-payload-inspector-signer": JwtInspector,
   "curl-to-fetch-converter": CurlToFetchConverter,
   "curl-to-python-requests-converter": CurlToPythonConverter,
+  "curl-to-javascript-axios-converter": CurlToAxiosConverter,
   "html-to-markdown-converter": HtmlToMarkdownConverter,
   "html-entity-encoder-decoder": HtmlEntityConverter,
   "regex-tester": RegexTester,
@@ -205,6 +218,8 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "svg-path-visualizer-optimizer": SvgPathVisualizer,
   "csv-column-extractor-filter": CsvColumnExtractor,
   "url-parser-query-parameter-builder": UrlQueryParamBuilder,
+  "binary-to-hex-text-ascii-translator": BinaryHexAsciiTranslator,
+  "javascript-event-keycodes-reference": KeycodeVisualizer,
 
   "qr-code-generator": QrCodeGenerator,
   "email-signature-generator": EmailSignatureGenerator,
@@ -225,6 +240,9 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "loan-refinance-savings-calculator": LoanRefinanceCalculator,
   "auto-loan-early-payoff-calculator": AutoLoanEarlyPayoffCalculator,
   "credit-utilization-ratio-calculator": CreditUtilizationCalculator,
+  "crypto-portfolio-profit-loss-calculator": CryptoPnlCalculator,
+  "emergency-fund-runway-calculator": EmergencyFundCalculator,
+  "investment-fee-expense-ratio-calculator": ExpenseRatioCalculator,
   "discount-calculator": DiscountCalculator,
   "discount-stacking-calculator": DiscountStackingCalculator,
   "sales-margin-markup-calculator": SalesMarginMarkupCalculator,
@@ -255,6 +273,7 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "decimal-to-fraction-converter": DecimalFractionConverter,
   "text-cleaner-formatter": TextCleaner,
   "roman-numeral-converter": RomanNumeralConverter,
+  "hours-minutes-time-duration-calculator": TimeDurationCalculator,
   "timezone-meeting-planner": TimezoneMeetingPlanner,
   "gas-trip-cost-calculator": GasTripCalculator,
 
@@ -265,6 +284,7 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "aspect-ratio-resizer": AspectRatioResizer,
   "aspect-ratio-crop-previewer": AspectRatioCropper,
   "aspect-ratio-scale-multiplier": AspectRatioMultiplier,
+  "aspect-ratio-letterbox-pillarbox-previewer": LetterboxPreviewer,
   "css-glassmorphism-generator": GlassmorphismGenerator,
   "lorem-ipsum-generator": LoremIpsumGenerator,
   "lorem-markdown-generator": LoremMarkdownGenerator,

@@ -8395,5 +8395,649 @@
         }
       ]
     }
+  },
+  {
+    "id": "crypto-portfolio-profit-loss-calculator",
+    "name": "Crypto Portfolio P&L & Average Buy Price Calculator",
+    "slug": "crypto-portfolio-profit-loss-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "crypto profit loss calculator",
+      "crypto average buy price calculator",
+      "crypto dca calculator",
+      "bitcoin profit calculator",
+      "crypto portfolio pnl calculator",
+      "crypto roi calculator"
+    ],
+    "primaryKeywords": [
+      "crypto profit loss calculator",
+      "crypto pnl calculator",
+      "crypto average buy price",
+      "crypto return on investment calculator"
+    ],
+    "secondaryKeywords": [
+      "calculate bitcoin dca price",
+      "crypto portfolio net gain calculator",
+      "multiple buy orders crypto calculator"
+    ],
+    "targetUsers": [
+      "Crypto Traders",
+      "Bitcoin Investors",
+      "DCA Savers",
+      "Financial Analysts"
+    ],
+    "badge": "Popular",
+    "userProblem": "Cryptocurrency investors buying coins over multiple orders need to calculate their exact weighted average buy price (DCA), total cost basis, current portfolio value, and net realized/unrealized profit/loss percentage.",
+    "searchIntent": "Calculate the average buy price, total invested capital, current holding value, and net profit/loss across multiple crypto purchases.",
+    "resultInterpretation": "Calculates weighted average purchase price, total coin holdings, current valuation at market price, dollar profit/loss, and percentage ROI.",
+    "practicalGuidance": "Dollar-Cost Averaging (DCA) lowers the impact of market volatility by spreading purchases over time.",
+    "limitations": "Calculates spot holdings without exchange withdrawal fees.",
+    "formula": "DCA Price = Total_Cost / Total_Coins; P&L = (Total_Coins * Current_Price) - Total_Cost",
+    "trustNotes": "100% Client-Side financial modeling. Zero portfolio data leaves your browser.",
+    "related": [
+      "roi-investment-calculator",
+      "cagr-calculator",
+      "percentage-calculator",
+      "compound-savings-goal-calculator"
+    ],
+    "seo": {
+      "title": "Crypto Profit & Loss Calculator — Average Buy Price (DCA) Tool",
+      "metaDescription": "Calculate your crypto portfolio P&L, weighted average buy price (DCA), and ROI across multiple purchase lots. Free, private, client-side calculator.",
+      "whatIsThis": "A personal cryptocurrency portfolio utility that tracks purchase lots and calculates net profit, loss, and average entry price.",
+      "howItWorks": "1. Enter your asset name and current market price.\n2. Add your purchase lots (coin amount and price per coin).\n3. View your weighted DCA price, total portfolio value, and net P&L.",
+      "whyUseIt": "Determines your true break-even price and overall returns without connecting exchange API keys.",
+      "faqs": [
+        {
+          "question": "What is an average buy price in crypto?",
+          "answer": "It is the total dollar amount spent across all your purchases divided by the total number of coins accumulated."
+        },
+        {
+          "question": "Is it safe to track my crypto holdings here?",
+          "answer": "Yes. This utility runs 100% locally in your web browser with zero server transmission, keeping your portfolio size private."
+        }
+      ]
+    }
+  },
+  {
+    "id": "curl-to-javascript-axios-converter",
+    "name": "cURL to JavaScript Axios Code Converter",
+    "slug": "curl-to-javascript-axios-converter",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "curl to axios converter",
+      "convert curl to javascript axios",
+      "curl command to axios online",
+      "curl to typescript axios",
+      "curl to nodejs axios",
+      "api curl to axios"
+    ],
+    "primaryKeywords": [
+      "curl to axios converter",
+      "convert curl to axios",
+      "curl to axios online",
+      "curl to javascript axios"
+    ],
+    "secondaryKeywords": [
+      "convert curl post json to axios async",
+      "curl headers to axios config",
+      "curl to promise then catch axios"
+    ],
+    "targetUsers": [
+      "JavaScript Developers",
+      "Frontend Engineers",
+      "Full-Stack Developers",
+      "Node.js Backend Engineers"
+    ],
+    "badge": "High Usage",
+    "userProblem": "Developers looking at cURL command snippets in API documentation need to convert them into modern JavaScript/TypeScript `axios.request` syntax with async/await, error handling, and structured request config objects.",
+    "searchIntent": "Convert bash cURL commands into clean, copy-pasteable JavaScript or TypeScript Axios code with headers and JSON body parsing.",
+    "resultInterpretation": "Parses cURL commands into standard ES6+ `axios({ method, url, headers, data })` syntax with async/await and promise options.",
+    "practicalGuidance": "Supports `-H` headers, `-d`/`--data` JSON payloads, `-X` methods, and custom query strings.",
+    "limitations": "Parses standard HTTP cURL commands and JSON payloads.",
+    "formula": "CLI AST Parser: cURL Command ➔ Axios Config Object Synthesis",
+    "trustNotes": "100% Client-Side. Sensitive API secrets and authorization bearer tokens never leave your browser.",
+    "related": [
+      "curl-to-fetch-converter",
+      "curl-to-python-requests-converter",
+      "json-formatter",
+      "jwt-payload-inspector-signer"
+    ],
+    "seo": {
+      "title": "cURL to Axios Converter — Convert cURL to JavaScript Axios Code",
+      "metaDescription": "Convert cURL commands to clean JavaScript and TypeScript Axios code online. Parses headers, JSON data, and query parameters with async/await support.",
+      "whatIsThis": "A developer code translation utility that converts bash cURL commands into JavaScript `axios` code.",
+      "howItWorks": "1. Paste your cURL command into the input box.\n2. Choose between Async/Await or Promise (.then/.catch) style.\n3. Copy the generated Axios code in 1 click.",
+      "whyUseIt": "Eliminates tedious manual translation of headers and JSON payloads into Axios request configs.",
+      "faqs": [
+        {
+          "question": "Does this tool support TypeScript?",
+          "answer": "Yes. The generated Axios code uses standard ES6 module imports compatible with both JavaScript and TypeScript."
+        },
+        {
+          "question": "Are bearer tokens and API keys secure?",
+          "answer": "Yes. All conversion runs entirely within your local browser memory with zero network requests."
+        }
+      ]
+    }
+  },
+  {
+    "id": "aspect-ratio-letterbox-pillarbox-previewer",
+    "name": "Aspect Ratio Letterbox & Pillarbox Simulator",
+    "slug": "aspect-ratio-letterbox-pillarbox-previewer",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "letterbox pillarbox simulator",
+      "aspect ratio black bars previewer",
+      "video letterbox calculator",
+      "pillarbox vs letterbox visualizer",
+      "screen utilization aspect ratio tool",
+      "ultrawide video letterbox preview"
+    ],
+    "primaryKeywords": [
+      "letterbox pillarbox simulator",
+      "aspect ratio black bars simulator",
+      "letterbox calculator",
+      "screen utilization previewer"
+    ],
+    "secondaryKeywords": [
+      "21:9 video on 16:9 monitor letterbox",
+      "4:3 video on widescreen pillarbox",
+      "calculate wasted screen percentage black bars"
+    ],
+    "targetUsers": [
+      "Video Editors",
+      "Cinematographers",
+      "Content Creators",
+      "UI/UX Designers",
+      "Home Theater Enthusiasts"
+    ],
+    "badge": "Design",
+    "userProblem": "Video creators and film enthusiasts need to visualize how different video aspect ratios (21:9 Cinemascope, 16:9 HD, 4:3 Retro, 9:16 Shorts) will display across various screen monitors, identifying black bar mattes and screen utilization %.",
+    "searchIntent": "Simulate video playback inside display screens to visualize letterboxing, pillarboxing, and screen surface utilization percentages.",
+    "resultInterpretation": "Renders an interactive screen canvas showing active video area, matte type (Letterbox, Pillarbox, or Native Fit), and exact percentage of screen area utilized vs black bars.",
+    "practicalGuidance": "Letterboxing occurs when the video is wider than the screen; Pillarboxing occurs when the video is taller than the screen.",
+    "limitations": "Simulates standard geometric aspect ratio mappings without non-linear stretch.",
+    "formula": "Aspect Matte Calculation: if (Content_AR > Display_AR) ➔ Letterbox; else ➔ Pillarbox",
+    "trustNotes": "100% Client-Side visual rendering engine.",
+    "related": [
+      "aspect-ratio-calculator",
+      "aspect-ratio-crop-previewer",
+      "aspect-ratio-scale-multiplier",
+      "screen-aspect-ratio-comparator"
+    ],
+    "seo": {
+      "title": "Letterbox & Pillarbox Simulator — Aspect Ratio Matte Previewer",
+      "metaDescription": "Simulate aspect ratio letterboxing and pillarboxing on different screen displays (16:9, 21:9, 4:3). Free visual tool with screen utilization percentage metrics.",
+      "whatIsThis": "A visual media utility that simulates how video aspect ratios fit inside target screen displays.",
+      "howItWorks": "1. Select source video aspect ratio (21:9, 16:9, 4:3, 9:16).\n2. Select display screen ratio (16:9 TV, 21:9 Ultrawide, 19.5:9 Phone).\n3. View live screen simulation, matte classification, and active screen percentage.",
+      "whyUseIt": "Determines optimal export aspect ratios for YouTube, theatrical release, and social platforms.",
+      "faqs": [
+        {
+          "question": "What is the difference between letterboxing and pillarboxing?",
+          "answer": "Letterboxing places horizontal black bars at the top and bottom (widescreen video on narrow screen). Pillarboxing places vertical black bars on the left and right (narrow video on widescreen)."
+        },
+        {
+          "question": "How much screen is wasted watching a 21:9 movie on a 16:9 TV?",
+          "answer": "A 21:9 (2.39:1) movie utilizes approximately 75% of a 16:9 TV screen, leaving 25% of the display for top and bottom letterbox bars."
+        }
+      ]
+    }
+  },
+  {
+    "id": "binary-to-hex-text-ascii-translator",
+    "name": "Binary to Hex, ASCII Text & Decimal Translator",
+    "slug": "binary-to-hex-text-ascii-translator",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "binary to hex translator",
+      "binary to ascii text converter",
+      "hex to binary translator",
+      "ascii to binary bitstream",
+      "binary decimal converter online",
+      "binary code translator online"
+    ],
+    "primaryKeywords": [
+      "binary to hex translator",
+      "binary to text translator",
+      "binary to ascii converter",
+      "hex to binary converter"
+    ],
+    "secondaryKeywords": [
+      "8 bit binary to text string",
+      "convert hex bytes to plaintext",
+      "decimal byte codes to ascii"
+    ],
+    "targetUsers": [
+      "Computer Science Students",
+      "Software Engineers",
+      "Cybersecurity Analysts",
+      "Embedded Developers"
+    ],
+    "badge": "High Usage",
+    "userProblem": "Engineers and computer science students debugging memory dumps and network packets need to translate 8-bit binary bitstreams, hexadecimal bytes, ASCII text, and decimal byte values in a synchronized 4-way editor.",
+    "searchIntent": "Convert bidirectionally between binary bitstreams, ASCII text, hexadecimal bytes, and decimal values in real-time.",
+    "resultInterpretation": "Translates characters across binary (`01001000`), hex (`48`), ASCII (`H`), and decimal (`72`) with 1-click copy for each format.",
+    "practicalGuidance": "Binary bits are grouped in 8-bit bytes (octets) separated by spaces for clean readability.",
+    "limitations": "Translates standard 8-bit ASCII characters and byte streams.",
+    "formula": "Base Conversion: Char.charCodeAt(0) ➔ toString(2).padStart(8, '0') | toString(16)",
+    "trustNotes": "100% Client-Side memory translation.",
+    "related": [
+      "hex-decimal-binary-converter",
+      "base64-encoder",
+      "base64-decoder",
+      "hash-generator"
+    ],
+    "seo": {
+      "title": "Binary to Hex & ASCII Text Translator — 4-Way Byte Converter",
+      "metaDescription": "Translate between Binary (8-bit), Hexadecimal, ASCII Text, and Decimal bytes simultaneously in real-time. Free developer tool with 1-click copy for each format.",
+      "whatIsThis": "A developer productivity utility that synchronizes translations between Binary bitstreams, Hex, ASCII, and Decimal byte representations.",
+      "howItWorks": "1. Type or paste text into any of the 4 format panes (Plaintext, Binary, Hex, Decimal).\n2. All other panes automatically synchronize in real-time.\n3. Copy your preferred format in 1 click.",
+      "whyUseIt": "Deciphers binary payloads, memory buffers, and hex dumps in seconds.",
+      "faqs": [
+        {
+          "question": "What is the binary representation of the letter 'A'?",
+          "answer": "In standard ASCII, uppercase 'A' has a decimal code of 65, hex code of `41`, and binary bitstream of `01000001`."
+        },
+        {
+          "question": "How do you convert binary to text?",
+          "answer": "Group binary digits into 8-bit bytes, convert each byte to its decimal integer value, and map the integer to its corresponding ASCII character."
+        }
+      ]
+    }
+  },
+  {
+    "id": "emergency-fund-runway-calculator",
+    "name": "Emergency Fund Runway & Safety Buffer Calculator",
+    "slug": "emergency-fund-runway-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "emergency fund calculator",
+      "emergency savings runway calculator",
+      "how much emergency fund do i need",
+      "financial runway calculator",
+      "monthly burn rate savings calculator",
+      "3 month 6 month emergency fund"
+    ],
+    "primaryKeywords": [
+      "emergency fund calculator",
+      "emergency savings calculator",
+      "financial runway calculator",
+      "emergency fund runway"
+    ],
+    "secondaryKeywords": [
+      "calculate 6 month emergency fund target",
+      "bare bones survival runway months",
+      "emergency fund savings gap tool"
+    ],
+    "targetUsers": [
+      "Budgeters",
+      "Freelancers",
+      "Homeowners",
+      "Financial Planners",
+      "Families"
+    ],
+    "badge": "Popular",
+    "userProblem": "Individuals and families budgeting for unexpected events (job loss, medical emergency, roof repair) need to calculate their exact financial runway in months and days and find their savings gap against 3-month, 6-month, and 12-month safety buffers.",
+    "searchIntent": "Calculate the exact number of months of living expenses covered by current liquid savings and determine target emergency fund milestones.",
+    "resultInterpretation": "Calculates bare-bones survival runway (essential expenses only) vs standard runway, compares savings against 3, 6, and 12-month benchmarks, and computes required dollar savings gap.",
+    "practicalGuidance": "Financial planners recommend holding 3 to 6 months of essential living expenses in a liquid High-Yield Savings Account (HYSA).",
+    "limitations": "Calculates runway based on constant monthly expense burn rates.",
+    "formula": "Financial Runway = Liquid_Savings / Monthly_Expenses",
+    "trustNotes": "100% Client-Side financial modeling. Zero data stored or transmitted.",
+    "related": [
+      "compound-savings-goal-calculator",
+      "salary-after-tax-take-home-calculator",
+      "auto-loan-early-payoff-calculator",
+      "credit-utilization-ratio-calculator"
+    ],
+    "seo": {
+      "title": "Emergency Fund Calculator — Savings Runway & Safety Buffer Tool",
+      "metaDescription": "Calculate how many months of living expenses your savings cover. Free emergency fund calculator with 3, 6, and 12-month safety targets and savings gap metrics.",
+      "whatIsThis": "A personal finance planning tool that computes your financial survival runway based on liquid cash reserves and monthly living expenses.",
+      "howItWorks": "1. Enter total liquid cash savings.\n2. Enter monthly essential expenses (housing, food, utilities, debt) and discretionary spending.\n3. View your exact runway in months and days, plus 3, 6, and 12-month target buffers.",
+      "whyUseIt": "Provides peace of mind and clarity on exactly how long you can survive without new income.",
+      "faqs": [
+        {
+          "question": "How many months of expenses should be in an emergency fund?",
+          "answer": "3 to 6 months of essential living expenses is the standard recommendation for dual-income households, while 6 to 12 months is recommended for freelancers and single earners."
+        },
+        {
+          "question": "Where should I keep my emergency fund?",
+          "answer": "Keep emergency reserves in a FDIC-insured High-Yield Savings Account (HYSA) or Money Market fund to earn 4–5% APY while maintaining instant liquidity."
+        }
+      ]
+    }
+  },
+  {
+    "id": "markdown-table-generator",
+    "name": "Markdown Table Generator & Spreadsheet Grid Builder",
+    "slug": "markdown-table-generator",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "markdown table generator",
+      "github markdown table builder",
+      "create markdown table online",
+      "markdown table editor grid",
+      "gfm table generator",
+      "convert spreadsheet to markdown table"
+    ],
+    "primaryKeywords": [
+      "markdown table generator",
+      "markdown table builder",
+      "gfm table generator",
+      "markdown table editor"
+    ],
+    "secondaryKeywords": [
+      "align columns markdown table",
+      "interactive grid to markdown table",
+      "github readme table generator"
+    ],
+    "targetUsers": [
+      "Technical Writers",
+      "Open Source Maintainers",
+      "Developers",
+      "Documentation Writers"
+    ],
+    "badge": "High Usage",
+    "userProblem": "Developers and technical writers creating README.md documentation, GitHub wikis, or blog posts need an interactive spreadsheet grid to create, align (left/center/right), edit, and format clean GitHub Flavored Markdown (GFM) tables.",
+    "searchIntent": "Build, edit, and format GitHub-Flavored Markdown tables using an interactive spreadsheet-like grid with 1-click code export.",
+    "resultInterpretation": "Generates formatted Markdown tables with proper column alignment syntax (`:---`, `:---:`, `---:`) and dynamic row/column management.",
+    "practicalGuidance": "Clicking the alignment button cycles between Left, Center, and Right column alignments.",
+    "limitations": "Generates standard CommonMark / GitHub Flavored Markdown (GFM) table syntax.",
+    "formula": "GFM Syntax Generator: | Header | ➔ | :---: | ➔ | Data |",
+    "trustNotes": "100% Client-Side. Markdown documents are edited in browser memory.",
+    "related": [
+      "markdown-previewer",
+      "html-to-markdown-converter",
+      "csv-column-extractor-filter",
+      "text-cleaner-formatter"
+    ],
+    "seo": {
+      "title": "Markdown Table Generator — Interactive GFM Table Builder Online",
+      "metaDescription": "Generate GitHub-Flavored Markdown (GFM) tables online. Interactive spreadsheet grid editor with column alignments, add/remove rows, and 1-click copy.",
+      "whatIsThis": "A developer productivity utility that generates clean GitHub Flavored Markdown table syntax from an interactive visual grid.",
+      "howItWorks": "1. Add or remove rows and columns as needed.\n2. Type cell values and toggle column alignments (Left, Center, Right).\n3. Copy the formatted Markdown table code in 1 click.",
+      "whyUseIt": "Eliminates frustrating manual pipe `|` and dash `-` formatting when writing README files and docs.",
+      "faqs": [
+        {
+          "question": "How do you center text in a Markdown table?",
+          "answer": "Add colons on both sides of the dashed header separator line (e.g. `| :---: |`)."
+        },
+        {
+          "question": "Does this table format work on GitHub and GitLab?",
+          "answer": "Yes. It generates standard GitHub Flavored Markdown (GFM) supported by GitHub, GitLab, Bitbucket, Notion, and Discord."
+        }
+      ]
+    }
+  },
+  {
+    "id": "base64-image-encoder-decoder",
+    "name": "Base64 Image Encoder, Decoder & Data URI Generator",
+    "slug": "base64-image-encoder-decoder",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "base64 image encoder",
+      "base64 to image decoder",
+      "convert image to base64 data uri",
+      "image base64 string generator",
+      "png to base64 online",
+      "svg to base64 data uri"
+    ],
+    "primaryKeywords": [
+      "base64 image encoder",
+      "image to base64",
+      "base64 to image",
+      "base64 data uri generator"
+    ],
+    "secondaryKeywords": [
+      "html img src base64 generator",
+      "css background image base64 snippet",
+      "client side private image to base64"
+    ],
+    "targetUsers": [
+      "Frontend Developers",
+      "Email Template Designers",
+      "Web Developers",
+      "Mobile App Engineers"
+    ],
+    "badge": "High Usage",
+    "userProblem": "Frontend developers and HTML email designers need to encode image files (PNG, JPEG, SVG, WebP) into Base64 Data URIs to embed images inline in CSS, HTML, or JSON payloads without external asset hosting.",
+    "searchIntent": "Convert image files to Base64 Data URI strings and decode Base64 strings back to downloadable image files.",
+    "resultInterpretation": "Encodes image files into Data URI strings (`data:image/png;base64,...`), provides HTML `<img>` and CSS snippets, and decodes Base64 back into images.",
+    "practicalGuidance": "Base64 encoding increases file payload size by approximately 33% compared to binary files, but eliminates separate HTTP requests.",
+    "limitations": "Processes image files client-side in browser RAM via HTML5 FileReader.",
+    "formula": "Base64 Binary Encoding: 3 Binary Bytes (24 bits) ➔ 4 ASCII Base64 Characters",
+    "trustNotes": "100% Zero-Knowledge. Image files are encoded locally in your browser with zero server upload.",
+    "related": [
+      "base64-encoder",
+      "base64-decoder",
+      "svg-path-visualizer-optimizer",
+      "html-entity-encoder-decoder"
+    ],
+    "seo": {
+      "title": "Base64 Image Encoder & Decoder — Convert Images to Data URI",
+      "metaDescription": "Encode images (PNG, JPEG, SVG) to Base64 Data URIs and decode Base64 to image files. Includes HTML <img> and CSS background snippets. 100% private in-browser tool.",
+      "whatIsThis": "A developer tool that bi-directionally converts between image files and Base64 Data URI strings.",
+      "howItWorks": "1. Drag & drop or choose an image file (PNG, JPG, SVG, WebP).\n2. View live image preview and file size.\n3. Copy the raw Data URI, HTML `<img>` tag, or CSS `background-image` snippet.",
+      "whyUseIt": "Embeds small icons and graphics directly into single-file HTML emails and web templates.",
+      "faqs": [
+        {
+          "question": "What is a Base64 Data URI?",
+          "answer": "A Data URI allows you to embed binary image data directly within HTML or CSS using the `data:image/png;base64,...` scheme without external image files."
+        },
+        {
+          "question": "Does Base64 encoding increase image file size?",
+          "answer": "Yes. Base64 encoding represents binary data using 6-bit ASCII characters, increasing total file size by about 33%."
+        }
+      ]
+    }
+  },
+  {
+    "id": "investment-fee-expense-ratio-calculator",
+    "name": "Investment Fee & Expense Ratio Drag Calculator",
+    "slug": "investment-fee-expense-ratio-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "investment fee calculator",
+      "expense ratio calculator",
+      "mutual fund fee impact calculator",
+      "etf expense ratio comparison",
+      "investment management fee drag",
+      "how much do fund fees cost"
+    ],
+    "primaryKeywords": [
+      "expense ratio calculator",
+      "investment fee calculator",
+      "fund fee comparison calculator",
+      "expense ratio impact calculator"
+    ],
+    "secondaryKeywords": [
+      "compare 0.03 vs 0.75 expense ratio",
+      "lifetime investment fees lost calculator",
+      "impact of 1 percent advisory fee"
+    ],
+    "targetUsers": [
+      "Index Fund Investors",
+      "Bogleheads",
+      "Retirement Savers",
+      "Financial Advisors",
+      "401k Participants"
+    ],
+    "badge": "Popular",
+    "userProblem": "Long-term investors comparing low-cost index ETFs (e.g. 0.03% expense ratio) against actively managed mutual funds (e.g. 0.75%–1.50% fee) want to calculate the total lifetime dollar wealth lost to recurring management fees over 10 to 40 years.",
+    "searchIntent": "Calculate the lifetime dollar cost and portfolio drag caused by investment management fees and expense ratios over multi-decade horizons.",
+    "resultInterpretation": "Calculates ending portfolio values for Fund A vs Fund B, total dollars lost to management fees ($), percentage of lifetime wealth consumed by fees, and milestone tables.",
+    "practicalGuidance": "A seemingly small 1.0% annual management fee can consume 25% to 30% of your total retirement wealth over a 30-year investing career due to lost compound growth.",
+    "limitations": "Calculates constant annualized compound returns after expense ratio deductions.",
+    "formula": "Fee Drag: Balance = Principal * (1 + (Return - Fee))^Years; Wealth Lost = Balance_A - Balance_B",
+    "trustNotes": "100% Client-Side financial modeling.",
+    "related": [
+      "cagr-calculator",
+      "compound-interest-calculator",
+      "compound-savings-goal-calculator",
+      "investment-doubling-rule-of-72-calculator"
+    ],
+    "seo": {
+      "title": "Expense Ratio Calculator — Calculate Investment Management Fee Drag",
+      "metaDescription": "Calculate how much investment fees and ETF expense ratios reduce your retirement portfolio over 10, 20, 30, and 40 years. Free, private financial calculator.",
+      "whatIsThis": "A wealth planning utility that quantifies the long-term compound cost of investment management fees and fund expense ratios.",
+      "howItWorks": "1. Enter initial investment principal, expected annual market return, and time horizon.\n2. Enter expense ratios for Fund A (e.g. 0.03%) and Fund B (e.g. 0.75%).\n3. View lifetime wealth lost to fees and multi-decade milestone comparisons.",
+      "whyUseIt": "Reveals the massive wealth transfer caused by high-fee mutual funds and financial advisor percentages.",
+      "faqs": [
+        {
+          "question": "What is an expense ratio in an ETF or mutual fund?",
+          "answer": "An expense ratio is an annual percentage fee charged by the fund manager to cover management, administration, and operating expenses, deducted directly from fund performance."
+        },
+        {
+          "question": "How much does a 1% fee reduce my 30-year investment returns?",
+          "answer": "A 1% annual fee typically reduces your final 30-year portfolio wealth by approximately 25% to 30% compared to a near-zero-fee index fund."
+        }
+      ]
+    }
+  },
+  {
+    "id": "javascript-event-keycodes-reference",
+    "name": "JavaScript Event KeyCodes & Keyboard Event Inspector",
+    "slug": "javascript-event-keycodes-reference",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "javascript keycode finder",
+      "js event keycodes reference",
+      "keyboard event inspector online",
+      "event.key event.code viewer",
+      "javascript key code table",
+      "event.which keycode lookup"
+    ],
+    "primaryKeywords": [
+      "javascript keycode finder",
+      "js keycode reference",
+      "keyboard event inspector",
+      "event keycode lookup"
+    ],
+    "secondaryKeywords": [
+      "event key code which table",
+      "inspect keyboard event modifiers js",
+      "enter keycode escape keycode"
+    ],
+    "targetUsers": [
+      "Frontend Developers",
+      "UI Engineers",
+      "Game Developers",
+      "Web Developers"
+    ],
+    "badge": "High Usage",
+    "userProblem": "Web developers implementing keyboard shortcuts and hotkey listeners need an interactive inspector to press keys and view exact `event.key`, `event.code`, `event.which`, and `event.keyCode` values with modifier flags.",
+    "searchIntent": "Press any keyboard key to inspect JavaScript keyboard event attributes (key, code, which, keyCode) and search standard keycode tables.",
+    "resultInterpretation": "Captures keyboard events in real-time, displays huge interactive keycode badges, breaks down modifiers (Shift, Ctrl, Alt, Cmd), and provides a searchable keycode master table.",
+    "practicalGuidance": "Modern web development recommends using `event.key` and `event.code` rather than deprecated `event.keyCode`.",
+    "limitations": "Captures standard desktop and mobile keyboard events.",
+    "formula": "KeyboardEvent Dispatcher: Window.addEventListener('keydown', e => inspect(e.key, e.code, e.which))",
+    "trustNotes": "100% Client-Side event listener. No keystrokes are logged or transmitted.",
+    "related": [
+      "html-entity-encoder-decoder",
+      "regex-tester",
+      "jwt-payload-inspector-signer",
+      "uuid-generator"
+    ],
+    "seo": {
+      "title": "JavaScript KeyCode Finder — Interactive Keyboard Event Inspector",
+      "metaDescription": "Press any key to inspect JavaScript keyboard event codes (event.key, event.code, event.which, event.keyCode). Searchable master keycode reference table.",
+      "whatIsThis": "A developer productivity utility that captures and displays keyboard event properties for JavaScript frontend development.",
+      "howItWorks": "1. Press any key on your keyboard.\n2. Instantly view keycode badges, `event.key`, `event.code`, and modifier flags.\n3. Search the reference table or copy JS event snippets in 1 click.",
+      "whyUseIt": "Speeds up implementing keyboard navigation, modal escape handlers, and accessibility hotkeys.",
+      "faqs": [
+        {
+          "question": "What is the keyCode for Enter and Escape?",
+          "answer": "The keyCode for Enter is `13` (`code: 'Enter'`), and the keyCode for Escape is `27` (`code: 'Escape'`)."
+        },
+        {
+          "question": "Why is event.keyCode deprecated in modern JavaScript?",
+          "answer": "The W3C deprecated `keyCode` in favor of `event.key` (character value) and `event.code` (physical key location) for better international keyboard layout support."
+        }
+      ]
+    }
+  },
+  {
+    "id": "hours-minutes-time-duration-calculator",
+    "name": "Hours & Minutes Time Duration Math Calculator",
+    "slug": "hours-minutes-time-duration-calculator",
+    "category": "education",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "time duration calculator",
+      "hours and minutes calculator",
+      "add hours and minutes online",
+      "elapsed time calculator",
+      "calculate time difference between two times",
+      "decimal hours to hours and minutes"
+    ],
+    "primaryKeywords": [
+      "time duration calculator",
+      "hours and minutes calculator",
+      "add time calculator",
+      "elapsed time calculator"
+    ],
+    "secondaryKeywords": [
+      "calculate hours between 9am and 5pm",
+      "convert total minutes to hours and minutes",
+      "decimal hours for payroll timesheet"
+    ],
+    "targetUsers": [
+      "Freelancers",
+      "Payroll Managers",
+      "Pilots",
+      "Project Managers",
+      "Students"
+    ],
+    "badge": "Everyday",
+    "userProblem": "Freelancers logging work hours and managers tracking project timesheets need to add/subtract hours and minutes (e.g. `4h 45m + 2h 30m - 45m = 6h 30m`), calculate elapsed clock time, and convert to decimal hours for billing.",
+    "searchIntent": "Add and subtract time spans in hours and minutes, calculate elapsed time between clock timestamps, and convert to decimal hours.",
+    "resultInterpretation": "Calculates combined time duration in hours/minutes, total minutes, decimal hours (for billing/payroll), and elapsed time between start and end clock times.",
+    "practicalGuidance": "7 hours and 45 minutes equals 7.75 decimal hours on client invoices and payroll timesheets.",
+    "limitations": "Calculates standard 60-minute hour time math.",
+    "formula": "Time Sum: Total_Minutes = Sum(Hours * 60 + Minutes) ➔ Hours = Floor(Total / 60), Mins = Total % 60",
+    "trustNotes": "100% Client-Side calculation.",
+    "related": [
+      "working-days-calculator",
+      "stopwatch-timer",
+      "salary-hourly-converter",
+      "freelance-hourly-rate-calculator"
+    ],
+    "seo": {
+      "title": "Time Duration Calculator — Add & Subtract Hours and Minutes",
+      "metaDescription": "Add and subtract hours and minutes, calculate elapsed time between two clock times, and convert to decimal hours for payroll. Free online time calculator.",
+      "whatIsThis": "A time mathematics utility that adds and subtracts time durations and calculates elapsed times between clock timestamps.",
+      "howItWorks": "1. Add time blocks (hours and minutes) with + Add or - Subtract.\n2. View total duration in clock format (`6h 30m`) and decimal format (`6.50 hrs`).\n3. Calculate elapsed time between start and end times in 1 click.",
+      "whyUseIt": "Eliminates calculation errors on timesheets, pilot flight logs, and project billing.",
+      "faqs": [
+        {
+          "question": "How do you convert 45 minutes to decimal hours?",
+          "answer": "Divide minutes by 60: 45 / 60 = 0.75 decimal hours (so 8 hours and 45 minutes is 8.75 hours)."
+        },
+        {
+          "question": "How many hours is 9:15 AM to 5:45 PM?",
+          "answer": "From 09:15 to 17:45 is exactly 8 hours and 30 minutes (or 8.50 decimal hours)."
+        }
+      ]
+    }
   }
 ]
