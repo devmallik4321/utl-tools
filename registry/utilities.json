@@ -12880,5 +12880,644 @@
         }
       ]
     }
+  },
+  {
+    "id": "curl-to-kotlin-okhttp-converter",
+    "name": "cURL to Kotlin OkHttp Code Converter",
+    "slug": "curl-to-kotlin-okhttp-converter",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "curl to kotlin converter",
+      "convert curl to android okhttp",
+      "curl to kotlin code online",
+      "okhttp request builder from curl",
+      "curl post json to kotlin okhttp",
+      "android studio curl converter"
+    ],
+    "primaryKeywords": [
+      "curl to kotlin converter",
+      "convert curl to kotlin",
+      "curl to okhttp converter",
+      "android curl to kotlin"
+    ],
+    "secondaryKeywords": [
+      "okhttp request body toRequestBody kotlin",
+      "convert curl headers to okhttp builder",
+      "android studio rest api curl snippet"
+    ],
+    "targetUsers": [
+      "Android Developers",
+      "Kotlin Programmers",
+      "Mobile App Engineers",
+      "Backend Engineers"
+    ],
+    "badge": "High Usage",
+    "userProblem": "Android and Kotlin developers integrating REST APIs need to convert terminal cURL bash commands into idiomatic Kotlin `OkHttpClient` requests with `Request.Builder`, headers, and `toRequestBody` payloads.",
+    "searchIntent": "Convert bash cURL commands into clean, idiomatic Kotlin OkHttp requests for Android apps.",
+    "resultInterpretation": "Parses cURL commands into Kotlin `OkHttpClient` code, MediaType handling, header chains, and try-catch execution.",
+    "practicalGuidance": "Generates modern OkHttp 4.x / 5.x Kotlin code compatible with Android Studio and Jetpack Compose apps.",
+    "limitations": "Parses standard HTTP/HTTPS cURL CLI syntax.",
+    "formula": "CLI AST Parser: cURL Command ➔ Kotlin OkHttp Request Builder Synthesis",
+    "trustNotes": "100% Client-Side. Zero API keys or tokens transmitted.",
+    "related": [
+      "curl-to-dart-http-converter",
+      "curl-to-csharp-httpclient-converter",
+      "curl-to-rust-reqwest-converter",
+      "curl-to-python-requests-converter"
+    ],
+    "seo": {
+      "title": "cURL to Kotlin Converter — Convert cURL to Android OkHttp Code",
+      "metaDescription": "Convert cURL commands to modern Android Kotlin OkHttp requests online. Includes headers, JSON body, media type, and request builder. Free developer tool.",
+      "whatIsThis": "A developer code generation utility that transforms bash cURL commands into clean Kotlin OkHttp snippets.",
+      "howItWorks": "1. Paste your cURL command into the editor.\n2. View generated Android Kotlin OkHttp code.\n3. Copy the clean snippet in 1 click.",
+      "whyUseIt": "Speeds up Android API integration and eliminates manual header mapping in Android Studio.",
+      "faqs": [
+        {
+          "question": "Which OkHttp version does this code target?",
+          "answer": "The generated code is optimized for OkHttp 4.x and 5.x using modern Kotlin extension functions like `.toRequestBody()`."
+        },
+        {
+          "question": "Can I use this code in Android background coroutines?",
+          "answer": "Yes. You can execute `client.newCall(request).execute()` inside a Kotlin coroutine with `Dispatchers.IO` or use `enqueue()` for asynchronous callbacks."
+        }
+      ]
+    }
+  },
+  {
+    "id": "traditional-vs-roth-401k-calculator",
+    "name": "Traditional vs Roth 401(k) & IRA Comparison Calculator",
+    "slug": "traditional-vs-roth-401k-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "traditional vs roth 401k calculator",
+      "traditional vs roth ira calculator",
+      "should i choose roth or traditional 401k",
+      "compare roth vs traditional retirement taxes",
+      "traditional vs roth spendable income at retirement",
+      "tax bracket traditional vs roth"
+    ],
+    "primaryKeywords": [
+      "traditional vs roth calculator",
+      "roth vs traditional 401k calculator",
+      "traditional vs roth ira",
+      "which is better roth or traditional"
+    ],
+    "secondaryKeywords": [
+      "compare current vs retirement tax bracket",
+      "net after-tax spendable retirement income",
+      "roth tax free growth comparison tool"
+    ],
+    "targetUsers": [
+      "Working Professionals",
+      "Investors",
+      "Employees with 401k Options",
+      "Retirement Planners"
+    ],
+    "badge": "Popular",
+    "userProblem": "Employees with workplace retirement plans struggle to decide whether to contribute to a pre-tax Traditional 401(k) or an after-tax Roth 401(k) to maximize their spendable retirement income.",
+    "searchIntent": "Compare net spendable retirement wealth between Traditional and Roth accounts based on current and future tax brackets.",
+    "resultInterpretation": "Calculates after-tax spendable retirement cash for both Traditional and Roth vehicles, displays exact dollar differences, and provides an objective mathematical recommendation.",
+    "practicalGuidance": "If your marginal tax rate today is higher than your expected effective rate in retirement, Traditional wins. If lower, Roth wins.",
+    "limitations": "Compares equal out-of-pocket pretax contribution scenarios across constant compounding horizons.",
+    "formula": "Traditional Net = Contribution * (1 + r)^n * (1 - Tax_Retire); Roth Net = Contribution * (1 - Tax_Current) * (1 + r)^n",
+    "trustNotes": "100% Client-Side financial modeling.",
+    "related": [
+      "401k-retirement-growth-calculator",
+      "roth-ira-growth-and-contribution-calculator",
+      "hsa-investment-growth-calculator",
+      "fire-financial-independence-retire-early-calculator"
+    ],
+    "seo": {
+      "title": "Traditional vs Roth 401(k) Calculator — Tax Optimization Tool",
+      "metaDescription": "Compare Traditional vs Roth 401(k) and IRA returns based on your current and retirement tax brackets. Find out which option gives you more spendable cash. Free tool.",
+      "whatIsThis": "A retirement tax optimization utility that calculates whether Traditional or Roth contributions produce higher net retirement wealth.",
+      "howItWorks": "1. Enter your annual contribution and years until retirement.\n2. Select current marginal tax bracket and expected retirement tax bracket.\n3. View net spendable cash for both accounts and read the mathematical recommendation.",
+      "whyUseIt": "Reveals the true tax-adjusted winner for your specific income level and retirement timeline.",
+      "faqs": [
+        {
+          "question": "What is the core difference between Traditional and Roth?",
+          "answer": "Traditional accounts give you a tax deduction now, but all withdrawals in retirement are taxed as ordinary income. Roth accounts require you to pay taxes today, but all growth and future retirement withdrawals are 100% tax-free."
+        },
+        {
+          "question": "When does Traditional beat Roth?",
+          "answer": "Traditional wins when your current income tax bracket is higher than your expected tax bracket during retirement (a very common scenario for peak-earning professionals)."
+        }
+      ]
+    }
+  },
+  {
+    "id": "css-stripes-and-patterns-generator",
+    "name": "CSS Repeating Stripes & Background Patterns Generator",
+    "slug": "css-stripes-and-patterns-generator",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "css stripes generator",
+      "repeating linear gradient generator",
+      "css hazard stripe generator",
+      "css striped background maker online",
+      "pure css diagonal stripe pattern",
+      "css candy cane stripe generator"
+    ],
+    "primaryKeywords": [
+      "css stripes generator",
+      "repeating linear gradient css",
+      "css pattern generator",
+      "css diagonal stripes"
+    ],
+    "secondaryKeywords": [
+      "pure css hazard caution pattern",
+      "interactive css repeating gradient preview",
+      "copy css stripe background code"
+    ],
+    "targetUsers": [
+      "Frontend Developers",
+      "UI Designers",
+      "Web Developers",
+      "Creative Coders"
+    ],
+    "badge": "Design",
+    "userProblem": "Frontend developers and designers creating banners, warning badges, or geometric backgrounds need an interactive generator to craft pure CSS `repeating-linear-gradient` stripe patterns without graphics software.",
+    "searchIntent": "Generate pure CSS repeating linear gradient stripe patterns with live canvas preview and 1-click CSS export.",
+    "resultInterpretation": "Calculates stripe boundary stops and generates clean, cross-browser `background: repeating-linear-gradient(...)` CSS with live interactive preview.",
+    "practicalGuidance": "Pure CSS gradients eliminate external image assets, reducing HTTP requests and page load latency.",
+    "limitations": "Generates pure CSS gradient syntax.",
+    "formula": "CSS Repeating Gradient: repeating-linear-gradient(angle, color1, color1 w1, color2 w1, color2 (w1+w2))",
+    "trustNotes": "100% Client-Side visual rendering.",
+    "related": [
+      "css-gradient-generator",
+      "css-box-shadow-generator",
+      "css-triangle-generator",
+      "css-clip-path-polygon-generator"
+    ],
+    "seo": {
+      "title": "CSS Stripes Generator — Repeating Linear Gradient Pattern Tool",
+      "metaDescription": "Create pure CSS striped backgrounds and diagonal repeating patterns online. Customize angle, stripe widths, and colors with instant code export. Free tool.",
+      "whatIsThis": "A visual CSS utility for generating repeating linear gradient stripes and geometric background patterns.",
+      "howItWorks": "1. Choose a preset (Hazard, Tech, Candy Cane) or set angle slider.\n2. Pick colors and stripe widths in pixels.\n3. Copy the clean CSS `background: repeating-linear-gradient(...)` snippet in 1 click.",
+      "whyUseIt": "Generates resolution-independent, lightweight background patterns that look sharp on all retina displays.",
+      "faqs": [
+        {
+          "question": "Do CSS stripe backgrounds work in all browsers?",
+          "answer": "Yes. The `repeating-linear-gradient()` CSS function has been universally supported across all modern browsers for over a decade."
+        },
+        {
+          "question": "Can I use CSS stripes on buttons and cards?",
+          "answer": "Yes. CSS repeating gradients can be applied to any HTML element, including buttons, cards, dividers, and full-page hero sections."
+        }
+      ]
+    }
+  },
+  {
+    "id": "dns-propagation-checker-reference",
+    "name": "Public DNS Resolvers & Propagation Reference",
+    "slug": "dns-propagation-checker-reference",
+    "category": "network",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "public dns resolvers list",
+      "cloudflare dns 1.1.1.1 google 8.8.8.8 reference",
+      "dns propagation check resolver ips",
+      "flush dns cache command windows mac linux",
+      "doh dot public dns endpoints",
+      "quad9 malware blocking dns ip"
+    ],
+    "primaryKeywords": [
+      "public dns resolvers",
+      "dns resolver reference",
+      "public dns server list",
+      "flush dns command"
+    ],
+    "secondaryKeywords": [
+      "cloudflare google quad9 opendns ipv4 ipv6",
+      "dns over https doh endpoint list",
+      "how to flush dns cache windows powershell"
+    ],
+    "targetUsers": [
+      "Network Engineers",
+      "System Administrators",
+      "Webmasters",
+      "DevOps Engineers"
+    ],
+    "badge": "Network",
+    "userProblem": "Webmasters, DevOps engineers, and network administrators diagnosing DNS propagation delays and DNS hijacking need a centralized reference of trusted public DNS resolver Anycast IPs, DoH endpoints, and local OS cache flush commands.",
+    "searchIntent": "Look up public DNS resolver IP addresses (Cloudflare, Google, Quad9, OpenDNS) and copy OS flush DNS commands.",
+    "resultInterpretation": "Lists primary and secondary IPv4, IPv6, and DoH endpoints for major global public resolvers alongside 1-click copyable cache flush commands for Windows, macOS, and Linux.",
+    "practicalGuidance": "Using Quad9 (`9.9.9.9`) automatically blocks resolution of known malware and phishing domains at the DNS layer.",
+    "limitations": "Comprehensive directory and diagnostic reference for global recursive DNS resolvers.",
+    "formula": "DNS Anycast Directory + OS Cache Invalidation Reference",
+    "trustNotes": "100% Client-Side reference.",
+    "related": [
+      "dns-lookup",
+      "dns-record-generator",
+      "email-dns-records-generator",
+      "ping-test"
+    ],
+    "seo": {
+      "title": "Public DNS Resolvers Reference — Anycast IPs & Flush DNS Commands",
+      "metaDescription": "Look up IPv4, IPv6, and DoH endpoints for Cloudflare, Google, Quad9, and OpenDNS. Copy OS cache flush commands for Windows, macOS, and Linux. Free network tool.",
+      "whatIsThis": "A network engineering reference directory listing global public DNS resolvers and OS cache clearing commands.",
+      "howItWorks": "1. Search for a provider or filtering category.\n2. Copy IPv4, IPv6, or DoH resolver addresses in 1 click.\n3. Copy OS-specific DNS cache flush commands for troubleshooting.",
+      "whyUseIt": "Quickly points machines to clean DNS resolvers and resolves stale local cache issues during domain migrations.",
+      "faqs": [
+        {
+          "question": "What is the command to flush DNS in Windows?",
+          "answer": "Open Command Prompt or PowerShell and run `ipconfig /flushdns` to immediately clear your local resolver cache."
+        },
+        {
+          "question": "What is DNS over HTTPS (DoH)?",
+          "answer": "DoH encrypts DNS queries via standard HTTPS, preventing internet service providers (ISPs) and local Wi-Fi eavesdroppers from inspecting which websites you visit."
+        }
+      ]
+    }
+  },
+  {
+    "id": "target-date-fund-allocation-calculator",
+    "name": "Target Date Retirement Fund Glide Path & Asset Allocation Calculator",
+    "slug": "target-date-fund-allocation-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "target date fund calculator",
+      "target retirement fund asset allocation",
+      "vanguard target date glide path calculator",
+      "fidelity target date fund stock bond ratio",
+      "target 2060 fund asset allocation",
+      "target date fund glide path breakdown"
+    ],
+    "primaryKeywords": [
+      "target date fund calculator",
+      "target retirement fund allocation",
+      "glide path calculator",
+      "target date fund asset allocation"
+    ],
+    "secondaryKeywords": [
+      "us vs international stock target fund ratio",
+      "bond allocation by years to retirement",
+      "recommended target retirement year calculator"
+    ],
+    "targetUsers": [
+      "Retirement Investors",
+      "Index Fund Investors",
+      "Bogleheads",
+      "401k Participants"
+    ],
+    "badge": "Popular",
+    "userProblem": "Retirement savers and index fund investors holding or replicating Target Date Funds need to know their exact recommended fund year (e.g. Target 2055 vs 2060) and visualize the institutional glide path breakdown between US equities, international equities, bonds, and cash.",
+    "searchIntent": "Calculate recommended Target Date Fund year and glide path asset allocation percentages.",
+    "resultInterpretation": "Calculates recommended fund year, asset allocation percentages across 4 core asset classes (US Equities, International Equities, Bonds, Cash), and exact dollar amounts based on portfolio balance.",
+    "practicalGuidance": "Target Date glide paths automatically shift from aggressive growth (90% equities) to wealth preservation (50%+ bonds/cash) as you approach retirement.",
+    "limitations": "Models standard institutional Vanguard/Fidelity target date glide paths.",
+    "formula": "Retirement_Year = Current_Year + (Retire_Age - Current_Age); Fund_Year = round(Retirement_Year / 5) * 5; Equity_Pct = f(Years_to_Retirement)",
+    "trustNotes": "100% Client-Side financial modeling.",
+    "related": [
+      "traditional-vs-roth-401k-calculator",
+      "401k-retirement-growth-calculator",
+      "roth-ira-growth-and-contribution-calculator",
+      "compound-savings-goal-calculator"
+    ],
+    "seo": {
+      "title": "Target Date Fund Calculator — Glide Path & Asset Allocation Tool",
+      "metaDescription": "Calculate your recommended Target Date Retirement Fund year and visualize stock vs bond glide path allocations. Based on institutional index formulas. Free tool.",
+      "whatIsThis": "A retirement portfolio allocation utility that models target date fund glide paths and asset class splits.",
+      "howItWorks": "1. Enter current age and target retirement age.\n2. Enter your current total investment portfolio balance.\n3. View your recommended fund year and exact asset class breakdown in percentages and dollars.",
+      "whyUseIt": "Shows you how major institutional funds allocate risk across your working career without requiring you to pay advisory fees.",
+      "faqs": [
+        {
+          "question": "What is a target date fund glide path?",
+          "answer": "A glide path is the mathematical formula that gradually reduces equity exposure and increases fixed income (bonds/cash) as an investor gets closer to their target retirement date."
+        },
+        {
+          "question": "Can I build my own target date fund with individual ETFs?",
+          "answer": "Yes. Many investors use this calculator to create a 'three-fund' or 'four-fund' portfolio using low-cost index ETFs (VTI, VXUS, BND) to achieve the exact same glide path with lower expense ratios."
+        }
+      ]
+    }
+  },
+  {
+    "id": "ip-address-to-binary-hex-converter",
+    "name": "IP Address to Binary, Hex & Decimal Integer Converter",
+    "slug": "ip-address-to-binary-hex-converter",
+    "category": "network",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "ip address to binary converter",
+      "convert ip to hex online",
+      "ip to 32 bit integer converter",
+      "ip to decimal number converter",
+      "convert integer back to ip address",
+      "ipv4 to binary octets calculator"
+    ],
+    "primaryKeywords": [
+      "ip to binary converter",
+      "ip to hex converter",
+      "ip to integer converter",
+      "ip address converter"
+    ],
+    "secondaryKeywords": [
+      "convert 192.168.1.1 to binary octets",
+      "store ip address as 32 bit unsigned int sql",
+      "hexadecimal ip address representation"
+    ],
+    "targetUsers": [
+      "Network Engineers",
+      "Database Developers",
+      "Cybersecurity Analysts",
+      "Computer Science Students"
+    ],
+    "badge": "Network",
+    "userProblem": "Network engineers, database developers indexing IP addresses in SQL tables, and cybersecurity analysts investigating packet headers need to convert IPv4 dotted-decimal addresses into 32-bit binary, hexadecimal, and unsigned decimal integers.",
+    "searchIntent": "Convert IP addresses between dotted-decimal, 32-bit binary, hexadecimal, and decimal integer representations.",
+    "resultInterpretation": "Converts IPv4 addresses into 32-bit binary octets (`11000000.10101000...`), Hex (`0xC0A80101`), Decimal Integer (`3232235777`), and Octal formats with bi-directional integer conversion.",
+    "practicalGuidance": "Storing IP addresses as 32-bit unsigned integers in database columns (`INT UNSIGNED`) saves 75% disk space compared to `VARCHAR(15)` strings and speeds up range queries (`WHERE ip BETWEEN x AND y`).",
+    "limitations": "Parses standard 32-bit IPv4 addresses.",
+    "formula": "Integer IP = (O1 << 24) + (O2 << 16) + (O3 << 8) + O4",
+    "trustNotes": "100% Client-Side calculation.",
+    "related": [
+      "mac-address-format-converter",
+      "subnet-mask-calculator",
+      "ipv6-subnet-prefix-calculator",
+      "hex-decimal-binary-converter"
+    ],
+    "seo": {
+      "title": "IP to Binary & Hex Converter — 32-Bit Decimal Integer Tool",
+      "metaDescription": "Convert IPv4 addresses to 32-bit binary octets, hexadecimal, and unsigned decimal integers online. Bi-directional conversion with 1-click copy. Free network tool.",
+      "whatIsThis": "A network bitwise utility that translates IP addresses across mathematical bases.",
+      "howItWorks": "1. Enter an IPv4 address (e.g. 192.168.1.1) or an integer.\n2. View synchronized dotted-decimal, 32-bit binary, hex, and integer notations.\n3. Copy desired format in 1 click.",
+      "whyUseIt": "Essential for database indexing, packet inspection, and network subnetting calculations.",
+      "faqs": [
+        {
+          "question": "Why store an IP address as an integer in a database?",
+          "answer": "An IPv4 address is fundamentally a 32-bit number. Storing it as an integer takes only 4 bytes of memory, compared to up to 15 bytes for a text string, and allows lightning-fast B-tree indexing and subnet range checks."
+        },
+        {
+          "question": "Can I convert an integer back into an IP address?",
+          "answer": "Yes. Entering any 32-bit integer (like `3232235777`) will automatically reverse calculate the dotted-decimal IP address (`192.168.1.1`)."
+        }
+      ]
+    }
+  },
+  {
+    "id": "aspect-ratio-css-object-fit-previewer",
+    "name": "CSS Object-Fit & Object-Position Visualizer",
+    "slug": "aspect-ratio-css-object-fit-previewer",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "css object fit previewer",
+      "css object-fit visualizer",
+      "object-fit cover vs contain preview",
+      "css object position interactive tool",
+      "css image cropping container previewer",
+      "responsive image object fit generator"
+    ],
+    "primaryKeywords": [
+      "css object fit previewer",
+      "css object fit visualizer",
+      "object fit cover vs contain",
+      "css object position generator"
+    ],
+    "secondaryKeywords": [
+      "interactive css image cropping preview",
+      "css object-fit scale-down none fill",
+      "copy responsive media object fit css"
+    ],
+    "targetUsers": [
+      "Frontend Developers",
+      "UI Designers",
+      "Web Developers"
+    ],
+    "badge": "Design",
+    "userProblem": "Frontend developers styling responsive images, avatars, and video hero containers struggle to visualize the exact difference between `cover`, `contain`, `scale-down`, and `object-position` coordinates.",
+    "searchIntent": "Interactively preview and generate CSS object-fit and object-position properties across various aspect ratios.",
+    "resultInterpretation": "Renders live interactive media inside adjustable container ratios (16:9, 1:1, 4:3, 9:16) demonstrating how images crop, letterbox, and align.",
+    "practicalGuidance": "`object-fit: cover; object-position: center;` is the standard modern CSS technique to prevent image stretching across user-generated avatar uploads and card thumbnails.",
+    "limitations": "Generates CSS object-fit and object-position rules.",
+    "formula": "CSS Rule: object-fit: [contain | cover | fill | scale-down | none]; object-position: [pos];",
+    "trustNotes": "100% Client-Side visual rendering.",
+    "related": [
+      "aspect-ratio-calculator",
+      "aspect-ratio-resizer",
+      "aspect-ratio-letterbox-pillarbox-previewer",
+      "aspect-ratio-scale-factor-dimension-calculator"
+    ],
+    "seo": {
+      "title": "CSS Object-Fit Previewer — Interactive Object-Position Visualizer",
+      "metaDescription": "Test CSS object-fit (cover, contain, fill) and object-position properties interactively across various aspect ratios. Copy clean responsive CSS in 1 click. Free tool.",
+      "whatIsThis": "A frontend visualizer for testing CSS image fitting and cropping behavior across containers.",
+      "howItWorks": "1. Select `object-fit` mode (cover, contain, fill, etc.).\n2. Adjust container aspect ratio and object position.\n3. View live visual container preview and copy the CSS snippet in 1 click.",
+      "whyUseIt": "Eliminates trial-and-error in browser devtools when fitting images into fixed-dimension card grids.",
+      "faqs": [
+        {
+          "question": "What is the difference between cover and contain?",
+          "answer": "`cover` expands the image to fill the entire container while cropping any overflowing sides. `contain` scales the entire image so it fits completely within the container without cropping, adding letterbox bars if needed."
+        },
+        {
+          "question": "Does object-fit work on HTML5 video?",
+          "answer": "Yes. CSS `object-fit` and `object-position` work seamlessly on both `<img>` and `<video>` elements."
+        }
+      ]
+    }
+  },
+  {
+    "id": "home-affordability-debt-to-income-calculator",
+    "name": "Home Affordability & Debt-to-Income (DTI) Calculator",
+    "slug": "home-affordability-debt-to-income-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "home affordability calculator",
+      "how much house can i afford calculator",
+      "debt to income ratio mortgage calculator",
+      "max home purchase price calculator",
+      "28 36 rule home affordability calculator",
+      "mortgage borrowing power calculator dti"
+    ],
+    "primaryKeywords": [
+      "home affordability calculator",
+      "how much house can i afford",
+      "mortgage affordability calculator",
+      "debt to income ratio calculator"
+    ],
+    "secondaryKeywords": [
+      "calculate max mortgage from salary and debts",
+      "qualifying home loan amount with 20 percent down",
+      "fha vs conventional dti limits calculator"
+    ],
+    "targetUsers": [
+      "First-Time Homebuyers",
+      "Mortgage Applicants",
+      "Couples",
+      "Real Estate Investors"
+    ],
+    "badge": "Popular",
+    "userProblem": "Prospective home buyers wondering 'How much house can I actually afford?' need to calculate their true purchasing power using official mortgage underwriting Debt-to-Income (DTI) standards.",
+    "searchIntent": "Calculate maximum qualifying home purchase price based on gross salary, monthly debt obligations, and down payment.",
+    "resultInterpretation": "Calculates max home purchase price, qualifying mortgage loan amount, maximum allowable monthly PITI payment, and front-end DTI percentage.",
+    "practicalGuidance": "Lenders typically cap total monthly debt payments at 36% (Conventional) to 43% (FHA) of gross monthly income.",
+    "limitations": "Estimates borrowing power based on standard fixed-rate mortgage underwriting rules.",
+    "formula": "Max_Monthly_Mortgage = (Gross_Monthly_Income * DTI_Rule) - Monthly_Debts; Max_Loan = Present_Value(Max_Monthly_PI, Rate, Term); Price = Max_Loan + Down_Payment",
+    "trustNotes": "100% Client-Side calculation. Zero financial data stored.",
+    "related": [
+      "down-payment-savings-timeline-calculator",
+      "mortgage-payment-calculator",
+      "mortgage-amortization-schedule-visualizer",
+      "auto-loan-early-payoff-calculator"
+    ],
+    "seo": {
+      "title": "Home Affordability Calculator — How Much House Can I Afford?",
+      "metaDescription": "Calculate the maximum home price and mortgage you can qualify for based on your annual income, monthly debts, and down payment using lender DTI rules. Free tool.",
+      "whatIsThis": "A mortgage underwriting utility that calculates home purchasing power and debt-to-income limits.",
+      "howItWorks": "1. Enter your annual gross household income and down payment cash.\n2. Enter monthly debt obligations (car, loans, cards) and interest rate.\n3. View your maximum qualifying home price, mortgage loan, and monthly payment limit.",
+      "whyUseIt": "Prevents falling in love with houses outside your lender qualification ceiling.",
+      "faqs": [
+        {
+          "question": "What is the 28/36 rule in mortgage lending?",
+          "answer": "The 28/36 rule states that your household housing costs (mortgage, taxes, insurance) should not exceed 28% of gross monthly income, and total debts (housing + car loans + credit cards) should not exceed 36%."
+        },
+        {
+          "question": "How do monthly debts affect how much house I can buy?",
+          "answer": "Every $100 in monthly debt obligations reduces your maximum mortgage borrowing capacity by roughly $14,000 to $18,000 at current interest rates."
+        }
+      ]
+    }
+  },
+  {
+    "id": "json-to-env-file-converter",
+    "name": "JSON to .env Environment File Converter",
+    "slug": "json-to-env-file-converter",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "json to env converter",
+      "convert json to dot env file",
+      "flatten json to env variables",
+      "json to environment variables online",
+      "docker env from json converter",
+      "convert config json to env"
+    ],
+    "primaryKeywords": [
+      "json to env converter",
+      "convert json to env",
+      "json to dotenv",
+      "json to env file online"
+    ],
+    "secondaryKeywords": [
+      "flatten nested json keys to uppercase snake case",
+      "download converted env file",
+      "docker compose environment variables from json"
+    ],
+    "targetUsers": [
+      "DevOps Engineers",
+      "Backend Developers",
+      "Full-Stack Developers",
+      "Cloud Architects"
+    ],
+    "badge": "High Usage",
+    "userProblem": "Developers transitioning application configurations from JSON configuration files to twelve-factor `.env` environment files need to flatten nested JSON structures into valid uppercase `SNAKE_CASE` environment key-value pairs.",
+    "searchIntent": "Convert JSON configuration objects into flat, uppercase .env variable files with 1-click download.",
+    "resultInterpretation": "Recursively traverses nested JSON objects and arrays, flattens paths into uppercase snake_case (`DATABASE_HOST=...`), applies optional key prefixes, and provides 1-click `.env` file download.",
+    "practicalGuidance": "Processes data entirely on the client, making it safe for private server configs, database passwords, and API secrets.",
+    "limitations": "Parses standard valid JSON objects and primitives.",
+    "formula": "Recursive AST Flattening: JSON Object ➔ KEY_CHILD_PATH=value .env format",
+    "trustNotes": "100% Client-Side execution. Zero secrets or environment variables transmitted.",
+    "related": [
+      "yaml-to-json-online-converter",
+      "json-formatter",
+      "json-to-csv-table-converter",
+      "json-schema-to-zod-schema-converter"
+    ],
+    "seo": {
+      "title": "JSON to .env Converter — Flatten JSON to Environment Variables",
+      "metaDescription": "Convert JSON configuration objects into standard .env files online. Flattens nested keys into UPPERCASE_SNAKE_CASE. 100% private. Free developer tool.",
+      "whatIsThis": "A developer DevOps utility that transforms JSON configurations into twelve-factor `.env` files.",
+      "howItWorks": "1. Paste your JSON configuration payload into the editor.\n2. Optionally customize a key prefix (e.g. `NEXT_PUBLIC`).\n3. Copy the formatted `.env` text or download the file in 1 click.",
+      "whyUseIt": "Quickly turns JSON configs into environment variables for Docker, Kubernetes, and local development environments.",
+      "faqs": [
+        {
+          "question": "How are nested JSON keys converted?",
+          "answer": "Nested object keys are joined with underscores in uppercase snake case (e.g. `{\"database\": {\"host\": \"localhost\"}}` becomes `DATABASE_HOST=localhost`)."
+        },
+        {
+          "question": "Are my database credentials or API keys safe?",
+          "answer": "Yes, 100%. All parsing and formatting takes place entirely in your web browser's memory. No data is ever sent to any remote server."
+        }
+      ]
+    }
+  },
+  {
+    "id": "sleep-cycle-calculator",
+    "name": "Sleep Cycle & Bedtime REM Calculator",
+    "slug": "sleep-cycle-calculator",
+    "category": "health",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "sleep cycle calculator",
+      "bedtime calculator",
+      "what time should i go to bed calculator",
+      "rem sleep cycle calculator",
+      "90 minute sleep cycle calculator",
+      "wake up refreshed sleep calculator"
+    ],
+    "primaryKeywords": [
+      "sleep cycle calculator",
+      "bedtime calculator",
+      "sleep calculator",
+      "wake up time calculator"
+    ],
+    "secondaryKeywords": [
+      "calculate 90 minute sleep cycle bedtime",
+      "avoid sleep inertia wake up refreshed",
+      "optimal 5 sleep cycles bedtime schedule"
+    ],
+    "targetUsers": [
+      "Students",
+      "Shift Workers",
+      "Health Trackers",
+      "Anyone Wanting Better Sleep"
+    ],
+    "badge": "Popular",
+    "userProblem": "Individuals waking up exhausted and groggy due to 'sleep inertia' need to calculate optimal bedtimes and wake-up times synchronized with human 90-minute REM sleep cycles and natural sleep latency.",
+    "searchIntent": "Calculate optimal bedtimes and wake-up times to wake up refreshed at the end of a 90-minute REM sleep cycle.",
+    "resultInterpretation": "Calculates exact bedtimes and wake-up times for 3, 4, 5, and 6 full sleep cycles (4.5h to 9.0h), factoring in 14 minutes average sleep onset latency, highlighting optimal recommendations.",
+    "practicalGuidance": "Waking up in the middle of deep slow-wave sleep causes severe grogginess; waking at the end of a REM cycle feels natural and energizing.",
+    "limitations": "Models standard human 90-minute ultradian sleep architecture.",
+    "formula": "Sleep Schedule = Target_Time ± (Cycles * 90 min + 14 min latency)",
+    "trustNotes": "100% Client-Side calculation. Zero health data stored.",
+    "related": [
+      "water-intake-calculator",
+      "walking-steps-to-miles-calories-calculator",
+      "hours-minutes-time-duration-calculator",
+      "age-calculator"
+    ],
+    "seo": {
+      "title": "Sleep Cycle Calculator — Bedtime & Wake-Up REM Time Tool",
+      "metaDescription": "Calculate the best time to go to bed or wake up based on 90-minute REM sleep cycles. Wake up feeling refreshed and eliminate morning grogginess. Free health tool.",
+      "whatIsThis": "A circadian health utility that aligns bedtimes with natural 90-minute human REM sleep cycles.",
+      "howItWorks": "1. Select 'I need to wake up at...' or 'If I go to bed now...'\n2. Enter target time.\n3. View optimal schedules with 5 and 6 cycles (7.5h to 9h) highlighted.",
+      "whyUseIt": "Helps you time your alarm so you never wake up feeling groggy in the middle of deep sleep.",
+      "faqs": [
+        {
+          "question": "How long is a natural sleep cycle?",
+          "answer": "A healthy human sleep cycle lasts approximately 90 minutes, cycling through light sleep, deep slow-wave sleep, and REM (Rapid Eye Movement) dream sleep."
+        },
+        {
+          "question": "Why does this calculator add 14 minutes?",
+          "answer": "Sleep medicine research shows that the average healthy adult takes approximately 14 minutes to fall asleep after getting into bed (known as sleep onset latency)."
+        }
+      ]
+    }
   }
 ]
