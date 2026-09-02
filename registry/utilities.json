@@ -9039,5 +9039,647 @@
         }
       ]
     }
+  },
+  {
+    "id": "home-equity-loan-heloc-calculator",
+    "name": "Home Equity Loan & HELOC Borrowing Calculator",
+    "slug": "home-equity-loan-heloc-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "heloc calculator",
+      "home equity loan calculator",
+      "how much equity can i borrow from my home",
+      "calculate home equity line of credit",
+      "ltv home equity calculator",
+      "heloc monthly payment calculator"
+    ],
+    "primaryKeywords": [
+      "heloc calculator",
+      "home equity calculator",
+      "home equity loan calculator",
+      "heloc borrowing power calculator"
+    ],
+    "secondaryKeywords": [
+      "calculate 80 percent ltv equity limit",
+      "interest only heloc payment calculator",
+      "10 year amortized heloc payment"
+    ],
+    "targetUsers": [
+      "Homeowners",
+      "Real Estate Investors",
+      "Mortgage Borrowers",
+      "Financial Planners"
+    ],
+    "badge": "Popular",
+    "userProblem": "Homeowners considering home improvement or debt consolidation need to calculate their available home equity, maximum borrowable HELOC amount based on 80%–85% LTV lender caps, and compare interest-only vs amortized monthly payments.",
+    "searchIntent": "Calculate the maximum borrowable HELOC loan amount based on home market value, remaining mortgage balance, and lender LTV limits.",
+    "resultInterpretation": "Computes total property equity, maximum borrowable line of credit, loan-to-value ratio, and monthly interest-only vs principal+interest payment estimates.",
+    "practicalGuidance": "Most mortgage lenders cap maximum combined loan-to-value (CLTV) at 80% to 85% of appraised market value.",
+    "limitations": "Does not account for lender origination closing costs or appraisal fees.",
+    "formula": "HELOC Borrowable = (Home_Value * Max_LTV%) - Mortgage_Balance",
+    "trustNotes": "100% Client-Side calculation. Zero personal financial data stored.",
+    "related": [
+      "mortgage-payment-calculator",
+      "loan-refinance-savings-calculator",
+      "auto-loan-early-payoff-calculator",
+      "net-worth-milestone-tracker"
+    ],
+    "seo": {
+      "title": "HELOC Calculator — Home Equity Loan & Borrowing Limit Tool",
+      "metaDescription": "Calculate how much equity you can borrow with a HELOC or home equity loan based on your home value and mortgage balance. Includes monthly payment estimates.",
+      "whatIsThis": "A mortgage finance utility that computes available home equity and maximum borrowable credit lines based on lender LTV caps.",
+      "howItWorks": "1. Enter your home market value and current mortgage balance.\n2. Select maximum lender LTV cap (75%, 80%, 85%, 90%) and interest rate.\n3. View total equity, maximum borrowable credit, and estimated monthly payments.",
+      "whyUseIt": "Determines your borrowing capacity for home renovations, tuition, or debt consolidation before applying with banks.",
+      "faqs": [
+        {
+          "question": "What is the 80% rule for HELOC loans?",
+          "answer": "Most lenders require you to keep at least 20% equity in your home, meaning your primary mortgage plus your HELOC cannot exceed 80% of your home's appraised value."
+        },
+        {
+          "question": "What is the difference between a HELOC and a Home Equity Loan?",
+          "answer": "A Home Equity Loan provides a lump-sum payout with a fixed interest rate, while a HELOC operates as a revolving line of credit with variable interest rates and an interest-only draw period."
+        }
+      ]
+    }
+  },
+  {
+    "id": "curl-to-php-curl-converter",
+    "name": "cURL to PHP cURL Code Converter",
+    "slug": "curl-to-php-curl-converter",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "curl to php converter",
+      "convert curl to php curl_init",
+      "curl command to php online",
+      "curl to php curl_setopt_array",
+      "php curl code generator",
+      "api curl to php script"
+    ],
+    "primaryKeywords": [
+      "curl to php converter",
+      "convert curl to php",
+      "curl to php online",
+      "curl to php curl"
+    ],
+    "secondaryKeywords": [
+      "convert curl post json to php curl",
+      "curl authorization header to php curl",
+      "php curl_setopt_array snippet generator"
+    ],
+    "targetUsers": [
+      "PHP Developers",
+      "Laravel Developers",
+      "WordPress Developers",
+      "Backend Engineers"
+    ],
+    "badge": "High Usage",
+    "userProblem": "Backend developers integrating REST APIs into PHP applications need to convert bash cURL commands into clean, modern PHP `curl_setopt_array()` code with headers, JSON payloads, and error handling.",
+    "searchIntent": "Convert bash cURL commands into clean, copy-pasteable PHP scripts using `curl_init` and `curl_setopt_array`.",
+    "resultInterpretation": "Parses cURL commands into standard PHP script syntax with `CURLOPT_URL`, `CURLOPT_CUSTOMREQUEST`, `CURLOPT_HTTPHEADER`, and `CURLOPT_POSTFIELDS`.",
+    "practicalGuidance": "Includes `curl_error()` error handling and automatic `curl_close()` cleanup.",
+    "limitations": "Parses standard HTTP/HTTPS cURL CLI syntax.",
+    "formula": "CLI AST Parser: cURL Command ➔ PHP curl_setopt_array Script Synthesis",
+    "trustNotes": "100% Client-Side. Sensitive API keys and tokens never leave your browser.",
+    "related": [
+      "curl-to-python-requests-converter",
+      "curl-to-javascript-axios-converter",
+      "curl-to-fetch-converter",
+      "json-formatter"
+    ],
+    "seo": {
+      "title": "cURL to PHP Converter — Convert cURL Commands to PHP cURL Code",
+      "metaDescription": "Convert cURL commands to clean PHP curl_setopt_array scripts online. Parses headers, POST data, and authentication with 1-click copy.",
+      "whatIsThis": "A developer code translation utility that converts bash cURL commands into standard PHP `curl_init()` and `curl_setopt_array()` code.",
+      "howItWorks": "1. Paste your cURL command into the input box.\n2. View generated PHP cURL script with full options array.\n3. Copy the clean PHP code in 1 click.",
+      "whyUseIt": "Speeds up REST API integration in PHP, Laravel, and WordPress projects.",
+      "faqs": [
+        {
+          "question": "Does this support POST requests with JSON payloads?",
+          "answer": "Yes. It automatically extracts JSON payloads into `CURLOPT_POSTFIELDS` and sets proper `Content-Type: application/json` headers."
+        },
+        {
+          "question": "Is this PHP code compatible with modern PHP 8.x?",
+          "answer": "Yes. The generated code uses standard array syntax compatible with PHP 7.x, 8.0, 8.1, 8.2, and 8.3."
+        }
+      ]
+    }
+  },
+  {
+    "id": "css-box-shadow-generator",
+    "name": "CSS Box Shadow Generator & Elevation Builder",
+    "slug": "css-box-shadow-generator",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "css box shadow generator",
+      "box shadow generator online",
+      "css elevation shadow builder",
+      "inset box shadow generator",
+      "css glow shadow generator",
+      "multi layer box shadow css"
+    ],
+    "primaryKeywords": [
+      "css box shadow generator",
+      "box shadow generator",
+      "css shadow generator",
+      "box shadow builder"
+    ],
+    "secondaryKeywords": [
+      "elevation card shadow css generator",
+      "inset box shadow previewer",
+      "tailwind box shadow generator"
+    ],
+    "targetUsers": [
+      "Frontend Developers",
+      "UI/UX Designers",
+      "Web Developers",
+      "CSS Enthusiasts"
+    ],
+    "badge": "Design",
+    "userProblem": "Web developers and UI designers need an interactive visual tool to fine-tune CSS box shadow parameters (X/Y offsets, blur, spread, opacity, inset) with live preview and pre-built elevation presets.",
+    "searchIntent": "Generate custom CSS box-shadow code with visual controls for blur, spread, offset, color, opacity, and inset effects.",
+    "resultInterpretation": "Renders an interactive preview card, allows slider adjustments for offsets and blur, and generates production-ready `box-shadow` CSS rules.",
+    "practicalGuidance": "Negative spread values create smooth, realistic floating elevation shadows without dark edges.",
+    "limitations": "Generates standard CSS3 `box-shadow` syntax compatible with all modern browsers.",
+    "formula": "CSS Box Shadow: box-shadow: [inset] X Y Blur Spread Color;",
+    "trustNotes": "100% Client-Side visual rendering.",
+    "related": [
+      "css-glassmorphism-generator",
+      "color-converter",
+      "hex-rgb-hsl-picker",
+      "color-contrast-checker"
+    ],
+    "seo": {
+      "title": "CSS Box Shadow Generator — Interactive Shadow & Elevation Tool",
+      "metaDescription": "Generate CSS box shadow code online. Interactive controls for X/Y offset, blur radius, spread, opacity, and inset shadows with one-click CSS copy.",
+      "whatIsThis": "A frontend design utility that visually generates clean CSS `box-shadow` code snippets.",
+      "howItWorks": "1. Adjust sliders for X offset, Y offset, Blur, Spread, and Opacity.\n2. Choose from elevation presets (Subtle, Card, Modal, Glow, Inset).\n3. Copy the cross-browser CSS code in 1 click.",
+      "whyUseIt": "Creates professional UI depth, card elevation, and glowing hover effects without guessing pixel values.",
+      "faqs": [
+        {
+          "question": "What is the difference between blur and spread in CSS box-shadow?",
+          "answer": "Blur radius softens and disperses the shadow edge, while spread radius expands or contracts the physical size of the shadow."
+        },
+        {
+          "question": "How do you make an inset shadow in CSS?",
+          "answer": "Add the keyword `inset` at the start of the box-shadow property (e.g. `box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);`)."
+        }
+      ]
+    }
+  },
+  {
+    "id": "tsv-to-json-csv-converter",
+    "name": "TSV to JSON, CSV & Markdown Table Converter",
+    "slug": "tsv-to-json-csv-converter",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "tsv to json converter",
+      "tsv to csv converter",
+      "convert tab separated values to json",
+      "tsv to markdown table",
+      "paste excel to json online",
+      "convert tsv file online"
+    ],
+    "primaryKeywords": [
+      "tsv to json converter",
+      "tsv to csv converter",
+      "tab separated to json",
+      "tsv to markdown converter"
+    ],
+    "secondaryKeywords": [
+      "paste excel spreadsheet to json array",
+      "convert google sheets tsv to csv",
+      "auto type parse tsv numbers and booleans"
+    ],
+    "targetUsers": [
+      "Data Analysts",
+      "Backend Developers",
+      "Frontend Developers",
+      "Product Managers"
+    ],
+    "badge": "High Usage",
+    "userProblem": "Engineers and analysts copying tabular data from Excel, Google Sheets, or SQL query outputs need to convert tab-separated values (TSV) into formatted JSON arrays, CSV files, or Markdown tables.",
+    "searchIntent": "Convert tab-separated values (TSV) into clean JSON arrays, CSV strings, or Markdown tables with auto-typed numbers and booleans.",
+    "resultInterpretation": "Parses tab-delimited text into JSON objects, CSV files (with quoted escaping), and Markdown documentation tables.",
+    "practicalGuidance": "Copying any range of cells from Excel or Google Sheets automatically places TSV text on your clipboard.",
+    "limitations": "Parses standard tab-separated text rows with header keys.",
+    "formula": "TSV Parser: Split('\n') ➔ Map(Split('\t')) ➔ Key-Value Record Mapping",
+    "trustNotes": "100% Client-Side memory parsing. Data never leaves your machine.",
+    "related": [
+      "csv-json-converter",
+      "csv-column-extractor-filter",
+      "markdown-table-generator",
+      "json-formatter"
+    ],
+    "seo": {
+      "title": "TSV to JSON & CSV Converter — Convert Tab-Separated Data Online",
+      "metaDescription": "Convert tab-separated values (TSV) from Excel and Google Sheets to JSON arrays, CSV, and Markdown tables online. Free, private, in-browser converter.",
+      "whatIsThis": "A data conversion utility that transforms tab-separated text into structured JSON, CSV, and Markdown formats.",
+      "howItWorks": "1. Paste TSV data copied from Excel, Google Sheets, or SQL databases.\n2. Switch between JSON, CSV, and Markdown tabs.\n3. Copy the formatted result in 1 click.",
+      "whyUseIt": "Effortlessly transforms spreadsheet data into REST API JSON payloads.",
+      "faqs": [
+        {
+          "question": "Can I paste directly from Microsoft Excel or Google Sheets?",
+          "answer": "Yes. When you copy cells from Excel or Google Sheets, the clipboard stores data in standard TSV format, which this tool parses immediately."
+        },
+        {
+          "question": "Does this tool automatically detect numbers and boolean values?",
+          "answer": "Yes. Numerical digits are parsed as numbers and 'true'/'false' strings are parsed as native JSON booleans."
+        }
+      ]
+    }
+  },
+  {
+    "id": "net-worth-milestone-tracker",
+    "name": "Net Worth Statement & Milestone Projection Calculator",
+    "slug": "net-worth-milestone-tracker",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "net worth calculator",
+      "personal net worth statement",
+      "calculate net worth online",
+      "net worth milestone tracker",
+      "assets vs liabilities calculator",
+      "how to calculate my net worth"
+    ],
+    "primaryKeywords": [
+      "net worth calculator",
+      "personal net worth calculator",
+      "net worth statement tracker",
+      "assets minus liabilities calculator"
+    ],
+    "secondaryKeywords": [
+      "debt to asset ratio calculator",
+      "time to 1 million net worth milestone",
+      "financial balance sheet template online"
+    ],
+    "targetUsers": [
+      "FIRE Community",
+      "Personal Finance Enthusiasts",
+      "Retirement Savers",
+      "Budgeters",
+      "Investors"
+    ],
+    "badge": "Popular",
+    "userProblem": "Individuals tracking their financial independence journey need a private balance sheet tool to calculate total net worth (Assets minus Liabilities), debt-to-asset ratios, and project future wealth milestones ($100k, $500k, $1M).",
+    "searchIntent": "Calculate personal net worth from assets and liabilities and project future wealth milestones based on monthly savings contributions.",
+    "resultInterpretation": "Computes current net worth, breaks down asset vs debt allocations, calculates debt-to-asset health percentage, and estimates years to reach major wealth milestones.",
+    "practicalGuidance": "Net worth is the single most comprehensive metric of long-term financial health and progress toward retirement.",
+    "limitations": "Calculates projections based on constant annualized investment return rates.",
+    "formula": "Net Worth = Total Assets - Total Liabilities",
+    "trustNotes": "100% Zero-Knowledge. Financial balances are processed in browser RAM with zero tracking.",
+    "related": [
+      "emergency-fund-runway-calculator",
+      "compound-savings-goal-calculator",
+      "cagr-calculator",
+      "credit-card-payoff-calculator"
+    ],
+    "seo": {
+      "title": "Net Worth Calculator — Personal Balance Sheet & Milestone Tracker",
+      "metaDescription": "Calculate your net worth (assets minus liabilities) and project future wealth milestones ($100k, $500k, $1M). Free, private, client-side personal finance tool.",
+      "whatIsThis": "A wealth tracking utility that generates a personal balance sheet and forecasts future wealth milestones.",
+      "howItWorks": "1. Enter your asset balances (cash, investments, retirement, real estate, vehicles).\n2. Enter your liabilities (mortgage, auto loans, student loans, credit cards).\n3. View your net worth, debt-to-asset ratio, and projected milestone timelines.",
+      "whyUseIt": "Provides an honest, private snapshot of your financial health without linking bank logins.",
+      "faqs": [
+        {
+          "question": "What is included in calculating net worth?",
+          "answer": "Net worth includes all owned assets (cash, stocks, retirement funds, real estate equity, vehicles) minus all outstanding debts (mortgages, student loans, car loans, credit cards)."
+        },
+        {
+          "question": "What is a healthy debt-to-asset ratio?",
+          "answer": "A debt-to-asset ratio below 50% is generally considered healthy, while lower ratios indicate greater financial independence and lower risk."
+        }
+      ]
+    }
+  },
+  {
+    "id": "lorem-json-mock-data-generator",
+    "name": "Mock JSON Data & REST API Schema Generator",
+    "slug": "lorem-json-mock-data-generator",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "mock json generator",
+      "fake json data generator online",
+      "mock api schema generator",
+      "json placeholder mock generator",
+      "generate mock user dataset json",
+      "dummy json data generator"
+    ],
+    "primaryKeywords": [
+      "mock json generator",
+      "fake json generator",
+      "dummy json data generator",
+      "json schema mock generator"
+    ],
+    "secondaryKeywords": [
+      "generate mock user records json",
+      "download mock json dataset file",
+      "random fake api data generator"
+    ],
+    "targetUsers": [
+      "Frontend Developers",
+      "API QA Testers",
+      "Full-Stack Developers",
+      "UI Designers"
+    ],
+    "badge": "High Usage",
+    "userProblem": "Frontend developers prototyping UI components or testing API endpoints need to quickly generate realistic mock JSON dataset arrays with customizable schema fields (UUIDs, names, emails, salaries, dates, booleans).",
+    "searchIntent": "Generate randomized, realistic mock JSON arrays for frontend UI prototyping and API testing with 1-click download.",
+    "resultInterpretation": "Synthesizes structured JSON arrays containing realistic user, enterprise, or ecommerce records with toggleable property keys.",
+    "practicalGuidance": "Use mock JSON datasets to populate tables, charts, and cards during frontend prototyping before backend endpoints are built.",
+    "limitations": "Generates client-side synthetic datasets in standard JSON format.",
+    "formula": "Deterministic Synthetic Schema Engine: Generate(Schema, Count, Seed)",
+    "trustNotes": "100% Client-Side generation. Zero backend calls.",
+    "related": [
+      "json-formatter",
+      "json-validator",
+      "uuid-v4-batch-generator",
+      "lorem-markdown-generator"
+    ],
+    "seo": {
+      "title": "Mock JSON Generator — Fake Data & REST API Schema Builder",
+      "metaDescription": "Generate realistic mock JSON datasets for API testing and frontend prototyping. Customize schema fields (UUID, name, email, role, date) and download .json.",
+      "whatIsThis": "A developer testing tool that generates realistic synthetic JSON datasets for prototyping and testing.",
+      "howItWorks": "1. Select desired record count (3 to 50 records).\n2. Check or uncheck schema properties (ID, name, email, company, salary, country, status).\n3. Copy the JSON string or download the `.json` file in 1 click.",
+      "whyUseIt": "Instantly generates dummy data without setting up backend test servers or external fake APIs.",
+      "faqs": [
+        {
+          "question": "Can I download the generated mock data as a JSON file?",
+          "answer": "Yes. Click the 'Download .JSON' button to save the dataset directly to your computer."
+        },
+        {
+          "question": "Is the generated data realistic for UI mockups?",
+          "answer": "Yes. It uses realistic names, job roles, corporate email addresses, salary distributions, and ISO timestamps."
+        }
+      ]
+    }
+  },
+  {
+    "id": "scientific-notation-to-decimal-converter",
+    "name": "Scientific Notation to Decimal & Engineering Converter",
+    "slug": "scientific-notation-to-decimal-converter",
+    "category": "education",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "scientific notation converter",
+      "convert scientific notation to decimal",
+      "scientific to standard form calculator",
+      "engineering notation converter",
+      "e notation to decimal online",
+      "convert 10 to power of calculator"
+    ],
+    "primaryKeywords": [
+      "scientific notation converter",
+      "scientific to decimal converter",
+      "engineering notation converter",
+      "exponential to standard converter"
+    ],
+    "secondaryKeywords": [
+      "convert 6.022e23 to standard decimal",
+      "engineering notation exponent multiples of 3",
+      "si metric prefix engineering converter"
+    ],
+    "targetUsers": [
+      "Students",
+      "Physics Researchers",
+      "Engineers",
+      "Chemists",
+      "Teachers"
+    ],
+    "badge": "Everyday",
+    "userProblem": "Science students and engineers encountering exponential numbers (e.g. `6.022e23`, `1.602e-19`, `3e8`) need to convert them into standard decimal form, normalized scientific notation (`a × 10^b`), engineering notation, and SI metric prefixes.",
+    "searchIntent": "Convert numbers between scientific notation, standard decimal format, engineering notation, and SI unit prefixes.",
+    "resultInterpretation": "Calculates normalized scientific notation (`a × 10^b`), engineering notation (powers of 3), expanded standard decimal format, and matching SI metric prefixes (mega, giga, micro, nano).",
+    "practicalGuidance": "Engineering notation restricts exponents to multiples of 3 (e.g. $10^3, 10^6, 10^{-6}$) to align with metric system prefixes.",
+    "limitations": "Calculates standard 64-bit IEEE floating-point representations.",
+    "formula": "Scientific: N = a * 10^b where 1 <= |a| < 10; Engineering: b % 3 == 0",
+    "trustNotes": "100% Client-Side calculation.",
+    "related": [
+      "unit-converter",
+      "decimal-to-fraction-converter",
+      "hex-decimal-binary-converter",
+      "percentage-calculator"
+    ],
+    "seo": {
+      "title": "Scientific Notation Converter — Convert to Decimal & Engineering Form",
+      "metaDescription": "Convert numbers between scientific notation (a × 10^b), standard decimal form, and engineering notation. Free online science and math calculator.",
+      "whatIsThis": "A mathematical conversion utility that translates exponential numbers into standard decimal and engineering formats.",
+      "howItWorks": "1. Enter a number or exponential string (e.g. `6.022e23`, `0.000045`, `3e8`).\n2. Instantly view normalized scientific notation, engineering form, and standard decimal representations.\n3. Copy the conversion breakdown in 1 click.",
+      "whyUseIt": "Simplifies solving physics and chemistry homework problems involving Avogadro's number or Planck's constant.",
+      "faqs": [
+        {
+          "question": "What does the 'e' mean in 6.022e23?",
+          "answer": "The letter 'e' stands for 'exponent of 10'. Thus `6.022e23` means `6.022 × 10^23`."
+        },
+        {
+          "question": "What is the difference between scientific and engineering notation?",
+          "answer": "Scientific notation allows any integer exponent so the coefficient is between 1 and 10. Engineering notation requires exponents to be multiples of 3 to correspond with SI prefixes (kilo, mega, micro)."
+        }
+      ]
+    }
+  },
+  {
+    "id": "screen-aspect-ratio-fov-calculator",
+    "name": "Screen Aspect Ratio & Field of View (FOV) Calculator",
+    "slug": "screen-aspect-ratio-fov-calculator",
+    "category": "hardware",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "fov calculator",
+      "field of view calculator",
+      "ultrawide fov calculator",
+      "horizontal to vertical fov converter",
+      "gaming fov calculator 16:9 21:9",
+      "aspect ratio fov converter"
+    ],
+    "primaryKeywords": [
+      "fov calculator",
+      "field of view calculator",
+      "gaming fov converter",
+      "horizontal to vertical fov"
+    ],
+    "secondaryKeywords": [
+      "21:9 ultrawide fov scaling calculator",
+      "cs2 valorant fov converter",
+      "calculate hfov from vfov degrees"
+    ],
+    "targetUsers": [
+      "PC Gamers",
+      "Sim Racers",
+      "FPS Competitive Players",
+      "Display Enthusiasts"
+    ],
+    "badge": "Hardware",
+    "userProblem": "Competitive gamers switching between 16:9 widescreen, 21:9 ultrawide, and 32:9 super ultrawide monitors need to convert horizontal and vertical Field of View (FOV) angles to match identical focal lengths and maintain accurate mouse aim.",
+    "searchIntent": "Convert Field of View (FOV) angles between horizontal and vertical axes across 16:9, 21:9, and 32:9 aspect ratios.",
+    "resultInterpretation": "Calculates exact equivalent FOV degrees across standard 16:9, 21:9 Ultrawide, 32:9 Super Ultrawide, and Vertical FOV (vFOV).",
+    "practicalGuidance": "Games like CS2/CoD use Horizontal FOV based on 16:9, whereas Overwatch and Rainbow Six Siege use Vertical FOV.",
+    "limitations": "Uses standard rectilinear lens projection trigonometry.",
+    "formula": "FOV Conversion: vFOV = 2 * atan(tan(hFOV / 2) / Aspect_Ratio) * (180 / π)",
+    "trustNotes": "100% Client-Side calculation.",
+    "related": [
+      "screen-aspect-ratio-comparator",
+      "screen-ppi-calculator",
+      "aspect-ratio-calculator",
+      "aspect-ratio-letterbox-pillarbox-previewer"
+    ],
+    "seo": {
+      "title": "FOV Calculator — Field of View Converter for Ultrawide & 16:9",
+      "metaDescription": "Convert gaming Field of View (FOV) between Horizontal and Vertical across 16:9, 21:9 Ultrawide, and 32:9 displays. Match focal length and mouse aim accurately.",
+      "whatIsThis": "A gaming hardware utility that calculates Field of View (FOV) scaling across monitor aspect ratios.",
+      "howItWorks": "1. Enter target FOV angle (in degrees).\n2. Select measurement axis (Horizontal or Vertical).\n3. Select your display ratio (16:9, 21:9, 32:9) to view matching FOV values.",
+      "whyUseIt": "Maintains identical visual scale and muscle memory when upgrading from 16:9 to Ultrawide monitors.",
+      "faqs": [
+        {
+          "question": "Why does my FOV look zoomed in on an Ultrawide monitor?",
+          "answer": "If a game locks Horizontal FOV rather than Vertical FOV, wider screens can crop the top and bottom of your view. Converting to a matching vertical FOV restores your sightlines."
+        },
+        {
+          "question": "What is standard FOV in competitive FPS games?",
+          "answer": "Standard 16:9 horizontal FOV is typically 90° to 103° (equivalent to approximately 59° to 71° vertical FOV)."
+        }
+      ]
+    }
+  },
+  {
+    "id": "dividend-reinvestment-drip-calculator",
+    "name": "Dividend Reinvestment (DRIP) Snowball Calculator",
+    "slug": "dividend-reinvestment-drip-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "drip calculator",
+      "dividend reinvestment calculator",
+      "dividend snowball calculator",
+      "dividend growth calculator",
+      "drip compound interest calculator",
+      "passive dividend income calculator"
+    ],
+    "primaryKeywords": [
+      "drip calculator",
+      "dividend reinvestment calculator",
+      "dividend snowball calculator",
+      "dividend growth calculator"
+    ],
+    "secondaryKeywords": [
+      "calculate dividend income with drip",
+      "drip vs cash payout comparison",
+      "20 year dividend compound growth"
+    ],
+    "targetUsers": [
+      "Dividend Growth Investors",
+      "Retirement Savers",
+      "Passive Income Builders",
+      "Bogleheads"
+    ],
+    "badge": "Popular",
+    "userProblem": "Dividend growth investors need to project the long-term compounding 'snowball' effect of reinvesting dividends (DRIP) vs taking cash payouts over 10 to 30 years with annual dividend increases.",
+    "searchIntent": "Calculate the compound future value and passive annual cash flow of dividend stocks when enrolled in a Dividend Reinvestment Plan (DRIP).",
+    "resultInterpretation": "Calculates ending portfolio balance with DRIP vs without DRIP, total annual dividend income generated at retirement, and milestone compound growth.",
+    "practicalGuidance": "Reinvesting dividends automatically purchases more shares, which generate even larger dividends in subsequent quarters.",
+    "limitations": "Calculates annualized compound growth without specific tax bracket drag.",
+    "formula": "DRIP Growth: Shares_Next = Shares_Current + (Shares_Current * Dividend_Yield / Price)",
+    "trustNotes": "100% Client-Side financial modeling. Zero data tracked.",
+    "related": [
+      "compound-interest-calculator",
+      "cagr-calculator",
+      "investment-fee-expense-ratio-calculator",
+      "net-worth-milestone-tracker"
+    ],
+    "seo": {
+      "title": "DRIP Calculator — Dividend Reinvestment & Snowball Growth Tool",
+      "metaDescription": "Calculate how dividend reinvestment (DRIP) accelerates your portfolio growth and passive annual dividend income over 10 to 30 years. Free financial tool.",
+      "whatIsThis": "A dividend investment utility that models the compound snowball effect of reinvesting corporate dividends.",
+      "howItWorks": "1. Enter initial investment and monthly contribution.\n2. Set dividend yield, dividend growth rate, and capital appreciation rate.\n3. View total portfolio value with DRIP, annual passive dividend income, and 5-year milestone schedules.",
+      "whyUseIt": "Reveals the dramatic wealth acceleration unlocked by dividend reinvestment.",
+      "faqs": [
+        {
+          "question": "What is DRIP in investing?",
+          "answer": "DRIP stands for Dividend Reinvestment Plan, a program that automatically uses cash dividend payments to purchase additional full or fractional shares of the underlying stock."
+        },
+        {
+          "question": "How does the dividend snowball work?",
+          "answer": "Reinvesting dividends buys additional shares, which generate higher dividend payouts in subsequent quarters, compounding portfolio growth exponentially over time."
+        }
+      ]
+    }
+  },
+  {
+    "id": "cron-job-human-readable-explainer",
+    "name": "Cron Expression to Plain English Explainer",
+    "slug": "cron-job-human-readable-explainer",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "cron expression explainer",
+      "cron to plain english converter",
+      "cron job human readable translator",
+      "what does this cron expression mean",
+      "cron schedule translator online",
+      "explain cron syntax online"
+    ],
+    "primaryKeywords": [
+      "cron expression explainer",
+      "cron to english converter",
+      "cron translator online",
+      "human readable cron explainer"
+    ],
+    "secondaryKeywords": [
+      "explain 5 field cron expression",
+      "what does asterisk slash 15 cron mean",
+      "cron expression sentence description"
+    ],
+    "targetUsers": [
+      "DevOps Engineers",
+      "Backend Developers",
+      "System Administrators",
+      "Cloud Architects"
+    ],
+    "badge": "High Usage",
+    "userProblem": "Engineers reading Kubernetes cronjobs, GitHub Actions schedules, or server crontabs need to translate cryptic 5-field cron strings (e.g. `*/15 9-17 * * 1-5`) into clear, unambiguous plain English sentences.",
+    "searchIntent": "Translate 5-part cron expressions into plain English sentences describing their exact execution schedule.",
+    "resultInterpretation": "Generates a clear plain English sentence explaining the cron schedule and breaks down each individual field (Minute, Hour, Day, Month, Weekday).",
+    "practicalGuidance": "Standard 5-field cron represents: Minute (0-59), Hour (0-23), Day of Month (1-31), Month (1-12), Day of Week (0-7).",
+    "limitations": "Parses standard 5-part POSIX/Vixie cron expressions.",
+    "formula": "Cron Sentence Synthesizer: AST Parse(Min, Hour, DOM, Month, DOW) ➔ Natural Language Synthesis",
+    "trustNotes": "100% Client-Side syntax parsing.",
+    "related": [
+      "cron-schedule-tester",
+      "cron-expression-generator",
+      "timestamp-converter",
+      "working-days-calculator"
+    ],
+    "seo": {
+      "title": "Cron Expression Explainer — Translate Cron to Plain English",
+      "metaDescription": "Translate any 5-field cron expression into a clear plain English sentence. Breaks down minute, hour, day, and weekday fields with one-click copy.",
+      "whatIsThis": "A developer utility that translates cryptic cron schedule expressions into natural human language sentences.",
+      "howItWorks": "1. Enter or paste any 5-field cron expression (e.g. `*/15 9-17 * * 1-5`).\n2. Read the natural English translation and per-field breakdown.\n3. Copy the sentence explanation in 1 click.",
+      "whyUseIt": "Eliminates misconfigurations and prevents scheduled background tasks from running at the wrong time.",
+      "faqs": [
+        {
+          "question": "What does */15 in the minute field mean?",
+          "answer": "The expression `*/15` means 'every 15 minutes' (at minutes 0, 15, 30, and 45 of the hour)."
+        },
+        {
+          "question": "What does 1-5 in the day-of-week field mean?",
+          "answer": "The range `1-5` specifies Monday through Friday (standard working days)."
+        }
+      ]
+    }
   }
 ]
