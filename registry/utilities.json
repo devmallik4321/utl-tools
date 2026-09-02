@@ -10962,5 +10962,644 @@
         }
       ]
     }
+  },
+  {
+    "id": "curl-to-rust-reqwest-converter",
+    "name": "cURL to Rust reqwest Code Converter",
+    "slug": "curl-to-rust-reqwest-converter",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "curl to rust converter",
+      "convert curl to rust reqwest",
+      "curl command to rust async tokio",
+      "curl to rust code online",
+      "rust http client from curl",
+      "reqwest post request from curl"
+    ],
+    "primaryKeywords": [
+      "curl to rust converter",
+      "convert curl to rust",
+      "curl to rust reqwest",
+      "rust reqwest code generator"
+    ],
+    "secondaryKeywords": [
+      "rust reqwest headermap from curl",
+      "async tokio main curl to rust",
+      "convert curl json post to rust reqwest"
+    ],
+    "targetUsers": [
+      "Rust Developers",
+      "Systems Engineers",
+      "Backend Developers",
+      "WebAssembly Engineers"
+    ],
+    "badge": "High Usage",
+    "userProblem": "Rust developers building high-performance backend microservices need to translate bash cURL commands into modern, asynchronous Rust code using `reqwest::Client`, `HeaderMap`, and `tokio`.",
+    "searchIntent": "Convert bash cURL commands into clean, async Rust reqwest and tokio code.",
+    "resultInterpretation": "Parses cURL commands into idiomatic Rust `reqwest::Client`, `HeaderMap`, request methods, and `#[tokio::main]` boilerplate.",
+    "practicalGuidance": "Generates asynchronous Rust code compatible with Tokio runtime and Reqwest 0.11+ / 0.12+.",
+    "limitations": "Parses standard HTTP/HTTPS cURL CLI syntax.",
+    "formula": "CLI AST Parser: cURL Command ➔ Rust reqwest / tokio Code Synthesis",
+    "trustNotes": "100% Client-Side. API keys and tokens never leave your browser.",
+    "related": [
+      "curl-to-go-http-converter",
+      "curl-to-python-requests-converter",
+      "curl-to-javascript-axios-converter",
+      "json-to-typescript-converter"
+    ],
+    "seo": {
+      "title": "cURL to Rust Converter — Convert cURL to Rust reqwest & Tokio Code",
+      "metaDescription": "Convert cURL commands to async Rust reqwest code online. Includes HeaderMap, request bodies, and tokio runtime integration. 1-click copy.",
+      "whatIsThis": "A developer code translation utility that converts bash cURL commands into asynchronous Rust `reqwest` code.",
+      "howItWorks": "1. Paste your cURL command into the input box.\n2. View generated async Rust code with HeaderMap and error handling.\n3. Copy the clean Rust snippet in 1 click.",
+      "whyUseIt": "Eliminates tedious manual translation of HTTP headers and API endpoints into Rust types.",
+      "faqs": [
+        {
+          "question": "Which Rust HTTP library does this use?",
+          "answer": "It uses `reqwest`, the standard and most popular asynchronous HTTP client for the Rust ecosystem, along with the `tokio` async runtime."
+        },
+        {
+          "question": "How do I add the dependencies to Cargo.toml?",
+          "answer": "Add `reqwest = { version = \"0.11\", features = [\"json\"] }` and `tokio = { version = \"1\", features = [\"full\"] }` to your Cargo.toml file."
+        }
+      ]
+    }
+  },
+  {
+    "id": "401k-retirement-growth-calculator",
+    "name": "401(k) Retirement Growth & Employer Match Calculator",
+    "slug": "401k-retirement-growth-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "401k calculator",
+      "401k employer match calculator",
+      "401k retirement growth calculator",
+      "how much will my 401k be worth at 65",
+      "401k company match free money calculator",
+      "compound 401k nest egg calculator"
+    ],
+    "primaryKeywords": [
+      "401k calculator",
+      "401k growth calculator",
+      "401k employer match calculator",
+      "retirement 401k projection tool"
+    ],
+    "secondaryKeywords": [
+      "calculate 50 percent match up to 6 percent salary",
+      "401k compound growth over 30 years",
+      "employee vs employer 401k contributions"
+    ],
+    "targetUsers": [
+      "Employees",
+      "Corporate Workers",
+      "Young Professionals",
+      "Retirement Savers"
+    ],
+    "badge": "Popular",
+    "userProblem": "Employees contributing to a company 401(k) plan need to calculate their future nest egg balance at retirement, optimize their contribution percentage to capture 100% of their employer's match, and project decades of compound investment returns.",
+    "searchIntent": "Calculate projected 401(k) balance at retirement, total employer match captured, and compound investment growth.",
+    "resultInterpretation": "Calculates projected balance at target retirement age, total personal employee contributions, total 'free money' employer match, and compound stock market growth.",
+    "practicalGuidance": "Always contribute at least enough to capture your full company match — it represents an immediate 50% to 100% guaranteed return on your investment.",
+    "limitations": "Calculates annual compounding projections based on constant contribution rates and average investment returns.",
+    "formula": "401(k) Simulation: Balance[t] = (Balance[t-1] + Employee_Contrib + Employer_Match) * (1 + r)",
+    "trustNotes": "100% Client-Side financial modeling. Zero salary or balance data stored.",
+    "related": [
+      "fire-financial-independence-retire-early-calculator",
+      "compound-savings-goal-calculator",
+      "net-worth-milestone-tracker",
+      "annuity-payout-present-value-calculator"
+    ],
+    "seo": {
+      "title": "401(k) Calculator — Retirement Growth & Employer Match Tool",
+      "metaDescription": "Calculate how your 401(k) will grow by retirement with employee contributions and employer matching. Free, private retirement projection tool.",
+      "whatIsThis": "A retirement wealth utility that models 401(k) portfolio growth, company match capture, and compound interest.",
+      "howItWorks": "1. Enter current age, target retirement age, salary, and current balance.\n2. Set your contribution percentage and employer match parameters (e.g. 50% match up to 6%).\n3. View final retirement nest egg, personal contributions, and free match money.",
+      "whyUseIt": "Reveals the massive wealth generated by compound growth and employer matching over a 30-year career.",
+      "faqs": [
+        {
+          "question": "What is an employer 401(k) match?",
+          "answer": "An employer match is when your company contributes additional money to your 401(k) plan based on how much you contribute, commonly 50% of your contributions up to 6% of your salary."
+        },
+        {
+          "question": "Should I contribute more than the company match?",
+          "answer": "Capturing the company match is the first priority. Additional savings can go into a Roth IRA (for tax-free growth) or back into your 401(k) up to IRS annual contribution limits."
+        }
+      ]
+    }
+  },
+  {
+    "id": "css-clip-path-polygon-generator",
+    "name": "CSS Clip-Path Polygon Shape Generator",
+    "slug": "css-clip-path-polygon-generator",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "css clip path generator",
+      "clip path polygon builder online",
+      "css polygon shape generator",
+      "css star chevron hexagon clip path",
+      "interactive css clip path tool",
+      "cutout shapes css generator"
+    ],
+    "primaryKeywords": [
+      "css clip path generator",
+      "clip path polygon generator",
+      "css polygon shapes",
+      "css shape cutout generator"
+    ],
+    "secondaryKeywords": [
+      "css clip path triangle hexagon star",
+      "polygon coordinate generator css",
+      "copy css clip path polygon snippet"
+    ],
+    "targetUsers": [
+      "Frontend Developers",
+      "UI Designers",
+      "Creative Coders",
+      "Web Animators"
+    ],
+    "badge": "Design",
+    "userProblem": "Frontend developers and UI designers creating modern polygon hero sections, geometric avatar cutouts, star badges, and chevron buttons need an interactive generator to create valid `clip-path: polygon(...)` CSS rules.",
+    "searchIntent": "Generate CSS clip-path polygon shapes with visual presets and 1-click CSS code export.",
+    "resultInterpretation": "Renders geometric shapes (Triangle, Trapezoid, Parallelogram, Rhombus, Chevron, Star, Hexagon, Octagon) in a live gradient canvas and generates cross-browser `clip-path: polygon(...)` rules.",
+    "practicalGuidance": "Clip paths cut out complex vector silhouettes without requiring heavy external image masks or SVG wrappers.",
+    "limitations": "Generates standard CSS3 `clip-path` polygon syntax supported in all modern browsers.",
+    "formula": "CSS Masking: clip-path: polygon(x1 y1, x2 y2, ... xn yn);",
+    "trustNotes": "100% Client-Side visual rendering.",
+    "related": [
+      "css-triangle-generator",
+      "css-gradient-generator",
+      "css-box-shadow-generator",
+      "css-glassmorphism-generator"
+    ],
+    "seo": {
+      "title": "CSS Clip-Path Generator — Polygon Shapes & Cutouts Builder",
+      "metaDescription": "Create custom CSS clip-path polygon shapes online. Triangles, stars, chevrons, hexagons, and custom cutouts with 1-click CSS code export. Free tool.",
+      "whatIsThis": "A visual styling utility that builds geometric polygon clip-path rules for modern web design.",
+      "howItWorks": "1. Select a shape preset (Triangle, Trapezoid, Rhombus, Star, Chevron, Hexagon).\n2. Preview the live clipped visual canvas.\n3. Copy the cross-browser `clip-path: polygon(...)` code in 1 click.",
+      "whyUseIt": "Creates stunning non-rectangular UI components, cards, and avatars with pure CSS.",
+      "faqs": [
+        {
+          "question": "What is the CSS clip-path property?",
+          "answer": "The `clip-path` CSS property creates a clipping region that sets what part of an element should be shown. Portions that are inside the polygon region are visible, while those outside are hidden."
+        },
+        {
+          "question": "Is clip-path supported on mobile browsers?",
+          "answer": "Yes. Modern mobile Safari and Chrome for Android fully support `clip-path: polygon(...)` alongside standard `-webkit-clip-path` vendor prefixes."
+        }
+      ]
+    }
+  },
+  {
+    "id": "crontab-generator-and-validator",
+    "name": "Crontab Generator & Syntax Validator",
+    "slug": "crontab-generator-and-validator",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "crontab generator",
+      "crontab syntax validator",
+      "cron job command line generator",
+      "generate crontab line online",
+      "crontab e syntax builder",
+      "linux cron schedule generator"
+    ],
+    "primaryKeywords": [
+      "crontab generator",
+      "crontab validator",
+      "crontab command builder",
+      "linux crontab generator"
+    ],
+    "secondaryKeywords": [
+      "daily at midnight crontab line",
+      "every 5 minutes crontab command",
+      "copy crontab e line for bash script"
+    ],
+    "targetUsers": [
+      "Linux System Administrators",
+      "DevOps Engineers",
+      "Backend Developers",
+      "Site Reliability Engineers"
+    ],
+    "badge": "High Usage",
+    "userProblem": "System administrators and developers setting up recurring background server jobs need to generate valid single-line crontab entries with schedule fields, commands, and stdout/stderr log redirection.",
+    "searchIntent": "Generate full crontab configuration lines with visual field controls, presets, and shell commands.",
+    "resultInterpretation": "Generates production-ready crontab lines (`min hr dom mon dow /path/to/cmd >> /var/log/log 2>&1`) with 1-click copy for `crontab -e`.",
+    "practicalGuidance": "Always redirect standard error (`2>&1`) or append to a log file so failed cron jobs leave diagnostic logs.",
+    "limitations": "Generates standard Vixie / ISC Crontab 5-field syntax.",
+    "formula": "Crontab Syntax: [Minute] [Hour] [DayOfMonth] [Month] [DayOfWeek] [Command]",
+    "trustNotes": "100% Client-Side generation. Zero server commands transmitted.",
+    "related": [
+      "cron-job-human-readable-explainer",
+      "cron-schedule-tester",
+      "cron-expression-generator",
+      "curl-to-go-http-converter"
+    ],
+    "seo": {
+      "title": "Crontab Generator — Linux Cron Job Schedule & Command Builder",
+      "metaDescription": "Generate valid crontab lines for Linux servers online. Visual field controls (minute, hour, day, month, weekday) and presets with log redirection. 1-click copy.",
+      "whatIsThis": "A Linux system utility that builds complete, syntactically valid crontab job definitions.",
+      "howItWorks": "1. Select a common schedule preset or customize individual cron fields.\n2. Enter the shell command or script path to execute.\n3. Copy the generated crontab line directly into your server's `crontab -e`.",
+      "whyUseIt": "Eliminates crontab syntax errors that cause failed or misfiring background server tasks.",
+      "faqs": [
+        {
+          "question": "What does >> /var/log/backup.log 2>&1 mean in crontab?",
+          "answer": "It appends standard output (`>>`) and standard error (`2>&1`) to a specified log file, ensuring no execution output is lost."
+        },
+        {
+          "question": "How do I edit my server's crontab file?",
+          "answer": "Open a terminal on your Linux or macOS server and run `crontab -e` to edit your personal user crontab."
+        }
+      ]
+    }
+  },
+  {
+    "id": "inflation-adjusted-salary-calculator",
+    "name": "Inflation-Adjusted Salary & Pay Raise Calculator",
+    "slug": "inflation-adjusted-salary-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "inflation adjusted salary calculator",
+      "real wage growth calculator",
+      "ghost pay cut salary calculator",
+      "did my raise beat inflation",
+      "how much should my salary be with inflation",
+      "cost of living salary adjustment calculator"
+    ],
+    "primaryKeywords": [
+      "inflation adjusted salary calculator",
+      "salary inflation calculator",
+      "ghost pay cut calculator",
+      "real wage growth calculator"
+    ],
+    "secondaryKeywords": [
+      "calculate salary required to match inflation",
+      "purchasing power loss after pay raise",
+      "inflation vs raise salary comparison"
+    ],
+    "targetUsers": [
+      "Employees",
+      "Job Seekers",
+      "Salary Negotiators",
+      "HR Professionals"
+    ],
+    "badge": "Popular",
+    "userProblem": "Employees receiving annual pay raises need to calculate whether their salary kept pace with cumulative inflation or if they experienced an invisible 'ghost pay cut' in real purchasing power.",
+    "searchIntent": "Determine what salary is required to match inflation and calculate the real purchasing power difference after annual pay raises.",
+    "resultInterpretation": "Calculates required inflation-adjusted salary, actual salary after raises, net purchasing power gap in dollars, and evaluates whether you received a real raise or a ghost pay cut.",
+    "practicalGuidance": "If inflation is 4% and your raise is 3%, your nominal paycheck increased but your real purchasing power decreased by 1%.",
+    "limitations": "Calculates compound annual inflation adjustments.",
+    "formula": "Real Purchasing Power: Required = Salary * (1 + Inflation)^n; Actual = Salary * (1 + Raise)^n; Gap = Actual - Required",
+    "trustNotes": "100% Client-Side financial modeling.",
+    "related": [
+      "compound-inflation-purchasing-power-calculator",
+      "salary-after-tax-take-home-calculator",
+      "salary-hourly-converter",
+      "freelance-hourly-rate-calculator"
+    ],
+    "seo": {
+      "title": "Inflation-Adjusted Salary Calculator — Real Wage & Ghost Pay Cut Tool",
+      "metaDescription": "Calculate whether your annual pay raise kept up with inflation. Compare required salary vs actual salary and discover your real purchasing power change. Free tool.",
+      "whatIsThis": "A compensation analysis utility that evaluates real salary growth against cumulative economic inflation.",
+      "howItWorks": "1. Enter starting salary and number of years elapsed.\n2. Enter average annual inflation rate and your actual annual raise percentage.\n3. View required salary, actual salary, purchasing power gap, and ghost pay cut diagnosis.",
+      "whyUseIt": "Arm yourself with objective mathematical data for your next salary review or job offer negotiation.",
+      "faqs": [
+        {
+          "question": "What is a 'ghost pay cut'?",
+          "answer": "A ghost pay cut occurs when you receive a pay raise that is smaller than the rate of inflation, resulting in a higher dollar income but lower real purchasing power."
+        },
+        {
+          "question": "How do I calculate what my salary should be today?",
+          "answer": "Multiply your starting salary by $(1 + \\text{inflation rate})^{\\text{years}}$ to determine the exact nominal salary required to maintain identical living standards."
+        }
+      ]
+    }
+  },
+  {
+    "id": "ipv6-subnet-prefix-calculator",
+    "name": "IPv6 Subnet Prefix & Expansion Calculator",
+    "slug": "ipv6-subnet-prefix-calculator",
+    "category": "network",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "ipv6 subnet calculator",
+      "ipv6 prefix calculator",
+      "expand ipv6 address online",
+      "ipv6 slash 64 host capacity",
+      "ipv6 uncompressed full address generator",
+      "ipv6 address type identifier"
+    ],
+    "primaryKeywords": [
+      "ipv6 subnet calculator",
+      "ipv6 prefix calculator",
+      "ipv6 expander",
+      "ipv6 address format calculator"
+    ],
+    "secondaryKeywords": [
+      "expand compressed double colon ipv6",
+      "calculate total addresses in ipv6 prefix",
+      "identify global unicast vs link local ipv6"
+    ],
+    "targetUsers": [
+      "Network Engineers",
+      "Cloud Architects",
+      "System Administrators",
+      "ISP Technicians"
+    ],
+    "badge": "Network",
+    "userProblem": "Network engineers and cloud architects deploying dual-stack IPv6 networks need to expand compressed double-colon (`::`) addresses into full 128-bit uncompressed hex format, verify prefix lengths (/64, /48), and identify address scopes.",
+    "searchIntent": "Expand compressed IPv6 addresses to full 8-block hex notation and calculate subnet host capacities from prefix lengths.",
+    "resultInterpretation": "Expands compressed IPv6 addresses into standard 8-block 32-hex notation, displays address scope (Global Unicast, Link-Local, ULA, Loopback), and computes total address capacity.",
+    "practicalGuidance": "A standard IPv6 end-user subnet is `/64`, which contains $2^{64}$ (18.4 quintillion) addresses.",
+    "limitations": "Parses standard RFC 4291 IPv6 address formats.",
+    "formula": "IPv6 Capacity: Total Addresses = 2^(128 - Prefix Length)",
+    "trustNotes": "100% Client-Side calculation. Zero network traffic logged.",
+    "related": [
+      "subnet-cidr-to-ip-range-expander",
+      "subnet-mask-calculator",
+      "network-port-reference",
+      "ip-geolocation-lookup"
+    ],
+    "seo": {
+      "title": "IPv6 Subnet Calculator — Prefix Length & Address Expander Tool",
+      "metaDescription": "Expand compressed IPv6 addresses to full 128-bit hex format and calculate subnet address capacities (/64, /48). Free networking tool for cloud engineers.",
+      "whatIsThis": "A networking utility that uncompresses IPv6 addresses and calculates subnet prefix capacities.",
+      "howItWorks": "1. Enter any IPv6 address with prefix notation (e.g. `2001:db8::1/64`).\n2. View full uncompressed 32-character hex notation and address scope.\n3. Copy the expanded address and subnet breakdown in 1 click.",
+      "whyUseIt": "Essential for configuring BGP routing, cloud VPC IPv6 subnets, and router ACLs.",
+      "faqs": [
+        {
+          "question": "How many addresses are in an IPv6 /64 subnet?",
+          "answer": "An IPv6 `/64` subnet contains $2^{64}$ addresses, which is exactly 18,446,744,073,709,551,616 (over 18.4 quintillion) unique IP addresses."
+        },
+        {
+          "question": "What is the difference between compressed and uncompressed IPv6?",
+          "answer": "Compressed IPv6 replaces consecutive groups of zeros with `::` and removes leading zeros in each block. Uncompressed IPv6 displays all 8 four-digit hexadecimal blocks (32 characters)."
+        }
+      ]
+    }
+  },
+  {
+    "id": "aspect-ratio-css-padding-hack-calculator",
+    "name": "CSS Aspect Ratio Padding Hack & Modern CSS Tool",
+    "slug": "aspect-ratio-css-padding-hack-calculator",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "css aspect ratio padding hack calculator",
+      "css padding bottom percentage calculator",
+      "responsive iframe video wrapper css",
+      "aspect ratio percentage hack",
+      "convert 16 9 to padding percentage",
+      "modern aspect ratio vs padding top hack"
+    ],
+    "primaryKeywords": [
+      "css aspect ratio padding hack",
+      "padding bottom aspect ratio calculator",
+      "responsive video wrapper css",
+      "aspect ratio percentage calculator"
+    ],
+    "secondaryKeywords": [
+      "calculate 56.25 percent 16 9 padding",
+      "responsive youtube iframe css boilerplate",
+      "modern css aspect ratio fallback"
+    ],
+    "targetUsers": [
+      "Frontend Developers",
+      "Web Designers",
+      "UI Engineers"
+    ],
+    "badge": "Design",
+    "userProblem": "Frontend developers embedding responsive YouTube iframes, video players, or canvas elements need to calculate the exact `padding-bottom` percentage hack (`(H/W) * 100%`) alongside modern `aspect-ratio` CSS declarations.",
+    "searchIntent": "Calculate the exact percentage for the CSS aspect ratio padding hack and generate responsive wrapper boilerplate.",
+    "resultInterpretation": "Calculates the exact padding percentage (e.g. 56.25% for 16:9, 75% for 4:3) and generates complete responsive wrapper CSS boilerplate with modern `aspect-ratio` fallback.",
+    "practicalGuidance": "Modern CSS supports `aspect-ratio: 16 / 9;`, but the padding-bottom hack remains essential for legacy browser compatibility and zero-CLS layout shifts.",
+    "limitations": "Calculates proportional CSS percentage dimensions.",
+    "formula": "Padding Hack Percentage = (Height / Width) * 100%",
+    "trustNotes": "100% Client-Side calculation.",
+    "related": [
+      "aspect-ratio-calculator",
+      "aspect-ratio-pixel-density-converter",
+      "aspect-ratio-letterbox-pillarbox-previewer",
+      "aspect-ratio-resizer"
+    ],
+    "seo": {
+      "title": "CSS Aspect Ratio Padding Hack Calculator — Responsive Video Wrapper",
+      "metaDescription": "Calculate the exact CSS padding-bottom percentage (e.g. 56.25% for 16:9) and modern aspect-ratio properties. Copy complete responsive wrapper boilerplate. Free tool.",
+      "whatIsThis": "A frontend CSS layout utility that computes aspect ratio percentage hacks and produces responsive video embed code.",
+      "howItWorks": "1. Enter width and height ratios (or pick 16:9, 4:3, 1:1 presets).\n2. View calculated padding percentage and modern CSS property.\n3. Copy the complete responsive wrapper CSS snippet in 1 click.",
+      "whyUseIt": "Eliminates cumulative layout shift (CLS) by reserving exact aspect ratio space before video embeds load.",
+      "faqs": [
+        {
+          "question": "Why is 16:9 aspect ratio 56.25% in CSS padding?",
+          "answer": "Because $(9 / 16) \\times 100 = 56.25\\%$. In CSS, percentage padding on a child element is calculated relative to the width of the parent container."
+        },
+        {
+          "question": "Is the padding hack still necessary with modern aspect-ratio?",
+          "answer": "Modern browsers (Chrome 88+, Safari 15+, Firefox 89+) support `aspect-ratio: 16 / 9`. However, the padding hack is still widely used for bulletproof backwards compatibility."
+        }
+      ]
+    }
+  },
+  {
+    "id": "hourly-paycheck-overtime-calculator",
+    "name": "Hourly Paycheck & Overtime Pay Calculator",
+    "slug": "hourly-paycheck-overtime-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "overtime calculator",
+      "hourly paycheck calculator",
+      "time and a half calculator",
+      "double time pay calculator",
+      "gross hourly pay with overtime",
+      "shift worker overtime wage calculator"
+    ],
+    "primaryKeywords": [
+      "overtime calculator",
+      "hourly paycheck calculator",
+      "time and a half calculator",
+      "overtime pay calculator"
+    ],
+    "secondaryKeywords": [
+      "calculate regular pay vs 1.5x overtime",
+      "double time holiday pay calculation",
+      "effective hourly wage with overtime"
+    ],
+    "targetUsers": [
+      "Hourly Workers",
+      "Shift Workers",
+      "Contractors",
+      "Payroll Managers"
+    ],
+    "badge": "Popular",
+    "userProblem": "Hourly shift workers and payroll managers need to calculate weekly gross paychecks accounting for regular hours, 1.5x overtime (time-and-a-half), and 2.0x double-time holiday hours.",
+    "searchIntent": "Calculate gross paycheck earnings with regular pay, 1.5x overtime, and 2.0x double time.",
+    "resultInterpretation": "Calculates regular pay, 1.5x overtime pay, 2.0x double time pay, total gross paycheck amount, and blended effective hourly rate.",
+    "practicalGuidance": "Under the US Fair Labor Standards Act (FLSA), non-exempt employees must receive overtime pay at 1.5x their regular rate for hours worked over 40 in a workweek.",
+    "limitations": "Calculates gross earnings before tax withholdings.",
+    "formula": "Gross Pay = (Reg_Hours * Wage) + (OT_Hours * Wage * 1.5) + (DT_Hours * Wage * 2.0)",
+    "trustNotes": "100% Client-Side calculation. Zero wage data stored.",
+    "related": [
+      "salary-after-tax-take-home-calculator",
+      "salary-hourly-converter",
+      "freelance-hourly-rate-calculator",
+      "inflation-adjusted-salary-calculator"
+    ],
+    "seo": {
+      "title": "Overtime Calculator — Hourly Paycheck & Time-and-a-Half Tool",
+      "metaDescription": "Calculate your gross hourly paycheck with regular pay, 1.5x overtime, and 2.0x double time. Free, private payroll calculator for hourly shift workers.",
+      "whatIsThis": "A payroll finance utility that computes gross paycheck totals based on hourly wages and overtime tiers.",
+      "howItWorks": "1. Enter your base hourly wage.\n2. Enter regular hours, 1.5x overtime hours, and 2.0x double time hours worked.\n3. View itemized gross earnings and effective hourly wage.",
+      "whyUseIt": "Quickly verify employer paycheck stubs to ensure overtime hours were calculated accurately.",
+      "faqs": [
+        {
+          "question": "How is time-and-a-half calculated?",
+          "answer": "Time-and-a-half is calculated by multiplying your base hourly wage by 1.5. For example, a $20/hr base wage earns $30/hr during overtime hours."
+        },
+        {
+          "question": "When does double time apply?",
+          "answer": "Double time (2.0x base wage) is typically paid for work performed on recognized company holidays, Sundays, or for hours exceeding 12 in a single workday under certain state labor laws."
+        }
+      ]
+    }
+  },
+  {
+    "id": "json-schema-to-typescript-type-converter",
+    "name": "JSON to TypeScript Interface & Type Generator",
+    "slug": "json-schema-to-typescript-type-converter",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "json to typescript converter",
+      "convert json to typescript interface",
+      "json to ts type generator online",
+      "generate typescript types from json object",
+      "json schema to typescript types",
+      "nested json to typescript interface"
+    ],
+    "primaryKeywords": [
+      "json to typescript converter",
+      "json to typescript interface",
+      "json to ts type",
+      "typescript interface generator from json"
+    ],
+    "secondaryKeywords": [
+      "nested object json to typescript interfaces",
+      "convert api json response to typescript",
+      "copy export interface typescript snippet"
+    ],
+    "targetUsers": [
+      "TypeScript Developers",
+      "Frontend Engineers",
+      "Full-Stack Developers",
+      "API Integrators"
+    ],
+    "badge": "High Usage",
+    "userProblem": "TypeScript developers integrating REST API endpoints need to quickly transform raw JSON responses into strongly typed TypeScript `interface` and `type` definitions with nested object typing.",
+    "searchIntent": "Convert raw JSON objects and arrays into clean, production-ready TypeScript interface definitions.",
+    "resultInterpretation": "Parses JSON in browser memory, detects primitive types, generates nested sub-interfaces, and provides copy-ready TypeScript export code.",
+    "practicalGuidance": "Assigns descriptive PascalCase names to nested object structures for clean project architecture.",
+    "limitations": "Parses standard valid JSON objects and arrays.",
+    "formula": "AST Type Synthesis: JSON Object ➔ TypeScript Interface Tree",
+    "trustNotes": "100% Client-Side parsing. Zero payload data transmitted.",
+    "related": [
+      "json-to-typescript-converter",
+      "json-formatter",
+      "json-validator",
+      "mock-json-generator"
+    ],
+    "seo": {
+      "title": "JSON to TypeScript Converter — Interface & Type Generator Tool",
+      "metaDescription": "Convert JSON objects and API payloads into strongly typed TypeScript interfaces and types online. Handles nested objects and arrays. Free developer tool.",
+      "whatIsThis": "A developer productivity utility that generates strongly typed TypeScript interfaces from raw JSON data.",
+      "howItWorks": "1. Enter desired root interface name.\n2. Paste JSON object or array into the input box.\n3. Copy the generated TypeScript interfaces in 1 click.",
+      "whyUseIt": "Eliminates tedious manual typing of TypeScript interfaces when consuming API payloads.",
+      "faqs": [
+        {
+          "question": "How does it handle nested objects in JSON?",
+          "answer": "It recursively generates separate, cleanly named TypeScript `export interface` definitions for each nested object."
+        },
+        {
+          "question": "Does it support JSON arrays?",
+          "answer": "Yes. It inspects array elements to determine item types (e.g. `UserItem[]` or `string[]`)."
+        }
+      ]
+    }
+  },
+  {
+    "id": "fuel-consumption-mpg-to-liters-converter",
+    "name": "Fuel Consumption Converter — US MPG, UK MPG & L/100km",
+    "slug": "fuel-consumption-mpg-to-liters-converter",
+    "category": "education",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "mpg to l 100km converter",
+      "fuel consumption converter",
+      "us mpg to uk imperial mpg",
+      "liters per 100km to mpg",
+      "km per liter to mpg converter",
+      "gas mileage unit converter"
+    ],
+    "primaryKeywords": [
+      "mpg to l 100km converter",
+      "fuel consumption converter",
+      "gas mileage converter",
+      "us mpg to uk mpg"
+    ],
+    "secondaryKeywords": [
+      "calculate liters per 100 kilometers from mpg",
+      "convert kilometers per liter to miles per gallon",
+      "car fuel efficiency unit comparison"
+    ],
+    "targetUsers": [
+      "Drivers",
+      "Car Buyers",
+      "Travelers",
+      "Automotive Enthusiasts"
+    ],
+    "badge": "Popular",
+    "userProblem": "Drivers and car buyers comparing vehicles across US, European, and UK specifications need to convert fuel efficiency ratings between US MPG, Imperial UK MPG, Liters per 100 km (L/100km), and km/L.",
+    "searchIntent": "Convert vehicle gas mileage and fuel economy across US MPG, UK MPG, L/100km, and km/L.",
+    "resultInterpretation": "Calculates synchronized conversions across US MPG (Miles per US Gallon), UK MPG (Miles per Imperial Gallon), Liters per 100 km (L/100km), and Kilometers per Liter (km/L).",
+    "practicalGuidance": "In MPG higher is better, while in L/100km lower is better (less fuel consumed per distance).",
+    "limitations": "Uses standard international fuel volume and distance conversion constants.",
+    "formula": "Conversion: US_MPG = 235.214583 / L_per_100km; UK_MPG = US_MPG * 1.20095; km/L = US_MPG / 2.35214583",
+    "trustNotes": "100% Client-Side calculation.",
+    "related": [
+      "gas-trip-cost-calculator",
+      "unit-converter",
+      "car-loan-affordability-calculator",
+      "kitchen-cooking-unit-converter"
+    ],
+    "seo": {
+      "title": "Fuel Consumption Converter — US MPG, UK MPG & L/100km Tool",
+      "metaDescription": "Convert car fuel economy between US MPG, UK Imperial MPG, Liters per 100 km (L/100km), and km/L online. Free automotive unit conversion tool.",
+      "whatIsThis": "An automotive measurement utility that converts vehicle fuel consumption metrics across imperial and metric standards.",
+      "howItWorks": "1. Enter fuel economy value.\n2. Select base unit (US MPG, UK MPG, L/100km, km/L).\n3. View instant conversions across all standards and copy in 1 click.",
+      "whyUseIt": "Accurately compares international vehicle fuel efficiency ratings without confusing US vs UK gallons.",
+      "faqs": [
+        {
+          "question": "Why is UK MPG different from US MPG?",
+          "answer": "An Imperial UK gallon is approximately 20% larger than a US liquid gallon (4.546 liters vs 3.785 liters), meaning a car rated at 30 US MPG gets about 36 UK MPG."
+        },
+        {
+          "question": "What is 30 MPG in Liters per 100km?",
+          "answer": "30 US MPG equals approximately 7.84 Liters per 100 km (L/100km)."
+        }
+      ]
+    }
   }
 ]
