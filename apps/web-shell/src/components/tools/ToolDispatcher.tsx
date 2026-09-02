@@ -35,6 +35,7 @@ const MacAddressConverter = dynamic(() => import("./network/MacAddressConverter"
 const DnsResolversReference = dynamic(() => import("./network/DnsResolversReference").then((m) => m.DnsResolversReference), { ssr: false });
 const IpBinaryConverter = dynamic(() => import("./network/IpBinaryConverter").then((m) => m.IpBinaryConverter), { ssr: false });
 const WhoisParser = dynamic(() => import("./network/WhoisParser").then((m) => m.WhoisParser), { ssr: false });
+const Ipv4ToIpv6Converter = dynamic(() => import("./network/Ipv4ToIpv6Converter").then((m) => m.Ipv4ToIpv6Converter), { ssr: false });
 
 const JsonFormatter = dynamic(() => import("./developer/JsonFormatter").then((m) => m.JsonFormatter), { ssr: false });
 const JsonValidator = dynamic(() => import("./developer/JsonValidator").then((m) => m.JsonValidator), { ssr: false });
@@ -58,6 +59,7 @@ const CsvToSqliteConverter = dynamic(() => import("./developer/CsvToSqliteConver
 const JsonToCsvConverter = dynamic(() => import("./developer/JsonToCsvConverter").then((m) => m.JsonToCsvConverter), { ssr: false });
 const YamlToJsonConverter = dynamic(() => import("./developer/YamlToJsonConverter").then((m) => m.YamlToJsonConverter), { ssr: false });
 const JsonToXmlConverter = dynamic(() => import("./developer/JsonToXmlConverter").then((m) => m.JsonToXmlConverter), { ssr: false });
+const JsonBeautifyMinify = dynamic(() => import("./developer/JsonBeautifyMinify").then((m) => m.JsonBeautifyMinify), { ssr: false });
 const CaseConverter = dynamic(() => import("./developer/CaseConverter").then((m) => m.CaseConverter), { ssr: false });
 const HashGenerator = dynamic(() => import("./developer/HashGenerator").then((m) => m.HashGenerator), { ssr: false });
 const CronExpressionGenerator = dynamic(() => import("./developer/CronExpressionGenerator").then((m) => m.CronExpressionGenerator), { ssr: false });
@@ -65,6 +67,7 @@ const CronScheduleTester = dynamic(() => import("./developer/CronScheduleTester"
 const CronExplainer = dynamic(() => import("./developer/CronExplainer").then((m) => m.CronExplainer), { ssr: false });
 const CrontabValidator = dynamic(() => import("./developer/CrontabValidator").then((m) => m.CrontabValidator), { ssr: false });
 const CronScheduleBuilder = dynamic(() => import("./developer/CronScheduleBuilder").then((m) => m.CronScheduleBuilder), { ssr: false });
+const CronNextRunsCalculator = dynamic(() => import("./developer/CronNextRunsCalculator").then((m) => m.CronNextRunsCalculator), { ssr: false });
 const JwtDebugger = dynamic(() => import("./developer/JwtDebugger").then((m) => m.JwtDebugger), { ssr: false });
 const JwtInspector = dynamic(() => import("./developer/JwtInspector").then((m) => m.JwtInspector), { ssr: false });
 const CurlToFetchConverter = dynamic(() => import("./developer/CurlToFetchConverter").then((m) => m.CurlToFetchConverter), { ssr: false });
@@ -78,6 +81,7 @@ const CurlToCSharpConverter = dynamic(() => import("./developer/CurlToCSharpConv
 const CurlToDartConverter = dynamic(() => import("./developer/CurlToDartConverter").then((m) => m.CurlToDartConverter), { ssr: false });
 const CurlToKotlinConverter = dynamic(() => import("./developer/CurlToKotlinConverter").then((m) => m.CurlToKotlinConverter), { ssr: false });
 const CurlToSwiftConverter = dynamic(() => import("./developer/CurlToSwiftConverter").then((m) => m.CurlToSwiftConverter), { ssr: false });
+const CurlToPowerShellConverter = dynamic(() => import("./developer/CurlToPowerShellConverter").then((m) => m.CurlToPowerShellConverter), { ssr: false });
 const HtmlToMarkdownConverter = dynamic(() => import("./developer/HtmlToMarkdownConverter").then((m) => m.HtmlToMarkdownConverter), { ssr: false });
 const HtmlEntityConverter = dynamic(() => import("./developer/HtmlEntityConverter").then((m) => m.HtmlEntityConverter), { ssr: false });
 const RegexTester = dynamic(() => import("./developer/RegexTester").then((m) => m.RegexTester), { ssr: false });
@@ -134,7 +138,10 @@ const TraditionalVsRothCalculator = dynamic(() => import("./finance/TraditionalV
 const TargetDateFundCalculator = dynamic(() => import("./finance/TargetDateFundCalculator").then((m) => m.TargetDateFundCalculator), { ssr: false });
 const HomeAffordabilityCalculator = dynamic(() => import("./finance/HomeAffordabilityCalculator").then((m) => m.HomeAffordabilityCalculator), { ssr: false });
 const CapRateCalculator = dynamic(() => import("./finance/CapRateCalculator").then((m) => m.CapRateCalculator), { ssr: false });
+const CashOnCashCalculator = dynamic(() => import("./finance/CashOnCashCalculator").then((m) => m.CashOnCashCalculator), { ssr: false });
 const SolarPaybackCalculator = dynamic(() => import("./finance/SolarPaybackCalculator").then((m) => m.SolarPaybackCalculator), { ssr: false });
+const EvSavingsCalculator = dynamic(() => import("./finance/EvSavingsCalculator").then((m) => m.EvSavingsCalculator), { ssr: false });
+const FiveTwoNineCalculator = dynamic(() => import("./finance/FiveTwoNineCalculator").then((m) => m.FiveTwoNineCalculator), { ssr: false });
 const SalaryInflationCalculator = dynamic(() => import("./finance/SalaryInflationCalculator").then((m) => m.SalaryInflationCalculator), { ssr: false });
 const OvertimeCalculator = dynamic(() => import("./finance/OvertimeCalculator").then((m) => m.OvertimeCalculator), { ssr: false });
 const DebtPayoffCalculator = dynamic(() => import("./finance/DebtPayoffCalculator").then((m) => m.DebtPayoffCalculator), { ssr: false });
@@ -172,6 +179,7 @@ const WaterIntakeCalculator = dynamic(() => import("./health/WaterIntakeCalculat
 const StepsToMilesConverter = dynamic(() => import("./health/StepsToMilesConverter").then((m) => m.StepsToMilesConverter), { ssr: false });
 const SleepCycleCalculator = dynamic(() => import("./health/SleepCycleCalculator").then((m) => m.SleepCycleCalculator), { ssr: false });
 const CaffeineHalfLifeCalculator = dynamic(() => import("./health/CaffeineHalfLifeCalculator").then((m) => m.CaffeineHalfLifeCalculator), { ssr: false });
+const IdealBodyWeightCalculator = dynamic(() => import("./health/IdealBodyWeightCalculator").then((m) => m.IdealBodyWeightCalculator), { ssr: false });
 
 const WordCounter = dynamic(() => import("./education/WordCounter").then((m) => m.WordCounter), { ssr: false });
 const CharacterFrequencyCounter = dynamic(() => import("./education/CharacterFrequencyCounter").then((m) => m.CharacterFrequencyCounter), { ssr: false });
@@ -203,6 +211,7 @@ const AspectRatioPixelDensity = dynamic(() => import("./creative/PixelDensityCon
 const AspectRatioScaleFactor = dynamic(() => import("./creative/ScaleFactorCalculator").then((m) => m.ScaleFactorCalculator), { ssr: false });
 const AspectRatioCssObjectFit = dynamic(() => import("./creative/ObjectFitPreviewer").then((m) => m.ObjectFitPreviewer), { ssr: false });
 const AspectRatioPrintDpi = dynamic(() => import("./creative/PrintResolutionCalculator").then((m) => m.PrintResolutionCalculator), { ssr: false });
+const AspectRatioCssGenerator = dynamic(() => import("./creative/CssAspectRatioGenerator").then((m) => m.CssAspectRatioGenerator), { ssr: false });
 const CssPaddingHack = dynamic(() => import("./creative/CssPaddingHackCalculator").then((m) => m.CssPaddingHackCalculator), { ssr: false });
 const DeviceDimensionsReference = dynamic(() => import("./creative/DeviceDimensionsReference").then((m) => m.DeviceDimensionsReference), { ssr: false });
 const FluidTypographyCalculator = dynamic(() => import("./creative/FluidTypographyCalculator").then((m) => m.FluidTypographyCalculator), { ssr: false });
@@ -211,6 +220,7 @@ const BoxShadowGenerator = dynamic(() => import("./creative/BoxShadowGenerator")
 const BoxReflectionGenerator = dynamic(() => import("./creative/BoxReflectionGenerator").then((m) => m.BoxReflectionGenerator), { ssr: false });
 const ScrollbarGenerator = dynamic(() => import("./creative/ScrollbarGenerator").then((m) => m.ScrollbarGenerator), { ssr: false });
 const CssStripesGenerator = dynamic(() => import("./creative/CssStripesGenerator").then((m) => m.CssStripesGenerator), { ssr: false });
+const ConicGradientGenerator = dynamic(() => import("./creative/ConicGradientGenerator").then((m) => m.ConicGradientGenerator), { ssr: false });
 const GradientGenerator = dynamic(() => import("./creative/GradientGenerator").then((m) => m.GradientGenerator), { ssr: false });
 const CssTriangleGenerator = dynamic(() => import("./creative/CssTriangleGenerator").then((m) => m.CssTriangleGenerator), { ssr: false });
 const ClipPathGenerator = dynamic(() => import("./creative/ClipPathGenerator").then((m) => m.ClipPathGenerator), { ssr: false });
@@ -229,7 +239,8 @@ const AiSystemPromptGenerator = dynamic(() => import("./ai/AiSystemPromptGenerat
 const GpuVramAiCalculator = dynamic(() => import("./hardware/GpuVramAiCalculator").then((m) => m.GpuVramAiCalculator), { ssr: false });
 const ScreenPpiCalculator = dynamic(() => import("./hardware/ScreenPpiCalculator").then((m) => m.ScreenPpiCalculator), { ssr: false });
 const ScreenComparator = dynamic(() => import("./hardware/ScreenComparator").then((m) => m.ScreenComparator), { ssr: false });
-const FovCalculator = dynamic(() => import("./hardware/FovCalculator").then((m) => m.FovCalculator), { ssr: false });
+const ScreenAspectComparator = dynamic(() => import("./hardware/ScreenComparator").then((m) => m.ScreenComparator), { ssr: false });
+const ScreenFovCalculator = dynamic(() => import("./hardware/FovCalculator").then((m) => m.FovCalculator), { ssr: false });
 const PsuWattageCalculator = dynamic(() => import("./hardware/PsuWattageCalculator").then((m) => m.PsuWattageCalculator), { ssr: false });
 const StorageConverter = dynamic(() => import("./hardware/StorageConverter").then((m) => m.StorageConverter), { ssr: false });
 const PcBottleneckCalculator = dynamic(() => import("./hardware/PcBottleneckCalculator").then((m) => m.PcBottleneckCalculator), { ssr: false });
@@ -267,6 +278,7 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "dns-propagation-checker-reference": DnsResolversReference,
   "ip-address-to-binary-hex-converter": IpBinaryConverter,
   "whois-asn-format-parser": WhoisParser,
+  "ipv4-to-ipv6-mapping-converter": Ipv4ToIpv6Converter,
 
   "json-formatter": JsonFormatter,
   "json-validator": JsonValidator,
@@ -290,6 +302,7 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "json-to-csv-table-converter": JsonToCsvConverter,
   "yaml-to-json-online-converter": YamlToJsonConverter,
   "json-to-xml-online-converter": JsonToXmlConverter,
+  "json-minify-beautify-validator": JsonBeautifyMinify,
   "case-converter": CaseConverter,
   "hash-generator": HashGenerator,
   "cron-expression-generator": CronExpressionGenerator,
@@ -297,6 +310,7 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "cron-job-human-readable-explainer": CronExplainer,
   "crontab-generator-and-validator": CrontabValidator,
   "cron-schedule-human-expression-builder": CronScheduleBuilder,
+  "crontab-schedule-next-runs-calculator": CronNextRunsCalculator,
   "jwt-debugger": JwtDebugger,
   "jwt-payload-inspector-signer": JwtInspector,
   "curl-to-fetch-converter": CurlToFetchConverter,
@@ -310,6 +324,7 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "curl-to-dart-http-converter": CurlToDartConverter,
   "curl-to-kotlin-okhttp-converter": CurlToKotlinConverter,
   "curl-to-swift-urlsession-converter": CurlToSwiftConverter,
+  "curl-to-powershell-restmethod-converter": CurlToPowerShellConverter,
   "html-to-markdown-converter": HtmlToMarkdownConverter,
   "html-entity-encoder-decoder": HtmlEntityConverter,
   "regex-tester": RegexTester,
@@ -366,7 +381,10 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "target-date-fund-allocation-calculator": TargetDateFundCalculator,
   "home-affordability-debt-to-income-calculator": HomeAffordabilityCalculator,
   "real-estate-cap-rate-noi-calculator": CapRateCalculator,
+  "real-estate-cash-on-cash-return-calculator": CashOnCashCalculator,
   "solar-panel-payback-period-calculator": SolarPaybackCalculator,
+  "electric-vehicle-ev-savings-calculator": EvSavingsCalculator,
+  "529-college-savings-growth-calculator": FiveTwoNineCalculator,
   "salary-inflation-calculator": SalaryInflationCalculator,
   "hourly-paycheck-overtime-calculator": OvertimeCalculator,
   "debt-snowball-vs-avalanche-payoff-calculator": DebtPayoffCalculator,
@@ -404,6 +422,7 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "walking-steps-to-miles-calories-calculator": StepsToMilesConverter,
   "sleep-cycle-calculator": SleepCycleCalculator,
   "caffeine-half-life-sleep-calculator": CaffeineHalfLifeCalculator,
+  "ideal-body-weight-devine-calculator": IdealBodyWeightCalculator,
 
   "word-counter": WordCounter,
   "character-frequency-counter": CharacterFrequencyCounter,
@@ -435,6 +454,7 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "aspect-ratio-scale-factor-dimension-calculator": AspectRatioScaleFactor,
   "aspect-ratio-css-object-fit-previewer": AspectRatioCssObjectFit,
   "aspect-ratio-print-dpi-resolution-calculator": AspectRatioPrintDpi,
+  "aspect-ratio-css-aspect-ratio-generator": AspectRatioCssGenerator,
   "aspect-ratio-css-padding-hack-calculator": CssPaddingHack,
   "device-screen-dimensions-reference": DeviceDimensionsReference,
   "aspect-ratio-device-screen-dimensions-reference": DeviceDimensionsReference,
@@ -444,6 +464,7 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "css-box-reflection-generator": BoxReflectionGenerator,
   "css-custom-scrollbar-generator": ScrollbarGenerator,
   "css-stripes-and-patterns-generator": CssStripesGenerator,
+  "css-conic-gradient-pie-chart-generator": ConicGradientGenerator,
   "css-gradient-generator": GradientGenerator,
   "css-triangle-generator": CssTriangleGenerator,
   "css-clip-path-polygon-generator": ClipPathGenerator,
@@ -462,8 +483,8 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "gpu-vram-ai-calculator": GpuVramAiCalculator,
   "screen-ppi-calculator": ScreenPpiCalculator,
   "screen-comparator": ScreenComparator,
-  "screen-aspect-ratio-comparator": ScreenComparator,
-  "screen-aspect-ratio-fov-calculator": FovCalculator,
+  "screen-aspect-ratio-comparator": ScreenAspectComparator,
+  "screen-aspect-ratio-fov-calculator": ScreenFovCalculator,
   "psu-wattage-calculator": PsuWattageCalculator,
   "storage-converter": StorageConverter,
   "pc-bottleneck-calculator": PcBottleneckCalculator,
