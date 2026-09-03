@@ -18000,5 +18000,645 @@
         }
       ]
     }
+  },
+  {
+    "id": "curl-to-haskell-http-conduit-converter",
+    "name": "cURL to Haskell (http-conduit & Wreq) Code Converter",
+    "slug": "curl-to-haskell-http-conduit-converter",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "curl to haskell converter",
+      "convert curl to http conduit haskell",
+      "curl to wreq haskell code generator",
+      "haskell rest api request from curl",
+      "haskell network http simple curl",
+      "cabal haskell http client generator"
+    ],
+    "primaryKeywords": [
+      "curl to haskell converter",
+      "convert curl to haskell",
+      "curl to http-conduit",
+      "curl to wreq"
+    ],
+    "secondaryKeywords": [
+      "parseRequest setRequestMethod setRequestHeader httpLBS",
+      "wreq postWith defaults header lens bytestring",
+      "functional programming haskell rest client generation"
+    ],
+    "targetUsers": [
+      "Haskell Developers",
+      "Functional Programming Engineers",
+      "Backend Engineers",
+      "FinTech & Blockchain Developers (Cardano)"
+    ],
+    "badge": "High Usage",
+    "userProblem": "Haskell developers integrating external REST APIs and microservices need a fast way to translate bash cURL commands into clean, idiomatic Haskell code using `Network.HTTP.Simple` (`http-conduit`) or `Network.Wreq` with ByteString and OverloadedStrings pragmas.",
+    "searchIntent": "Convert bash cURL commands into Haskell http-conduit and Wreq HTTP client code.",
+    "resultInterpretation": "Translates cURL CLI commands into clean Haskell `httpLBS` or `postWith` expressions with headers, authentication, and ByteString JSON bodies.",
+    "practicalGuidance": "http-conduit (Network.HTTP.Simple) is the recommended standard for modern Haskell applications, offering high-performance streaming and zero-leak memory management.",
+    "limitations": "Parses standard HTTP/HTTPS cURL CLI syntax.",
+    "formula": "CLI AST Parser: cURL Command ➔ Haskell http-conduit / Wreq Code Synthesis",
+    "trustNotes": "100% Client-Side. Zero API keys or tokens transmitted.",
+    "related": [
+      "curl-to-ocaml-cohttp-converter",
+      "curl-to-scala-sttp-converter",
+      "curl-to-rust-reqwest-converter",
+      "curl-to-clojure-clj-http-converter"
+    ],
+    "seo": {
+      "title": "cURL to Haskell Converter — Convert cURL to http-conduit & Wreq Online",
+      "metaDescription": "Convert cURL commands to Haskell http-conduit and Wreq code online. Formats headers, auth tokens, and JSON payloads. Free developer tool.",
+      "whatIsThis": "A developer programming utility that translates bash cURL commands into idiomatic Haskell HTTP client code.",
+      "howItWorks": "1. Select `http-conduit` or `Wreq`.\n2. Paste your cURL command into the editor.\n3. Copy the clean Haskell code in 1 click.",
+      "whyUseIt": "Eliminates tedious syntax translation when consuming third-party REST APIs in Haskell applications.",
+      "faqs": [
+        {
+          "question": "What is http-conduit in Haskell?",
+          "answer": "http-conduit is the most widely used HTTP client library in the Haskell ecosystem. Its `Network.HTTP.Simple` module provides high-level functions for building and executing HTTP requests with streaming support."
+        },
+        {
+          "question": "Which language pragmas are needed?",
+          "answer": "The generated code requires `{-# LANGUAGE OverloadedStrings #-}` to allow string literals to automatically coerce into ByteStrings."
+        }
+      ]
+    }
+  },
+  {
+    "id": "real-estate-debt-yield-ratio-calculator",
+    "name": "Commercial Real Estate (CRE) Debt Yield Ratio Underwriting Calculator",
+    "slug": "real-estate-debt-yield-ratio-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "debt yield calculator",
+      "commercial real estate debt yield calculator",
+      "cre debt yield ratio underwriting calculator",
+      "cmbs debt yield calculator",
+      "maximum allowable loan debt yield calculator",
+      "debt yield vs dscr calculator"
+    ],
+    "primaryKeywords": [
+      "debt yield calculator",
+      "cre debt yield calculator",
+      "commercial debt yield",
+      "debt yield underwriting"
+    ],
+    "secondaryKeywords": [
+      "net operating income noi divided by loan amount",
+      "cmbs life insurance company 9 percent minimum yield",
+      "interest rate agnostic commercial lending metric"
+    ],
+    "targetUsers": [
+      "Commercial Mortgage Brokers",
+      "Real Estate Investors & Syndicators",
+      "Underwriters & CMBS Lenders",
+      "Commercial Appraisers"
+    ],
+    "badge": "Popular",
+    "userProblem": "Commercial real estate investors applying for CMBS, balance-sheet, or life-company loans need to evaluate whether their property satisfies the lender's Debt Yield threshold (typically 8.5% to 10.0%) and calculate their maximum allowable mortgage amount regardless of interest rates.",
+    "searchIntent": "Calculate property Debt Yield ratio, lender underwriting compliance, and maximum borrowing capacity.",
+    "resultInterpretation": "Calculates property Debt Yield (NOI / Loan Amount), approval status against target lender minimums (8.5% - 10.0%), maximum allowable debt balance, and required equity injection to cure yield deficits.",
+    "practicalGuidance": "Unlike DSCR, Debt Yield is completely unaffected by low interest rates or interest-only periods. It represents the lender's unleveraged cash-on-cash return if they took ownership through foreclosure.",
+    "limitations": "Models standard commercial real estate debt yield underwriting standards.",
+    "formula": "Debt_Yield = (NOI / LoanAmount) * 100%; Max_Loan = NOI / (Required_Yield / 100)",
+    "trustNotes": "100% Client-Side financial modeling.",
+    "related": [
+      "commercial-real-estate-triple-net-nnn-calculator",
+      "dscr-rental-loan-calculator",
+      "real-estate-cap-rate-noi-calculator",
+      "real-estate-cash-on-cash-return-calculator"
+    ],
+    "seo": {
+      "title": "Debt Yield Calculator — Commercial Real Estate (CRE) Loan Tool",
+      "metaDescription": "Calculate commercial real estate Debt Yield ratio and maximum allowable loan amount. Check CMBS and life-company 9% compliance. Free finance tool.",
+      "whatIsThis": "A commercial property financing utility that calculates Debt Yield ratios and maximum debt capacity for lenders and syndicators.",
+      "howItWorks": "1. Enter annual Net Operating Income (NOI) and requested loan amount.\n2. Enter the lender's required minimum Debt Yield (typically 8.5% to 10.0%).\n3. View current Debt Yield, approval status, and maximum allowable borrowing capacity.",
+      "whyUseIt": "Determines loan sizing constraints before submitting financing packages to CMBS and institutional lenders.",
+      "faqs": [
+        {
+          "question": "What is Debt Yield in commercial real estate?",
+          "answer": "Debt Yield is a property's annual Net Operating Income (NOI) divided by the total loan amount, expressed as a percentage. It measures the lender's unleveraged return on investment if they foreclosed on the property on day one."
+        },
+        {
+          "question": "What is a good Debt Yield ratio?",
+          "answer": "Most commercial lenders (CMBS and life insurance companies) require a minimum Debt Yield of 8.5% to 10.0%. A Debt Yield of 10%+ generally qualifies for maximum leverage and the most competitive loan pricing."
+        }
+      ]
+    }
+  },
+  {
+    "id": "css-animated-gradient-border-generator",
+    "name": "Pure CSS Animated Rotating Gradient Border Generator",
+    "slug": "css-animated-gradient-border-generator",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "css animated gradient border generator",
+      "rotating gradient border css generator",
+      "conic gradient border generator",
+      "css property angle rotating border",
+      "vercel style gradient border card generator",
+      "glowing border css generator online"
+    ],
+    "primaryKeywords": [
+      "css gradient border generator",
+      "animated gradient border css",
+      "rotating border generator",
+      "conic gradient border"
+    ],
+    "secondaryKeywords": [
+      "css property angle syntax inherits initial value",
+      "conic gradient from var angle pseudo element after",
+      "filter blur ambient glow card border effect"
+    ],
+    "targetUsers": [
+      "Frontend Developers",
+      "UI Designers",
+      "Webflow & Framer Designers",
+      "Design System Engineers"
+    ],
+    "badge": "Design",
+    "userProblem": "Web developers creating modern landing pages want to implement the glowing, rotating gradient border card effect made famous by Vercel and Linear without bloated JavaScript canvas libraries or messy image masks.",
+    "searchIntent": "Generate pure CSS animated rotating gradient borders with customizable colors, rotation speed, and ambient glow.",
+    "resultInterpretation": "Adjusts gradient colors, border thickness, corner radius, rotation speed, and ambient glow blur, rendering a live card preview and generating modern CSS `@property --angle` and `conic-gradient` code.",
+    "practicalGuidance": "Using CSS `@property` enables GPU-accelerated angle interpolation without expensive DOM re-paints.",
+    "limitations": "Generates pure CSS modern Houdini / pseudo-element syntax.",
+    "formula": "@property --angle { syntax: '<angle>'; } background: conic-gradient(from var(--angle), ...);",
+    "trustNotes": "100% Client-Side visual rendering.",
+    "related": [
+      "box-shadow-generator",
+      "css-glassmorphism-generator",
+      "css-neumorphism-soft-ui-generator",
+      "css-custom-checkbox-and-radio-generator"
+    ],
+    "seo": {
+      "title": "CSS Animated Gradient Border Generator — Rotating Conic Border Tool",
+      "metaDescription": "Create modern rotating gradient borders and glowing card outlines using pure CSS. Custom colors, border radius, and live preview. Free developer tool.",
+      "whatIsThis": "A web design utility that creates smooth, GPU-accelerated animated gradient borders using modern CSS conic gradients and Houdini properties.",
+      "howItWorks": "1. Customize three gradient stop colors and border radius.\n2. Adjust animation speed and outer ambient glow intensity.\n3. Copy the production CSS snippet in 1 click.",
+      "whyUseIt": "Adds high-converting modern visual polish to pricing tiers and call-to-action cards.",
+      "faqs": [
+        {
+          "question": "How does CSS animate an angle in a conic-gradient?",
+          "answer": "By declaring a custom CSS property `@property --angle { syntax: '<angle>'; }`, browsers can interpolate angle values from `0deg` to `360deg` in `@keyframes`, smoothly rotating the conic-gradient."
+        },
+        {
+          "question": "Is this supported in all modern web browsers?",
+          "answer": "Yes. CSS `@property` is supported in 100% of modern web browsers including Chrome, Edge, Safari 16.4+, and Firefox 128+."
+        }
+      ]
+    }
+  },
+  {
+    "id": "dns-tlsa-dane-record-generator",
+    "name": "DNS TLSA (DANE) Record Generator for SSL/TLS & SMTP",
+    "slug": "dns-tlsa-dane-record-generator",
+    "category": "network",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "tlsa record generator",
+      "dns dane tlsa generator",
+      "rfc 6698 tlsa record builder",
+      "smtp dane tlsa port 25 generator",
+      "openssl tlsa sha256 fingerprint extractor",
+      "dane ee spki sha256 tlsa generator"
+    ],
+    "primaryKeywords": [
+      "tlsa record generator",
+      "dane record generator",
+      "dns tlsa generator",
+      "tlsa rfc 6698"
+    ],
+    "secondaryKeywords": [
+      "port protocol domain 3 1 1 spki sha256 bind line",
+      "openssl s_client connect port 25 starttls smtp",
+      "dane email authentication postfix exim security"
+    ],
+    "targetUsers": [
+      "Mail Server Administrators (Postfix / Exim)",
+      "DevOps Engineers",
+      "Security Engineers",
+      "DNSSEC Administrators"
+    ],
+    "badge": "Network",
+    "userProblem": "Mail server administrators configuring DANE (DNS-based Authentication of Named Entities) for secure SMTP transfer (Port 25) struggle to generate correct RFC 6698 TLSA record names (`_25._tcp.mail.domain.`) and extract the exact SHA-256 SPKI public key hash from certificates.",
+    "searchIntent": "Generate valid DNS TLSA (DANE) records and get terminal commands to extract certificate fingerprints.",
+    "resultInterpretation": "Constructs valid `_port._protocol.domain.` record names, formats standard 3-1-1 (DANE-EE SPKI SHA-256) parameters, generates BIND zone entries, and provides ready-to-run OpenSSL fingerprint extraction commands.",
+    "practicalGuidance": "Using Selector 1 (SPKI) rather than Selector 0 (Full Certificate) allows you to renew your Let's Encrypt SSL certificate without having to update your DNS TLSA record, as long as you reuse your private key.",
+    "limitations": "Generates RFC 6698 standard TLSA records.",
+    "formula": "_[port]._[protocol].[domain]. IN TLSA [usage] [selector] [matching] [data]",
+    "trustNotes": "100% Client-Side generation.",
+    "related": [
+      "dns-caa-record-generator",
+      "dns-dkim-key-record-generator",
+      "dns-dmarc-record-generator",
+      "ssl-tls-certificate-decoder-inspector"
+    ],
+    "seo": {
+      "title": "DNS TLSA (DANE) Record Generator — RFC 6698 SMTP & SSL Tool",
+      "metaDescription": "Generate DNS TLSA records for DANE email and SSL security. Formats BIND zone entries and OpenSSL fingerprint extraction commands. Free network tool.",
+      "whatIsThis": "A network security utility that generates DNS TLSA records to bind SSL/TLS certificates directly to DNS via DNSSEC.",
+      "howItWorks": "1. Enter host domain, port (25 for SMTP, 443 for HTTPS), and protocol.\n2. Paste your certificate's SHA-256 fingerprint (or use the provided extraction command).\n3. Copy the formatted BIND TLSA record and verify with `dig`.",
+      "whyUseIt": "Protects email transfer against man-in-the-middle downgrade attacks and satisfies European cybersecurity standards.",
+      "faqs": [
+        {
+          "question": "What is DANE and why is it used on Port 25?",
+          "answer": "DANE (RFC 6698) uses DNSSEC to authenticate the TLS certificates of mail servers. It prevents opportunistic TLS downgrade attacks on SMTP port 25, ensuring email is transmitted with strict end-to-end encryption."
+        },
+        {
+          "question": "What is the recommended TLSA configuration for Let's Encrypt?",
+          "answer": "Usage `3` (DANE-EE), Selector `1` (SPKI), and Matching Type `1` (SHA-256). This pins the public key rather than the entire certificate, so renewals do not break DANE verification if the key is retained."
+        }
+      ]
+    }
+  },
+  {
+    "id": "saas-quick-ratio-growth-efficiency-calculator",
+    "name": "B2B SaaS Quick Ratio & Growth Efficiency Calculator",
+    "slug": "saas-quick-ratio-growth-efficiency-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "saas quick ratio calculator",
+      "growth efficiency calculator saas",
+      "new mrr expansion mrr churn contraction calculator",
+      "venture capital saas benchmarks calculator",
+      "net new mrr calculator",
+      "social capital quick ratio formula saas"
+    ],
+    "primaryKeywords": [
+      "saas quick ratio calculator",
+      "saas quick ratio",
+      "saas growth efficiency",
+      "net new mrr calculator"
+    ],
+    "secondaryKeywords": [
+      "new mrr plus expansion divided by churn plus contraction",
+      "top quartile 4x quick ratio vc fundraising metric",
+      "saas revenue leakage leaky bucket diagnosis"
+    ],
+    "targetUsers": [
+      "SaaS Founders & Executives",
+      "Venture Capital Investors",
+      "Chief Financial Officers (CFOs)",
+      "Growth Product Managers"
+    ],
+    "badge": "Popular",
+    "userProblem": "SaaS founders preparing for Series A/B fundraising need to calculate their SaaS Quick Ratio to demonstrate capital efficiency, diagnosing whether top-line sales growth is healthy or undermined by customer churn and downgrades.",
+    "searchIntent": "Calculate SaaS Quick Ratio, Net New MRR, Gross Inflow, and VC efficiency tier.",
+    "resultInterpretation": "Calculates SaaS Quick Ratio multiple, Net New MRR ($/mo and ARR), gross revenue additions vs losses, and evaluates company performance against VC benchmarks (>4.0x Top Quartile, 2.0x-4.0x Healthy, <2.0x Leaky Bucket).",
+    "practicalGuidance": "A Quick Ratio of 4.0 means the company adds $4 of recurring revenue for every $1 lost to churn. Tier-1 VC funds look for sustained Quick Ratios above 4.0x.",
+    "limitations": "Calculates standard Social Capital and Bessemer SaaS growth efficiency formulas.",
+    "formula": "Quick_Ratio = (New_MRR + Expansion_MRR) / (Churn_MRR + Contraction_MRR); Net_New_MRR = Inflow - Outflow",
+    "trustNotes": "100% Client-Side. Zero financial data stored or transmitted.",
+    "related": [
+      "business-valuation-sde-ebitda-multiple-calculator",
+      "break-even-calculator",
+      "roi-investment-calculator",
+      "cagr-calculator"
+    ],
+    "seo": {
+      "title": "SaaS Quick Ratio Calculator — Growth Efficiency & MRR Tool",
+      "metaDescription": "Calculate your B2B SaaS Quick Ratio and Net New MRR. Benchmark your growth efficiency against venture capital tier-1 metrics. Free finance tool.",
+      "whatIsThis": "A venture finance utility that measures the revenue growth efficiency and churn resistance of subscription software businesses.",
+      "howItWorks": "1. Enter New MRR and Expansion MRR (revenue additions).\n2. Enter Churned MRR and Contraction MRR (revenue losses).\n3. View Quick Ratio multiple, Net New MRR, and venture efficiency benchmark grade.",
+      "whyUseIt": "Reveals whether your SaaS growth is fundamentally sustainable or masked by unsustainable customer turnover.",
+      "faqs": [
+        {
+          "question": "What is a good SaaS Quick Ratio?",
+          "answer": "A SaaS Quick Ratio greater than 4.0x is considered excellent (top-quartile VC grade). A ratio between 2.0x and 4.0x is healthy. A ratio under 2.0x indicates serious retention issues where new sales are being cancelled out by churn."
+        },
+        {
+          "question": "Who created the SaaS Quick Ratio?",
+          "answer": "The SaaS Quick Ratio was popularized by Mamoon Hamid at Social Capital as a single metric to evaluate how efficiently a software company grows without being masked by gross new bookings."
+        }
+      ]
+    }
+  },
+  {
+    "id": "aspect-ratio-staggered-isometric-brick-grid-calculator",
+    "name": "Staggered Isometric & Brick Grid Dimensions Calculator",
+    "slug": "aspect-ratio-staggered-isometric-brick-grid-calculator",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "staggered isometric grid calculator",
+      "brick tile grid dimensions calculator",
+      "2 to 1 isometric tile coordinate calculator",
+      "staggered row tilemap canvas bounding box",
+      "screen to staggered tile picking formula",
+      "retro game dev isometric staggered math"
+    ],
+    "primaryKeywords": [
+      "staggered isometric grid calculator",
+      "brick grid calculator",
+      "staggered tilemap calculator",
+      "isometric 2:1 tile calculator"
+    ],
+    "secondaryKeywords": [
+      "odd row half width shift tile to screen projection",
+      "tile width height 2 to 1 pixel art canvas bounding box",
+      "game dev coarse tile picking hit detection algorithm"
+    ],
+    "targetUsers": [
+      "Game Developers (Godot / Unity / Phaser)",
+      "Pixel Art Game Creators",
+      "Tilemap Designers",
+      "Procedural Map Builders"
+    ],
+    "badge": "Design",
+    "userProblem": "Game developers and pixel artists creating classic 2:1 staggered isometric tilemaps (like Diablo, Fallout, or SimCity) need a calculator for staggered row/column offsets, map bounding dimensions, and coordinate picking math.",
+    "searchIntent": "Calculate staggered isometric tile dimensions, total canvas bounding boxes, and screen-to-tile coordinate projection code.",
+    "resultInterpretation": "Calculates tile dimensions (2:1 aspect ratio), vertical row step ($H/2$), half-width stagger offset ($W/2$), total canvas bounding box, and generates copy-ready JavaScript projection and picking code.",
+    "practicalGuidance": "Staggered isometric maps are easier to store in standard 2D arrays `[col][row]` than diamond isometric maps, making them the classic choice for 2D game engines.",
+    "limitations": "Calculates regular regular 2:1 staggered planar geometry.",
+    "formula": "StepX = W, StepY = H/2; If odd row: X += W/2; CanvasW = cols*W + W/2; CanvasH = (rows+1)*(H/2)",
+    "trustNotes": "100% Client-Side calculation.",
+    "related": [
+      "aspect-ratio-isometric-cube-grid-calculator",
+      "aspect-ratio-hexagonal-grid-calculator",
+      "aspect-ratio-isometric-pixel-art-grid-calculator",
+      "css-isometric-text-and-box-generator"
+    ],
+    "seo": {
+      "title": "Staggered Isometric Grid Calculator — 2:1 Tilemap Math Tool",
+      "metaDescription": "Calculate 2:1 staggered isometric tile sizes, row offsets, canvas bounding dimensions, and coordinate projection code. Free game dev tool.",
+      "whatIsThis": "A game development geometry utility that calculates dimensions and screen projection algorithms for staggered isometric tilemaps.",
+      "howItWorks": "1. Enter tile width and height (2:1 ratio, e.g. 64x32px).\n2. Enter grid columns and rows.\n3. View canvas dimensions and copy tile-to-screen and screen-to-tile JavaScript functions.",
+      "whyUseIt": "Eliminates visual coordinate alignment errors when building isometric 2D games.",
+      "faqs": [
+        {
+          "question": "What is the difference between diamond and staggered isometric maps?",
+          "answer": "Diamond isometric maps rotate the entire grid 45 degrees, creating a diamond-shaped world boundary. Staggered isometric maps keep the map rectangular by shifting alternating rows horizontally by half a tile width."
+        },
+        {
+          "question": "Why is 2:1 the standard aspect ratio for isometric pixel art?",
+          "answer": "Because a 2:1 pixel step (2 pixels horizontal for every 1 pixel vertical) avoids messy anti-aliasing artifacts on low-resolution displays, creating clean, crisp diagonal pixel lines."
+        }
+      ]
+    }
+  },
+  {
+    "id": "crontab-to-azure-functions-schedule-converter",
+    "name": "Crontab to Azure Functions NCRONTAB Timer Generator",
+    "slug": "crontab-to-azure-functions-schedule-converter",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "crontab to azure functions converter",
+      "azure functions ncrontab generator",
+      "azure timer trigger cron expression converter",
+      "convert 5 field cron to 6 field azure ncrontab",
+      "c sharp timer trigger attribute generator",
+      "azure functions python v2 timer trigger generator"
+    ],
+    "primaryKeywords": [
+      "cron to azure functions",
+      "azure functions ncrontab",
+      "azure timer trigger generator",
+      "ncrontab generator"
+    ],
+    "secondaryKeywords": [
+      "second minute hour day month day of week 6 fields",
+      "c sharp dotnet isolated worker timer trigger attribute",
+      "typescript app timer python timer trigger decorator"
+    ],
+    "targetUsers": [
+      "Azure Cloud Developers",
+      ".NET / C# Backend Engineers",
+      "Python / Node.js Serverless Developers",
+      "DevOps & Cloud Engineers"
+    ],
+    "badge": "High Usage",
+    "userProblem": "Azure serverless developers setting up `TimerTrigger` functions encounter runtime errors because standard Linux crontabs have 5 fields, whereas Microsoft Azure Functions requires 6-field NCRONTAB syntax with second-level precision (`{second} {minute} {hour} {day} {month} {day-of-week}`).",
+    "searchIntent": "Convert standard crontab expressions into Azure Functions 6-field NCRONTAB and generate C#, TypeScript, or Python code bindings.",
+    "resultInterpretation": "Prepends mandatory second-precision syntax to generate valid 6-field NCRONTAB expressions, producing copy-ready code bindings for C# (.NET Isolated), TypeScript (v4 model), and Python (v2 model).",
+    "practicalGuidance": "Azure TimerTriggers evaluate NCRONTAB in UTC by default. Setting `use_monitor=True` ensures past-due executions run if the serverless app was temporarily sleeping.",
+    "limitations": "Generates Azure Functions v4 programming model format.",
+    "formula": "NCRONTAB: {second} {minute} {hour} {day} {month} {day-of-week}",
+    "trustNotes": "100% Client-Side generation.",
+    "related": [
+      "crontab-to-gitlab-ci-schedule-converter",
+      "crontab-to-kubernetes-cronjob-converter",
+      "crontab-to-aws-eventbridge-converter",
+      "crontab-to-github-actions-schedule-converter"
+    ],
+    "seo": {
+      "title": "Crontab to Azure Functions NCRONTAB Converter — Timer Trigger Tool",
+      "metaDescription": "Convert 5-field crontabs to 6-field Azure Functions NCRONTAB expressions. Generates C#, TypeScript, and Python code bindings. Free Azure developer tool.",
+      "whatIsThis": "A cloud serverless utility that converts standard Linux crontabs into valid Azure Functions 6-field NCRONTAB expressions and code decorators.",
+      "howItWorks": "1. Enter standard 5-field cron or pick a preset.\n2. View the generated 6-field NCRONTAB expression.\n3. Choose C# (.NET), TypeScript (v4), or Python (v2) and copy the complete function boilerplate.",
+      "whyUseIt": "Fixes 6-field NCRONTAB syntax errors and accelerates Azure serverless development.",
+      "faqs": [
+        {
+          "question": "Why does Azure Functions require 6 fields instead of 5?",
+          "answer": "Standard Linux cron specifies schedules down to the minute. Azure Functions uses NCRONTAB, which adds a mandatory first field for seconds (`{second} {minute} {hour} {day} {month} {day-of-week}`) to allow sub-minute precision."
+        },
+        {
+          "question": "What timezone do Azure Functions timer triggers execute in?",
+          "answer": "Azure Functions evaluates timer triggers in UTC by default. You can change this by adding a `WEBSITE_TIME_ZONE` app setting in your Azure portal."
+        }
+      ]
+    }
+  },
+  {
+    "id": "solo-401k-contribution-calculator",
+    "name": "Solo 401(k) Contribution & Tax Shelter Calculator",
+    "slug": "solo-401k-contribution-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "solo 401k calculator",
+      "individual 401k contribution calculator",
+      "solo 401k employee elective deferral calculator",
+      "solo 401k profit sharing calculator",
+      "solo 401k vs sep ira calculator",
+      "self employed 401k maximum contribution calculator"
+    ],
+    "primaryKeywords": [
+      "solo 401k calculator",
+      "individual 401k calculator",
+      "solo 401k contribution calculator",
+      "self employed 401k calculator"
+    ],
+    "secondaryKeywords": [
+      "employee elective deferral 23000 catch up 7500",
+      "employer profit sharing 20 percent sole prop 25 scorp",
+      "69000 statutory combined irs maximum contribution"
+    ],
+    "targetUsers": [
+      "Self-Employed Professionals",
+      "1099 Consultants & Freelancers",
+      "Solo S-Corp Owners",
+      "High-Income Sole Proprietors"
+    ],
+    "badge": "Popular",
+    "userProblem": "Self-employed individuals with no full-time employees need to calculate how much more tax-deductible money they can contribute to a Solo 401(k) compared to a standard SEP-IRA by taking advantage of dual employee and employer contribution limits.",
+    "searchIntent": "Calculate maximum Solo 401(k) contributions, employee deferrals, employer profit sharing, and tax savings.",
+    "resultInterpretation": "Calculates employee elective deferral (up to $23,000 / $30,500 if age 50+), employer profit sharing (20% - 25%), total combined contribution (capped at $69,000 / $76,500), advantage over SEP-IRA, and immediate tax savings.",
+    "practicalGuidance": "A Solo 401(k) allows high contributions even at modest income levels: someone earning $100,000 can shelter up to $41,000 in a Solo 401(k) vs only ~$18,500 in a SEP-IRA.",
+    "limitations": "Models IRS statutory 2024 contribution limits and sole prop / S-Corp formulas.",
+    "formula": "Solo401k = Min(69000, Employee_Deferral + Employer_ProfitShare); Employee = Min(Comp, 23000)",
+    "trustNotes": "100% Client-Side. Zero financial data stored or transmitted.",
+    "related": [
+      "self-employed-sep-ira-contribution-calculator",
+      "401k-retirement-growth-calculator",
+      "roth-ira-growth-and-contribution-calculator",
+      "salary-after-tax-take-home-calculator"
+    ],
+    "seo": {
+      "title": "Solo 401(k) Calculator — Individual 401k Contribution & Tax Tool",
+      "metaDescription": "Calculate maximum Solo 401(k) employee and employer contributions. Compare Solo 401(k) vs SEP-IRA tax savings. Free self-employed retirement tool.",
+      "whatIsThis": "A retirement planning utility that calculates maximum allowable contributions and tax savings for Solo 401(k) / Individual 401(k) plans.",
+      "howItWorks": "1. Choose business structure (Sole Prop / 1099 or S-Corp) and enter net earnings.\n2. Toggle Age 50+ catch-up if applicable.\n3. View employee deferral, employer profit-sharing, total tax contribution, and advantage over SEP-IRA.",
+      "whyUseIt": "Maximizes legal retirement tax shelters for owner-only businesses.",
+      "faqs": [
+        {
+          "question": "Who is eligible for a Solo 401(k)?",
+          "answer": "Any business owner, freelancer, or 1099 contractor who generates self-employment income and has no full-time employees other than themselves and their spouse is eligible for a Solo 401(k)."
+        },
+        {
+          "question": "Why is a Solo 401(k) better than a SEP-IRA?",
+          "answer": "A Solo 401(k) allows you to contribute up to $23,000 as an employee even on moderate profits, PLUS 20% to 25% as the employer. A SEP-IRA only allows the 20% to 25% employer portion."
+        }
+      ]
+    }
+  },
+  {
+    "id": "svg-viewbox-aspect-ratio-slicer",
+    "name": "SVG ViewBox & PreserveAspectRatio Coordinate Calculator",
+    "slug": "svg-viewbox-aspect-ratio-slicer",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "svg viewbox calculator",
+      "preserveaspectratio calculator online",
+      "svg coordinate mapping calculator",
+      "svg preserveaspectratio meet vs slice",
+      "screen pixel to svg coordinate conversion",
+      "svg viewbox aspect ratio letterbox tool"
+    ],
+    "primaryKeywords": [
+      "svg viewbox calculator",
+      "preserveaspectratio calculator",
+      "svg coordinate calculator",
+      "svg viewbox tool"
+    ],
+    "secondaryKeywords": [
+      "xmidymid meet slice none container scaling",
+      "screen ctm inverse mouse clientx clienty to svg",
+      "virtual canvas width height minx miny mapping"
+    ],
+    "targetUsers": [
+      "Frontend Developers",
+      "SVG Illustrators",
+      "Data Visualization Engineers (D3.js)",
+      "UI Designers"
+    ],
+    "badge": "Design",
+    "userProblem": "Web developers and D3.js engineers manipulating SVG graphics struggle to understand how `viewBox` coordinates map to outer container screen pixels under different `preserveAspectRatio` modes (`meet`, `slice`, `none`), causing unwanted letterboxing or clipping.",
+    "searchIntent": "Calculate SVG viewBox scaling, effective dimensions, and coordinate transform formulas for meet, slice, and none modes.",
+    "resultInterpretation": "Calculates effective scale factor, rendered content dimensions, formats the complete SVG tag header, and provides production-ready JavaScript code for mapping screen clicks `(clientX, clientY)` to internal SVG coordinates via `getScreenCTM().inverse()`.",
+    "practicalGuidance": "`xMidYMid meet` fits the entire viewBox inside the container (like CSS `object-fit: contain`), while `xMidYMid slice` covers the container and clips overflow (like CSS `object-fit: cover`).",
+    "limitations": "Calculates standard SVG 1.1 / 2.0 viewport and coordinate mapping specifications.",
+    "formula": "Scale_Meet = Min(ContainerW/ViewW, ContainerH/ViewH); Scale_Slice = Max(ContainerW/ViewW, ContainerH/ViewH)",
+    "trustNotes": "100% Client-Side vector calculation.",
+    "related": [
+      "svg-path-visualizer-optimizer",
+      "svg-path-morphing-interpolator",
+      "svg-drop-shadow-filter-generator",
+      "aspect-ratio-css-object-fit-previewer"
+    ],
+    "seo": {
+      "title": "SVG ViewBox & PreserveAspectRatio Calculator — Coordinate Tool",
+      "metaDescription": "Calculate SVG viewBox scaling, effective dimensions, and screen coordinate mapping for meet, slice, and none modes. Free developer and designer tool.",
+      "whatIsThis": "A vector graphic utility that calculates SVG viewBox scaling behavior and coordinate transforms across responsive containers.",
+      "howItWorks": "1. Enter internal viewBox dimensions (minX, minY, width, height).\n2. Enter outer container dimensions (width, height in px).\n3. Select scale mode (meet, slice, none) to view effective dimensions and copy coordinate transform code.",
+      "whyUseIt": "Eliminates confusion around SVG responsive scaling and click-coordinate calculations.",
+      "faqs": [
+        {
+          "question": "What is the difference between meet and slice in SVG?",
+          "answer": "`meet` scales the viewBox so the entire graphic is visible inside the viewport (equivalent to CSS `contain`), potentially letterboxing. `slice` scales the viewBox to completely cover the viewport (equivalent to CSS `cover`), clipping any parts that exceed the bounds."
+        },
+        {
+          "question": "How do you map mouse click coordinates to internal SVG coordinates?",
+          "answer": "Use the SVG DOM API: create an SVG point `pt = svg.createSVGPoint()`, set `pt.x = event.clientX; pt.y = event.clientY`, and call `pt.matrixTransform(svg.getScreenCTM().inverse())`."
+        }
+      ]
+    }
+  },
+  {
+    "id": "heart-rate-reserve-karvonen-calculator",
+    "name": "Heart Rate Reserve (Karvonen) Exercise Training Zones Calculator",
+    "slug": "heart-rate-reserve-karvonen-calculator",
+    "category": "health",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "karvonen heart rate calculator",
+      "heart rate reserve calculator",
+      "hrr training zones calculator",
+      "zone 2 heart rate karvonen formula",
+      "resting heart rate exercise zones calculator",
+      "tanaka max heart rate karvonen calculator"
+    ],
+    "primaryKeywords": [
+      "karvonen calculator",
+      "heart rate reserve calculator",
+      "hrr calculator",
+      "karvonen formula calculator"
+    ],
+    "secondaryKeywords": [
+      "max hr minus resting hr times intensity plus resting",
+      "zone 1 to zone 5 clinical cardiovascular training zones",
+      "mitochondrial biogenesis fat oxidation zone 2 bpm"
+    ],
+    "targetUsers": [
+      "Endurance Athletes (Runners / Cyclists)",
+      "Cardiologists & Physical Therapists",
+      "Fitness Coaches & Personal Trainers",
+      "Longevity Enthusiasts (Peter Attia Zone 2 Followers)"
+    ],
+    "badge": "Popular",
+    "userProblem": "Endurance athletes and longevity practitioners tracking Zone 2 cardio often get inaccurate heart rate targets from generic $220 - \\text{age}$ formulas because they fail to account for the athlete's individual resting heart rate.",
+    "searchIntent": "Calculate clinically accurate exercise heart rate training zones (Zone 1 to 5) using the Karvonen Heart Rate Reserve formula.",
+    "resultInterpretation": "Calculates estimated Max HR (Tanaka clinical formula: $208 - 0.7 \\times \\text{age}$), Heart Rate Reserve ($HRR = MaxHR - RHR$), and exact BPM thresholds for Zones 1 through 5 with physiological benefits.",
+    "practicalGuidance": "Zone 2 (60% - 70% HRR) is the optimal training zone for mitochondrial density, capillary growth, and metabolic efficiency without accumulating systemic fatigue.",
+    "limitations": "Calculates clinical Karvonen and Tanaka exercise physiology formulas.",
+    "formula": "HRR = MaxHR - RestingHR; TargetHR = (HRR * Intensity%) + RestingHR",
+    "trustNotes": "100% Client-Side health calculation.",
+    "related": [
+      "vo2-max-running-fitness-calculator",
+      "pace-splits-marathon-calculator",
+      "caffeine-half-life-sleep-calculator",
+      "body-fat-percentage-us-navy-calculator"
+    ],
+    "seo": {
+      "title": "Karvonen Heart Rate Calculator — Heart Rate Reserve & Zone 2 Tool",
+      "metaDescription": "Calculate clinically accurate cardiovascular exercise zones (Zone 1 to 5) using the Karvonen Heart Rate Reserve (HRR) formula. Free health & fitness tool.",
+      "whatIsThis": "A cardiovascular health utility that calculates personalized exercise heart rate training zones based on resting and maximum heart rates.",
+      "howItWorks": "1. Enter age and resting heart rate (bpm).\n2. Optionally enter a tested custom Max HR or use the Tanaka clinical formula.\n3. View Heart Rate Reserve (HRR) and exact BPM boundaries for Zones 1 through 5.",
+      "whyUseIt": "Delivers personalized training zones far more accurate than crude standard formulas.",
+      "faqs": [
+        {
+          "question": "Why is the Karvonen formula better than 220 minus age?",
+          "answer": "The standard `220 - age` formula completely ignores resting fitness. A fit athlete with a resting heart rate of 45 bpm has a vastly different cardiovascular reserve than a sedentary person with a resting heart rate of 80 bpm, even if they are the exact same age. Karvonen accounts for this individual baseline."
+        },
+        {
+          "question": "What is Heart Rate Reserve (HRR)?",
+          "answer": "Heart Rate Reserve is the difference between your maximum heart rate and your resting heart rate. It represents your body's usable dynamic range for physical exertion."
+        }
+      ]
+    }
   }
 ]
