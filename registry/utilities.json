@@ -17360,5 +17360,645 @@
         }
       ]
     }
+  },
+  {
+    "id": "curl-to-ocaml-cohttp-converter",
+    "name": "cURL to OCaml (Cohttp & Ezcurl) Code Converter",
+    "slug": "curl-to-ocaml-cohttp-converter",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "curl to ocaml converter",
+      "convert curl to cohttp lwt unix",
+      "curl to ezcurl ocaml code generator",
+      "ocaml rest api request from curl",
+      "ocaml http client generator",
+      "dune ocaml cohttp example from curl"
+    ],
+    "primaryKeywords": [
+      "curl to ocaml converter",
+      "convert curl to ocaml",
+      "curl to cohttp",
+      "curl to ezcurl"
+    ],
+    "secondaryKeywords": [
+      "cohttp lwt unix client call header init body",
+      "ezcurl post headers params string payload",
+      "functional programming ocaml rest client generation"
+    ],
+    "targetUsers": [
+      "OCaml Developers",
+      "MirageOS Engineers",
+      "Jane Street & Financial Quant Engineers",
+      "Functional Programming Enthusiasts"
+    ],
+    "badge": "High Usage",
+    "userProblem": "OCaml developers working with MirageOS, Dune, and modern backend systems need an easy way to translate bash cURL commands into clean, idiomatic OCaml `Cohttp_lwt_unix` and `Ezcurl` requests without manually looking up Lwt monad binding syntax.",
+    "searchIntent": "Convert bash cURL commands into OCaml Cohttp-Lwt and Ezcurl HTTP request code.",
+    "resultInterpretation": "Translates cURL CLI commands into clean OCaml `Cohttp_lwt_unix.Client.call` or `Ezcurl` request functions with header pipelines, auth tokens, and JSON payloads.",
+    "practicalGuidance": "Cohttp-Lwt is the standard async HTTP client in the OCaml ecosystem, powered by the Lwt cooperative concurrency library.",
+    "limitations": "Parses standard HTTP/HTTPS cURL CLI syntax.",
+    "formula": "CLI AST Parser: cURL Command ➔ OCaml Cohttp_lwt_unix / Ezcurl Code Synthesis",
+    "trustNotes": "100% Client-Side. Zero API keys or tokens transmitted.",
+    "related": [
+      "curl-to-scala-sttp-converter",
+      "curl-to-rust-reqwest-converter",
+      "curl-to-clojure-clj-http-converter",
+      "curl-to-elixir-httpoison-converter"
+    ],
+    "seo": {
+      "title": "cURL to OCaml Converter — Convert cURL to Cohttp & Ezcurl Online",
+      "metaDescription": "Convert cURL commands to OCaml Cohttp-Lwt and Ezcurl code online. Formats headers, auth tokens, and JSON payloads. Free developer tool.",
+      "whatIsThis": "A developer programming utility that translates bash cURL commands into idiomatic OCaml HTTP client code.",
+      "howItWorks": "1. Select `Cohttp Lwt` or `Ezcurl`.\n2. Paste your cURL command into the editor.\n3. Copy the clean OCaml code in 1 click.",
+      "whyUseIt": "Eliminates repetitive syntax translation when consuming third-party REST APIs in OCaml applications.",
+      "faqs": [
+        {
+          "question": "What is Cohttp in OCaml?",
+          "answer": "Cohttp is a very lightweight HTTP library for OCaml that provides both client and server implementations supporting multiple concurrency engines, most notably Lwt and Async."
+        },
+        {
+          "question": "Does this work with Dune build systems?",
+          "answer": "Yes. Add `cohttp-lwt-unix` and `lwt` to the `libraries` section of your `dune` file to build and run the generated code."
+        }
+      ]
+    }
+  },
+  {
+    "id": "commercial-real-estate-triple-net-nnn-calculator",
+    "name": "Commercial Real Estate Triple Net (NNN) Lease Calculator",
+    "slug": "commercial-real-estate-triple-net-nnn-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "triple net lease calculator",
+      "nnn lease calculator commercial real estate",
+      "cam fees calculator triple net",
+      "commercial lease monthly total payment calculator",
+      "gross vs nnn rent calculator",
+      "triple net per square foot calculator"
+    ],
+    "primaryKeywords": [
+      "triple net lease calculator",
+      "nnn calculator",
+      "commercial lease calculator",
+      "cam fees calculator"
+    ],
+    "secondaryKeywords": [
+      "base rent plus property taxes insurance cam",
+      "all in gross rate equivalent per square foot",
+      "commercial retail industrial office tenant expense"
+    ],
+    "targetUsers": [
+      "Commercial Real Estate Brokers",
+      "Small Business Owners & Tenants",
+      "Commercial Landlords",
+      "Retail & Restaurant Operators"
+    ],
+    "badge": "Popular",
+    "userProblem": "Commercial business tenants signing office, retail, or industrial leases often misunderstand Triple Net (NNN) listings, where the advertised base rent is only a fraction of the actual monthly payment because property taxes, building insurance, and Common Area Maintenance (CAM) are passed through to the tenant.",
+    "searchIntent": "Calculate total monthly rent, annual cash outflow, and gross rate equivalent for a commercial Triple Net (NNN) lease.",
+    "resultInterpretation": "Calculates total monthly lease obligation, guaranteed monthly base rent, monthly NNN pass-through expenses (CAM, taxes, insurance), and equivalent all-in gross rent per square foot.",
+    "practicalGuidance": "Always audit the building CAM reconciliations annually, as CAM costs can fluctuate significantly based on snow removal, roof maintenance, and property management fees.",
+    "limitations": "Calculates standard commercial NNN lease pass-through schedules.",
+    "formula": "Monthly_Total = (Sqft * (BaseRent + CAM + Taxes + Ins)) / 12; Gross_Rate = BaseRent + NNN_Expenses",
+    "trustNotes": "100% Client-Side financial calculation.",
+    "related": [
+      "dscr-rental-loan-calculator",
+      "real-estate-cap-rate-noi-calculator",
+      "real-estate-cash-on-cash-return-calculator",
+      "business-valuation-sde-ebitda-multiple-calculator"
+    ],
+    "seo": {
+      "title": "Triple Net (NNN) Lease Calculator — Commercial Real Estate Tool",
+      "metaDescription": "Calculate total monthly payments, CAM expenses, and all-in gross rates for commercial Triple Net (NNN) leases. Free commercial real estate tool.",
+      "whatIsThis": "A commercial property utility that calculates tenant obligations under Triple Net (NNN) lease structures.",
+      "howItWorks": "1. Enter rentable square footage and base rent ($/sqft/year).\n2. Enter property taxes, insurance, and CAM fees ($/sqft/year).\n3. View total monthly payment, expense breakdown, and gross equivalent rate.",
+      "whyUseIt": "Prevents financial surprises by revealing the true all-in monthly cost of commercial leases.",
+      "faqs": [
+        {
+          "question": "What is a Triple Net (NNN) lease?",
+          "answer": "In a Triple Net lease, the tenant pays a base rent plus the property's three operational expense nets: real estate property taxes, building insurance, and common area maintenance (CAM)."
+        },
+        {
+          "question": "What is the difference between a Gross lease and a NNN lease?",
+          "answer": "In a Full-Service Gross lease, the tenant pays one flat monthly rate and the landlord pays taxes, insurance, and maintenance. In a NNN lease, base rent is lower, but the tenant pays all operational expenses separately."
+        }
+      ]
+    }
+  },
+  {
+    "id": "css-custom-checkbox-and-radio-generator",
+    "name": "Pure CSS Custom Checkbox, Radio & Toggle Switch Generator",
+    "slug": "css-custom-checkbox-and-radio-generator",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "css custom checkbox generator",
+      "pure css toggle switch generator",
+      "accessible css custom radio button generator",
+      "ios toggle switch css generator",
+      "custom styled checkbox css generator online",
+      "css input checkbox focus visible styling"
+    ],
+    "primaryKeywords": [
+      "css custom checkbox generator",
+      "css toggle switch generator",
+      "custom radio button css",
+      "css checkbox generator"
+    ],
+    "secondaryKeywords": [
+      "accessible sr only input with focus visible outline",
+      "pure css zero javascript ios style toggle slider",
+      "checkmark pseudo element transition animation"
+    ],
+    "targetUsers": [
+      "Frontend Developers",
+      "UI/UX Designers",
+      "Design System Engineers",
+      "Accessibility Specialists"
+    ],
+    "badge": "Design",
+    "userProblem": "Frontend developers replacing browser-native form inputs struggle to create custom checkboxes and iOS-style toggle switches that remain 100% keyboard-accessible (supporting tab navigation and focus rings) without heavy JavaScript dependencies.",
+    "searchIntent": "Generate accessible, pure CSS custom styled checkboxes, radio buttons, and iOS toggle switches with live preview.",
+    "resultInterpretation": "Adjusts control type, active accent color, and size (px), rendering an interactive toggle preview and generating production-ready semantic HTML and pure CSS with `:checked` and `:focus-visible` states.",
+    "practicalGuidance": "Never use `display: none` on native inputs when styling custom checkboxes, as this breaks keyboard accessibility. Use `opacity: 0; position: absolute;` instead so screen readers and Tab keys continue to function.",
+    "limitations": "Generates pure HTML5 and CSS3 accessible form styling.",
+    "formula": "input:checked + .slider { background: [color]; } .slider::after { transform: translateX(...) }",
+    "trustNotes": "100% Client-Side visual generation.",
+    "related": [
+      "css-ribbon-banner-generator",
+      "css-neumorphism-soft-ui-generator",
+      "css-glassmorphism-generator",
+      "box-shadow-generator"
+    ],
+    "seo": {
+      "title": "CSS Checkbox & Toggle Switch Generator — Pure CSS & Accessible",
+      "metaDescription": "Generate accessible pure CSS custom checkboxes, radio buttons, and iOS-style toggle switches. Custom colors and live preview. Free developer tool.",
+      "whatIsThis": "A web design utility that creates beautiful, accessible pure CSS custom form controls and toggle switches.",
+      "howItWorks": "1. Select control type (Toggle Switch, Checkbox, Radio Button).\n2. Customize active accent color and control size.\n3. Test the interactive preview and copy the complete HTML and CSS snippet.",
+      "whyUseIt": "Replaces ugly default browser checkboxes with sleek, accessible UI controls in seconds.",
+      "faqs": [
+        {
+          "question": "How do you make custom checkboxes keyboard accessible?",
+          "answer": "By keeping the native `<input type=\"checkbox\">` in the DOM using `opacity: 0; position: absolute;` and styling a sibling `<span>` using `:focus-visible` to render a visible keyboard navigation focus ring."
+        },
+        {
+          "question": "Does this require any JavaScript?",
+          "answer": "No. The toggle behavior is driven entirely by native browser HTML form state and pure CSS `:checked` pseudo-selectors."
+        }
+      ]
+    }
+  },
+  {
+    "id": "dns-caa-record-generator",
+    "name": "DNS CAA Record Generator (SSL/TLS Security Hardening)",
+    "slug": "dns-caa-record-generator",
+    "category": "network",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "caa record generator",
+      "dns caa record builder",
+      "certification authority authorization generator",
+      "letsencrypt caa record generator",
+      "disallow wildcard ssl caa record",
+      "iodef caa security incident report generator"
+    ],
+    "primaryKeywords": [
+      "caa record generator",
+      "dns caa generator",
+      "caa record builder",
+      "certificate authority authorization"
+    ],
+    "secondaryKeywords": [
+      "issue letsencrypt org issuewild semicolon iodef",
+      "rfc 6844 rfc 8659 bind zone file caa format",
+      "prevent rogue certificate authority domain spoofing"
+    ],
+    "targetUsers": [
+      "DevOps Engineers",
+      "Domain Administrators",
+      "Security Engineers",
+      "Site Reliability Engineers (SRE)"
+    ],
+    "badge": "Network",
+    "userProblem": "Domain owners wanting to prevent attackers or rogue certificate authorities from falsely issuing SSL/TLS certificates for their domain need an easy tool to generate valid DNS CAA (Certification Authority Authorization) records and incident alert endpoints.",
+    "searchIntent": "Generate DNS CAA records to restrict SSL certificate issuance to trusted CAs and forbid wildcards.",
+    "resultInterpretation": "Generates RFC 6844/8659 compliant BIND zone entries and single-line DNS records specifying authorized CAs (`issue`), wildcard issuance rules (`issuewild`), and incident email alerts (`iodef`), complete with `dig` verification commands.",
+    "practicalGuidance": "All public Certificate Authorities are legally mandated to check DNS CAA records before issuing certificates. Publishing a CAA record prevents unauthorized third-party certificate issuance.",
+    "limitations": "Generates RFC 8659 standard CAA records.",
+    "formula": "[domain]. 3600 IN CAA [flag] [tag] \"[value]\"",
+    "trustNotes": "100% Client-Side generation.",
+    "related": [
+      "dns-dkim-key-record-generator",
+      "dns-dmarc-record-generator",
+      "dns-spf-record-builder",
+      "ssl-tls-certificate-decoder-inspector"
+    ],
+    "seo": {
+      "title": "DNS CAA Record Generator — SSL/TLS Security Hardening Tool",
+      "metaDescription": "Generate valid DNS Certification Authority Authorization (CAA) records for Let's Encrypt, DigiCert, and Cloudflare. Free email and SSL security tool.",
+      "whatIsThis": "A domain security utility that builds DNS CAA records to restrict which Certificate Authorities can issue SSL certificates for your domain.",
+      "howItWorks": "1. Enter your domain name.\n2. Select authorized CAs (Let's Encrypt, DigiCert, Amazon ACM) and wildcard policy.\n3. Copy the BIND zone records and test with the provided dig command.",
+      "whyUseIt": "Prevents unauthorized SSL certificate creation and hardens your domain against man-in-the-middle attacks.",
+      "faqs": [
+        {
+          "question": "What happens if a domain has no CAA records?",
+          "answer": "If no CAA records exist, ANY public Certificate Authority in the world is permitted to issue an SSL/TLS certificate for your domain. Adding a CAA record restricts issuance strictly to the CAs you specify."
+        },
+        {
+          "question": "How do I completely block wildcard certificates?",
+          "answer": "Publish a CAA record with the tag `issuewild` and value `\";\"` (e.g. `example.com. IN CAA 0 issuewild \";\"`). This forbids all CAs from issuing wildcard certificates."
+        }
+      ]
+    }
+  },
+  {
+    "id": "business-valuation-sde-ebitda-multiple-calculator",
+    "name": "Small Business Acquisition Valuation & SDE Multiple Calculator",
+    "slug": "business-valuation-sde-ebitda-multiple-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "business valuation calculator",
+      "sde multiple business valuation calculator",
+      "sellers discretionary earnings calculator",
+      "small business acquisition valuation calculator",
+      "ebitda multiple valuation calculator",
+      "sba 7a business purchase down payment calculator"
+    ],
+    "primaryKeywords": [
+      "business valuation calculator",
+      "sde multiple calculator",
+      "sellers discretionary earnings calculator",
+      "ebitda business valuation"
+    ],
+    "secondaryKeywords": [
+      "owner salary personal add backs depreciation interest",
+      "main street acquisition 2.5x to 3.5x sde multiple",
+      "10 percent sba equity down payment enterprise value"
+    ],
+    "targetUsers": [
+      "Small Business Buyers",
+      "Search Fund Operators",
+      "Business Brokers",
+      "Entrepreneurs & Sellers"
+    ],
+    "badge": "Popular",
+    "userProblem": "Entrepreneurs buying or selling Main Street businesses need to normalize financial statements to calculate Seller's Discretionary Earnings (SDE) with legitimate owner add-backs, determining a fair market purchase price based on prevailing industry valuation multiples.",
+    "searchIntent": "Calculate Seller's Discretionary Earnings (SDE), EBITDA, enterprise business valuation, and SBA down payment requirements.",
+    "resultInterpretation": "Calculates total SDE cash flow, total EBITDA, estimated business valuation across configurable multiples (1.5x - 5.0x), buyer's 10% SBA 7(a) equity down payment, and adjusted profit margins.",
+    "practicalGuidance": "Most Main Street businesses generating under $1M in profit trade between 2.2x and 3.5x SDE. Businesses with recurring revenue, clean books, and low owner dependency command higher multiples.",
+    "limitations": "Models standard SDE multiple acquisition valuation methodologies.",
+    "formula": "SDE = NetProfit + OwnerSalary + AddBacks + Deprec + Interest; Valuation = SDE * Multiple",
+    "trustNotes": "100% Client-Side. Zero financial records transmitted.",
+    "related": [
+      "commercial-real-estate-triple-net-nnn-calculator",
+      "dscr-rental-loan-calculator",
+      "break-even-calculator",
+      "roi-investment-calculator"
+    ],
+    "seo": {
+      "title": "Business Valuation Calculator — SDE & EBITDA Multiple Tool",
+      "metaDescription": "Calculate small business acquisition value and Seller's Discretionary Earnings (SDE) with add-backs. Check SBA 7(a) 10% down payment. Free tool.",
+      "whatIsThis": "A corporate finance utility that evaluates the market value of small businesses using Seller's Discretionary Earnings (SDE) multiples.",
+      "howItWorks": "1. Enter annual revenue, net profit, and owner salary.\n2. Enter discretionary add-backs, depreciation, and interest expenses.\n3. Adjust the SDE multiple to view estimated purchase price and SBA down payment.",
+      "whyUseIt": "Empowers buyers and sellers to negotiate fair market deal terms based on normalized cash flow.",
+      "faqs": [
+        {
+          "question": "What is Seller's Discretionary Earnings (SDE)?",
+          "answer": "SDE is the total financial benefit a single full-time owner-operator derives from a business annually, including reported net profit, owner's salary, health insurance, non-essential personal expenses, and non-cash depreciation."
+        },
+        {
+          "question": "When should you use SDE vs EBITDA?",
+          "answer": "SDE is standard for small, owner-operated businesses generating under $1M in earnings. EBITDA is standard for larger businesses (over $1M - $2M in earnings) that have professional general managers."
+        }
+      ]
+    }
+  },
+  {
+    "id": "aspect-ratio-isometric-cube-grid-calculator",
+    "name": "3D Isometric Voxel Cube Dimensions & Z-Sorting Calculator",
+    "slug": "aspect-ratio-isometric-cube-grid-calculator",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "isometric cube calculator",
+      "isometric voxel grid calculator",
+      "isometric block dimensions calculator",
+      "voxel z index depth sorting formula",
+      "isometric cube css transform generator",
+      "3d pixel art cube bounding box calculator"
+    ],
+    "primaryKeywords": [
+      "isometric cube calculator",
+      "isometric voxel calculator",
+      "isometric block calculator",
+      "voxel depth sorting"
+    ],
+    "secondaryKeywords": [
+      "cube edge length s times sqrt 3 width 2s height",
+      "top left right face skewY 30deg css transforms",
+      "voxel coordinate x y z to screen pixel projection"
+    ],
+    "targetUsers": [
+      "Game Developers",
+      "Voxel Artists",
+      "Pixel Art Illustrators",
+      "Frontend CSS Animators"
+    ],
+    "badge": "Design",
+    "userProblem": "Game developers and voxel illustrators building 3D isometric tilemaps and block-stacking engines need a calculator for regular isometric cube dimensions ($w = \\sqrt{3}s$, $h = 2s$), canvas bounding areas, and front-to-back Z-index depth sorting formulas.",
+    "searchIntent": "Calculate 3D isometric voxel dimensions, canvas grid bounding boxes, CSS face skew transforms, and coordinate projection functions.",
+    "resultInterpretation": "Calculates single cube dimensions, total map canvas size, vertical layer steps, and provides copy-ready CSS 3D face transforms and JavaScript voxel-to-screen projection code with Z-index sorting.",
+    "practicalGuidance": "In true isometric projection, the ratio of a cube's width to height is $\\sqrt{3} : 1 \\approx 1.732$, while classic video game '2:1 isometric' dimetric projection uses a clean $2:1$ ratio.",
+    "limitations": "Calculates regular regular isometric 30-degree planar geometry.",
+    "formula": "Width = sqrt(3)*s, Height = 2*s; ScreenX = (x-y)*(w/2); ScreenY = (x+y)*(s/2) - z*s; Z_Index = (x+y)*1000 + z",
+    "trustNotes": "100% Client-Side calculation.",
+    "related": [
+      "aspect-ratio-hexagonal-grid-calculator",
+      "aspect-ratio-isometric-pixel-art-grid-calculator",
+      "css-isometric-text-and-box-generator",
+      "aspect-ratio-scale-factor-dimension-calculator"
+    ],
+    "seo": {
+      "title": "Isometric Cube Calculator — 3D Voxel Grid & CSS Transform Tool",
+      "metaDescription": "Calculate 3D isometric cube dimensions, voxel grid bounding canvas, CSS face skew transforms, and Z-index depth sorting code. Free game dev tool.",
+      "whatIsThis": "A game geometry utility that calculates isometric voxel block sizes, projection mathematics, and CSS 3D transforms.",
+      "howItWorks": "1. Enter cube edge length (s) and grid dimensions (X, Y, Z layers).\n2. Customize top, left, and right face shading colors.\n3. View total bounding dimensions and copy projection/depth-sorting code.",
+      "whyUseIt": "Eliminates visual sorting glitches and incorrect aspect ratios when rendering isometric voxel worlds.",
+      "faqs": [
+        {
+          "question": "What are the angles for an isometric cube face in CSS?",
+          "answer": "The top face uses `rotate(-45deg) skew(15deg, 15deg)`, the left face uses `skewY(30deg)`, and the right face uses `skewY(-30deg)`."
+        },
+        {
+          "question": "How do you avoid rendering glitches when stacking isometric blocks?",
+          "answer": "Blocks must be depth-sorted so that cubes closer to the camera are rendered in front. The standard sorting formula is `Z_Index = (x + y) * 1000 + z`."
+        }
+      ]
+    }
+  },
+  {
+    "id": "crontab-to-gitlab-ci-schedule-converter",
+    "name": "Crontab to GitLab CI/CD Pipeline Schedule Generator",
+    "slug": "crontab-to-gitlab-ci-schedule-converter",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "crontab to gitlab ci converter",
+      "gitlab pipeline schedule cron generator",
+      "convert cron to gitlab ci scheduled pipeline",
+      "gitlab ci rules ci_pipeline_source schedule",
+      "gitlab scheduled pipeline api curl generator",
+      "gitlab runner cron schedule builder"
+    ],
+    "primaryKeywords": [
+      "cron to gitlab ci",
+      "gitlab ci schedule generator",
+      "gitlab scheduled pipeline",
+      "crontab to gitlab"
+    ],
+    "secondaryKeywords": [
+      "rules if ci_pipeline_source equals schedule yaml",
+      "gitlab api v4 projects pipeline_schedules curl",
+      "scheduled nightly build integration test pipeline"
+    ],
+    "targetUsers": [
+      "GitLab CI/CD Engineers",
+      "DevOps Specialists",
+      "SREs",
+      "Platform Engineers"
+    ],
+    "badge": "High Usage",
+    "userProblem": "DevOps engineers configuring automated scheduled builds, nightly security scans, and maintenance scripts in GitLab CI need an easy tool to generate valid `.gitlab-ci.yml` `rules: - if: $CI_PIPELINE_SOURCE == \"schedule\"` blocks and GitLab REST API automation commands.",
+    "searchIntent": "Convert crontab expressions into GitLab CI scheduled pipeline YAML rules and REST API creation requests.",
+    "resultInterpretation": "Generates valid `.gitlab-ci.yml` job definitions using scheduled pipeline rules and produces ready-to-run GitLab REST API `POST /pipeline_schedules` cURL commands.",
+    "practicalGuidance": "GitLab CI schedules evaluate cron expressions in UTC by default. Using the `rules: - if: $CI_PIPELINE_SOURCE == \"schedule\"` guard ensures heavy maintenance jobs never run on standard push or merge requests.",
+    "limitations": "Generates GitLab CI standard YAML and REST API v4 format.",
+    "formula": "Rule Synthesis: rules: - if: $CI_PIPELINE_SOURCE == \"schedule\"",
+    "trustNotes": "100% Client-Side generation.",
+    "related": [
+      "crontab-to-kubernetes-cronjob-converter",
+      "crontab-to-github-actions-schedule-converter",
+      "crontab-to-aws-eventbridge-converter",
+      "crontab-schedule-next-runs-calculator"
+    ],
+    "seo": {
+      "title": "Crontab to GitLab CI Schedule Converter — Pipeline YAML & API Tool",
+      "metaDescription": "Convert Linux crontabs into GitLab CI scheduled pipeline YAML configurations and REST API commands online. Free DevOps and CI/CD automation tool.",
+      "whatIsThis": "A DevOps automation utility that transforms crontab schedules into GitLab CI/CD pipeline configurations.",
+      "howItWorks": "1. Enter cron expression, schedule description, and target branch.\n2. Copy the `.gitlab-ci.yml` scheduled rule block.\n3. Optionally copy the GitLab REST API cURL command for programmatic provisioning.",
+      "whyUseIt": "Simplifies creating automated scheduled CI/CD jobs and ensures proper execution rules.",
+      "faqs": [
+        {
+          "question": "How do you make a job run ONLY on a schedule in GitLab CI?",
+          "answer": "Add `rules: - if: $CI_PIPELINE_SOURCE == \"schedule\"` to the job definition in your `.gitlab-ci.yml`. This restricts the job so it only executes when triggered by GitLab's schedule timer."
+        },
+        {
+          "question": "What is the minimum schedule interval in GitLab CI?",
+          "answer": "On GitLab SaaS, the minimum interval is typically once every 5 minutes (`*/5 * * * *`). On self-managed GitLab instances, administrators can adjust the sidekiq worker cron interval."
+        }
+      ]
+    }
+  },
+  {
+    "id": "self-employed-sep-ira-contribution-calculator",
+    "name": "Self-Employed SEP-IRA Contribution & Tax Savings Calculator",
+    "slug": "self-employed-sep-ira-contribution-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "sep ira calculator",
+      "self employed sep ira contribution calculator",
+      "sep ira maximum contribution calculator 2024",
+      "sole proprietorship sep ira 20 percent calculator",
+      "1099 contractor retirement contribution calculator",
+      "sep ira tax deduction calculator"
+    ],
+    "primaryKeywords": [
+      "sep ira calculator",
+      "self employed sep ira calculator",
+      "sep ira contribution calculator",
+      "sep ira deduction calculator"
+    ],
+    "secondaryKeywords": [
+      "20 percent adjusted net earnings rate schedule c",
+      "one half self employment tax deduction exclusion",
+      "statutory 69000 irs maximum annual contribution"
+    ],
+    "targetUsers": [
+      "Freelancers & 1099 Contractors",
+      "Sole Proprietors",
+      "Small Business Owners",
+      "Certified Public Accountants (CPAs)"
+    ],
+    "badge": "Popular",
+    "userProblem": "Self-employed 1099 freelancers and sole proprietors often miscalculate their SEP-IRA deduction because they apply the advertised 25% corporate rate instead of the mandatory IRS statutory ~20% sole-proprietor formula (after deducting 50% of self-employment taxes).",
+    "searchIntent": "Calculate maximum tax-deductible SEP-IRA contribution and income tax savings for self-employed individuals.",
+    "resultInterpretation": "Calculates statutory 50% SE tax deduction, adjusted net earnings base, maximum deductible SEP-IRA contribution (capped at $69,000), immediate federal income tax savings, and net out-of-pocket investment cost.",
+    "practicalGuidance": "Sole proprietors must contribute using their adjusted net profit. Contributions can be made up until your tax filing deadline (including extensions, until October 15).",
+    "limitations": "Models IRS statutory sole proprietorship SEP-IRA formulas.",
+    "formula": "SE_Tax = NetProfit * 0.9235 * 0.153; AdjEarnings = NetProfit - SE_Tax/2; MaxContrib = Min(69000, AdjEarnings * 0.20)",
+    "trustNotes": "100% Client-Side. Zero financial data stored or transmitted.",
+    "related": [
+      "student-loan-idr-save-calculator",
+      "business-valuation-sde-ebitda-multiple-calculator",
+      "roth-ira-growth-and-contribution-calculator",
+      "salary-after-tax-take-home-calculator"
+    ],
+    "seo": {
+      "title": "SEP-IRA Calculator — Self-Employed Contribution & Tax Savings Tool",
+      "metaDescription": "Calculate maximum deductible SEP-IRA contributions for freelancers and sole proprietors using the IRS 20% rule. View tax savings. Free finance tool.",
+      "whatIsThis": "A retirement planning utility that calculates maximum allowable SEP-IRA contributions and tax savings for self-employed individuals.",
+      "howItWorks": "1. Enter net Schedule C / 1099 business profit.\n2. Select your marginal federal income tax bracket.\n3. View maximum tax-deductible contribution, immediate tax savings, and net cost.",
+      "whyUseIt": "Ensures full compliance with IRS publication 560 formulas and maximizes tax deductions.",
+      "faqs": [
+        {
+          "question": "Why is the self-employed SEP-IRA rate 20% instead of 25%?",
+          "answer": "IRS rules state that your contribution cannot exceed 25% of your net compensation. Because your contribution itself reduces your net earnings, the mathematical formula becomes `0.25 / (1 + 0.25) = 20.0%` of net earnings after subtracting half of self-employment tax."
+        },
+        {
+          "question": "When is the deadline to open and fund a SEP-IRA?",
+          "answer": "You can open and fund a SEP-IRA all the way up to your tax return filing deadline, including extensions (typically April 15 or October 15)."
+        }
+      ]
+    }
+  },
+  {
+    "id": "svg-path-morphing-interpolator",
+    "name": "SVG Path Morphing & Interpolation Compatibility Validator",
+    "slug": "svg-path-morphing-interpolator",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "svg path morphing validator",
+      "svg path interpolation tool",
+      "svg morphing compatibility checker",
+      "css path morph keyframes generator",
+      "gsap morphsvg path segment counter",
+      "svg bezier curve segment matcher"
+    ],
+    "primaryKeywords": [
+      "svg path morphing",
+      "svg path morphing validator",
+      "svg path interpolation",
+      "css svg path animation"
+    ],
+    "secondaryKeywords": [
+      "matching command sequence cubic bezier curve count",
+      "css keyframes d path interpolation infinite animation",
+      "svg command parser move line curve arc close"
+    ],
+    "targetUsers": [
+      "Frontend Developers",
+      "Web Animators (GSAP / Framer Motion)",
+      "UI Illustrators",
+      "Creative Technologists"
+    ],
+    "badge": "Design",
+    "userProblem": "Web developers and animators attempting to morph SVG icons in CSS `@keyframes` or animation libraries frequently face broken or jerky animations because the starting and ending SVG `d` paths have mismatched segment command counts.",
+    "searchIntent": "Validate SVG path morphing compatibility between two paths and generate CSS @keyframes morphing code.",
+    "resultInterpretation": "Parses path commands ($M$, $L$, $C$, $S$, $Q$, $A$, $Z$), verifies 1:1 structural segment parity, reports exact mismatches, and synthesizes pure CSS `@keyframes` `d: path(...)` morph rules.",
+    "practicalGuidance": "For pure CSS path morphing via `@keyframes { d: path(...) }`, both SVG paths must have identical command types in the exact same sequence with the same number of points.",
+    "limitations": "Validates standard SVG 1.1 / 2.0 path string syntax.",
+    "formula": "Command Verification: Count(A.commands) == Count(B.commands) && Type(A[i]) == Type(B[i])",
+    "trustNotes": "100% Client-Side path parsing.",
+    "related": [
+      "svg-drop-shadow-filter-generator",
+      "svg-path-visualizer-optimizer",
+      "css-custom-checkbox-and-radio-generator",
+      "aspect-ratio-isometric-cube-grid-calculator"
+    ],
+    "seo": {
+      "title": "SVG Path Morphing Validator — Segment Matcher & CSS Animation Tool",
+      "metaDescription": "Check SVG path morphing compatibility and generate pure CSS @keyframes path morph animations. Matches Bézier curve commands. Free developer tool.",
+      "whatIsThis": "A vector animation utility that inspects SVG path strings to ensure smooth interpolation and morphing compatibility.",
+      "howItWorks": "1. Paste Start Path (d) and End Morph Path (d).\n2. View segment compatibility status and command frequency breakdown.\n3. Copy the production CSS `@keyframes` path morphing animation rule.",
+      "whyUseIt": "Fixes broken SVG animations and verifies path parity before deploying code.",
+      "faqs": [
+        {
+          "question": "Can CSS animate between two SVG paths directly?",
+          "answer": "Yes. Modern browsers support the `d: path(\"...\")` property inside CSS `@keyframes`, provided that both paths share identical command structures."
+        },
+        {
+          "question": "What happens if path command counts do not match?",
+          "answer": "In CSS, the animation will snap abruptly without smooth interpolation. In JavaScript libraries like GSAP MorphSVG, extra points are interpolated, but identical segment counts produce the smoothest visual transitions."
+        }
+      ]
+    }
+  },
+  {
+    "id": "pace-splits-marathon-calculator",
+    "name": "Marathon & Half-Marathon Pace Splits Calculator",
+    "slug": "pace-splits-marathon-calculator",
+    "category": "health",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "marathon pace calculator",
+      "half marathon pace splits calculator",
+      "marathon finish time pace calculator",
+      "running pace per mile per km calculator",
+      "marathon checkpoint splits 5k 10k 20 mile",
+      "sub 4 hour marathon pace split chart"
+    ],
+    "primaryKeywords": [
+      "marathon pace calculator",
+      "half marathon pace calculator",
+      "marathon splits calculator",
+      "running pace calculator"
+    ],
+    "secondaryKeywords": [
+      "target finish time hours minutes seconds pace",
+      "checkpoint elapsed times 5k 10k halfway 20 mile",
+      "running speed miles per hour kilometers per hour"
+    ],
+    "targetUsers": [
+      "Marathon Runners",
+      "Half-Marathon Racers",
+      "Running Coaches",
+      "Triathletes & Fitness Enthusiasts"
+    ],
+    "badge": "Popular",
+    "userProblem": "Marathon and half-marathon runners targeting specific finish times (e.g. sub-4:00:00 or sub-1:45:00) need to calculate their required average pace per mile and kilometer, along with checkpoint elapsed times for 5K, 10K, halfway (13.1 mi), and 20-mile markers to avoid hitting the wall.",
+    "searchIntent": "Calculate target running pace per mile/km and checkpoint milestone splits for marathons, half marathons, 10Ks, and 5Ks.",
+    "resultInterpretation": "Calculates average pace per imperial mile, average pace per metric kilometer, speed (mph and km/h), and milestone splits (5K, 10K, 13.1 mi, 30K, 20-mile wall, and finish).",
+    "practicalGuidance": "A sub-4:00:00 marathon requires an average pace of 9:09 per mile (5:41 per km). Passing the halfway point at 1:59:00 provides a comfortable 1-minute buffer for late-race fatigue.",
+    "limitations": "Calculates standard USATF and World Athletics official course distances.",
+    "formula": "Pace_Mile = Total_Seconds / 26.21875; Pace_Km = Total_Seconds / 42.195; Split_Time = Distance * Pace",
+    "trustNotes": "100% Client-Side calculation.",
+    "related": [
+      "vo2-max-running-fitness-calculator",
+      "walking-steps-to-miles-calories-calculator",
+      "one-rep-max-calculator",
+      "caffeine-half-life-sleep-calculator"
+    ],
+    "seo": {
+      "title": "Marathon Pace Calculator — Splits & Finish Time Running Tool",
+      "metaDescription": "Calculate target marathon and half-marathon pace per mile and km. Check elapsed split times for 5K, 10K, halfway, and 20 miles. Free runner tool.",
+      "whatIsThis": "A distance running utility that calculates required race pacing and checkpoint splits for marathon and half-marathon races.",
+      "howItWorks": "1. Select race distance (Marathon, Half Marathon, 10K, 5K).\n2. Enter target finish time (hours, minutes, seconds).\n3. View required pace per mile/km, speed, and milestone split chart.",
+      "whyUseIt": "Allows runners to establish realistic pacing strategies to prevent early burnout and hit race goals.",
+      "faqs": [
+        {
+          "question": "What pace is needed to run a 4-hour marathon?",
+          "answer": "A 4:00:00 marathon requires an average pace of 9 minutes and 9 seconds per mile, or 5 minutes and 41 seconds per kilometer."
+        },
+        {
+          "question": "What pace is needed to qualify for the Boston Marathon?",
+          "answer": "Boston Marathon qualifying times vary by age and gender, ranging from 3:00:00 (6:52/mi) for men under 35 to 3:30:00 (8:00/mi) for women under 35."
+        }
+      ]
+    }
   }
 ]
