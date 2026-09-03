@@ -1,44 +1,22 @@
 {
-  "executed_at": "2026-09-03T20:03:09.259Z",
+  "executed_at": "2026-09-03T20:19:58.048Z",
   "project_id": "UTL",
   "project_name": "UTL.tools",
   "project_health": "ATTENTION_REQUIRED",
   "primary_state": "UTILITY_VIEWS_INSUFFICIENT_DATA",
-  "observations_count": 13,
+  "observations_count": 10,
   "anomalies_count": 2,
-  "opportunities_count": 5,
-  "recommendations_count": 5,
+  "opportunities_count": 4,
+  "recommendations_count": 4,
   "opportunities": [
     {
-      "opportunity_id": "OPP-CAND-1788465789255-3",
-      "project_id": "UTL",
-      "type": "SEO",
-      "title": "Align Search Snippets for High-Impression Keywords",
-      "description": "Search impressions are strong (536), but CTR is 0%. Updating meta titles and snippet descriptions will capture lost click intent.",
-      "evidence_ids": [
-        "OBS-GSC-LIVE-IMPRESSIONS-1788465777611",
-        "OBS-GSC-LIVE-CTR-1788465777611"
-      ],
-      "impact_score": 85,
-      "effort_score": 15,
-      "urgency_score": 80,
-      "confidence_score": 0.9,
-      "opportunity_score": 74.2,
-      "priority": "P1",
-      "recommended_action": "Review and optimize meta title tags and search-intent introductory sections on top 5 impression tools.",
-      "approval_status": "PROPOSED",
-      "created_at": "2026-09-03T20:03:09.254Z",
-      "updated_at": "2026-09-03T20:03:09.254Z",
-      "explanation": "Priority P1 (Score: 74.2) because impact=85/100, confidence=90%, urgency=80/100, effort=15/100 (2 evidence sources)."
-    },
-    {
-      "opportunity_id": "OPP-AUTO-1788465789255-1",
+      "opportunity_id": "OPP-AUTO-1788466798046-1",
       "project_id": "UTL",
       "type": "REPAIR",
       "title": "Investigate SUDDEN_DROP in monthly_visit_estimate",
       "description": "Sudden drop of 76.7% detected in metric monthly_visit_estimate.",
       "evidence_ids": [
-        "ANM-DROP-monthly_visit_estimate-1788465789251"
+        "ANM-DROP-monthly_visit_estimate-1788466798045"
       ],
       "impact_score": 90,
       "effort_score": 20,
@@ -48,18 +26,18 @@
       "priority": "P1",
       "recommended_action": "Perform root cause audit for metric monthly_visit_estimate.",
       "approval_status": "PROPOSED",
-      "created_at": "2026-09-03T20:03:09.254Z",
-      "updated_at": "2026-09-03T20:03:09.254Z",
+      "created_at": "2026-09-03T20:19:58.046Z",
+      "updated_at": "2026-09-03T20:19:58.046Z",
       "explanation": "Priority P1 (Score: 74.1) because impact=90/100, confidence=90%, urgency=95/100, effort=20/100 (1 evidence sources)."
     },
     {
-      "opportunity_id": "OPP-AUTO-1788465789255-2",
+      "opportunity_id": "OPP-AUTO-1788466798046-2",
       "project_id": "UTL",
       "type": "RESEARCH",
       "title": "Investigate CONFLICT_DETECTED in monthly_visit_estimate",
       "description": "Conflicting observations detected across sources for metric monthly_visit_estimate.",
       "evidence_ids": [
-        "ANM-CONFLICT-monthly_visit_estimate-1788465789251"
+        "ANM-CONFLICT-monthly_visit_estimate-1788466798045"
       ],
       "impact_score": 90,
       "effort_score": 20,
@@ -69,12 +47,12 @@
       "priority": "P1",
       "recommended_action": "Perform root cause audit for metric monthly_visit_estimate.",
       "approval_status": "PROPOSED",
-      "created_at": "2026-09-03T20:03:09.254Z",
-      "updated_at": "2026-09-03T20:03:09.254Z",
+      "created_at": "2026-09-03T20:19:58.046Z",
+      "updated_at": "2026-09-03T20:19:58.046Z",
       "explanation": "Priority P1 (Score: 74.1) because impact=90/100, confidence=90%, urgency=95/100, effort=20/100 (1 evidence sources)."
     },
     {
-      "opportunity_id": "OPP-CAND-1788465789255-4",
+      "opportunity_id": "OPP-CAND-1788466798046-3",
       "project_id": "UTL",
       "type": "CREATE_NEW",
       "title": "Create Percentage Difference Calculator",
@@ -90,18 +68,18 @@
       "priority": "P1",
       "recommended_action": "Build a zero-install, instant client-side Percentage Difference Calculator under /tools/percentage-difference-calculator in next feature batch.",
       "approval_status": "PROPOSED",
-      "created_at": "2026-09-03T20:03:09.254Z",
-      "updated_at": "2026-09-03T20:03:09.254Z",
+      "created_at": "2026-09-03T20:19:58.046Z",
+      "updated_at": "2026-09-03T20:19:58.046Z",
       "explanation": "Priority P1 (Score: 67.5) because impact=82/100, confidence=92%, urgency=75/100, effort=20/100 (1 evidence sources)."
     },
     {
-      "opportunity_id": "OPP-CAND-1788465789255-5",
+      "opportunity_id": "OPP-CAND-1788466798046-4",
       "project_id": "UTL",
       "type": "USER_EXPERIENCE",
       "title": "Enhance Widget 1-Click Store Installation Deep Links",
       "description": "Windows Widget hub received 168 views. Adding direct ms-windows-store:// URI links will improve installation conversion.",
       "evidence_ids": [
-        "OBS-UTL-TEL-002-1788465771800"
+        "OBS-UTL-TEL-002-1788466796536"
       ],
       "impact_score": 78,
       "effort_score": 15,
@@ -111,38 +89,20 @@
       "priority": "P2",
       "recommended_action": "Update Microsoft Store widget records to include native ms-windows-store deep-links alongside web URLs.",
       "approval_status": "PROPOSED",
-      "created_at": "2026-09-03T20:03:09.254Z",
-      "updated_at": "2026-09-03T20:03:09.254Z",
+      "created_at": "2026-09-03T20:19:58.046Z",
+      "updated_at": "2026-09-03T20:19:58.046Z",
       "explanation": "Priority P2 (Score: 64.9) because impact=78/100, confidence=85%, urgency=70/100, effort=15/100 (1 evidence sources)."
     }
   ],
   "recommendations": [
     {
-      "recommendation_id": "REC-OPP-CAND-1788465789255-3",
-      "opportunity_id": "OPP-CAND-1788465789255-3",
-      "project_id": "UTL",
-      "action": "Review and optimize meta title tags and search-intent introductory sections on top 5 impression tools.",
-      "reason": "Search impressions are strong (536), but CTR is 0%. Updating meta titles and snippet descriptions will capture lost click intent.",
-      "evidence_ids": [
-        "OBS-GSC-LIVE-IMPRESSIONS-1788465777611",
-        "OBS-GSC-LIVE-CTR-1788465777611"
-      ],
-      "confidence": "VERY_HIGH",
-      "confidence_score": 0.9,
-      "expected_effect": "Address Align Search Snippets for High-Impression Keywords to improve project metrics (Score: 74.2).",
-      "risk_level": "LOW",
-      "approval_required": true,
-      "status": "PROPOSED",
-      "created_at": "2026-09-03T20:03:09.256Z"
-    },
-    {
-      "recommendation_id": "REC-OPP-AUTO-1788465789255-1",
-      "opportunity_id": "OPP-AUTO-1788465789255-1",
+      "recommendation_id": "REC-OPP-AUTO-1788466798046-1",
+      "opportunity_id": "OPP-AUTO-1788466798046-1",
       "project_id": "UTL",
       "action": "Perform root cause audit for metric monthly_visit_estimate.",
       "reason": "Sudden drop of 76.7% detected in metric monthly_visit_estimate.",
       "evidence_ids": [
-        "ANM-DROP-monthly_visit_estimate-1788465789251"
+        "ANM-DROP-monthly_visit_estimate-1788466798045"
       ],
       "confidence": "VERY_HIGH",
       "confidence_score": 0.9,
@@ -150,16 +110,16 @@
       "risk_level": "LOW",
       "approval_required": true,
       "status": "PROPOSED",
-      "created_at": "2026-09-03T20:03:09.256Z"
+      "created_at": "2026-09-03T20:19:58.047Z"
     },
     {
-      "recommendation_id": "REC-OPP-AUTO-1788465789255-2",
-      "opportunity_id": "OPP-AUTO-1788465789255-2",
+      "recommendation_id": "REC-OPP-AUTO-1788466798046-2",
+      "opportunity_id": "OPP-AUTO-1788466798046-2",
       "project_id": "UTL",
       "action": "Perform root cause audit for metric monthly_visit_estimate.",
       "reason": "Conflicting observations detected across sources for metric monthly_visit_estimate.",
       "evidence_ids": [
-        "ANM-CONFLICT-monthly_visit_estimate-1788465789251"
+        "ANM-CONFLICT-monthly_visit_estimate-1788466798045"
       ],
       "confidence": "VERY_HIGH",
       "confidence_score": 0.9,
@@ -167,11 +127,11 @@
       "risk_level": "LOW",
       "approval_required": true,
       "status": "PROPOSED",
-      "created_at": "2026-09-03T20:03:09.256Z"
+      "created_at": "2026-09-03T20:19:58.047Z"
     },
     {
-      "recommendation_id": "REC-OPP-CAND-1788465789255-4",
-      "opportunity_id": "OPP-CAND-1788465789255-4",
+      "recommendation_id": "REC-OPP-CAND-1788466798046-3",
+      "opportunity_id": "OPP-CAND-1788466798046-3",
       "project_id": "UTL",
       "action": "Build a zero-install, instant client-side Percentage Difference Calculator under /tools/percentage-difference-calculator in next feature batch.",
       "reason": "Significant search volume exists for 'percentage difference calculator' and 'percentage increase decrease'. UTL currently has only standard percentage calculators.",
@@ -184,16 +144,16 @@
       "risk_level": "LOW",
       "approval_required": true,
       "status": "PROPOSED",
-      "created_at": "2026-09-03T20:03:09.256Z"
+      "created_at": "2026-09-03T20:19:58.047Z"
     },
     {
-      "recommendation_id": "REC-OPP-CAND-1788465789255-5",
-      "opportunity_id": "OPP-CAND-1788465789255-5",
+      "recommendation_id": "REC-OPP-CAND-1788466798046-4",
+      "opportunity_id": "OPP-CAND-1788466798046-4",
       "project_id": "UTL",
       "action": "Update Microsoft Store widget records to include native ms-windows-store deep-links alongside web URLs.",
       "reason": "Windows Widget hub received 168 views. Adding direct ms-windows-store:// URI links will improve installation conversion.",
       "evidence_ids": [
-        "OBS-UTL-TEL-002-1788465771800"
+        "OBS-UTL-TEL-002-1788466796536"
       ],
       "confidence": "HIGH",
       "confidence_score": 0.85,
@@ -201,7 +161,7 @@
       "risk_level": "LOW",
       "approval_required": true,
       "status": "PROPOSED",
-      "created_at": "2026-09-03T20:03:09.256Z"
+      "created_at": "2026-09-03T20:19:58.047Z"
     }
   ]
 }

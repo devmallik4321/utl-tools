@@ -18640,5 +18640,645 @@
         }
       ]
     }
+  },
+  {
+    "id": "curl-to-zig-std-http-converter",
+    "name": "cURL to Zig (std.http.Client) Code Converter",
+    "slug": "curl-to-zig-std-http-converter",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "curl to zig converter",
+      "convert curl to zig std http client",
+      "zig http client code generator",
+      "zig rest api request from curl",
+      "zig network http request post get",
+      "zig 0.12 std http client generator"
+    ],
+    "primaryKeywords": [
+      "curl to zig converter",
+      "convert curl to zig",
+      "curl to zig std http",
+      "zig http client generator"
+    ],
+    "secondaryKeywords": [
+      "std http client allocator uri parse extra headers",
+      "zig transfer encoding content length req start finish wait",
+      "systems programming zig rest api code synthesis"
+    ],
+    "targetUsers": [
+      "Zig Developers",
+      "Systems Software Engineers",
+      "Embedded & Game Developers",
+      "Low-Latency Infrastructure Engineers"
+    ],
+    "badge": "High Usage",
+    "userProblem": "Zig developers integrating third-party REST APIs struggle to translate cURL commands into modern Zig standard library `std.http.Client` boilerplate with correct memory allocators, URI parsing, header arrays, and payload streaming.",
+    "searchIntent": "Convert bash cURL commands into clean, idiomatic Zig std.http.Client request code.",
+    "resultInterpretation": "Translates cURL CLI commands into clean Zig code using `GeneralPurposeAllocator`, `std.http.Client`, custom header arrays, and payload streaming.",
+    "practicalGuidance": "Zig 0.11+ includes a built-in `std.http.Client` in the standard library, eliminating the need for external C libraries like libcurl for standard REST requests.",
+    "limitations": "Parses standard HTTP/HTTPS cURL CLI syntax.",
+    "formula": "CLI AST Parser: cURL Command ➔ Zig std.http.Client Code Synthesis",
+    "trustNotes": "100% Client-Side. Zero API keys or tokens transmitted.",
+    "related": [
+      "curl-to-rust-reqwest-converter",
+      "curl-to-go-http-converter",
+      "curl-to-haskell-http-conduit-converter",
+      "curl-to-csharp-httpclient-converter"
+    ],
+    "seo": {
+      "title": "cURL to Zig Converter — Convert cURL to std.http.Client Online",
+      "metaDescription": "Convert cURL commands to Zig std.http.Client code online. Formats headers, allocators, and JSON payloads. Free developer tool.",
+      "whatIsThis": "A developer programming utility that translates bash cURL commands into idiomatic Zig HTTP client code.",
+      "howItWorks": "1. Paste your cURL command into the editor.\n2. Review the generated Zig `std.http.Client` code.\n3. Copy the clean Zig code in 1 click.",
+      "whyUseIt": "Eliminates tedious syntax translation when consuming third-party REST APIs in Zig applications.",
+      "faqs": [
+        {
+          "question": "Does Zig require an external library like libcurl for HTTP requests?",
+          "answer": "No. Modern Zig (0.11+) features a built-in `std.http.Client` in its standard library that handles TLS, headers, and request bodies natively."
+        },
+        {
+          "question": "How are headers represented in Zig's std.http.Client?",
+          "answer": "Headers are passed as an array of `std.http.Header` structs containing `.name` and `.value` strings."
+        }
+      ]
+    }
+  },
+  {
+    "id": "commercial-real-estate-loan-to-cost-ltc-calculator",
+    "name": "Commercial Real Estate Loan-to-Cost (LTC) Underwriting Calculator",
+    "slug": "commercial-real-estate-loan-to-cost-ltc-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "loan to cost calculator",
+      "cre ltc calculator",
+      "commercial loan to cost vs loan to value calculator",
+      "rehab bridge loan ltc sizing calculator",
+      "as completed arv ltv loan sizing calculator",
+      "commercial construction sponsor equity calculator"
+    ],
+    "primaryKeywords": [
+      "loan to cost calculator",
+      "ltc calculator",
+      "cre ltc underwriting",
+      "loan to cost vs loan to value"
+    ],
+    "secondaryKeywords": [
+      "acquisition price plus renovation budget total cost",
+      "lesser of ltc cap or as completed ltv cap",
+      "commercial bridge lender required sponsor equity"
+    ],
+    "targetUsers": [
+      "Commercial Real Estate Investors",
+      "Bridge Loan Underwriters",
+      "Multifamily Syndicators",
+      "Commercial Mortgage Brokers"
+    ],
+    "badge": "Popular",
+    "userProblem": "Real estate developers and value-add syndicators need to accurately determine how much bridge financing lenders will provide by evaluating the dual constraints of Loan-to-Cost (LTC, typically 75%-85%) and As-Completed Loan-to-Value (LTV, typically 65%-75%).",
+    "searchIntent": "Calculate total project cost, max allowable loan by LTC vs LTV, binding underwriting constraint, and required sponsor equity.",
+    "resultInterpretation": "Calculates total project cost (purchase + renovation), max loan by LTC ceiling, max loan by As-Completed LTV ceiling, identifies the binding constraint, and determines required sponsor equity cash injection.",
+    "practicalGuidance": "Lenders always size bridge/construction loans to the lesser of the LTC ceiling and the As-Completed LTV ceiling to protect their downside if renovation costs exceed initial projections.",
+    "limitations": "Models standard commercial real estate bridge and construction debt underwriting standards.",
+    "formula": "Max_Loan = Min(TotalCost * LTC_Cap, AsCompletedValue * LTV_Cap); Sponsor_Equity = TotalCost - Max_Loan",
+    "trustNotes": "100% Client-Side financial modeling.",
+    "related": [
+      "real-estate-debt-yield-ratio-calculator",
+      "commercial-real-estate-triple-net-nnn-calculator",
+      "dscr-rental-loan-calculator",
+      "real-estate-70-percent-rule-house-flipping-calculator"
+    ],
+    "seo": {
+      "title": "Loan-to-Cost (LTC) Calculator — Commercial Real Estate Underwriting Tool",
+      "metaDescription": "Calculate commercial real estate Loan-to-Cost (LTC) and As-Completed LTV sizing. Determine binding lender constraints and sponsor equity. Free finance tool.",
+      "whatIsThis": "A commercial property financing utility that calculates maximum debt sizing and equity requirements based on Loan-to-Cost (LTC) and As-Completed LTV caps.",
+      "howItWorks": "1. Enter purchase price, renovation budget, and projected as-completed value.\n2. Set lender LTC (e.g. 80%) and LTV (e.g. 70%) maximums.\n3. View underwritten loan sizing, binding constraint, and required sponsor equity.",
+      "whyUseIt": "Ensures syndicators and developers model realistic debt leverage before bidding on value-add commercial assets.",
+      "faqs": [
+        {
+          "question": "What is the difference between LTC and LTV?",
+          "answer": "LTC (Loan-to-Cost) compares the loan amount to the total cost to acquire and renovate the property. LTV (Loan-to-Value) compares the loan amount to the appraised market value of the property upon completion."
+        },
+        {
+          "question": "Why do commercial lenders cap both LTC and LTV?",
+          "answer": "LTC ensures the sponsor has sufficient cash equity invested in the project ('skin in the game'), while LTV ensures the loan does not exceed safe recovery thresholds if market valuations drop."
+        }
+      ]
+    }
+  },
+  {
+    "id": "css-spotlight-mouse-hover-generator",
+    "name": "Pure CSS & JS Radial Spotlight Mouse-Hover Card Generator",
+    "slug": "css-spotlight-mouse-hover-generator",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "css spotlight hover generator",
+      "mouse following spotlight card css",
+      "linear style spotlight card generator",
+      "radial gradient mouse hover effect css",
+      "raycast card illumination hover css generator",
+      "cursor tracking spotlight card effect"
+    ],
+    "primaryKeywords": [
+      "css spotlight generator",
+      "spotlight hover card",
+      "radial gradient hover effect",
+      "cursor spotlight css"
+    ],
+    "secondaryKeywords": [
+      "radial gradient circle at var mouse x var mouse y",
+      "pseudo element before overlay pointer events none",
+      "vanilla javascript mousemove client bounding rect"
+    ],
+    "targetUsers": [
+      "Frontend Developers",
+      "UI Designers",
+      "Webflow & Framer Designers",
+      "Design System Engineers"
+    ],
+    "badge": "Design",
+    "userProblem": "Frontend developers want to build the modern radial cursor-following spotlight hover effect seen on Linear and Raycast landing pages without heavy third-party UI libraries or complex Canvas overhead.",
+    "searchIntent": "Generate pure CSS and lightweight vanilla JS code for interactive radial spotlight hover cards.",
+    "resultInterpretation": "Customizes spotlight color, radius, opacity, card background, and corner radius, displaying a real-time mouse-tracking preview card and generating production-ready CSS and JS code.",
+    "practicalGuidance": "Using CSS custom properties (`--mouse-x`, `--mouse-y`) updated on `mousemove` allows smooth hardware-accelerated rendering without DOM re-renders.",
+    "limitations": "Generates pure CSS and vanilla JavaScript.",
+    "formula": "background: radial-gradient(radius circle at var(--mouse-x) var(--mouse-y), color, transparent 80%);",
+    "trustNotes": "100% Client-Side visual rendering.",
+    "related": [
+      "css-animated-gradient-border-generator",
+      "css-glassmorphism-generator",
+      "css-neumorphism-soft-ui-generator",
+      "box-shadow-generator"
+    ],
+    "seo": {
+      "title": "CSS Spotlight Hover Generator — Radial Mouse-Follow Card Tool",
+      "metaDescription": "Create modern cursor-following spotlight cards and radial glow hover effects using pure CSS and vanilla JavaScript. Live preview and 1-click code export.",
+      "whatIsThis": "A web design utility that creates interactive cursor-following radial spotlight illumination effects for modern web cards and UI components.",
+      "howItWorks": "1. Customize spotlight color, radius, and opacity.\n2. Hover over the interactive preview card to test cursor illumination.\n3. Copy the clean CSS and vanilla JS snippet.",
+      "whyUseIt": "Adds polished, high-converting modern interactivity to landing page cards with zero external dependencies.",
+      "faqs": [
+        {
+          "question": "How does the spotlight card track the mouse position?",
+          "answer": "A tiny vanilla JavaScript listener calculates the cursor position relative to the card (`clientX - rect.left`) and updates CSS custom properties `--mouse-x` and `--mouse-y` in real time."
+        },
+        {
+          "question": "Does this require any npm libraries or frameworks?",
+          "answer": "No. The generated code is 100% vanilla CSS and plain JavaScript, compatible with React, Next.js, Vue, Svelte, or static HTML."
+        }
+      ]
+    }
+  },
+  {
+    "id": "dns-srv-service-record-generator",
+    "name": "DNS SRV Service Record Generator (RFC 2782)",
+    "slug": "dns-srv-service-record-generator",
+    "category": "network",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "dns srv record generator",
+      "srv record generator rfc 2782",
+      "minecraft srv record generator",
+      "sip srv record builder",
+      "active directory ldap srv record generator",
+      "xmpp srv record creator online"
+    ],
+    "primaryKeywords": [
+      "dns srv record generator",
+      "srv record generator",
+      "minecraft srv generator",
+      "rfc 2782 srv builder"
+    ],
+    "secondaryKeywords": [
+      "service proto domain ttl in srv priority weight port target",
+      "bind zone file srv syntax cloudflare route 53 table",
+      "dig srv terminal query verification"
+    ],
+    "targetUsers": [
+      "Network Engineers",
+      "Game Server Hosts (Minecraft)",
+      "VoIP / SIP Administrators",
+      "Active Directory & SysAdmins"
+    ],
+    "badge": "Network",
+    "userProblem": "Systems administrators and game server hosts struggle to configure DNS SRV records (RFC 2782) due to strict naming conventions (`_service._proto.domain.`) and confusing parameter orders (`priority weight port target`).",
+    "searchIntent": "Generate valid DNS SRV records for Minecraft, SIP, LDAP, and XMPP with BIND and DNS provider mappings.",
+    "resultInterpretation": "Generates valid RFC 2782 SRV record strings, BIND zone file entries, provider table mappings (Cloudflare, Route 53, GoDaddy), and terminal `dig` verification commands.",
+    "practicalGuidance": "SRV targets must always be a Fully Qualified Domain Name (FQDN) that resolves to an A/AAAA record; IP addresses are strictly prohibited in RFC 2782 SRV target fields.",
+    "limitations": "Generates RFC 2782 standard SRV records.",
+    "formula": "_[service]._[proto].[domain]. [TTL] IN SRV [priority] [weight] [port] [target].",
+    "trustNotes": "100% Client-Side generation.",
+    "related": [
+      "dns-tlsa-dane-record-generator",
+      "dns-caa-record-generator",
+      "dns-record-generator",
+      "reverse-dns-ptr-record-generator"
+    ],
+    "seo": {
+      "title": "DNS SRV Record Generator — RFC 2782 Minecraft & SIP Tool",
+      "metaDescription": "Generate DNS SRV records for Minecraft, SIP VoIP, and Active Directory LDAP. Formats BIND zone entries and Cloudflare settings. Free network tool.",
+      "whatIsThis": "A network administration utility that creates standardized DNS SRV records to define the location and port of specific server services.",
+      "howItWorks": "1. Pick a preset (Minecraft, SIP, LDAP) or enter custom service details.\n2. Enter priority, weight, port, and target hostname.\n3. Copy the formatted BIND zone entry or DNS provider table values.",
+      "whyUseIt": "Eliminates syntax errors when configuring game servers, corporate VoIP systems, and directory services.",
+      "faqs": [
+        {
+          "question": "Can I use an IP address in the target field of an SRV record?",
+          "answer": "No. RFC 2782 specifies that the target field of an SRV record must be a valid hostname (FQDN) that resolves to an A or AAAA record. Raw IP addresses are invalid."
+        },
+        {
+          "question": "What is the difference between Priority and Weight in SRV records?",
+          "answer": "Priority determines which server is contacted first (lower numbers have higher priority). Weight is used to distribute traffic proportionally among multiple servers sharing the same priority."
+        }
+      ]
+    }
+  },
+  {
+    "id": "saas-magic-number-sales-efficiency-calculator",
+    "name": "B2B SaaS Magic Number & Sales Efficiency Calculator",
+    "slug": "saas-magic-number-sales-efficiency-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "saas magic number calculator",
+      "sales efficiency calculator saas",
+      "bvp saas magic number formula",
+      "scale venture partners magic number calculator",
+      "cac payback period calculator saas",
+      "quarterly arr growth sales marketing spend ratio"
+    ],
+    "primaryKeywords": [
+      "saas magic number calculator",
+      "saas magic number",
+      "saas sales efficiency",
+      "cac payback calculator"
+    ],
+    "secondaryKeywords": [
+      "current quarter arr minus prior quarter arr divided by sm spend",
+      "bessemer venture partners 1.0x efficiency threshold",
+      "customer acquisition cost payback period in months"
+    ],
+    "targetUsers": [
+      "SaaS Founders & CEOs",
+      "Venture Capital & Growth Investors",
+      "Chief Revenue Officers (CROs)",
+      "VP of Sales & Marketing"
+    ],
+    "badge": "Popular",
+    "userProblem": "Subscription software executives and VC investors need to evaluate sales and marketing efficiency, calculating whether each dollar invested in go-to-market acquisition generates sufficient ARR to justify scaling budget.",
+    "searchIntent": "Calculate SaaS Magic Number, CAC payback period in months, annualized ARR growth, and venture capital efficiency benchmarks.",
+    "resultInterpretation": "Calculates SaaS Magic Number multiple, estimated CAC payback in months (adjusted for gross margin), annualized net new ARR, and venture capital recommendations (>1.0x Pour fuel on fire, 0.75x-1.0x Healthy, <0.5x Inefficient).",
+    "practicalGuidance": "A Magic Number over 1.0 means you recover customer acquisition costs in under 12 months. Scale Venture Partners and Bessemer consider 0.75+ a signal to aggressively expand sales hiring.",
+    "limitations": "Calculates standard Bessemer Venture Partners and Scale Venture Partners SaaS formulas.",
+    "formula": "Magic_Number = (Quarterly_Growth * 4) / Prior_Qtr_SM_Spend; CAC_Payback = 12 / (Magic_Number * Gross_Margin)",
+    "trustNotes": "100% Client-Side. Zero financial data stored or transmitted.",
+    "related": [
+      "saas-quick-ratio-growth-efficiency-calculator",
+      "business-valuation-sde-ebitda-multiple-calculator",
+      "roi-investment-calculator",
+      "break-even-calculator"
+    ],
+    "seo": {
+      "title": "SaaS Magic Number Calculator — Sales Efficiency & CAC Payback Tool",
+      "metaDescription": "Calculate your B2B SaaS Magic Number and CAC payback period. Benchmark sales efficiency against top-quartile venture capital metrics. Free finance tool.",
+      "whatIsThis": "A venture finance utility that measures the return on investment of sales and marketing expenditures in subscription software businesses.",
+      "howItWorks": "1. Enter Prior Quarter and Current Quarter revenues.\n2. Enter Prior Quarter Sales & Marketing spend and Gross Margin %.\n3. View Magic Number multiple, CAC payback period in months, and VC action recommendation.",
+      "whyUseIt": "Diagnoses whether your sales engine is ready for growth capital or needs customer acquisition optimization.",
+      "faqs": [
+        {
+          "question": "What is a good SaaS Magic Number?",
+          "answer": "A Magic Number above 1.0x is exceptional, indicating customer acquisition costs are recouped in under a year. A ratio between 0.75x and 1.0x is healthy. Ratios below 0.5x suggest sales inefficiencies that must be fixed before spending more capital."
+        },
+        {
+          "question": "Who created the SaaS Magic Number?",
+          "answer": "The SaaS Magic Number metric was developed and popularized by Scale Venture Partners and is widely used across venture capital firms including Bessemer and Andreessen Horowitz."
+        }
+      ]
+    }
+  },
+  {
+    "id": "aspect-ratio-hexagonal-axial-to-cube-converter",
+    "name": "Hexagonal Grid Coordinate Converter (Axial to Cube)",
+    "slug": "aspect-ratio-hexagonal-axial-to-cube-converter",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "hexagonal coordinate converter",
+      "axial to cube hex coordinates converter",
+      "hex grid distance calculator",
+      "hex tilemap coordinate converter online",
+      "hexagonal tile neighbor coordinate math",
+      "red blob games hex coordinate algorithms"
+    ],
+    "primaryKeywords": [
+      "hexagonal coordinate converter",
+      "axial to cube converter",
+      "hex grid calculator",
+      "hex tile distance calculator"
+    ],
+    "secondaryKeywords": [
+      "cube coordinate invariant x plus y plus z equals zero",
+      "axial column row q r to cube x y z vector",
+      "manhattan distance on hex grid six neighbor directions"
+    ],
+    "targetUsers": [
+      "Game Developers (Unity / Godot / Unreal)",
+      "Board Game Designers (Civilization / Catan)",
+      "Procedural Map Builders",
+      "Tactical Strategy Game Programmers"
+    ],
+    "badge": "Design",
+    "userProblem": "Game developers programming hex grid maps (Civilization, Catan, wargames) struggle to convert between 2D Axial coordinates $(q, r)$ used for storage and 3D Cube coordinates $(x, y, z)$ required for accurate distance calculations and line-of-sight algorithms.",
+    "searchIntent": "Convert hexagonal coordinates between Axial and Cube systems, calculate tile step distances, and generate neighbor vectors.",
+    "resultInterpretation": "Converts Axial $(q, r)$ to 3D Cube $(x, y, z)$ verifying the $x + y + z = 0$ mathematical invariant, calculates step distance to a target tile, generates all 6 adjacent neighbor coordinates, and provides copy-ready TypeScript functions.",
+    "practicalGuidance": "Cube coordinates simplify hexagonal geometry by turning 6-directional hexagonal movements into 3-axis integer additions, making distance and line-drawing trivial.",
+    "limitations": "Calculates standard regular hexagonal planar geometry.",
+    "formula": "x = q, z = r, y = -x - z; Distance = Max(|dx|, |dy|, |dz|)",
+    "trustNotes": "100% Client-Side calculation.",
+    "related": [
+      "aspect-ratio-hexagonal-grid-calculator",
+      "aspect-ratio-staggered-isometric-brick-grid-calculator",
+      "aspect-ratio-isometric-cube-grid-calculator",
+      "aspect-ratio-isometric-pixel-art-grid-calculator"
+    ],
+    "seo": {
+      "title": "Hexagonal Coordinate Converter — Axial to Cube & Distance Tool",
+      "metaDescription": "Convert hex tile coordinates between Axial (q, r) and Cube (x, y, z) formats. Calculate grid step distances and generate TypeScript code. Free game dev tool.",
+      "whatIsThis": "A game development geometry utility that translates hexagonal tile coordinates between 2D Axial and 3D Cube representations.",
+      "howItWorks": "1. Enter current hex origin (q, r).\n2. Enter destination target hex (q, r) to measure grid step distance.\n3. View equivalent 3D Cube vector, adjacent neighbor ring, and copy TypeScript helper functions.",
+      "whyUseIt": "Simplifies pathfinding, line-of-sight, and neighbor queries in hexagonal game engines.",
+      "faqs": [
+        {
+          "question": "What is the mathematical invariant of cube coordinates?",
+          "answer": "In hexagonal cube coordinates, the three axes must always satisfy the invariant `x + y + z = 0`. This reflects the fact that a hexagonal grid is a 2D plane embedded within 3D space."
+        },
+        {
+          "question": "How do you calculate distance between two hex tiles in cube coordinates?",
+          "answer": "The distance between hex A and hex B is `Max(|A.x - B.x|, |A.y - B.y|, |A.z - B.z|)` or equivalently `(|dx| + |dy| + |dz|) / 2`."
+        }
+      ]
+    }
+  },
+  {
+    "id": "crontab-to-cloudwatch-events-converter",
+    "name": "Crontab to AWS CloudWatch & EventBridge Schedule Converter",
+    "slug": "crontab-to-cloudwatch-events-converter",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "crontab to cloudwatch converter",
+      "aws eventbridge cron converter",
+      "convert cron to aws schedule expression",
+      "cloudwatch events cron syntax converter",
+      "terraform aws cloudwatch event rule schedule",
+      "aws cdk eventbridge schedule cron generator"
+    ],
+    "primaryKeywords": [
+      "cron to cloudwatch",
+      "aws eventbridge cron converter",
+      "cloudwatch cron generator",
+      "aws cron schedule converter"
+    ],
+    "secondaryKeywords": [
+      "minutes hours day of month month day of week year",
+      "aws question mark wildcard day of month vs day of week",
+      "aws events put rule schedule expression cli"
+    ],
+    "targetUsers": [
+      "AWS Cloud Architects",
+      "DevOps & SRE Engineers",
+      "Serverless Developers (AWS Lambda)",
+      "Terraform / CDK Infrastructure Engineers"
+    ],
+    "badge": "High Usage",
+    "userProblem": "Cloud engineers configuring AWS CloudWatch Events and EventBridge schedules encounter errors because AWS requires a unique 6-field `cron(Minutes Hours Day-of-month Month Day-of-week Year)` syntax where one of Day-of-month or Day-of-week MUST be a question mark `?`.",
+    "searchIntent": "Convert standard Linux crontabs into valid AWS EventBridge 6-field schedule expressions and generate CLI, Terraform, and CDK code.",
+    "resultInterpretation": "Converts 5-field crontabs into valid AWS 6-field `cron(...)` expressions with automatic `?` wildcard resolution, generating AWS CLI `put-rule` commands, Terraform IaC, and AWS CDK snippets.",
+    "practicalGuidance": "AWS EventBridge rules always evaluate cron expressions in UTC. You cannot specify both Day-of-month and Day-of-week; one must always be `?`.",
+    "limitations": "Generates AWS EventBridge / CloudWatch standard 6-field cron expressions.",
+    "formula": "AWS Cron: cron(Minutes Hours Day-of-month Month Day-of-week Year)",
+    "trustNotes": "100% Client-Side generation.",
+    "related": [
+      "crontab-to-aws-eventbridge-converter",
+      "crontab-to-azure-functions-schedule-converter",
+      "crontab-to-github-actions-schedule-converter",
+      "crontab-to-kubernetes-cronjob-converter"
+    ],
+    "seo": {
+      "title": "Crontab to AWS CloudWatch & EventBridge Converter — Cron Tool",
+      "metaDescription": "Convert standard crontabs to AWS CloudWatch and EventBridge 6-field cron expressions. Generates AWS CLI, Terraform, and CDK code. Free developer tool.",
+      "whatIsThis": "A cloud infrastructure utility that converts standard Linux crontabs into AWS-compliant 6-field EventBridge and CloudWatch schedule expressions.",
+      "howItWorks": "1. Enter standard 5-field cron or select a preset.\n2. View the generated AWS `cron(...)` expression with valid `?` wildcard placement.\n3. Copy AWS CLI commands, Terraform resources, or AWS CDK TypeScript code.",
+      "whyUseIt": "Prevents invalid schedule expression errors in AWS CloudWatch and EventBridge deployments.",
+      "faqs": [
+        {
+          "question": "Why does AWS reject cron expressions with '*' in both day fields?",
+          "answer": "AWS EventBridge enforces a strict rule: you cannot specify both Day-of-Month and Day-of-Week simultaneously. If you specify one, the other must be set to the question mark `?` wildcard."
+        },
+        {
+          "question": "In what timezone do AWS EventBridge cron schedules run?",
+          "answer": "All AWS CloudWatch Events and EventBridge cron expressions run exclusively in Coordinated Universal Time (UTC)."
+        }
+      ]
+    }
+  },
+  {
+    "id": "mega-backdoor-roth-solo-401k-calculator",
+    "name": "Mega Backdoor Roth Solo 401(k) & IRA Contribution Calculator",
+    "slug": "mega-backdoor-roth-solo-401k-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "mega backdoor roth calculator",
+      "mega backdoor roth solo 401k calculator",
+      "after tax 401k contribution room calculator",
+      "irs 415c limit mega backdoor roth calculator",
+      "mega backdoor roth tax savings calculator",
+      "in plan roth conversion calculator 401k"
+    ],
+    "primaryKeywords": [
+      "mega backdoor roth calculator",
+      "mega backdoor roth solo 401k",
+      "after tax 401k calculator",
+      "mega backdoor roth contribution limit"
+    ],
+    "secondaryKeywords": [
+      "irs section 415c 69000 ceiling catch up 7500",
+      "in plan roth conversion in service non hardship distribution",
+      "tax free compounding long term capital gains avoidance"
+    ],
+    "targetUsers": [
+      "High-Income Tech Employees",
+      "Self-Employed Solo 401(k) Owners",
+      "Physicians & Corporate Executives",
+      "FIRE (Financial Independence) Savers"
+    ],
+    "badge": "Popular",
+    "userProblem": "High-income earners who max out standard $23,000 elective deferrals need to calculate how much additional after-tax money they can legally contribute and convert to Roth under IRS Section 415(c) ($69,000 cap), and estimate lifetime tax savings.",
+    "searchIntent": "Calculate maximum after-tax Mega Backdoor Roth capacity, total annual Roth shelter, projected nest egg, and tax savings.",
+    "resultInterpretation": "Calculates remaining after-tax non-Roth contribution capacity up to the IRS 415(c) limit ($69,000 / $76,500 if 50+), total annual Roth shelter, long-term compound growth over investment horizons, and estimated taxes saved versus a taxable brokerage account.",
+    "practicalGuidance": "To execute a Mega Backdoor Roth, your 401(k) plan must explicitly permit After-Tax Non-Roth contributions and either In-Plan Roth Conversions or in-service non-hardship distributions.",
+    "limitations": "Models IRS Section 415(c) statutory limits and compound tax differential models.",
+    "formula": "Mega_Backdoor_Room = IRS_415c_Cap - (Employee_Deferral + Employer_Match); Tax_Savings = Fv_Roth - Fv_Taxable_PostTax",
+    "trustNotes": "100% Client-Side financial modeling.",
+    "related": [
+      "solo-401k-contribution-calculator",
+      "backdoor-roth-ira-tax-calculator",
+      "roth-ira-growth-and-contribution-calculator",
+      "traditional-vs-roth-401k-calculator"
+    ],
+    "seo": {
+      "title": "Mega Backdoor Roth Calculator — Solo 401(k) & 401(k) Tax Tool",
+      "metaDescription": "Calculate maximum after-tax Mega Backdoor Roth capacity up to the $69,000 IRS limit. Project long-term tax-free growth and lifetime savings. Free finance tool.",
+      "whatIsThis": "A wealth-building financial utility that calculates the maximum allowable after-tax contributions for executing a Mega Backdoor Roth strategy.",
+      "howItWorks": "1. Enter employee deferral and employer match amounts.\n2. View remaining after-tax Mega Backdoor capacity under the IRS 415(c) limit.\n3. Project tax-free growth and tax savings compared to a taxable brokerage account.",
+      "whyUseIt": "Enables high earners to legally shelter tens of thousands of dollars in tax-free Roth accounts annually.",
+      "faqs": [
+        {
+          "question": "What is a Mega Backdoor Roth?",
+          "answer": "A Mega Backdoor Roth is an advanced tax strategy where an individual contributes after-tax non-Roth dollars to a 401(k) beyond the standard $23,000 employee limit (up to the $69,000 IRS Section 415(c) limit) and immediately converts those dollars to Roth."
+        },
+        {
+          "question": "Does every 401(k) plan allow a Mega Backdoor Roth?",
+          "answer": "No. The 401(k) plan must explicitly offer after-tax non-Roth contributions AND either in-plan Roth conversions or in-service distributions to an external Roth IRA."
+        }
+      ]
+    }
+  },
+  {
+    "id": "svg-stroke-dasharray-animator",
+    "name": "SVG Stroke Dasharray & Dashoffset Path Drawing Animator",
+    "slug": "svg-stroke-dasharray-animator",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "svg stroke dasharray animator",
+      "svg line drawing animation generator",
+      "stroke dashoffset animation css generator",
+      "svg handwriting reveal animation tool",
+      "animated svg path drawing online",
+      "svg path length stroke dasharray calculator"
+    ],
+    "primaryKeywords": [
+      "svg stroke dasharray animator",
+      "svg path drawing animation",
+      "stroke dashoffset generator",
+      "svg line animation css"
+    ],
+    "secondaryKeywords": [
+      "stroke dasharray equals path length dashoffset to zero",
+      "css keyframes stroke draw cubic bezier animation forwards",
+      "svg path outline drawing effect live preview"
+    ],
+    "targetUsers": [
+      "Frontend Developers",
+      "SVG Illustrators",
+      "UI/UX Motion Designers",
+      "Creative Web Developers"
+    ],
+    "badge": "Design",
+    "userProblem": "Web developers and animators creating signature drawing reveals, logo reveals, and icon outline animations struggle to calculate the exact `stroke-dasharray` and `stroke-dashoffset` keyframe timings to achieve smooth, artifact-free path reveals.",
+    "searchIntent": "Generate pure CSS `@keyframes` and SVG markup for animated path drawing reveals with live interactive replay.",
+    "resultInterpretation": "Calculates path length, duration, stroke color, and width, displaying an interactive replayable path drawing animation and generating production-ready CSS and SVG snippets.",
+    "practicalGuidance": "Setting `stroke-linecap: round` and `stroke-linejoin: round` ensures corners look organic and smooth as the stroke path draws in.",
+    "limitations": "Generates pure CSS keyframe animations for SVG paths.",
+    "formula": "@keyframes draw { from { stroke-dashoffset: len; } to { stroke-dashoffset: 0; } }",
+    "trustNotes": "100% Client-Side animation synthesis.",
+    "related": [
+      "svg-path-morphing-interpolator",
+      "svg-viewbox-aspect-ratio-slicer",
+      "svg-drop-shadow-filter-generator",
+      "svg-path-visualizer-optimizer"
+    ],
+    "seo": {
+      "title": "SVG Stroke Dasharray Animator — Line Drawing Reveal CSS Tool",
+      "metaDescription": "Create smooth SVG line drawing and path reveal animations using pure CSS keyframes. Custom path length, duration, and live replay preview. Free tool.",
+      "whatIsThis": "A creative web design utility that synthesizes smooth SVG path drawing animations using stroke-dasharray and stroke-dashoffset techniques.",
+      "howItWorks": "1. Choose a preset path or paste custom SVG path `d` coordinates.\n2. Adjust path length, duration, stroke width, and stroke color.\n3. Test the live replay animation and copy the CSS and SVG code.",
+      "whyUseIt": "Creates engaging icon reveals and logo animations with zero external animation libraries.",
+      "faqs": [
+        {
+          "question": "How does the SVG line drawing trick work?",
+          "answer": "By making `stroke-dasharray` equal to the total length of the path and setting `stroke-dashoffset` to that same length, the dashed stroke is shifted completely out of view. An animation then reduces `stroke-dashoffset` to 0, smoothly revealing the stroke."
+        },
+        {
+          "question": "How do you find the exact length of an SVG path?",
+          "answer": "In JavaScript, you can call `pathElement.getTotalLength()`. In this utility, you can adjust the path length parameter to match your exact vector asset."
+        }
+      ]
+    }
+  },
+  {
+    "id": "target-heart-rate-zone-calculator",
+    "name": "Target Heart Rate Zones Multi-Formula Clinical Calculator",
+    "slug": "target-heart-rate-zone-calculator",
+    "category": "health",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "target heart rate calculator",
+      "max heart rate formula comparison calculator",
+      "tanaka vs fox heart rate formula calculator",
+      "cardio exercise target zones calculator",
+      "fat burn heart rate zone calculator",
+      "gellish heart rate formula calculator"
+    ],
+    "primaryKeywords": [
+      "target heart rate calculator",
+      "heart rate zone calculator",
+      "max heart rate calculator",
+      "cardio heart rate zones"
+    ],
+    "secondaryKeywords": [
+      "tanaka 208 minus 0.7 age vs fox 220 minus age",
+      "moderate fat burn 60 percent cardio 70 to 85 percent peak",
+      "clinical cardiology sports medicine exercise guidelines"
+    ],
+    "targetUsers": [
+      "Fitness Enthusiasts & Gym Goers",
+      "Cardiologists & Sports Medicine Clinicians",
+      "Personal Trainers & Coaches",
+      "Endurance Runners & Cyclists"
+    ],
+    "badge": "Popular",
+    "userProblem": "Fitness enthusiasts and patients recovering from cardiovascular events need to know their exact target heart rate bpm ranges across different training intensities (Warm-up, Fat Burn, Cardio, Peak) using clinically validated formulas rather than crude estimates.",
+    "searchIntent": "Calculate target heart rate training zones and compare Max HR formulas (Tanaka, Fox, Gellish, Fairbarn).",
+    "resultInterpretation": "Calculates Max HR across 4 clinical formulas (Tanaka, Fox, Gellish, Fairbarn), compares them side-by-side, and generates exact BPM thresholds for Warm-Up (50%-60%), Fat Burn (60%-70%), Cardio (70%-85%), and Peak Anaerobic (85%-95%) zones.",
+    "practicalGuidance": "The Tanaka formula ($208 - 0.7 \\times \\text{age}$) is considered the clinical standard by the American College of Sports Medicine (ACSM), providing superior accuracy over the traditional $220 - \\text{age}$ formula for individuals over age 40.",
+    "limitations": "Calculates clinical exercise physiology formulas.",
+    "formula": "Tanaka = 208 - (0.7 * Age); Fox = 220 - Age; Gellish = 207 - (0.7 * Age); Zone = MaxHR * Pct",
+    "trustNotes": "100% Client-Side health calculation.",
+    "related": [
+      "heart-rate-reserve-karvonen-calculator",
+      "vo2-max-running-fitness-calculator",
+      "pace-splits-marathon-calculator",
+      "caffeine-half-life-sleep-calculator"
+    ],
+    "seo": {
+      "title": "Target Heart Rate Calculator — Exercise Zones & Clinical Formulas",
+      "metaDescription": "Calculate target heart rate zones for fat burn, cardio, and peak performance. Compare Tanaka, Fox, Gellish, and Fairbarn clinical formulas. Free tool.",
+      "whatIsThis": "A cardiovascular health utility that calculates personalized target heart rate training zones and compares major clinical Max HR formulas.",
+      "howItWorks": "1. Enter age, biological sex, and select preferred clinical formula.\n2. Compare Max HR outputs from Tanaka, Fox, Gellish, and Fairbarn.\n3. View target BPM ranges for Warm-Up, Fat Burn, Cardio, and Anaerobic Peak zones.",
+      "whyUseIt": "Provides accurate, clinically sound heart rate targets to optimize cardiovascular training and prevent overtraining.",
+      "faqs": [
+        {
+          "question": "Why is the Tanaka formula preferred over 220 minus age?",
+          "answer": "The traditional `220 - age` formula (Fox & Haskell) tends to overestimate maximum heart rate in young adults and significantly underestimate it in older adults. The Tanaka formula (`208 - 0.7 × age`) is backed by extensive meta-analyses and provides much higher clinical accuracy across all age groups."
+        },
+        {
+          "question": "What is the optimal heart rate zone for burning fat?",
+          "answer": "The Fat Burn zone is typically between 60% and 70% of your maximum heart rate. In this zone, a higher percentage of expended calories are derived from fat oxidation rather than glycogen."
+        }
+      ]
+    }
   }
 ]
