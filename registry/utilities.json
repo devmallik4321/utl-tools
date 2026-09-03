@@ -19280,5 +19280,645 @@
         }
       ]
     }
+  },
+  {
+    "id": "curl-to-lua-socket-http-converter",
+    "name": "cURL to Lua (LuaSocket & OpenResty) Code Converter",
+    "slug": "curl-to-lua-socket-http-converter",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "curl to lua converter",
+      "convert curl to luasocket http request",
+      "curl to openresty resty http generator",
+      "lua rest api client code from curl",
+      "lua socket http ltn12 post request generator",
+      "nginx openresty http client generator"
+    ],
+    "primaryKeywords": [
+      "curl to lua converter",
+      "convert curl to lua",
+      "curl to luasocket",
+      "curl to openresty"
+    ],
+    "secondaryKeywords": [
+      "socket http ltn12 source string sink table request",
+      "resty http httpc request uri post body headers",
+      "embedded scripting lua rest client synthesis"
+    ],
+    "targetUsers": [
+      "Lua Developers",
+      "Game Developers (Roblox / Defold / LÖVE)",
+      "Nginx / OpenResty Gateway Engineers",
+      "Embedded Systems Engineers"
+    ],
+    "badge": "High Usage",
+    "userProblem": "Lua developers integrating webhooks and REST APIs struggle with `socket.http` and `ltn12` source/sink boilerplate or OpenResty `resty.http` syntax when converting bash cURL commands.",
+    "searchIntent": "Convert bash cURL commands into LuaSocket or OpenResty HTTP client code.",
+    "resultInterpretation": "Translates cURL CLI commands into clean Lua code using `socket.http` and `ltn12` tables, or OpenResty `resty.http` with automated header formatting and payload body handling.",
+    "practicalGuidance": "For standalone Lua scripts, use LuaSocket (`socket.http`). For Nginx API gateways or high-concurrency microservices, choose OpenResty (`resty.http`) for non-blocking cosockets.",
+    "limitations": "Parses standard HTTP/HTTPS cURL CLI syntax.",
+    "formula": "CLI AST Parser: cURL Command ➔ LuaSocket / OpenResty Code Synthesis",
+    "trustNotes": "100% Client-Side. Zero API keys or tokens transmitted.",
+    "related": [
+      "curl-to-zig-std-http-converter",
+      "curl-to-haskell-http-conduit-converter",
+      "curl-to-python-requests-converter",
+      "curl-to-rust-reqwest-converter"
+    ],
+    "seo": {
+      "title": "cURL to Lua Converter — Convert cURL to LuaSocket & OpenResty Online",
+      "metaDescription": "Convert cURL commands to LuaSocket and OpenResty Lua code online. Formats headers, ltn12 sources, and JSON payloads. Free developer tool.",
+      "whatIsThis": "A developer programming utility that translates bash cURL commands into idiomatic Lua HTTP client code for LuaSocket and OpenResty.",
+      "howItWorks": "1. Select LuaSocket or OpenResty.\n2. Paste your cURL command into the editor.\n3. Copy the clean Lua code in 1 click.",
+      "whyUseIt": "Eliminates tedious syntax translation when consuming third-party REST APIs in Lua scripts.",
+      "faqs": [
+        {
+          "question": "What is ltn12 in LuaSocket?",
+          "answer": "LTN12 is LuaSocket's stream filtering library. It connects sources (data inputs like strings or files) to sinks (data outputs like tables or files) to stream HTTP request and response payloads efficiently without loading entire bodies into memory at once."
+        },
+        {
+          "question": "Which HTTP library is best for Nginx?",
+          "answer": "OpenResty's `resty.http` is the gold standard for Nginx environments because it uses non-blocking Lua cosockets, ensuring HTTP requests do not freeze worker processes."
+        }
+      ]
+    }
+  },
+  {
+    "id": "commercial-real-estate-debt-service-coverage-ratio-stress-tester",
+    "name": "Commercial Real Estate DSCR Stress Test & Sensitivity Matrix",
+    "slug": "commercial-real-estate-debt-service-coverage-ratio-stress-tester",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "dscr stress test calculator",
+      "cre dscr sensitivity matrix calculator",
+      "commercial real estate interest rate stress test",
+      "vacancy shock dscr underwriting calculator",
+      "debt service coverage ratio stress matrix",
+      "cmbs loan covenant breach cash trap calculator"
+    ],
+    "primaryKeywords": [
+      "dscr stress test",
+      "dscr sensitivity matrix",
+      "commercial dscr calculator",
+      "interest rate stress test cre"
+    ],
+    "secondaryKeywords": [
+      "interest rate spike plus 100 200 300 bps matrix",
+      "vacancy shock plus 5 percent 10 percent noi impact",
+      "minimum 1.25x lender covenant compliance threshold"
+    ],
+    "targetUsers": [
+      "Commercial Mortgage Underwriters",
+      "Real Estate Private Equity Analysts",
+      "Multifamily & CRE Syndicators",
+      "Commercial Loan Asset Managers"
+    ],
+    "badge": "Popular",
+    "userProblem": "Commercial real estate lenders and syndicators need to stress test property Debt Service Coverage Ratios (DSCR) against simultaneous interest rate spikes (+100 to +300 bps) and tenant vacancy shocks (+5% to +10%) to assess covenant breach and cash-trap risks.",
+    "searchIntent": "Simulate commercial property DSCR performance under interest rate hikes and vacancy shocks in a sensitivity matrix.",
+    "resultInterpretation": "Generates a 12-cell sensitivity matrix testing interest rates (Base, +100bps, +200bps, +300bps) against vacancy rates (Base, +5%, +10%), highlighting compliant (>1.25x), covenant risk (1.00x-1.24x), and default (<1.00x) zones.",
+    "practicalGuidance": "Commercial loan agreements frequently mandate a minimum 1.20x - 1.25x DSCR covenant. Dropping below triggers a 'cash trap' where the lender sweeps all net rental income into a reserve escrow.",
+    "limitations": "Models standard commercial property amortizing debt and fixed operating expense structures.",
+    "formula": "DSCR = NOI / Annual_Debt_Service; Stressed_NOI = GPR * (1 - Stressed_Vac%) - OpEx",
+    "trustNotes": "100% Client-Side financial modeling.",
+    "related": [
+      "dscr-rental-loan-calculator",
+      "real-estate-debt-yield-ratio-calculator",
+      "commercial-real-estate-loan-to-cost-ltc-calculator",
+      "commercial-real-estate-triple-net-nnn-calculator"
+    ],
+    "seo": {
+      "title": "CRE DSCR Stress Test Calculator — Interest Rate & Vacancy Matrix",
+      "metaDescription": "Stress test commercial real estate DSCR across interest rate spikes (+100 to +300 bps) and vacancy shocks. Check lender covenant risk. Free finance tool.",
+      "whatIsThis": "A commercial property underwriting utility that calculates a multi-variable sensitivity matrix testing property DSCR against rate hikes and vacancy shocks.",
+      "howItWorks": "1. Enter property rent, operating expenses, vacancy, and loan balance.\n2. View the 12-cell sensitivity matrix showing DSCR across rate spikes and vacancy surges.\n3. Identify interest rate ceilings before cash-trap or default triggers.",
+      "whyUseIt": "Protects real estate investors from floating-rate debt distress and covenant default traps.",
+      "faqs": [
+        {
+          "question": "What happens if a property DSCR drops below 1.25x?",
+          "answer": "Most commercial loan agreements specify that dropping below a 1.20x or 1.25x DSCR triggers a 'cash trap' event, where the lender seizes control of the property's bank accounts and holds all surplus rental income in escrow until DSCR recovers."
+        },
+        {
+          "question": "How do basis point (bps) increases affect debt service?",
+          "answer": "100 basis points equals 1.00% in interest rate. On a $3,000,000 commercial mortgage, a 200 bps (+2%) rate spike increases annual interest expense by approximately $60,000 per year."
+        }
+      ]
+    }
+  },
+  {
+    "id": "css-accordion-smooth-details-generator",
+    "name": "Pure CSS Smooth <details> Accordion Generator",
+    "slug": "css-accordion-smooth-details-generator",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "css accordion details generator",
+      "smooth details summary animation css",
+      "pure css accordion generator",
+      "css grid height animation details generator",
+      "zero javascript accordion css generator",
+      "grid template rows 0fr 1fr accordion tool"
+    ],
+    "primaryKeywords": [
+      "css accordion generator",
+      "pure css accordion",
+      "details summary smooth animation",
+      "css grid accordion"
+    ],
+    "secondaryKeywords": [
+      "grid template rows 0fr to 1fr height transition",
+      "html5 details summary webkit details marker hide",
+      "native browser keyboard accessibility aria expanded"
+    ],
+    "targetUsers": [
+      "Frontend Developers",
+      "UI Designers",
+      "Webflow & Framer Designers",
+      "HTML5 Web Authors"
+    ],
+    "badge": "Design",
+    "userProblem": "Web developers creating FAQ sections and collapsible panels want smooth height opening/closing transitions on native HTML5 `<details>` elements without requiring heavy JavaScript height calculation listeners.",
+    "searchIntent": "Generate pure CSS smooth animated accordions using modern CSS Grid height interpolation on HTML5 details elements.",
+    "resultInterpretation": "Adjusts transition duration, border radius, and accent color, displaying an interactive live preview accordion and generating modern CSS `grid-template-rows: 0fr -> 1fr` code with zero JavaScript.",
+    "practicalGuidance": "Using `grid-template-rows: 0fr -> 1fr` on an inner wrapper lets browsers interpolate dynamic auto-height smoothly, completely bypassing the classic CSS `height: auto` limitation.",
+    "limitations": "Generates pure HTML5 and modern CSS Grid code.",
+    "formula": ".content { display: grid; grid-template-rows: 0fr; } details[open] .content { grid-template-rows: 1fr; }",
+    "trustNotes": "100% Client-Side generation.",
+    "related": [
+      "css-spotlight-mouse-hover-generator",
+      "css-animated-gradient-border-generator",
+      "css-custom-checkbox-and-radio-generator",
+      "css-glassmorphism-generator"
+    ],
+    "seo": {
+      "title": "Pure CSS Smooth Details Accordion Generator — Zero JS Tool",
+      "metaDescription": "Create modern smooth-animating accordions using native HTML5 details and pure CSS grid transitions. Zero JavaScript required. Free developer tool.",
+      "whatIsThis": "A web design utility that creates smooth, hardware-accelerated accordion animations using HTML5 `<details>` and CSS Grid height interpolation.",
+      "howItWorks": "1. Customize transition duration, border radius, and accent color.\n2. Click the live interactive preview items to test smooth opening.\n3. Copy the clean HTML5 and CSS snippet in 1 click.",
+      "whyUseIt": "Delivers buttery-smooth FAQ accordions with 100% native browser accessibility and zero JavaScript bloat.",
+      "faqs": [
+        {
+          "question": "How does CSS animate height from 0 to auto without JavaScript?",
+          "answer": "By placing an inner wrapper inside `<details>` with `display: grid; grid-template-rows: 0fr; transition: grid-template-rows 0.3s ease;` and changing it to `1fr` when `details[open]`, modern browsers smoothly interpolate the content height."
+        },
+        {
+          "question": "Is this accessible for screen readers?",
+          "answer": "Yes! Because it uses native HTML5 `<details>` and `<summary>` elements, all keyboard controls (Space/Enter to toggle) and screen reader accessibility announcements work out of the box."
+        }
+      ]
+    }
+  },
+  {
+    "id": "dns-ptr-arpa-zone-generator",
+    "name": "DNS RFC 2317 Classless in-addr.arpa Reverse DNS Zone Generator",
+    "slug": "dns-ptr-arpa-zone-generator",
+    "category": "network",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "reverse dns zone generator",
+      "rfc 2317 classless in addr arpa generator",
+      "sub 24 reverse dns zone builder",
+      "ptr record generator bind zone",
+      "isp cname delegation rfc 2317 generator",
+      "slash 28 slash 29 reverse dns zone creator"
+    ],
+    "primaryKeywords": [
+      "reverse dns generator",
+      "rfc 2317 generator",
+      "in-addr arpa generator",
+      "ptr zone generator"
+    ],
+    "secondaryKeywords": [
+      "origin start host cidr prefix in addr arpa bind zone",
+      "cname alias delegation slash 25 to slash 29 subnets",
+      "dig ptr reverse dns trace command"
+    ],
+    "targetUsers": [
+      "ISP & Data Center Engineers",
+      "Network Administrators",
+      "Mail Server Administrators",
+      "BGP / Autonomous System (ASN) Operators"
+    ],
+    "badge": "Network",
+    "userProblem": "Network administrators delegating or hosting reverse DNS for subnets smaller than a /24 (/25 through /29) struggle to configure RFC 2317 classless in-addr.arpa CNAME aliases and child `$ORIGIN` PTR zones without syntax errors.",
+    "searchIntent": "Generate RFC 2317 reverse DNS child zone files and ISP parent CNAME delegation records.",
+    "resultInterpretation": "Calculates subnet boundaries, formats the RFC 2317 child `$ORIGIN` zone file with SOA/NS/PTR records, formats the ISP parent delegation CNAME aliases, and provides terminal `dig` test commands.",
+    "practicalGuidance": "RFC 2317 solves the limitation where DNS reverse zones only split on octet boundaries (/8, /16, /24), allowing clean delegation of /25 through /29 blocks to customers.",
+    "limitations": "Generates RFC 2317 standard classless reverse DNS zone structures.",
+    "formula": "Child: $ORIGIN [host]/[cidr].[octets].in-addr.arpa.; Parent: [host] IN CNAME [host].[host]/[cidr]...",
+    "trustNotes": "100% Client-Side generation.",
+    "related": [
+      "reverse-dns-ptr-record-generator",
+      "dns-srv-service-record-generator",
+      "subnet-cidr-to-ip-range-expander",
+      "subnet-mask-calculator"
+    ],
+    "seo": {
+      "title": "RFC 2317 Reverse DNS Zone Generator — Classless in-addr.arpa Tool",
+      "metaDescription": "Generate RFC 2317 classless reverse DNS zone files and ISP CNAME delegations for sub-/24 subnets. Formats BIND SOA and PTR records. Free network tool.",
+      "whatIsThis": "A network infrastructure utility that creates standardized RFC 2317 reverse DNS zone files and ISP CNAME delegation entries for classless IPv4 blocks.",
+      "howItWorks": "1. Enter base subnet IP (e.g. 198.51.100.32) and select CIDR prefix (/25 to /29).\n2. Enter nameserver and domain suffix.\n3. Copy the formatted customer child zone file and ISP parent CNAME delegation snippet.",
+      "whyUseIt": "Eliminates reverse DNS lookup failures for corporate mail servers and VPN endpoints on fractional IP blocks.",
+      "faqs": [
+        {
+          "question": "What is RFC 2317 classless in-addr.arpa delegation?",
+          "answer": "Standard reverse DNS divides strictly on octet dots (like /24). RFC 2317 defines a method using CNAME records in the parent /24 zone that point to a delegated sub-zone, enabling ISPs to delegate blocks like /28 or /29 to end customers."
+        },
+        {
+          "question": "Why is reverse DNS essential for mail servers?",
+          "answer": "Major email providers (Google, Microsoft, Yahoo) verify that an incoming SMTP connection's IP address has a matching Reverse DNS PTR record (Forward-Confirmed Reverse DNS) to prevent spam."
+        }
+      ]
+    }
+  },
+  {
+    "id": "saas-burn-multiple-capital-efficiency-calculator",
+    "name": "B2B SaaS Burn Multiple Capital Efficiency Calculator",
+    "slug": "saas-burn-multiple-capital-efficiency-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "saas burn multiple calculator",
+      "burn multiple calculator",
+      "david sacks burn multiple calculator",
+      "craft ventures burn multiple formula",
+      "startup capital efficiency calculator",
+      "net burn divided by net new arr calculator"
+    ],
+    "primaryKeywords": [
+      "saas burn multiple calculator",
+      "burn multiple calculator",
+      "capital efficiency calculator",
+      "david sacks burn multiple"
+    ],
+    "secondaryKeywords": [
+      "net burn divided by net new arr venture benchmark",
+      "craft ventures amazing good suspect dangerous scale",
+      "cash runway in months average monthly burn rate"
+    ],
+    "targetUsers": [
+      "SaaS Founders & CEOs",
+      "Venture Capital Investors",
+      "Chief Financial Officers (CFOs)",
+      "Venture Partners & Board Members"
+    ],
+    "badge": "Popular",
+    "userProblem": "Early and growth-stage startup founders preparing for board meetings or fundraising need to calculate their Burn Multiple (Net Burn / Net New ARR) to benchmark capital efficiency against top-tier venture capital expectations.",
+    "searchIntent": "Calculate SaaS Burn Multiple, monthly burn rate, cash runway, and venture capital efficiency rating.",
+    "resultInterpretation": "Calculates the Burn Multiple ratio, average monthly burn rate, remaining cash runway in months, and classifies efficiency using David Sacks' Craft Ventures scale (<1.0x Amazing, 1.0-1.5x Good, 1.5-2.0x Suspect, >2.0x Dangerous).",
+    "practicalGuidance": "Burn Multiple evaluates how much cash you burn to generate $1 of new ARR. Unlike traditional burn rate, it directly measures growth efficiency independent of company scale.",
+    "limitations": "Calculates standard Craft Ventures / David Sacks SaaS venture efficiency formulas.",
+    "formula": "Burn_Multiple = Net_Burn / Net_New_ARR; Monthly_Burn = Net_Burn / Period_Months; Runway = Cash / Monthly_Burn",
+    "trustNotes": "100% Client-Side. Zero financial data stored or transmitted.",
+    "related": [
+      "saas-magic-number-sales-efficiency-calculator",
+      "saas-quick-ratio-growth-efficiency-calculator",
+      "business-valuation-sde-ebitda-multiple-calculator",
+      "emergency-fund-runway-calculator"
+    ],
+    "seo": {
+      "title": "SaaS Burn Multiple Calculator — Capital Efficiency & Runway Tool",
+      "metaDescription": "Calculate your startup's SaaS Burn Multiple and cash runway. Benchmark your capital efficiency against David Sacks' Craft Ventures scale. Free finance tool.",
+      "whatIsThis": "A venture finance utility that measures how efficiently a subscription software startup consumes cash to generate net new Annual Recurring Revenue (ARR).",
+      "howItWorks": "1. Enter net cash burned and net new ARR added over the evaluation period.\n2. Enter current cash in bank.\n3. View Burn Multiple multiple, efficiency grade, monthly burn rate, and runway in months.",
+      "whyUseIt": "Diagnoses whether your startup is burning capital productively or wasting runway before pitching venture investors.",
+      "faqs": [
+        {
+          "question": "What is a good SaaS Burn Multiple?",
+          "answer": "According to David Sacks (Craft Ventures): Under 1.0x is 'Amazing' (venture top-tier). 1.0x to 1.5x is 'Good'. 1.5x to 2.0x is 'Suspect'. Anything over 2.0x is 'Dangerous / Leaky' and requires immediate cost discipline."
+        },
+        {
+          "question": "Why is Burn Multiple better than gross burn rate?",
+          "answer": "Gross burn only tells you how much money you spend. Burn Multiple connects what you spent to what you accomplished (net new ARR), revealing whether high spending actually generates enterprise value."
+        }
+      ]
+    }
+  },
+  {
+    "id": "aspect-ratio-hexagonal-pixel-to-hex-picker",
+    "name": "Hexagonal Tile Coordinate Picker (Screen Pixel to Hex)",
+    "slug": "aspect-ratio-hexagonal-pixel-to-hex-picker",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "pixel to hex calculator",
+      "screen pixel to hexagonal tile picker",
+      "pointy top hex coordinate picking math",
+      "flat top hex mouse click to tile calculator",
+      "cube rounding hex picking algorithm",
+      "red blob games pixel to hex converter"
+    ],
+    "primaryKeywords": [
+      "pixel to hex calculator",
+      "screen to hex picker",
+      "hex tile click math",
+      "hexagonal coordinate picker"
+    ],
+    "secondaryKeywords": [
+      "cube rounding nearest discrete integer hex vector",
+      "fractional q r to rounded axial column row coordinate",
+      "snapped center pixel position pointy flat orientation"
+    ],
+    "targetUsers": [
+      "Game Developers (Godot / Unity / Phaser)",
+      "Hexagonal Tilemap Engine Developers",
+      "Strategy Game Programmers",
+      "Interactive Map Creators"
+    ],
+    "badge": "Design",
+    "userProblem": "Game developers implementing mouse click selection, hover highlights, or touch controls on hexagonal tilemaps struggle with the matrix mathematics required to convert screen pixel coordinates `(X, Y)` into discrete hex tile coordinates `(q, r)`.",
+    "searchIntent": "Calculate screen pixel to hexagonal tile coordinate picking with cube rounding for pointy-topped and flat-topped hexes.",
+    "resultInterpretation": "Calculates fractional coordinates, applies cube rounding to identify the discrete Axial `(q, r)` and Cube `(x, y, z)` tile, returns snapped center pixel coordinates, and provides copy-ready TypeScript/JavaScript picking functions.",
+    "practicalGuidance": "Cube rounding is the cleanest mathematical method for hex picking: convert to 3D cube coordinates, round each axis, and adjust the axis with the largest rounding error to enforce $x + y + z = 0$.",
+    "limitations": "Calculates standard regular planar hexagonal geometry.",
+    "formula": "Pointy: q = (sqrt(3)/3*x - 1/3*y)/size, r = (2/3*y)/size; Cube Rounding: enforce rx + ry + rz = 0",
+    "trustNotes": "100% Client-Side calculation.",
+    "related": [
+      "aspect-ratio-hexagonal-axial-to-cube-converter",
+      "aspect-ratio-hexagonal-grid-calculator",
+      "aspect-ratio-staggered-isometric-brick-grid-calculator",
+      "aspect-ratio-isometric-pixel-art-grid-calculator"
+    ],
+    "seo": {
+      "title": "Screen Pixel to Hex Tile Picker — Hexagonal Click Math Tool",
+      "metaDescription": "Convert screen mouse pixels (X, Y) to hexagonal tile coordinates (q, r). Supports pointy-top, flat-top, and cube rounding. Free game dev tool.",
+      "whatIsThis": "A game development geometry utility that translates screen pixel coordinates into exact hexagonal tile grid indices using cube rounding.",
+      "howItWorks": "1. Enter mouse screen coordinates (X, Y) and hex size/radius.\n2. Choose Pointy-Top or Flat-Top orientation.\n3. View discrete Axial/Cube tile indices, snapped center pixels, and copy TypeScript code.",
+      "whyUseIt": "Eliminates inaccurate hit-testing and edge-selection bugs on interactive hexagonal game maps.",
+      "faqs": [
+        {
+          "question": "What is the Cube Rounding algorithm in hex grids?",
+          "answer": "When converting pixel coordinates to hexes, the resulting coordinates are floating-point numbers. Cube rounding rounds each axis to the nearest integer, then recalculates the axis with the largest deviation to guarantee the invariant `rx + ry + rz = 0`."
+        },
+        {
+          "question": "What is the difference between pointy-topped and flat-topped hexagons?",
+          "answer": "Pointy-topped hexagons have a vertical vertex at the top and bottom, while flat-topped hexagons have horizontal edges at the top and bottom. The projection formulas differ by a 30-degree rotation."
+        }
+      ]
+    }
+  },
+  {
+    "id": "crontab-to-google-cloud-scheduler-converter",
+    "name": "Crontab to Google Cloud Scheduler Job Generator",
+    "slug": "crontab-to-google-cloud-scheduler-converter",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "cron to google cloud scheduler",
+      "gcloud scheduler jobs create http generator",
+      "terraform google cloud scheduler job generator",
+      "convert crontab to gcp scheduler",
+      "cloud run scheduled trigger cron generator",
+      "gcp cron timezone converter"
+    ],
+    "primaryKeywords": [
+      "cron to cloud scheduler",
+      "gcloud scheduler generator",
+      "google cloud scheduler cron",
+      "terraform cloud scheduler job"
+    ],
+    "secondaryKeywords": [
+      "gcloud scheduler jobs create http uri oidc service account",
+      "terraform google cloud scheduler job http target oidc token",
+      "iana time zone name etc utc america new york"
+    ],
+    "targetUsers": [
+      "Google Cloud Platform (GCP) Engineers",
+      "Cloud Run & Cloud Functions Developers",
+      "DevOps & SRE Engineers",
+      "Terraform Infrastructure Developers"
+    ],
+    "badge": "High Usage",
+    "userProblem": "GCP developers automating batch tasks, Cloud Run services, or HTTP webhooks need to generate correct `gcloud scheduler jobs create http` CLI commands and Terraform resources with OIDC service account authentication and IANA timezones.",
+    "searchIntent": "Convert standard crontabs into Google Cloud Scheduler CLI commands and Terraform IaC definitions.",
+    "resultInterpretation": "Validates 5-field cron syntax, associates target HTTP endpoints and IANA timezones, and generates copy-ready `gcloud scheduler` CLI commands and Terraform `google_cloud_scheduler_job` resources with OIDC authentication.",
+    "practicalGuidance": "Google Cloud Scheduler uses standard unix-cron format (5 fields) and natively supports IANA timezone names (e.g. `America/New_York`), accounting for Daylight Saving Time automatically.",
+    "limitations": "Generates Google Cloud Scheduler HTTP target format.",
+    "formula": "Schedule: minute hour day-of-month month day-of-week + IANA Timezone",
+    "trustNotes": "100% Client-Side generation.",
+    "related": [
+      "crontab-to-cloudwatch-events-converter",
+      "crontab-to-azure-functions-schedule-converter",
+      "crontab-to-aws-eventbridge-converter",
+      "crontab-to-kubernetes-cronjob-converter"
+    ],
+    "seo": {
+      "title": "Crontab to Google Cloud Scheduler — gcloud CLI & Terraform Tool",
+      "metaDescription": "Convert standard crontabs into Google Cloud Scheduler jobs. Generates gcloud CLI commands and Terraform resources with OIDC auth. Free GCP tool.",
+      "whatIsThis": "A cloud serverless utility that converts standard Linux crontabs into Google Cloud Scheduler job definitions and Infrastructure-as-Code scripts.",
+      "howItWorks": "1. Enter 5-field cron or pick a preset.\n2. Enter job name, IANA timezone, and target endpoint URL.\n3. Copy the production-ready `gcloud` CLI command or Terraform resource block.",
+      "whyUseIt": "Accelerates deployment of scheduled HTTP triggers and Cloud Run batch jobs in GCP.",
+      "faqs": [
+        {
+          "question": "Does Google Cloud Scheduler support timezones?",
+          "answer": "Yes. Google Cloud Scheduler natively supports full IANA timezone database names (e.g., `America/New_York`, `Europe/London`), and automatically handles Daylight Saving Time transitions."
+        },
+        {
+          "question": "How does Cloud Scheduler authenticate to private Cloud Run services?",
+          "answer": "By adding an `--oidc-service-account-email` flag to the scheduler job, Google Cloud generates a secure OIDC Bearer token on every invocation to authenticate against Cloud Run IAM roles."
+        }
+      ]
+    }
+  },
+  {
+    "id": "qsbs-qualified-small-business-stock-tax-exemption-calculator",
+    "name": "IRS Section 1202 Qualified Small Business Stock (QSBS) Tax Exemption Calculator",
+    "slug": "qsbs-qualified-small-business-stock-tax-exemption-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "qsbs calculator",
+      "qualified small business stock calculator",
+      "section 1202 tax exemption calculator",
+      "qsbs 10 million or 10x basis calculator",
+      "startup founder qsbs capital gains calculator",
+      "angel investor qsbs tax savings calculator"
+    ],
+    "primaryKeywords": [
+      "qsbs calculator",
+      "section 1202 calculator",
+      "qualified small business stock",
+      "qsbs tax exemption"
+    ],
+    "secondaryKeywords": [
+      "statutory cap greater of 10 million or 10x basis",
+      "five year holding period 100 percent exclusion after 2010",
+      "federal capital gains 20 percent plus 3.8 niit avoided"
+    ],
+    "targetUsers": [
+      "Startup Founders & Co-Founders",
+      "Angel Investors & VC Limited Partners",
+      "Early Startup Employees with Exercised Stock",
+      "Wealth Advisors & CPA Tax Planners"
+    ],
+    "badge": "Popular",
+    "userProblem": "Startup founders, early employees, and angel investors selling shares need to calculate their tax exemption under IRC Section 1202 QSBS rules, determining whether the $10M cap or 10x basis cap applies, and estimating federal capital gains taxes saved.",
+    "searchIntent": "Calculate QSBS Section 1202 capital gains exclusion, tax-free gains, and federal tax savings.",
+    "resultInterpretation": "Calculates gross capital gains, determines the statutory exclusion ceiling (greater of $10M or 10x Basis), applies acquisition date percentage rules (100% after 2010), verifies the 5-year holding period, and estimates total federal taxes saved.",
+    "practicalGuidance": "For stock acquired after September 27, 2010, the federal exclusion is 100% and is completely exempt from both Alternative Minimum Tax (AMT) and the 3.8% Net Investment Income Tax (NIIT).",
+    "limitations": "Models federal IRC Section 1202 statutory rules. Note that certain states (notably California) do not conform to federal QSBS exemptions.",
+    "formula": "Exclusion_Cap = Max(10000000, 10 * Basis); Tax_Free = Min(Gain, Exclusion_Cap) * Pct; Taxes_Saved = Tax_Free * 23.8%",
+    "trustNotes": "100% Client-Side financial modeling.",
+    "related": [
+      "business-valuation-sde-ebitda-multiple-calculator",
+      "solo-401k-contribution-calculator",
+      "mega-backdoor-roth-solo-401k-calculator",
+      "cagr-calculator"
+    ],
+    "seo": {
+      "title": "QSBS Calculator — Section 1202 Tax Exemption & $10M Cap Tool",
+      "metaDescription": "Calculate IRS Section 1202 Qualified Small Business Stock (QSBS) capital gains exemptions. Compare $10M vs 10x basis caps and calculate tax savings. Free tool.",
+      "whatIsThis": "A wealth and tax planning utility that calculates the federal capital gains tax exclusion under Section 1202 Qualified Small Business Stock (QSBS) rules.",
+      "howItWorks": "1. Enter original share cost basis and total exit sale proceeds.\n2. Enter holding period in years and select acquisition date bracket.\n3. View 100% tax-free capital gains, statutory exclusion ceiling, and federal taxes saved.",
+      "whyUseIt": "Maximizes legal tax-free exit wealth for tech founders, early startup hires, and angel investors.",
+      "faqs": [
+        {
+          "question": "What is the statutory cap on Section 1202 QSBS exclusions?",
+          "answer": "Under IRC Section 1202, the maximum tax-free capital gain per taxpayer per company is the GREATER of $10,000,000 OR 10 times the taxpayer's adjusted aggregate cost basis in the stock."
+        },
+        {
+          "question": "What is the minimum holding period for QSBS?",
+          "answer": "The stock must be held continuously for at least 5 years from the date of issuance (or option exercise date) to qualify for Section 1202 capital gains exclusion."
+        }
+      ]
+    }
+  },
+  {
+    "id": "svg-circle-progress-ring-calculator",
+    "name": "SVG Circular Progress Bar & Radial Gauge Ring Calculator",
+    "slug": "svg-circle-progress-ring-calculator",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "svg circle progress bar calculator",
+      "svg radial gauge ring generator",
+      "stroke dasharray circle circumference calculator",
+      "svg activity ring progress calculator",
+      "react svg circular progress component generator",
+      "dashoffset circular progress ring calculator"
+    ],
+    "primaryKeywords": [
+      "svg circle progress calculator",
+      "svg circular progress bar",
+      "radial progress ring generator",
+      "stroke dashoffset circle calculator"
+    ],
+    "secondaryKeywords": [
+      "circumference 2 pi r stroke dasharray dashoffset",
+      "rotate minus 90 deg round butt stroke linecap",
+      "react component inline svg css transition ease out"
+    ],
+    "targetUsers": [
+      "Frontend Developers",
+      "UI Designers",
+      "Dashboard & Analytics Engineers",
+      "Design System Creators"
+    ],
+    "badge": "Design",
+    "userProblem": "Web developers creating Apple Watch style activity rings, radial gauges, and circular progress indicators struggle to calculate exact circle circumferences (2 * pi * r), responsive `viewBox` coordinates, and dynamic `stroke-dashoffset` percentages.",
+    "searchIntent": "Calculate SVG circular progress ring geometry, circumference, and dashoffset, generating React JSX and pure HTML code.",
+    "resultInterpretation": "Calculates circle circumference, exact `stroke-dashoffset` for the target percentage, computes padded viewBox dimensions, displays a live interactive progress preview, and exports copy-ready React and HTML/CSS snippets.",
+    "practicalGuidance": "Rotating the SVG by `-90deg` (`transform: rotate(-90deg)`) ensures the progress arc starts at the 12 o'clock top position rather than 3 o'clock.",
+    "limitations": "Generates SVG 1.1 / 2.0 circular geometry code.",
+    "formula": "C = 2 * PI * r; Dashoffset = C - (Percentage / 100) * C; ViewBox = (r + strokeWidth) * 2",
+    "trustNotes": "100% Client-Side calculation.",
+    "related": [
+      "svg-stroke-dasharray-animator",
+      "svg-viewbox-aspect-ratio-slicer",
+      "svg-path-visualizer-optimizer",
+      "aspect-ratio-calculator"
+    ],
+    "seo": {
+      "title": "SVG Circular Progress Ring Calculator — Radial Gauge Tool",
+      "metaDescription": "Calculate SVG circular progress bar geometry, circumference (2πr), and stroke-dashoffset. Generates React and HTML/CSS code with live preview. Free tool.",
+      "whatIsThis": "A creative web design utility that calculates circle circumference and stroke-dashoffset math for responsive SVG radial progress rings.",
+      "howItWorks": "1. Adjust circle radius, stroke width, and percentage.\n2. Choose stroke color and line cap style (round or butt).\n3. View the live animated gauge and copy the React component or HTML snippet.",
+      "whyUseIt": "Eliminates mathematical guesswork when building dashboard KPI meters and fitness activity rings.",
+      "faqs": [
+        {
+          "question": "How is the circular progress dashoffset calculated?",
+          "answer": "First, the circumference is calculated as `C = 2 * Math.PI * radius`. Then, the dashoffset is calculated as `C - (percentage / 100) * C`. When `stroke-dasharray` is set to `C`, this reveals exactly the desired arc length."
+        },
+        {
+          "question": "Why does an unrotated SVG circle start at the 3 o'clock position?",
+          "answer": "In standard SVG trigonometry, 0 radians corresponds to the positive X-axis (the 3 o'clock position). Rotating the SVG element by `-90deg` shifts the start point to the top (12 o'clock)."
+        }
+      ]
+    }
+  },
+  {
+    "id": "heart-rate-recovery-hrr-fitness-calculator",
+    "name": "Heart Rate Recovery (HRR) Post-Exercise Fitness Calculator",
+    "slug": "heart-rate-recovery-hrr-fitness-calculator",
+    "category": "health",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "heart rate recovery calculator",
+      "hrr post exercise fitness calculator",
+      "1 minute heart rate recovery calculator",
+      "vagal reactivation heart rate calculator",
+      "cardiology heart rate recovery mortality risk",
+      "2 minute heart rate recovery drop assessment"
+    ],
+    "primaryKeywords": [
+      "heart rate recovery calculator",
+      "hrr calculator",
+      "post exercise heart rate drop",
+      "vagal recovery calculator"
+    ],
+    "secondaryKeywords": [
+      "peak exercise hr minus 1 minute recovery bpm drop",
+      "cole et al nejm clinical threshold 12 bpm abnormal",
+      "parasympathetic autonomic nervous system conditioning"
+    ],
+    "targetUsers": [
+      "Endurance Athletes & Runners",
+      "Cardiologists & Sports Medicine Clinicians",
+      "Personal Trainers & Strength Coaches",
+      "Longevity Enthusiasts (Peter Attia / Huberman Lab followers)"
+    ],
+    "badge": "Popular",
+    "userProblem": "Athletes and fitness trackers need to evaluate their 1-minute and 2-minute post-workout heart rate drops to assess parasympathetic vagal reactivation, cardiovascular conditioning, and clinical autonomic health.",
+    "searchIntent": "Calculate Heart Rate Recovery (HRR) drops at 1 and 2 minutes post-exercise and benchmark against clinical cardiology standards.",
+    "resultInterpretation": "Calculates 1-minute and 2-minute bpm drops from peak exercise heart rate, adjusts for standing vs seated recovery posture, and grades autonomic conditioning against clinical standards (Cole et al., NEJM: <= 12 bpm abnormal, 13-20 bpm normal, 21-30 bpm good, > 30 bpm elite).",
+    "practicalGuidance": "Heart rate recovery is primarily driven by parasympathetic nervous system reactivation. A fast drop indicates strong autonomic tone and lower all-cause mortality risk.",
+    "limitations": "Calculates clinical sports cardiology guidelines.",
+    "formula": "HRR_1min = Peak_HR - 1Min_HR; HRR_2min = Peak_HR - 2Min_HR",
+    "trustNotes": "100% Client-Side health calculation.",
+    "related": [
+      "heart-rate-reserve-karvonen-calculator",
+      "target-heart-rate-zone-calculator",
+      "vo2-max-running-fitness-calculator",
+      "pace-splits-marathon-calculator"
+    ],
+    "seo": {
+      "title": "Heart Rate Recovery Calculator — 1-Min & 2-Min Post-Exercise Tool",
+      "metaDescription": "Calculate 1-minute and 2-minute Heart Rate Recovery (HRR) post-exercise. Assess parasympathetic vagal reactivation and fitness rating. Free health tool.",
+      "whatIsThis": "A cardiovascular health utility that evaluates autonomic nervous system conditioning by measuring heart rate deceleration following peak exertion.",
+      "howItWorks": "1. Enter peak heart rate at the immediate end of exercise.\n2. Enter heart rate at 1 minute and 2 minutes of complete rest.\n3. View 1-min and 2-min bpm drop, fitness tier, and clinical cardiology assessment.",
+      "whyUseIt": "Provides a powerful, non-invasive biomarker of cardiovascular recovery and autonomic health.",
+      "faqs": [
+        {
+          "question": "What is a normal 1-minute Heart Rate Recovery drop?",
+          "answer": "In clinical cardiology (Cole et al., New England Journal of Medicine), a drop of 13 to 20 bpm in the first minute of standing rest is considered normal/average. A drop greater than 20 bpm indicates good fitness, and over 30 bpm indicates elite endurance conditioning."
+        },
+        {
+          "question": "Why is an HRR drop of 12 bpm or less considered abnormal?",
+          "answer": "A drop of 12 bpm or less during standing recovery suggests delayed parasympathetic reactivation (autonomic dysfunction) and has been linked in longitudinal clinical studies to higher cardiovascular risk."
+        }
+      ]
+    }
   }
 ]
