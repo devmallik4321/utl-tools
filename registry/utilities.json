@@ -15439,5 +15439,645 @@
         }
       ]
     }
+  },
+  {
+    "id": "curl-to-clojure-clj-http-converter",
+    "name": "cURL to Clojure (clj-http & babashka) Code Converter",
+    "slug": "curl-to-clojure-clj-http-converter",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "curl to clojure converter",
+      "convert curl to clj-http",
+      "curl to babashka http client",
+      "clojure api request from curl",
+      "curl to clojure code online",
+      "clj-http client post from curl"
+    ],
+    "primaryKeywords": [
+      "curl to clojure converter",
+      "convert curl to clojure",
+      "curl to clj-http",
+      "curl to babashka"
+    ],
+    "secondaryKeywords": [
+      "functional clojure http request map headers body",
+      "babashka http client cli script from curl",
+      "cheshire json parse clojure api request"
+    ],
+    "targetUsers": [
+      "Clojure Developers",
+      "Babashka Script Writers",
+      "Backend Engineers",
+      "Functional Programming Engineers"
+    ],
+    "badge": "High Usage",
+    "userProblem": "Clojure and Babashka developers consuming REST APIs need to convert bash cURL command-line snippets into idiomatic Clojure maps using `clj-http.client` or lightweight `babashka.http-client`.",
+    "searchIntent": "Convert bash cURL commands into idiomatic Clojure clj-http and babashka HTTP request code.",
+    "resultInterpretation": "Parses cURL commands into clean Clojure `client/post` or `http/get` function invocations with options maps for `:headers`, `:body`, and JSON decoding.",
+    "practicalGuidance": "Generates clean Lisp syntax compatible with Leiningen, deps.edn, and Babashka scripting tasks.",
+    "limitations": "Parses standard HTTP/HTTPS cURL CLI syntax.",
+    "formula": "CLI AST Parser: cURL Command ➔ Clojure clj-http / babashka S-Expression Synthesis",
+    "trustNotes": "100% Client-Side. Zero API keys or tokens transmitted.",
+    "related": [
+      "curl-to-r-httr-converter",
+      "curl-to-python-requests-converter",
+      "curl-to-powershell-restmethod-converter",
+      "curl-to-rust-reqwest-converter"
+    ],
+    "seo": {
+      "title": "cURL to Clojure Converter — Convert cURL to clj-http & Babashka Online",
+      "metaDescription": "Convert cURL commands to Clojure clj-http and babashka.http-client code online. Formats headers, JSON bodies, and response parsing. Free developer tool.",
+      "whatIsThis": "A developer programming utility that translates bash cURL commands into clean Clojure HTTP requests.",
+      "howItWorks": "1. Select standard `clj-http.client` or `babashka.http-client`.\n2. Paste your cURL command into the editor.\n3. Copy the clean Clojure code in 1 click.",
+      "whyUseIt": "Eliminates tedious manual syntax translation when interacting with REST APIs in Clojure.",
+      "faqs": [
+        {
+          "question": "What is the difference between clj-http and babashka.http-client?",
+          "answer": "clj-http is the standard feature-complete Clojure HTTP library built on Apache HttpComponents. babashka.http-client is a lightweight, zero-dependency client built on Java 11+ HttpClient, optimized for fast Babashka scripts and GraalVM native images."
+        },
+        {
+          "question": "Are my secret authorization tokens sent over the network?",
+          "answer": "No. All parsing and code generation is executed 100% locally inside your browser memory using JavaScript regular expressions and string synthesis."
+        }
+      ]
+    }
+  },
+  {
+    "id": "mortgage-recast-savings-calculator",
+    "name": "Mortgage Recast Savings & Payment Reduction Calculator",
+    "slug": "mortgage-recast-savings-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "mortgage recast calculator",
+      "mortgage recast savings calculator",
+      "how much does a mortgage recast save",
+      "recast mortgage lump sum payment calculator",
+      "mortgage recast vs refinance calculator",
+      "re-amortization calculator mortgage"
+    ],
+    "primaryKeywords": [
+      "mortgage recast calculator",
+      "mortgage recast savings",
+      "recast mortgage calculator",
+      "re-amortization calculator"
+    ],
+    "secondaryKeywords": [
+      "lump sum principal payment monthly reduction",
+      "mortgage recast fee 250 vs refinance costs",
+      "recast savings on 30 year fixed mortgage"
+    ],
+    "targetUsers": [
+      "Homeowners",
+      "Mortgage Borrowers",
+      "Real Estate Investors",
+      "Financial Planners"
+    ],
+    "badge": "Popular",
+    "userProblem": "Homeowners who have extra cash (from an inheritance, bonus, or sale of another property) need to calculate how much a lump-sum mortgage recast will lower their monthly payment and save in lifetime interest without refinancing.",
+    "searchIntent": "Calculate the reduction in monthly mortgage payments and lifetime interest saved after a lump-sum principal recast.",
+    "resultInterpretation": "Calculates the new lower monthly principal and interest payment, immediate monthly cash flow savings, total lifetime interest saved, and net financial benefit after the lender's recast administrative fee.",
+    "practicalGuidance": "Unlike refinancing, a mortgage recast does not require a home appraisal, credit check, or thousands in closing costs—most lenders charge only a nominal $250 administrative fee.",
+    "limitations": "Models fixed-rate conventional mortgage recasting.",
+    "formula": "New_PMT = [New_Balance * (r * (1+r)^n)] / [(1+r)^n - 1]; Interest_Saved = Total_Orig_Interest - Total_New_Interest",
+    "trustNotes": "100% Client-Side financial modeling.",
+    "related": [
+      "mortgage-payment-calculator",
+      "mortgage-amortization-schedule-visualizer",
+      "loan-refinance-savings-calculator",
+      "home-equity-loan-heloc-calculator"
+    ],
+    "seo": {
+      "title": "Mortgage Recast Calculator — Monthly Payment & Interest Savings Tool",
+      "metaDescription": "Calculate how much a lump-sum principal recast lowers your monthly mortgage payment and saves in lifetime interest. Compare fees and cash flow. Free tool.",
+      "whatIsThis": "A mortgage re-amortization utility that calculates payment reductions and interest savings from a principal recast.",
+      "howItWorks": "1. Enter current loan balance, interest rate, and remaining years.\n2. Enter your lump-sum payment and lender recast fee.\n3. View your new lower monthly payment and lifetime interest saved.",
+      "whyUseIt": "Shows the exact financial return and monthly cash flow boost of recasting vs refinancing.",
+      "faqs": [
+        {
+          "question": "What is a mortgage recast?",
+          "answer": "A mortgage recast occurs when you make a large lump-sum payment toward your mortgage principal and your lender re-amortizes the remaining balance over your existing term, lowering your monthly payment without changing your interest rate."
+        },
+        {
+          "question": "Which mortgages qualify for recasting?",
+          "answer": "Most conventional Fannie Mae and Freddie Mac loans allow recasting. FHA, VA, and USDA government-backed loans generally do not permit recasting."
+        }
+      ]
+    }
+  },
+  {
+    "id": "css-neumorphism-soft-ui-generator",
+    "name": "CSS Neumorphism (Soft UI) Box-Shadow Generator",
+    "slug": "css-neumorphism-soft-ui-generator",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "css neumorphism generator",
+      "soft ui generator css",
+      "neumorphic box shadow generator",
+      "pure css neumorphism maker",
+      "neumorphism concave convex flat inset generator",
+      "soft ui card css generator online"
+    ],
+    "primaryKeywords": [
+      "css neumorphism generator",
+      "neumorphism generator",
+      "soft ui generator",
+      "neumorphic css"
+    ],
+    "secondaryKeywords": [
+      "dual complementary box shadow light dark css",
+      "inset pressed soft ui button css",
+      "concave convex neumorphic gradient background"
+    ],
+    "targetUsers": [
+      "UI/UX Designers",
+      "Frontend Developers",
+      "App Designers",
+      "Design System Engineers"
+    ],
+    "badge": "Design",
+    "userProblem": "Designers and web developers building tactile, minimal interfaces need an interactive visual tool to generate dual-shadow CSS Neumorphic (Soft UI) rules with flat, concave, convex, and inset pressed states.",
+    "searchIntent": "Generate pure CSS Neumorphic Soft UI dual box-shadows, gradients, and border-radius rules with live visual controls.",
+    "resultInterpretation": "Calculates complementary light and dark shadow vectors, subtle surface gradients, distance, blur, and curvature, rendering a live interactive preview and production CSS.",
+    "practicalGuidance": "Neumorphism relies on the background color being the same as the element surface, using subtle highlights and drop-shadows to simulate extruded material.",
+    "limitations": "Generates CSS3 dual box-shadow and linear-gradient syntax.",
+    "formula": "Dual Shadow Synthesis: box-shadow: d px d px b px DarkColor, -d px -d px b px LightColor",
+    "trustNotes": "100% Client-Side visual rendering.",
+    "related": [
+      "css-glassmorphism-generator",
+      "css-box-shadow-generator",
+      "css-mesh-gradient-generator",
+      "css-conic-gradient-pie-chart-generator"
+    ],
+    "seo": {
+      "title": "CSS Neumorphism Generator — Soft UI Box-Shadow & Shapes Online",
+      "metaDescription": "Create modern Neumorphic Soft UI components with interactive dual-shadow and gradient controls. Supports flat, concave, convex, and inset shapes. Free CSS tool.",
+      "whatIsThis": "A visual design utility that creates tactile Neumorphic (Soft UI) CSS box-shadows and surface gradients.",
+      "howItWorks": "1. Pick a surface shape: Flat, Concave, Convex, or Inset.\n2. Adjust color, distance, blur, and border radius.\n3. Copy the production CSS snippet in 1 click.",
+      "whyUseIt": "Quickly produces clean, mathematically balanced Soft UI shadows without manual color channel calculations.",
+      "faqs": [
+        {
+          "question": "What is Neumorphism in UI design?",
+          "answer": "Neumorphism (Soft UI) is a visual design trend that combines flat design with subtle skeuomorphic depth, using dual light and dark shadows to make flat elements appear extruded from the background."
+        },
+        {
+          "question": "How do you achieve accessibility with Neumorphism?",
+          "answer": "Ensure inner typography and icons maintain high contrast (at least 4.5:1 ratio against the background) and avoid relying solely on subtle shadow boundaries for essential form inputs."
+        }
+      ]
+    }
+  },
+  {
+    "id": "dns-spf-record-builder",
+    "name": "DNS SPF Record Generator & Policy Builder",
+    "slug": "dns-spf-record-builder",
+    "category": "network",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "spf record generator",
+      "dns spf builder",
+      "create spf record online",
+      "spf txt record generator",
+      "google workspace spf record generator",
+      "microsoft 365 spf record builder"
+    ],
+    "primaryKeywords": [
+      "spf record generator",
+      "spf builder",
+      "dns spf generator",
+      "spf record builder"
+    ],
+    "secondaryKeywords": [
+      "v=spf1 include google outlook sendgrid all",
+      "rfc 7208 10 dns lookup limit validator",
+      "softfail tilde all vs hardfail dash all spf"
+    ],
+    "targetUsers": [
+      "Domain Administrators",
+      "Email Deliverability Engineers",
+      "DevOps Professionals",
+      "IT Managers"
+    ],
+    "badge": "Network",
+    "userProblem": "Domain owners and IT administrators configuring email deliverability and protecting domains against spoofing need a visual generator to create valid `v=spf1` TXT records for Google Workspace, Microsoft 365, SendGrid, and custom relays while monitoring the RFC 10-lookup limit.",
+    "searchIntent": "Build valid DNS SPF TXT records with provider includes, IP ranges, fail policies, and lookup validation.",
+    "resultInterpretation": "Constructs valid RFC 7208 SPF TXT records, generates BIND zone file lines, tracks total DNS lookup mechanisms against the 10-lookup limit, and provides terminal `dig` verification commands.",
+    "practicalGuidance": "Never create more than one SPF TXT record for a domain; having multiple SPF records causes permanent SPF validation failure (PermError) across all email providers.",
+    "limitations": "Generates RFC 7208 standard SPF syntax.",
+    "formula": "SPF Syntax Synthesis: v=spf1 [mx] [a] [include:providers...] [ip4/ip6:ranges...] [policy_all]",
+    "trustNotes": "100% Client-Side. Zero DNS requests made.",
+    "related": [
+      "email-dns-records-generator",
+      "reverse-dns-ptr-record-generator",
+      "dns-record-generator",
+      "dns-lookup"
+    ],
+    "seo": {
+      "title": "SPF Record Generator — DNS Email Authentication & Policy Builder",
+      "metaDescription": "Create valid DNS SPF TXT records for Google Workspace, Microsoft 365, SendGrid, and custom relays. Validates RFC 10-lookup limit. 100% private. Free tool.",
+      "whatIsThis": "A domain security utility that constructs RFC 7208 compliant SPF email authentication records.",
+      "howItWorks": "1. Enter your domain name and select your email providers (Google, Office 365, SendGrid, etc.).\n2. Add custom relay IP addresses and choose a fail policy (~all or -all).\n3. Copy the DNS TXT record and BIND zone entry in 1 click.",
+      "whyUseIt": "Prevents email spoofing and ensures reliable inbox deliverability by eliminating syntax errors in SPF records.",
+      "faqs": [
+        {
+          "question": "What is the 10-lookup limit in SPF records?",
+          "answer": "RFC 7208 specifies that an SPF check must not perform more than 10 DNS lookups (from `include`, `a`, `mx`, `ptr`, and `exists` mechanisms). Exceeding 10 lookups causes receiving mail servers to return an SPF PermError and reject or spam your email."
+        },
+        {
+          "question": "Should I use ~all or -all at the end of my SPF record?",
+          "answer": "Modern email authentication best practice paired with DMARC recommends using `~all` (SoftFail). It allows legitimate forwarded emails to be authenticated by DKIM without getting immediately rejected by strict SMTP servers."
+        }
+      ]
+    }
+  },
+  {
+    "id": "land-loan-financing-calculator",
+    "name": "Raw Land & Lot Loan Financing Calculator",
+    "slug": "land-loan-financing-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "land loan calculator",
+      "raw land financing calculator",
+      "lot loan payment calculator",
+      "unimproved land mortgage calculator",
+      "land down payment calculator",
+      "acreage loan calculator"
+    ],
+    "primaryKeywords": [
+      "land loan calculator",
+      "raw land loan calculator",
+      "lot loan calculator",
+      "land financing calculator"
+    ],
+    "secondaryKeywords": [
+      "raw land down payment 30 to 50 percent",
+      "improved lot vs raw undeveloped land loan terms",
+      "monthly payment land loan interest rate"
+    ],
+    "targetUsers": [
+      "Land Buyers",
+      "Acreage Investors",
+      "Custom Home Builders",
+      "Rural Property Buyers"
+    ],
+    "badge": "Popular",
+    "userProblem": "Property buyers purchasing raw land, undeveloped acreage, or build-ready lots need to calculate required down payments (20% to 50%), monthly payments, and interest costs under unique land lending terms.",
+    "searchIntent": "Calculate required down payments, monthly payments, and total financing costs for raw, unimproved, or improved land loans.",
+    "resultInterpretation": "Calculates required cash down payment across land types (raw, unimproved, improved), monthly principal and interest, property tax escrow, and total lifetime interest across 5, 10, 15, or 20-year terms.",
+    "practicalGuidance": "Lenders consider raw land high risk because it produces no immediate rental income and has no collateral building; expect 30% to 50% down payments and 1% to 2% higher interest rates than home mortgages.",
+    "limitations": "Models standard commercial and agricultural land loan financing.",
+    "formula": "Down = Price * DownPct; Principal = Price - Down; PMT = [Principal * (r*(1+r)^n)] / [(1+r)^n - 1]",
+    "trustNotes": "100% Client-Side financial calculation.",
+    "related": [
+      "mortgage-payment-calculator",
+      "down-payment-savings-timeline-calculator",
+      "real-estate-cash-on-cash-return-calculator",
+      "loan-calculator"
+    ],
+    "seo": {
+      "title": "Land Loan Calculator — Raw Land & Lot Financing Tool",
+      "metaDescription": "Calculate down payments (20%-50%), monthly payments, and interest costs for raw land, acreage, and build-ready lots. Free real estate finance tool.",
+      "whatIsThis": "A real estate financing utility that models loan terms and down payments specifically for land and lot purchases.",
+      "howItWorks": "1. Select land type: Raw Undeveloped, Unimproved, or Improved Lot.\n2. Enter purchase price, down payment percentage, interest rate, and term.\n3. View required cash at closing, monthly payment, and total financing costs.",
+      "whyUseIt": "Accurately plans the capital required for purchasing land before building a custom home.",
+      "faqs": [
+        {
+          "question": "How much down payment is required for a land loan?",
+          "answer": "Improved lots with road access and utility hookups typically require 15% to 25% down. Unimproved land requires 25% to 35% down, while completely raw undeveloped acreage usually requires 35% to 50% down."
+        },
+        {
+          "question": "Can I roll land financing into a construction loan later?",
+          "answer": "Yes. Once you are ready to build, you can refinance your existing land loan into a single construction-to-permanent loan, using the land's equity toward your new mortgage down payment."
+        }
+      ]
+    }
+  },
+  {
+    "id": "aspect-ratio-video-wall-led-display-calculator",
+    "name": "Modular LED Video Wall Display & Processor Grid Calculator",
+    "slug": "aspect-ratio-video-wall-led-display-calculator",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "led video wall calculator",
+      "video wall aspect ratio calculator",
+      "led panel resolution calculator",
+      "novastar processor port calculator",
+      "modular led display grid calculator",
+      "led screen dimensions and power calculator"
+    ],
+    "primaryKeywords": [
+      "led video wall calculator",
+      "video wall calculator",
+      "led display resolution calculator",
+      "led wall aspect ratio"
+    ],
+    "secondaryKeywords": [
+      "500x500mm led cabinet columns rows total pixels",
+      "gigabit data ports required 650000 pixels 60hz",
+      "peak power kw calculation led video wall"
+    ],
+    "targetUsers": [
+      "AV Technicians",
+      "Event Production Designers",
+      "Broadcast Engineers",
+      "Stage Managers"
+    ],
+    "badge": "Design",
+    "userProblem": "Event production engineers, broadcast technicians, and AV designers configuring modular LED video walls need to calculate total pixel resolution, aspect ratio (matching 16:9), physical dimensions, processor Gigabit port loads, and power requirements.",
+    "searchIntent": "Calculate native pixel resolution, aspect ratio, physical size, processor ports, and power draw for modular LED video wall grids.",
+    "resultInterpretation": "Calculates total width and height in pixels and megapixels, aspect ratio match, physical size in meters and feet, NovaStar/Brompton Gigabit port requirements, and peak power draw in kilowatts.",
+    "practicalGuidance": "To display standard 1080p or 4K video without stretching or pillarboxing, size your LED cabinet grid to achieve a 1.78:1 (16:9) aspect ratio.",
+    "limitations": "Calculates standard modular LED cabinet specifications.",
+    "formula": "Total_W = Cols * Tile_W; Total_H = Rows * Tile_H; Ports = Ceil(Total_Pixels / 650,000)",
+    "trustNotes": "100% Client-Side calculation.",
+    "related": [
+      "aspect-ratio-cinema-anamorphic-calculator",
+      "aspect-ratio-css-aspect-ratio-generator",
+      "screen-aspect-ratio-fov-calculator",
+      "electricity-cost-calculator"
+    ],
+    "seo": {
+      "title": "LED Video Wall Calculator — Display Resolution, Grid & Processor Tool",
+      "metaDescription": "Calculate modular LED video wall pixel resolution, 16:9 aspect ratio, physical size, NovaStar processor ports, and peak power draw online. Free AV tool.",
+      "whatIsThis": "An audiovisual engineering utility that calculates technical specifications for modular LED display walls.",
+      "howItWorks": "1. Pick a tile model / pixel pitch preset (2.6mm, 2.9mm, 3.9mm, 1.5mm).\n2. Enter cabinet columns (width) and rows (height).\n3. View total pixel resolution, physical dimensions, processor ports needed, and peak power.",
+      "whyUseIt": "Prevents costly on-site production errors by confirming pixel capacities and processor port budgets beforehand.",
+      "faqs": [
+        {
+          "question": "How many pixels can a standard Gigabit LED processor port drive?",
+          "answer": "A standard Gigabit Ethernet port on NovaStar (MCTRL660, VX4S) or Brompton processors can drive approximately 650,000 pixels at 60Hz 8-bit refresh rate."
+        },
+        {
+          "question": "How do you achieve a true 16:9 aspect ratio with 500x500mm square LED panels?",
+          "answer": "Because 500x500mm panels are square (1:1), any grid with a 16:9 column-to-row ratio (such as 16 columns by 9 rows, or 32 columns by 18 rows) will produce a perfect 16:9 physical and resolution aspect ratio."
+        }
+      ]
+    }
+  },
+  {
+    "id": "crontab-to-aws-eventbridge-converter",
+    "name": "Crontab to AWS EventBridge / CloudWatch Cron Converter",
+    "slug": "crontab-to-aws-eventbridge-converter",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "cron to eventbridge converter",
+      "convert crontab to aws eventbridge",
+      "aws cloudwatch cron expression generator",
+      "crontab to aws cron online",
+      "eventbridge 6 field cron syntax generator",
+      "aws cloudwatch event rule schedule expression"
+    ],
+    "primaryKeywords": [
+      "cron to eventbridge converter",
+      "convert cron to aws eventbridge",
+      "aws cron generator",
+      "eventbridge cron converter"
+    ],
+    "secondaryKeywords": [
+      "aws cron 6 fields question mark wildcard rule",
+      "terraform aws_cloudwatch_event_rule cron snippet",
+      "aws cli events put-rule schedule-expression"
+    ],
+    "targetUsers": [
+      "AWS Cloud Architects",
+      "DevOps Engineers",
+      "Serverless Developers",
+      "Site Reliability Engineers"
+    ],
+    "badge": "High Usage",
+    "userProblem": "Cloud engineers and DevOps professionals deploying scheduled Lambda functions or ECS tasks need to translate standard 5-part POSIX crontabs into AWS EventBridge's unique 6-field `cron(M H DOM MON DOW Y)` format with required `?` wildcards.",
+    "searchIntent": "Convert 5-part Linux crontab expressions into 6-part AWS EventBridge schedule expressions, AWS CLI commands, and Terraform HCL.",
+    "resultInterpretation": "Translates cron syntax into AWS EventBridge 6-field `cron(...)` expressions, enforces the mutual exclusion rule between Day-of-month and Day-of-week using `?`, and generates AWS CLI, Terraform, and AWS CDK deployment snippets.",
+    "practicalGuidance": "AWS EventBridge rules mandate that either Day-of-month or Day-of-week MUST be a question mark (`?`), and Sunday is represented as 1 (or `SUN`).",
+    "limitations": "Translates standard 5-part POSIX cron syntax into AWS 6-part cron format.",
+    "formula": "Syntax Mapping: POSIX [m h dom mon dow] ➔ AWS [cron(m h dom/? mon dow/? *)]",
+    "trustNotes": "100% Client-Side generation.",
+    "related": [
+      "crontab-to-systemd-timer-converter",
+      "crontab-schedule-next-runs-calculator",
+      "cron-schedule-human-expression-builder",
+      "crontab-generator-and-validator"
+    ],
+    "seo": {
+      "title": "Crontab to AWS EventBridge Converter — CloudWatch 6-Field Cron Tool",
+      "metaDescription": "Convert 5-part crontab expressions into AWS EventBridge 6-field cron expressions, AWS CLI, and Terraform HCL online. Free AWS cloud developer tool.",
+      "whatIsThis": "An AWS cloud architecture utility that translates Linux crontabs into AWS EventBridge scheduled rule expressions.",
+      "howItWorks": "1. Enter a 5-part crontab expression and rule name.\n2. Instantly generate the 6-field `cron(...)` AWS expression.\n3. Copy the expression, AWS CLI command, or Terraform HCL in 1 click.",
+      "whyUseIt": "Eliminates syntax errors caused by AWS's unique 6-field cron and question mark (`?`) rules.",
+      "faqs": [
+        {
+          "question": "Why does AWS EventBridge cron have 6 fields instead of 5?",
+          "answer": "AWS EventBridge adds a 6th field for Year (e.g. `*` or `2026`). Furthermore, AWS requires using a question mark (`?`) in either the Day-of-month or Day-of-week field to indicate that the field is unspecified."
+        },
+        {
+          "question": "What timezone does AWS EventBridge cron run in?",
+          "answer": "All AWS EventBridge cron expressions evaluate in UTC (Coordinated Universal Time) by default unless an explicit EventBridge timezone is configured."
+        }
+      ]
+    }
+  },
+  {
+    "id": "future-salary-inflation-calculator",
+    "name": "Future Salary & Inflation Purchasing Power Calculator",
+    "slug": "future-salary-inflation-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "inflation adjusted salary calculator",
+      "salary inflation calculator future purchasing power",
+      "what salary do i need to beat inflation",
+      "real wage growth calculator after inflation",
+      "cpi salary adjustment calculator",
+      "cost of living pay increase calculator"
+    ],
+    "primaryKeywords": [
+      "inflation adjusted salary calculator",
+      "salary inflation calculator",
+      "purchasing power salary calculator",
+      "real wage calculator"
+    ],
+    "secondaryKeywords": [
+      "calculate salary needed in 5 years inflation",
+      "cumulative inflation cost of living pay raise",
+      "real wage decrease inflation higher than raise"
+    ],
+    "targetUsers": [
+      "Employees Negotiating Raises",
+      "Job Seekers Evaluating Offers",
+      "Financial Planners",
+      "HR Professionals"
+    ],
+    "badge": "Popular",
+    "userProblem": "Employees negotiating annual raises and job offers need to calculate what future salary they must earn to maintain their standard of living against compounding inflation, and determine their true 'real wage' change after nominal pay bumps.",
+    "searchIntent": "Calculate the inflation-adjusted salary needed to maintain purchasing power over time and compute real wage growth.",
+    "resultInterpretation": "Calculates future target salary required to maintain purchasing power, cumulative inflation percentage, annual purchasing power loss if unadjusted, and real net wage growth after subtracting inflation from nominal pay raises.",
+    "practicalGuidance": "Receiving a 3% raise during a year with 5% inflation results in an effective -1.9% pay cut in real purchasing power.",
+    "limitations": "Models compounding inflation over user-specified periods.",
+    "formula": "Future_Salary = Salary * (1 + Inflation_Rate)^Years; Real_Wage_Change = ((1 + Raise) / (1 + Inflation) - 1) * 100",
+    "trustNotes": "100% Client-Side calculation.",
+    "related": [
+      "salary-inflation-calculator",
+      "salary-after-tax-take-home-calculator",
+      "compound-inflation-purchasing-power-calculator",
+      "inflation-calculator"
+    ],
+    "seo": {
+      "title": "Inflation-Adjusted Salary Calculator — Future Purchasing Power Tool",
+      "metaDescription": "Calculate what salary you need in 5, 10, or 20 years to beat inflation and maintain your lifestyle. Calculate real wage growth after pay raises. Free tool.",
+      "whatIsThis": "A personal finance and career utility that calculates future salary benchmarks needed to offset compounding inflation.",
+      "howItWorks": "1. Enter current salary, time horizon in years, and expected annual inflation.\n2. Enter recent raise percentage to evaluate real wage change.\n3. View required future salary target and purchasing power gap.",
+      "whyUseIt": "Provides concrete dollar data when preparing for annual performance and salary reviews.",
+      "faqs": [
+        {
+          "question": "What is the difference between nominal wage and real wage?",
+          "answer": "Nominal wage is the actual dollar amount on your paycheck. Real wage measures your purchasing power by adjusting your nominal wage for inflation, showing the actual goods and services you can buy."
+        },
+        {
+          "question": "How much does a 3.5% annual inflation rate affect a salary over 10 years?",
+          "answer": "At a 3.5% average inflation rate, prices compound by +41.1% over 10 years. An employee earning $85,000 today must earn $119,900 in 10 years just to maintain identical purchasing power."
+        }
+      ]
+    }
+  },
+  {
+    "id": "hex-to-rgb-linear-srgb-converter",
+    "name": "Hex to Linear RGB & Normalized Shader Float Converter",
+    "slug": "hex-to-rgb-linear-srgb-converter",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "hex to linear rgb converter",
+      "srgb to linear rgb online",
+      "hex to normalized float vec3 converter",
+      "css color srgb linear generator",
+      "glsl linear color converter",
+      "threejs linear color hex converter"
+    ],
+    "primaryKeywords": [
+      "hex to linear rgb",
+      "srgb to linear rgb converter",
+      "hex to vec3 float",
+      "linear rgb converter"
+    ],
+    "secondaryKeywords": [
+      "iec 61966 2 1 srgb gamma transfer function",
+      "webgl shader glsl vec3 color normalized float",
+      "css color 4 srgb linear syntax"
+    ],
+    "targetUsers": [
+      "Graphics Programmers",
+      "Shader Developers (GLSL/WGSL)",
+      "Three.js Developers",
+      "Technical Artists"
+    ],
+    "badge": "Design",
+    "userProblem": "Graphics programmers, shader writers (GLSL, WGSL), and Three.js / WebGL developers need to convert standard Hex / sRGB colors into linearized normalized floats (0.0 to 1.0) with accurate gamma curve expansion for physically based rendering (PBR).",
+    "searchIntent": "Convert Hex / sRGB color codes into linear RGB floats, normalized vectors, and CSS srgb-linear format.",
+    "resultInterpretation": "Applies the exact IEC 61966-2-1 sRGB-to-Linear gamma expansion curve, outputting 8-bit RGB, normalized sRGB floats, linear RGB floats, CSS `color(srgb-linear ...)`, and GLSL/WGSL `vec3` snippets.",
+    "practicalGuidance": "Passing non-linear sRGB values directly into PBR lighting shaders causes colors to look washed out or overly dark because mathematical light addition must occur in linear space.",
+    "limitations": "Applies standard IEC 61966-2-1 transfer function.",
+    "formula": "if (C <= 0.04045) C_lin = C / 12.92; else C_lin = ((C + 0.055) / 1.055)^2.4",
+    "trustNotes": "100% Client-Side color math.",
+    "related": [
+      "color-converter",
+      "hex-rgb-hsl-picker",
+      "hex-color-shades-tints-generator",
+      "color-contrast-checker"
+    ],
+    "seo": {
+      "title": "Hex to Linear RGB Converter — Shader vec3 & srgb-linear Tool",
+      "metaDescription": "Convert Hex colors to Linear RGB floats and normalized vec3 vectors for WebGL, GLSL, WGSL, and CSS srgb-linear. IEC 61966-2-1 compliant. Free tool.",
+      "whatIsThis": "A computer graphics color utility that converts gamma-encoded sRGB Hex colors into linearized shader float vectors.",
+      "howItWorks": "1. Pick a color or enter a Hex code (e.g. #3b82f6).\n2. View instantaneous conversions across Linear RGB, normalized sRGB, GLSL, WGSL, and CSS Color 4.\n3. Copy the desired vector format in 1 click.",
+      "whyUseIt": "Essential for physically accurate lighting and materials in Three.js, Babylon.js, Blender, and custom GPU shaders.",
+      "faqs": [
+        {
+          "question": "Why is linear RGB necessary for 3D shaders and lighting?",
+          "answer": "Computer monitors apply a non-linear gamma curve (~2.2) to match human eye perception. However, physical calculations (like light reflection and blending) require linear color values where 0.5 light really is twice as intense as 0.25 light."
+        },
+        {
+          "question": "What is CSS color(srgb-linear)?",
+          "answer": "Introduced in CSS Color Module Level 4, `color(srgb-linear r g b)` allows web developers to specify colors in the linear-light sRGB color space without manual gamma conversion."
+        }
+      ]
+    }
+  },
+  {
+    "id": "body-fat-percentage-us-navy-calculator",
+    "name": "US Navy Body Fat Percentage & Composition Calculator",
+    "slug": "body-fat-percentage-us-navy-calculator",
+    "category": "health",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "us navy body fat calculator",
+      "navy tape measure body fat calculator",
+      "calculate body fat percentage tape measure",
+      "navy circumference method calculator",
+      "body fat percentage calculator us navy formula",
+      "lean body mass navy calculator"
+    ],
+    "primaryKeywords": [
+      "us navy body fat calculator",
+      "navy body fat calculator",
+      "body fat percentage calculator",
+      "navy tape test calculator"
+    ],
+    "secondaryKeywords": [
+      "circumference method neck waist hips tape measure",
+      "us navy physical readiness test body fat standard",
+      "fat mass vs lean body mass calculation"
+    ],
+    "targetUsers": [
+      "Military Service Members",
+      "Fitness Enthusiasts",
+      "Athletes",
+      "Personal Trainers"
+    ],
+    "badge": "Popular",
+    "userProblem": "Military service members, athletes, and fitness enthusiasts need an accurate, accessible way to calculate their body fat percentage, lean body mass, and compliance with military readiness standards using simple tape-measure circumference measurements.",
+    "searchIntent": "Calculate body fat percentage and body composition using the official US Navy circumference method.",
+    "resultInterpretation": "Calculates body fat percentage using the official US Navy logarithmic formula, classifies body composition (Athletes, Fitness, Average, Obese), breaks down fat vs lean mass in pounds, and verifies military readiness compliance.",
+    "practicalGuidance": "Measure circumference with a flexible tape measure held taut without compressing the skin; take measurements at the navel for waist and around the widest point of the neck below the larynx.",
+    "limitations": "Implements official DoD / US Navy circumference method formulas.",
+    "formula": "Male: %Fat = 86.010*log10(waist-neck) - 70.041*log10(height) + 36.76; Female: %Fat = 163.205*log10(waist+hip-neck) - 97.684*log10(height) - 78.387",
+    "trustNotes": "100% Client-Side calculation. Zero health measurements stored.",
+    "related": [
+      "ideal-body-weight-devine-calculator",
+      "bmi-calculator",
+      "macronutrient-macro-split-calculator",
+      "walking-steps-to-miles-calories-calculator"
+    ],
+    "seo": {
+      "title": "US Navy Body Fat Calculator — Tape Measure Body Composition Tool",
+      "metaDescription": "Calculate body fat percentage, lean body mass, and fat mass using the official US Navy tape-measure method. Complies with DoD standards. Free health tool.",
+      "whatIsThis": "A clinical fitness utility that calculates body fat percentage using the official US Navy circumference method.",
+      "howItWorks": "1. Select Male or Female formula.\n2. Enter weight, height, neck, waist (and hips for females) measurements.\n3. View body fat %, fitness category, fat mass, lean mass, and Navy standard compliance.",
+      "whyUseIt": "Provides an accurate body fat estimate at home with only a standard measuring tape.",
+      "faqs": [
+        {
+          "question": "How accurate is the US Navy body fat method?",
+          "answer": "Studies published in sports medicine journals have found the US Navy circumference method to be within 1% to 3% accuracy of DEXA scans and hydrostatic underwater weighing for most healthy adults."
+        },
+        {
+          "question": "What is the maximum body fat percentage allowed in the US Navy?",
+          "answer": "For males aged 18-21, the maximum allowable body fat is 22% (23% for ages 22-29). For females aged 18-21, the maximum is 33% (34% for ages 22-29)."
+        }
+      ]
+    }
   }
 ]
