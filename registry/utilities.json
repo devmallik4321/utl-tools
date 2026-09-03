@@ -16719,5 +16719,646 @@
         }
       ]
     }
+  },
+  {
+    "id": "curl-to-scala-sttp-converter",
+    "name": "cURL to Scala (sttp & requests-scala) Code Converter",
+    "slug": "curl-to-scala-sttp-converter",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "curl to scala converter",
+      "convert curl to sttp client 4 scala",
+      "curl to requests scala converter online",
+      "scala api request from curl",
+      "curl to zio http scala code generator",
+      "sttp basic request from curl command"
+    ],
+    "primaryKeywords": [
+      "curl to scala converter",
+      "convert curl to scala",
+      "curl to sttp scala",
+      "curl to requests-scala"
+    ],
+    "secondaryKeywords": [
+      "sttp client 4 basic request send backend",
+      "requests-scala post headers json body payload",
+      "scala 3 rest api client generation from curl"
+    ],
+    "targetUsers": [
+      "Scala Developers",
+      "Backend Engineers",
+      "Data Engineers (Spark / Akka / Pekko)",
+      "Functional Programming Engineers"
+    ],
+    "badge": "High Usage",
+    "userProblem": "Scala developers integrating external REST APIs and microservices need to quickly translate bash cURL commands into clean, idiomatic Scala code using `sttp.client4` or `requests-scala`.",
+    "searchIntent": "Convert bash cURL commands into Scala sttp-client4 and requests-scala HTTP request code.",
+    "resultInterpretation": "Translates cURL CLI commands into clean Scala `basicRequest.post(uri\"...\")` code or `requests.post(...)` expressions with headers, authentication, and JSON string bodies.",
+    "practicalGuidance": "sttp-client4 is the industry standard HTTP client for Scala 2.13 and Scala 3, offering backend independence across sync, Future, and ZIO/Cats-Effect.",
+    "limitations": "Parses standard HTTP/HTTPS cURL CLI syntax.",
+    "formula": "CLI AST Parser: cURL Command ➔ Scala sttp-client4 / requests-scala Code Synthesis",
+    "trustNotes": "100% Client-Side. Zero API keys or tokens transmitted.",
+    "related": [
+      "curl-to-elixir-httpoison-converter",
+      "curl-to-kotlin-okhttp-converter",
+      "curl-to-rust-reqwest-converter",
+      "curl-to-go-http-converter"
+    ],
+    "seo": {
+      "title": "cURL to Scala Converter — Convert cURL to sttp & requests-scala Online",
+      "metaDescription": "Convert cURL commands to Scala sttp-client4 and requests-scala code online. Formats headers, auth tokens, and JSON payloads. Free developer tool.",
+      "whatIsThis": "A developer programming utility that translates bash cURL commands into idiomatic Scala HTTP requests.",
+      "howItWorks": "1. Select `sttp-client4` or `requests-scala`.\n2. Paste your cURL command into the editor.\n3. Copy the clean Scala code in 1 click.",
+      "whyUseIt": "Eliminates repetitive syntax translation when consuming third-party REST APIs in Scala and Spark applications.",
+      "faqs": [
+        {
+          "question": "What is the sttp library in Scala?",
+          "answer": "sttp (The Scala HTTP Client) is an open-source library from SoftwareMill that provides a clean, programmer-friendly API for describing HTTP requests with multiple pluggable backends (Akka, ZIO, Cats Effect, HttpURLConnection)."
+        },
+        {
+          "question": "Does this support Scala 3?",
+          "answer": "Yes. The generated sttp-client4 code is 100% compatible with both Scala 3 and Scala 2.13."
+        }
+      ]
+    }
+  },
+  {
+    "id": "annuity-immediate-vs-deferred-calculator",
+    "name": "Immediate (SPIA) vs Fixed Deferred Annuity Calculator",
+    "slug": "annuity-immediate-vs-deferred-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "immediate vs deferred annuity calculator",
+      "spia vs myga calculator",
+      "fixed index annuity accumulation calculator",
+      "deferred annuity future income calculator",
+      "immediate lifetime annuity payout calculator",
+      "annuity deferral break even calculator"
+    ],
+    "primaryKeywords": [
+      "immediate vs deferred annuity calculator",
+      "spia vs myga calculator",
+      "deferred annuity calculator",
+      "annuity payout calculator"
+    ],
+    "secondaryKeywords": [
+      "tax deferred compounding fixed yield myga",
+      "attained age annuitization higher monthly checks",
+      "income crossover break even years spia myga"
+    ],
+    "targetUsers": [
+      "Pre-Retirees",
+      "Retirees",
+      "Wealth Advisors",
+      "Financial Planners"
+    ],
+    "badge": "Popular",
+    "userProblem": "Pre-retirees deciding between taking immediate monthly income (SPIA) versus letting capital grow in a multi-year guaranteed fixed deferred annuity (MYGA) need to calculate the exact future monthly income advantage and the break-even catch-up timeline.",
+    "searchIntent": "Compare immediate lifetime annuity income against multi-year fixed deferred annuity accumulation and future payouts.",
+    "resultInterpretation": "Calculates immediate monthly checks, deferred accumulated balance, future monthly checks at older attained age, percentage income boost, and break-even catch-up years.",
+    "practicalGuidance": "Deferring annuity income for 5 to 7 years can increase guaranteed lifetime monthly checks by 40% to 70% due to both compound interest and older actuarial life expectancy.",
+    "limitations": "Models standard fixed annuity accumulation and actuarial payout rates.",
+    "formula": "Immediate_Monthly = (Principal * Rate_Imm) / 12; FV_Def = Principal * (1+r)^Years; Deferred_Monthly = (FV_Def * Rate_Def) / 12",
+    "trustNotes": "100% Client-Side financial calculation.",
+    "related": [
+      "pension-lump-sum-vs-annuity-calculator",
+      "annuity-payout-present-value-calculator",
+      "cd-ladder-yield-calculator",
+      "compound-interest-calculator"
+    ],
+    "seo": {
+      "title": "Immediate vs Deferred Annuity Calculator — SPIA vs MYGA Tool",
+      "metaDescription": "Compare Single Premium Immediate Annuities (SPIA) against Fixed Deferred Annuities (MYGA). Calculate accumulation balance and income boost. Free tool.",
+      "whatIsThis": "A retirement planning utility that models cash flow differences between starting immediate annuity income versus deferring payouts.",
+      "howItWorks": "1. Enter principal investment and current age.\n2. Enter deferral period, fixed MYGA yield, and immediate/deferred payout rates.\n3. View immediate monthly checks vs deferred balance and future monthly income.",
+      "whyUseIt": "Reveals the true mathematical benefit of postponing annuity income to attain higher guaranteed lifetime checks.",
+      "faqs": [
+        {
+          "question": "What is the difference between an immediate and deferred annuity?",
+          "answer": "An immediate annuity (SPIA) converts a lump sum into guaranteed income that begins almost immediately (within 1 to 12 months). A deferred annuity (MYGA) allows your principal to grow with tax-deferred interest for years before converting into income."
+        },
+        {
+          "question": "Why do older ages receive higher annuity payout rates?",
+          "answer": "Because lifetime annuity payouts are actuarially calculated based on remaining statistical life expectancy. Older buyers have fewer expected years of life remaining, so insurance companies pay higher monthly cash per dollar of principal."
+        }
+      ]
+    }
+  },
+  {
+    "id": "css-ribbon-banner-generator",
+    "name": "CSS Folded Corner Ribbon & Badge Generator",
+    "slug": "css-ribbon-banner-generator",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "css ribbon generator",
+      "folded corner ribbon css generator",
+      "pure css corner badge generator",
+      "css ecommerce ribbon banner generator",
+      "css sale ribbon top right corner",
+      "css bookmark badge ribbon generator"
+    ],
+    "primaryKeywords": [
+      "css ribbon generator",
+      "corner ribbon css generator",
+      "css banner generator",
+      "css badge generator"
+    ],
+    "secondaryKeywords": [
+      "before after pseudo element folded corner shadow",
+      "rotate 45deg overflow hidden ribbon wrapper",
+      "pure css zero image pricing card badge"
+    ],
+    "targetUsers": [
+      "Frontend Developers",
+      "UI/UX Designers",
+      "Shopify & E-Commerce Developers",
+      "Webflow Designers"
+    ],
+    "badge": "Design",
+    "userProblem": "Web developers and e-commerce designers creating pricing tables, product cards, or sale badges need an interactive tool to generate pure CSS folded corner ribbons with realistic 3D wrapper fold shadows without images.",
+    "searchIntent": "Generate pure CSS folded corner ribbons, sale badges, and bookmark tags with live preview and custom colors.",
+    "resultInterpretation": "Generates 3D folded corner ribbons (top-right, top-left, bookmark badge) with customizable fold shadows, text colors, and angles, rendering a live card preview and clean CSS snippet.",
+    "practicalGuidance": "Using pure CSS ribbons with `::before` and `::after` border shadows ensures razor-sharp rendering on Retina displays and zero HTTP image requests.",
+    "limitations": "Generates pure CSS2/CSS3 pseudo-element styling.",
+    "formula": "3D Illusion: wrapper: overflow:hidden ➔ ribbon: rotate(+-45deg) ➔ ::before/::after: border-top fold triangles",
+    "trustNotes": "100% Client-Side visual rendering.",
+    "related": [
+      "css-isometric-text-and-box-generator",
+      "css-neumorphism-soft-ui-generator",
+      "css-glassmorphism-generator",
+      "box-shadow-generator"
+    ],
+    "seo": {
+      "title": "CSS Ribbon Generator — Pure CSS Folded Corner Badge & Banner Tool",
+      "metaDescription": "Generate pure CSS folded corner ribbons and bookmark badges for pricing tables and product cards. Custom colors, fold shadows, and live preview. Free tool.",
+      "whatIsThis": "A web design utility that creates pure CSS folded corner ribbons and badge banners for cards and containers.",
+      "howItWorks": "1. Select ribbon position (Top-Right, Top-Left, Bookmark).\n2. Customize ribbon text, primary color, fold shadow color, and text color.\n3. Copy the production CSS snippet in 1 click.",
+      "whyUseIt": "Adds polished e-commerce product badges without external images or SVG dependencies.",
+      "faqs": [
+        {
+          "question": "How do CSS corner ribbons create the 3D folded look?",
+          "answer": "The ribbon container uses `overflow: hidden` with negative coordinate offsets, while `::before` and `::after` pseudo-elements use CSS border triangles with darker shades to create realistic drop-shadow folds underneath the card edge."
+        },
+        {
+          "question": "Can I put links inside the ribbon?",
+          "answer": "Yes. You can wrap the inner `.ribbon` element with an `<a>` tag or give it a cursor pointer to make the ribbon clickable."
+        }
+      ]
+    }
+  },
+  {
+    "id": "dns-dkim-key-record-generator",
+    "name": "DNS DKIM Key Record Generator & String Splitter",
+    "slug": "dns-dkim-key-record-generator",
+    "category": "network",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "dkim record generator",
+      "dns dkim txt record builder",
+      "split dkim 2048 bit key dns 255 characters",
+      "dkim public key txt format generator",
+      "bind dkim chunked format generator",
+      "google workspace dkim dns generator"
+    ],
+    "primaryKeywords": [
+      "dkim record generator",
+      "dkim builder",
+      "dns dkim generator",
+      "dkim 2048 key splitter"
+    ],
+    "secondaryKeywords": [
+      "v=DKIM1 k=rsa p= base64 public key dns record",
+      "rfc 4408 255 character string limit chunked bind",
+      "selector._domainkey.domain.com txt record name"
+    ],
+    "targetUsers": [
+      "Domain Administrators",
+      "DevOps Engineers",
+      "Email System Administrators",
+      "Security Engineers"
+    ],
+    "badge": "Network",
+    "userProblem": "System administrators setting up DKIM email authentication struggle with DNS providers rejecting 2048-bit RSA public keys because TXT strings exceed the 255-character RFC limit, requiring proper quoted chunking and formatting.",
+    "searchIntent": "Generate valid DNS DKIM TXT records and split long 2048-bit RSA keys into compliant 255-character chunks for BIND, Route 53, and Cloudflare.",
+    "resultInterpretation": "Constructs the full `selector._domainkey.domain` record name, formats single-line TXT values, generates RFC 4408 compliant 255-character chunked BIND zone entries, and provides terminal `dig` test commands.",
+    "practicalGuidance": "2048-bit RSA keys are required by Google and Yahoo for bulk senders. If your DNS provider gives a 'TXT string too long' error, use the chunked multi-string format provided by this tool.",
+    "limitations": "Generates RFC 6376 standard DKIM TXT records.",
+    "formula": "Record Synthesis: [selector]._domainkey.[domain] IN TXT \"v=DKIM1; k=[k]; p=[chunks]\"",
+    "trustNotes": "100% Client-Side. Keys never leave browser memory.",
+    "related": [
+      "dns-dmarc-record-generator",
+      "dns-spf-record-builder",
+      "email-dns-records-generator",
+      "reverse-dns-ptr-record-generator"
+    ],
+    "seo": {
+      "title": "DKIM Record Generator — DNS Key Builder & 255-Char Splitter",
+      "metaDescription": "Generate valid DNS DKIM TXT records and split 2048-bit RSA keys into 255-character strings for BIND and Cloudflare. Free email authentication tool.",
+      "whatIsThis": "A domain administration utility that formats DKIM public key TXT records and splits long 2048-bit keys to comply with DNS string limits.",
+      "howItWorks": "1. Enter selector name (default, google, s1) and your domain.\n2. Paste your base64 public key.\n3. Copy the formatted single TXT record or RFC-compliant chunked BIND snippet.",
+      "whyUseIt": "Solves DNS syntax errors when deploying modern 2048-bit email signing keys.",
+      "faqs": [
+        {
+          "question": "Why does my DNS provider say my DKIM key is too long?",
+          "answer": "A single DNS TXT character-string is limited to 255 bytes by RFC 1035. A 2048-bit RSA public key is ~392 characters long. To publish it, the record must be split into multiple quoted strings `(\"chunk1\" \"chunk2\")` which receiving mail servers automatically concatenate into one key."
+        },
+        {
+          "question": "What is a DKIM selector?",
+          "answer": "A selector is an arbitrary string (like `google`, `default`, or `k1`) that allows a domain to publish multiple DKIM keys simultaneously (e.g., for Google Workspace, SendGrid, and Mailchimp)."
+        }
+      ]
+    }
+  },
+  {
+    "id": "dscr-rental-loan-calculator",
+    "name": "Debt Service Coverage Ratio (DSCR) Rental Loan Calculator",
+    "slug": "dscr-rental-loan-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "dscr loan calculator",
+      "debt service coverage ratio calculator real estate",
+      "dscr rental property qualification calculator",
+      "dscr loan cash flow calculator",
+      "maximum dscr loan amount calculator",
+      "investor no income verification mortgage calculator"
+    ],
+    "primaryKeywords": [
+      "dscr loan calculator",
+      "dscr calculator",
+      "debt service coverage ratio calculator",
+      "dscr rental calculator"
+    ],
+    "secondaryKeywords": [
+      "monthly rent divided by pitia debt service",
+      "1.25 dscr prime interest rate qualification",
+      "no tax return no w2 investor mortgage financing"
+    ],
+    "targetUsers": [
+      "Real Estate Investors",
+      "Landlords",
+      "Mortgage Brokers",
+      "Commercial Lenders"
+    ],
+    "badge": "Popular",
+    "userProblem": "Real estate investors acquiring rental properties using DSCR loans (which qualify based on rental cash flow rather than personal tax returns) need to calculate whether a property satisfies the lender's 1.20x - 1.25x coverage ratio threshold and determine their maximum allowable loan amount.",
+    "searchIntent": "Calculate DSCR coverage ratio, monthly PITIA debt service, net cash-flow buffer, and maximum qualifying loan balance.",
+    "resultInterpretation": "Calculates exact DSCR coverage ratio (Rent / PITIA), monthly principal & interest debt service, net monthly cash-flow buffer, lender approval status (Prime vs Deficit), and computes the maximum loan amount permitted under a 1.25x underwriting target.",
+    "practicalGuidance": "Most DSCR lenders require a ratio of at least 1.20x to 1.25x for top-tier pricing and 80% LTV financing. A ratio below 1.00x signifies negative cash flow, requiring higher equity down payments.",
+    "limitations": "Models standard 30-year fixed residential DSCR investment mortgages.",
+    "formula": "DSCR = Monthly_Rent / Monthly_PITIA; PITIA = PI + Taxes/12 + Ins/12 + HOA; Max_Loan = PV(r, 360, (Rent / 1.25 - NonPI))",
+    "trustNotes": "100% Client-Side financial modeling.",
+    "related": [
+      "hard-money-loan-calculator",
+      "real-estate-cash-on-cash-return-calculator",
+      "real-estate-cap-rate-noi-calculator",
+      "mortgage-payment-calculator"
+    ],
+    "seo": {
+      "title": "DSCR Loan Calculator — Debt Service Coverage Ratio Rental Tool",
+      "metaDescription": "Calculate Debt Service Coverage Ratio (DSCR) for rental investment property loans. Check 1.25x qualification and maximum borrowing amount. Free tool.",
+      "whatIsThis": "A real estate financing utility that calculates whether an investment property qualifies for a DSCR no-income-verification loan.",
+      "howItWorks": "1. Enter purchase price, down payment %, interest rate, and monthly rental income.\n2. Enter property taxes, insurance, and HOA dues.\n3. View DSCR ratio, monthly PITIA, net cash flow, and maximum allowable loan.",
+      "whyUseIt": "Ensures property cash flow meets lender underwriting guidelines before submitting loan applications.",
+      "faqs": [
+        {
+          "question": "What is a good DSCR ratio for a rental loan?",
+          "answer": "A DSCR of 1.25x or higher is considered excellent and qualifies for the lowest interest rates and maximum leverage (up to 80% LTV). A DSCR of 1.00x to 1.24x is acceptable to most lenders with standard pricing."
+        },
+        {
+          "question": "Do DSCR loans require personal tax returns or pay stubs?",
+          "answer": "No. DSCR mortgages qualify based entirely on the gross rental income generated by the subject property, with zero requirement to disclose personal W-2 income, tax returns, or employment history."
+        }
+      ]
+    }
+  },
+  {
+    "id": "aspect-ratio-hexagonal-grid-calculator",
+    "name": "Hexagonal Tile Grid Dimensions & Coordinates Calculator",
+    "slug": "aspect-ratio-hexagonal-grid-calculator",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "hexagonal grid calculator",
+      "hex tile dimensions calculator",
+      "pointy topped vs flat topped hex dimensions",
+      "axial coordinates to pixel converter",
+      "hex grid spacing distance formula",
+      "game dev hex map bounding box calculator"
+    ],
+    "primaryKeywords": [
+      "hexagonal grid calculator",
+      "hex grid calculator",
+      "hex tile calculator",
+      "axial coordinates calculator"
+    ],
+    "secondaryKeywords": [
+      "pointy topped flat topped hex width height sqrt 3",
+      "axial q r to pixel projection function godot unity",
+      "cube coordinate distance formula game dev"
+    ],
+    "targetUsers": [
+      "Game Developers",
+      "Board Game Designers",
+      "Procedural World Builders",
+      "Math & Geometry Enthusiasts"
+    ],
+    "badge": "Design",
+    "userProblem": "Game developers and board game designers creating hex-based strategy games (like Civilization, Catan, or wargames) need a tool to calculate pointy-topped and flat-topped tile dimensions ($w = \\sqrt{3} \\times r$, $h = 2r$), center spacing offsets, map bounding boxes, and coordinate projection functions.",
+    "searchIntent": "Calculate hexagonal tile dimensions, grid spacing steps, map bounding dimensions, and axial-to-screen projection code.",
+    "resultInterpretation": "Calculates single hex dimensions, horizontal/vertical center step offsets, total canvas bounding box, inradius, and generates ready-to-use JavaScript functions for coordinate projection (`axialToPixel`) and cube distance (`hexDistance`).",
+    "practicalGuidance": "Pointy-topped hexagons use $w = \\sqrt{3}r$ and $h = 2r$ with vertical step $(3/4)h$. Flat-topped hexagons swap the width and height relationships.",
+    "limitations": "Calculates regular regular hexagon planar geometry.",
+    "formula": "Pointy: w = sqrt(3)*r, h = 2r, dx = w, dy = 1.5*r; Distance: Max(|dq|, |dr|, |-dq-dr|)",
+    "trustNotes": "100% Client-Side calculation.",
+    "related": [
+      "aspect-ratio-isometric-pixel-art-grid-calculator",
+      "aspect-ratio-scale-factor-dimension-calculator",
+      "aspect-ratio-resizer",
+      "css-isometric-text-and-box-generator"
+    ],
+    "seo": {
+      "title": "Hexagonal Grid Calculator — Tile Dimensions & Axial Coordinates Tool",
+      "metaDescription": "Calculate pointy-topped & flat-topped hexagonal tile sizes, grid spacing, map bounding canvas, and axial coordinate projection code. Free game dev tool.",
+      "whatIsThis": "A game design geometry utility that calculates dimensions and coordinate projection algorithms for hexagonal tile grids.",
+      "howItWorks": "1. Select Pointy-Topped or Flat-Topped orientation.\n2. Enter hex radius (r) and grid dimensions (columns and rows).\n3. View tile bounding box, step offsets, and copy axial-to-pixel projection code.",
+      "whyUseIt": "Eliminates trial-and-error math when building hex grid tilemaps in Godot, Unity, or Canvas.",
+      "faqs": [
+        {
+          "question": "What is the difference between pointy-topped and flat-topped hexagons?",
+          "answer": "Pointy-topped hexagons have a vertex facing straight up and down, which is standard in turn-based strategy video games (e.g. Civilization). Flat-topped hexagons have a horizontal edge facing straight up and down, popular in tabletop wargames and Settlers of Catan."
+        },
+        {
+          "question": "How do you calculate distance between two hexagons?",
+          "answer": "Convert axial coordinates $(q, r)$ to cube coordinates $(q, r, s)$ where $s = -q - r$. The distance between hex A and hex B is $\\max(|A.q - B.q|, |A.r - B.r|, |A.s - B.s|)$."
+        }
+      ]
+    }
+  },
+  {
+    "id": "crontab-to-kubernetes-cronjob-converter",
+    "name": "Crontab to Kubernetes CronJob Manifest Generator",
+    "slug": "crontab-to-kubernetes-cronjob-converter",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "cron to kubernetes cronjob converter",
+      "kubernetes cronjob yaml generator",
+      "convert crontab to k8s cronjob",
+      "k8s batch v1 cronjob generator online",
+      "kubernetes cron schedule concurrency policy",
+      "kubectl cronjob manifest creator"
+    ],
+    "primaryKeywords": [
+      "cron to kubernetes cronjob",
+      "kubernetes cronjob generator",
+      "k8s cronjob yaml generator",
+      "crontab to kubernetes"
+    ],
+    "secondaryKeywords": [
+      "batch v1 cronjob spec schedule concurrencyPolicy",
+      "restartPolicy OnFailure startingDeadlineSeconds",
+      "successfulJobsHistoryLimit container image command"
+    ],
+    "targetUsers": [
+      "Kubernetes Administrators",
+      "DevOps Engineers",
+      "Platform Engineers",
+      "Site Reliability Engineers (SRE)"
+    ],
+    "badge": "High Usage",
+    "userProblem": "Cloud-native and DevOps engineers transitioning legacy Linux crontabs into containerized Kubernetes clusters need an easy tool to generate valid `batch/v1` `CronJob` YAML manifests configured with concurrency policies, backoff limits, and resource constraints.",
+    "searchIntent": "Convert crontab expressions into production-ready Kubernetes batch/v1 CronJob YAML manifests.",
+    "resultInterpretation": "Generates complete Kubernetes `batch/v1` `CronJob` YAML definitions with configurable concurrency policies (`Forbid`, `Allow`, `Replace`), container images, shell scripts, history limits, and resource allocations.",
+    "practicalGuidance": "Always set `concurrencyPolicy: Forbid` on database backups and financial jobs to prevent catastrophic overlapping executions if a previous job runs long.",
+    "limitations": "Generates Kubernetes batch/v1 CronJob schema.",
+    "formula": "Manifest Synthesis: apiVersion: batch/v1, kind: CronJob, spec.schedule = cron",
+    "trustNotes": "100% Client-Side generation.",
+    "related": [
+      "crontab-to-github-actions-schedule-converter",
+      "crontab-to-aws-eventbridge-converter",
+      "crontab-to-systemd-timer-converter",
+      "crontab-schedule-next-runs-calculator"
+    ],
+    "seo": {
+      "title": "Crontab to Kubernetes CronJob Generator — batch/v1 YAML Tool",
+      "metaDescription": "Convert Linux crontabs into valid Kubernetes batch/v1 CronJob YAML manifests online. Configure concurrency, container images, and limits. Free DevOps tool.",
+      "whatIsThis": "A Kubernetes automation utility that translates crontab schedules into complete Kubernetes CronJob resource manifests.",
+      "howItWorks": "1. Enter cron schedule, CronJob name, and container image.\n2. Configure shell execution command and concurrency policy (Forbid/Allow).\n3. Copy the production YAML manifest in 1 click and apply with `kubectl apply -f`.",
+      "whyUseIt": "Accelerates cluster workload migration and ensures best-practice Kubernetes batch configuration.",
+      "faqs": [
+        {
+          "question": "What is concurrencyPolicy in a Kubernetes CronJob?",
+          "answer": "`concurrencyPolicy` dictates how Kubernetes handles a new job if the previous job is still running: `Allow` runs concurrent jobs simultaneously; `Forbid` skips the new run until the current job finishes; `Replace` terminates the running job and starts the new one."
+        },
+        {
+          "question": "What timezone do Kubernetes CronJobs execute in?",
+          "answer": "By default, the kube-controller-manager evaluates CronJobs in the controller's local time (typically UTC). In Kubernetes 1.27+, you can also specify a custom `timeZone` field (e.g., `timeZone: \"America/New_York\"`)."
+        }
+      ]
+    }
+  },
+  {
+    "id": "student-loan-idr-save-calculator",
+    "name": "Student Loan IDR & SAVE Repayment Plan Calculator",
+    "slug": "student-loan-idr-save-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "student loan save plan calculator",
+      "student loan idr calculator",
+      "income driven repayment calculator",
+      "save plan monthly payment calculator",
+      "225 percent poverty guideline student loan calculator",
+      "student loan waived interest subsidy calculator"
+    ],
+    "primaryKeywords": [
+      "student loan save calculator",
+      "student loan idr calculator",
+      "save plan calculator",
+      "income driven repayment calculator"
+    ],
+    "secondaryKeywords": [
+      "5 percent discretionary income undergraduate loan cap",
+      "225 percent federal poverty level protected income",
+      "unpaid monthly interest government subsidy waived"
+    ],
+    "targetUsers": [
+      "Student Loan Borrowers",
+      "Recent College Graduates",
+      "Graduate Students",
+      "Financial Counselors"
+    ],
+    "badge": "Popular",
+    "userProblem": "Federal student loan borrowers navigating federal repayment options need to calculate their exact monthly payment under the SAVE / IDR plan based on adjusted gross income (AGI) and family size, comparing it against the standard 10-year plan.",
+    "searchIntent": "Calculate monthly federal student loan payments under the SAVE / IDR plan with poverty line protection and interest subsidies.",
+    "resultInterpretation": "Calculates monthly IDR/SAVE payment, monthly savings compared to the standard 10-year plan, protected income under 225% of Federal Poverty Guidelines, and monthly unpaid interest waived by the government.",
+    "practicalGuidance": "Under the SAVE plan, if your monthly payment is $30 but your loan accrues $150 in monthly interest, the remaining $120 is completely waived by the government, preventing your loan balance from ballooning.",
+    "limitations": "Models Federal Poverty Guidelines and Department of Education SAVE formula.",
+    "formula": "Discretionary = Max(0, AGI - 2.25 * PovertyLine); Monthly_Payment = (Discretionary * Rate) / 12",
+    "trustNotes": "100% Client-Side. Zero financial data stored or transmitted.",
+    "related": [
+      "future-salary-inflation-calculator",
+      "debt-snowball-vs-avalanche-payoff-calculator",
+      "salary-after-tax-take-home-calculator",
+      "529-college-savings-growth-calculator"
+    ],
+    "seo": {
+      "title": "Student Loan IDR & SAVE Plan Calculator — Repayment & Subsidy Tool",
+      "metaDescription": "Calculate your monthly payment under the SAVE and IDR student loan plans. See protected poverty income and waived government interest. Free tool.",
+      "whatIsThis": "A personal finance utility that calculates monthly payments and interest subsidies under federal Income-Driven Repayment (IDR / SAVE) plans.",
+      "howItWorks": "1. Enter Adjusted Gross Income (AGI), family size, and total student debt.\n2. Select loan type (Undergrad 5% cap, Graduate 10% cap, or Split).\n3. View IDR monthly payment, standard 10-year comparison, and waived interest.",
+      "whyUseIt": "Delivers accurate cash-flow estimates for federal student loan planning without logging into government portals.",
+      "faqs": [
+        {
+          "question": "What is the SAVE plan for student loans?",
+          "answer": "The SAVE (Saving on a Valuable Education) plan is an income-driven repayment plan that protects more income from payment calculations (225% of the federal poverty line), cuts undergraduate monthly payments in half (to 5% of discretionary income), and eliminates unpaid interest accumulation."
+        },
+        {
+          "question": "How does the SAVE interest subsidy work?",
+          "answer": "If your required monthly payment is less than the interest that accrues that month, the federal government pays the remaining interest. Your total loan balance will never grow as long as you make your monthly SAVE payment."
+        }
+      ]
+    }
+  },
+  {
+    "id": "svg-drop-shadow-filter-generator",
+    "name": "SVG Filter Drop Shadow & Vector Blur Generator",
+    "slug": "svg-drop-shadow-filter-generator",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "svg drop shadow generator",
+      "svg filter drop shadow generator",
+      "feDropShadow generator online",
+      "vector drop shadow svg generator",
+      "svg shadow filter defs generator",
+      "fedropshadow flood color opacity generator"
+    ],
+    "primaryKeywords": [
+      "svg drop shadow generator",
+      "svg filter generator",
+      "fedropshadow generator",
+      "vector drop shadow"
+    ],
+    "secondaryKeywords": [
+      "fedropshadow dx dy stddeviation flood color",
+      "svg non rectangular vector shadow clip path",
+      "inline svg defs filter code copy snippet"
+    ],
+    "targetUsers": [
+      "SVG Illustrators",
+      "Icon Designers",
+      "Frontend Developers",
+      "UI Designers"
+    ],
+    "badge": "Design",
+    "userProblem": "Icon designers and web developers creating vector graphics need a visual generator for SVG `<feDropShadow>` filters because CSS `box-shadow` only shadows rectangular boxes, whereas SVG filters shadow complex vector curves and transparencies.",
+    "searchIntent": "Generate SVG filter drop shadows using feDropShadow with custom offset, blur, flood-color, and opacity controls.",
+    "resultInterpretation": "Adjusts horizontal (dx) and vertical (dy) offsets, blur radius (stdDeviation), shadow flood color, and opacity, rendering a live vector preview and outputting clean SVG `<defs><filter>` code.",
+    "practicalGuidance": "Standard CSS `box-shadow` ignores transparency in SVGs. Using an SVG `<feDropShadow>` filter or `filter: drop-shadow()` ensures shadows contour perfectly to icon silhouettes.",
+    "limitations": "Generates standard SVG 1.1 / 2.0 filter syntax.",
+    "formula": "<filter id=\"...\"><feDropShadow dx=\"...\" dy=\"...\" stdDeviation=\"...\" flood-color=\"...\" flood-opacity=\"...\"/></filter>",
+    "trustNotes": "100% Client-Side vector rendering.",
+    "related": [
+      "box-shadow-generator",
+      "svg-path-visualizer-optimizer",
+      "css-glassmorphism-generator",
+      "css-neumorphism-soft-ui-generator"
+    ],
+    "seo": {
+      "title": "SVG Drop Shadow Generator — Vector Filter & feDropShadow Tool",
+      "metaDescription": "Create custom SVG filter drop shadows for vector graphics and icons. Adjust dx, dy, blur, and flood opacity with live preview. Free designer tool.",
+      "whatIsThis": "A vector graphic utility that generates SVG `<feDropShadow>` filter code for non-rectangular vector shapes and icons.",
+      "howItWorks": "1. Pick a sample vector shape (shield, star, heart).\n2. Adjust offset (dx/dy), blur radius, opacity, and shadow flood color.\n3. Copy the complete SVG definition code in 1 click.",
+      "whyUseIt": "Produces precise, contour-hugging vector shadows that render cleanly across all web browsers.",
+      "faqs": [
+        {
+          "question": "Why use an SVG filter instead of CSS box-shadow?",
+          "answer": "CSS `box-shadow` casts a shadow around the rectangular bounding box of the element. An SVG `<feDropShadow>` filter traces the exact transparent contours and curves of the vector paths."
+        },
+        {
+          "question": "Is feDropShadow supported across all modern browsers?",
+          "answer": "Yes. `<feDropShadow>` is fully supported in 100% of modern web browsers including Chrome, Firefox, Safari, and Edge."
+        }
+      ]
+    }
+  },
+  {
+    "id": "one-rep-max-calculator",
+    "name": "One-Rep Max (1RM) Weightlifting & Powerlifting Calculator",
+    "slug": "one-rep-max-calculator",
+    "category": "health",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "one rep max calculator",
+      "1rm calculator",
+      "bench press 1rm calculator",
+      "squat one rep max calculator",
+      "brzycki 1rm formula calculator",
+      "epley one rep max formula calculator",
+      "powerlifting 1rm percentage table"
+    ],
+    "primaryKeywords": [
+      "one rep max calculator",
+      "1rm calculator",
+      "one rep max",
+      "bench press max calculator"
+    ],
+    "secondaryKeywords": [
+      "brzycki epley lombardi ensemble average 1rm",
+      "percentage training zones 90 strength 75 volume",
+      "weightlifting powerlifting rep max estimation"
+    ],
+    "targetUsers": [
+      "Powerlifters",
+      "Bodybuilders",
+      "CrossFit Athletes",
+      "Strength & Conditioning Coaches"
+    ],
+    "badge": "Popular",
+    "userProblem": "Weightlifters and powerlifters planning percentage-based training cycles need to accurately estimate their single-rep maximum (1RM) from submaximal sets (e.g. 225 lbs for 5 reps) without risking injury by testing true 1-rep maximums to failure.",
+    "searchIntent": "Estimate 1-Rep Max (1RM) from lift weight and repetitions with percentage training zones and formula comparisons.",
+    "resultInterpretation": "Calculates ensemble 1RM single using Brzycki, Epley, and Lombardi clinical formulas, and provides a complete percentage training table (50% to 95%) with recommended rep ranges for strength, hypertrophy, and volume cycles.",
+    "practicalGuidance": "Submaximal testing with 3 to 6 repetitions provides the most statistically reliable 1RM prediction while minimizing central nervous system fatigue.",
+    "limitations": "Calculates 1RM estimates for 1 to 15 repetitions.",
+    "formula": "Brzycki: W * (36 / (37 - r)); Epley: W * (1 + r/30); Lombardi: W * r^0.10; Avg = (Brz + Epl + Lom) / 3",
+    "trustNotes": "100% Client-Side calculation. Zero data stored.",
+    "related": [
+      "vo2-max-running-fitness-calculator",
+      "body-fat-percentage-us-navy-calculator",
+      "macronutrient-macro-split-calculator",
+      "ideal-body-weight-devine-calculator"
+    ],
+    "seo": {
+      "title": "One-Rep Max Calculator (1RM) — Bench, Squat & Deadlift Tool",
+      "metaDescription": "Calculate your 1-Rep Max (1RM) using Brzycki and Epley formulas. View percentage training zones (50% to 95%) for powerlifting and strength. Free tool.",
+      "whatIsThis": "A strength and conditioning utility that estimates maximum single-repetition lift capacity from submaximal lifting sets.",
+      "howItWorks": "1. Select exercise and enter weight lifted (lbs or kg).\n2. Select repetitions completed (1 to 15 reps).\n3. View estimated 1RM, formula breakdown, and percentage training zones.",
+      "whyUseIt": "Allows athletes to program progressive overload training cycles safely without risking heavy single-rep failure injuries.",
+      "faqs": [
+        {
+          "question": "Which 1RM formula is most accurate?",
+          "answer": "The Brzycki and Epley formulas are the two most validated formulas in sports science. For sets under 10 repetitions, they typically estimate within 2% to 3% of an athlete's actual tested 1-rep max."
+        },
+        {
+          "question": "What is the best rep range for estimating 1RM?",
+          "answer": "Sets of 3 to 5 repetitions offer the highest correlation with actual 1RM strength. Formulas become progressively less accurate for sets exceeding 10 repetitions due to muscular endurance factors."
+        }
+      ]
+    }
   }
 ]
