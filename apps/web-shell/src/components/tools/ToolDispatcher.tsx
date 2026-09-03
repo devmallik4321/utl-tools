@@ -30,6 +30,7 @@ const IpGeolocationLookup = dynamic(() => import("./network/IpGeolocationLookup"
 const DnsRecordGenerator = dynamic(() => import("./network/DnsRecordGenerator").then((m) => m.DnsRecordGenerator), { ssr: false });
 const EmailDnsGenerator = dynamic(() => import("./network/EmailDnsGenerator").then((m) => m.EmailDnsGenerator), { ssr: false });
 const SpfRecordBuilder = dynamic(() => import("./network/SpfRecordBuilder").then((m) => m.SpfRecordBuilder), { ssr: false });
+const DmarcRecordGenerator = dynamic(() => import("./network/DmarcRecordGenerator").then((m) => m.DmarcRecordGenerator), { ssr: false });
 const CertDecoder = dynamic(() => import("./network/CertDecoder").then((m) => m.CertDecoder), { ssr: false });
 const HttpStatusReference = dynamic(() => import("./network/HttpStatusReference").then((m) => m.HttpStatusReference), { ssr: false });
 const MacAddressConverter = dynamic(() => import("./network/MacAddressConverter").then((m) => m.MacAddressConverter), { ssr: false });
@@ -73,6 +74,7 @@ const CronScheduleBuilder = dynamic(() => import("./developer/CronScheduleBuilde
 const CronNextRunsCalculator = dynamic(() => import("./developer/CronNextRunsCalculator").then((m) => m.CronNextRunsCalculator), { ssr: false });
 const CronToSystemdConverter = dynamic(() => import("./developer/CronToSystemdConverter").then((m) => m.CronToSystemdConverter), { ssr: false });
 const CronToEventBridgeConverter = dynamic(() => import("./developer/CronToEventBridgeConverter").then((m) => m.CronToEventBridgeConverter), { ssr: false });
+const CronToGitHubActionsConverter = dynamic(() => import("./developer/CronToGitHubActionsConverter").then((m) => m.CronToGitHubActionsConverter), { ssr: false });
 const JwtDebugger = dynamic(() => import("./developer/JwtDebugger").then((m) => m.JwtDebugger), { ssr: false });
 const JwtInspector = dynamic(() => import("./developer/JwtInspector").then((m) => m.JwtInspector), { ssr: false });
 const CurlToFetchConverter = dynamic(() => import("./developer/CurlToFetchConverter").then((m) => m.CurlToFetchConverter), { ssr: false });
@@ -89,6 +91,7 @@ const CurlToSwiftConverter = dynamic(() => import("./developer/CurlToSwiftConver
 const CurlToPowerShellConverter = dynamic(() => import("./developer/CurlToPowerShellConverter").then((m) => m.CurlToPowerShellConverter), { ssr: false });
 const CurlToRConverter = dynamic(() => import("./developer/CurlToRConverter").then((m) => m.CurlToRConverter), { ssr: false });
 const CurlToClojureConverter = dynamic(() => import("./developer/CurlToClojureConverter").then((m) => m.CurlToClojureConverter), { ssr: false });
+const CurlToElixirConverter = dynamic(() => import("./developer/CurlToElixirConverter").then((m) => m.CurlToElixirConverter), { ssr: false });
 const HtmlToMarkdownConverter = dynamic(() => import("./developer/HtmlToMarkdownConverter").then((m) => m.HtmlToMarkdownConverter), { ssr: false });
 const HtmlEntityConverter = dynamic(() => import("./developer/HtmlEntityConverter").then((m) => m.HtmlEntityConverter), { ssr: false });
 const RegexTester = dynamic(() => import("./developer/RegexTester").then((m) => m.RegexTester), { ssr: false });
@@ -147,14 +150,17 @@ const HomeAffordabilityCalculator = dynamic(() => import("./finance/HomeAffordab
 const CapRateCalculator = dynamic(() => import("./finance/CapRateCalculator").then((m) => m.CapRateCalculator), { ssr: false });
 const CashOnCashCalculator = dynamic(() => import("./finance/CashOnCashCalculator").then((m) => m.CashOnCashCalculator), { ssr: false });
 const HouseFlippingCalculator = dynamic(() => import("./finance/HouseFlippingCalculator").then((m) => m.HouseFlippingCalculator), { ssr: false });
+const HardMoneyLoanCalculator = dynamic(() => import("./finance/HardMoneyLoanCalculator").then((m) => m.HardMoneyLoanCalculator), { ssr: false });
 const MortgageRecastCalculator = dynamic(() => import("./finance/MortgageRecastCalculator").then((m) => m.MortgageRecastCalculator), { ssr: false });
 const LandLoanCalculator = dynamic(() => import("./finance/LandLoanCalculator").then((m) => m.LandLoanCalculator), { ssr: false });
 const SolarPaybackCalculator = dynamic(() => import("./finance/SolarPaybackCalculator").then((m) => m.SolarPaybackCalculator), { ssr: false });
 const EvSavingsCalculator = dynamic(() => import("./finance/EvSavingsCalculator").then((m) => m.EvSavingsCalculator), { ssr: false });
 const FiveTwoNineCalculator = dynamic(() => import("./finance/FiveTwoNineCalculator").then((m) => m.FiveTwoNineCalculator), { ssr: false });
 const UgmaUtmaCalculator = dynamic(() => import("./finance/UgmaUtmaCalculator").then((m) => m.UgmaUtmaCalculator), { ssr: false });
+const PensionLumpSumCalculator = dynamic(() => import("./finance/PensionLumpSumCalculator").then((m) => m.PensionLumpSumCalculator), { ssr: false });
 const CommuteCostCalculator = dynamic(() => import("./finance/CommuteCostCalculator").then((m) => m.CommuteCostCalculator), { ssr: false });
-const InflationSalaryCalculator = dynamic(() => import("./finance/InflationSalaryCalculator").then((m) => m.InflationSalaryCalculator), { ssr: false });
+const FutureSalaryInflationCalculator = dynamic(() => import("./finance/InflationSalaryCalculator").then((m) => m.InflationSalaryCalculator), { ssr: false });
+const RelocationSalaryCalculator = dynamic(() => import("./finance/RelocationSalaryCalculator").then((m) => m.RelocationSalaryCalculator), { ssr: false });
 const SalaryInflationCalculator = dynamic(() => import("./finance/SalaryInflationCalculator").then((m) => m.SalaryInflationCalculator), { ssr: false });
 const HourlyPaycheckOvertimeCalculator = dynamic(() => import("./finance/OvertimeCalculator").then((m) => m.OvertimeCalculator), { ssr: false });
 const DebtPayoffCalculator = dynamic(() => import("./finance/DebtPayoffCalculator").then((m) => m.DebtPayoffCalculator), { ssr: false });
@@ -194,6 +200,7 @@ const SleepCycleCalculator = dynamic(() => import("./health/SleepCycleCalculator
 const CaffeineHalfLifeCalculator = dynamic(() => import("./health/CaffeineHalfLifeCalculator").then((m) => m.CaffeineHalfLifeCalculator), { ssr: false });
 const IdealBodyWeightCalculator = dynamic(() => import("./health/IdealBodyWeightCalculator").then((m) => m.IdealBodyWeightCalculator), { ssr: false });
 const BodyFatNavyCalculator = dynamic(() => import("./health/BodyFatNavyCalculator").then((m) => m.BodyFatNavyCalculator), { ssr: false });
+const Vo2MaxCalculator = dynamic(() => import("./health/Vo2MaxCalculator").then((m) => m.Vo2MaxCalculator), { ssr: false });
 const MacroSplitCalculator = dynamic(() => import("./health/MacroSplitCalculator").then((m) => m.MacroSplitCalculator), { ssr: false });
 
 const WordCounter = dynamic(() => import("./education/WordCounter").then((m) => m.WordCounter), { ssr: false });
@@ -229,6 +236,7 @@ const AspectRatioPrintDpi = dynamic(() => import("./creative/PrintResolutionCalc
 const AspectRatioCssGenerator = dynamic(() => import("./creative/CssAspectRatioGenerator").then((m) => m.CssAspectRatioGenerator), { ssr: false });
 const AspectRatioCinemaAnamorphic = dynamic(() => import("./creative/AnamorphicCalculator").then((m) => m.AnamorphicCalculator), { ssr: false });
 const AspectRatioVideoWall = dynamic(() => import("./creative/VideoWallCalculator").then((m) => m.VideoWallCalculator), { ssr: false });
+const AspectRatioIsometricPixel = dynamic(() => import("./creative/IsometricPixelArtCalculator").then((m) => m.IsometricPixelArtCalculator), { ssr: false });
 const CssPaddingHack = dynamic(() => import("./creative/CssPaddingHackCalculator").then((m) => m.CssPaddingHackCalculator), { ssr: false });
 const DeviceDimensionsReference = dynamic(() => import("./creative/DeviceDimensionsReference").then((m) => m.DeviceDimensionsReference), { ssr: false });
 const FluidTypographyCalculator = dynamic(() => import("./creative/FluidTypographyCalculator").then((m) => m.FluidTypographyCalculator), { ssr: false });
@@ -241,6 +249,8 @@ const CssStripesGenerator = dynamic(() => import("./creative/CssStripesGenerator
 const ConicGradientGenerator = dynamic(() => import("./creative/ConicGradientGenerator").then((m) => m.ConicGradientGenerator), { ssr: false });
 const MeshGradientGenerator = dynamic(() => import("./creative/MeshGradientGenerator").then((m) => m.MeshGradientGenerator), { ssr: false });
 const LinearRgbConverter = dynamic(() => import("./creative/LinearRgbConverter").then((m) => m.LinearRgbConverter), { ssr: false });
+const OklabColorGenerator = dynamic(() => import("./creative/OklabColorGenerator").then((m) => m.OklabColorGenerator), { ssr: false });
+const IsometricCssGenerator = dynamic(() => import("./creative/IsometricCssGenerator").then((m) => m.IsometricCssGenerator), { ssr: false });
 const GradientGenerator = dynamic(() => import("./creative/GradientGenerator").then((m) => m.GradientGenerator), { ssr: false });
 const CssTriangleGenerator = dynamic(() => import("./creative/CssTriangleGenerator").then((m) => m.CssTriangleGenerator), { ssr: false });
 const ClipPathGenerator = dynamic(() => import("./creative/ClipPathGenerator").then((m) => m.ClipPathGenerator), { ssr: false });
@@ -293,6 +303,7 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "dns-record-generator": DnsRecordGenerator,
   "email-dns-records-generator": EmailDnsGenerator,
   "dns-spf-record-builder": SpfRecordBuilder,
+  "dns-dmarc-record-generator": DmarcRecordGenerator,
   "ssl-tls-certificate-decoder-inspector": CertDecoder,
   "http-status-codes-reference": HttpStatusReference,
   "mac-address-format-converter": MacAddressConverter,
@@ -336,6 +347,7 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "crontab-schedule-next-runs-calculator": CronNextRunsCalculator,
   "crontab-to-systemd-timer-converter": CronToSystemdConverter,
   "crontab-to-aws-eventbridge-converter": CronToEventBridgeConverter,
+  "crontab-to-github-actions-schedule-converter": CronToGitHubActionsConverter,
   "jwt-debugger": JwtDebugger,
   "jwt-payload-inspector-signer": JwtInspector,
   "curl-to-fetch-converter": CurlToFetchConverter,
@@ -352,6 +364,7 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "curl-to-powershell-restmethod-converter": CurlToPowerShellConverter,
   "curl-to-r-httr-converter": CurlToRConverter,
   "curl-to-clojure-clj-http-converter": CurlToClojureConverter,
+  "curl-to-elixir-httpoison-converter": CurlToElixirConverter,
   "html-to-markdown-converter": HtmlToMarkdownConverter,
   "html-entity-encoder-decoder": HtmlEntityConverter,
   "regex-tester": RegexTester,
@@ -410,14 +423,17 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "real-estate-cap-rate-noi-calculator": CapRateCalculator,
   "real-estate-cash-on-cash-return-calculator": CashOnCashCalculator,
   "real-estate-70-percent-rule-house-flipping-calculator": HouseFlippingCalculator,
+  "hard-money-loan-calculator": HardMoneyLoanCalculator,
   "mortgage-recast-savings-calculator": MortgageRecastCalculator,
   "land-loan-financing-calculator": LandLoanCalculator,
   "solar-panel-payback-period-calculator": SolarPaybackCalculator,
   "electric-vehicle-ev-savings-calculator": EvSavingsCalculator,
   "529-college-savings-growth-calculator": FiveTwoNineCalculator,
   "custodial-account-ugma-utma-tax-calculator": UgmaUtmaCalculator,
+  "pension-lump-sum-vs-annuity-calculator": PensionLumpSumCalculator,
   "commute-cost-calculator": CommuteCostCalculator,
-  "future-salary-inflation-calculator": InflationSalaryCalculator,
+  "future-salary-inflation-calculator": FutureSalaryInflationCalculator,
+  "cost-of-living-relocation-calculator": RelocationSalaryCalculator,
   "salary-inflation-calculator": SalaryInflationCalculator,
   "hourly-paycheck-overtime-calculator": HourlyPaycheckOvertimeCalculator,
   "debt-snowball-vs-avalanche-payoff-calculator": DebtPayoffCalculator,
@@ -457,6 +473,7 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "caffeine-half-life-sleep-calculator": CaffeineHalfLifeCalculator,
   "ideal-body-weight-devine-calculator": IdealBodyWeightCalculator,
   "body-fat-percentage-us-navy-calculator": BodyFatNavyCalculator,
+  "vo2-max-running-fitness-calculator": Vo2MaxCalculator,
   "macronutrient-macro-split-calculator": MacroSplitCalculator,
 
   "word-counter": WordCounter,
@@ -481,6 +498,7 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "hex-rgb-hsl-picker": HexRgbHslPicker,
   "hex-color-shades-tints-generator": HexColorShades,
   "hex-to-rgb-linear-srgb-converter": LinearRgbConverter,
+  "oklab-color-palette-generator": OklabColorGenerator,
   "aspect-ratio-calculator": AspectRatioCalculator,
   "aspect-ratio-resizer": AspectRatioResizer,
   "aspect-ratio-crop-previewer": AspectRatioCropper,
@@ -493,12 +511,15 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "aspect-ratio-css-aspect-ratio-generator": AspectRatioCssGenerator,
   "aspect-ratio-cinema-anamorphic-calculator": AspectRatioCinemaAnamorphic,
   "aspect-ratio-video-wall-led-display-calculator": AspectRatioVideoWall,
+  "aspect-ratio-isometric-pixel-art-grid-calculator": AspectRatioIsometricPixel,
   "aspect-ratio-css-padding-hack-calculator": CssPaddingHack,
   "device-screen-dimensions-reference": DeviceDimensionsReference,
   "aspect-ratio-device-screen-dimensions-reference": DeviceDimensionsReference,
   "css-font-clamp-fluid-typography-calculator": FluidTypographyCalculator,
   "css-glassmorphism-generator": GlassmorphismGenerator,
   "css-neumorphism-soft-ui-generator": NeumorphismGenerator,
+  "css-isometric-text-and-box-generator": IsometricCssGenerator,
+  "box-shadow-generator": BoxShadowGenerator,
   "css-box-shadow-generator": BoxShadowGenerator,
   "css-box-reflection-generator": BoxReflectionGenerator,
   "css-custom-scrollbar-generator": ScrollbarGenerator,

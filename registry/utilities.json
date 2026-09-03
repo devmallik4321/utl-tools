@@ -16079,5 +16079,645 @@
         }
       ]
     }
+  },
+  {
+    "id": "curl-to-elixir-httpoison-converter",
+    "name": "cURL to Elixir (Req & HTTPoison) Code Converter",
+    "slug": "curl-to-elixir-httpoison-converter",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "curl to elixir converter",
+      "convert curl to req elixir",
+      "curl to httpoison converter online",
+      "elixir api request from curl",
+      "curl to phoenix elixir code generator",
+      "req request from curl command"
+    ],
+    "primaryKeywords": [
+      "curl to elixir converter",
+      "convert curl to elixir",
+      "curl to req elixir",
+      "curl to httpoison"
+    ],
+    "secondaryKeywords": [
+      "functional elixir http request pipeline headers",
+      "req new base url request response body",
+      "httpoison post case match tuple ok error"
+    ],
+    "targetUsers": [
+      "Elixir Developers",
+      "Phoenix Framework Developers",
+      "Backend Engineers",
+      "Functional Programming Enthusiasts"
+    ],
+    "badge": "High Usage",
+    "userProblem": "Elixir and Phoenix developers consuming REST APIs need to convert bash cURL commands into idiomatic Elixir pipelines using modern `Req` or classic `HTTPoison`.",
+    "searchIntent": "Convert bash cURL commands into clean Elixir Req and HTTPoison HTTP request code.",
+    "resultInterpretation": "Translates cURL CLI commands into clean Elixir `Req.new(...) |> Req.request!()` pipelines or `HTTPoison` pattern-matching case expressions with headers and JSON body payloads.",
+    "practicalGuidance": "Req is the recommended modern HTTP client in Elixir with automatic body decompression and JSON decoding.",
+    "limitations": "Parses standard HTTP/HTTPS cURL CLI syntax.",
+    "formula": "CLI AST Parser: cURL Command ➔ Elixir Req / HTTPoison Pipeline Synthesis",
+    "trustNotes": "100% Client-Side. Zero API keys or tokens transmitted.",
+    "related": [
+      "curl-to-clojure-clj-http-converter",
+      "curl-to-ruby-net-http-converter",
+      "curl-to-rust-reqwest-converter",
+      "curl-to-python-requests-converter"
+    ],
+    "seo": {
+      "title": "cURL to Elixir Converter — Convert cURL to Req & HTTPoison Online",
+      "metaDescription": "Convert cURL commands to Elixir Req and HTTPoison code online. Formats headers, JSON payloads, and response pipelines. Free developer tool.",
+      "whatIsThis": "A developer programming utility that translates bash cURL commands into clean Elixir HTTP requests.",
+      "howItWorks": "1. Select modern `Req` or classic `HTTPoison`.\n2. Paste your cURL command into the editor.\n3. Copy the clean Elixir code in 1 click.",
+      "whyUseIt": "Eliminates repetitive syntax translation when consuming third-party REST APIs in Elixir applications.",
+      "faqs": [
+        {
+          "question": "What is the Req library in Elixir?",
+          "answer": "Req is a modern, feature-rich HTTP client for Elixir built on Finch and Mint. It features automatic JSON encoding/decoding, retries, streaming, and pipeline composition."
+        },
+        {
+          "question": "Are my secret API tokens sent across the network?",
+          "answer": "No. All conversion is processed 100% locally in your browser memory using JavaScript regular expressions. No data leaves your machine."
+        }
+      ]
+    }
+  },
+  {
+    "id": "pension-lump-sum-vs-annuity-calculator",
+    "name": "Pension Lump Sum vs Monthly Annuity Calculator",
+    "slug": "pension-lump-sum-vs-annuity-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "pension lump sum vs annuity calculator",
+      "lump sum vs monthly pension calculator",
+      "pension buyout calculator",
+      "should i take the lump sum or pension",
+      "pension crossover break even age calculator",
+      "defined benefit pension payout decision tool"
+    ],
+    "primaryKeywords": [
+      "pension lump sum vs annuity calculator",
+      "pension buyout calculator",
+      "lump sum vs annuity calculator",
+      "pension break even calculator"
+    ],
+    "secondaryKeywords": [
+      "crossover break even age longevity pension",
+      "corporate pension buyout lump sum comparison",
+      "invested lump sum vs guaranteed lifetime annuity"
+    ],
+    "targetUsers": [
+      "Retirees",
+      "Corporate Employees Evaluating Buyouts",
+      "Financial Planners",
+      "Teachers and Union Workers"
+    ],
+    "badge": "Popular",
+    "userProblem": "Retirees offered a choice between a one-time pension lump-sum buyout vs guaranteed monthly lifetime payments need to calculate their break-even crossover age and evaluate longevity risk versus investment market returns.",
+    "searchIntent": "Compare a defined benefit pension lump-sum buyout against a lifetime monthly annuity with break-even age analysis.",
+    "resultInterpretation": "Calculates the break-even crossover age, total cumulative annuity payouts across retirement milestones, projected invested lump-sum balance at age 85, and delivers objective actuarial guidance based on longevity.",
+    "practicalGuidance": "If you have a strong family history of longevity (living past age 82) or lack investment confidence, the guaranteed monthly annuity provides powerful longevity insurance against outliving your capital.",
+    "limitations": "Models standard actuarial cash-flow projections and investment compounding.",
+    "formula": "BreakEven_Years = Lump_Sum / (Monthly_Pension * 12); FV_Lump = Lump * (1+r)^n - Annuity_Withdrawals",
+    "trustNotes": "100% Client-Side financial modeling.",
+    "related": [
+      "annuity-payout-present-value-calculator",
+      "401k-retirement-growth-calculator",
+      "traditional-vs-roth-401k-calculator",
+      "compound-interest-calculator"
+    ],
+    "seo": {
+      "title": "Pension Lump Sum vs Annuity Calculator — Buyout & Break-Even Tool",
+      "metaDescription": "Calculate whether to take a pension lump sum or monthly lifetime annuity. Compare break-even crossover age, investment returns, and longevity risk. Free tool.",
+      "whatIsThis": "A retirement planning utility that analyzes whether to accept a pension lump-sum buyout or lifetime monthly annuity.",
+      "howItWorks": "1. Enter lump-sum buyout offer, monthly annuity payment, and retirement age.\n2. Enter expected investment return and COLA percentage.\n3. View your exact break-even age, total payouts by age 85, and portfolio comparison.",
+      "whyUseIt": "Empowers retirees to make the irreversible pension buyout decision with transparent mathematical data.",
+      "faqs": [
+        {
+          "question": "What is the break-even age in a pension calculation?",
+          "answer": "The break-even age is the age at which the total sum of monthly pension payments equals the lump-sum cash offer. If you live past this break-even age, the monthly annuity yields more lifetime wealth."
+        },
+        {
+          "question": "What happens to a pension annuity when I die?",
+          "answer": "A single-life annuity stops upon your death. A joint-and-survivor annuity continues paying a portion (e.g. 50%, 75%, or 100%) to your surviving spouse for the remainder of their life, in exchange for a slightly reduced monthly payout."
+        }
+      ]
+    }
+  },
+  {
+    "id": "css-isometric-text-and-box-generator",
+    "name": "CSS Isometric 3D Text & Box Transform Generator",
+    "slug": "css-isometric-text-and-box-generator",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "css isometric text generator",
+      "isometric 3d css generator",
+      "pure css 3d text extrusion generator",
+      "isometric box transform css online",
+      "css 3d text shadow generator",
+      "isometric projection css3 generator"
+    ],
+    "primaryKeywords": [
+      "css isometric text generator",
+      "css isometric generator",
+      "isometric 3d text css",
+      "isometric transform css"
+    ],
+    "secondaryKeywords": [
+      "multi layer extruded 3d text shadow css",
+      "rotatex 60deg rotatez minus 45deg isometric top",
+      "pure css zero webgl 3d typography"
+    ],
+    "targetUsers": [
+      "Frontend Developers",
+      "Web Designers",
+      "Creative Coders",
+      "Game UI Designers"
+    ],
+    "badge": "Design",
+    "userProblem": "Web designers and creative developers creating retro-futuristic or 3D landing page hero typography need an interactive visual tool to generate pure CSS 3D isometric projections and multi-layered extruded text shadows without WebGL.",
+    "searchIntent": "Generate pure CSS 3D isometric projections, matrix transforms, and extruded text-shadows with live visual controls.",
+    "resultInterpretation": "Generates 3D isometric transforms (top, left, right), multi-layered extrusion shadows with perspective, custom face colors, and shadow depth, rendering a live 3D preview and production CSS.",
+    "practicalGuidance": "Pure CSS isometric typography delivers striking 3D visual hierarchy with zero external font files, images, or Three.js bundle overhead.",
+    "limitations": "Generates CSS3 transform and text-shadow syntax.",
+    "formula": "Projection: transform: rotateX(60deg) rotateZ(-45deg); Extrusion: text-shadow: sum(i px i px 0 Color)",
+    "trustNotes": "100% Client-Side visual rendering.",
+    "related": [
+      "css-neumorphism-soft-ui-generator",
+      "css-glassmorphism-generator",
+      "css-box-shadow-generator",
+      "aspect-ratio-isometric-pixel-art-grid-calculator"
+    ],
+    "seo": {
+      "title": "CSS Isometric Text Generator — Pure CSS 3D Extrusion & Projection",
+      "metaDescription": "Generate pure CSS 3D isometric text and box projections with multi-layered extruded shadows and live 3D canvas preview. Free developer tool.",
+      "whatIsThis": "A visual design utility that creates 3D isometric text and surface transforms using pure CSS3.",
+      "howItWorks": "1. Pick an isometric angle preset (Top, Left, Right).\n2. Adjust extrusion depth, face color, and shadow color.\n3. Copy the production CSS snippet in 1 click.",
+      "whyUseIt": "Adds dramatic 3D hero typography to websites without the performance cost of 3D Canvas or WebGL.",
+      "faqs": [
+        {
+          "question": "Does this work in all modern web browsers?",
+          "answer": "Yes. CSS 3D transforms (`rotateX`, `rotateZ`, `perspective`) and multi-layer `text-shadow` are supported by 100% of modern web browsers including Chrome, Safari, Firefox, and Edge."
+        },
+        {
+          "question": "Can I animate isometric CSS elements?",
+          "answer": "Yes. You can smoothly transition the `transform` property on `:hover` or apply `@keyframes` floating/bobbing animations."
+        }
+      ]
+    }
+  },
+  {
+    "id": "dns-dmarc-record-generator",
+    "name": "DNS DMARC Record Generator & Policy Builder",
+    "slug": "dns-dmarc-record-generator",
+    "category": "network",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "dmarc record generator",
+      "dns dmarc builder",
+      "create dmarc txt record online",
+      "dmarc policy generator reject quarantine",
+      "google yahoo dmarc compliance generator",
+      "dmarc rua aggregate email format"
+    ],
+    "primaryKeywords": [
+      "dmarc record generator",
+      "dmarc builder",
+      "dns dmarc generator",
+      "dmarc policy generator"
+    ],
+    "secondaryKeywords": [
+      "v=DMARC1 p=reject rua mailto pct=100 format",
+      "google yahoo bulk sender dmarc requirement",
+      "aspf adkim relaxed strict alignment dmarc"
+    ],
+    "targetUsers": [
+      "Domain Administrators",
+      "Email Deliverability Engineers",
+      "DevOps Professionals",
+      "Security Officers"
+    ],
+    "badge": "Network",
+    "userProblem": "Domain owners and DevOps engineers complying with Google and Yahoo's mandatory email deliverability requirements need an interactive visual tool to generate valid `v=DMARC1` TXT records with policy enforcement (`p=reject/quarantine`), aggregate reporting (`rua=`), and SPF/DKIM alignment.",
+    "searchIntent": "Generate valid DNS DMARC TXT records with policy enforcement, reporting URIs, and alignment options.",
+    "resultInterpretation": "Constructs valid RFC 7489 DMARC TXT records, generates BIND zone file lines (`_dmarc.domain.com.`), and outputs terminal `dig` verification commands.",
+    "practicalGuidance": "Google and Yahoo now reject or quarantine emails from domains that lack a valid DMARC record. Start with `p=none` to collect reports, then graduate to `p=quarantine` and finally `p=reject`.",
+    "limitations": "Generates RFC 7489 standard DMARC syntax.",
+    "formula": "DMARC Syntax Synthesis: _dmarc.domain IN TXT \"v=DMARC1; p=[policy]; rua=mailto:[email]; aspf=[r/s]; adkim=[r/s]\"",
+    "trustNotes": "100% Client-Side. Zero DNS lookups transmitted.",
+    "related": [
+      "dns-spf-record-builder",
+      "email-dns-records-generator",
+      "reverse-dns-ptr-record-generator",
+      "dns-lookup"
+    ],
+    "seo": {
+      "title": "DMARC Record Generator — DNS Email Authentication & Policy Builder",
+      "metaDescription": "Create valid DNS DMARC TXT records complying with Google & Yahoo bulk sender requirements. Configure p=reject, rua reporting, and alignment. Free tool.",
+      "whatIsThis": "A domain security utility that constructs RFC 7489 compliant DMARC email authentication policy records.",
+      "howItWorks": "1. Enter your domain name and select a DMARC policy (reject, quarantine, or none).\n2. Enter aggregate report email (rua) and alignment options.\n3. Copy the DNS TXT record and BIND zone entry in 1 click.",
+      "whyUseIt": "Guarantees email delivery to Gmail and Yahoo inboxes while preventing domain spoofing and phishing.",
+      "faqs": [
+        {
+          "question": "What is DMARC and why is it mandatory?",
+          "answer": "DMARC (Domain-based Message Authentication, Reporting, and Conformance) tells receiving email servers what to do with incoming emails that fail SPF or DKIM checks. In 2024, Google and Yahoo made DMARC mandatory for all bulk senders."
+        },
+        {
+          "question": "What is the difference between p=none, p=quarantine, and p=reject?",
+          "answer": "`p=none` allows failed emails through while sending you daily diagnostic reports. `p=quarantine` sends failed emails to the recipient's spam/junk folder. `p=reject` completely drops fraudulent emails at the gateway."
+        }
+      ]
+    }
+  },
+  {
+    "id": "hard-money-loan-calculator",
+    "name": "Hard Money & Private Bridge Loan Financing Calculator",
+    "slug": "hard-money-loan-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "hard money loan calculator",
+      "private money bridge loan calculator",
+      "fix and flip loan calculator points interest",
+      "hard money interest only payment calculator",
+      "loan to cost ltc hard money calculator",
+      "cash to close hard money loan calculator"
+    ],
+    "primaryKeywords": [
+      "hard money loan calculator",
+      "bridge loan calculator",
+      "fix and flip loan calculator",
+      "hard money calculator"
+    ],
+    "secondaryKeywords": [
+      "lender points origination fee cash to close",
+      "interest only monthly payment hard money 12 percent",
+      "ltc loan to cost vs ltv after repair value"
+    ],
+    "targetUsers": [
+      "Real Estate Flippers",
+      "BRRRR Method Investors",
+      "Commercial Bridge Borrowers",
+      "Private Money Brokers"
+    ],
+    "badge": "Popular",
+    "userProblem": "Real estate flippers and BRRRR investors financing acquisitions with private hard money need to calculate total loan amounts (based on LTC and ARV caps), cash needed at closing (points + down payment), and monthly interest-only debt service.",
+    "searchIntent": "Calculate hard money bridge loan financing, points origination fees, monthly interest-only payments, and cash required at closing.",
+    "resultInterpretation": "Calculates total loan principal financed, cash required at closing, monthly interest-only payments, total points and interest costs over 6, 9, or 12-month terms, and overall financing cost.",
+    "practicalGuidance": "Hard money lenders typically fund up to 85% - 90% of purchase and rehab costs, but strictly cap their loan at 70% - 75% of After Repair Value (ARV) to protect their downside.",
+    "limitations": "Models standard interest-only short-term real estate bridge loans.",
+    "formula": "Loan = Min(Cost * LTC, ARV * 0.75); Points_Fee = Loan * Points; Monthly_Int = (Loan * APR) / 12",
+    "trustNotes": "100% Client-Side financial calculation.",
+    "related": [
+      "real-estate-70-percent-rule-house-flipping-calculator",
+      "real-estate-cash-on-cash-return-calculator",
+      "land-loan-financing-calculator",
+      "roi-investment-calculator"
+    ],
+    "seo": {
+      "title": "Hard Money Loan Calculator — Private Bridge Financing & Points Tool",
+      "metaDescription": "Calculate hard money loan amounts, lender points, interest-only monthly payments, and cash required to close for fix-and-flip projects. Free real estate tool.",
+      "whatIsThis": "A real estate investment utility that models short-term hard money and private bridge loan financing terms.",
+      "howItWorks": "1. Enter purchase price, rehab budget, and After Repair Value (ARV).\n2. Enter interest rate, lender points, LTC percentage, and holding term.\n3. View required cash at closing, monthly payment, and total financing costs.",
+      "whyUseIt": "Accurately predicts carrying costs and points so flippers preserve target profit margins.",
+      "faqs": [
+        {
+          "question": "What are points on a hard money loan?",
+          "answer": "Points are upfront origination fees charged by the lender, where 1 point equals 1% of the total loan amount. For example, 2.5 points on a $200,000 loan equals a $5,000 upfront fee."
+        },
+        {
+          "question": "Why do hard money loans use interest-only payments?",
+          "answer": "Because fix-and-flip projects are short-term (typically 6 to 12 months), borrowers do not amortize principal monthly; they make interest-only payments and repay the principal in a single balloon upon selling or refinancing."
+        }
+      ]
+    }
+  },
+  {
+    "id": "aspect-ratio-isometric-pixel-art-grid-calculator",
+    "name": "Isometric Pixel Art 2:1 Dimetric Grid & Tile Calculator",
+    "slug": "aspect-ratio-isometric-pixel-art-grid-calculator",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "isometric pixel art calculator",
+      "2 to 1 dimetric pixel art calculator",
+      "isometric tile resolution calculator",
+      "pixel art stair step angle 26.565",
+      "isometric grid to screen coordinates calculator",
+      "game dev isometric tilemap dimensions"
+    ],
+    "primaryKeywords": [
+      "isometric pixel art calculator",
+      "pixel art tile calculator",
+      "dimetric projection calculator",
+      "isometric tile calculator"
+    ],
+    "secondaryKeywords": [
+      "64x32 128x64 2 to 1 pixel art tile aspect ratio",
+      "screen to isometric coordinate picking formula",
+      "map bounding box pixel dimensions game dev"
+    ],
+    "targetUsers": [
+      "Pixel Artists",
+      "Indie Game Developers",
+      "Godot / Unity Developers",
+      "2D Animators"
+    ],
+    "badge": "Design",
+    "userProblem": "Pixel artists and indie game developers creating isometric games (like Final Fantasy Tactics or SimCity) need a tool to calculate 2:1 dimetric tile dimensions, stair-stepping angles ($26.565^\\circ$), map canvas bounding boxes, and coordinate conversion formulas.",
+    "searchIntent": "Calculate 2:1 dimetric pixel art tile dimensions, screen bounding box sizes, and coordinate conversion code.",
+    "resultInterpretation": "Calculates true stair-stepping angle ($26.565^\\circ$), total map bounding canvas in pixels, half-width/height offsets, and generates coordinate projection functions (`isoToScreen` and `screenToIso`) for game engines.",
+    "practicalGuidance": "Standard video game 'isometric' projection is mathematically dimetric with a 2:1 pixel ratio (2 pixels horizontal for every 1 pixel vertical) to avoid jagged anti-aliasing artifacts on pixel displays.",
+    "limitations": "Calculates standard 2:1 dimetric pixel grid specifications.",
+    "formula": "Angle = arctan(0.5) = 26.565 deg; Screen_W = (Cols + Rows) * (TileW / 2); Screen_H = (Cols + Rows) * (TileH / 2)",
+    "trustNotes": "100% Client-Side calculation.",
+    "related": [
+      "css-isometric-text-and-box-generator",
+      "aspect-ratio-cinema-anamorphic-calculator",
+      "aspect-ratio-video-wall-led-display-calculator",
+      "aspect-ratio-css-aspect-ratio-generator"
+    ],
+    "seo": {
+      "title": "Isometric Pixel Art Calculator — 2:1 Dimetric Grid & Tile Tool",
+      "metaDescription": "Calculate 2:1 dimetric pixel art tile resolutions, stair-step angles (26.565°), map bounding boxes, and screen-to-iso conversion code. Free game dev tool.",
+      "whatIsThis": "A game development geometry utility that calculates dimensions and coordinate conversion formulas for isometric pixel art.",
+      "howItWorks": "1. Select a tile preset (64x32, 128x64, 32x16) or custom dimensions.\n2. Enter map grid columns and rows.\n3. View pixel angle, map canvas size, and copy coordinate conversion code.",
+      "whyUseIt": "Guarantees seamless tile alignment and clean non-aliased pixel stair-stepping in 2D game engines.",
+      "faqs": [
+        {
+          "question": "Why is game 'isometric' art actually 2:1 dimetric?",
+          "answer": "True isometric projection uses a 30° angle, which cannot be cleanly rendered on a square pixel grid without uneven stair-stepping. A 2:1 slope (arctan 0.5 ≈ 26.565°) steps exactly 2 pixels right for every 1 pixel down, creating perfectly crisp retro pixel lines."
+        },
+        {
+          "question": "How do you convert screen mouse clicks to isometric tile coordinates?",
+          "answer": "The formula is `tileX = Math.floor((screenX / halfW + screenY / halfH) / 2)` and `tileY = Math.floor((screenY / halfH - screenX / halfW) / 2)` where `halfW = tileWidth / 2` and `halfH = tileHeight / 2`."
+        }
+      ]
+    }
+  },
+  {
+    "id": "crontab-to-github-actions-schedule-converter",
+    "name": "Crontab to GitHub Actions Workflow Schedule Converter",
+    "slug": "crontab-to-github-actions-schedule-converter",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "cron to github actions converter",
+      "github actions schedule cron generator",
+      "convert crontab to github actions workflow",
+      "github actions on schedule cron syntax",
+      "github actions cron interval 5 minutes limit",
+      "yaml github workflow schedule generator"
+    ],
+    "primaryKeywords": [
+      "cron to github actions converter",
+      "github actions cron generator",
+      "github actions schedule converter",
+      "crontab to github actions"
+    ],
+    "secondaryKeywords": [
+      "on schedule cron yaml syntax github actions",
+      "utc timezone schedule workflow dispatch",
+      "5 minute minimum execution frequency validation"
+    ],
+    "targetUsers": [
+      "DevOps Engineers",
+      "GitHub Developers",
+      "CI/CD Engineers",
+      "Open Source Maintainers"
+    ],
+    "badge": "High Usage",
+    "userProblem": "Developers and DevOps engineers setting up scheduled CI/CD pipelines, nightly integration builds, or data sync scripts in GitHub Actions need a tool to convert POSIX crontabs into valid `.github/workflows/` YAML syntax while respecting UTC rules and GitHub's 5-minute interval limits.",
+    "searchIntent": "Convert crontab expressions into valid GitHub Actions workflow schedule YAML syntax with frequency validation.",
+    "resultInterpretation": "Generates complete `.github/workflows/` YAML workflow files with `on.schedule: - cron: '...'`, includes manual `workflow_dispatch` triggers, and enforces GitHub's 5-minute minimum frequency requirement.",
+    "practicalGuidance": "GitHub Actions schedules evaluate exclusively in UTC. During periods of high load across GitHub, scheduled workflows may experience slight queue delays.",
+    "limitations": "Translates standard 5-part POSIX cron syntax into GitHub Actions YAML.",
+    "formula": "Workflow Synthesis: on.schedule: - cron: '[m h dom mon dow]' + workflow_dispatch",
+    "trustNotes": "100% Client-Side generation.",
+    "related": [
+      "crontab-to-aws-eventbridge-converter",
+      "crontab-to-systemd-timer-converter",
+      "crontab-schedule-next-runs-calculator",
+      "crontab-generator-and-validator"
+    ],
+    "seo": {
+      "title": "Crontab to GitHub Actions Converter — Workflow Schedule YAML Tool",
+      "metaDescription": "Convert crontab expressions into GitHub Actions workflow schedule YAML online. Enforces UTC and 5-minute minimum interval limits. Free developer tool.",
+      "whatIsThis": "A CI/CD automation utility that translates Linux crontabs into GitHub Actions scheduled workflow YAML files.",
+      "howItWorks": "1. Enter a crontab expression, workflow name, and run command.\n2. Validates execution frequency against GitHub limits.\n3. Copy the production `.github/workflows/scheduled-job.yml` file in 1 click.",
+      "whyUseIt": "Prevents CI/CD configuration bugs and ensures scheduled automation runs reliably on GitHub.",
+      "faqs": [
+        {
+          "question": "Can GitHub Actions run jobs every minute?",
+          "answer": "No. GitHub Actions limits scheduled workflows to run no more frequently than once every 5 minutes (`*/5 * * * *`). Higher frequency requests will be queued or dropped by GitHub's scheduler."
+        },
+        {
+          "question": "What timezone does GitHub Actions schedule run in?",
+          "answer": "All GitHub Actions scheduled triggers evaluate exclusively in UTC (Coordinated Universal Time). Convert your local time to UTC before configuring the cron expression."
+        }
+      ]
+    }
+  },
+  {
+    "id": "cost-of-living-relocation-calculator",
+    "name": "Cost of Living Relocation Salary & Purchasing Power Calculator",
+    "slug": "cost-of-living-relocation-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "cost of living relocation calculator",
+      "relocation salary calculator",
+      "city cost of living comparison calculator",
+      "moving salary equivalent calculator",
+      "cost of living index salary adjustment",
+      "job offer relocation salary calculator"
+    ],
+    "primaryKeywords": [
+      "relocation salary calculator",
+      "cost of living relocation calculator",
+      "city salary comparison calculator",
+      "cost of living calculator"
+    ],
+    "secondaryKeywords": [
+      "san francisco new york austin seattle coli index",
+      "equivalent salary needed to maintain standard of living",
+      "effective real raise after relocation costs"
+    ],
+    "targetUsers": [
+      "Relocating Professionals",
+      "Job Seekers Evaluating Offers",
+      "Remote Workers Moving Metros",
+      "HR Compensation Teams"
+    ],
+    "badge": "Popular",
+    "userProblem": "Professionals relocating between metro areas or evaluating out-of-state job offers need to calculate the equivalent salary needed in their destination city based on the Cost of Living Index (COLI) to ensure an offer isn't an accidental pay cut.",
+    "searchIntent": "Compare salaries between cities based on Cost of Living Indexes to calculate equivalent purchasing power.",
+    "resultInterpretation": "Calculates required equivalent salary in the destination city, percentage cost of living differential, and assesses whether a specific job offer represents a real purchasing power surplus or shortfall.",
+    "practicalGuidance": "Moving from a high-cost metro (like NYC or SF) to a moderate metro (like Austin or Atlanta) can boost real disposable income by 20% to 40% even with a modest nominal salary reduction.",
+    "limitations": "Models standard regional Cost of Living Index (COLI) baselines.",
+    "formula": "Equivalent_Salary = Current_Salary * (Target_COLI / Origin_COLI); Real_Delta = Offered_Salary - Equivalent_Salary",
+    "trustNotes": "100% Client-Side financial calculation.",
+    "related": [
+      "future-salary-inflation-calculator",
+      "salary-after-tax-take-home-calculator",
+      "commute-cost-calculator",
+      "freelance-hourly-rate-calculator"
+    ],
+    "seo": {
+      "title": "Cost of Living Relocation Calculator — City Salary Comparison Tool",
+      "metaDescription": "Calculate the equivalent salary you need when moving between cities. Compare Cost of Living Indexes (COLI) and evaluate out-of-state job offers. Free tool.",
+      "whatIsThis": "A career and compensation utility that calculates salary adjustments required when relocating between cities.",
+      "howItWorks": "1. Select origin city and destination city.\n2. Enter current salary and target offered salary.\n3. View equivalent salary required, living cost delta, and real net raise percentage.",
+      "whyUseIt": "Reveals whether an out-of-state job offer represents a genuine promotion or a stealth pay cut.",
+      "faqs": [
+        {
+          "question": "What is the Cost of Living Index (COLI)?",
+          "answer": "The Cost of Living Index measures the relative expense of basic necessities (housing, food, energy, healthcare, transportation) in a specific city compared to the national average baseline of 100."
+        },
+        {
+          "question": "Which expense creates the largest difference in relocation costs?",
+          "answer": "Housing represents 60% to 75% of the total cost of living difference between US cities. Rent and home prices in tier-1 metros (NYC, SF) can be two to three times higher than the national median."
+        }
+      ]
+    }
+  },
+  {
+    "id": "oklab-color-palette-generator",
+    "name": "Perceptually Uniform Oklab & Oklch Color Palette Generator",
+    "slug": "oklab-color-palette-generator",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "oklch color generator",
+      "oklab palette generator",
+      "perceptually uniform color palette generator",
+      "css color 4 oklch generator",
+      "oklch harmony generator complementary analogous",
+      "modern css oklch design tokens"
+    ],
+    "primaryKeywords": [
+      "oklch color generator",
+      "oklab palette generator",
+      "oklch palette generator",
+      "css oklch generator"
+    ],
+    "secondaryKeywords": [
+      "perceptual lightness chroma hue angle sliders",
+      "complementary analogous triadic oklch harmony",
+      "css color level 4 oklch tokens"
+    ],
+    "targetUsers": [
+      "UI Designers",
+      "Design System Engineers",
+      "Frontend Developers",
+      "Accessibility Specialists"
+    ],
+    "badge": "Design",
+    "userProblem": "Design system engineers and frontend developers building accessible, harmonious color palettes need a visual generator for CSS Color 4 `oklch(L C H)` that avoids HSL's distorted perceptual brightness issues.",
+    "searchIntent": "Generate perceptually uniform Oklab and Oklch color harmonies and CSS design tokens.",
+    "resultInterpretation": "Controls perceptual Lightness ($L$), Chroma ($C$), and Hue ($H$) independently, generating complementary, analogous, triadic, and monochromatic harmonies and production CSS custom properties.",
+    "practicalGuidance": "Unlike HSL, altering the hue angle in Oklch maintains constant perceived human brightness, ensuring accessible contrast ratios remain intact across theme switches.",
+    "limitations": "Generates standard CSS Color Module Level 4 `oklch(...)` syntax.",
+    "formula": "Oklch Polar Color Space: oklch(L C H) ➔ Perceptually Uniform Harmonies (H +- 30 deg, H +- 180 deg)",
+    "trustNotes": "100% Client-Side color math.",
+    "related": [
+      "hex-to-rgb-linear-srgb-converter",
+      "color-converter",
+      "color-contrast-checker",
+      "hex-color-shades-tints-generator"
+    ],
+    "seo": {
+      "title": "Oklch Color Palette Generator — Perceptually Uniform CSS Harmonies",
+      "metaDescription": "Generate perceptually uniform color palettes in modern CSS oklch(L C H). Create accessible complementary, analogous, and triadic color schemes. Free tool.",
+      "whatIsThis": "A design system color utility that creates perceptually uniform color palettes using the modern CSS Color 4 Oklch standard.",
+      "howItWorks": "1. Pick a harmony mode (Complementary, Analogous, Triadic, Monochromatic).\n2. Adjust Lightness, Chroma, and Hue sliders.\n3. Copy the production CSS custom properties in 1 click.",
+      "whyUseIt": "Eliminates unpredictable contrast shifts found in legacy HSL and hex color systems.",
+      "faqs": [
+        {
+          "question": "Why is Oklch superior to HSL for UI design systems?",
+          "answer": "HSL is mathematically uniform but perceptually flawed: pure yellow (`hsl(60, 100%, 50%)`) appears blindingly bright, while pure blue (`hsl(240, 100%, 50%)`) appears extremely dark. Oklch fixes this by ensuring equal lightness values actually look equally bright to human eyes."
+        },
+        {
+          "question": "Is CSS oklch supported in modern browsers?",
+          "answer": "Yes. CSS Color Module Level 4 `oklch()` is supported by 100% of modern web browsers including Safari 15.4+, Chrome 111+, Firefox 113+, and Edge 111+."
+        }
+      ]
+    }
+  },
+  {
+    "id": "vo2-max-running-fitness-calculator",
+    "name": "VO2 Max Running & Athletic Fitness Calculator",
+    "slug": "vo2-max-running-fitness-calculator",
+    "category": "health",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "vo2 max calculator",
+      "cooper test vo2 max calculator",
+      "12 minute run vo2 max calculator",
+      "resting heart rate vo2 max calculator",
+      "running aerobic fitness vo2 max score",
+      "cardiorespiratory fitness longevity calculator"
+    ],
+    "primaryKeywords": [
+      "vo2 max calculator",
+      "cooper test calculator",
+      "aerobic fitness calculator",
+      "vo2 max running calculator"
+    ],
+    "secondaryKeywords": [
+      "acsm population percentiles superior excellent good",
+      "cardiovascular longevity risk all cause mortality",
+      "uth sorensen overgaard pedersen heart rate formula"
+    ],
+    "targetUsers": [
+      "Runners",
+      "Athletes",
+      "Fitness Enthusiasts",
+      "Longevity Seekers"
+    ],
+    "badge": "Popular",
+    "userProblem": "Runners, athletes, and longevity enthusiasts tracking cardiovascular health need to estimate their VO2 Max without expensive lab metabolic carts, using validated clinical field tests (Cooper 12-minute run or heart rate ratio).",
+    "searchIntent": "Estimate VO2 Max cardiovascular fitness from running distance or resting heart rate with ACSM population percentiles.",
+    "resultInterpretation": "Calculates estimated VO2 Max in mL/kg/min using clinical formulas, classifies cardiorespiratory fitness across ACSM percentiles (Superior, Excellent, Good, Fair, Poor), and evaluates all-cause cardiovascular mortality risk.",
+    "practicalGuidance": "Having an 'Elite' or 'Superior' VO2 Max is clinically correlated with a 500% reduction in cardiovascular mortality risk compared to the lowest fitness quartile.",
+    "limitations": "Estimates cardiorespiratory fitness based on Cooper and Uth et al. formulas.",
+    "formula": "Cooper: VO2max = (Distance_m - 504.9) / 44.73; Heart Rate: VO2max = 15.3 * (HRmax / HRrest)",
+    "trustNotes": "100% Client-Side calculation. Zero health metrics stored.",
+    "related": [
+      "body-fat-percentage-us-navy-calculator",
+      "ideal-body-weight-devine-calculator",
+      "walking-steps-to-miles-calories-calculator",
+      "bmi-calculator"
+    ],
+    "seo": {
+      "title": "VO2 Max Calculator — Running Fitness & Cooper Test Tool",
+      "metaDescription": "Calculate your VO2 Max aerobic fitness score and longevity risk tier using the Cooper 12-minute run test or resting heart rate. Free health tool.",
+      "whatIsThis": "A cardiorespiratory fitness utility that estimates VO2 Max oxygen consumption and population fitness percentiles.",
+      "howItWorks": "1. Choose Cooper 12-Minute Run Test or Heart Rate Ratio method.\n2. Enter age, gender, and test metrics (run distance in meters or resting/max heart rate).\n3. View your estimated VO2 Max score, ACSM fitness tier, and longevity profile.",
+      "whyUseIt": "Provides an accessible benchmark of aerobic endurance without requiring expensive laboratory equipment.",
+      "faqs": [
+        {
+          "question": "What is VO2 Max and why is it important?",
+          "answer": "VO2 Max measures the maximum volume of oxygen (in milliliters per kilogram of body weight per minute) that your body can absorb and utilize during intense exercise. It is the single strongest clinical indicator of cardiorespiratory health and overall longevity."
+        },
+        {
+          "question": "What is a good VO2 Max score for a 30-year-old?",
+          "answer": "For men in their 30s, a VO2 Max between 41 and 45 is 'Good', 46 to 51 is 'Excellent', and 52+ is 'Superior'. For women in their 30s, 35 to 39 is 'Good', 40 to 45 is 'Excellent', and 46+ is 'Superior'."
+        }
+      ]
+    }
   }
 ]
