@@ -19920,5 +19920,645 @@
         }
       ]
     }
+  },
+  {
+    "id": "curl-to-perl-lwp-useragent-converter",
+    "name": "cURL to Perl (LWP::UserAgent & HTTP::Tiny) Code Converter",
+    "slug": "curl-to-perl-lwp-useragent-converter",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "curl to perl converter",
+      "convert curl to perl lwp useragent",
+      "curl to http tiny converter perl",
+      "perl rest api request generator from curl",
+      "curl command to perl script generator",
+      "lwp useragent post request generator"
+    ],
+    "primaryKeywords": [
+      "curl to perl converter",
+      "convert curl to perl",
+      "curl to lwp useragent",
+      "curl to http tiny"
+    ],
+    "secondaryKeywords": [
+      "http request common post payload decoded content",
+      "http tiny perl core zero dependency request",
+      "system administration perl rest client code generator"
+    ],
+    "targetUsers": [
+      "Perl Developers",
+      "Linux System Administrators",
+      "DevOps Engineers",
+      "Legacy Systems Integration Specialists"
+    ],
+    "badge": "High Usage",
+    "userProblem": "Linux sysadmins and Perl developers integrating REST webhooks or automating server tasks struggle to convert bash cURL commands into idiomatic Perl `LWP::UserAgent` or `HTTP::Tiny` syntax.",
+    "searchIntent": "Convert bash cURL commands into Perl HTTP client code using LWP::UserAgent or HTTP::Tiny.",
+    "resultInterpretation": "Translates cURL CLI commands into clean Perl scripts using either CPAN `LWP::UserAgent` or core zero-dependency `HTTP::Tiny`, formatting headers and payload bodies cleanly.",
+    "practicalGuidance": "Use `HTTP::Tiny` when writing scripts that must execute across diverse Linux distributions without installing extra CPAN modules, as it is included in the Perl standard core library.",
+    "limitations": "Parses standard HTTP/HTTPS cURL CLI commands.",
+    "formula": "CLI AST Parser: cURL Command ➔ Perl LWP::UserAgent / HTTP::Tiny Code Synthesis",
+    "trustNotes": "100% Client-Side. Zero API keys or credentials transmitted.",
+    "related": [
+      "curl-to-lua-socket-http-converter",
+      "curl-to-python-requests-converter",
+      "curl-to-powershell-restmethod-converter",
+      "curl-to-ruby-net-http-converter"
+    ],
+    "seo": {
+      "title": "cURL to Perl Converter — Convert cURL to LWP::UserAgent Online",
+      "metaDescription": "Convert cURL commands to Perl LWP::UserAgent and HTTP::Tiny scripts online. Formats headers, JSON bodies, and error handling. Free developer tool.",
+      "whatIsThis": "A developer programming utility that translates bash cURL commands into idiomatic Perl HTTP request code.",
+      "howItWorks": "1. Choose LWP::UserAgent or HTTP::Tiny.\n2. Paste your cURL command into the input box.\n3. Copy the clean Perl code in 1 click.",
+      "whyUseIt": "Eliminates repetitive syntax lookup when converting curl commands into automation scripts in Perl.",
+      "faqs": [
+        {
+          "question": "What is the difference between LWP::UserAgent and HTTP::Tiny?",
+          "answer": "`LWP::UserAgent` is Perl's feature-rich, long-standing HTTP client supporting complex redirects and cookies, while `HTTP::Tiny` is a lightweight, zero-dependency client built into the standard Perl core library since version 5.14."
+        },
+        {
+          "question": "Does this tool support HTTPS in Perl?",
+          "answer": "Yes. Both generated clients support HTTPS, provided standard OpenSSL bindings (`IO::Socket::SSL` and `Mozilla::CA`) are present in your Perl environment."
+        }
+      ]
+    }
+  },
+  {
+    "id": "real-estate-break-even-occupancy-calculator",
+    "name": "Commercial Real Estate Break-Even Occupancy Calculator",
+    "slug": "real-estate-break-even-occupancy-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "break even occupancy calculator",
+      "commercial real estate break even occupancy",
+      "multifamily break even occupancy rate formula",
+      "fannie mae break even occupancy underwriting",
+      "cre default cushion break even ratio",
+      "property break even dollar revenue calculator"
+    ],
+    "primaryKeywords": [
+      "break even occupancy calculator",
+      "cre break even occupancy",
+      "multifamily break even calculator",
+      "break even occupancy formula"
+    ],
+    "secondaryKeywords": [
+      "operating expenses plus annual debt service divided by gpr",
+      "minimum leased units required zero cash flow threshold",
+      "agency lender underwriting cushion under 80 percent"
+    ],
+    "targetUsers": [
+      "Commercial Mortgage Underwriters",
+      "Multifamily Real Estate Syndicators",
+      "Fannie Mae / Freddie Mac DUS Lenders",
+      "Real Estate Private Equity Analysts"
+    ],
+    "badge": "Popular",
+    "userProblem": "Commercial lenders and property syndicators need to calculate the exact Break-Even Occupancy percentage and minimum required leased units to ensure a property generates enough rent to cover 100% of Operating Expenses and Debt Service.",
+    "searchIntent": "Calculate commercial real estate break-even occupancy rate, safety margin, and minimum leased units.",
+    "resultInterpretation": "Calculates the Break-Even Occupancy percentage, required annual revenue, safety buffer between current and break-even occupancy, minimum units needed, and tests compliance with Fannie/Freddie 80% underwriting thresholds.",
+    "practicalGuidance": "Agency lenders (Fannie Mae, Freddie Mac, HUD) typically require underwritten break-even occupancy to remain below 80% to 85% to mitigate borrower default risk during economic contractions.",
+    "limitations": "Calculates standard commercial real estate operational and debt coverage break-even math.",
+    "formula": "Break_Even_Occupancy% = (Operating_Expenses + Annual_Debt_Service) / Gross_Potential_Rent",
+    "trustNotes": "100% Client-Side calculation.",
+    "related": [
+      "commercial-real-estate-debt-service-coverage-ratio-stress-tester",
+      "commercial-real-estate-loan-to-cost-ltc-calculator",
+      "real-estate-cap-rate-noi-calculator",
+      "dscr-rental-loan-calculator"
+    ],
+    "seo": {
+      "title": "Break-Even Occupancy Calculator — Commercial Real Estate Tool",
+      "metaDescription": "Calculate commercial real estate break-even occupancy percentage and minimum leased units. Check agency lender 80% underwriting safety margin. Free tool.",
+      "whatIsThis": "A commercial real estate finance utility that determines the exact physical and economic occupancy required for rental revenues to cover operating costs and debt payments.",
+      "howItWorks": "1. Enter Gross Potential Rent, Operating Expenses, and Annual Debt Service.\n2. Enter current occupancy and total property units.\n3. View Break-Even Occupancy %, safety margin, and minimum units needed.",
+      "whyUseIt": "Crucial for stress-testing property solvency and securing agency multifamily financing.",
+      "faqs": [
+        {
+          "question": "What is Break-Even Occupancy in commercial real estate?",
+          "answer": "Break-Even Occupancy is the percentage of a property's rentable space that must be leased for gross rental revenue to exactly equal the sum of operating expenses and annual mortgage debt service (resulting in zero cash flow)."
+        },
+        {
+          "question": "What is considered a safe break-even occupancy rate?",
+          "answer": "Most institutional lenders and agency underwriters (Fannie Mae / Freddie Mac) consider a break-even occupancy below 80% to be healthy. Rates above 85% signal high vulnerability to cash flow deficits if tenant vacancies rise."
+        }
+      ]
+    }
+  },
+  {
+    "id": "css-custom-switch-toggle-generator",
+    "name": "Pure CSS Accessible Toggle Switch Generator",
+    "slug": "css-custom-switch-toggle-generator",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "css switch toggle generator",
+      "pure css toggle switch generator",
+      "accessible css toggle switch generator",
+      "css sliding checkbox switch generator",
+      "zero javascript toggle switch css",
+      "spring physics toggle switch cubic bezier generator"
+    ],
+    "primaryKeywords": [
+      "css switch generator",
+      "pure css toggle switch",
+      "accessible toggle switch css",
+      "css checkbox switch"
+    ],
+    "secondaryKeywords": [
+      "visually hidden input checked plus track after transform",
+      "focus visible ring outline wcag aa accessibility",
+      "cubic bezier sliding knob spring bounce transition"
+    ],
+    "targetUsers": [
+      "Frontend Developers",
+      "UI/UX Designers",
+      "Web Accessibility Specialists",
+      "Design System Engineers"
+    ],
+    "badge": "Design",
+    "userProblem": "Frontend developers building form settings and theme toggles want clean, smooth toggle switches without pulling in bulky JavaScript libraries or breaking native keyboard accessibility (Spacebar toggle and tab navigation).",
+    "searchIntent": "Generate pure CSS accessible toggle switch code built on native HTML5 checkboxes with smooth sliding transitions.",
+    "resultInterpretation": "Adjusts switch dimensions, active/inactive colors, and knob transition curves, renders an interactive live preview toggle (keyboard navigable), and generates clean HTML and CSS markup with zero JavaScript.",
+    "practicalGuidance": "Building toggle switches on `<input type=\"checkbox\">` with `:focus-visible` styling ensures 100% WCAG AA compliance and native mobile touch support.",
+    "limitations": "Generates pure HTML5 and CSS3 code.",
+    "formula": "input:checked + .track::after { transform: translateX(travel_distance); }",
+    "trustNotes": "100% Client-Side generation.",
+    "related": [
+      "css-custom-checkbox-and-radio-generator",
+      "css-accordion-smooth-details-generator",
+      "css-spotlight-mouse-hover-generator",
+      "css-animated-gradient-border-generator"
+    ],
+    "seo": {
+      "title": "Pure CSS Toggle Switch Generator — Accessible & Zero JS Tool",
+      "metaDescription": "Generate pure CSS accessible toggle switches online. Built on native checkboxes with smooth sliding transitions. Zero JavaScript required. Free tool.",
+      "whatIsThis": "A web design utility that creates customizable, accessible toggle switches using pure CSS and standard HTML5 checkbox elements.",
+      "howItWorks": "1. Customize width, height, colors, and animation duration.\n2. Click the live interactive preview or press Spacebar to toggle.\n3. Copy the ready-to-use HTML and CSS code.",
+      "whyUseIt": "Delivers sleek, modern mobile-style switches with zero dependencies and built-in screen reader accessibility.",
+      "faqs": [
+        {
+          "question": "Is this toggle switch accessible for screen readers?",
+          "answer": "Yes. It uses a standard `<input type=\"checkbox\">` element hidden visually via CSS. Screen readers announce it as a native checkbox toggle, and users can toggle it with the Spacebar."
+        },
+        {
+          "question": "Do I need any JavaScript to make it switch states?",
+          "answer": "No JavaScript is needed. The browser natively toggles the checkbox checked state on click or Spacebar, and CSS `:checked` selectors animate the sliding knob."
+        }
+      ]
+    }
+  },
+  {
+    "id": "dns-naptr-record-generator",
+    "name": "DNS RFC 3403 NAPTR (Naming Authority Pointer) Record Generator",
+    "slug": "dns-naptr-record-generator",
+    "category": "network",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "naptr record generator",
+      "dns naptr record builder",
+      "rfc 3403 naptr generator",
+      "sip voip naptr record generator",
+      "enum e164 naptr dns generator",
+      "naming authority pointer bind zone generator"
+    ],
+    "primaryKeywords": [
+      "naptr record generator",
+      "dns naptr generator",
+      "rfc 3403 generator",
+      "sip naptr record"
+    ],
+    "secondaryKeywords": [
+      "order preference flags service regexp replacement bind format",
+      "e164 arpa enum phone number to sip uri translation",
+      "sips d2t sip d2u webrtc d2w voip pbx routing"
+    ],
+    "targetUsers": [
+      "VoIP & Telecom Engineers (Asterisk / FreeSWITCH)",
+      "Network & Systems Administrators",
+      "SIP Trunk Providers",
+      "ENUM Telecommunication Operators"
+    ],
+    "badge": "Network",
+    "userProblem": "VoIP engineers and DNS administrators configuring SIP servers, ENUM telephone routing, or dynamic delegation discovery systems struggle with the complex RFC 3403 NAPTR syntax (order, preference, flags, service, regex, and replacement fields).",
+    "searchIntent": "Generate RFC 3403 NAPTR DNS records for SIP VoIP and ENUM telephone routing in BIND format.",
+    "resultInterpretation": "Generates valid RFC 3403 NAPTR records from user inputs or industry presets (SIP TLS, SIP UDP, ENUM E.164, SIP WebSockets), with terminal `dig` verification commands.",
+    "practicalGuidance": "In NAPTR records, lower `order` values are processed first. For identical `order` values, lower `preference` acts as the tie-breaker. Flag `s` indicates a terminal lookup for an SRV record.",
+    "limitations": "Generates standard RFC 3403 BIND zone file format.",
+    "formula": "[domain]. IN NAPTR [order] [preference] \"[flags]\" \"[service]\" \"[regexp]\" [replacement]",
+    "trustNotes": "100% Client-Side generation.",
+    "related": [
+      "dns-srv-service-record-generator",
+      "dns-ptr-arpa-zone-generator",
+      "reverse-dns-ptr-record-generator",
+      "dns-record-generator"
+    ],
+    "seo": {
+      "title": "DNS NAPTR Record Generator — RFC 3403 SIP & ENUM Tool",
+      "metaDescription": "Generate RFC 3403 NAPTR DNS records for SIP VoIP and ENUM telephone routing online. Formats BIND zone files and provides dig verification. Free tool.",
+      "whatIsThis": "A network telecommunications utility that creates RFC 3403 Naming Authority Pointer (NAPTR) DNS records for VoIP and telephony routing.",
+      "howItWorks": "1. Enter domain or select a preset (SIP TLS, SIP UDP, ENUM).\n2. Customize order, preference, flags, and replacement target.\n3. Copy the formatted BIND zone record and terminal verification query.",
+      "whyUseIt": "Eliminates syntax errors when configuring PBX telecommunications and VoIP service discovery.",
+      "faqs": [
+        {
+          "question": "What is a NAPTR record in DNS?",
+          "answer": "A NAPTR (Naming Authority Pointer) record is a specialized DNS resource record defined in RFC 3403. It allows regular expression-based rewriting of domain names or phone numbers to map into service endpoints like SIP or SRV records."
+        },
+        {
+          "question": "What does the 's' flag mean in a NAPTR record?",
+          "answer": "The 's' flag signifies that the next lookup step is terminal and points directly to an SRV record specified in the replacement field."
+        }
+      ]
+    }
+  },
+  {
+    "id": "saas-cac-payback-period-calculator",
+    "name": "B2B SaaS CAC Payback Period Calculator (Gross Margin Adjusted)",
+    "slug": "saas-cac-payback-period-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "cac payback period calculator",
+      "saas cac payback calculator",
+      "gross margin adjusted cac payback calculator",
+      "customer acquisition cost payback period months",
+      "b2b saas unit economics cac payback calculator",
+      "ltv to cac ratio payback period tool"
+    ],
+    "primaryKeywords": [
+      "cac payback calculator",
+      "saas cac payback",
+      "cac payback period",
+      "gross margin adjusted cac"
+    ],
+    "secondaryKeywords": [
+      "blended cac divided by arpu times gross margin percentage",
+      "venture capital benchmark under 12 months outstanding",
+      "customer lifetime value ltv to cac ratio calculation"
+    ],
+    "targetUsers": [
+      "SaaS Founders & CEOs",
+      "Venture Capital Investors",
+      "Growth Marketing Directors",
+      "Financial Planning & Analysis (FP&A) Managers"
+    ],
+    "badge": "Popular",
+    "userProblem": "Subscription software founders and finance leaders often miscalculate CAC Payback by ignoring Gross Margins, underestimating the actual calendar months required for a customer to repay sales and marketing expenses.",
+    "searchIntent": "Calculate gross margin-adjusted CAC payback period in months, LTV:CAC ratio, and venture capital efficiency rating.",
+    "resultInterpretation": "Calculates both gross margin-adjusted CAC payback months and unadjusted payback, computes Customer Lifetime Value (LTV), determines LTV:CAC ratio, and grades unit economics against venture standards (<12 mo outstanding, 12-18 mo good, >24 mo dangerous).",
+    "practicalGuidance": "Never calculate CAC payback using unadjusted revenue. A customer paying $100/mo at 70% gross margins only generates $70/mo of cash flow to service acquisition costs.",
+    "limitations": "Calculates standard SaaS venture unit economics formulas.",
+    "formula": "Adjusted_Payback = Blended_CAC / (ARPU * Gross_Margin%); LTV = (ARPU * Gross_Margin%) * Lifespan",
+    "trustNotes": "100% Client-Side. Zero company financials stored or transmitted.",
+    "related": [
+      "saas-burn-multiple-capital-efficiency-calculator",
+      "saas-magic-number-sales-efficiency-calculator",
+      "saas-quick-ratio-growth-efficiency-calculator",
+      "business-valuation-sde-ebitda-multiple-calculator"
+    ],
+    "seo": {
+      "title": "SaaS CAC Payback Calculator — Gross Margin-Adjusted Tool",
+      "metaDescription": "Calculate B2B SaaS CAC Payback period in months with gross margin adjustment. Benchmark against VC criteria and calculate LTV:CAC ratio. Free tool.",
+      "whatIsThis": "A venture SaaS financial utility that determines the exact time required to recover Customer Acquisition Cost after deducting cost of goods sold (COGS).",
+      "howItWorks": "1. Enter blended CAC, monthly ARPU, and subscription gross margin %.\n2. Enter customer lifespan in months.\n3. View margin-adjusted CAC payback, VC benchmark tier, and LTV:CAC ratio.",
+      "whyUseIt": "Reveals true cash-recovery velocity and prevents overspending on customer acquisition.",
+      "faqs": [
+        {
+          "question": "What is a good CAC Payback Period for SaaS?",
+          "answer": "For venture-backed B2B SaaS: Under 12 months is outstanding (top-tier). 12 to 18 months is considered healthy for mid-market/enterprise SaaS. Anything exceeding 24 months creates severe working capital drag."
+        },
+        {
+          "question": "Why must CAC payback be adjusted for gross margin?",
+          "answer": "If you spend $1,000 to acquire a customer who pays $100/month, but hosting and support cost $30/month (70% margin), you only retain $70/month to repay CAC. Without margin adjustment, payback appears to be 10 months, but is actually 14.3 months."
+        }
+      ]
+    }
+  },
+  {
+    "id": "aspect-ratio-hexagonal-line-drawing-supercover-calculator",
+    "name": "Hexagonal Line Drawing & Line of Sight (LOS) Raycaster",
+    "slug": "aspect-ratio-hexagonal-line-drawing-supercover-calculator",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "hex line drawing calculator",
+      "hexagonal line of sight raycasting",
+      "hex grid bresenham algorithm calculator",
+      "cube linear interpolation hex line drawing",
+      "supercover hex raycasting calculator",
+      "red blob games hex line drawing tool"
+    ],
+    "primaryKeywords": [
+      "hex line drawing",
+      "hex line of sight",
+      "hexagonal raycasting",
+      "cube lerp hex line"
+    ],
+    "secondaryKeywords": [
+      "cube linear interpolation cube rounding tie breaking nudge",
+      "axial q r coordinates traversed path sequence step by step",
+      "game development field of view los algorithm"
+    ],
+    "targetUsers": [
+      "Game Developers (Unity / Godot / Unreal)",
+      "Turn-Based Strategy Game Creators",
+      "Tabletop & Wargame Designers",
+      "Interactive Map Programmers"
+    ],
+    "badge": "Design",
+    "userProblem": "Turn-based strategy and tabletop game developers implementing Line of Sight (LOS), projectile ballistics, or movement pathing on hexagonal grids need an exact, deterministic algorithm to calculate the sequence of hex tiles between two points.",
+    "searchIntent": "Calculate the ordered sequence of hexagonal grid tiles along a line between two coordinates using cube linear interpolation.",
+    "resultInterpretation": "Calculates the hex distance between origin `(q1, r1)` and target `(q2, r2)`, executes cube linear interpolation with deterministic tie-breaking nudges, generates the complete step-by-step tile list, and provides copy-ready TypeScript functions.",
+    "practicalGuidance": "Using cube coordinates $(x, y, z)$ with linear interpolation ($\text{lerp}$) and cube rounding is the mathematically purest way to draw straight lines on hex grids.",
+    "limitations": "Calculates regular planar hexagonal coordinate interpolation.",
+    "formula": "dist = max(|dx|, |dy|, |dz|); cube_lerp(a, b, t) = a + (b - a) * t; enforce rx + ry + rz = 0",
+    "trustNotes": "100% Client-Side calculation.",
+    "related": [
+      "aspect-ratio-hexagonal-pixel-to-hex-picker",
+      "aspect-ratio-hexagonal-axial-to-cube-converter",
+      "aspect-ratio-hexagonal-grid-calculator",
+      "aspect-ratio-staggered-isometric-brick-grid-calculator"
+    ],
+    "seo": {
+      "title": "Hexagonal Line Drawing & LOS Raycaster — Game Dev Tool",
+      "metaDescription": "Calculate hexagonal grid straight lines and line-of-sight raycasting. Uses cube linear interpolation and rounding. Free game development tool.",
+      "whatIsThis": "A game development geometry utility that calculates the exact ordered sequence of hexagonal tiles traversed by a straight line or projectile.",
+      "howItWorks": "1. Enter origin hex coordinates (q1, r1) and destination coordinates (q2, r2).\n2. View total hex distance and the complete ordered step-by-step tile trajectory.\n3. Copy the production-ready TypeScript hex line drawing function.",
+      "whyUseIt": "Eliminates jagged line artifacts and ambiguous edge selection in hex-based game engines.",
+      "faqs": [
+        {
+          "question": "How does line drawing work on a hexagonal grid?",
+          "answer": "The start and end points are converted to 3D cube coordinates. The algorithm samples $N$ points along the line segment (where $N$ is the hex distance) and rounds each floating point to the nearest discrete hex tile using cube rounding."
+        },
+        {
+          "question": "Why is a nudge factor needed when drawing hex lines?",
+          "answer": "When a line passes exactly over an edge between two hexagons, standard rounding can produce non-deterministic or discontinuous paths. Adding an infinitesimal nudge (epsilon = 1e-6) breaks ties consistently."
+        }
+      ]
+    }
+  },
+  {
+    "id": "crontab-to-datadog-synthetics-schedule-converter",
+    "name": "Crontab to Datadog Synthetics API Test Schedule Generator",
+    "slug": "crontab-to-datadog-synthetics-schedule-converter",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "cron to datadog synthetics",
+      "datadog synthetics cron schedule generator",
+      "terraform datadog synthetics test cron generator",
+      "datadog api test schedule cron generator",
+      "convert crontab to datadog synthetics json",
+      "datadog monitoring schedule converter"
+    ],
+    "primaryKeywords": [
+      "cron to datadog",
+      "datadog synthetics cron",
+      "datadog test schedule",
+      "terraform datadog synthetics"
+    ],
+    "secondaryKeywords": [
+      "scheduling rules cron timezones tick every zero",
+      "datadog synthetics test resource request definition assertion",
+      "api endpoint synthetic monitoring automation"
+    ],
+    "targetUsers": [
+      "Site Reliability Engineers (SREs)",
+      "DevOps Engineers",
+      "Datadog Monitoring Administrators",
+      "Terraform Infrastructure Engineers"
+    ],
+    "badge": "High Usage",
+    "userProblem": "DevOps and SRE engineers creating Datadog Synthetics API tests need to configure cron schedules in both Datadog REST API JSON payloads and Terraform IaC resource blocks with correct `tick_every: 0` overrides and timezone specifications.",
+    "searchIntent": "Convert standard crontab expressions into Datadog Synthetics API JSON payloads and Terraform configurations.",
+    "resultInterpretation": "Translates 5-field cron schedules and target monitoring endpoints into copy-ready Datadog Synthetics API request JSON payloads and Terraform `datadog_synthetics_test` resource blocks.",
+    "practicalGuidance": "In Datadog Synthetics, configuring a cron schedule requires setting `options.tick_every = 0` to signal to the Datadog engine that the execution is driven by scheduling rules rather than fixed intervals.",
+    "limitations": "Generates Datadog Synthetics HTTP API test format.",
+    "formula": "options.scheduling = { timezones: [tz], rules: [{ cron: expr }] }; tick_every = 0",
+    "trustNotes": "100% Client-Side generation.",
+    "related": [
+      "crontab-to-google-cloud-scheduler-converter",
+      "crontab-to-cloudwatch-events-converter",
+      "crontab-to-github-actions-schedule-converter",
+      "crontab-to-kubernetes-cronjob-converter"
+    ],
+    "seo": {
+      "title": "Crontab to Datadog Synthetics — API Schedule & Terraform Tool",
+      "metaDescription": "Convert crontab expressions into Datadog Synthetics API test schedules. Generates Datadog JSON payloads and Terraform resource code. Free DevOps tool.",
+      "whatIsThis": "A monitoring automation utility that translates standard Linux crontabs into Datadog Synthetics API test definitions and Terraform code.",
+      "howItWorks": "1. Enter 5-field cron expression or pick a preset.\n2. Enter test name, target endpoint URL, and timezone.\n3. Copy the Datadog API payload JSON or Terraform resource snippet in 1 click.",
+      "whyUseIt": "Automates the setup of scheduled synthetic endpoint health checks in Datadog.",
+      "faqs": [
+        {
+          "question": "How do you enable cron schedules in Datadog Synthetics?",
+          "answer": "In Datadog's API and Terraform provider, you must set `tick_every` to `0` and define a `scheduling` block with `timezones` and a `rule` containing your cron expression."
+        },
+        {
+          "question": "Can I specify multiple global locations for the test?",
+          "answer": "Yes. Datadog Synthetics supports running tests from multiple AWS, Azure, and GCP monitoring regions simultaneously (e.g. `aws:us-east-1`, `aws:eu-west-1`)."
+        }
+      ]
+    }
+  },
+  {
+    "id": "wash-sale-rule-crypto-stock-loss-disallowance-calculator",
+    "name": "IRS Section 1091 Wash Sale Loss Disallowance & Basis Calculator",
+    "slug": "wash-sale-rule-crypto-stock-loss-disallowance-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "wash sale calculator",
+      "irs section 1091 wash sale calculator",
+      "stock wash sale loss disallowance calculator",
+      "wash sale cost basis adjustment calculator",
+      "crypto wash sale rule calculator",
+      "30 day wash sale window calculator"
+    ],
+    "primaryKeywords": [
+      "wash sale calculator",
+      "section 1091 calculator",
+      "wash sale cost basis",
+      "loss disallowance calculator"
+    ],
+    "secondaryKeywords": [
+      "disallowed capital loss added to replacement share basis",
+      "sixty one day window thirty days before thirty days after",
+      "irs form 8949 code w wash sale tracking"
+    ],
+    "targetUsers": [
+      "Active Stock & Options Day Traders",
+      "Cryptocurrency & Tech Investors",
+      "CPA Tax Professionals & Accountants",
+      "Wealth & Portfolio Managers"
+    ],
+    "badge": "Popular",
+    "userProblem": "Active traders and investors who sell securities at a loss and buy back replacement shares within the 61-day window need to calculate how much capital loss is disallowed under IRS Section 1091 and compute their new adjusted replacement cost basis.",
+    "searchIntent": "Calculate IRS Section 1091 wash sale disallowed loss, current deductible loss, and adjusted replacement share cost basis.",
+    "resultInterpretation": "Calculates realized loss, applies Section 1091 rules to compute disallowed loss and allowable loss, and adjusts the total and per-share cost basis of replacement shares with holding period tacking explanation.",
+    "practicalGuidance": "Disallowed wash sale losses are not permanently forfeited; they are added to the cost basis of replacement shares, effectively deferring the tax deduction until the replacement shares are ultimately sold.",
+    "limitations": "Calculates US federal IRS Section 1091 statutory rules.",
+    "formula": "Disallowed_Loss = Min(Shares_Sold, Shares_Bought) * Loss_Per_Share; Adjusted_Basis = Replacement_Cost + Disallowed_Loss",
+    "trustNotes": "100% Client-Side calculation. Zero trading data saved.",
+    "related": [
+      "qsbs-qualified-small-business-stock-tax-exemption-calculator",
+      "crypto-portfolio-profit-loss-calculator",
+      "cagr-calculator",
+      "roi-investment-calculator"
+    ],
+    "seo": {
+      "title": "Wash Sale Calculator — IRS Section 1091 Loss & Basis Tool",
+      "metaDescription": "Calculate IRS Section 1091 wash sale loss disallowances and adjusted replacement share cost basis. Free trading tax calculator.",
+      "whatIsThis": "A capital gains tax planning utility that computes disallowed losses and cost basis adjustments under IRS Section 1091 wash sale rules.",
+      "howItWorks": "1. Enter shares sold, original cost basis, and loss sale price.\n2. Enter replacement shares purchased within 30 days and purchase price.\n3. View disallowed loss, allowable deduction, and new adjusted cost basis per share.",
+      "whyUseIt": "Prevents IRS tax penalties and accurately updates portfolio cost basis for Form 8949 reporting.",
+      "faqs": [
+        {
+          "question": "What is the 61-day wash sale window?",
+          "answer": "The IRS wash sale rule covers a 61-day period: 30 days before the sale, the day of the sale, and 30 days after the sale. Purchasing substantially identical securities within this window triggers the rule."
+        },
+        {
+          "question": "What happens to a disallowed wash sale loss?",
+          "answer": "Under IRC Section 1091, the disallowed loss is added to the cost basis of the replacement shares. This increases your basis, reducing your taxable capital gains (or increasing deductible losses) when the replacement shares are sold."
+        }
+      ]
+    }
+  },
+  {
+    "id": "svg-pie-donut-chart-generator",
+    "name": "SVG Pie Chart & Donut Chart Generator",
+    "slug": "svg-pie-donut-chart-generator",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "svg pie chart generator",
+      "svg donut chart generator",
+      "pure svg pie chart code generator",
+      "react svg donut chart component generator",
+      "responsive svg pie slice path generator",
+      "svg arc trigonometry chart generator"
+    ],
+    "primaryKeywords": [
+      "svg pie chart generator",
+      "svg donut chart generator",
+      "svg pie chart code",
+      "react donut chart component"
+    ],
+    "secondaryKeywords": [
+      "inner hole radius outer radius polar angle trigonometry",
+      "path d move arc line to large arc flag zero javascript",
+      "lightweight responsive dashboard kpi visualizer"
+    ],
+    "targetUsers": [
+      "Frontend Developers",
+      "UI Designers",
+      "Dashboard Engineers",
+      "Technical Blog Authors"
+    ],
+    "badge": "Design",
+    "userProblem": "Web developers building lightweight admin dashboards and reports want to generate standalone SVG pie and donut charts with clean `<path>` geometry without pulling in 100KB+ heavy charting libraries.",
+    "searchIntent": "Generate pure SVG pie and donut charts with customizable slices, inner hole radius, and copy-ready React/HTML code.",
+    "resultInterpretation": "Calculates slice polar angles, generates exact SVG `<path d=\"M... A... Z\">` arc geometry for both solid pie slices and donut rings, displays an interactive live preview, and exports React JSX and pure SVG markup.",
+    "practicalGuidance": "Using pure SVG charts eliminates external npm dependencies, guarantees zero runtime JavaScript overhead, and ensures crisp rendering on retina displays.",
+    "limitations": "Generates SVG 1.1 / 2.0 standard vector markup.",
+    "formula": "Slice_Angle = (Value / Total) * 2*PI; Arc_Points: x = cx + r*cos(angle), y = cy + r*sin(angle)",
+    "trustNotes": "100% Client-Side generation.",
+    "related": [
+      "svg-circle-progress-ring-calculator",
+      "svg-stroke-dasharray-animator",
+      "svg-viewbox-aspect-ratio-slicer",
+      "aspect-ratio-calculator"
+    ],
+    "seo": {
+      "title": "SVG Pie Chart & Donut Chart Generator — Pure SVG & React Tool",
+      "metaDescription": "Generate pure SVG pie and donut charts online. Calculates slice angles and arc geometry. Exports React JSX and SVG markup with zero dependencies. Free tool.",
+      "whatIsThis": "A creative data visualization utility that calculates arc trigonometry to generate pure SVG and React pie and donut charts.",
+      "howItWorks": "1. Adjust inner radius (0 for Pie, >0 for Donut) and outer radius.\n2. Enter slice values, labels, and customize colors.\n3. View the live interactive chart and copy the React component or SVG markup.",
+      "whyUseIt": "Embeds sleek, zero-dependency charts directly into web applications and static sites.",
+      "faqs": [
+        {
+          "question": "How are SVG pie chart arcs calculated?",
+          "answer": "Each slice's percentage is converted to radians. Using standard trigonometry (`x = cx + r*cos(theta)`, `y = cy + r*sin(theta)`), the start and end coordinates of the arc are determined and connected via the SVG `A` (arc) path command."
+        },
+        {
+          "question": "Can this be used inside React or Next.js applications?",
+          "answer": "Yes. The tool provides a clean, copy-ready React functional component that renders pure JSX with interactive hover effects and zero external npm packages."
+        }
+      ]
+    }
+  },
+  {
+    "id": "aerobic-decoupling-cardiac-drift-calculator",
+    "name": "Aerobic Decoupling & Cardiac Drift (Pw:Hr / Pa:Hr) Calculator",
+    "slug": "aerobic-decoupling-cardiac-drift-calculator",
+    "category": "health",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "aerobic decoupling calculator",
+      "cardiac drift calculator",
+      "pw hr decoupling calculator",
+      "pa hr pace heart rate drift calculator",
+      "joe friel aerobic decoupling calculator",
+      "cycling power heart rate efficiency ratio"
+    ],
+    "primaryKeywords": [
+      "aerobic decoupling calculator",
+      "cardiac drift calculator",
+      "pw hr calculator",
+      "joe friel decoupling"
+    ],
+    "secondaryKeywords": [
+      "efficiency ratio first half versus second half workout",
+      "endurance sports training readiness under 5 percent",
+      "cycling watts running speed zone 2 base conditioning"
+    ],
+    "targetUsers": [
+      "Endurance Cyclists & Triathletes",
+      "Marathon & Ultramarathon Runners",
+      "Sports Scientists & Exercise Physiologists",
+      "Endurance Coaches (TrainingPeaks / Strava athletes)"
+    ],
+    "badge": "Popular",
+    "userProblem": "Endurance athletes and coaches analyzing steady-state aerobic workouts need to calculate their Aerobic Decoupling percentage ($Pw:Hr$ or $Pa:Hr$) to evaluate whether their mitochondrial base fitness is ready for high-intensity interval training.",
+    "searchIntent": "Calculate aerobic decoupling and cardiac drift percentage between workout halves and benchmark against Joe Friel standards.",
+    "resultInterpretation": "Calculates the Efficiency Ratios ($ER_1$ vs $ER_2$) for workout halves, computes the aerobic decoupling percentage, and grades conditioning using Joe Friel's endurance standard (<5% aerobically fit / ready to build, 5-8% moderate, >8% high cardiac drift).",
+    "practicalGuidance": "According to legendary coach Joe Friel, when an athlete can complete a long Zone 2 endurance session with under 5% aerobic decoupling, their aerobic foundation is solid enough to absorb high-intensity training.",
+    "limitations": "Calculates standard sports science efficiency ratio decoupling.",
+    "formula": "ER = Output / Heart_Rate; Decoupling% = ((ER1 - ER2) / ER1) * 100",
+    "trustNotes": "100% Client-Side calculation.",
+    "related": [
+      "heart-rate-recovery-hrr-fitness-calculator",
+      "heart-rate-reserve-karvonen-calculator",
+      "target-heart-rate-zone-calculator",
+      "vo2-max-running-fitness-calculator"
+    ],
+    "seo": {
+      "title": "Aerobic Decoupling & Cardiac Drift Calculator — Pw:Hr Tool",
+      "metaDescription": "Calculate aerobic decoupling and cardiac drift (Pw:Hr / Pa:Hr) for cycling and running. Check Joe Friel's 5% endurance readiness standard. Free health tool.",
+      "whatIsThis": "A sports physiology utility that measures cardiac drift and aerobic decoupling to evaluate cardiovascular endurance efficiency.",
+      "howItWorks": "1. Select sport (Cycling Power or Running Speed).\n2. Enter average output and heart rate for the first half and second half.\n3. View Decoupling %, efficiency ratios, and Joe Friel coaching recommendations.",
+      "whyUseIt": "Determines objectively whether you have built a strong enough aerobic base to safely begin high-intensity interval training.",
+      "faqs": [
+        {
+          "question": "What is aerobic decoupling (cardiac drift)?",
+          "answer": "In a long steady-state workout, as muscle glycogen depletes, core temperature rises, and dehydration occurs, heart rate tends to drift upward even while power or speed remains constant. This divergence is called aerobic decoupling."
+        },
+        {
+          "question": "Why is 5% the benchmark for aerobic readiness?",
+          "answer": "Coaching pioneer Joe Friel established that a decoupling rate under 5% signifies that an athlete's aerobic metabolism is stable and efficient, indicating readiness to advance from base training to tempo and threshold work."
+        }
+      ]
+    }
   }
 ]
