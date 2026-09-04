@@ -359,6 +359,17 @@ const StorageConverter = dynamic(() => import("./hardware/StorageConverter").the
 const PcBottleneckCalculator = dynamic(() => import("./hardware/PcBottleneckCalculator").then((m) => m.PcBottleneckCalculator), { ssr: false });
 const ElectricityCostCalculator = dynamic(() => import("./hardware/ElectricityCostCalculator").then((m) => m.ElectricityCostCalculator), { ssr: false });
 
+const CurlToDioConverter = dynamic(() => import("./developer/CurlToDioConverter").then((m) => m.CurlToDioConverter), { ssr: false });
+const ArrWaterfallBridgeCalculator = dynamic(() => import("./finance/ArrWaterfallBridgeCalculator").then((m) => m.ArrWaterfallBridgeCalculator), { ssr: false });
+const CssTextStrokeGenerator = dynamic(() => import("./creative/CssTextStrokeGenerator").then((m) => m.CssTextStrokeGenerator), { ssr: false });
+const HinfoRecordGenerator = dynamic(() => import("./network/HinfoRecordGenerator").then((m) => m.HinfoRecordGenerator), { ssr: false });
+const VentureDebtCalculator = dynamic(() => import("./finance/VentureDebtCalculator").then((m) => m.VentureDebtCalculator), { ssr: false });
+const HexMovementCostCalculator = dynamic(() => import("./creative/HexMovementCostCalculator").then((m) => m.HexMovementCostCalculator), { ssr: false });
+const CronToHealthchecksConverter = dynamic(() => import("./developer/CronToHealthchecksConverter").then((m) => m.CronToHealthchecksConverter), { ssr: false });
+const QsbsCapGainCalculator = dynamic(() => import("./finance/QsbsCapGainCalculator").then((m) => m.QsbsCapGainCalculator), { ssr: false });
+const SvgMatrixTransformVisualizer = dynamic(() => import("./creative/SvgMatrixTransformVisualizer").then((m) => m.SvgMatrixTransformVisualizer), { ssr: false });
+const RunningEconomyCalculator = dynamic(() => import("./health/RunningEconomyCalculator").then((m) => m.RunningEconomyCalculator), { ssr: false });
+
 const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "random-number-generator": RandomNumberGenerator,
   "spin-wheel": SpinWheel,
@@ -713,6 +724,17 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "storage-converter": StorageConverter,
   "pc-bottleneck-calculator": PcBottleneckCalculator,
   "electricity-cost-calculator": ElectricityCostCalculator,
+
+  "curl-to-dart-dio-converter": CurlToDioConverter,
+  "arr-waterfall-bridge-ebitda-calculator": ArrWaterfallBridgeCalculator,
+  "css-text-stroke-hollow-outline-generator": CssTextStrokeGenerator,
+  "dns-hinfo-hardware-os-record-generator": HinfoRecordGenerator,
+  "venture-debt-warrant-coverage-calculator": VentureDebtCalculator,
+  "hex-grid-movement-range-cost-calculator": HexMovementCostCalculator,
+  "crontab-to-healthchecks-io-heartbeat-converter": CronToHealthchecksConverter,
+  "qualified-small-business-stock-gain-exclusion-cap-calculator": QsbsCapGainCalculator,
+  "svg-matrix-transformation-visualizer": SvgMatrixTransformVisualizer,
+  "running-economy-aerobic-cost-calculator": RunningEconomyCalculator,
 };
 
 interface ToolDispatcherProps {

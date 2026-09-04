@@ -21773,5 +21773,615 @@
         }
       ]
     }
+  },
+  {
+    "id": "curl-to-dart-dio-converter",
+    "name": "cURL to Dart Dio (Flutter) Request Converter",
+    "slug": "curl-to-dart-dio-converter",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "curl to dart dio converter",
+      "flutter curl to dio request",
+      "curl to flutter http client",
+      "convert curl to dio options dart",
+      "flutter rest api curl converter"
+    ],
+    "primaryKeywords": [
+      "curl to dart dio converter",
+      "curl to dio",
+      "flutter curl converter"
+    ],
+    "secondaryKeywords": [
+      "dio request options headers query parameters data payload flutter",
+      "dart dio exception error handling rest client snippet generator"
+    ],
+    "targetUsers": [
+      "Flutter Mobile Developers",
+      "Dart Backend Developers",
+      "Cross-Platform App Engineers",
+      "API Integration Engineers"
+    ],
+    "badge": "New",
+    "userProblem": "Flutter and Dart mobile developers frequently test backend endpoints with cURL commands in terminal and need to convert them into idiomatic Dart Dio HTTP client calls without manually writing Options, headers, query maps, and error catch blocks.",
+    "searchIntent": "Convert cURL commands into idiomatic Dart Dio HTTP client request code with headers, parameters, and payloads.",
+    "resultInterpretation": "Parses cURL command lines extracting HTTP method, URL endpoint, custom request headers, query parameters, and JSON or form payloads, generating strongly-typed Dart code utilizing the popular Dio networking package with Options and DioException handling.",
+    "practicalGuidance": "Dio is the standard HTTP networking package for Flutter apps, supporting interceptors, global configuration, FormData, request cancellation, and robust error handling.",
+    "limitations": "Pure client-side syntax parsing.",
+    "formula": "DioRequest = dio.request(url, data: payload, queryParameters: params, options: Options(method: METHOD, headers: hdrs))",
+    "trustNotes": "100% Client-Side generation in browser memory.",
+    "related": [
+      "curl-to-dart-converter",
+      "curl-to-kotlin-converter",
+      "curl-to-swift-converter",
+      "json-to-typescript-interface-converter"
+    ],
+    "seo": {
+      "title": "cURL to Dart Dio Converter — Free Flutter HTTP Tool",
+      "metaDescription": "Convert cURL commands into idiomatic Dart Dio HTTP client code for Flutter. Auto-extract headers, query params, payloads, and DioException handlers.",
+      "whatIsThis": "A developer utility that converts command-line cURL syntax into ready-to-run Dart Dio HTTP client requests for Flutter applications.",
+      "howItWorks": "1. Paste any cURL command line into the input editor.\n2. The parser automatically extracts URL, HTTP verb, headers, and request body.\n3. Copy the idiomatic Dart Dio asynchronous code with error handling.",
+      "whyUseIt": "Saves Flutter developers time by converting API test snippets into production-ready Dart networking code in seconds.",
+      "faqs": [
+        {
+          "question": "What is the difference between Dart http and Dio?",
+          "answer": "While package:http is lightweight, Dio provides advanced features such as interceptors, global configuration, request cancellation, file downloading, and strongly-typed request options."
+        },
+        {
+          "question": "Does this tool handle POST JSON payloads?",
+          "answer": "Yes, JSON payloads passed via -d or --data are automatically parsed into Dart maps or raw strings."
+        }
+      ]
+    }
+  },
+  {
+    "id": "arr-waterfall-bridge-ebitda-calculator",
+    "name": "SaaS ARR Waterfall Bridge & Net Retention Rate (NRR) Calculator",
+    "slug": "arr-waterfall-bridge-ebitda-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "arr waterfall calculator",
+      "saas arr bridge calculator",
+      "net retention rate nrr calculator",
+      "gross retention rate grr calculator",
+      "saas quick ratio calculator"
+    ],
+    "primaryKeywords": [
+      "arr waterfall calculator",
+      "saas arr bridge",
+      "nrr calculator"
+    ],
+    "secondaryKeywords": [
+      "b2b saas annual recurring revenue expansion contraction churn waterfall",
+      "b2b saas board financial reporting quick ratio growth efficiency"
+    ],
+    "targetUsers": [
+      "SaaS Founders & CEOs",
+      "Venture Capital & Growth Equity Investors",
+      "SaaS CFOs & FP&A Leaders",
+      "Revenue Operations (RevOps) Directors"
+    ],
+    "badge": "New",
+    "userProblem": "SaaS finance leaders and startup founders need to decompose ending ARR across new customer bookings, existing customer expansion, contraction downgrades, and full customer churn to compute NRR, GRR, and SaaS Quick Ratio for board reporting and investor pitch decks.",
+    "searchIntent": "Calculate SaaS ARR Waterfall Bridge and compute Net Retention Rate (NRR), Gross Retention Rate (GRR), and Quick Ratio.",
+    "resultInterpretation": "Computes Ending ARR, Net New ARR, Net Retention Rate (NRR), Gross Retention Rate (GRR), SaaS Quick Ratio, and displays an interactive visual ARR bridge bar breakdown.",
+    "practicalGuidance": "Top-quartile enterprise SaaS companies maintain NRR greater than 120% and Gross Retention Rate greater than 90%, with a SaaS Quick Ratio exceeding 4.0x.",
+    "limitations": "Calculates recurring revenue movements over any user-defined period (quarterly, annual).",
+    "formula": "Ending_ARR = Starting_ARR + New_Bookings + Expansion - Contraction - Churn; NRR = (Starting_ARR + Expansion - Contraction - Churn) / Starting_ARR * 100",
+    "trustNotes": "100% Client-Side financial modeling in browser memory.",
+    "related": [
+      "saas-net-burn-runway-calculator",
+      "convertible-note-seed-round-calculator",
+      "safe-note-pre-vs-post-money-calculator",
+      "b2b-saas-magic-number-cac-payback-calculator"
+    ],
+    "seo": {
+      "title": "SaaS ARR Waterfall Bridge & NRR Calculator — Free Financial Tool",
+      "metaDescription": "Decompose SaaS ARR with an interactive waterfall bridge. Calculate Ending ARR, Net Retention Rate (NRR), Gross Retention Rate (GRR), and SaaS Quick Ratio.",
+      "whatIsThis": "A financial utility that decomposes SaaS Annual Recurring Revenue into new bookings, expansion, contraction, and churn to model retention and growth efficiency.",
+      "howItWorks": "1. Enter Starting ARR, New Customer Bookings, and Expansion ARR.\n2. Enter Contraction and Churned ARR.\n3. View Ending ARR, NRR, GRR, SaaS Quick Ratio, and visual waterfall bridge bar.",
+      "whyUseIt": "Essential for SaaS founders and CFOs preparing board decks, valuation models, and investor due diligence reports.",
+      "faqs": [
+        {
+          "question": "What is Net Retention Rate (NRR)?",
+          "answer": "NRR measures the percentage of recurring revenue retained from existing customers over a period including expansion, contraction, and churn. Over 100% means expansion outpaces churn."
+        },
+        {
+          "question": "What is a good SaaS Quick Ratio?",
+          "answer": "A Quick Ratio above 4.0x is considered top-tier growth efficiency, meaning additions (new bookings + expansion) are four times greater than revenue leakage (contraction + churn)."
+        }
+      ]
+    }
+  },
+  {
+    "id": "css-text-stroke-hollow-outline-generator",
+    "name": "CSS Text Stroke & Hollow Outline Font Generator",
+    "slug": "css-text-stroke-hollow-outline-generator",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "css text stroke generator",
+      "hollow text css generator",
+      "css text outline generator",
+      "webkit text stroke generator",
+      "pure css hollow font generator"
+    ],
+    "primaryKeywords": [
+      "css text stroke generator",
+      "hollow text generator",
+      "css text outline"
+    ],
+    "secondaryKeywords": [
+      "webkit text stroke width color paint order stroke fill transparent text",
+      "svg text stroke outline vector generator online typography tool"
+    ],
+    "targetUsers": [
+      "Frontend UI/UX Designers",
+      "Web Developers",
+      "Graphic & Banner Designers",
+      "Digital Marketing Creatives"
+    ],
+    "badge": "New",
+    "userProblem": "Web designers and frontend developers want to create modern hollow text outlines and bold typography borders without loading heavy image assets or dealing with cross-browser CSS stroke clipping artifacts.",
+    "searchIntent": "Generate pure CSS hollow text outline styles with live preview, customizable stroke width, colors, paint-order, and SVG export.",
+    "resultInterpretation": "Provides an interactive live preview of stroked typography, allows tuning stroke width, fill transparency, colors, font weight, and paint-order, and generates clean copyable CSS and SVG text markup.",
+    "practicalGuidance": "Using paint-order: stroke fill ensures that thick border strokes expand outward without eating into the font's inner glyph fill.",
+    "limitations": "Pure client-side CSS and SVG typography preview.",
+    "formula": "-webkit-text-stroke: width color; paint-order: stroke fill; color: transparent;",
+    "trustNotes": "100% Client-Side generation in browser memory.",
+    "related": [
+      "css-gradient-generator",
+      "css-glassmorphism-generator",
+      "svg-path-morphing-interpolator",
+      "css-curved-section-separator-generator"
+    ],
+    "seo": {
+      "title": "CSS Text Stroke & Hollow Outline Generator — Free Typography Tool",
+      "metaDescription": "Create modern hollow outline and stroked typography using pure CSS. Customize stroke width, colors, paint-order, and export CSS or SVG text.",
+      "whatIsThis": "An interactive web design tool that generates pure CSS hollow text strokes and SVG vector outlines with real-time preview.",
+      "howItWorks": "1. Enter your text and choose font size and weight.\n2. Adjust stroke width, stroke color, and toggle transparent hollow fill.\n3. Copy the generated CSS snippet or standalone SVG markup.",
+      "whyUseIt": "Creates lightweight, crisp, retina-ready typographic hero headlines and graphic effects with zero external image dependencies.",
+      "faqs": [
+        {
+          "question": "Is -webkit-text-stroke widely supported?",
+          "answer": "Yes, -webkit-text-stroke has over 98% global browser support across Chrome, Edge, Safari, Firefox, and mobile browsers."
+        },
+        {
+          "question": "Why does paint-order matter for text stroke?",
+          "answer": "By default, strokes can encroach inward and obscure thin letterforms. Setting paint-order: stroke fill forces the stroke behind the fill, keeping typography crisp."
+        }
+      ]
+    }
+  },
+  {
+    "id": "dns-hinfo-hardware-os-record-generator",
+    "name": "DNS HINFO (Hardware & OS) Record & RFC 8482 Anti-DDoS Generator",
+    "slug": "dns-hinfo-hardware-os-record-generator",
+    "category": "network",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "dns hinfo record generator",
+      "rfc 8482 dns generator",
+      "dns host information record builder",
+      "dns any query mitigation hinfo",
+      "bind hinfo zone record generator"
+    ],
+    "primaryKeywords": [
+      "dns hinfo record generator",
+      "hinfo record generator",
+      "rfc 8482 generator"
+    ],
+    "secondaryKeywords": [
+      "rfc 1035 host information cpu hardware operating system string",
+      "cloudflare rfc 8482 dns reflection amplification mitigation bind powerdns"
+    ],
+    "targetUsers": [
+      "DNS Administrators & SREs",
+      "Network Engineers",
+      "Cloud Infrastructure Architects",
+      "Cybersecurity Professionals"
+    ],
+    "badge": "New",
+    "userProblem": "System administrators and network engineers configuring authoritative nameservers need to generate RFC 1035 HINFO host information records for private internal node inventory, or deploy RFC 8482 minimal responses to mitigate DNS ANY reflection amplification attacks.",
+    "searchIntent": "Generate RFC 1035 and RFC 8482 DNS HINFO records for BIND, PowerDNS, and wire format inspection.",
+    "resultInterpretation": "Generates syntactically validated BIND master file records, PowerDNS SQL inserts, and raw RFC 1035 RDATA wire octet hex dumps, supporting both modern RFC 8482 anti-DDoS mode and internal host inventory mode.",
+    "practicalGuidance": "RFC 8482 recommends authoritative DNS servers return a synthesized HINFO record ('RFC8482' '') when queried with QTYPE=ANY, dramatically reducing the response packet size and neutralizing DNS reflection attack vectors.",
+    "limitations": "RFC 1035 and RFC 8482 DNS specification formats.",
+    "formula": "<domain> <ttl> IN HINFO <cpu-string> <os-string>",
+    "trustNotes": "100% Client-Side generation in browser memory.",
+    "related": [
+      "rfc-9460-dns-https-svcb-record-generator",
+      "dns-loc-geographic-location-record-generator",
+      "dns-srv-service-record-generator",
+      "dns-spf-record-builder"
+    ],
+    "seo": {
+      "title": "DNS HINFO Record & RFC 8482 Anti-DDoS Generator — Free Tool",
+      "metaDescription": "Generate DNS HINFO records for BIND and PowerDNS. Implement RFC 8482 minimal responses to mitigate DNS ANY reflection amplification attacks.",
+      "whatIsThis": "A network engineering utility that generates RFC 1035 DNS HINFO records and modern RFC 8482 anti-DDoS response synthesis configurations.",
+      "howItWorks": "1. Enter FQDN domain and TTL.\n2. Choose between RFC 8482 Anti-DDoS Mode or Custom Host Inventory Mode.\n3. Copy BIND zone record, PowerDNS SQL insert, or inspect wire format octets.",
+      "whyUseIt": "Standardizes authoritative DNS zone record creation and protects infrastructure against high-volume DNS reflection amplification attacks.",
+      "faqs": [
+        {
+          "question": "What is RFC 8482?",
+          "answer": "RFC 8482 allows authoritative DNS nameservers to return a minimal synthesized HINFO record or single RRset in response to ANY queries, suppressing DDoS reflection amplification."
+        },
+        {
+          "question": "Is it safe to publish real CPU and OS details in public DNS?",
+          "answer": "No. Publishing real OS versions on public authoritative DNS allows attackers to fingerprint software vulnerabilities. Use real details only on private internal networks."
+        }
+      ]
+    }
+  },
+  {
+    "id": "venture-debt-warrant-coverage-calculator",
+    "name": "Venture Debt & Warrant Coverage Dilution Calculator",
+    "slug": "venture-debt-warrant-coverage-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "venture debt calculator",
+      "warrant coverage calculator",
+      "startup venture debt dilution",
+      "venture loan amortization calculator",
+      "effective apr venture debt"
+    ],
+    "primaryKeywords": [
+      "venture debt calculator",
+      "warrant coverage calculator",
+      "venture debt dilution"
+    ],
+    "secondaryKeywords": [
+      "interest only period loan term closing fee exit fee effective cost of capital",
+      "venture debt versus equity round dilution savings founder equity model"
+    ],
+    "targetUsers": [
+      "Startup Founders & CEOs",
+      "Venture Capital Investors",
+      "Startup CFOs & Finance Directors",
+      "Corporate Development Executives"
+    ],
+    "badge": "New",
+    "userProblem": "Startup founders evaluating venture debt financing need to calculate monthly interest-only and amortizing payments, model equity dilution from lender warrant coverage, and compare the true effective cost of capital against raising an equity round.",
+    "searchIntent": "Calculate venture debt loan payments, warrant coverage equity dilution, and compare against pure equity financing.",
+    "resultInterpretation": "Calculates interest-only and fully amortizing monthly payments, upfront commitment fees, back-end success fees, warrant coverage equity percentage dilution, and computes effective blended APR and equity dilution preserved.",
+    "practicalGuidance": "Venture debt typically pairs a 36-48 month term with 12-18 months interest-only and 4-8% warrant coverage, saving founders substantial equity compared to selling preferred stock.",
+    "limitations": "Standard venture lending amortizing schedules and warrant option value models.",
+    "formula": "Warrant_Value = Principal * (Warrant_Coverage_Pct / 100); Dilution_Pct = (Warrant_Value / Company_Valuation) * 100",
+    "trustNotes": "100% Client-Side financial calculations in browser memory.",
+    "related": [
+      "safe-note-pre-vs-post-money-calculator",
+      "convertible-note-seed-round-calculator",
+      "arr-waterfall-bridge-ebitda-calculator",
+      "saas-net-burn-runway-calculator"
+    ],
+    "seo": {
+      "title": "Venture Debt & Warrant Coverage Calculator — Free Startup Tool",
+      "metaDescription": "Calculate startup venture debt payments, interest-only schedules, and warrant coverage dilution. Compare true cost of debt vs equity financing.",
+      "whatIsThis": "A financial modeling tool for startup founders to evaluate venture debt loan facilities, amortization schedules, and warrant coverage equity dilution.",
+      "howItWorks": "1. Enter loan principal, interest rate, term, and interest-only period.\n2. Input warrant coverage percentage, company valuation, and lender fees.\n3. View monthly payment schedule, warrant equity dilution, and equity preserved.",
+      "whyUseIt": "Enables founders to model non-dilutive runway extension options and negotiate optimal venture debt term sheets.",
+      "faqs": [
+        {
+          "question": "What is warrant coverage in venture debt?",
+          "answer": "Warrant coverage gives the debt provider options to purchase preferred shares in the startup, typically calculated as 4% to 8% of the total loan principal at the prior round strike price."
+        },
+        {
+          "question": "When should a startup consider venture debt?",
+          "answer": "Venture debt is ideal right after closing an institutional equity round (Series A or B) to extend cash runway by 6-12 months without selling additional equity at that time."
+        }
+      ]
+    }
+  },
+  {
+    "id": "hex-grid-movement-range-cost-calculator",
+    "name": "Hexagonal Grid Movement Range & Terrain Cost Calculator",
+    "slug": "hex-grid-movement-range-cost-calculator",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "hex grid movement calculator",
+      "hexagonal grid pathfinding range",
+      "hex grid dijkstra movement cost",
+      "tabletop wargame hex movement calculator",
+      "axial coordinates hex movement range"
+    ],
+    "primaryKeywords": [
+      "hex grid movement calculator",
+      "hex movement range calculator",
+      "hex grid pathfinding"
+    ],
+    "secondaryKeywords": [
+      "axial coordinates q r dijkstra shortest path variable terrain costs plains forest mountain",
+      "tabletop rpg strategy game hex grid movement budget canvas visualizer"
+    ],
+    "targetUsers": [
+      "Tabletop Wargame & RPG Game Designers",
+      "Video Game Developers (Turn-Based Strategy)",
+      "Board Game Enthusiasts",
+      "Procedural Map & Simulation Authors"
+    ],
+    "badge": "New",
+    "userProblem": "Game designers and board game developers building turn-based strategy games need to calculate and visualize unit movement ranges on hexagonal grids with variable terrain costs (plains, forests, mountains, swamps, impassable walls) using axial coordinates.",
+    "searchIntent": "Calculate and visualize reachable tiles and movement point costs on a hexagonal grid with variable terrain costs.",
+    "resultInterpretation": "Renders an interactive HTML5 hex canvas with axial coordinate math, allows painting terrain types with distinct movement costs, runs Dijkstra pathfinding, and highlights all reachable hexes with exact cumulative MP costs.",
+    "practicalGuidance": "Hex grids avoid the diagonal distance distortions inherent in square grids, making them the gold standard for tactical simulations and wargames.",
+    "limitations": "Flat-topped 2D axial hexagonal coordinate system.",
+    "formula": "Dijkstra: Dist[v] = min(Dist[v], Dist[u] + TerrainCost[v]) where Dist[v] <= MovementBudget",
+    "trustNotes": "100% Client-Side interactive canvas engine.",
+    "related": [
+      "hex-grid-field-of-view-shadowcasting-calculator",
+      "svg-matrix-transformation-visualizer",
+      "css-clip-path-polygon-generator",
+      "isometric-css-transform-generator"
+    ],
+    "seo": {
+      "title": "Hex Grid Movement Range & Cost Calculator — Free Game Tool",
+      "metaDescription": "Calculate and visualize unit movement ranges on hexagonal grids. Features variable terrain costs, interactive canvas, and axial Dijkstra pathfinding.",
+      "whatIsThis": "A game development and tabletop design utility that calculates unit movement reachable areas on hexagonal grids with variable terrain costs.",
+      "howItWorks": "1. Set movement point (MP) budget and hex grid radius.\n2. Click tiles to paint terrain costs (plains, woods, mountains, walls).\n3. Shift-click to reposition unit start and view reachable tiles and costs in real time.",
+      "whyUseIt": "Visualizes tactical movement ranges for turn-based game balance and rule verification.",
+      "faqs": [
+        {
+          "question": "What coordinate system is used?",
+          "answer": "It uses standard 2D axial coordinates (q, r), which simplify distance formulas and neighbor transitions on flat-topped hexagonal grids."
+        },
+        {
+          "question": "How are variable terrain costs handled?",
+          "answer": "Moving into a cell adds that cell's terrain cost to the cumulative path score. Dijkstra's algorithm determines the minimum movement points needed to reach each cell."
+        }
+      ]
+    }
+  },
+  {
+    "id": "crontab-to-healthchecks-io-heartbeat-converter",
+    "name": "Crontab to Healthchecks.io Dead Man's Switch Heartbeat Converter",
+    "slug": "crontab-to-healthchecks-io-heartbeat-converter",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "crontab to healthchecks converter",
+      "healthchecks io cron wrapper",
+      "dead mans switch cron monitoring",
+      "healthchecks start fail ping script",
+      "cron job heartbeat monitoring script"
+    ],
+    "primaryKeywords": [
+      "crontab to healthchecks converter",
+      "healthchecks cron wrapper",
+      "cron heartbeat monitor"
+    ],
+    "secondaryKeywords": [
+      "hardened bash wrapper mktemp curl start fail status code log upload",
+      "kubernetes cronjob systemd timer healthchecks io ping integration"
+    ],
+    "targetUsers": [
+      "DevOps Engineers & SREs",
+      "Linux System Administrators",
+      "Backend Software Engineers",
+      "Cloud Infrastructure Engineers"
+    ],
+    "badge": "New",
+    "userProblem": "DevOps engineers and system administrators running mission-critical cron jobs (database backups, ETL pipelines, cert renewals) need to wrap them in hardened Healthchecks.io dead man's switch ping monitoring scripts with /start timing, exit code tracking, and log captures.",
+    "searchIntent": "Convert cron schedules and commands into production-ready Healthchecks.io monitoring scripts and configurations.",
+    "resultInterpretation": "Generates a production-hardened Bash wrapper script with /start duration measurement, exit code reporting, and 10KB log capture, as well as inline crontab entries, systemd timer units, and Kubernetes CronJob manifests.",
+    "practicalGuidance": "Using /start pings measures actual job execution duration and allows Healthchecks.io to trigger early alerts if a job takes an abnormally long time to finish.",
+    "limitations": "Pure client-side script synthesis.",
+    "formula": "Bash: curl /start -> exec cmd -> if success: curl /0; else: curl /fail; exit $?",
+    "trustNotes": "100% Client-Side generation in browser memory.",
+    "related": [
+      "crontab-to-uptime-kuma-monitor-converter",
+      "crontab-to-better-uptime-heartbeat-converter",
+      "crontab-to-systemd-timer-converter",
+      "crontab-to-kubernetes-cronjob-converter"
+    ],
+    "seo": {
+      "title": "Crontab to Healthchecks.io Converter — Free DevOps Tool",
+      "metaDescription": "Convert cron jobs into hardened Healthchecks.io monitoring scripts. Auto-generate Bash wrappers, systemd timers, and K8s CronJobs with /start pings.",
+      "whatIsThis": "A developer utility that converts scheduled commands into production-ready Healthchecks.io dead man's switch monitoring wrappers.",
+      "howItWorks": "1. Enter cron schedule expression and target shell command.\n2. Paste your Healthchecks.io ping UUID or URL.\n3. Copy the hardened Bash runner script, inline crontab line, or K8s CronJob YAML.",
+      "whyUseIt": "Prevents silent background job failures by wrapping commands with reliable network pings, execution timing, and error log capture.",
+      "faqs": [
+        {
+          "question": "What is a dead man's switch in monitoring?",
+          "answer": "Unlike active monitors that ping an open port, a dead man's switch waits for periodic inbound pings from your cron job. If the ping doesn't arrive on schedule, an alert fires."
+        },
+        {
+          "question": "Why send a /start ping before running the command?",
+          "answer": "Sending a /start ping informs Healthchecks.io that the job has commenced, enabling execution duration tracking and alerts if the job hangs."
+        }
+      ]
+    }
+  },
+  {
+    "id": "qualified-small-business-stock-gain-exclusion-cap-calculator",
+    "name": "Section 1202 QSBS Capital Gain Exclusion Cap Calculator",
+    "slug": "qualified-small-business-stock-gain-exclusion-cap-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "qsbs calculator",
+      "section 1202 qsbs gain exclusion calculator",
+      "qualified small business stock cap calculator",
+      "qsbs 10x basis rule calculator",
+      "qsbs 10 million cap calculator"
+    ],
+    "primaryKeywords": [
+      "qsbs calculator",
+      "section 1202 calculator",
+      "qualified small business stock calculator"
+    ],
+    "secondaryKeywords": [
+      "greater of 10 million or 10 times adjusted tax basis irs section 1202",
+      "state tax conformity california non conforming 100 percent exclusion tier"
+    ],
+    "targetUsers": [
+      "Startup Founders & Co-Founders",
+      "Angel Investors & Venture Capitalists",
+      "Early Startup Employees with Stock Options",
+      "CPA & Wealth Advisory Professionals"
+    ],
+    "badge": "New",
+    "userProblem": "Startup founders, angel investors, and early employees selling Qualified Small Business Stock (QSBS) need to calculate their statutory maximum federal capital gain exclusion under IRS Section 1202 (greater of $10M or 10x basis), determine date-based exclusion tiers, and account for state non-conformity.",
+    "searchIntent": "Calculate Section 1202 QSBS capital gain exclusion cap, federal tax savings, and state tax conformity impact.",
+    "resultInterpretation": "Computes statutory maximum exclusion cap using the greater of $10,000,000 or 10 times adjusted basis, applies acquisition date percentage tiers (100%, 75%, 50%), calculates federal capital gains and NIIT tax savings, and models state tax liabilities.",
+    "practicalGuidance": "Stock acquired after September 27, 2010 held for at least 5 years qualifies for 100% federal capital gain exclusion. States like California do not conform and tax all gains as ordinary income.",
+    "limitations": "IRS Section 1202 statutory rules for C-Corporation stock.",
+    "formula": "Exclusion_Cap = max($10,000,000, 10 * Basis); Excluded_Gain = min(Gross_Gain, Exclusion_Cap) * Tier_Pct",
+    "trustNotes": "100% Client-Side tax modeling in browser memory.",
+    "related": [
+      "venture-debt-warrant-coverage-calculator",
+      "safe-note-pre-vs-post-money-calculator",
+      "convertible-note-seed-round-calculator",
+      "arr-waterfall-bridge-ebitda-calculator"
+    ],
+    "seo": {
+      "title": "Section 1202 QSBS Capital Gain Exclusion Calculator — Free Tool",
+      "metaDescription": "Calculate IRS Section 1202 QSBS capital gain exclusion caps. Model the greater of $10M or 10x basis, federal tax savings, and state tax conformity.",
+      "whatIsThis": "A tax and wealth planning utility that models Section 1202 Qualified Small Business Stock (QSBS) gain exclusions and federal tax savings.",
+      "howItWorks": "1. Enter total realized capital gain and original stock tax basis.\n2. Select acquisition date (post-2010 for 100% exclusion) and filing status.\n3. View statutory exclusion cap, tax-free gain, federal tax saved, and state tax impact.",
+      "whyUseIt": "Empowers startup founders and investors to accurately estimate tax-free exit proceeds under Section 1202 rules.",
+      "faqs": [
+        {
+          "question": "What is the 10x basis rule under Section 1202?",
+          "answer": "The statutory cap allows taxpayers to exclude capital gains up to the greater of $10,000,000 or 10 times the taxpayer's original adjusted tax basis in the stock."
+        },
+        {
+          "question": "Does California recognize the QSBS exclusion?",
+          "answer": "No, California does not conform to IRC Section 1202. Gains from QSBS are fully taxed as ordinary California state income (up to 13.3%)."
+        }
+      ]
+    }
+  },
+  {
+    "id": "svg-matrix-transformation-visualizer",
+    "name": "SVG 2D Matrix Transformation Visualizer & Math Playground",
+    "slug": "svg-matrix-transformation-visualizer",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "svg matrix transform visualizer",
+      "svg 2d matrix calculator",
+      "css matrix transform visualizer",
+      "affine transformation matrix 2d visualizer",
+      "matrix a b c d e f visualizer"
+    ],
+    "primaryKeywords": [
+      "svg matrix transform visualizer",
+      "svg matrix visualizer",
+      "affine transformation visualizer"
+    ],
+    "secondaryKeywords": [
+      "matrix a b c d e f scale skew rotate translate 2d linear algebra",
+      "svg transform matrix attribute css transform property determinant"
+    ],
+    "targetUsers": [
+      "Frontend Web Developers & UI Animators",
+      "Graphic Designers & SVG Illustrators",
+      "Game Developers & Creative Coders",
+      "Computer Graphics Students & Educators"
+    ],
+    "badge": "New",
+    "userProblem": "Frontend developers, animators, and creative coders working with SVG and CSS 2D affine transformations struggle to visualize how the six matrix parameters (a, b, c, d, e, f) map to scale, shear, rotation, translation, and plane reflection.",
+    "searchIntent": "Visualize and experiment with SVG and CSS 2D affine transformation matrices matrix(a, b, c, d, e, f) in real time.",
+    "resultInterpretation": "Renders an interactive SVG coordinate plane showing original vs transformed geometries, exposes sliders for all six affine coefficients, computes the matrix determinant, and outputs SVG transform attributes and CSS rules.",
+    "practicalGuidance": "In 2D graphics, matrix(a, b, c, d, e, f) represents [a c e; b d f; 0 0 1]. When the determinant (ad - bc) is negative, the coordinate space has been reflected or inverted.",
+    "limitations": "2D affine transformation geometry.",
+    "formula": "x' = a*x + c*y + e; y' = b*x + d*y + f; det = a*d - b*c",
+    "trustNotes": "100% Client-Side vector rendering in browser memory.",
+    "related": [
+      "hex-grid-movement-range-cost-calculator",
+      "svg-path-morphing-interpolator",
+      "css-clip-path-polygon-generator",
+      "isometric-css-transform-generator"
+    ],
+    "seo": {
+      "title": "SVG 2D Matrix Transform Visualizer — Free Vector Math Tool",
+      "metaDescription": "Visualize SVG and CSS 2D affine transformation matrices in real time. Adjust scale, skew, rotate, and translate parameters with live canvas rendering.",
+      "whatIsThis": "An interactive mathematical playground for visualizing 2D affine transformation matrices matrix(a, b, c, d, e, f) for SVG and CSS.",
+      "howItWorks": "1. Adjust matrix parameters a, b, c, d (linear transform) and e, f (translation).\n2. Observe the geometry transform in real time against the coordinate grid.\n3. Copy the ready-to-use SVG transform attribute or CSS transform rule.",
+      "whyUseIt": "Demystifies 2D matrix transformations for web animation, vector illustration, and game physics.",
+      "faqs": [
+        {
+          "question": "What do the six values in matrix(a,b,c,d,e,f) mean?",
+          "answer": "a and d control horizontal and vertical scaling/rotation; b and c control vertical and horizontal skewing/shearing; e and f control X and Y translation in pixels."
+        },
+        {
+          "question": "What does a negative determinant indicate?",
+          "answer": "A negative determinant (ad - bc < 0) indicates that the shape has been flipped or mirrored across an axis (a reflection transformation)."
+        }
+      ]
+    }
+  },
+  {
+    "id": "running-economy-aerobic-cost-calculator",
+    "name": "Running Economy & Aerobic Caloric Cost Calculator",
+    "slug": "running-economy-aerobic-cost-calculator",
+    "category": "health",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "running economy calculator",
+      "oxygen cost of running calculator",
+      "aerobic cost running economy",
+      "running caloric cost ml o2 kg km",
+      "exercise physiology running economy"
+    ],
+    "primaryKeywords": [
+      "running economy calculator",
+      "running economy",
+      "oxygen cost of running"
+    ],
+    "secondaryKeywords": [
+      "submaximal vo2 running velocity peronnet massicotte caloric equivalent rer",
+      "elite marathoner running economy benchmarks endurance sports science"
+    ],
+    "targetUsers": [
+      "Marathoners & Distance Runners",
+      "Triathletes & Coaches",
+      "Exercise Physiologists & Sports Scientists",
+      "Running Technique Specialists"
+    ],
+    "badge": "New",
+    "userProblem": "Runners, triathletes, and exercise physiologists need to quantify Running Economy (the steady-state oxygen cost in mL O2/kg/km and energy cost in kcal/kg/km) from submaximal VO2 treadmill tests to benchmark aerobic efficiency and predict marathon performance.",
+    "searchIntent": "Calculate running economy in mL O2/kg/km and energy cost of running from submaximal VO2 and velocity.",
+    "resultInterpretation": "Calculates steady-state oxygen cost per kilometer, energy cost using the Péronnet and Massicotte caloric equivalent equation, total hourly caloric burn, and classifies economy against elite global benchmarks.",
+    "practicalGuidance": "Running economy is a stronger predictor of marathon performance among elite runners than VO2 max alone; elite distance runners typically achieve values below 190 mL O2/kg/km.",
+    "limitations": "Submaximal steady-state aerobic metabolic formulas.",
+    "formula": "RE = (VO2_Submax * 60) / Speed_kmh; Energy_Cost = (RE / 1000) * (3.815 + 1.232 * RER)",
+    "trustNotes": "100% Client-Side exercise physiology calculations.",
+    "related": [
+      "maximum-aerobic-speed-mas-running-intervals-calculator",
+      "aerobic-decoupling-cardiac-drift-calculator",
+      "critical-power-w-prime-anaerobic-capacity-calculator",
+      "vo2-max-running-fitness-calculator"
+    ],
+    "seo": {
+      "title": "Running Economy & Aerobic Cost Calculator — Free Physiology Tool",
+      "metaDescription": "Calculate Running Economy in mL O2/kg/km and energy cost per kilometer from submaximal VO2 and speed. Benchmark against elite distance runners.",
+      "whatIsThis": "A sports physiology utility that measures running economy and caloric energy cost from submaximal oxygen uptake and speed.",
+      "howItWorks": "1. Enter submaximal VO2 (mL/kg/min) and running speed (km/h).\n2. Input body weight and measured Respiratory Exchange Ratio (RER).\n3. View running economy, energy cost in kcal/kg/km, hourly burn, and tier rating.",
+      "whyUseIt": "Enables endurance runners and coaches to track training efficiency gains independent of changes in VO2 max.",
+      "faqs": [
+        {
+          "question": "What is considered a good running economy?",
+          "answer": "World-class marathoners typically record oxygen costs below 190 mL O2/kg/km. Well-trained club runners average 195-215 mL/kg/km, while recreational runners average 225-245+ mL/kg/km."
+        },
+        {
+          "question": "Why is running economy more important than VO2 max?",
+          "answer": "While VO2 max sets your aerobic ceiling, running economy determines how much speed you produce for each unit of oxygen consumed, directly dictating sustainable race pace."
+        }
+      ]
+    }
   }
 ]
