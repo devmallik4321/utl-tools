@@ -25463,5 +25463,645 @@
         }
       ]
     }
+  },
+  {
+    "id": "curl-to-swift-urlsession-async-await-converter",
+    "name": "cURL to Swift URLSession async/await Converter",
+    "slug": "curl-to-swift-urlsession-async-await-converter",
+    "category": "developer",
+    "type": "Interactive Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "curl to swift converter",
+      "curl to urlsession async await",
+      "convert curl to swift",
+      "swift urlrequest generator",
+      "swift 5.5 concurrency networking",
+      "ios urlsession post json"
+    ],
+    "primaryKeywords": [
+      "curl to swift converter",
+      "curl to urlsession",
+      "swift async await networking",
+      "convert curl to swift"
+    ],
+    "secondaryKeywords": [
+      "thread safe actor network client",
+      "codable dto struct generator",
+      "ios 15 macos 12 modern concurrency"
+    ],
+    "targetUsers": [
+      "iOS Developers",
+      "macOS Engineers",
+      "Swift Full-Stack Developers",
+      "Mobile Architects"
+    ],
+    "badge": "New",
+    "userProblem": "iOS and Swift developers integrating backend REST APIs need to convert raw cURL terminal requests into modern, non-blocking Swift 5.5+ async/await code with actor thread safety and Codable models.",
+    "searchIntent": "Convert cURL commands to modern Swift URLSession.shared.data(for:) async/await networking code.",
+    "resultInterpretation": "Generates production-grade Swift code with actor isolation, robust HTTPURLResponse status checks, and strongly-typed Codable request structs.",
+    "practicalGuidance": "Using actor-based network clients prevents data races when sharing URLSession tasks across concurrent SwiftUI views.",
+    "limitations": "Focuses on JSON and standard HTTP methods; background file download tasks require custom URLSessionDownloadDelegate implementation.",
+    "formula": "cURL CLI -> URLRequest(url) + Headers + HTTPBody -> URLSession.shared.data(for: request)",
+    "trustNotes": "100% Client-Side parsing. Zero tokens or authorization credentials transmitted.",
+    "related": [
+      "curl-to-csharp-dotnet-httpclient-converter",
+      "curl-to-rust-reqwest-converter",
+      "curl-to-ruby-faraday-client-converter",
+      "curl-to-fetch-converter"
+    ],
+    "seo": {
+      "title": "cURL to Swift URLSession async/await Converter — Swift Code Generator",
+      "metaDescription": "Convert cURL commands to modern Swift URLSession async/await code. Supports thread-safe actors, URLRequest, Bearer tokens, and Codable struct models.",
+      "whatIsThis": "A developer utility that converts cURL requests into native Swift 5.5+ code compatible with iOS 15+ and macOS 12+.",
+      "howItWorks": "1. Paste any cURL command.\n2. Choose between standalone function or thread-safe actor client.\n3. Copy clean Swift code and Codable DTO models.",
+      "whyUseIt": "Saves mobile engineers from tedious manual typing of URLRequest headers, JSON bodies, and status validation.",
+      "faqs": [
+        {
+          "question": "Why use async/await URLSession instead of completion handlers?",
+          "answer": "Swift 5.5+ async/await eliminates callback hell, simplifies error propagation using 'try await', and guarantees structured task cancellation."
+        },
+        {
+          "question": "Does this code support iOS 15+?",
+          "answer": "Yes, URLSession.shared.data(for:) was introduced in iOS 15 and macOS 12 as the official modern networking API."
+        }
+      ]
+    }
+  },
+  {
+    "id": "saas-gross-margin-cogs-unit-economics-calculator",
+    "name": "SaaS Gross Margin & COGS Unit Economics Calculator",
+    "slug": "saas-gross-margin-cogs-unit-economics-calculator",
+    "category": "finance",
+    "type": "Interactive Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "saas gross margin calculator",
+      "saas cogs calculator",
+      "saas unit economics model",
+      "saas contribution margin per tenant",
+      "ai token inferencing cost cogs",
+      "cloud hosting cogs per user"
+    ],
+    "primaryKeywords": [
+      "saas gross margin calculator",
+      "saas cogs unit economics",
+      "cogs per active customer",
+      "saas gross profit margin"
+    ],
+    "secondaryKeywords": [
+      "aws gcp hosting database egress allocation",
+      "ai llm token inferencing unit cost",
+      "vc benchmark 80 percent gross margin"
+    ],
+    "targetUsers": [
+      "SaaS Founders",
+      "Chief Financial Officers (CFOs)",
+      "RevOps Leaders",
+      "Venture Capital Analysts"
+    ],
+    "badge": "New",
+    "userProblem": "SaaS finance teams and founders need to model direct Cost of Goods Sold (cloud hosting, database egress, AI token compute, and technical support) to defend healthy >80% Gross Margins.",
+    "searchIntent": "Calculate SaaS Gross Margin % and per-customer COGS unit economics across infrastructure and third-party APIs.",
+    "resultInterpretation": "Displays blended Gross Margin %, Annual Gross Profit, per-customer contribution margin, and compares results against elite industry benchmarks.",
+    "practicalGuidance": "Public SaaS enterprise valuations heavily reward >80% gross margins; margins below 70% indicate excessive AI inference compute or support bloat.",
+    "limitations": "Calculates direct COGS; does not include operating expenses (OpEx) such as Sales & Marketing (S&M) or General & Administrative (G&A).",
+    "formula": "Gross Margin % = ((MRR - Total_COGS) / MRR) * 100; Contribution Margin = ARPU - (COGS / Customers)",
+    "trustNotes": "100% Client-Side financial modeling. Zero cloud bills or customer data saved.",
+    "related": [
+      "saas-customer-health-score-churn-risk-calculator",
+      "saas-nrr-cohort-decay-revenue-expansion-calculator",
+      "rule-of-40-saas-efficiency-growth-margin-calculator",
+      "saas-burn-multiple-capital-efficiency-calculator"
+    ],
+    "seo": {
+      "title": "SaaS Gross Margin & COGS Calculator — Unit Economics Model",
+      "metaDescription": "Calculate SaaS Gross Margin % and Cost of Goods Sold (COGS) per tenant. Model AWS hosting, database egress, AI tokens, and technical support costs.",
+      "whatIsThis": "A SaaS financial planning tool that analyzes direct Cost of Goods Sold and unit economics to measure software profitability.",
+      "howItWorks": "1. Enter total active customers and monthly ARPU.\n2. Input monthly cloud hosting, database egress, AI token cost, and support allocations.\n3. View blended Gross Margin % and per-customer contribution margin.",
+      "whyUseIt": "Essential for SaaS founders preparing investor pitch decks and board meetings to prove software scalability.",
+      "faqs": [
+        {
+          "question": "What items belong in SaaS COGS?",
+          "answer": "COGS includes direct costs required to deliver the software: cloud hosting (AWS/GCP), database egress, third-party payment/messaging APIs, AI token compute, and customer support/DevOps personnel dedicated to system uptime."
+        },
+        {
+          "question": "What is the gold-standard gross margin for B2B SaaS?",
+          "answer": "Top-quartile public SaaS companies consistently achieve 75% to 85%+ gross margins. Margins below 70% typically attract lower revenue valuation multiples."
+        }
+      ]
+    }
+  },
+  {
+    "id": "css-shimmer-skeleton-loading-effect-generator",
+    "name": "CSS Shimmer Skeleton Loading Effect Generator",
+    "slug": "css-shimmer-skeleton-loading-effect-generator",
+    "category": "creative",
+    "type": "Interactive Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "css shimmer skeleton generator",
+      "skeleton loading animation css",
+      "pure css shimmer effect",
+      "tailwind skeleton shimmer generator",
+      "placeholder loading wave css",
+      "hardware accelerated skeleton loader"
+    ],
+    "primaryKeywords": [
+      "css skeleton generator",
+      "shimmer animation css",
+      "skeleton loading effect",
+      "css shimmer wave"
+    ],
+    "secondaryKeywords": [
+      "linear-gradient background-size 200%",
+      "smooth 60fps gpu compositor transition",
+      "tailwind config custom animation keyframes"
+    ],
+    "targetUsers": [
+      "Frontend Developers",
+      "UI/UX Designers",
+      "Design System Engineers",
+      "Web Performance Specialists"
+    ],
+    "badge": "New",
+    "userProblem": "Web designers building modern web apps need lightweight, 60fps CSS skeleton loading placeholder animations with customizable gradient wave angles without external JS libraries.",
+    "searchIntent": "Generate smooth, customizable pure CSS and Tailwind CSS skeleton loading animations and placeholders.",
+    "resultInterpretation": "Displays live interactive skeleton card previews and exports ready-to-use pure CSS rules and Tailwind CSS configuration snippets.",
+    "practicalGuidance": "Using background-position shifts on a 200% width linear gradient avoids DOM repaints by utilizing hardware-accelerated GPU composition.",
+    "limitations": "Pure CSS shimmer; dynamic content replacement requires JavaScript state handling in your framework.",
+    "formula": "Background: linear-gradient(angle, base, highlight, base); Animation: background-position -200% to 200%",
+    "trustNotes": "100% Client-Side generation. Zero assets or analytics loaded.",
+    "related": [
+      "css-infinite-marquee-ticker-generator",
+      "css-3d-perspective-card-tilt-generator",
+      "css-grid-auto-fit-minmax-responsive-layout-generator",
+      "svg-smooth-organic-blob-generator"
+    ],
+    "seo": {
+      "title": "CSS Shimmer Skeleton Loading Generator — Pure CSS & Tailwind Tool",
+      "metaDescription": "Generate hardware-accelerated CSS shimmer skeleton loading placeholders. Customize wave sweep angle, cycle duration, tones, and copy CSS or Tailwind code.",
+      "whatIsThis": "A visual UI generator that creates smooth, hardware-accelerated skeleton loading placeholders for modern web applications.",
+      "howItWorks": "1. Select base slate color, highlight shimmer color, and sweep angle.\n2. Adjust cycle speed and border radius.\n3. Copy vanilla CSS or Tailwind CSS utility class snippets.",
+      "whyUseIt": "Improves perceived loading performance and Cumulative Layout Shift (CLS) on data-heavy web pages.",
+      "faqs": [
+        {
+          "question": "How does skeleton loading improve perceived performance?",
+          "answer": "Skeleton loaders reduce perceived wait times by communicating content structure immediately, preventing blank screens and avoiding jarring content jumps (CLS)."
+        },
+        {
+          "question": "Is this skeleton loader hardware-accelerated?",
+          "answer": "Yes, the animation animates CSS background-position using ease-in-out timing, running on the GPU compositor thread without triggering layout reflows."
+        }
+      ]
+    }
+  },
+  {
+    "id": "dns-openpgpkey-email-encryption-record-generator",
+    "name": "DNS OPENPGPKEY Record Generator (RFC 7929)",
+    "slug": "dns-openpgpkey-email-encryption-record-generator",
+    "category": "network",
+    "type": "Interactive Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "dns openpgpkey record generator",
+      "openpgpkey record builder",
+      "rfc 7929 openpgpkey generator",
+      "dane openpgp dns record",
+      "openpgp email encryption dnssec",
+      "openpgpkey local-part hash generator"
+    ],
+    "primaryKeywords": [
+      "dns openpgpkey generator",
+      "openpgpkey generator",
+      "rfc 7929 generator",
+      "dane openpgp record"
+    ],
+    "secondaryKeywords": [
+      "sha 256 28 octet local part truncation",
+      "bind master zone openpgpkey syntax",
+      "rfc 3597 generic type61 fallback"
+    ],
+    "targetUsers": [
+      "Privacy Engineers",
+      "Security Architects",
+      "Systems Administrators",
+      "Email Server Operators"
+    ],
+    "badge": "New",
+    "userProblem": "Security administrators setting up DANE for OpenPGP need to publish public encryption keys in DNS to enable automated end-to-end email encryption without centralized keyserver dependencies.",
+    "searchIntent": "Generate RFC 7929 compliant DNS OPENPGPKEY resource records from an email address and ASCII-armored PGP public key.",
+    "resultInterpretation": "Computes the 28-octet local-part SHA-256 hash prefix, strips PGP armor headers, and outputs BIND zone records and dig verification commands.",
+    "practicalGuidance": "Ensure your DNS zone is signed with DNSSEC; OpenPGP email clients will not trust OPENPGPKEY records without cryptographic DNSSEC validation.",
+    "limitations": "Requires PGP keys to fit within standard DNS UDP response size limits or require EDNS0/TCP fallback for large multi-sub-key rings.",
+    "formula": "<SHA256_Truncated_28_Octets>._openpgpkey.<domain>. <TTL> IN OPENPGPKEY <Binary_Hex_Public_Key>",
+    "trustNotes": "100% Client-Side generation. PGP public keys and emails are never logged or transmitted.",
+    "related": [
+      "dns-sshfp-ssh-fingerprint-record-generator",
+      "dns-tlsa-dane-record-generator",
+      "dnssec-nsec-authenticated-denial-of-existence-generator",
+      "dns-loc-geographic-coordinates-record-generator"
+    ],
+    "seo": {
+      "title": "DNS OPENPGPKEY Record Generator — RFC 7929 DANE Email Tool",
+      "metaDescription": "Generate RFC 7929 compliant DNS OPENPGPKEY resource records. Computes local-part SHA-256 hashes and converts ASCII-armored keys to binary hex.",
+      "whatIsThis": "A cryptographic network utility that generates DNS OPENPGPKEY records for automated DANE-based email encryption key discovery.",
+      "howItWorks": "1. Enter recipient email address.\n2. Paste ASCII-armored PGP public key.\n3. Instantly generate BIND zone record and CLI dig test command.",
+      "whyUseIt": "Enables secure, decentralized OpenPGP key publication directly within your DNSSEC trust hierarchy.",
+      "faqs": [
+        {
+          "question": "What is an OPENPGPKEY DNS record?",
+          "answer": "Specified in RFC 7929, OPENPGPKEY publishes a user's OpenPGP public key in the DNS under their email domain, enabling compliant mail user agents (MUAs) to discover encryption keys automatically."
+        },
+        {
+          "question": "How is the domain prefix formatted?",
+          "answer": "The local-part of the email (e.g. 'alice') is converted to lowercase UTF-8, hashed with SHA-256, and truncated to 28 octets (56 hexadecimal characters) prepended to '._openpgpkey.domain'."
+        }
+      ]
+    }
+  },
+  {
+    "id": "founder-secondary-sale-equity-dilution-calculator",
+    "name": "Founder Secondary Sale & Equity Dilution Calculator",
+    "slug": "founder-secondary-sale-equity-dilution-calculator",
+    "category": "finance",
+    "type": "Interactive Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "founder secondary sale calculator",
+      "founder liquidity dilution calculator",
+      "secondary share price discount calculator",
+      "startup founder secondary proceeds",
+      "series b founder liquidity model",
+      "cap table secondary dilution"
+    ],
+    "primaryKeywords": [
+      "founder secondary sale calculator",
+      "founder liquidity calculator",
+      "secondary share sale calculator",
+      "secondary dilution calculator"
+    ],
+    "secondaryKeywords": [
+      "primary to secondary share price discount",
+      "net after tax founder secondary proceeds",
+      "post secondary ownership cap table impact"
+    ],
+    "targetUsers": [
+      "Startup Founders",
+      "Venture Capital Investors",
+      "Growth Equity Funds",
+      "Startup CFOs & Legal Counsel"
+    ],
+    "badge": "New",
+    "userProblem": "Founders negotiating late-stage secondary liquidity in Series B/C rounds need to calculate secondary share price discounts, remaining equity ownership %, and net after-tax cash proceeds.",
+    "searchIntent": "Calculate founder shares sold, ownership dilution, and net take-home cash in a venture capital secondary transaction.",
+    "resultInterpretation": "Displays primary vs secondary share prices, shares transferred, ownership change %, and estimated capital gains tax liabilities.",
+    "practicalGuidance": "Secondaries in growth rounds typically price at par with preferred shares or at a modest 10% to 20% discount depending on investor demand.",
+    "limitations": "Assumes common shares sold to secondary buyers; does not model complex conversion of common into preferred shares.",
+    "formula": "Secondary_Price = Primary_Price * (1 - Discount_%); Shares_Sold = Target_Proceeds / Secondary_Price",
+    "trustNotes": "100% Client-Side calculation. Zero cap table or financial figures saved.",
+    "related": [
+      "startup-liquidation-preference-waterfall-calculator",
+      "option-pool-shuffle-dilution-calculator",
+      "qsbs-section-1202-capital-gains-exclusion-calculator",
+      "safe-mfn-most-favored-nation-clause-calculator"
+    ],
+    "seo": {
+      "title": "Founder Secondary Sale Calculator — Liquidity & Dilution Tool",
+      "metaDescription": "Calculate founder secondary liquidity, secondary share price discounts, and cap table dilution. Model gross proceeds, capital gains tax, and net take-home cash.",
+      "whatIsThis": "A venture capital financial model that calculates founder secondary stock sales, equity ownership dilution, and net cash proceeds.",
+      "howItWorks": "1. Enter company valuation, total shares, and founder shares owned.\n2. Input target secondary dollar amount and price discount %.\n3. Review post-secondary ownership % and estimated net cash after tax.",
+      "whyUseIt": "Helps founders de-risk personal wealth while understanding exact cap table ownership consequences.",
+      "faqs": [
+        {
+          "question": "What is a founder secondary sale?",
+          "answer": "In a secondary transaction, an existing shareholder (such as a founder or early employee) sells existing shares directly to an investor for personal cash liquidity, unlike primary funding which goes into the company's bank account."
+        },
+        {
+          "question": "Why is there often a discount on secondary shares?",
+          "answer": "Secondary shares are typically common stock with no liquidation preference and may have transfer restrictions, prompting investors to negotiate a 10% to 25% discount relative to preferred shares."
+        }
+      ]
+    }
+  },
+  {
+    "id": "hex-grid-a-star-pathfinding-algorithm",
+    "name": "Hexagonal Grid A* Pathfinding Algorithm Simulator",
+    "slug": "hex-grid-a-star-pathfinding-algorithm",
+    "category": "creative",
+    "type": "Interactive Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "hex grid a star pathfinding",
+      "hexagonal a star algorithm",
+      "hex grid pathfinding simulator",
+      "cube coordinate a star search",
+      "hex grid heuristic manhattan distance",
+      "tactical game pathfinding algorithm"
+    ],
+    "primaryKeywords": [
+      "hex grid a star algorithm",
+      "hexagonal pathfinding simulator",
+      "hex a star pathfinding",
+      "cube coordinate pathfinding"
+    ],
+    "secondaryKeywords": [
+      "priority queue f score evaluation",
+      "six directional cube neighbor traversal",
+      "reconstruct path backtrace algorithm"
+    ],
+    "targetUsers": [
+      "Game Developers",
+      "Turn-Based Strategy Designers",
+      "Simulation Programmers",
+      "Algorithm Engineers"
+    ],
+    "badge": "New",
+    "userProblem": "Game developers building tactical turn-based strategy games need a fast, deterministic A* pathfinding algorithm adapted for hexagonal grids using cube coordinates.",
+    "searchIntent": "Simulate and implement A* pathfinding on hexagonal grids with obstacle navigation and cube coordinate heuristics.",
+    "resultInterpretation": "Provides an interactive tactical hex grid simulator showing optimal path steps, visited nodes, and exports clean TypeScript A* implementation code.",
+    "practicalGuidance": "Using the Manhattan cube distance as the A* heuristic guarantees admissibility and optimality for hexagonal grid navigation.",
+    "limitations": "Assumes uniform edge traversal costs; variable terrain costs (hills, swamps) require weighting gScore additions.",
+    "formula": "f(n) = g(n) + h(n); h(n) = (|q1 - q2| + |r1 - r2| + |s1 - s2|) / 2",
+    "trustNotes": "100% Client-Side calculation. Zero server dependencies.",
+    "related": [
+      "hex-grid-line-of-sight-raycasting-algorithm",
+      "hex-grid-spiral-ring-traversal-algorithm",
+      "hex-grid-movement-range-cost-calculator",
+      "hex-grid-field-of-view-shadowcasting-algorithm"
+    ],
+    "seo": {
+      "title": "Hex Grid A* Pathfinding Algorithm — Tactical Game Simulator",
+      "metaDescription": "Interactive hexagonal grid A* pathfinding algorithm simulator. Features cube coordinate heuristics, obstacle navigation, and copyable TypeScript source code.",
+      "whatIsThis": "An interactive game math simulator that demonstrates A* pathfinding across hexagonal grids using cube coordinates.",
+      "howItWorks": "1. Click hexes to set Start and Goal nodes.\n2. Toggle wall obstacles.\n3. Watch optimal path calculation and copy production TypeScript code.",
+      "whyUseIt": "Solves shortest-path routing for turn-based strategy games, tabletop RPG tools, and autonomous robotics simulations.",
+      "faqs": [
+        {
+          "question": "How does A* differ from Dijkstra on hex grids?",
+          "answer": "A* uses a heuristic distance estimate h(n) to focus the search toward the goal, visiting far fewer nodes than Dijkstra's exhaustive flood fill."
+        },
+        {
+          "question": "What is the admissible heuristic for hex grids?",
+          "answer": "The cube coordinate distance (half the sum of absolute coordinate differences) is the exact minimum distance between any two hexes, making it perfectly admissible for A*."
+        }
+      ]
+    }
+  },
+  {
+    "id": "crontab-to-prometheus-pushgateway-exporter",
+    "name": "Crontab to Prometheus Pushgateway Metric Exporter",
+    "slug": "crontab-to-prometheus-pushgateway-exporter",
+    "category": "developer",
+    "type": "Interactive Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "crontab to prometheus pushgateway",
+      "cron to pushgateway exporter",
+      "prometheus cron job metrics",
+      "pushgateway curl wrapper",
+      "cron execution duration prometheus",
+      "grafana cloud cron exporter"
+    ],
+    "primaryKeywords": [
+      "crontab to pushgateway exporter",
+      "prometheus cron exporter",
+      "pushgateway cron metrics",
+      "cron observability prometheus"
+    ],
+    "secondaryKeywords": [
+      "cron job duration seconds gauge",
+      "cron job last exit code metric",
+      "cron job last success timestamp seconds"
+    ],
+    "targetUsers": [
+      "Site Reliability Engineers (SREs)",
+      "DevOps Engineers",
+      "Linux Systems Administrators",
+      "Platform Engineers"
+    ],
+    "badge": "New",
+    "userProblem": "DevOps and SRE teams running batch cron jobs need to push execution duration, status, and last success timestamps to Prometheus Pushgateway without installing heavy custom agents.",
+    "searchIntent": "Convert cron jobs into bash wrappers that emit standard Prometheus text-format metrics to Pushgateway via curl.",
+    "resultInterpretation": "Generates a complete POSIX bash wrapper script and crontab schedule entry that pushes duration, status, and exit code gauges to Prometheus.",
+    "practicalGuidance": "Always include the instance label when pushing to Pushgateway to prevent separate hosts from overwriting each other's metrics.",
+    "limitations": "Requires network access to the Prometheus Pushgateway endpoint on port 9091.",
+    "formula": "curl --data-binary @- ${GATEWAY_URL}/metrics/job/${JOB_NAME}/instance/${INSTANCE}",
+    "trustNotes": "100% Client-Side generator. Zero credentials or host telemetry transmitted.",
+    "related": [
+      "crontab-to-honeycomb-marker-telemetry-converter",
+      "crontab-to-splunk-signalfx-heartbeat-converter",
+      "crontab-to-new-relic-synthetics-heartbeat-converter",
+      "crontab-to-healthchecks-io-heartbeat-converter"
+    ],
+    "seo": {
+      "title": "Crontab to Prometheus Pushgateway Exporter — Batch Metrics Tool",
+      "metaDescription": "Convert crontab jobs into Prometheus Pushgateway metric streams. Export execution duration, exit codes, and last-success timestamps via native curl.",
+      "whatIsThis": "A DevOps automation utility that wraps scheduled cron jobs to export Prometheus OpenMetrics to Pushgateway or Grafana Cloud.",
+      "howItWorks": "1. Enter job name, command, and Pushgateway URL.\n2. Configure instance label and cron schedule.\n3. Copy the standalone bash wrapper script and crontab entry.",
+      "whyUseIt": "Enables Prometheus alerting on silent cron job failures and execution duration regressions.",
+      "faqs": [
+        {
+          "question": "When should I use Pushgateway instead of standard Prometheus scraping?",
+          "answer": "Prometheus is pull-based and cannot reliably scrape ephemeral batch jobs that run for only a few seconds. Pushgateway accepts pushed metrics and holds them for Prometheus to scrape."
+        },
+        {
+          "question": "What metrics are generated?",
+          "answer": "The wrapper outputs cron_job_duration_seconds, cron_job_last_exit_code, cron_job_status (1=success, 0=fail), and cron_job_last_success_timestamp_seconds."
+        }
+      ]
+    }
+  },
+  {
+    "id": "grantor-retained-annuity-trust-grat-calculator",
+    "name": "Grantor Retained Annuity Trust (GRAT) Section 7520 Calculator",
+    "slug": "grantor-retained-annuity-trust-grat-calculator",
+    "category": "finance",
+    "type": "Interactive Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "grat calculator",
+      "grantor retained annuity trust calculator",
+      "zeroed out walton grat calculator",
+      "irc 7520 hurdle rate calculator",
+      "grat estate tax savings calculator",
+      "20 percent increasing annuity grat"
+    ],
+    "primaryKeywords": [
+      "grat calculator",
+      "grantor retained annuity trust",
+      "irc section 7520 calculator",
+      "estate tax wealth transfer calculator"
+    ],
+    "secondaryKeywords": [
+      "zeroed out taxable gift formation",
+      "treas reg 25 2702 3 20 percent step up",
+      "40 percent federal estate tax savings"
+    ],
+    "targetUsers": [
+      "Estate Planning Attorneys",
+      "High-Net-Worth Individuals (HNWIs)",
+      "Tech Founders with Pre-IPO Equity",
+      "Wealth Advisors & CPAs"
+    ],
+    "badge": "New",
+    "userProblem": "Founders and wealthy families with high-growth equity need to model zeroed-out GRAT annuity schedules under IRC § 7520 to transfer surplus capital gains to heirs free of the 40% estate tax.",
+    "searchIntent": "Calculate GRAT annuity payouts, statutory hurdle rates, and tax-free wealth transfers under IRC Section 7520.",
+    "resultInterpretation": "Displays initial annuity requirements, year-by-year trust amortization schedules, net remainder transferred to beneficiaries, and estimated 40% estate tax saved.",
+    "practicalGuidance": "Electing a 20% annual increasing annuity back-loads distributions, leaving more capital in the trust to compound tax-free.",
+    "limitations": "Assumes the grantor survives the trust term; if the grantor dies during the term, trust assets are pulled back into their taxable gross estate.",
+    "formula": "Present Value(Annuity_Stream, § 7520 Rate) = Principal; Remainder = Ending_Balance - Total_Annuity",
+    "trustNotes": "100% Client-Side calculation. Zero trust or financial assets saved.",
+    "related": [
+      "qsbs-section-1202-capital-gains-exclusion-calculator",
+      "estate-tax-portability-dsue-unified-credit-calculator",
+      "section-83b-election-deadline-tax-calculator",
+      "cost-segregation-bonus-depreciation-tax-calculator"
+    ],
+    "seo": {
+      "title": "Grantor Retained Annuity Trust (GRAT) Calculator — IRC § 7520 Tool",
+      "metaDescription": "Calculate zeroed-out Walton GRAT annuity payments and tax-free wealth transfers under IRC § 7520. Models 20% escalating annuities and 40% estate tax savings.",
+      "whatIsThis": "An advanced estate planning calculator that models wealth transfers using Grantor Retained Annuity Trusts (GRATs) under IRC Section 7520.",
+      "howItWorks": "1. Enter funding asset value, trust term in years, and IRS § 7520 hurdle rate.\n2. Input expected asset appreciation rate and toggle 20% escalating annuity.\n3. View annual annuity schedule and tax-free wealth transferred.",
+      "whyUseIt": "Allows founders to transfer millions in startup equity appreciation to children without utilizing lifetime gift tax exemptions.",
+      "faqs": [
+        {
+          "question": "What is a 'Zeroed-Out' GRAT?",
+          "answer": "A zeroed-out GRAT (popularized in the Walton tax court case) sets the annuity payments so their actuarial present value exactly equals the initial asset value, resulting in a taxable gift of zero dollars."
+        },
+        {
+          "question": "What happens if trust assets fail to beat the hurdle rate?",
+          "answer": "If growth is lower than the Section 7520 rate, the trust simply pays back the assets to the grantor through annuities, and nothing transfers to beneficiaries. No gift tax was wasted."
+        }
+      ]
+    }
+  },
+  {
+    "id": "svg-orthogonal-flowchart-wire-connector-generator",
+    "name": "SVG Orthogonal Flowchart Wire Connector Generator",
+    "slug": "svg-orthogonal-flowchart-wire-connector-generator",
+    "category": "creative",
+    "type": "Interactive Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "svg orthogonal wire generator",
+      "svg flowchart connector generator",
+      "manhattan wire routing svg",
+      "rounded 90 degree wire svg",
+      "svg node wire path generator",
+      "flowchart connector line svg"
+    ],
+    "primaryKeywords": [
+      "svg orthogonal connector generator",
+      "svg flowchart wire generator",
+      "manhattan wire routing svg",
+      "rounded svg connector path"
+    ],
+    "secondaryKeywords": [
+      "fillet corner radius quadratic bezier",
+      "arrowhead marker end defs",
+      "animated traveling stroke dashoffset"
+    ],
+    "targetUsers": [
+      "Frontend Developers",
+      "Diagramming Tool Creators",
+      "UI Designers",
+      "Technical Illustrators"
+    ],
+    "badge": "New",
+    "userProblem": "Developers building custom node-graph visualizers, architecture diagrams, and workflow editors need mathematically clean, rounded orthogonal Manhattan connector paths without complex layout dependencies.",
+    "searchIntent": "Generate smooth, rounded 90-degree orthogonal SVG connector paths between two coordinates.",
+    "resultInterpretation": "Renders an interactive canvas with draggable/configurable source and target pins and exports clean, copyable SVG path data and arrow markers.",
+    "practicalGuidance": "Using quadratic Bézier arcs at intermediate corners prevents sharp visual corners while maintaining strict Manhattan 90-degree routing.",
+    "limitations": "Generates point-to-point Manhattan paths with midpoint X-routing; complex multi-node obstacle avoidance requires full A* grid routing.",
+    "formula": "Path = M x1 y1 L (midX - r) y1 Q midX y1 midX (y1 + r) L midX (y2 - r) Q midX y2 (midX + r) y2 L x2 y2",
+    "trustNotes": "100% Client-Side vector calculation. Zero tracking.",
+    "related": [
+      "svg-isometric-3d-grid-projection-generator",
+      "svg-smooth-organic-blob-generator",
+      "svg-radial-mesh-gradient-patch-generator",
+      "css-infinite-marquee-ticker-generator"
+    ],
+    "seo": {
+      "title": "SVG Orthogonal Wire Connector Generator — Manhattan Routing Tool",
+      "metaDescription": "Generate smooth rounded 90-degree orthogonal connector wires for SVG diagrams. Configurable fillet corner radius, arrowheads, dashed lines, and React code.",
+      "whatIsThis": "A vector geometry tool that generates rounded orthogonal Manhattan connector wires for flowcharts and node graphs.",
+      "howItWorks": "1. Adjust Source (X1, Y1) and Target (X2, Y2) coordinates.\n2. Configure fillet corner radius, stroke width, and dashing.\n3. Copy clean SVG path markup or embed directly into diagrams.",
+      "whyUseIt": "Eliminates the complexity of hand-coding quadratic Bézier corner transitions for orthogonal flowcharts.",
+      "faqs": [
+        {
+          "question": "What is orthogonal or Manhattan routing?",
+          "answer": "Orthogonal routing restricts connection paths to strictly horizontal and vertical line segments (like the street grid of Manhattan), providing a clean, organized look for circuit diagrams and flowcharts."
+        },
+        {
+          "question": "How are rounded corners achieved in SVG?",
+          "answer": "The generator inserts quadratic Bézier curves (Q) or circular arc commands (A) at the 90-degree turning points with a configurable fillet radius."
+        }
+      ]
+    }
+  },
+  {
+    "id": "hrv-rmssd-autonomic-recovery-score-calculator",
+    "name": "Heart Rate Variability (HRV) rMSSD & Recovery Score Calculator",
+    "slug": "hrv-rmssd-autonomic-recovery-score-calculator",
+    "category": "health",
+    "type": "Interactive Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "hrv rmssd calculator",
+      "heart rate variability rmssd calculator",
+      "ln rmssd recovery score calculator",
+      "autonomic recovery index calculator",
+      "rr interval hrv calculator",
+      "parasympathetic recovery metric"
+    ],
+    "primaryKeywords": [
+      "hrv rmssd calculator",
+      "heart rate variability calculator",
+      "ln rmssd calculator",
+      "autonomic recovery score"
+    ],
+    "secondaryKeywords": [
+      "root mean square of successive differences",
+      "rr peak intervals milliseconds polar whoop",
+      "parasympathetic vs sympathetic readiness"
+    ],
+    "targetUsers": [
+      "Endurance Athletes",
+      "Sports Scientists",
+      "Strength & Conditioning Coaches",
+      "Health & Longevity Optimizers"
+    ],
+    "badge": "New",
+    "userProblem": "Athletes and coaches need to calculate rMSSD and ln(rMSSD) from raw R-R heart beat intervals to assess autonomic nervous system recovery without relying on proprietary black-box device scores.",
+    "searchIntent": "Calculate rMSSD, ln(rMSSD), and autonomic recovery readiness from raw R-R interval timestamps.",
+    "resultInterpretation": "Calculates rMSSD in milliseconds, natural log ln(rMSSD), average heart rate, a 0-100 recovery index, and actionable physiological training guidance.",
+    "practicalGuidance": "Higher rMSSD indicates strong parasympathetic vagal tone and optimal training readiness; suppressed rMSSD signals systemic fatigue or overtraining.",
+    "limitations": "Requires clean resting R-R interval recordings; ectopic beats and movement artifacts should be filtered prior to analysis.",
+    "formula": "rMSSD = Sqrt( (1 / (N - 1)) * Σ (RR_{i+1} - RR_i)^2 ); ln(rMSSD) = ln(rMSSD)",
+    "trustNotes": "100% Client-Side calculation. Zero health or biometric data stored.",
+    "related": [
+      "running-critical-speed-d-prime-aerobic-model-calculator",
+      "maximum-aerobic-speed-mas-aerobic-intervals-calculator",
+      "cycling-ftp-power-zones-coggan-calculator",
+      "lactate-threshold-heart-rate-lthr-zones-calculator"
+    ],
+    "seo": {
+      "title": "HRV rMSSD & Recovery Score Calculator — Sports Science HRV Tool",
+      "metaDescription": "Calculate Heart Rate Variability rMSSD and ln(rMSSD) from raw R-R intervals. Evaluate autonomic nervous system recovery and training readiness.",
+      "whatIsThis": "A sports physiology calculator that processes raw R-R interval data to compute the clinical standard rMSSD and recovery readiness score.",
+      "howItWorks": "1. Paste raw R-R millisecond intervals from your heart rate monitor.\n2. View rMSSD, ln(rMSSD), and mean heart rate.\n3. Review autonomic readiness index and personalized workout guidance.",
+      "whyUseIt": "Provides open, scientifically validated recovery metrics free from wearable vendor proprietary score obfuscation.",
+      "faqs": [
+        {
+          "question": "What is rMSSD in Heart Rate Variability?",
+          "answer": "rMSSD stands for Root Mean Square of Successive Differences between adjacent R-R intervals. It is the gold-standard time-domain metric reflecting parasympathetic (vagal) activity."
+        },
+        {
+          "question": "Why do sports scientists use ln(rMSSD)?",
+          "answer": "Raw rMSSD has a skewed distribution in human populations. The natural logarithm ln(rMSSD) linearizes the data, making it easier to track baseline shifts and calculate z-scores."
+        }
+      ]
+    }
   }
 ]

@@ -425,6 +425,17 @@ const QsbsSection1202Calculator = dynamic(() => import("./finance/QsbsSection120
 const SvgIsometricGridGenerator = dynamic(() => import("./creative/SvgIsometricGridGenerator").then((m) => m.SvgIsometricGridGenerator), { ssr: false });
 const RunningCriticalSpeedCalculator = dynamic(() => import("./health/RunningCriticalSpeedCalculator").then((m) => m.RunningCriticalSpeedCalculator), { ssr: false });
 
+const CurlToSwiftUrlSessionConverter = dynamic(() => import("./developer/CurlToSwiftUrlSessionConverter").then((m) => m.CurlToSwiftUrlSessionConverter), { ssr: false });
+const SaasGrossMarginCogsCalculator = dynamic(() => import("./finance/SaasGrossMarginCogsCalculator").then((m) => m.SaasGrossMarginCogsCalculator), { ssr: false });
+const CssShimmerSkeletonGenerator = dynamic(() => import("./creative/CssShimmerSkeletonGenerator").then((m) => m.CssShimmerSkeletonGenerator), { ssr: false });
+const DnsOpenPgpKeyRecordGenerator = dynamic(() => import("./network/DnsOpenPgpKeyRecordGenerator").then((m) => m.DnsOpenPgpKeyRecordGenerator), { ssr: false });
+const FounderSecondarySaleCalculator = dynamic(() => import("./finance/FounderSecondarySaleCalculator").then((m) => m.FounderSecondarySaleCalculator), { ssr: false });
+const HexGridAStarPathfindingAlgorithm = dynamic(() => import("./creative/HexGridAStarPathfindingAlgorithm").then((m) => m.HexGridAStarPathfindingAlgorithm), { ssr: false });
+const CronToPushgatewayConverter = dynamic(() => import("./developer/CronToPushgatewayConverter").then((m) => m.CronToPushgatewayConverter), { ssr: false });
+const GratTrustCalculator = dynamic(() => import("./finance/GratTrustCalculator").then((m) => m.GratTrustCalculator), { ssr: false });
+const SvgOrthogonalWireGenerator = dynamic(() => import("./creative/SvgOrthogonalWireGenerator").then((m) => m.SvgOrthogonalWireGenerator), { ssr: false });
+const HrvRmssdRecoveryCalculator = dynamic(() => import("./health/HrvRmssdRecoveryCalculator").then((m) => m.HrvRmssdRecoveryCalculator), { ssr: false });
+
 const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "random-number-generator": RandomNumberGenerator,
   "spin-wheel": SpinWheel,
@@ -844,6 +855,16 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "qsbs-section-1202-capital-gains-exclusion-calculator": QsbsSection1202Calculator,
   "svg-isometric-3d-grid-projection-generator": SvgIsometricGridGenerator,
   "running-critical-speed-d-prime-aerobic-model-calculator": RunningCriticalSpeedCalculator,
+  "curl-to-swift-urlsession-async-await-converter": CurlToSwiftUrlSessionConverter,
+  "saas-gross-margin-cogs-unit-economics-calculator": SaasGrossMarginCogsCalculator,
+  "css-shimmer-skeleton-loading-effect-generator": CssShimmerSkeletonGenerator,
+  "dns-openpgpkey-email-encryption-record-generator": DnsOpenPgpKeyRecordGenerator,
+  "founder-secondary-sale-equity-dilution-calculator": FounderSecondarySaleCalculator,
+  "hex-grid-a-star-pathfinding-algorithm": HexGridAStarPathfindingAlgorithm,
+  "crontab-to-prometheus-pushgateway-exporter": CronToPushgatewayConverter,
+  "grantor-retained-annuity-trust-grat-calculator": GratTrustCalculator,
+  "svg-orthogonal-flowchart-wire-connector-generator": SvgOrthogonalWireGenerator,
+  "hrv-rmssd-autonomic-recovery-score-calculator": HrvRmssdRecoveryCalculator,
 };
 
 interface ToolDispatcherProps {
