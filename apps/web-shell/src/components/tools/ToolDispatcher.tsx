@@ -403,6 +403,17 @@ const CostSegregationCalculator = dynamic(() => import("./finance/CostSegregatio
 const SvgMeshGradientGenerator = dynamic(() => import("./creative/SvgMeshGradientGenerator").then((m) => m.SvgMeshGradientGenerator), { ssr: false });
 const CyclingFtpPowerZonesCalculator = dynamic(() => import("./health/CyclingFtpPowerZonesCalculator").then((m) => m.CyclingFtpPowerZonesCalculator), { ssr: false });
 
+const CurlToFaradayConverter = dynamic(() => import("./developer/CurlToFaradayConverter").then((m) => m.CurlToFaradayConverter), { ssr: false });
+const NrrCohortDecayCalculator = dynamic(() => import("./finance/NrrCohortDecayCalculator").then((m) => m.NrrCohortDecayCalculator), { ssr: false });
+const CssPerspectiveTiltCardGenerator = dynamic(() => import("./creative/CssPerspectiveTiltCardGenerator").then((m) => m.CssPerspectiveTiltCardGenerator), { ssr: false });
+const DnsLocRecordGenerator = dynamic(() => import("./network/DnsLocRecordGenerator").then((m) => m.DnsLocRecordGenerator), { ssr: false });
+const OptionPoolShuffleCalculator = dynamic(() => import("./finance/OptionPoolShuffleCalculator").then((m) => m.OptionPoolShuffleCalculator), { ssr: false });
+const HexGridSpiralRingAlgorithm = dynamic(() => import("./creative/HexGridSpiralRingAlgorithm").then((m) => m.HexGridSpiralRingAlgorithm), { ssr: false });
+const CronToSignalFxConverter = dynamic(() => import("./developer/CronToSignalFxConverter").then((m) => m.CronToSignalFxConverter), { ssr: false });
+const BonusDepreciationPhaseDownCalculator = dynamic(() => import("./finance/BonusDepreciationPhaseDownCalculator").then((m) => m.BonusDepreciationPhaseDownCalculator), { ssr: false });
+const SvgOrganicBlobGenerator = dynamic(() => import("./creative/SvgOrganicBlobGenerator").then((m) => m.SvgOrganicBlobGenerator), { ssr: false });
+const MaximumAerobicSpeedCalculator = dynamic(() => import("./health/MaximumAerobicSpeedCalculator").then((m) => m.MaximumAerobicSpeedCalculator), { ssr: false });
+
 const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "random-number-generator": RandomNumberGenerator,
   "spin-wheel": SpinWheel,
@@ -801,6 +812,17 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "cost-segregation-bonus-depreciation-tax-calculator": CostSegregationCalculator,
   "svg-radial-mesh-gradient-patch-generator": SvgMeshGradientGenerator,
   "cycling-ftp-power-zones-coggan-calculator": CyclingFtpPowerZonesCalculator,
+
+  "curl-to-ruby-faraday-client-converter": CurlToFaradayConverter,
+  "saas-nrr-cohort-decay-revenue-expansion-calculator": NrrCohortDecayCalculator,
+  "css-3d-perspective-card-tilt-generator": CssPerspectiveTiltCardGenerator,
+  "dns-loc-geographic-coordinates-record-generator": DnsLocRecordGenerator,
+  "option-pool-shuffle-dilution-calculator": OptionPoolShuffleCalculator,
+  "hex-grid-spiral-ring-traversal-algorithm": HexGridSpiralRingAlgorithm,
+  "crontab-to-splunk-signalfx-heartbeat-converter": CronToSignalFxConverter,
+  "bonus-depreciation-tcja-phase-down-schedule-calculator": BonusDepreciationPhaseDownCalculator,
+  "svg-smooth-organic-blob-generator": SvgOrganicBlobGenerator,
+  "maximum-aerobic-speed-mas-aerobic-intervals-calculator": MaximumAerobicSpeedCalculator,
 };
 
 interface ToolDispatcherProps {

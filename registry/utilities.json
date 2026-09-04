@@ -24213,5 +24213,615 @@
         }
       ]
     }
+  },
+  {
+    "id": "curl-to-ruby-faraday-client-converter",
+    "name": "cURL to Ruby Faraday HTTP Client Converter",
+    "slug": "curl-to-ruby-faraday-client-converter",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "curl to faraday",
+      "curl to ruby faraday",
+      "ruby faraday http client",
+      "faraday request generator",
+      "curl command to ruby faraday gem"
+    ],
+    "primaryKeywords": [
+      "curl to faraday",
+      "curl to ruby faraday",
+      "ruby faraday generator"
+    ],
+    "secondaryKeywords": [
+      "convert curl to ruby faraday middleware json auth headers timeout net http adapter",
+      "ruby on rails api client request builder faraday gem"
+    ],
+    "targetUsers": [
+      "Ruby Developers",
+      "Ruby on Rails Engineers",
+      "Backend Architects",
+      "API Integrators"
+    ],
+    "badge": "New",
+    "userProblem": "Ruby and Rails developers testing third-party APIs need to translate complex bash cURL commands into idiomatic Faraday HTTP client code with JSON middleware and connection timeouts.",
+    "searchIntent": "Convert cURL commands to Ruby Faraday client code with headers, authentication, query parameters, and payload serialization.",
+    "resultInterpretation": "Generates complete Ruby scripts configuring Faraday.new with Net::HTTP adapter, JSON request/response middleware, error raising, and custom headers.",
+    "practicalGuidance": "Faraday provides a modular middleware pipeline. Enabling Faraday::Response::RaiseError automatically converts 4xx and 5xx responses into Ruby exceptions.",
+    "limitations": "Generates Faraday v2.x syntax. Multi-part file streaming uploads may require additional faraday-multipart gem configuration.",
+    "formula": "curl -X METHOD \"URL\" -> client = Faraday.new; client.method('path') do |req| ... end",
+    "trustNotes": "100% Client-Side syntax translation. No API tokens or code sent to servers.",
+    "related": [
+      "curl-to-httpie-converter",
+      "curl-to-python-urllib3-pool-converter",
+      "curl-to-go-fasthttp-converter",
+      "jwt-debugger"
+    ],
+    "seo": {
+      "title": "cURL to Ruby Faraday Converter — Free Developer Tool",
+      "metaDescription": "Convert cURL commands to modern Ruby Faraday HTTP client code. Includes JSON middleware, Bearer authentication, timeout management, and Net::HTTP adapter.",
+      "whatIsThis": "A developer tool that translates bash cURL commands into modern Ruby Faraday gem client code.",
+      "howItWorks": "1. Paste a raw cURL command into the input field.\n2. Configure Faraday middleware options and request timeouts.\n3. Copy the clean Ruby Faraday code snippet ready for your Rails application.",
+      "whyUseIt": "Eliminates tedious manual syntax mapping when implementing third-party REST APIs in Ruby on Rails.",
+      "faqs": [
+        {
+          "question": "What is the Faraday gem in Ruby?",
+          "answer": "Faraday is the most popular modular HTTP client library for Ruby, abstracting underlying HTTP adapters (like Net::HTTP, Typhoeus, or Patron) behind a clean middleware pipeline."
+        },
+        {
+          "question": "Does this generator handle JSON payloads automatically?",
+          "answer": "Yes, it configures `f.request :json` and `f.response :json` middleware so payloads and responses are serialized and parsed automatically."
+        }
+      ]
+    }
+  },
+  {
+    "id": "saas-nrr-cohort-decay-revenue-expansion-calculator",
+    "name": "SaaS Net Revenue Retention (NRR) Cohort Decay Calculator",
+    "slug": "saas-nrr-cohort-decay-revenue-expansion-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "nrr calculator",
+      "net revenue retention calculator",
+      "saas cohort decay calculator",
+      "gross revenue retention grr calculator",
+      "negative net churn calculator"
+    ],
+    "primaryKeywords": [
+      "nrr calculator",
+      "net revenue retention calculator",
+      "saas cohort retention calculator"
+    ],
+    "secondaryKeywords": [
+      "multi year customer cohort compounding expansion decay negative churn nrr grr",
+      "enterprise saas benchmark 120 percent nrr expansion revenue model"
+    ],
+    "targetUsers": [
+      "SaaS Founders & CFOs",
+      "Venture Capitalists & Growth Investors",
+      "Revenue Operations Managers",
+      "Customer Success Executives"
+    ],
+    "badge": "New",
+    "userProblem": "SaaS leaders and investors need to model how customer cohorts evolve over 3 to 10 years to understand whether Net Revenue Retention (NRR) produces compounding organic growth or if cohort decay threatens the business.",
+    "searchIntent": "Model multi-year revenue compounding from existing customer cohorts under varying Net Revenue Retention (NRR) and Gross Revenue Retention (GRR) percentages.",
+    "resultInterpretation": "Generates a multi-year cohort compounding schedule, projects year-by-year ARR retention values, and benchmarks against venture capital top-quartile standards.",
+    "practicalGuidance": "When NRR exceeds 100% (e.g. 120%), an annual cohort expands organically over time without additional acquisition spend, creating negative net churn.",
+    "limitations": "Models compound cohort progression at a constant annual retention rate. In reality, cohort expansion may stabilize after year 3 or 4.",
+    "formula": "Cohort_ARR(Year_T) = Initial_ARR * (NRR / 100)^T",
+    "trustNotes": "100% Client-Side financial modeling. No corporate revenue data sent over the wire.",
+    "related": [
+      "rule-of-40-saas-efficiency-growth-margin-calculator",
+      "saas-burn-multiple-efficiency-runway-calculator",
+      "saas-ltv-cac-payback-sensitivity-matrix-calculator",
+      "arr-waterfall-bridge-ebitda-calculator"
+    ],
+    "seo": {
+      "title": "SaaS NRR Cohort Decay Calculator — Net Revenue Retention Tool",
+      "metaDescription": "Model multi-year SaaS cohort revenue expansion and decay based on Net Revenue Retention (NRR) and Gross Revenue Retention (GRR). Benchmark against top-quartile SaaS.",
+      "whatIsThis": "A financial forecasting tool that simulates customer cohort revenue trajectories over multiple years based on Net Revenue Retention (NRR).",
+      "howItWorks": "1. Enter initial cohort ARR (e.g. $1,000,000).\n2. Input annual Net Revenue Retention (NRR%) and Gross Revenue Retention (GRR%).\n3. View year-by-year cohort value progression and benchmark quartile ratings.",
+      "whyUseIt": "Reveals the compounding value of customer expansion versus the hidden drag of customer logo churn.",
+      "faqs": [
+        {
+          "question": "What is a good Net Revenue Retention (NRR) rate?",
+          "answer": "For enterprise SaaS, >120% NRR is top decile (e.g., Snowflake, Datadog), 105%–120% is healthy, and under 100% indicates that churn exceeds account expansion."
+        },
+        {
+          "question": "How does GRR differ from NRR?",
+          "answer": "Gross Revenue Retention (GRR) measures revenue retained excluding all expansion/upsell revenue and can never exceed 100%, whereas NRR includes upsells."
+        }
+      ]
+    }
+  },
+  {
+    "id": "css-3d-perspective-card-tilt-generator",
+    "name": "CSS 3D Perspective Card Tilt & Parallax Playground",
+    "slug": "css-3d-perspective-card-tilt-generator",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "css 3d card tilt",
+      "css perspective playground",
+      "card tilt hover effect css",
+      "parallax 3d card generator",
+      "transform style preserve 3d"
+    ],
+    "primaryKeywords": [
+      "css 3d card tilt",
+      "css perspective generator",
+      "3d tilt card playground"
+    ],
+    "secondaryKeywords": [
+      "perspective rotateX rotateY translateZ preserve-3d specular glare reflection css",
+      "tailwind css 3d transform interactive card hover effect generator"
+    ],
+    "targetUsers": [
+      "Frontend Developers",
+      "UI/UX Designers",
+      "Creative Web Developers",
+      "Design System Engineers"
+    ],
+    "badge": "New",
+    "userProblem": "Web developers and product designers want to build tactile 3D card tilt and holographic parallax effects for pricing tiers and hero cards without loading heavy external 3D libraries.",
+    "searchIntent": "Generate pure CSS 3D perspective tilt transforms with interactive mouse tracking, specular glare, depth layering, and CSS export.",
+    "resultInterpretation": "Calculates matrix rotation angles (rotateX, rotateY) and depth extrusion (translateZ), offering real-time cursor hover testing and CSS snippet output.",
+    "practicalGuidance": "Combining transform-style: preserve-3d with translateZ on child elements creates realistic spatial depth where text and badges float above the tilted card surface.",
+    "limitations": "Uses CSS 3D transforms. Older mobile browsers without hardware GPU acceleration may experience slight frame drops on extreme tilt angles.",
+    "formula": "transform: perspective(P) rotateX(rX) rotateY(rY) scale(S); child: translateZ(Z);",
+    "trustNotes": "100% Client-Side interactive 3D rendering and CSS generator.",
+    "related": [
+      "css-grid-auto-fit-minmax-responsive-layout-generator",
+      "css-fluid-typography-clamp-calculator",
+      "css-backdrop-filter-blur-glass-playground",
+      "svg-radial-mesh-gradient-patch-generator"
+    ],
+    "seo": {
+      "title": "CSS 3D Card Tilt Generator — Perspective & Parallax Playground",
+      "metaDescription": "Create interactive CSS 3D perspective card tilt effects with specular glare and parallax depth. Test in real-time and export pure CSS and Tailwind classes.",
+      "whatIsThis": "A design tool that generates interactive CSS 3D perspective card tilt and parallax depth effects.",
+      "howItWorks": "1. Configure perspective depth, maximum rotation angle, and hover zoom scale.\n2. Adjust inner parallax depth (translateZ) and specular glare reflection.\n3. Interact with the live 3D card preview and copy the CSS styles.",
+      "whyUseIt": "Adds polished, tactile micro-interactions to pricing tables, feature cards, and landing page showcases.",
+      "faqs": [
+        {
+          "question": "Does this require JavaScript for the 3D tilt effect?",
+          "answer": "The generator provides CSS 3D transforms for hover states and transitions, and demonstrates cursor-following rotation via lightweight CSS variable hooks."
+        },
+        {
+          "question": "What does transform-style: preserve-3d do?",
+          "answer": "It instructs the browser to render child elements in 3D space rather than flattening them into the 2D plane of the parent container."
+        }
+      ]
+    }
+  },
+  {
+    "id": "dns-loc-geographic-coordinates-record-generator",
+    "name": "DNS LOC (Location Information) Geographic Record Generator",
+    "slug": "dns-loc-geographic-coordinates-record-generator",
+    "category": "network",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "dns loc record generator",
+      "dns location record",
+      "rfc 1876 generator",
+      "bind9 loc record",
+      "dns geographic coordinates record"
+    ],
+    "primaryKeywords": [
+      "dns loc record generator",
+      "dns loc record",
+      "rfc 1876 record generator"
+    ],
+    "secondaryKeywords": [
+      "convert decimal latitude longitude altitude to degrees minutes seconds dns loc",
+      "bind9 named zone file geographic coordinates horizontal vertical precision"
+    ],
+    "targetUsers": [
+      "Network Engineers",
+      "DNS Administrators",
+      "Datacenter Infrastructure Teams",
+      "NTP & Network Diagnostic Operators"
+    ],
+    "badge": "New",
+    "userProblem": "Network engineers and DNS operators need to publish physical geographic coordinates (latitude, longitude, altitude) for servers and datacenters in strict RFC 1876 degrees-minutes-seconds LOC format.",
+    "searchIntent": "Convert decimal GPS coordinates into RFC 1876 compliant DNS LOC resource records for BIND9 zone files.",
+    "resultInterpretation": "Converts decimal latitude/longitude into DMS (degrees, minutes, seconds, hemisphere), formats altitude, size, and precision meters into standard BIND9 zone entries.",
+    "practicalGuidance": "The DNS LOC record allows traceroute utilities and internet mapping tools to visualize network routing paths geographically.",
+    "limitations": "Complies strictly with RFC 1876. Altitude values are expressed in meters relative to the WGS 84 reference ellipsoid.",
+    "formula": "<owner> IN LOC <d1> <m1> <s1> N/S <d2> <m2> <s2> E/W <alt>m <size>m <hp>m <vp>m",
+    "trustNotes": "100% Client-Side coordinate conversion. No IP or geographic location data recorded.",
+    "related": [
+      "dns-naptr-enum-sip-telephony-record-generator",
+      "dns-rpz-response-policy-zone-generator",
+      "dnssec-nsec-authenticated-denial-of-existence-generator",
+      "dns-hinfo-hardware-os-record-generator"
+    ],
+    "seo": {
+      "title": "DNS LOC Record Generator — RFC 1876 Geographic Coordinates Tool",
+      "metaDescription": "Generate RFC 1876 compliant DNS LOC records. Convert decimal GPS latitude and longitude into degrees-minutes-seconds with altitude and site precision for BIND9.",
+      "whatIsThis": "A network administration tool that converts decimal GPS coordinates into RFC 1876 DNS Location (LOC) resource records.",
+      "howItWorks": "1. Enter host domain name and decimal latitude/longitude coordinates.\n2. Specify altitude in meters, site diameter, and horizontal/vertical precision.\n3. Copy the valid BIND9 DNS LOC record for your zone file.",
+      "whyUseIt": "Enables datacenters and network operators to publish geographical metadata used by network topology and route visualization tools.",
+      "faqs": [
+        {
+          "question": "What is a DNS LOC record?",
+          "answer": "Defined in RFC 1876, the LOC record expresses geographic location information (latitude, longitude, altitude, and size) associated with a domain name."
+        },
+        {
+          "question": "How does this tool convert decimal coordinates to DMS?",
+          "answer": "It extracts integer degrees, computes arc minutes from the remainder, and converts the final fraction to arc seconds with millisecond precision."
+        }
+      ]
+    }
+  },
+  {
+    "id": "option-pool-shuffle-dilution-calculator",
+    "name": "Venture Capital Option Pool Shuffle & Dilution Calculator",
+    "slug": "option-pool-shuffle-dilution-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "option pool shuffle calculator",
+      "option pool dilution",
+      "pre money option pool calculator",
+      "vc option pool shuffle",
+      "effective pre money valuation"
+    ],
+    "primaryKeywords": [
+      "option pool shuffle calculator",
+      "option pool dilution calculator",
+      "effective pre money calculator"
+    ],
+    "secondaryKeywords": [
+      "venture capital term sheet pre money unallocated option pool dilution founder ownership",
+      "effective valuation discount series a cap table simulation"
+    ],
+    "targetUsers": [
+      "Startup Founders & Co-Founders",
+      "Angel Investors",
+      "Venture Capital Associates",
+      "Startup Attorneys"
+    ],
+    "badge": "New",
+    "userProblem": "Startup founders negotiating Series A venture capital term sheets need to quantify the hidden valuation discount created when investors require expanding the employee option pool prior to financing closing.",
+    "searchIntent": "Calculate the effective pre-money valuation discount and founder ownership dilution caused by the VC Option Pool Shuffle.",
+    "resultInterpretation": "Calculates the exact dollar reduction in effective pre-money valuation, true founder ownership percentage, and contrasts pre-money vs post-money pool creation.",
+    "practicalGuidance": "When the option pool is created in the pre-money, 100% of the dilution is borne by the existing founders and shareholders, lowering the true price-per-share paid by the new investor.",
+    "limitations": "Models standard venture equity mechanics. Custom liquidation preferences or participation features require comprehensive waterfall modeling.",
+    "formula": "Effective Pre-Money = Headline Pre-Money - New Pool Dollars; Founder% = 100% - Investor% - Pool%",
+    "trustNotes": "100% Client-Side cap table calculation. No private investment terms stored.",
+    "related": [
+      "safe-mfn-most-favored-nation-clause-calculator",
+      "pre-money-vs-post-money-safe-dilution-stack-calculator",
+      "section-83b-election-deadline-tax-calculator",
+      "venture-debt-warrant-coverage-calculator"
+    ],
+    "seo": {
+      "title": "Option Pool Shuffle Calculator — VC Valuation Dilution Tool",
+      "metaDescription": "Calculate the effective pre-money valuation discount and founder dilution caused by the Option Pool Shuffle in venture capital term sheets.",
+      "whatIsThis": "A venture finance calculator that reveals the true economic cost and founder equity dilution of pre-money employee option pool requirements.",
+      "howItWorks": "1. Enter headline pre-money valuation and investment amount.\n2. Input required post-money option pool percentage and existing unallocated pool percentage.\n3. View effective pre-money valuation, hidden discount percentage, and cap table breakdown.",
+      "whyUseIt": "Helps founders negotiate fair term sheets by demonstrating the true valuation impact of option pool sizing.",
+      "faqs": [
+        {
+          "question": "What is the Option Pool Shuffle?",
+          "answer": "The Option Pool Shuffle occurs when a venture capitalist requires a startup to create or expand an unallocated employee option pool in the pre-money valuation, forcing existing founders to absorb all dilution."
+        },
+        {
+          "question": "How can founders push back against the Option Pool Shuffle?",
+          "answer": "Founders can present a detailed 12-to-18 month hiring plan showing the exact pool needed, or negotiate to create the pool post-money so all parties share dilution."
+        }
+      ]
+    }
+  },
+  {
+    "id": "hex-grid-spiral-ring-traversal-algorithm",
+    "name": "Hexagonal Grid Spiral & Ring Traversal Algorithm Simulator",
+    "slug": "hex-grid-spiral-ring-traversal-algorithm",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "hex grid spiral algorithm",
+      "hex grid ring traversal",
+      "hexagonal coordinate spiral",
+      "hex grid outward expansion",
+      "cube coordinate ring generator"
+    ],
+    "primaryKeywords": [
+      "hex grid spiral algorithm",
+      "hex grid ring generator",
+      "hexagonal spiral traversal"
+    ],
+    "secondaryKeywords": [
+      "cube coordinate neighbor direction vectors concentric rings outward spiral path",
+      "game development procedural hex map exploration algorithm visualizer"
+    ],
+    "targetUsers": [
+      "Game Developers",
+      "Procedural Generation Designers",
+      "Algorithm Engineers",
+      "GIS Specialists"
+    ],
+    "badge": "New",
+    "userProblem": "Game developers and procedural generation engineers need an efficient, mathematically robust algorithm to generate concentric rings and outward spirals of hexagonal tiles using cube coordinates.",
+    "searchIntent": "Simulate and visualize hexagonal grid ring and spiral traversal algorithms using cube coordinate direction vectors with TypeScript code export.",
+    "resultInterpretation": "Animates step-by-step ring and spiral generation, displays sequential visitation numbers, and provides ready-to-use TypeScript algorithm implementations.",
+    "practicalGuidance": "To generate a ring of radius R, scale direction vector 4 by R to find the starting hex, then step R times in each of the 6 cube directions.",
+    "limitations": "Simulates 2D regular hexagonal lattices. Supports both single-ring extraction and full multi-radius outward spiral generation.",
+    "formula": "Ring(R): Start = Center + Direction[4]*R; Next = Neighbor(Current, (dir_idx) % 6)",
+    "trustNotes": "100% Client-Side interactive SVG canvas algorithm visualization.",
+    "related": [
+      "hex-grid-field-of-view-shadowcasting-algorithm",
+      "hex-grid-line-drawing-raycasting-algorithm",
+      "hex-grid-coordinate-system-converter-distance-calculator",
+      "hex-grid-movement-range-cost-calculator"
+    ],
+    "seo": {
+      "title": "Hex Grid Spiral & Ring Traversal Simulator — Game Dev Algorithm",
+      "metaDescription": "Simulate hexagonal grid concentric rings and outward spiral traversals using cube coordinates. Step-by-step visualizer and clean TypeScript code export.",
+      "whatIsThis": "An interactive algorithm simulator for generating hexagonal grid concentric rings and outward spiral expansion paths.",
+      "howItWorks": "1. Select algorithm mode (Outward Spiral vs Single Ring).\n2. Set target radius and scrub through the step progression slider.\n3. View sequential traversal ordering and copy the TypeScript implementation.",
+      "whyUseIt": "Enables game developers to build procedural map expansion, AoE spell radiuses, and turn-based exploration algorithms.",
+      "faqs": [
+        {
+          "question": "How many hexes are in a ring of radius R?",
+          "answer": "For radius R > 0, there are exactly 6 * R hexagons in the ring. For radius 0, there is only 1 hex (the center)."
+        },
+        {
+          "question": "How many total hexes are in a spiral of radius R?",
+          "answer": "The total number of hexes in a spiral of radius R is 3 * R * (R + 1) + 1 (e.g., radius 1 = 7, radius 2 = 19, radius 3 = 37)."
+        }
+      ]
+    }
+  },
+  {
+    "id": "crontab-to-splunk-signalfx-heartbeat-converter",
+    "name": "Crontab to Splunk (SignalFx) Telemetry & Heartbeat Converter",
+    "slug": "crontab-to-splunk-signalfx-heartbeat-converter",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "crontab to signalfx",
+      "signalfx cron monitoring",
+      "splunk observability cron monitor",
+      "signalfx datapoint ingest cron",
+      "cron heartbeat signalfx"
+    ],
+    "primaryKeywords": [
+      "crontab to signalfx",
+      "signalfx cron monitor converter",
+      "splunk observability cron heartbeat"
+    ],
+    "secondaryKeywords": [
+      "wrap linux cron job with signalfx datapoint ingest api duration ms gauge metric",
+      "splunk observability detector alert background task dead mans switch"
+    ],
+    "targetUsers": [
+      "SREs & DevOps Engineers",
+      "Enterprise Platform Architects",
+      "Infrastructure Engineers",
+      "Data Pipeline Operators"
+    ],
+    "badge": "New",
+    "userProblem": "Enterprises using Splunk Observability (SignalFx) need to stream execution metrics, run durations in milliseconds, and status dimensions for scheduled Linux cron tasks into the SignalFx Datapoint Ingest API.",
+    "searchIntent": "Convert crontab commands into Splunk Observability / SignalFx datapoint ingest calls with duration metrics and error alert traps.",
+    "resultInterpretation": "Generates cURL command lines, robust Bash wrappers, and Python scripts that post gauge metrics to /v2/datapoint across US and EU realms.",
+    "practicalGuidance": "Metrics are ingested as gauge datapoints with custom dimensions (job name, status), enabling instant detector alerts in Splunk Observability on run failures.",
+    "limitations": "Requires a valid SignalFx / Splunk Observability Ingest Access Token. Select the appropriate realm (us0, us1, eu0, ap0).",
+    "formula": "duration_ms = end - start; POST https://ingest.<realm>.signalfx.com/v2/datapoint {gauge: [{metric, value, dimensions}]}",
+    "trustNotes": "100% Client-Side telemetry script generation. No tokens or scripts sent to external servers.",
+    "related": [
+      "crontab-to-new-relic-synthetics-heartbeat-converter",
+      "crontab-to-cronitor-heartbeat-monitor-converter",
+      "crontab-to-pagerduty-heartbeat-dead-mans-switch-converter",
+      "curl-to-httpie-converter"
+    ],
+    "seo": {
+      "title": "Crontab to Splunk (SignalFx) Converter — Heartbeat Telemetry Tool",
+      "metaDescription": "Convert crontab jobs into Splunk Observability (SignalFx) monitored tasks. Generate inline cURL commands, duration gauge metrics, and Bash error traps.",
+      "whatIsThis": "A DevOps tool that wraps scheduled Linux cron jobs with Splunk Observability (SignalFx) Datapoint Ingest API telemetry.",
+      "howItWorks": "1. Enter your crontab schedule and shell command.\n2. Input your SignalFx Access Token, realm, and job identifier.\n3. Copy the generated inline cURL command or executable Bash wrapper script.",
+      "whyUseIt": "Eliminates silent cron failures by tracking batch job execution times and alert statuses inside Splunk Observability dashboards.",
+      "faqs": [
+        {
+          "question": "Which SignalFx API endpoint is used?",
+          "answer": "It sends telemetry directly to `https://ingest.<realm>.signalfx.com/v2/datapoint` using your realm identifier (e.g. us0, us1, eu0)."
+        },
+        {
+          "question": "What metric type is sent to SignalFx?",
+          "answer": "It transmits a gauge metric measuring job duration in milliseconds along with job name and exit status dimensions."
+        }
+      ]
+    }
+  },
+  {
+    "id": "bonus-depreciation-tcja-phase-down-schedule-calculator",
+    "name": "TCJA Bonus Depreciation Phase-Down Schedule Calculator",
+    "slug": "bonus-depreciation-tcja-phase-down-schedule-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "bonus depreciation phase down",
+      "tcja bonus depreciation calculator",
+      "bonus depreciation schedule 2024 2025",
+      "bonus depreciation sunset",
+      "capex timing tax savings calculator"
+    ],
+    "primaryKeywords": [
+      "bonus depreciation phase down",
+      "tcja bonus depreciation calculator",
+      "bonus depreciation schedule"
+    ],
+    "secondaryKeywords": [
+      "tax cuts and jobs act 100 to 80 60 40 20 percent annual step down capex timing",
+      "macrs year 1 depreciation write off cash tax shield comparison model"
+    ],
+    "targetUsers": [
+      "Chief Financial Officers",
+      "CPAs & Corporate Tax Planners",
+      "Equipment Finance Officers",
+      "Commercial Asset Managers"
+    ],
+    "badge": "New",
+    "userProblem": "CFOs, business owners, and corporate tax planners need to evaluate the tax cash consequences of accelerating or delaying equipment and capital asset purchases across the statutory TCJA 20% annual phase-down schedule.",
+    "searchIntent": "Calculate the annual step-down in bonus depreciation deductions and model cash tax savings for CapEx investments placed in service between 2023 and 2027.",
+    "resultInterpretation": "Displays a multi-year depreciation waterfall table comparing 80% (2023), 60% (2024), 40% (2025), 20% (2026), and 0% (2027), quantifying the tax shield differential.",
+    "practicalGuidance": "Assets must be placed in service—not merely purchased—by December 31 of the tax year to claim that year's bonus depreciation percentage.",
+    "limitations": "Based on statutory federal IRC Section 168(k) rules under TCJA. Does not account for potential future congressional legislative amendments.",
+    "formula": "Year_Deduction = (Cost * BonusRate) + (Cost * (1 - BonusRate) * MACRS_Rate)",
+    "trustNotes": "100% Client-Side tax calculation. No corporate financial data recorded.",
+    "related": [
+      "section-179-equipment-depreciation-deduction-calculator",
+      "cost-segregation-bonus-depreciation-tax-calculator",
+      "section-83b-election-deadline-tax-calculator",
+      "rule-of-40-saas-efficiency-growth-margin-calculator"
+    ],
+    "seo": {
+      "title": "TCJA Bonus Depreciation Phase-Down Calculator — CapEx Timing Tool",
+      "metaDescription": "Model the statutory 20% annual phase-down of bonus depreciation under the TCJA. Compare tax write-offs and cash savings for CapEx purchases through 2027.",
+      "whatIsThis": "A corporate tax planning calculator that models the multi-year phase-down of first-year bonus depreciation under the Tax Cuts and Jobs Act.",
+      "howItWorks": "1. Enter qualifying asset purchase cost ($).\n2. Specify effective marginal corporate tax rate.\n3. Compare first-year tax write-offs and cash savings across tax years 2023 through 2027.",
+      "whyUseIt": "Enables corporate finance teams to optimize the timing of major capital equipment expenditures.",
+      "faqs": [
+        {
+          "question": "What is the TCJA Bonus Depreciation phase-down schedule?",
+          "answer": "Bonus depreciation was 100% through 2022, 80% in 2023, 60% in 2024, 40% in 2025, 20% in 2026, and fully sunsets to 0% in 2027."
+        },
+        {
+          "question": "What happens when bonus depreciation reaches 0% in 2027?",
+          "answer": "Assets placed in service in 2027 will rely solely on standard MACRS depreciation schedules (e.g. 5-year, 7-year) and Section 179 expensing where eligible."
+        }
+      ]
+    }
+  },
+  {
+    "id": "svg-smooth-organic-blob-generator",
+    "name": "SVG Smooth Organic Blob & Fluid Shape Generator",
+    "slug": "svg-smooth-organic-blob-generator",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "svg blob generator",
+      "organic blob shape generator",
+      "smooth svg blob",
+      "fluid vector shape generator",
+      "cubic bezier blob svg"
+    ],
+    "primaryKeywords": [
+      "svg blob generator",
+      "organic blob generator",
+      "fluid shape generator"
+    ],
+    "secondaryKeywords": [
+      "closed cubic bezier curve catmull rom spline procedural vector organic blob generator",
+      "modern web design abstract fluid shape linear gradient svg export"
+    ],
+    "targetUsers": [
+      "UI/UX Designers",
+      "Frontend Developers",
+      "Graphic Designers",
+      "Creative Technologists"
+    ],
+    "badge": "New",
+    "userProblem": "Designers and frontend engineers building modern, playful landing pages need to generate smooth, organic SVG blob shapes and abstract fluid vectors without manual pen tool drafting in vector software.",
+    "searchIntent": "Generate smooth closed cubic Bézier vector blobs with adjustable complexity, fluid distortion, gradient fills, and clean SVG code export.",
+    "resultInterpretation": "Calculates smooth Catmull-Rom to cubic Bézier curve paths, renders real-time vector shapes with customizable color gradients, and exports clean SVG markup.",
+    "practicalGuidance": "Using 5 to 7 anchor points with moderate distortion produces balanced, natural organic blobs suitable for background illustrations and avatar masks.",
+    "limitations": "Generates 2D closed cubic Bézier SVG paths. Paths can be embedded directly in HTML or used with CSS clip-path.",
+    "formula": "Points: R(theta) = Base + Noise(theta); Path = M p0 C cp1 cp2 p1 ... Z",
+    "trustNotes": "100% Client-Side procedural vector graphics generator.",
+    "related": [
+      "svg-radial-mesh-gradient-patch-generator",
+      "svg-fe-turbulence-noise-texture-generator",
+      "css-3d-perspective-card-tilt-generator",
+      "svg-isometric-cube-3d-tile-generator"
+    ],
+    "seo": {
+      "title": "SVG Smooth Organic Blob Generator — Fluid Vector Shape Tool",
+      "metaDescription": "Generate organic, smooth SVG blob shapes using cubic Bézier curves. Customize complexity, randomness, and linear gradients with clean SVG export.",
+      "whatIsThis": "A design tool that generates smooth, organic vector blob shapes using procedural cubic Bézier splines.",
+      "howItWorks": "1. Adjust complexity (anchor point count) and fluid distortion contrast.\n2. Pick gradient start and end colors or randomize the seed.\n3. Copy the clean, resolution-independent SVG markup for your web application.",
+      "whyUseIt": "Replaces tedious manual Bézier pen-tool work with instant, infinitely variable procedural vector shapes.",
+      "faqs": [
+        {
+          "question": "How are the smooth curves generated in the SVG blob?",
+          "answer": "The generator computes polar coordinates with pseudo-random offsets and converts them into a closed cubic Bézier spline loop using Catmull-Rom tangent smoothing."
+        },
+        {
+          "question": "Can I use the generated blob as a CSS mask or background?",
+          "answer": "Yes! The exported SVG can be used as an inline `<svg>`, a background image Data URI, or converted to a CSS `clip-path: path(...)`."
+        }
+      ]
+    }
+  },
+  {
+    "id": "maximum-aerobic-speed-mas-aerobic-intervals-calculator",
+    "name": "Maximum Aerobic Speed (MAS) & Interval Pace Calculator",
+    "slug": "maximum-aerobic-speed-mas-aerobic-intervals-calculator",
+    "category": "health",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "maximum aerobic speed calculator",
+      "mas calculator running",
+      "mas intervals calculator",
+      "eurofit interval running calculator",
+      "tabata running mas pace"
+    ],
+    "primaryKeywords": [
+      "maximum aerobic speed calculator",
+      "mas running calculator",
+      "mas interval pace calculator"
+    ],
+    "secondaryKeywords": [
+      "lowest velocity vo2 max reached 1500m 5 minute time trial eurofit tabata 110 120 percent",
+      "exercise physiology high intensity aerobic intervals distance target prescription"
+    ],
+    "targetUsers": [
+      "Athletic Performance Coaches",
+      "Track & Field Athletes",
+      "Football & Rugby Conditioning Staff",
+      "Endurance Runners"
+    ],
+    "badge": "New",
+    "userProblem": "Strength and conditioning coaches and endurance runners need to calculate an athlete's Maximum Aerobic Speed (MAS)—the lowest running velocity at which VO2 max occurs—and prescribe individualized distance targets for high-intensity intervals.",
+    "searchIntent": "Calculate Maximum Aerobic Speed in km/h and m/s from 1500m or 5-minute time trials and prescribe Eurofit and Tabata interval distances.",
+    "resultInterpretation": "Calculates MAS velocity in km/h, base pace per kilometer, and prescribes exact distance targets for 15-second and 30-second intervals across 90%, 100%, 110%, and 120% MAS tiers.",
+    "practicalGuidance": "Training at 100%-120% MAS via short intervals (e.g. 15s work / 15s rest at 110% MAS) maximizes time spent at VO2 max with significantly lower lactate fatigue than continuous running.",
+    "limitations": "Calculations based on Dan Baker and Berthoin exercise physiology models. Requires maximal effort time trial tests for accurate calibration.",
+    "formula": "MAS (m/s) = Distance_m / Time_s; Interval Distance = MAS * %MAS * Interval_Time_s",
+    "trustNotes": "100% Client-Side exercise physiology calculations.",
+    "related": [
+      "cycling-ftp-power-zones-coggan-calculator",
+      "lactate-threshold-heart-rate-lthr-zones-calculator",
+      "critical-swim-speed-css-aerobic-pace-calculator",
+      "running-economy-aerobic-cost-calculator"
+    ],
+    "seo": {
+      "title": "Maximum Aerobic Speed (MAS) Calculator — Aerobic Interval Tool",
+      "metaDescription": "Calculate Maximum Aerobic Speed (MAS in km/h and m/s) from 1500m or 5-minute time trials. Prescribe exact distance targets for Eurofit and Tabata running intervals.",
+      "whatIsThis": "A sports science calculator that determines an athlete's Maximum Aerobic Speed (MAS) and prescribes high-intensity aerobic interval targets.",
+      "howItWorks": "1. Select testing protocol (1500m time trial, 5-minute time trial, or direct MAS entry).\n2. Enter test duration or distance.\n3. Review base 100% MAS pace and prescribed 15-second and 30-second target running distances for 90%, 100%, 110%, and 120% MAS workouts.",
+      "whyUseIt": "Enables coaches to prescribe scientifically individualized interval running distances for entire squads of athletes.",
+      "faqs": [
+        {
+          "question": "What is Maximum Aerobic Speed (MAS)?",
+          "answer": "MAS is the lowest running velocity at which maximum oxygen uptake (VO2 max) occurs. It is the gold standard metric for designing aerobic interval conditioning."
+        },
+        {
+          "question": "What is the Eurofit interval protocol?",
+          "answer": "The Eurofit protocol consists of repeated 15-second runs at 110%–120% MAS interspersed with 15-second passive recoveries, allowing athletes to accumulate substantial volume at VO2 max."
+        }
+      ]
+    }
   }
 ]
