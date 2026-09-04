@@ -38,6 +38,9 @@ export const metadata: Metadata = {
   authors: [{ name: "UTL.tools" }],
   creator: "UTL.tools",
   metadataBase: new URL("https://utl.tools"),
+  alternates: {
+    canonical: "https://utl.tools",
+  },
   openGraph: {
     title: "UTL.tools — Free Online Utilities & Digital Toolbox",
     description: "Simple, fast, evergreen utilities that solve everyday problems with 100% client-side privacy.",

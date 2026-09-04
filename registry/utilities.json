@@ -2700,22 +2700,39 @@
     "limitations": "Background audio may be suspended by mobile OS power-savers if the screen is locked or tab is deeply backgrounded.",
     "seo": {
       "title": "Talking Alarm Clock — Voice Time Announcement & Alarms Online",
-      "description": "Free online talking alarm clock with spoken time voice announcements, 12/24 hour display, custom alarms, and zero server logging.",
+      "metaDescription": "Free online talking alarm clock with spoken time voice announcements, 12/24 hour display, custom alarms, and zero server logging.",
+      "whatIsThis": "An accessible digital clock that vocalizes the current time aloud using operating system speech synthesis and provides recurring audio alarms.",
+      "howItWorks": "1. View current live time in high-contrast 12H or 24H format.\n2. Click 'Announce Time' to hear current hours and minutes spoken aloud.\n3. Set custom alarm times with synthesized audio buzzers and desktop notifications.",
+      "whyUseIt": "Allows hands-free time awareness while cooking, working across multiple monitors, or managing daily routines without app downloads.",
       "faqs": [
         {
-          "q": "How does the voice time announcement work?",
-          "a": "It uses the W3C Web Speech Synthesis API to vocalize the exact current hour and minute using your device's native high-quality text-to-speech voice engine."
+          "question": "How does the voice time announcement work?",
+          "answer": "It uses the W3C Web Speech Synthesis API to vocalize the exact current hour and minute using your device's native high-quality text-to-speech voice engine."
         },
         {
-          "q": "Do alarms trigger if I switch tabs?",
-          "a": "Yes, as long as the browser window remains open. If you grant notification permissions, a desktop banner will also alert you."
+          "question": "Do alarms trigger if I switch tabs?",
+          "answer": "Yes, as long as the browser window remains open. If you grant notification permissions, a desktop banner will also alert you."
         },
         {
-          "q": "Is my data private?",
-          "a": "100%. All alarms and timers run strictly in your browser's local memory with zero tracking."
+          "question": "Is my data private?",
+          "answer": "100%. All alarms and timers run strictly in your browser's local memory with zero tracking."
         }
       ]
-    }
+    },
+    "type": "Static Utility",
+    "badge": "Popular",
+    "targetUsers": [
+      "Remote Workers",
+      "Students & Low-Vision Users",
+      "Cooks & Bakers",
+      "Productivity Optimizers"
+    ],
+    "related": [
+      "stopwatch-timer",
+      "timezone-meeting-planner",
+      "timestamp-converter",
+      "random-number-generator"
+    ]
   },
   {
     "id": "diff-checker",
@@ -2751,18 +2768,35 @@
     "limitations": "Optimized for texts up to 50,000 lines. Extremely large multi-gigabyte log files should use command-line diff utilities.",
     "seo": {
       "title": "Diff Checker — Compare Text & Code Differences Online Free",
-      "description": "Free online diff checker. Compare two text files or code snippets side-by-side with line-by-line difference highlighting and 100% privacy.",
+      "metaDescription": "Free online diff checker. Compare two text files or code snippets side-by-side with line-by-line difference highlighting and 100% privacy.",
+      "whatIsThis": "A text and source code comparison tool that computes line-by-line diffs using the Myers Longest Common Subsequence (LCS) algorithm.",
+      "howItWorks": "1. Paste original text in the left panel and modified text in the right panel.\n2. View additions highlighted in green and deletions in red.\n3. Toggle between Side-by-Side and Unified views, and copy patch diffs in 1 click.",
+      "whyUseIt": "Enables fast, privacy-safe text verification without transmitting proprietary source code or confidential documents to external cloud servers.",
       "faqs": [
         {
-          "q": "Is my code sent to a server?",
-          "a": "No. The Longest Common Subsequence algorithm runs entirely in client JavaScript. Zero bytes leave your browser."
+          "question": "Is my code sent to a server?",
+          "answer": "No. The Longest Common Subsequence algorithm runs entirely in client JavaScript. Zero bytes leave your browser."
         },
         {
-          "q": "Can I copy the diff output?",
-          "a": "Yes, click 'Copy Diff' to copy standard patch-formatted unified diff text directly to your clipboard."
+          "question": "Can I copy the diff output?",
+          "answer": "Yes, click 'Copy Diff' to copy standard patch-formatted unified diff text directly to your clipboard."
         }
       ]
-    }
+    },
+    "type": "Static Utility",
+    "badge": "Essential",
+    "targetUsers": [
+      "Software Engineers",
+      "Code Reviewers",
+      "Technical Writers",
+      "Legal & Compliance Analysts"
+    ],
+    "related": [
+      "markdown-previewer",
+      "json-formatter",
+      "case-converter",
+      "hash-generator"
+    ]
   },
   {
     "id": "markdown-previewer",
@@ -2797,14 +2831,35 @@
     "limitations": "Custom proprietary markdown flavor extensions (like Obsidian double bracket links) require standard markdown links.",
     "seo": {
       "title": "Markdown to HTML Converter & Live Previewer Online",
-      "description": "Convert GitHub Flavored Markdown to clean HTML with real-time live preview, table support, and instant clipboard export.",
+      "metaDescription": "Convert GitHub Flavored Markdown to clean HTML with real-time live preview, table support, and instant clipboard export.",
+      "whatIsThis": "A real-time Markdown editor and renderer that transforms GitHub Flavored Markdown (GFM) into sanitized, standards-compliant HTML.",
+      "howItWorks": "1. Type or paste Markdown syntax into the left editor pane.\n2. Instantly preview formatted typography, headers, tables, blockquotes, and code fences.\n3. Toggle to HTML mode to copy sanitized raw markup for blogs, documentation, or newsletters.",
+      "whyUseIt": "Streamlines README writing, documentation drafting, and web content publishing with zero dependencies and real-time visual feedback.",
       "faqs": [
         {
-          "q": "Does this support GitHub Flavored Markdown (GFM)?",
-          "a": "Yes, including task list checkboxes, tables, code fences, blockquotes, and strikethrough."
+          "question": "Does this support GitHub Flavored Markdown (GFM)?",
+          "answer": "Yes, including task list checkboxes, tables, code fences, blockquotes, and strikethrough."
+        },
+        {
+          "question": "Is the output HTML sanitized?",
+          "answer": "Yes, script injections and malicious attributes are sanitized prior to preview rendering."
         }
       ]
-    }
+    },
+    "type": "Static Utility",
+    "badge": "Essential",
+    "targetUsers": [
+      "Technical Writers",
+      "Frontend Developers",
+      "Open Source Contributors",
+      "Bloggers"
+    ],
+    "related": [
+      "diff-checker",
+      "json-formatter",
+      "lorem-ipsum-generator",
+      "case-converter"
+    ]
   },
   {
     "id": "csv-json-converter",
@@ -2840,14 +2895,35 @@
     "limitations": "Deeply nested JSON objects are flattened during JSON-to-CSV serialization.",
     "seo": {
       "title": "CSV to JSON & JSON to CSV Converter Online Free",
-      "description": "Convert CSV spreadsheets to JSON arrays and JSON to CSV instantly in your browser with custom delimiters and 100% privacy.",
+      "metaDescription": "Convert CSV spreadsheets to JSON arrays and JSON to CSV instantly in your browser with custom delimiters and 100% privacy.",
+      "whatIsThis": "A bidirectional tabular data converter that translates CSV/TSV data into JSON objects and serialized JSON back into CSV format.",
+      "howItWorks": "1. Paste CSV text or JSON array data into the input pane.\n2. Select delimiter (comma, tab, semicolon, pipe) and header parsing preferences.\n3. Instantly preview and copy the structured converted output.",
+      "whyUseIt": "Eliminates tedious manual scripting when transforming spreadsheet exports for API testing, database seeding, and data pipelines.",
       "faqs": [
         {
-          "q": "Are large CSV files supported?",
-          "a": "Yes, files up to several tens of thousands of rows parse smoothly inside browser memory."
+          "question": "Are large CSV files supported?",
+          "answer": "Yes, files up to several tens of thousands of rows parse smoothly inside browser memory."
+        },
+        {
+          "question": "Can I handle custom delimiters like tabs or semicolons?",
+          "answer": "Yes, the parser supports comma, tab (TSV), semicolon, and pipe delimiters."
         }
       ]
-    }
+    },
+    "type": "Static Utility",
+    "badge": "Essential",
+    "targetUsers": [
+      "Data Engineers",
+      "Backend Developers",
+      "Product Analysts",
+      "Excel Power Users"
+    ],
+    "related": [
+      "json-formatter",
+      "json-to-typescript-converter",
+      "diff-checker",
+      "csv-column-extractor-filter"
+    ]
   },
   {
     "id": "unit-converter",
@@ -2883,14 +2959,35 @@
     "limitations": "Specialized non-linear logarithmic units (like decibels or Richter scales) are not covered in standard dimensional conversion.",
     "seo": {
       "title": "Unit Converter — Metric to Imperial Measurements Online",
-      "description": "Free online unit converter for Length, Weight, Temperature, Speed, Area, and Volume. Instant conversion with 100% precision.",
+      "metaDescription": "Free online unit converter for Length, Weight, Temperature, Speed, Area, and Volume. Instant conversion with 100% precision.",
+      "whatIsThis": "A multi-unit conversion calculator that accurately translates measurements between International Metric (SI) and US Imperial systems.",
+      "howItWorks": "1. Select measurement dimension (Length, Mass, Temp, Speed, Volume, Area).\n2. Input the value and choose source and target units.\n3. Instantly read the converted value and exact mathematical conversion formula.",
+      "whyUseIt": "Provides instant, high-precision measurement conversions without intrusive ads or conversion drift.",
       "faqs": [
         {
-          "q": "Are the conversion constants exact?",
-          "a": "Yes, they match official NIST and BIPM definitions (e.g. exactly 1 inch = 0.0254 meters; 1 lb = 0.45359237 kg)."
+          "question": "Are the conversion constants exact?",
+          "answer": "Yes, they match official NIST and BIPM definitions (e.g. exactly 1 inch = 0.0254 meters; 1 lb = 0.45359237 kg)."
+        },
+        {
+          "question": "Can I swap units quickly?",
+          "answer": "Yes, click the swap button (⇄) to invert source and target units instantly."
         }
       ]
-    }
+    },
+    "type": "Static Utility",
+    "badge": "Popular",
+    "targetUsers": [
+      "Students & Educators",
+      "Engineers & Architects",
+      "Travelers",
+      "Culinary Professionals"
+    ],
+    "related": [
+      "aspect-ratio-calculator",
+      "screen-ppi-calculator",
+      "vat-sales-tax-calculator",
+      "break-even-calculator"
+    ]
   },
   {
     "id": "lorem-ipsum-generator",
@@ -2925,14 +3022,35 @@
     "limitations": "Generated text is intended strictly as dummy placeholder copy and carries no semantic English meaning.",
     "seo": {
       "title": "Lorem Ipsum Generator — Custom Placeholder Text Online",
-      "description": "Generate dummy Lorem Ipsum placeholder text by paragraphs, sentences, or words with HTML tag options and instant copy.",
+      "metaDescription": "Generate dummy Lorem Ipsum placeholder text by paragraphs, sentences, or words with HTML tag options and instant copy.",
+      "whatIsThis": "A dummy text generator that synthesizes realistic Latin placeholder copy for wireframes, design mockups, and typography testing.",
+      "howItWorks": "1. Select whether to generate by Paragraphs, Sentences, or Words.\n2. Choose quantity and toggle whether to start with standard 'Lorem ipsum dolor sit amet'.\n3. Copy plain text or HTML-wrapped tags with 1 click.",
+      "whyUseIt": "Prevents layout design distractions caused by readable copy while maintaining realistic typographic word length distributions.",
       "faqs": [
         {
-          "q": "Where does Lorem Ipsum come from?",
-          "a": "It originates from sections 1.10.32 and 1.10.33 of Cicero's 45 BC philosophical treatise 'De Finibus Bonorum et Malorum'."
+          "question": "Where does Lorem Ipsum come from?",
+          "answer": "It originates from sections 1.10.32 and 1.10.33 of Cicero's 45 BC philosophical treatise 'De Finibus Bonorum et Malorum'."
+        },
+        {
+          "question": "Can I generate HTML paragraph tags?",
+          "answer": "Yes, toggle 'Wrap in HTML tags' to automatically enclose generated paragraphs in <p> tags."
         }
       ]
-    }
+    },
+    "type": "Static Utility",
+    "badge": "Popular",
+    "targetUsers": [
+      "UI/UX Designers",
+      "Web Developers",
+      "Graphic Designers",
+      "Typesetters & Copywriters"
+    ],
+    "related": [
+      "markdown-previewer",
+      "case-converter",
+      "diff-checker",
+      "css-box-shadow-generator"
+    ]
   },
   {
     "id": "case-converter",
@@ -2968,14 +3086,35 @@
     "limitations": "Non-Latin character sets without uppercase/lowercase equivalents (like Chinese or Arabic) are preserved unchanged.",
     "seo": {
       "title": "Case Converter — camelCase, snake_case, kebab-case Online",
-      "description": "Instantly convert text to camelCase, snake_case, kebab-case, PascalCase, CONSTANT_CASE, and Title Case with 1-click copy.",
+      "metaDescription": "Instantly convert text to camelCase, snake_case, kebab-case, PascalCase, CONSTANT_CASE, and Title Case with 1-click copy.",
+      "whatIsThis": "A developer string transformation utility that converts variable identifiers and text across all major programming casing conventions.",
+      "howItWorks": "1. Paste any string or identifier with spaces, hyphens, underscores, or camel casing.\n2. Review synchronized outputs across camelCase, snake_case, kebab-case, PascalCase, CONSTANT_CASE, and Title Case.\n3. Click any card to copy the desired casing convention directly to your clipboard.",
+      "whyUseIt": "Saves time when refactoring code between languages (e.g. Python snake_case to JavaScript camelCase or CSS kebab-case).",
       "faqs": [
         {
-          "q": "Which casing standard is best for JavaScript APIs?",
-          "a": "camelCase is the standard convention for JavaScript object keys, functions, and variables."
+          "question": "Which casing standard is best for JavaScript APIs?",
+          "answer": "camelCase is the standard convention for JavaScript object keys, functions, and variables."
+        },
+        {
+          "question": "Does this handle mixed delimiter inputs?",
+          "answer": "Yes, the tokenizer automatically normalizes inputs with mixed spaces, underscores, and capital letters."
         }
       ]
-    }
+    },
+    "type": "Static Utility",
+    "badge": "Essential",
+    "targetUsers": [
+      "Software Developers",
+      "Database Architects",
+      "API Designers",
+      "Technical Authors"
+    ],
+    "related": [
+      "diff-checker",
+      "slug-generator",
+      "hash-generator",
+      "markdown-previewer"
+    ]
   },
   {
     "id": "hash-generator",
@@ -3011,14 +3150,35 @@
     "limitations": "MD5 is obsolete and intentionally excluded from W3C Web Crypto for modern cryptographic security.",
     "seo": {
       "title": "Cryptographic Hash Generator — SHA-256 & SHA-512 Online",
-      "description": "Generate SHA-256, SHA-512, SHA-384, and SHA-1 cryptographic hashes securely in your browser using W3C Web Crypto API.",
+      "metaDescription": "Generate SHA-256, SHA-512, SHA-384, and SHA-1 cryptographic hashes securely in your browser using W3C Web Crypto API.",
+      "whatIsThis": "A client-side security utility that calculates cryptographic digests (SHA-256, SHA-512, SHA-384, SHA-1) using hardware-accelerated Web Crypto.",
+      "howItWorks": "1. Type or paste text or tokens into the input area.\n2. View calculated hexadecimal hashes in real-time across multiple SHA algorithms.\n3. Click 'Copy' for your required checksum format.",
+      "whyUseIt": "Guarantees that sensitive strings and API secrets are hashed strictly on your local CPU without ever touching an external network.",
       "faqs": [
         {
-          "q": "Is Web Crypto SHA-256 secure?",
-          "a": "Yes. It uses your operating system's native hardware cryptographic implementation."
+          "question": "Is Web Crypto SHA-256 secure?",
+          "answer": "Yes. It uses your operating system's native hardware cryptographic implementation."
+        },
+        {
+          "question": "Does my text leave the browser?",
+          "answer": "Never. All hashing operations execute entirely within client-side Web Crypto memory."
         }
       ]
-    }
+    },
+    "type": "Static Utility",
+    "badge": "Essential",
+    "targetUsers": [
+      "DevOps Engineers",
+      "Cybersecurity Analysts",
+      "Backend Developers",
+      "System Administrators"
+    ],
+    "related": [
+      "bcrypt-hash-cost-factor-benchmark",
+      "password-generator",
+      "diff-checker",
+      "case-converter"
+    ]
   },
   {
     "id": "stopwatch-timer",
@@ -3062,9 +3222,27 @@
         {
           "question": "Does the timer sound an alarm when time expires?",
           "answer": "Yes, it generates a clear synthesized audio beep using the Web Audio API."
+        },
+        {
+          "question": "How accurate is the stopwatch?",
+          "answer": "It utilizes the High Resolution Time API (performance.now()) for sub-millisecond precision."
         }
       ]
-    }
+    },
+    "type": "Static Utility",
+    "badge": "Popular",
+    "targetUsers": [
+      "Athletes & Coaches",
+      "Students (Pomodoro)",
+      "Presenters & Speakers",
+      "Lab Technicians"
+    ],
+    "related": [
+      "talking-alarm-clock",
+      "heart-rate-recovery-hrr-fitness-calculator",
+      "vo2-max-running-fitness-calculator",
+      "cycling-ftp-power-zones-coggan-calculator"
+    ]
   },
   {
     "id": "percentage-difference-calculator",
@@ -7218,7 +7396,7 @@
       "curl-to-fetch-converter",
       "json-formatter",
       "jwt-payload-inspector-signer",
-      "http-status-codes"
+      "http-status-codes-reference"
     ],
     "seo": {
       "title": "cURL to Python Converter — Convert cURL to Python Requests",
@@ -11518,7 +11696,7 @@
       "json-to-typescript-converter",
       "json-formatter",
       "json-validator",
-      "mock-json-generator"
+      "lorem-json-mock-data-generator"
     ],
     "seo": {
       "title": "JSON to TypeScript Converter — Interface & Type Generator Tool",
@@ -12182,7 +12360,7 @@
     "id": "time-until-countdown-timer",
     "name": "Time Until Event & Date Countdown Calculator",
     "slug": "time-until-countdown-timer",
-    "category": "everyday",
+    "category": "education",
     "type": "Static Utility",
     "technology": "HTML5 / React / TypeScript",
     "keywords": [
@@ -12668,7 +12846,7 @@
     "related": [
       "aspect-ratio-calculator",
       "aspect-ratio-resizer",
-      "aspect-ratio-multiplier",
+      "aspect-ratio-scale-multiplier",
       "screen-ppi-calculator"
     ],
     "seo": {
@@ -12797,7 +12975,7 @@
       "json-schema-to-typescript-type-converter",
       "json-to-typescript-converter",
       "json-formatter",
-      "mock-json-generator"
+      "lorem-json-mock-data-generator"
     ],
     "seo": {
       "title": "JSON to Zod Schema Converter — TypeScript Type Generator Online",
@@ -15929,7 +16107,7 @@
     "formula": "Future_Salary = Salary * (1 + Inflation_Rate)^Years; Real_Wage_Change = ((1 + Raise) / (1 + Inflation) - 1) * 100",
     "trustNotes": "100% Client-Side calculation.",
     "related": [
-      "salary-inflation-calculator",
+      "inflation-adjusted-salary-calculator",
       "salary-after-tax-take-home-calculator",
       "compound-inflation-purchasing-power-calculator",
       "inflation-calculator"
@@ -16892,7 +17070,7 @@
       "css-isometric-text-and-box-generator",
       "css-neumorphism-soft-ui-generator",
       "css-glassmorphism-generator",
-      "box-shadow-generator"
+      "css-box-shadow-generator"
     ],
     "seo": {
       "title": "CSS Ribbon Generator — Pure CSS Folded Corner Badge & Banner Tool",
@@ -17273,7 +17451,7 @@
     "formula": "<filter id=\"...\"><feDropShadow dx=\"...\" dy=\"...\" stdDeviation=\"...\" flood-color=\"...\" flood-opacity=\"...\"/></filter>",
     "trustNotes": "100% Client-Side vector rendering.",
     "related": [
-      "box-shadow-generator",
+      "css-box-shadow-generator",
       "svg-path-visualizer-optimizer",
       "css-glassmorphism-generator",
       "css-neumorphism-soft-ui-generator"
@@ -17533,7 +17711,7 @@
       "css-ribbon-banner-generator",
       "css-neumorphism-soft-ui-generator",
       "css-glassmorphism-generator",
-      "box-shadow-generator"
+      "css-box-shadow-generator"
     ],
     "seo": {
       "title": "CSS Checkbox & Toggle Switch Generator — Pure CSS & Accessible",
@@ -18170,7 +18348,7 @@
     "formula": "@property --angle { syntax: '<angle>'; } background: conic-gradient(from var(--angle), ...);",
     "trustNotes": "100% Client-Side visual rendering.",
     "related": [
-      "box-shadow-generator",
+      "css-box-shadow-generator",
       "css-glassmorphism-generator",
       "css-neumorphism-soft-ui-generator",
       "css-custom-checkbox-and-radio-generator"
@@ -18813,7 +18991,7 @@
       "css-animated-gradient-border-generator",
       "css-glassmorphism-generator",
       "css-neumorphism-soft-ui-generator",
-      "box-shadow-generator"
+      "css-box-shadow-generator"
     ],
     "seo": {
       "title": "CSS Spotlight Hover Generator — Radial Mouse-Follow Card Tool",
@@ -21812,10 +21990,10 @@
     "formula": "DioRequest = dio.request(url, data: payload, queryParameters: params, options: Options(method: METHOD, headers: hdrs))",
     "trustNotes": "100% Client-Side generation in browser memory.",
     "related": [
-      "curl-to-dart-converter",
-      "curl-to-kotlin-converter",
-      "curl-to-swift-converter",
-      "json-to-typescript-interface-converter"
+      "curl-to-dart-http-converter",
+      "curl-to-kotlin-okhttp-converter",
+      "curl-to-swift-urlsession-async-await-converter",
+      "json-to-typescript-converter"
     ],
     "seo": {
       "title": "cURL to Dart Dio Converter — Free Flutter HTTP Tool",
@@ -21876,7 +22054,7 @@
       "saas-net-burn-runway-calculator",
       "convertible-note-seed-round-calculator",
       "safe-note-pre-vs-post-money-calculator",
-      "b2b-saas-magic-number-cac-payback-calculator"
+      "saas-magic-number-sales-efficiency-calculator"
     ],
     "seo": {
       "title": "SaaS ARR Waterfall Bridge & NRR Calculator — Free Financial Tool",
@@ -22120,7 +22298,7 @@
       "hex-grid-field-of-view-shadowcasting-calculator",
       "svg-matrix-transformation-visualizer",
       "css-clip-path-polygon-generator",
-      "isometric-css-transform-generator"
+      "css-isometric-text-and-box-generator"
     ],
     "seo": {
       "title": "Hex Grid Movement Range & Cost Calculator — Free Game Tool",
@@ -22303,7 +22481,7 @@
       "hex-grid-movement-range-cost-calculator",
       "svg-path-morphing-interpolator",
       "css-clip-path-polygon-generator",
-      "isometric-css-transform-generator"
+      "css-isometric-text-and-box-generator"
     ],
     "seo": {
       "title": "SVG 2D Matrix Transform Visualizer — Free Vector Math Tool",
@@ -22422,8 +22600,8 @@
     "formula": "fasthttp.AcquireRequest(); req.Header.SetMethod(M); client.Do(req, res); fasthttp.ReleaseRequest(req)",
     "trustNotes": "100% Client-Side generation in browser memory.",
     "related": [
-      "curl-to-go-converter",
-      "curl-to-rust-converter",
+      "curl-to-go-http-converter",
+      "curl-to-rust-reqwest-converter",
       "curl-to-dart-dio-converter",
       "crontab-to-healthchecks-io-heartbeat-converter"
     ],
@@ -23034,8 +23212,8 @@
     "related": [
       "curl-to-dart-dio-converter",
       "curl-to-go-fasthttp-converter",
-      "cron-expression-generator-explainer",
-      "json-formatter-validator"
+      "cron-expression-generator",
+      "json-formatter"
     ],
     "seo": {
       "title": "cURL to HTTPie Converter — Free Developer Tool",
@@ -23400,7 +23578,7 @@
     "related": [
       "crontab-to-pagerduty-heartbeat-dead-mans-switch-converter",
       "crontab-to-healthchecks-io-heartbeat-converter",
-      "cron-expression-generator-explainer",
+      "cron-expression-generator",
       "curl-to-httpie-converter"
     ],
     "seo": {
@@ -26210,7 +26388,7 @@
     "trustNotes": "100% Client-Side financial modeling. No corporate contracts or revenue figures are transmitted.",
     "related": [
       "saas-gross-margin-cogs-unit-economics-calculator",
-      "saas-customer-health-score-churn-calculator",
+      "saas-customer-health-score-churn-risk-calculator",
       "startup-anti-dilution-protection-down-round-calculator",
       "founder-secondary-sale-equity-dilution-calculator"
     ],
@@ -26338,7 +26516,7 @@
     "trustNotes": "100% Client-Side. Public certificates and keys are parsed entirely in browser memory.",
     "related": [
       "dns-openpgpkey-email-encryption-record-generator",
-      "dns-sshfp-record-generator",
+      "dns-sshfp-ssh-fingerprint-record-generator",
       "curl-to-java-httpclient-converter",
       "crontab-to-opsgenie-heartbeat-alert-converter"
     ],
@@ -26402,7 +26580,7 @@
     "trustNotes": "100% Client-Side calculation. Zero cap table or valuation figures are sent to any server.",
     "related": [
       "founder-secondary-sale-equity-dilution-calculator",
-      "startup-liquidation-waterfall-calculator",
+      "startup-liquidation-preference-waterfall-calculator",
       "saas-acv-tcv-deferred-revenue-waterfall-calculator",
       "idgt-trust-promissory-note-installment-sale-calculator"
     ],
@@ -26466,7 +26644,7 @@
     "trustNotes": "100% Client-Side procedural algorithm. Generates zero server requests.",
     "related": [
       "hex-grid-a-star-pathfinding-algorithm",
-      "hex-grid-raycasting-algorithm",
+      "hex-grid-line-of-sight-raycasting-algorithm",
       "svg-polar-radar-target-sweep-generator",
       "svg-orthogonal-flowchart-wire-connector-generator"
     ],
@@ -26530,7 +26708,7 @@
     "trustNotes": "100% Client-Side. Your commands and API tokens remain in your browser memory.",
     "related": [
       "crontab-to-prometheus-pushgateway-exporter",
-      "crontab-to-honeycomb-otel-trace-converter",
+      "crontab-to-honeycomb-marker-telemetry-converter",
       "curl-to-java-httpclient-converter",
       "dns-cert-cryptographic-certificate-record-generator"
     ],

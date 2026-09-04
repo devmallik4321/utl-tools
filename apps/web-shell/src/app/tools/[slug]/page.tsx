@@ -54,6 +54,9 @@ export async function generateMetadata({ params }: UtilityPageProps): Promise<Me
     title: utility.seo.title,
     description: utility.seo.metaDescription,
     keywords: utility.keywords,
+    alternates: {
+      canonical: `https://utl.tools/tools/${utility.slug}`,
+    },
     openGraph: {
       title: `${utility.name} — UTL.tools`,
       description: utility.seo.metaDescription,

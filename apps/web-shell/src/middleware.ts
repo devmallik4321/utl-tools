@@ -19,6 +19,16 @@ export function middleware(request: NextRequest) {
   const host = request.headers.get("host") || "";
   const pathname = request.nextUrl.pathname;
 
+  // Enforce apex domain canonicalization (www.utl.tools -> https://utl.tools)
+  const cleanHost = host.split(":")[0].toLowerCase();
+  if (cleanHost === "www.utl.tools") {
+    const url = new URL(request.url);
+    url.hostname = "utl.tools";
+    url.port = "";
+    url.protocol = "https:";
+    return NextResponse.redirect(url, { status: 308 });
+  }
+
   // Skip static assets, Next.js internal files, favicon, robots, sitemap
   if (
     pathname.startsWith("/_next") ||
