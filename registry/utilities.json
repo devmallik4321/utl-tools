@@ -20560,5 +20560,608 @@
         }
       ]
     }
+  },
+  {
+    "id": "curl-to-ocaml-ezcurl-converter",
+    "name": "cURL to OCaml Ezcurl & Ezcurl_lwt Client Converter",
+    "slug": "curl-to-ocaml-ezcurl-converter",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "curl to ocaml converter",
+      "ocaml ezcurl generator",
+      "ezcurl lwt async http client",
+      "curl to ezcurl converter"
+    ],
+    "primaryKeywords": [
+      "curl to ocaml",
+      "ocaml ezcurl generator",
+      "curl to ezcurl converter"
+    ],
+    "secondaryKeywords": [
+      "ocaml libcurl wrapper ezcurl lwt async code generator",
+      "convert bash curl command to ocaml ezcurl get post json"
+    ],
+    "targetUsers": [
+      "OCaml Developers",
+      "Functional Programmers",
+      "Systems Engineers",
+      "Backend Developers"
+    ],
+    "badge": "New",
+    "userProblem": "Developers using OCaml who want a lightweight libcurl wrapper (Ezcurl / Ezcurl_lwt) need to convert complex bash cURL commands with headers, authentication, and JSON bodies into idiomatic OCaml syntax.",
+    "searchIntent": "Convert curl commands into synchronous Ezcurl and asynchronous Ezcurl_lwt OCaml HTTP client code.",
+    "resultInterpretation": "Parses HTTP verbs, custom headers, query parameters, and request payloads, generating both synchronous Ezcurl and async Ezcurl_lwt OCaml code with error handling.",
+    "practicalGuidance": "Ezcurl provides high-performance bindings to libcurl in OCaml. Choose synchronous Ezcurl for scripts or Ezcurl_lwt for non-blocking concurrent network services.",
+    "limitations": "Covers standard HTTP methods, custom headers, auth headers, and JSON/form payloads.",
+    "formula": "Ast parsing: curl CLI flags -> Ezcurl.http / Ezcurl_lwt.http AST OCaml printer",
+    "trustNotes": "100% Client-Side memory execution. No network requests made.",
+    "related": [
+      "curl-to-ocaml-cohttp-converter",
+      "curl-to-haskell-http-conduit-converter",
+      "curl-to-zig-std-http-converter",
+      "curl-to-clojure-clj-http-converter"
+    ],
+    "seo": {
+      "title": "cURL to OCaml Ezcurl & Ezcurl_lwt Client Converter — Free Tool",
+      "metaDescription": "Convert cURL commands to OCaml Ezcurl and Ezcurl_lwt code with headers, auth, and payloads. High performance libcurl client generator.",
+      "whatIsThis": "A developer converter that translates cURL command-line invocations into OCaml code using the Ezcurl libcurl wrapper.",
+      "howItWorks": "1. Paste a cURL command.\n2. Instantly receive synchronous Ezcurl and asynchronous Ezcurl_lwt code.\n3. Copy and run in your OCaml or Dune project.",
+      "whyUseIt": "Saves time when integrating third-party APIs into OCaml services without writing boilerplate libcurl setup by hand.",
+      "faqs": [
+        {
+          "question": "What is Ezcurl in OCaml?",
+          "answer": "Ezcurl is a high-level, idiomatic OCaml binding to libcurl, providing simple HTTP request helpers with synchronous and Lwt asynchronous support."
+        },
+        {
+          "question": "Does this handle custom headers and POST JSON bodies?",
+          "answer": "Yes, it parses -H headers, -d / --data JSON payloads, and basic auth flags, generating appropriate OCaml lists and payloads."
+        }
+      ]
+    }
+  },
+  {
+    "id": "cre-equity-waterfall-promote-distribution-calculator",
+    "name": "Commercial Real Estate (CRE) Equity Waterfall & Promote Distribution Calculator",
+    "slug": "cre-equity-waterfall-promote-distribution-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "cre equity waterfall calculator",
+      "real estate promote distribution calculator",
+      "lp gp waterfall calculator",
+      "carried interest real estate syndication"
+    ],
+    "primaryKeywords": [
+      "cre equity waterfall calculator",
+      "real estate promote calculator",
+      "gp lp distribution calculator"
+    ],
+    "secondaryKeywords": [
+      "commercial real estate preferred return promote hurdle tiers",
+      "syndication waterfall return of capital catchup model"
+    ],
+    "targetUsers": [
+      "Real Estate Sponsors & GPs",
+      "Commercial Real Estate LPs",
+      "Private Equity Underwriters",
+      "Syndication Attorneys"
+    ],
+    "badge": "New",
+    "userProblem": "Commercial real estate investors, syndicators, and sponsors need an accurate multi-tier equity waterfall model to compute cash distributions, preferred return hurdle allocations, and sponsor promote (carried interest) splits between Limited Partners (LP) and General Partners (GP).",
+    "searchIntent": "Calculate multi-tier equity distributions, preferred returns, and GP promotes for commercial real estate syndications.",
+    "resultInterpretation": "Distributes cash proceeds across 3 distinct hurdles: Tier 1 (Return of Capital + Preferred Return prorated by equity contribution), Tier 2 (Hurdle 1 Promote Split, e.g. 80/20 LP/GP), and Tier 3 (Hurdle 2 Promote Split, e.g. 70/30 LP/GP), outputting total cash, profit, and equity multiple for both LP and GP.",
+    "practicalGuidance": "Standard US commercial real estate syndication deals offer an 8% preferred return with an 80/20 LP/GP split up to a 14% IRR hurdle, followed by a 70/30 or 60/40 split thereafter.",
+    "limitations": "Models 3-tier European/American cumulative distribution waterfall.",
+    "formula": "Tier 1: Min(Cash, Total Capital + Pref); Tier 2: Promote_Hurdle_1(LP, GP); Tier 3: Residual * Promote_Hurdle_2(LP, GP)",
+    "trustNotes": "100% Client-Side calculation.",
+    "related": [
+      "real-estate-break-even-occupancy-calculator",
+      "commercial-real-estate-loan-to-cost-ltc-calculator",
+      "real-estate-debt-yield-ratio-calculator",
+      "commercial-real-estate-triple-net-nnn-calculator"
+    ],
+    "seo": {
+      "title": "Commercial Real Estate (CRE) Equity Waterfall Calculator — LP/GP Tool",
+      "metaDescription": "Model commercial real estate equity waterfalls with preferred returns and GP promote hurdles. Calculate LP/GP cash distribution and equity multiples.",
+      "whatIsThis": "A real estate private equity tool that models multi-tier waterfall cash distributions and sponsor promote splits between LPs and GPs.",
+      "howItWorks": "1. Enter total equity invested and LP/GP ownership split.\n2. Set preferred return rate and promote hurdle splits.\n3. Input total cash proceeds to see tiered distributions and equity multiples.",
+      "whyUseIt": "Provides sponsors and limited partners with clear underwriting transparency for deal structuring and investment memorandums.",
+      "faqs": [
+        {
+          "question": "What is a sponsor promote in commercial real estate?",
+          "answer": "A promote (or carried interest) is a disproportionate share of profits awarded to the General Partner/sponsor once agreed investment hurdle returns (like return of capital and preferred return) are satisfied."
+        },
+        {
+          "question": "What is a preferred return (pref)?",
+          "answer": "A preferred return is a contractual hurdle rate (typically 6-9% annual return) that Limited Partners must receive before the sponsor begins taking a promote share of profits."
+        }
+      ]
+    }
+  },
+  {
+    "id": "pure-css-custom-range-slider-generator",
+    "name": "Pure CSS Custom Range Slider Generator",
+    "slug": "pure-css-custom-range-slider-generator",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "css range slider generator",
+      "custom input range css generator",
+      "pure css slider style generator",
+      "webkit slider thumb moz range thumb css"
+    ],
+    "primaryKeywords": [
+      "css range slider generator",
+      "custom range input css",
+      "html range slider styling generator"
+    ],
+    "secondaryKeywords": [
+      "cross browser css range input webkit-slider-runnable-track moz-range-track",
+      "custom thumb shadow gradient track fill slider"
+    ],
+    "targetUsers": [
+      "Frontend Web Developers",
+      "UI/UX Designers",
+      "Design System Authors",
+      "Web Stylists"
+    ],
+    "badge": "New",
+    "userProblem": "Styling native HTML <input type=\"range\"> sliders across WebKit (Chrome, Safari, Edge) and Gecko (Firefox) requires complex vendor pseudo-elements (-webkit-slider-thumb, -moz-range-thumb, -webkit-slider-runnable-track, -moz-range-track) that are difficult to write by hand.",
+    "searchIntent": "Generate cross-browser compatible pure CSS and HTML code to style custom range slider tracks and thumbs with live visual preview.",
+    "resultInterpretation": "Generates normalized, production-ready pure CSS styles for track dimensions, border radius, thumb size, custom hover states, gradient fills, and shadow effects with zero external JavaScript dependencies.",
+    "practicalGuidance": "Always reset -webkit-appearance: none; on the input element before applying custom dimensions, and declare vendor pseudo-elements in separate CSS rule blocks because browsers invalidate combined vendor selectors.",
+    "limitations": "Generates pure CSS rules compatible with all modern browser engines.",
+    "formula": "CSS rule generator: track(h, r, bg) + thumb(w, h, r, bg, shadow) + vendor prefixes",
+    "trustNotes": "100% Client-Side generation.",
+    "related": [
+      "css-custom-switch-toggle-generator",
+      "css-custom-checkbox-and-radio-generator",
+      "css-accordion-smooth-details-generator",
+      "css-animated-gradient-border-generator"
+    ],
+    "seo": {
+      "title": "Pure CSS Custom Range Slider Generator — Free UI Tool",
+      "metaDescription": "Design custom cross-browser HTML5 range sliders with pure CSS. Live preview for WebKit and Firefox tracks, thumbs, gradients, and shadows.",
+      "whatIsThis": "A visual CSS generator for designing and exporting fully customized HTML <input type=\"range\"> slider elements.",
+      "howItWorks": "1. Customize track height, radius, and fill color.\n2. Adjust thumb width, border, shadows, and hover styling.\n3. Copy the production-ready cross-browser CSS and HTML snippet.",
+      "whyUseIt": "Eliminates the painful guesswork of browser-specific CSS pseudo-selectors for range sliders.",
+      "faqs": [
+        {
+          "question": "Why do browsers require separate vendor prefixes for range inputs?",
+          "answer": "WebKit/Blink engines use ::-webkit-slider-runnable-track and ::-webkit-slider-thumb, while Gecko uses ::-moz-range-track and ::-moz-range-thumb. Combining them into one selector causes browsers to drop the entire rule."
+        },
+        {
+          "question": "Does this require JavaScript to function?",
+          "answer": "No, the generated code is 100% pure CSS and native HTML."
+        }
+      ]
+    }
+  },
+  {
+    "id": "rfc-9460-dns-https-svcb-record-generator",
+    "name": "RFC 9460 DNS HTTPS & SVCB Record Generator",
+    "slug": "rfc-9460-dns-https-svcb-record-generator",
+    "category": "network",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "dns https record generator",
+      "svcb record generator",
+      "rfc 9460 https dns generator",
+      "alpn h2 h3 dns record builder",
+      "cloudflare cloudns route 53 https record"
+    ],
+    "primaryKeywords": [
+      "dns https record generator",
+      "svcb record generator",
+      "rfc 9460 dns generator"
+    ],
+    "secondaryKeywords": [
+      "alpn http2 http3 ipv4hint ipv6hint echConfig bind zone format",
+      "dns service binding https resource record rfc9460"
+    ],
+    "targetUsers": [
+      "DevOps Engineers",
+      "DNS & Infrastructure Administrators",
+      "Cloudflare / Route 53 Network Architects",
+      "Web Performance Engineers"
+    ],
+    "badge": "New",
+    "userProblem": "RFC 9460 introduces HTTPS and SVCB DNS records that enable zero-RTT HTTP/3, ALPN negotiation, and Encrypted Client Hello (ECH) at the DNS layer, but generating their complex wire format, SvcPriority, TargetName, and SvcParams (alpn, port, ipv4hint, ipv6hint, ech) is error-prone.",
+    "searchIntent": "Generate RFC 9460 compliant DNS HTTPS and SVCB zone records with ALPN, IP hints, and BIND / Cloudflare formatting.",
+    "resultInterpretation": "Generates valid DNS HTTPS/SVCB zone file records in AliasForm (priority 0) or ServiceForm (priority > 0), formatting SvcParams for ALPN (h2,h3), port, IPv4/IPv6 hints, and providing BIND, RFC master file, and cloud provider commands.",
+    "practicalGuidance": "Use HTTPS AliasForm (priority 0) at the apex/root domain (@) as an RFC-standard CNAME alternative. Use ServiceForm (e.g. priority 1) to instruct modern browsers to initiate HTTP/3 (QUIC) immediately without waiting for an Alt-Svc HTTP response header.",
+    "limitations": "RFC 9460 standard formatting for BIND and major DNS hosters.",
+    "formula": "Record = Domain TTL IN HTTPS SvcPriority TargetName [SvcParams]",
+    "trustNotes": "100% Client-Side generation.",
+    "related": [
+      "dns-naptr-record-generator",
+      "dns-srv-service-record-generator",
+      "dns-tlsa-dane-record-generator",
+      "dns-caa-record-generator"
+    ],
+    "seo": {
+      "title": "RFC 9460 DNS HTTPS & SVCB Record Generator — Free Network Tool",
+      "metaDescription": "Generate RFC 9460 DNS HTTPS and SVCB records with ALPN (h2, h3), ipv4hint, ipv6hint, and port parameters. BIND & Cloudflare format.",
+      "whatIsThis": "A network engineering tool that constructs RFC 9460 Service Binding (SVCB) and HTTPS DNS resource records.",
+      "howItWorks": "1. Choose AliasMode (priority 0) or ServiceMode (priority > 0).\n2. Select ALPN protocols (h2, h3) and specify IPv4/IPv6 hints.\n3. Copy the formatted BIND zone entry or RFC 9460 record string.",
+      "whyUseIt": "Enables zero-round-trip HTTP/3 QUIC connection establishment and standard apex domain aliasing.",
+      "faqs": [
+        {
+          "question": "What is an RFC 9460 HTTPS DNS record?",
+          "answer": "HTTPS (Type 65) is a specialized DNS resource record defined in RFC 9460 that allows clients to negotiate connection parameters like ALPN protocols (HTTP/2, HTTP/3), port numbers, and IP hints concurrently with DNS resolution."
+        },
+        {
+          "question": "How does the HTTPS record replace CNAME flattening at the apex domain?",
+          "answer": "With SvcPriority 0 (AliasForm), the HTTPS record instructs the client to resolve the target domain directly, providing an RFC-standard way to alias the root apex domain without non-standard CNAME flattening."
+        }
+      ]
+    }
+  },
+  {
+    "id": "saas-rule-of-40-growth-fcf-margin-calculator",
+    "name": "SaaS Rule of 40 (Growth Rate + FCF Margin) Index Calculator",
+    "slug": "saas-rule-of-40-growth-fcf-margin-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "saas rule of 40 calculator",
+      "rule of 40 growth rate fcf margin",
+      "b2b saas valuation multiple rule of 40",
+      "software company rule of 40 index"
+    ],
+    "primaryKeywords": [
+      "saas rule of 40 calculator",
+      "rule of 40 calculator",
+      "saas rule of 40 index"
+    ],
+    "secondaryKeywords": [
+      "b2b software free cash flow margin revenue growth rate benchmark",
+      "enterprise value to arr multiple rule of 40 venture capital"
+    ],
+    "targetUsers": [
+      "SaaS Founders & CEOs",
+      "Venture Capital & Growth Equity Investors",
+      "SaaS CFOs & Finance Directors",
+      "Investment Bankers"
+    ],
+    "badge": "Popular",
+    "userProblem": "SaaS founders and VC investors need to benchmark software company performance using the golden Rule of 40 metric (YoY Revenue Growth Rate + Free Cash Flow Margin) to understand capital efficiency and implied enterprise valuation multiples.",
+    "searchIntent": "Calculate the Rule of 40 score for a SaaS company and benchmark against venture capital valuation tiers.",
+    "resultInterpretation": "Calculates YoY Revenue Growth percentage and Free Cash Flow margin percentage, sums them into the Rule of 40 score, determines whether the business passes (>= 40%), classifies the company archetype, and estimates the implied EV/ARR valuation multiple band.",
+    "practicalGuidance": "According to Bessemer and Bain SaaS benchmarks, software companies with a Rule of 40 score above 40% trade at nearly double the revenue multiples of companies scoring below 40%. You can achieve 40% either via hyper-growth (e.g. 50% growth - 10% burn) or through disciplined profitability (e.g. 20% growth + 20% FCF margin).",
+    "limitations": "Standard GAAP/Non-GAAP SaaS financial metric.",
+    "formula": "Rule of 40 Score = YoY Revenue Growth Rate (%) + Free Cash Flow Margin (%)",
+    "trustNotes": "100% Client-Side calculation.",
+    "related": [
+      "saas-cac-payback-period-calculator",
+      "saas-burn-multiple-capital-efficiency-calculator",
+      "saas-magic-number-sales-efficiency-calculator",
+      "saas-quick-ratio-growth-efficiency-calculator"
+    ],
+    "seo": {
+      "title": "SaaS Rule of 40 Index Calculator — Growth & FCF Margin Tool",
+      "metaDescription": "Calculate your SaaS Rule of 40 score from revenue growth and free cash flow margin. Benchmark against VC tiers and valuation multiple bands.",
+      "whatIsThis": "A SaaS executive finance tool to calculate the Rule of 40 index and evaluate trade-offs between top-line expansion and cash flow generation.",
+      "howItWorks": "1. Input current and prior period revenue / ARR.\n2. Input annual Free Cash Flow (FCF).\n3. View Rule of 40 score, passing status, company archetype, and valuation multiple range.",
+      "whyUseIt": "Enables founders and investors to quickly determine if a software company is scaling efficiently or burning capital prematurely.",
+      "faqs": [
+        {
+          "question": "What is the SaaS Rule of 40?",
+          "answer": "The Rule of 40 is a high-level heuristic stating that a software company's annual revenue growth rate plus its free cash flow margin (or EBITDA margin) should equal or exceed 40%."
+        },
+        {
+          "question": "Should early stage startups use Rule of 40?",
+          "answer": "Rule of 40 is most meaningful for software companies that have achieved product-market fit with over $10M-$15M in ARR. Early seed/Series A startups focus primarily on pure ARR growth."
+        }
+      ]
+    }
+  },
+  {
+    "id": "hex-grid-ring-spiral-coordinate-generator",
+    "name": "Hexagonal Grid Ring & Spiral AoE Coordinate Generator",
+    "slug": "hex-grid-ring-spiral-coordinate-generator",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "hex grid ring coordinate generator",
+      "hexagonal spiral coordinate generator",
+      "hex ring algorithm axial cube",
+      "hex area of effect aoe coordinates"
+    ],
+    "primaryKeywords": [
+      "hex grid ring generator",
+      "hexagonal spiral generator",
+      "hex coordinates ring spiral"
+    ],
+    "secondaryKeywords": [
+      "game dev hexagonal tile coordinates axial q r cube x y z",
+      "procedural map generation hex ring spiral algorithm export"
+    ],
+    "targetUsers": [
+      "Game Developers & Technical Artists",
+      "Turn-based Strategy Game Designers",
+      "Procedural Map Engineers",
+      "Board Game Designers"
+    ],
+    "badge": "New",
+    "userProblem": "Game developers building turn-based strategy games, RPGs, or 4X titles need to compute exact axial (q,r) and cube (x,y,z) coordinates for concentric rings and expanding spirals (Area of Effect / AoE radius) around a center tile.",
+    "searchIntent": "Generate hex tile coordinates in axial and cube coordinate systems for concentric rings and spiral ranges with live canvas rendering and code export.",
+    "resultInterpretation": "Computes the 6 * R tile coordinates for a ring of radius R, or the 3*R*(R+1)+1 coordinates for an expanding spiral of radius R, displaying an interactive canvas preview and exporting JSON and TypeScript arrays.",
+    "practicalGuidance": "In cube coordinates, walking around a ring starts at center + direction(4) * radius, then steps radius times in each of the 6 neighbor directions sequentially.",
+    "limitations": "Supports flat-topped and pointy-topped hexagonal orientation with Red Blob Games standard cube vectors.",
+    "formula": "Ring(R) Count = 6 * R; Spiral(R) Count = 1 + 3 * R * (R + 1)",
+    "trustNotes": "100% Client-Side generation.",
+    "related": [
+      "aspect-ratio-hexagonal-line-drawing-supercover-calculator",
+      "aspect-ratio-hexagonal-pixel-to-hex-picker",
+      "aspect-ratio-hexagonal-axial-to-cube-converter",
+      "aspect-ratio-hexagonal-grid-calculator"
+    ],
+    "seo": {
+      "title": "Hexagonal Grid Ring & Spiral Coordinate Generator — Game Dev Tool",
+      "metaDescription": "Generate concentric ring and spiral AoE tile coordinates for hexagonal grids in axial (q,r) and cube (x,y,z) formats. Interactive canvas & code export.",
+      "whatIsThis": "A game development math utility that calculates hex grid tile coordinates for concentric rings and area-of-effect (AoE) spirals.",
+      "howItWorks": "1. Choose Ring mode (perimeter only) or Spiral mode (filled AoE disk).\n2. Select radius and center tile coordinate.\n3. View canvas visualization and copy JSON or TypeScript array code.",
+      "whyUseIt": "Saves game engineers hours of manual matrix vector calculations for spell ranges, vision radius, and procedural map generation.",
+      "faqs": [
+        {
+          "question": "How many tiles are in a hex spiral of radius R?",
+          "answer": "The formula is 1 + 3 * R * (R + 1). For radius 1 there are 7 tiles; for radius 2 there are 19 tiles; for radius 3 there are 37 tiles."
+        },
+        {
+          "question": "Why use cube coordinates (x, y, z) for hex grids?",
+          "answer": "Cube coordinates satisfy x + y + z = 0, making rotations, distance calculations, and directional stepping symmetric and mathematically elegant."
+        }
+      ]
+    }
+  },
+  {
+    "id": "crontab-to-uptime-kuma-monitor-converter",
+    "name": "Crontab to Uptime Kuma Push Monitor & Heartbeat Converter",
+    "slug": "crontab-to-uptime-kuma-monitor-converter",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "crontab to uptime kuma converter",
+      "uptime kuma cron monitor generator",
+      "uptime kuma push heartbeat curl",
+      "cron dead man snitch uptime kuma"
+    ],
+    "primaryKeywords": [
+      "crontab to uptime kuma",
+      "uptime kuma push heartbeat generator",
+      "cron monitor uptime kuma"
+    ],
+    "secondaryKeywords": [
+      "cron job heartbeat monitoring uptime kuma push url curl ping",
+      "terraform uptime kuma push monitor configuration generator"
+    ],
+    "targetUsers": [
+      "DevOps Engineers",
+      "Self-Hosters & Homelabbers",
+      "Site Reliability Engineers (SRE)",
+      "Backend Developers"
+    ],
+    "badge": "New",
+    "userProblem": "Self-hosters and DevOps engineers using Uptime Kuma need to monitor scheduled cron jobs with push-based heartbeats (dead man's snitch) to detect when a backup, ingestion, or cleanup job fails silently or stops running.",
+    "searchIntent": "Convert standard crontab expressions into Uptime Kuma push monitor intervals, curl heartbeat execution wrappers, and Terraform config.",
+    "resultInterpretation": "Calculates the expected run interval and grace period in seconds, generates the wrapper bash snippet with exit-code handling and execution time tracking, and produces Terraform IaC resource definitions.",
+    "practicalGuidance": "Always add a grace period (e.g. 20% or 60-120 seconds) to push monitors so network jitter or minor execution duration variations do not trigger false positive downtime alerts.",
+    "limitations": "Converts standard 5-token crontab expressions into push intervals and heartbeat wrappers.",
+    "formula": "Push_Interval_Seconds = Cron_Interval_Seconds; Grace_Period = Interval * 0.2 + Execution_Budget",
+    "trustNotes": "100% Client-Side generation.",
+    "related": [
+      "crontab-to-datadog-synthetics-schedule-converter",
+      "crontab-to-google-cloud-scheduler-converter",
+      "crontab-to-cloudwatch-events-converter",
+      "crontab-to-azure-functions-schedule-converter"
+    ],
+    "seo": {
+      "title": "Crontab to Uptime Kuma Push Monitor Converter — Free DevOps Tool",
+      "metaDescription": "Convert crontab schedules to Uptime Kuma push heartbeat monitors. Generates bash wrappers with exit code pings and Terraform configuration.",
+      "whatIsThis": "A DevOps automation utility that converts cron schedule expressions into Uptime Kuma push monitor configurations and heartbeat curl scripts.",
+      "howItWorks": "1. Paste your cron schedule expression and Uptime Kuma push URL.\n2. Configure execution budget and grace period.\n3. Copy the hardened bash wrapper or Terraform provider code.",
+      "whyUseIt": "Prevents silent cron job failures by ensuring Uptime Kuma alerts you whenever a scheduled job fails or stops sending heartbeats.",
+      "faqs": [
+        {
+          "question": "How does a push monitor work in Uptime Kuma?",
+          "answer": "Instead of Uptime Kuma actively pinging your server, your cron script sends an HTTP GET/POST to Uptime Kuma upon completion. If Uptime Kuma does not receive a ping within the expected interval plus grace period, it marks the monitor down."
+        },
+        {
+          "question": "How does the bash wrapper report task failures?",
+          "answer": "The generated wrapper captures the exit code of your command ($?). If the command exits with non-zero, it can ping Uptime Kuma with status=down and an error message, immediately triggering notification channels."
+        }
+      ]
+    }
+  },
+  {
+    "id": "iso-83b-election-startup-equity-tax-calculator",
+    "name": "IRS Section 83(b) Election Startup Equity Tax Savings Calculator",
+    "slug": "iso-83b-election-startup-equity-tax-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "83b election tax calculator",
+      "irs section 83b calculator",
+      "startup equity 83b election savings",
+      "restricted stock vesting tax calculator",
+      "early exercise stock option 83b"
+    ],
+    "primaryKeywords": [
+      "83b election calculator",
+      "section 83b tax calculator",
+      "startup equity 83b calculator"
+    ],
+    "secondaryKeywords": [
+      "phantom ordinary income tax avoided during 4 year vesting",
+      "founder restricted stock purchase 30 day irs certified mail deadline"
+    ],
+    "targetUsers": [
+      "Startup Founders & Co-Founders",
+      "Early Stage Startup Employees",
+      "Venture Attorneys & CPAs",
+      "Angel Investors"
+    ],
+    "badge": "Popular",
+    "userProblem": "Founders and early employees receiving restricted stock or early exercising stock options face massive phantom ordinary income tax bills at each vesting date unless they timely file an IRS Section 83(b) election within 30 days.",
+    "searchIntent": "Calculate tax liability and financial savings of filing an IRS Section 83(b) election versus default vesting taxation.",
+    "resultInterpretation": "Compares side-by-side tax paid at grant, phantom taxes during vesting, and capital gains taxes at exit, highlighting total net tax savings and cash out-of-pocket avoided.",
+    "practicalGuidance": "The IRS requires an 83(b) election to be postmarked within exactly 30 calendar days of the stock purchase or option exercise. Send via USPS Certified Mail with Return Receipt Requested and retain tracking permanently.",
+    "limitations": "Models standard US Federal and State capital gains vs ordinary income tax treatment.",
+    "formula": "Savings = (Vesting_Spread * Ordinary_Tax + Exit_Spread_Without * LTCG) - (Grant_Spread * Ordinary_Tax + Exit_Spread_With * LTCG)",
+    "trustNotes": "100% Client-Side calculation.",
+    "related": [
+      "qsbs-qualified-small-business-stock-tax-exemption-calculator",
+      "wash-sale-rule-crypto-stock-loss-disallowance-calculator",
+      "mega-backdoor-roth-solo-401k-calculator",
+      "saas-rule-of-40-growth-fcf-margin-calculator"
+    ],
+    "seo": {
+      "title": "IRS Section 83(b) Election Tax Savings Calculator — Startup Equity Tool",
+      "metaDescription": "Calculate tax savings and phantom tax avoided with an IRS Section 83(b) election for startup restricted stock and early exercise stock options.",
+      "whatIsThis": "A startup finance calculator that models the tax implications and cash savings of making a timely Section 83(b) election on vesting equity.",
+      "howItWorks": "1. Enter number of shares, purchase price, and grant Fair Market Value (FMV).\n2. Set projected vesting FMV and target exit price.\n3. Compare total tax liability and net take-home proceeds with vs without 83(b).",
+      "whyUseIt": "Protects founders and employees from paying debilitating ordinary income taxes on illiquid shares during company growth.",
+      "faqs": [
+        {
+          "question": "What is an IRS Section 83(b) election?",
+          "answer": "Section 83(b) of the Internal Revenue Code allows founders and employees to elect to pay ordinary income tax on the fair market value of restricted stock at the time of grant rather than when the shares vest."
+        },
+        {
+          "question": "What is the deadline to file an 83(b) election?",
+          "answer": "You must file the written election letter with the IRS within exactly 30 calendar days of the stock grant or option exercise date. The IRS does not allow late filings or extensions for any reason."
+        }
+      ]
+    }
+  },
+  {
+    "id": "svg-sparkline-micro-chart-generator",
+    "name": "Pure SVG Sparkline Micro Trend Chart Generator",
+    "slug": "svg-sparkline-micro-chart-generator",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "svg sparkline generator",
+      "micro chart generator pure svg",
+      "inline trend line svg generator",
+      "react svg sparkline component generator"
+    ],
+    "primaryKeywords": [
+      "svg sparkline generator",
+      "micro chart generator",
+      "svg trend line generator"
+    ],
+    "secondaryKeywords": [
+      "zero dependency inline svg sparkline cubic bezier smooth spline",
+      "react typescript sparkline gradient area fill export"
+    ],
+    "targetUsers": [
+      "Frontend Developers",
+      "Dashboard & SaaS UI Designers",
+      "Data Visualization Engineers",
+      "Web Performance Specialists"
+    ],
+    "badge": "New",
+    "userProblem": "Developers building dashboards, metric cards, and financial tables need lightweight, zero-dependency SVG sparklines without importing heavy charting libraries (like Chart.js or D3) that bloat bundle size.",
+    "searchIntent": "Generate lightweight, customizable SVG sparklines and micro trend charts with live interactive preview and React component export.",
+    "resultInterpretation": "Normalizes numeric datasets into responsive SVG paths, supporting smooth cubic spline curves, gradient area fills, min/max highlight dots, and instant SVG/React code copy.",
+    "practicalGuidance": "Pure SVG sparklines have zero JavaScript runtime overhead, render instantly during server-side rendering (SSR), and scale cleanly inside responsive table cells and KPI metric cards.",
+    "limitations": "Renders responsive single-series SVG sparklines and area charts.",
+    "formula": "Normalized X_i = Pad + (i / (N - 1)) * Inner_W; Normalized Y_i = Pad + Inner_H - ((Val_i - Min) / Range) * Inner_H",
+    "trustNotes": "100% Client-Side generation.",
+    "related": [
+      "svg-pie-donut-chart-generator",
+      "svg-circle-progress-ring-calculator",
+      "svg-stroke-dasharray-animator",
+      "svg-viewbox-aspect-ratio-slicer"
+    ],
+    "seo": {
+      "title": "Pure SVG Sparkline Micro Trend Chart Generator — Free UI Tool",
+      "metaDescription": "Generate inline SVG sparkline micro charts with smooth spline curves and gradient fills. Zero-dependency SVG and React component code export.",
+      "whatIsThis": "A frontend data visualization utility that creates customizable, zero-dependency SVG sparkline charts for dashboards and data tables.",
+      "howItWorks": "1. Paste a comma or space-separated list of numbers or pick a preset.\n2. Customize width, height, stroke width, colors, and spline smoothing.\n3. Copy the raw SVG markup or self-contained React component.",
+      "whyUseIt": "Replaces heavyweight JavaScript charting libraries with clean, fast, server-renderable inline SVG markup.",
+      "faqs": [
+        {
+          "question": "What is a sparkline?",
+          "answer": "A sparkline is a very small, high-density line chart typically presented without axes or coordinates, designed to show trends at a glance inside text, tables, or metric cards."
+        },
+        {
+          "question": "Does this sparkline require external JavaScript libraries?",
+          "answer": "No, the generated sparkline is 100% pure SVG markup that works in HTML, React, Vue, Svelte, or email templates without any external dependencies."
+        }
+      ]
+    }
+  },
+  {
+    "id": "critical-power-w-prime-anaerobic-capacity-calculator",
+    "name": "Critical Power (CP) & W' Anaerobic Work Capacity Calculator",
+    "slug": "critical-power-w-prime-anaerobic-capacity-calculator",
+    "category": "health",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "critical power calculator",
+      "w prime calculator",
+      "anaerobic work capacity calculator",
+      "monod scherrer critical power model",
+      "cycling cp and w prime calculator"
+    ],
+    "primaryKeywords": [
+      "critical power calculator",
+      "w prime calculator",
+      "anaerobic work capacity calculator"
+    ],
+    "secondaryKeywords": [
+      "monod and scherrer two parameter linear work time model cycling watts",
+      "time to exhaustion supra critical power attack simulator"
+    ],
+    "targetUsers": [
+      "Competitive Cyclists & Triathletes",
+      "Exercise Physiologists & Sports Scientists",
+      "Endurance Coaches (TrainingPeaks / WKO5)",
+      "Running & Rowing Athletes"
+    ],
+    "badge": "New",
+    "userProblem": "Endurance athletes and exercise physiologists need to determine their true physiological aerobic threshold (Critical Power, CP) and anaerobic battery (W prime, W') from two all-out time trials to model power-duration curves and attack endurance.",
+    "searchIntent": "Calculate Critical Power (CP) in Watts and W' (anaerobic capacity) in kJ using the Monod & Scherrer linear work-time model.",
+    "resultInterpretation": "Computes Critical Power (Watts and W/kg) and W' (kJ), models predicted power for durations from 1 to 60 minutes, simulates time-to-exhaustion at supra-CP power, and provides CP-calibrated training zones.",
+    "practicalGuidance": "Critical Power represents the highest power output that can be maintained in a metabolic steady state without continuous depletion of glycogen and accumulation of intramuscular lactate. Any effort above CP draws directly on the finite W' battery.",
+    "limitations": "Uses the classical Monod & Scherrer 2-parameter hyperbolic/linear work-time model.",
+    "formula": "W(t) = CP * t + W'; CP = (P2*t2 - P1*t1) / (t2 - t1); W' = (P1 - CP) * t1",
+    "trustNotes": "100% Client-Side calculation.",
+    "related": [
+      "aerobic-decoupling-cardiac-drift-calculator",
+      "vo2-max-running-fitness-calculator",
+      "heart-rate-reserve-karvonen-calculator",
+      "target-heart-rate-zone-calculator"
+    ],
+    "seo": {
+      "title": "Critical Power (CP) & W' Anaerobic Capacity Calculator — Sports Science",
+      "metaDescription": "Calculate Monod & Scherrer Critical Power (CP in Watts) and W' anaerobic capacity (kJ) from two time trials. Model power duration and exhaustion.",
+      "whatIsThis": "A sports physiology calculator that computes Critical Power (CP) and anaerobic work capacity (W') using the Monod and Scherrer work-time model.",
+      "howItWorks": "1. Enter athlete weight and all-out power/duration for two time trials (e.g. 3 min and 12 min).\n2. View Critical Power (Watts, W/kg) and W' capacity in kJ.\n3. Test time to exhaustion for attacks and explore CP-calibrated training zones.",
+      "whyUseIt": "More physiologically rigorous than standard 20-minute FTP tests for pacing breakaways, time trials, and interval workouts.",
+      "faqs": [
+        {
+          "question": "What is the difference between Critical Power (CP) and Functional Threshold Power (FTP)?",
+          "answer": "While FTP is an empirical estimate of 1-hour power (often estimated as 95% of a 20-minute test), Critical Power is a mathematically derived parameter representing the boundary between steady-state and non-steady-state oxidative metabolism."
+        },
+        {
+          "question": "What is W' (W-prime)?",
+          "answer": "W' represents the finite amount of work (in Joules or kJ) that can be performed above Critical Power before complete muscular exhaustion occurs."
+        }
+      ]
+    }
   }
 ]
