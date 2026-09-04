@@ -381,6 +381,17 @@ const EstateTaxPortabilityExemptionCalculator = dynamic(() => import("./finance/
 const SvgIsometricCubeTileGenerator = dynamic(() => import("./creative/SvgIsometricCubeTileGenerator").then((m) => m.SvgIsometricCubeTileGenerator), { ssr: false });
 const CriticalVelocitySwimmingCalculator = dynamic(() => import("./health/CriticalVelocitySwimmingCalculator").then((m) => m.CriticalVelocitySwimmingCalculator), { ssr: false });
 
+const CurlToHttpieConverter = dynamic(() => import("./developer/CurlToHttpieConverter").then((m) => m.CurlToHttpieConverter), { ssr: false });
+const BurnMultipleEfficiencyCalculator = dynamic(() => import("./finance/BurnMultipleEfficiencyCalculator").then((m) => m.BurnMultipleEfficiencyCalculator), { ssr: false });
+const CssFluidTypographyClampCalculator = dynamic(() => import("./creative/CssFluidTypographyClampCalculator").then((m) => m.CssFluidTypographyClampCalculator), { ssr: false });
+const DnsRpzResponsePolicyZoneGenerator = dynamic(() => import("./network/DnsRpzResponsePolicyZoneGenerator").then((m) => m.DnsRpzResponsePolicyZoneGenerator), { ssr: false });
+const Section83bElectionDeadlineCalculator = dynamic(() => import("./finance/Section83bElectionDeadlineCalculator").then((m) => m.Section83bElectionDeadlineCalculator), { ssr: false });
+const HexGridLineDrawingAlgorithm = dynamic(() => import("./creative/HexGridLineDrawingAlgorithm").then((m) => m.HexGridLineDrawingAlgorithm), { ssr: false });
+const CronToCronitorHeartbeatConverter = dynamic(() => import("./developer/CronToCronitorHeartbeatConverter").then((m) => m.CronToCronitorHeartbeatConverter), { ssr: false });
+const Section179EquipmentDepreciationCalculator = dynamic(() => import("./finance/Section179EquipmentDepreciationCalculator").then((m) => m.Section179EquipmentDepreciationCalculator), { ssr: false });
+const SvgNoiseTextureFilterGenerator = dynamic(() => import("./creative/SvgNoiseTextureFilterGenerator").then((m) => m.SvgNoiseTextureFilterGenerator), { ssr: false });
+const LactateThresholdHeartRateCalculator = dynamic(() => import("./health/LactateThresholdHeartRateCalculator").then((m) => m.LactateThresholdHeartRateCalculator), { ssr: false });
+
 const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "random-number-generator": RandomNumberGenerator,
   "spin-wheel": SpinWheel,
@@ -757,6 +768,17 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "estate-tax-portability-dsue-unified-credit-calculator": EstateTaxPortabilityExemptionCalculator,
   "svg-isometric-cube-3d-tile-generator": SvgIsometricCubeTileGenerator,
   "critical-swim-speed-css-aerobic-pace-calculator": CriticalVelocitySwimmingCalculator,
+
+  "curl-to-httpie-converter": CurlToHttpieConverter,
+  "saas-burn-multiple-efficiency-runway-calculator": BurnMultipleEfficiencyCalculator,
+  "css-fluid-typography-clamp-calculator": CssFluidTypographyClampCalculator,
+  "dns-rpz-response-policy-zone-generator": DnsRpzResponsePolicyZoneGenerator,
+  "section-83b-election-deadline-tax-calculator": Section83bElectionDeadlineCalculator,
+  "hex-grid-line-drawing-raycasting-algorithm": HexGridLineDrawingAlgorithm,
+  "crontab-to-cronitor-heartbeat-monitor-converter": CronToCronitorHeartbeatConverter,
+  "section-179-equipment-depreciation-deduction-calculator": Section179EquipmentDepreciationCalculator,
+  "svg-fe-turbulence-noise-texture-generator": SvgNoiseTextureFilterGenerator,
+  "lactate-threshold-heart-rate-lthr-zones-calculator": LactateThresholdHeartRateCalculator,
 };
 
 interface ToolDispatcherProps {
