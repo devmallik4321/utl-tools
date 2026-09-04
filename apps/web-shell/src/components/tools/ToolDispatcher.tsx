@@ -414,6 +414,17 @@ const BonusDepreciationPhaseDownCalculator = dynamic(() => import("./finance/Bon
 const SvgOrganicBlobGenerator = dynamic(() => import("./creative/SvgOrganicBlobGenerator").then((m) => m.SvgOrganicBlobGenerator), { ssr: false });
 const MaximumAerobicSpeedCalculator = dynamic(() => import("./health/MaximumAerobicSpeedCalculator").then((m) => m.MaximumAerobicSpeedCalculator), { ssr: false });
 
+const CurlToCSharpHttpClientConverter = dynamic(() => import("./developer/CurlToCSharpHttpClientConverter").then((m) => m.CurlToCSharpHttpClientConverter), { ssr: false });
+const SaasCustomerHealthScoreCalculator = dynamic(() => import("./finance/SaasCustomerHealthScoreCalculator").then((m) => m.SaasCustomerHealthScoreCalculator), { ssr: false });
+const CssInfiniteMarqueeTickerGenerator = dynamic(() => import("./creative/CssInfiniteMarqueeTickerGenerator").then((m) => m.CssInfiniteMarqueeTickerGenerator), { ssr: false });
+const DnsSshfpRecordGenerator = dynamic(() => import("./network/DnsSshfpRecordGenerator").then((m) => m.DnsSshfpRecordGenerator), { ssr: false });
+const StartupLiquidationWaterfallCalculator = dynamic(() => import("./finance/StartupLiquidationWaterfallCalculator").then((m) => m.StartupLiquidationWaterfallCalculator), { ssr: false });
+const HexGridRaycastingAlgorithm = dynamic(() => import("./creative/HexGridRaycastingAlgorithm").then((m) => m.HexGridRaycastingAlgorithm), { ssr: false });
+const CronToHoneycombConverter = dynamic(() => import("./developer/CronToHoneycombConverter").then((m) => m.CronToHoneycombConverter), { ssr: false });
+const QsbsSection1202Calculator = dynamic(() => import("./finance/QsbsSection1202Calculator").then((m) => m.QsbsSection1202Calculator), { ssr: false });
+const SvgIsometricGridGenerator = dynamic(() => import("./creative/SvgIsometricGridGenerator").then((m) => m.SvgIsometricGridGenerator), { ssr: false });
+const RunningCriticalSpeedCalculator = dynamic(() => import("./health/RunningCriticalSpeedCalculator").then((m) => m.RunningCriticalSpeedCalculator), { ssr: false });
+
 const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "random-number-generator": RandomNumberGenerator,
   "spin-wheel": SpinWheel,
@@ -823,6 +834,16 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "bonus-depreciation-tcja-phase-down-schedule-calculator": BonusDepreciationPhaseDownCalculator,
   "svg-smooth-organic-blob-generator": SvgOrganicBlobGenerator,
   "maximum-aerobic-speed-mas-aerobic-intervals-calculator": MaximumAerobicSpeedCalculator,
+  "curl-to-csharp-dotnet-httpclient-converter": CurlToCSharpHttpClientConverter,
+  "saas-customer-health-score-churn-risk-calculator": SaasCustomerHealthScoreCalculator,
+  "css-infinite-marquee-ticker-generator": CssInfiniteMarqueeTickerGenerator,
+  "dns-sshfp-ssh-fingerprint-record-generator": DnsSshfpRecordGenerator,
+  "startup-liquidation-preference-waterfall-calculator": StartupLiquidationWaterfallCalculator,
+  "hex-grid-line-of-sight-raycasting-algorithm": HexGridRaycastingAlgorithm,
+  "crontab-to-honeycomb-marker-telemetry-converter": CronToHoneycombConverter,
+  "qsbs-section-1202-capital-gains-exclusion-calculator": QsbsSection1202Calculator,
+  "svg-isometric-3d-grid-projection-generator": SvgIsometricGridGenerator,
+  "running-critical-speed-d-prime-aerobic-model-calculator": RunningCriticalSpeedCalculator,
 };
 
 interface ToolDispatcherProps {

@@ -24823,5 +24823,645 @@
         }
       ]
     }
+  },
+  {
+    "id": "curl-to-csharp-dotnet-httpclient-converter",
+    "name": "cURL to C# / .NET HttpClient Code Converter",
+    "slug": "curl-to-csharp-dotnet-httpclient-converter",
+    "category": "developer",
+    "type": "Interactive Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "curl to c# converter",
+      "curl to dotnet httpclient",
+      "convert curl to csharp",
+      "ihttpclientfactory c# generator",
+      "c# httprequestmessage converter",
+      "c# http client post json"
+    ],
+    "primaryKeywords": [
+      "curl to c# converter",
+      "curl to dotnet httpclient",
+      "csharp httpclient generator",
+      "convert curl to c#"
+    ],
+    "secondaryKeywords": [
+      "ihttpclientfactory socket exhaustion prevention",
+      "c# 11 raw string literal json payload",
+      "strongly typed record dto model generator"
+    ],
+    "targetUsers": [
+      ".NET Developers",
+      "C# Backend Engineers",
+      "API Integrators",
+      "Full-Stack Software Architects"
+    ],
+    "badge": "New",
+    "userProblem": "Developers exploring third-party APIs need to convert raw cURL terminal commands into production-ready, non-allocating C# code utilizing IHttpClientFactory and modern .NET patterns.",
+    "searchIntent": "Transform cURL CLI snippets into idiomatic modern C# HttpClient and HttpRequestMessage code.",
+    "resultInterpretation": "Outputs complete C# source code ready to paste into ASP.NET Core controllers, background worker services, or client libraries.",
+    "practicalGuidance": "Always register HttpClient instances with AddHttpClient() in Program.cs to avoid socket exhaustion and ensure DNS rotation.",
+    "limitations": "Focuses on standard HTTP methods and JSON/form payloads; multi-part streaming uploads may require custom StreamContent configuration.",
+    "formula": "Parsed cURL CLI AST -> HttpRequestMessage + StringContent(json, UTF8, mediaType) -> SendAsync",
+    "trustNotes": "100% Client-Side in-memory parsing. Zero API keys or tokens transmitted.",
+    "related": [
+      "curl-to-fetch-converter",
+      "curl-to-python-requests-converter",
+      "curl-to-ruby-faraday-client-converter",
+      "curl-to-rust-reqwest-converter"
+    ],
+    "seo": {
+      "title": "cURL to C# / .NET HttpClient Converter — Modern C# Code Generator",
+      "metaDescription": "Convert cURL commands to modern C# .NET HttpClient code. Supports IHttpClientFactory, HttpRequestMessage, Bearer auth, and typed record DTO models.",
+      "whatIsThis": "A developer utility that converts cURL commands into production-grade C# code compatible with .NET 8 and .NET 9.",
+      "howItWorks": "1. Paste any cURL command.\n2. Choose between IHttpClientFactory service injection or static client pattern.\n3. Copy clean C# code and strongly-typed JSON DTO records.",
+      "whyUseIt": "Eliminates tedious manual translation of HTTP headers, auth tokens, and JSON payloads into C# classes.",
+      "faqs": [
+        {
+          "question": "Why does this tool recommend IHttpClientFactory?",
+          "answer": "Creating new HttpClient instances manually causes socket exhaustion under high load. IHttpClientFactory manages pooled HttpMessageHandler lifecycles and handles DNS updates."
+        },
+        {
+          "question": "Does this support modern C# 11 raw string literals?",
+          "answer": "Yes, multi-line JSON payloads are cleanly generated using modern triple-quote (\"\"\") raw string literals without backslash escaping."
+        }
+      ]
+    }
+  },
+  {
+    "id": "saas-customer-health-score-churn-risk-calculator",
+    "name": "SaaS Customer Health Score & Churn Risk Index Calculator",
+    "slug": "saas-customer-health-score-churn-risk-calculator",
+    "category": "finance",
+    "type": "Interactive Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "saas customer health score calculator",
+      "churn risk index calculator",
+      "customer health scoring model",
+      "saas arr at risk calculator",
+      "customer success health metrics",
+      "retention health score formula"
+    ],
+    "primaryKeywords": [
+      "customer health score calculator",
+      "saas churn risk calculator",
+      "arr at risk calculator",
+      "customer success scoring"
+    ],
+    "secondaryKeywords": [
+      "product adoption seat utilization weighting",
+      "renewal horizon churn penalty",
+      "executive escalation intervention playbook"
+    ],
+    "targetUsers": [
+      "Customer Success Managers (CSMs)",
+      "VP of Customer Success",
+      "SaaS Founders",
+      "RevOps Analysts"
+    ],
+    "badge": "New",
+    "userProblem": "Customer success teams need a standardized, multi-factor scoring model to detect leading indicators of churn before contracts reach the critical 60-day renewal window.",
+    "searchIntent": "Calculate composite customer health scores and weighted revenue at risk across product adoption, seat utilization, and support friction.",
+    "resultInterpretation": "Displays a 0-100 composite health score, RAG status (Healthy, Warning, Critical Risk), estimated churn probability %, and precise dollar ARR at risk.",
+    "practicalGuidance": "Prioritize executive outreach on accounts in the Red zone with <60 days until renewal to unblock workflow roadblocks.",
+    "limitations": "Provides deterministic scoring based on user-entered telemetry; should be combined with qualitative executive sponsor sentiment.",
+    "formula": "Composite Score = Σ(Factor_Score * Normalized_Weight) - Renewal_Proximity_Penalty",
+    "trustNotes": "100% Client-Side calculations. Zero customer revenue or telemetry data stored.",
+    "related": [
+      "saas-nrr-cohort-decay-revenue-expansion-calculator",
+      "rule-of-40-saas-efficiency-growth-margin-calculator",
+      "saas-cac-payback-period-calculator",
+      "saas-burn-multiple-capital-efficiency-calculator"
+    ],
+    "seo": {
+      "title": "SaaS Customer Health Score & Churn Risk Calculator — CS Metric Tool",
+      "metaDescription": "Calculate SaaS customer health scores (0-100) and ARR churn risk index. Weight product adoption, seat utilization, NPS, and contract renewal proximity.",
+      "whatIsThis": "A customer success operations tool that models multi-dimensional account health and predicts churn probability.",
+      "howItWorks": "1. Enter account ARR and days until contract renewal.\n2. Adjust product adoption %, license utilization, NPS, and support friction.\n3. Customize factor weights to generate composite score and ARR at risk.",
+      "whyUseIt": "Enables CS teams to proactively triage accounts and deploy interventions before customer churn occurs.",
+      "faqs": [
+        {
+          "question": "What is an acceptable SaaS Customer Health Score?",
+          "answer": "Typically, scores above 75 indicate healthy, expansion-ready accounts. Scores between 50 and 74 require proactive check-ins, while scores below 50 indicate critical churn hazards."
+        },
+        {
+          "question": "How does contract renewal proximity affect the score?",
+          "answer": "The model applies an exponential risk penalty when low-engagement accounts enter the final 30 to 60 days before contract expiration."
+        }
+      ]
+    }
+  },
+  {
+    "id": "css-infinite-marquee-ticker-generator",
+    "name": "CSS Infinite Marquee Ticker & Logo Carousel Generator",
+    "slug": "css-infinite-marquee-ticker-generator",
+    "category": "creative",
+    "type": "Interactive Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "css infinite marquee generator",
+      "css marquee ticker generator",
+      "pure css logo carousel",
+      "seamless infinite scroll css",
+      "css marquee mask-image fade",
+      "pause on hover css marquee"
+    ],
+    "primaryKeywords": [
+      "css marquee generator",
+      "infinite marquee css",
+      "css logo carousel generator",
+      "marquee ticker generator"
+    ],
+    "secondaryKeywords": [
+      "mask-image linear-gradient edge fade",
+      "gpu accelerated translatex transform",
+      "zero jitter infinite loop track clone"
+    ],
+    "targetUsers": [
+      "Frontend Developers",
+      "UI/UX Designers",
+      "Web Developers",
+      "Landing Page Creators"
+    ],
+    "badge": "New",
+    "userProblem": "Web developers building SaaS landing pages need jitter-free, pure CSS infinite scrolling partner logo clouds and tickers with edge gradient fades without heavy JavaScript plugins.",
+    "searchIntent": "Generate lightweight pure CSS infinite marquee ticker animations with customizable direction, speed, and alpha mask fades.",
+    "resultInterpretation": "Provides an interactive visual preview and clean, zero-runtime CSS and HTML code ready to drop into any website or React application.",
+    "practicalGuidance": "Using the dual-track clone technique with translateX(calc(-100% - gap)) guarantees a 100% seamless, continuous loop on all screen widths.",
+    "limitations": "Relies on CSS transforms; items inside the marquee should have fixed or intrinsic widths for consistent spacing.",
+    "formula": "Animation: scroll-left duration linear infinite; transform: translateX(calc(-100% - gap))",
+    "trustNotes": "100% Client-Side generation. Zero tracking or assets downloaded.",
+    "related": [
+      "css-3d-perspective-card-tilt-generator",
+      "css-grid-auto-fit-minmax-responsive-layout-generator",
+      "css-spotlight-mouse-hover-generator",
+      "svg-smooth-organic-blob-generator"
+    ],
+    "seo": {
+      "title": "CSS Infinite Marquee Ticker Generator — Pure CSS Logo Carousel",
+      "metaDescription": "Generate seamless pure CSS infinite marquee tickers and logo carousels. Supports hover pause, custom scroll speeds, bidirectional flow, and gradient edge masks.",
+      "whatIsThis": "A visual UI generator that creates hardware-accelerated, pure CSS infinite scrolling tickers and partner logo clouds.",
+      "howItWorks": "1. Configure scroll direction (Left/Right), cycle speed, and item spacing.\n2. Toggle hover-to-pause and CSS edge gradient fade masks.\n3. Copy production-ready CSS rules and semantic HTML structure.",
+      "whyUseIt": "Replaces bulky JavaScript carousel libraries with lightweight, 60fps GPU-accelerated CSS animations.",
+      "faqs": [
+        {
+          "question": "Why use pure CSS instead of JavaScript for marquees?",
+          "answer": "CSS animations run directly on the browser's compositor thread, avoiding CPU layout thrashing and delivering seamless 60fps or 120fps motion even during heavy page loading."
+        },
+        {
+          "question": "How do edge gradient fades work in CSS?",
+          "answer": "The generator uses CSS mask-image: linear-gradient() to feather the left and right edges to 0% opacity without requiring overlapping absolute overlay divs."
+        }
+      ]
+    }
+  },
+  {
+    "id": "dns-sshfp-ssh-fingerprint-record-generator",
+    "name": "DNS SSHFP (SSH Fingerprint) Record Generator (RFC 4255 / RFC 7479)",
+    "slug": "dns-sshfp-ssh-fingerprint-record-generator",
+    "category": "network",
+    "type": "Interactive Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "dns sshfp record generator",
+      "sshfp record builder",
+      "rfc 4255 sshfp generator",
+      "rfc 7479 ed25519 sshfp",
+      "ssh fingerprint dns record",
+      "dnssec ssh host key verification"
+    ],
+    "primaryKeywords": [
+      "dns sshfp record generator",
+      "sshfp generator",
+      "ssh fingerprint dns record",
+      "rfc 4255 generator"
+    ],
+    "secondaryKeywords": [
+      "ed25519 ecdsa rsa algorithm identifiers",
+      "sha 256 digest type 2 dnssec validation",
+      "verifyhostkeydns ssh configuration"
+    ],
+    "targetUsers": [
+      "Systems Administrators",
+      "DevOps Engineers",
+      "Security Engineers",
+      "Cloud Infrastructure Architects"
+    ],
+    "badge": "New",
+    "userProblem": "Infrastructure engineers configuring secure SSH servers need to publish valid DNS SSHFP records to enable DNSSEC-verified host authenticity and prevent MITM warnings.",
+    "searchIntent": "Convert public SSH host keys into valid DNS SSHFP resource records for BIND, Route53, and Cloudflare zone files.",
+    "resultInterpretation": "Generates formatted BIND master file lines, AWS Route53 JSON objects, and CLI verification test commands.",
+    "practicalGuidance": "Always use Digest Type 2 (SHA-256) with Algorithm 4 (Ed25519) for maximum cryptographic strength and modern SSH client compatibility.",
+    "limitations": "Requires the target domain to have DNSSEC enabled for client SSH VerifyHostKeyDNS verification to succeed securely.",
+    "formula": "<Host> <TTL> IN SSHFP <Algorithm: 1=RSA, 2=DSA, 3=ECDSA, 4=Ed25519> <Type: 1=SHA1, 2=SHA256> <Hex_Fingerprint>",
+    "trustNotes": "100% Client-Side generation. Host keys and fingerprints are never transmitted.",
+    "related": [
+      "dns-loc-geographic-coordinates-record-generator",
+      "dns-naptr-enum-sip-telephony-record-generator",
+      "dnssec-nsec-authenticated-denial-of-existence-generator",
+      "dns-tlsa-dane-record-generator"
+    ],
+    "seo": {
+      "title": "DNS SSHFP Record Generator — RFC 4255 & RFC 7479 SSH Fingerprint Tool",
+      "metaDescription": "Generate RFC 4255 & RFC 7479 compliant DNS SSHFP records for Ed25519, ECDSA, and RSA host keys. Export for BIND, Cloudflare, and Route53 with DNSSEC verification.",
+      "whatIsThis": "A network infrastructure utility that constructs RFC-compliant DNS SSHFP resource records for automated SSH host key authentication.",
+      "howItWorks": "1. Enter host FQDN.\n2. Select key algorithm (Ed25519, ECDSA, RSA) and digest type (SHA-256).\n3. Paste public key hex fingerprint.\n4. Copy BIND zone record and verification commands.",
+      "whyUseIt": "Eliminates dangerous 'Host key verification failed' prompts and mitigates rogue DNS MITM attacks using DNSSEC trust chains.",
+      "faqs": [
+        {
+          "question": "What is an SSHFP DNS record?",
+          "answer": "An SSHFP (SSH Fingerprint) resource record publishes the cryptographic hash of an SSH server's public host key in DNS, allowing clients with DNSSEC to verify the host without manual fingerprint prompting."
+        },
+        {
+          "question": "How do I configure SSH to use DNS SSHFP?",
+          "answer": "Add 'VerifyHostKeyDNS yes' to your ~/.ssh/config or run ssh with the '-o VerifyHostKeyDNS=yes' command line flag."
+        }
+      ]
+    }
+  },
+  {
+    "id": "startup-liquidation-preference-waterfall-calculator",
+    "name": "Startup Liquidation Preference Waterfall Calculator",
+    "slug": "startup-liquidation-preference-waterfall-calculator",
+    "category": "finance",
+    "type": "Interactive Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "startup liquidation preference calculator",
+      "liquidation waterfall calculator",
+      "participating vs non participating preferred",
+      "startup exit waterfall model",
+      "venture capital liquidation preference",
+      "founder common stock payout calculator"
+    ],
+    "primaryKeywords": [
+      "liquidation preference calculator",
+      "startup waterfall calculator",
+      "participating preferred calculator",
+      "startup exit calculator"
+    ],
+    "secondaryKeywords": [
+      "seniority tranches series a seed common",
+      "capped participating conversion crossover",
+      "multiple on invested capital moic"
+    ],
+    "targetUsers": [
+      "Startup Founders",
+      "Venture Capital Investors",
+      "Angel Investors",
+      "Startup Attorneys & CFOs"
+    ],
+    "badge": "New",
+    "userProblem": "Founders and investors need to model how exit proceeds are distributed across preferred and common share classes under complex term sheet liquidation preference provisions.",
+    "searchIntent": "Calculate precise dollar payouts and MOIC across share tranches in a startup acquisition under non-participating, participating, and capped preferences.",
+    "resultInterpretation": "Displays interactive exit waterfall distribution bars, individual tranche payouts ($ and MOIC multiple), and identifies preferred conversion crossover points.",
+    "practicalGuidance": "Beware of full participating preferred terms ('double dip'); standard market terms for venture rounds are 1x non-participating preferred.",
+    "limitations": "Assumes standard standard-order seniority; does not model complex pari-passu syndicates with differing liquidation multiples.",
+    "formula": "Waterfall Payout = Min(Remaining_Exit, Multiple * Invested) + Optional_Participation(Remaining_Pool * Ownership_%)",
+    "trustNotes": "100% Client-Side calculation. Zero cap table or financial records saved.",
+    "related": [
+      "option-pool-shuffle-dilution-calculator",
+      "safe-mfn-most-favored-nation-clause-calculator",
+      "venture-debt-warrant-coverage-calculator",
+      "pre-money-vs-post-money-safe-dilution-stack-calculator"
+    ],
+    "seo": {
+      "title": "Startup Liquidation Preference Waterfall Calculator — VC Term Sheet Tool",
+      "metaDescription": "Model startup exit proceeds across Series A, Seed, and Common stock. Compare 1x non-participating, participating, and capped liquidation preferences.",
+      "whatIsThis": "A venture capital financial model that calculates exit proceeds distribution across equity tranches under various liquidation preference terms.",
+      "howItWorks": "1. Enter total acquisition or exit valuation.\n2. Select preference structure (Non-Participating, Full Participating, Capped).\n3. Input capital invested and ownership % for Series A, Seed, and Founders.\n4. Inspect payout waterfalls and MOIC returns.",
+      "whyUseIt": "Empowers founders to understand the real financial consequences of investor preference terms in down, modest, and unicorn exits.",
+      "faqs": [
+        {
+          "question": "What is the difference between participating and non-participating preferred?",
+          "answer": "Non-participating preferred holders must choose between receiving their 1x liquidation preference OR converting to common stock to share pro-rata in the exit. Participating preferred holders receive their preference AND share pro-rata in the remaining proceeds."
+        },
+        {
+          "question": "What is a participation cap?",
+          "answer": "A cap (e.g., 2x or 3x) limits the total return a participating preferred investor can receive before they must fully convert to common stock."
+        }
+      ]
+    }
+  },
+  {
+    "id": "hex-grid-line-of-sight-raycasting-algorithm",
+    "name": "Hexagonal Grid Line-of-Sight & Raycasting Algorithm Simulator",
+    "slug": "hex-grid-line-of-sight-raycasting-algorithm",
+    "category": "creative",
+    "type": "Interactive Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "hex grid line of sight algorithm",
+      "hexagonal raycasting algorithm",
+      "hex grid raycast simulation",
+      "cube coordinate line drawing lerp",
+      "hexagonal grid los obstruction",
+      "hex grid game math"
+    ],
+    "primaryKeywords": [
+      "hex grid raycasting",
+      "hex grid line of sight",
+      "hexagonal los algorithm",
+      "cube coordinate lerp"
+    ],
+    "secondaryKeywords": [
+      "continuous cube coordinate rounding",
+      "float boundary nudging algorithm",
+      "discrete obstacle collision detection"
+    ],
+    "targetUsers": [
+      "Game Developers",
+      "Turn-Based Strategy Designers",
+      "Simulation Engineers",
+      "Procedural Math Enthusiasts"
+    ],
+    "badge": "New",
+    "userProblem": "Game developers building tactical hex-grid strategy games need a robust line-of-sight raycasting algorithm that avoids ambiguous boundary rounding errors along hexagonal edges.",
+    "searchIntent": "Simulate and implement hexagonal grid raycasting and line-of-sight collision algorithms using cube coordinates.",
+    "resultInterpretation": "Provides an interactive SVG tactical hex map with real-time visual raycasting, obstruction indicators, and clean copy-paste TypeScript algorithm source code.",
+    "practicalGuidance": "Always apply an infinitesimal coordinate nudge (e.g., +1e-6) before linear interpolation to ensure deterministic rounding along collinear hex vertices.",
+    "limitations": "Assumes 2D flat planar pointy-topped hexagonal grids; 3D elevation heightmaps require additional z-threshold checks.",
+    "formula": "Hex_Lerp(a, b, t) = Cube_Round(a.q + (b.q - a.q)*t, a.r + (b.r - a.r)*t, a.s + (b.s - a.s)*t)",
+    "trustNotes": "100% Client-Side in-browser calculation and simulation.",
+    "related": [
+      "hex-grid-spiral-ring-traversal-algorithm",
+      "hex-grid-field-of-view-shadowcasting-algorithm",
+      "hex-grid-movement-range-cost-calculator",
+      "aspect-ratio-hexagonal-axial-to-cube-converter"
+    ],
+    "seo": {
+      "title": "Hex Grid Line-of-Sight & Raycasting Algorithm — Game Math Simulator",
+      "metaDescription": "Interactive hexagonal grid raycasting and line-of-sight algorithm simulator. Uses continuous cube coordinate lerp with nudge rounding. Includes TypeScript code.",
+      "whatIsThis": "An interactive game math tool that models line-of-sight visibility, obstacle obstruction, and raycasting across hexagonal grids.",
+      "howItWorks": "1. Select Origin and Target hexes on the interactive grid.\n2. Click intermediate hexes to toggle wall obstacles.\n3. Observe real-time ray traversal and copy production TypeScript code.",
+      "whyUseIt": "Solves difficult edge-case rounding glitches in tactical game mechanics such as ranged combat and fog-of-war vision.",
+      "faqs": [
+        {
+          "question": "Why use cube coordinates for hex grid raycasting?",
+          "answer": "Cube coordinates (q + r + s = 0) permit linear interpolation (lerp) identical to standard 3D cartesian geometry, simplifying distance calculations and continuous line-drawing."
+        },
+        {
+          "question": "What is coordinate nudging in hex raycasting?",
+          "answer": "When a ray runs precisely along the shared edge between two hexagons, standard rounding can oscillate between cells. Nudging coordinates by 1e-6 guarantees deterministic cell traversal."
+        }
+      ]
+    }
+  },
+  {
+    "id": "crontab-to-honeycomb-marker-telemetry-converter",
+    "name": "Crontab to Honeycomb Marker & Metric Telemetry Converter",
+    "slug": "crontab-to-honeycomb-marker-telemetry-converter",
+    "category": "developer",
+    "type": "Interactive Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "crontab to honeycomb converter",
+      "honeycomb cron job telemetry",
+      "cron to honeycomb marker",
+      "honeycomb /1/events cron wrapper",
+      "cron job observability honeycomb",
+      "honeycomb dataset marker bash"
+    ],
+    "primaryKeywords": [
+      "crontab to honeycomb converter",
+      "honeycomb cron telemetry",
+      "honeycomb marker generator",
+      "cron observability"
+    ],
+    "secondaryKeywords": [
+      "high cardinality execution duration ms",
+      "non zero exit code failure marker",
+      "zero agent direct curl api instrumentation"
+    ],
+    "targetUsers": [
+      "Site Reliability Engineers (SREs)",
+      "DevOps Engineers",
+      "Backend Developers",
+      "Observability Champions"
+    ],
+    "badge": "New",
+    "userProblem": "DevOps teams running mission-critical background jobs need to ingest high-cardinality telemetry into Honeycomb to track job duration, exit status, and emit timeline failure markers without heavy daemons.",
+    "searchIntent": "Convert standard crontab jobs into self-contained bash scripts that emit telemetry events and dataset markers to Honeycomb's REST API.",
+    "resultInterpretation": "Generates a robust POSIX-compliant bash wrapper script that records execution time, catches errors, and transmits structured JSON events to Honeycomb.",
+    "practicalGuidance": "Store your Honeycomb API key in an environment variable or secrets manager rather than hardcoding it into cron files.",
+    "limitations": "Requires the host machine to have network egress to api.honeycomb.io on port 443.",
+    "formula": "Duration_ms = (End_Timestamp_ns - Start_Timestamp_ns) / 1,000,000; POST /1/events/<dataset>",
+    "trustNotes": "100% Client-Side generator. Zero API keys or command strings transmitted.",
+    "related": [
+      "crontab-to-splunk-signalfx-heartbeat-converter",
+      "crontab-to-new-relic-synthetics-heartbeat-converter",
+      "crontab-to-healthchecks-io-heartbeat-converter",
+      "crontab-to-pagerduty-heartbeat-dead-mans-switch-converter"
+    ],
+    "seo": {
+      "title": "Crontab to Honeycomb Telemetry Converter — Cron Observability Wrapper",
+      "metaDescription": "Transform crontab jobs into Honeycomb telemetry events and timeline markers. Measures exact execution duration and alerts on failures via Honeycomb API.",
+      "whatIsThis": "A DevOps automation utility that wraps scheduled cron jobs with high-cardinality Honeycomb event telemetry and failure markers.",
+      "howItWorks": "1. Enter cron schedule, command, and Honeycomb dataset.\n2. Configure environment name and API key variable.\n3. Copy the standalone bash wrapper and crontab schedule entry.",
+      "whyUseIt": "Provides full observability into silent cron job failures and execution latency regressions.",
+      "faqs": [
+        {
+          "question": "How does this tool communicate with Honeycomb?",
+          "answer": "It generates a lightweight curl POST command hitting Honeycomb's /1/events and /1/markers endpoints directly, requiring no external agents or daemons."
+        },
+        {
+          "question": "What happens if Honeycomb's API is temporarily unreachable?",
+          "answer": "The wrapper script includes error suppression ('|| true') for the telemetry curl call so that external reporting issues never break your primary job execution."
+        }
+      ]
+    }
+  },
+  {
+    "id": "qsbs-section-1202-capital-gains-exclusion-calculator",
+    "name": "Qualified Small Business Stock (QSBS) Section 1202 Capital Gains Calculator",
+    "slug": "qsbs-section-1202-capital-gains-exclusion-calculator",
+    "category": "finance",
+    "type": "Interactive Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "qsbs section 1202 calculator",
+      "qualified small business stock calculator",
+      "irc 1202 capital gains exclusion",
+      "10m or 10x basis qsbs cap",
+      "qsbs 100 percent exclusion calculator",
+      "startup stock tax exemption 1202"
+    ],
+    "primaryKeywords": [
+      "qsbs calculator",
+      "section 1202 calculator",
+      "qualified small business stock exclusion",
+      "irc 1202 tax calculator"
+    ],
+    "secondaryKeywords": [
+      "greater of 10 million or 10x basis rule",
+      "alternative minimum tax amt exemption",
+      "california non conformity warning"
+    ],
+    "targetUsers": [
+      "Startup Founders",
+      "Early Startup Employees",
+      "Venture Capitalists",
+      "Tax Attorneys & CPAs"
+    ],
+    "badge": "New",
+    "userProblem": "Founders, early employees, and angel investors selling shares in qualifying C-corporations need to calculate their tax exclusion under IRC § 1202 and model the $10M vs. 10x basis cap.",
+    "searchIntent": "Calculate capital gains tax exclusions and federal tax savings under IRC Section 1202 Qualified Small Business Stock provisions.",
+    "resultInterpretation": "Details statutory exclusion percentage (100%, 75%, or 50%), effective dollar limitation cap, taxable excess, and estimated federal tax savings.",
+    "practicalGuidance": "Stock acquired after Sept 27, 2010 enjoys 100% federal exclusion from regular income tax, AMT preference, and the 3.8% Net Investment Income Tax (NIIT).",
+    "limitations": "Assumes stock satisfies all statutory requirements (C-corp at issuance, $50M gross assets test, active business test, 5-year holding period).",
+    "formula": "Exclusion_Cap = Max(Filing_Dollar_Cap, 10 * Adjusted_Basis); Excluded_Gain = Min(Capital_Gain, Exclusion_Cap) * Exclusion_%",
+    "trustNotes": "100% Client-Side calculation. Zero financial or tax information saved.",
+    "related": [
+      "bonus-depreciation-tcja-phase-down-schedule-calculator",
+      "cost-segregation-bonus-depreciation-tax-calculator",
+      "section-83b-election-deadline-tax-calculator",
+      "estate-tax-portability-dsue-unified-credit-calculator"
+    ],
+    "seo": {
+      "title": "QSBS Section 1202 Capital Gains Calculator — Startup Stock Tax Tool",
+      "metaDescription": "Calculate IRC § 1202 Qualified Small Business Stock (QSBS) capital gains exclusions. Models the greater of $10M or 10x basis cap and federal tax savings.",
+      "whatIsThis": "A specialized tax planning calculator that determines federal capital gains tax exclusions under IRC Section 1202.",
+      "howItWorks": "1. Select acquisition date tier (100%, 75%, 50% exclusion).\n2. Enter cost basis and exit proceeds.\n3. Choose filing status and state conformity.\n4. View excluded gain, taxable remainder, and federal tax savings.",
+      "whyUseIt": "Helps founders and angel investors plan exits to maximize legitimate multi-million dollar federal tax exemptions.",
+      "faqs": [
+        {
+          "question": "What is the 10x basis rule under Section 1202?",
+          "answer": "Section 1202 caps the eligible gain at the GREATER of $10,000,000 or 10 times the taxpayer's aggregate adjusted tax basis. If you invested $2M, your cap is $20M instead of $10M."
+        },
+        {
+          "question": "Does California allow the QSBS exclusion?",
+          "answer": "No. California is one of the few states that does not conform to IRC Section 1202. Full gains are subject to California personal income tax rates."
+        }
+      ]
+    }
+  },
+  {
+    "id": "svg-isometric-3d-grid-projection-generator",
+    "name": "SVG Isometric 3D Grid & Tile Coordinate Projection Generator",
+    "slug": "svg-isometric-3d-grid-projection-generator",
+    "category": "creative",
+    "type": "Interactive Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "svg isometric grid generator",
+      "isometric 3d projection svg",
+      "isometric tile coordinate mapper",
+      "svg isometric cube generator",
+      "2.5d vector grid generator",
+      "isometric diamond tile svg"
+    ],
+    "primaryKeywords": [
+      "svg isometric grid generator",
+      "isometric projection svg",
+      "isometric cube generator",
+      "2.5d grid generator"
+    ],
+    "secondaryKeywords": [
+      "standard 2 to 1 isometric tile ratio",
+      "directional prism facet lighting",
+      "clean scalable vector graphics export"
+    ],
+    "targetUsers": [
+      "Graphic Designers",
+      "Game Artists",
+      "Frontend Developers",
+      "Technical Illustrators"
+    ],
+    "badge": "New",
+    "userProblem": "Designers and developers building isometric interfaces, technical diagrams, and pixel-art games need clean, mathematically precise vector SVG isometric grids with extruded 3D tiles.",
+    "searchIntent": "Generate customizable SVG isometric 3D grids and extruded prism blocks with coordinate projection mapping.",
+    "resultInterpretation": "Renders an interactive 2.5D isometric map where clicking tiles extrudes 3D prism blocks, and exports production-ready SVG code.",
+    "practicalGuidance": "Standard game isometric projection uses a 2:1 width-to-height ratio (30-degree tilt angle) to ensure crisp, integer pixel alignment.",
+    "limitations": "Outputs 2.5D isometric vector geometry; does not compute true 3D camera depth buffers or perspective vanishing points.",
+    "formula": "X_2d = (col - row) * (Width / 2); Y_2d = (col + row) * (Height / 2) - Z * Block_Height",
+    "trustNotes": "100% Client-Side vector calculation. Zero tracking or assets saved.",
+    "related": [
+      "svg-smooth-organic-blob-generator",
+      "svg-radial-mesh-gradient-patch-generator",
+      "hex-grid-spiral-ring-traversal-algorithm",
+      "css-3d-perspective-card-tilt-generator"
+    ],
+    "seo": {
+      "title": "SVG Isometric 3D Grid Generator — 2.5D Vector Tile Projection Tool",
+      "metaDescription": "Generate scalable SVG isometric grids and extruded 3D blocks. Interactive coordinate projection mapping, customizable themes, and clean vector export.",
+      "whatIsThis": "A creative vector geometry utility that projects 3D grid coordinates into 2.5D isometric SVG graphics.",
+      "howItWorks": "1. Configure grid columns, rows, tile dimensions, and block height.\n2. Choose color theme (Cyberpunk, Blueprint, Monochrome).\n3. Click tiles to extrude 3D blocks and copy clean SVG markup.",
+      "whyUseIt": "Creates mathematically perfect isometric assets for web illustrations, game mockups, and UI backdrops.",
+      "faqs": [
+        {
+          "question": "What is isometric projection?",
+          "answer": "Isometric projection is an axonometric graphical projection where the three coordinate axes appear equally foreshortened, preserving scale and parallel lines without perspective distortion."
+        },
+        {
+          "question": "Can I use the exported SVG in React or Figma?",
+          "answer": "Yes, the exported SVG is clean, standard-compliant vector XML that can be imported directly into Figma, Illustrator, or rendered inline in React and HTML."
+        }
+      ]
+    }
+  },
+  {
+    "id": "running-critical-speed-d-prime-aerobic-model-calculator",
+    "name": "Running Critical Speed & Anaerobic Capacity (D') Calculator",
+    "slug": "running-critical-speed-d-prime-aerobic-model-calculator",
+    "category": "health",
+    "type": "Interactive Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "running critical speed calculator",
+      "d prime running calculator",
+      "anaerobic running capacity calculator",
+      "monod scherrer running model",
+      "critical pace calculator",
+      "critical speed threshold zones"
+    ],
+    "primaryKeywords": [
+      "running critical speed calculator",
+      "critical speed calculator",
+      "d prime calculator",
+      "critical velocity running"
+    ],
+    "secondaryKeywords": [
+      "two parameter hyperbolic distance time model",
+      "severe heavy moderate training intensity domains",
+      "race time prediction 1500m to 10k"
+    ],
+    "targetUsers": [
+      "Distance Runners",
+      "Running Coaches",
+      "Exercise Physiologists",
+      "Triathletes"
+    ],
+    "badge": "New",
+    "userProblem": "Runners and endurance coaches need to calculate their physiological Critical Speed (CS) and finite anaerobic reserve distance (D') to prescribe individualized interval paces and predict race times.",
+    "searchIntent": "Determine running Critical Speed (CS) and anaerobic reserve capacity (D') from two time trials using the Monod & Scherrer hyperbolic model.",
+    "resultInterpretation": "Displays Critical Speed in m/s, km/h, and min/km threshold pace, D' anaerobic reserve in meters, training intensity domains, and predicted race times.",
+    "practicalGuidance": "Critical Speed represents the boundary between the heavy and severe exercise domains; running above CS depletes your finite D' battery.",
+    "limitations": "Requires two maximal-effort time trials on flat terrain under similar environmental conditions.",
+    "formula": "CS = (Distance_2 - Distance_1) / (Time_2 - Time_1); D' = Distance_1 - CS * Time_1",
+    "trustNotes": "100% Client-Side calculation. Zero health or biometric data stored.",
+    "related": [
+      "maximum-aerobic-speed-mas-aerobic-intervals-calculator",
+      "cycling-ftp-power-zones-coggan-calculator",
+      "lactate-threshold-heart-rate-lthr-zones-calculator",
+      "critical-swim-speed-css-aerobic-pace-calculator"
+    ],
+    "seo": {
+      "title": "Running Critical Speed & D' Calculator — Monod & Scherrer Model",
+      "metaDescription": "Calculate running Critical Speed (CS in m/s and pace/km) and anaerobic capacity (D' in meters) from two time trials. Prescribe threshold training zones.",
+      "whatIsThis": "An exercise physiology calculator that applies the two-parameter hyperbolic model to determine a runner's aerobic threshold and anaerobic reserve capacity.",
+      "howItWorks": "1. Enter distance and time for a shorter time trial (e.g. 1500m or 3km).\n2. Enter distance and time for a longer time trial (e.g. 5km or 10km).\n3. Review Critical Speed, D' reserve battery, training pace zones, and race predictions.",
+      "whyUseIt": "Provides a more objective, lab-grade threshold pace benchmark than standard arbitrary heart rate zone approximations.",
+      "faqs": [
+        {
+          "question": "What is Critical Speed (CS)?",
+          "answer": "Critical Speed is the highest running speed that can theoretically be sustained without a continuous depletion of anaerobic energy reserves and progressive rise in blood lactate."
+        },
+        {
+          "question": "What is D' (D-prime)?",
+          "answer": "D' represents a finite anaerobic reserve capacity measured in meters. Whenever you run faster than Critical Speed, you draw down this battery until exhaustion occurs at D' = 0."
+        }
+      ]
+    }
   }
 ]
