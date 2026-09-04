@@ -370,6 +370,17 @@ const QsbsCapGainCalculator = dynamic(() => import("./finance/QsbsCapGainCalcula
 const SvgMatrixTransformVisualizer = dynamic(() => import("./creative/SvgMatrixTransformVisualizer").then((m) => m.SvgMatrixTransformVisualizer), { ssr: false });
 const RunningEconomyCalculator = dynamic(() => import("./health/RunningEconomyCalculator").then((m) => m.RunningEconomyCalculator), { ssr: false });
 
+const CurlToFastHttpConverter = dynamic(() => import("./developer/CurlToFastHttpConverter").then((m) => m.CurlToFastHttpConverter), { ssr: false });
+const LtvCacPaybackSensitivityCalculator = dynamic(() => import("./finance/LtvCacPaybackSensitivityCalculator").then((m) => m.LtvCacPaybackSensitivityCalculator), { ssr: false });
+const CssBackdropFilterPlayground = dynamic(() => import("./creative/CssBackdropFilterPlayground").then((m) => m.CssBackdropFilterPlayground), { ssr: false });
+const DnsNsecRecordGenerator = dynamic(() => import("./network/DnsNsecRecordGenerator").then((m) => m.DnsNsecRecordGenerator), { ssr: false });
+const PreMoneyVsPostMoneySafesCalculator = dynamic(() => import("./finance/PreMoneyVsPostMoneySafesCalculator").then((m) => m.PreMoneyVsPostMoneySafesCalculator), { ssr: false });
+const HexCoordinateDistanceConverter = dynamic(() => import("./creative/HexCoordinateDistanceConverter").then((m) => m.HexCoordinateDistanceConverter), { ssr: false });
+const CronToPagerDutyHeartbeatConverter = dynamic(() => import("./developer/CronToPagerDutyHeartbeatConverter").then((m) => m.CronToPagerDutyHeartbeatConverter), { ssr: false });
+const EstateTaxPortabilityExemptionCalculator = dynamic(() => import("./finance/EstateTaxPortabilityExemptionCalculator").then((m) => m.EstateTaxPortabilityExemptionCalculator), { ssr: false });
+const SvgIsometricCubeTileGenerator = dynamic(() => import("./creative/SvgIsometricCubeTileGenerator").then((m) => m.SvgIsometricCubeTileGenerator), { ssr: false });
+const CriticalVelocitySwimmingCalculator = dynamic(() => import("./health/CriticalVelocitySwimmingCalculator").then((m) => m.CriticalVelocitySwimmingCalculator), { ssr: false });
+
 const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "random-number-generator": RandomNumberGenerator,
   "spin-wheel": SpinWheel,
@@ -735,6 +746,17 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "qualified-small-business-stock-gain-exclusion-cap-calculator": QsbsCapGainCalculator,
   "svg-matrix-transformation-visualizer": SvgMatrixTransformVisualizer,
   "running-economy-aerobic-cost-calculator": RunningEconomyCalculator,
+
+  "curl-to-go-fasthttp-converter": CurlToFastHttpConverter,
+  "saas-ltv-cac-payback-sensitivity-matrix-calculator": LtvCacPaybackSensitivityCalculator,
+  "css-backdrop-filter-blur-glass-playground": CssBackdropFilterPlayground,
+  "dnssec-nsec-authenticated-denial-of-existence-generator": DnsNsecRecordGenerator,
+  "pre-money-vs-post-money-safe-dilution-stack-calculator": PreMoneyVsPostMoneySafesCalculator,
+  "hex-grid-coordinate-system-converter-distance-calculator": HexCoordinateDistanceConverter,
+  "crontab-to-pagerduty-heartbeat-dead-mans-switch-converter": CronToPagerDutyHeartbeatConverter,
+  "estate-tax-portability-dsue-unified-credit-calculator": EstateTaxPortabilityExemptionCalculator,
+  "svg-isometric-cube-3d-tile-generator": SvgIsometricCubeTileGenerator,
+  "critical-swim-speed-css-aerobic-pace-calculator": CriticalVelocitySwimmingCalculator,
 };
 
 interface ToolDispatcherProps {

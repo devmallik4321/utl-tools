@@ -22383,5 +22383,615 @@
         }
       ]
     }
+  },
+  {
+    "id": "curl-to-go-fasthttp-converter",
+    "name": "cURL to Go fasthttp (Zero-Allocation) Request Converter",
+    "slug": "curl-to-go-fasthttp-converter",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "curl to go fasthttp converter",
+      "fasthttp request generator",
+      "convert curl to fasthttp golang",
+      "go acquire request response fasthttp",
+      "high throughput go http client generator"
+    ],
+    "primaryKeywords": [
+      "curl to go fasthttp converter",
+      "curl to fasthttp",
+      "fasthttp converter"
+    ],
+    "secondaryKeywords": [
+      "valyala fasthttp zero heap allocations object pool client do request",
+      "golang high concurrency http microservices curl code generator"
+    ],
+    "targetUsers": [
+      "Go Backend Engineers",
+      "High-Concurrency Microservices Developers",
+      "Cloud Infrastructure Engineers",
+      "FinTech & AdTech Systems Programmers"
+    ],
+    "badge": "New",
+    "userProblem": "Go developers building high-throughput microservices using valyala/fasthttp need to convert standard cURL snippets into memory-pooled, zero-allocation Go fasthttp code without manual boilerplate.",
+    "searchIntent": "Convert cURL commands into idiomatic Go fasthttp client requests utilizing memory pools and custom headers.",
+    "resultInterpretation": "Parses cURL commands and produces idiomatic Go code that acquires pooled request and response objects, sets headers, handles request payloads, configures client timeouts, and releases pooled objects back to the allocator.",
+    "practicalGuidance": "Always use defer fasthttp.ReleaseRequest(req) and defer fasthttp.ReleaseResponse(res) to prevent memory leakage in high-concurrency systems.",
+    "limitations": "Pure client-side syntax parsing.",
+    "formula": "fasthttp.AcquireRequest(); req.Header.SetMethod(M); client.Do(req, res); fasthttp.ReleaseRequest(req)",
+    "trustNotes": "100% Client-Side generation in browser memory.",
+    "related": [
+      "curl-to-go-converter",
+      "curl-to-rust-converter",
+      "curl-to-dart-dio-converter",
+      "crontab-to-healthchecks-io-heartbeat-converter"
+    ],
+    "seo": {
+      "title": "cURL to Go fasthttp Converter — Free High-Performance Go Tool",
+      "metaDescription": "Convert cURL commands into zero-allocation Go fasthttp client requests. Generate memory-pooled code with headers, payloads, and error handlers.",
+      "whatIsThis": "A developer tool that transforms command-line cURL commands into production-ready Go fasthttp client code with object pooling.",
+      "howItWorks": "1. Paste any cURL command into the input editor.\n2. The parser extracts URL, HTTP verb, headers, and request body.\n3. Copy the optimized Go fasthttp code utilizing AcquireRequest and ReleaseRequest pools.",
+      "whyUseIt": "Enables Go developers to quickly build high-throughput API integrations handling thousands of requests per second without GC overhead.",
+      "faqs": [
+        {
+          "question": "Why use fasthttp over net/http in Go?",
+          "answer": "fasthttp uses object pools to avoid memory allocations on every request, delivering up to 10x higher throughput for latency-critical microservices."
+        },
+        {
+          "question": "Does this tool support custom headers and JSON bodies?",
+          "answer": "Yes, custom headers and POST/PUT payloads are automatically extracted and translated to fasthttp Header.Set and SetBody byte slices."
+        }
+      ]
+    }
+  },
+  {
+    "id": "saas-ltv-cac-payback-sensitivity-matrix-calculator",
+    "name": "SaaS LTV:CAC Ratio & Payback Sensitivity Matrix Calculator",
+    "slug": "saas-ltv-cac-payback-sensitivity-matrix-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "saas ltv cac payback calculator",
+      "cac payback period calculator",
+      "ltv cac ratio calculator",
+      "saas payback sensitivity matrix",
+      "customer acquisition cost payback calculator"
+    ],
+    "primaryKeywords": [
+      "saas ltv cac payback calculator",
+      "cac payback calculator",
+      "ltv cac calculator"
+    ],
+    "secondaryKeywords": [
+      "arpu gross margin churn customer lifetime value sensitivity table months to payback",
+      "b2b saas unit economics venture capital due diligence benchmark model"
+    ],
+    "targetUsers": [
+      "SaaS Founders & CEOs",
+      "Venture Capital & Growth Equity Investors",
+      "Chief Revenue Officers (CROs)",
+      "FP&A & Strategic Finance Managers"
+    ],
+    "badge": "New",
+    "userProblem": "B2B SaaS finance leaders and startup founders need to calculate customer lifetime value (LTV), LTV:CAC ratios, and months to CAC payback, and stress-test these metrics across a sensitivity matrix of varying CAC expenditures and churn rates.",
+    "searchIntent": "Calculate SaaS LTV, LTV:CAC ratio, CAC payback period in months, and view a sensitivity matrix under different churn and acquisition cost scenarios.",
+    "resultInterpretation": "Calculates gross-profit-adjusted LTV, customer lifetime in months, CAC payback duration, and generates a color-coded sensitivity table displaying payback resilience across 25 combinations of CAC and churn.",
+    "practicalGuidance": "Top-quartile SaaS companies achieve CAC payback in under 12 months with an LTV:CAC ratio exceeding 3.0x. Payback periods over 18 months signal high capital intensity.",
+    "limitations": "Standard SaaS unit economics formulas.",
+    "formula": "LTV = (ARPU * Gross_Margin_Pct) / Churn_Pct; CAC_Payback = CAC / (ARPU * Gross_Margin_Pct)",
+    "trustNotes": "100% Client-Side financial modeling in browser memory.",
+    "related": [
+      "arr-waterfall-bridge-ebitda-calculator",
+      "saas-net-burn-runway-calculator",
+      "venture-debt-warrant-coverage-calculator",
+      "safe-note-pre-vs-post-money-calculator"
+    ],
+    "seo": {
+      "title": "SaaS LTV:CAC & Payback Sensitivity Calculator — Free Financial Tool",
+      "metaDescription": "Calculate B2B SaaS LTV, LTV:CAC ratio, and CAC payback period in months. Stress-test unit economics with an interactive 25-cell sensitivity matrix.",
+      "whatIsThis": "A financial modeling utility for SaaS founders to calculate unit economics and stress-test CAC payback durations under varying churn rates and marketing spend.",
+      "howItWorks": "1. Enter monthly ARPU, gross margin percentage, monthly churn rate, and CAC.\n2. View calculated LTV, LTV:CAC ratio, customer lifetime, and months to payback.\n3. Analyze the interactive sensitivity heatmap across 25 churn and acquisition cost scenarios.",
+      "whyUseIt": "Helps startup leadership optimize sales and marketing efficiency and prepare financial due diligence models for venture capital rounds.",
+      "faqs": [
+        {
+          "question": "What is a good CAC payback period for B2B SaaS?",
+          "answer": "Under 12 months is considered excellent, 12-18 months is typical for mid-market SaaS, and over 18 months requires substantial working capital to fund growth."
+        },
+        {
+          "question": "Why adjust LTV for gross margin?",
+          "answer": "Revenue-only LTV ignores the cost of hosting, customer support, and third-party APIs. Multiplying ARPU by gross margin reflects actual cash available to recover customer acquisition costs."
+        }
+      ]
+    }
+  },
+  {
+    "id": "css-backdrop-filter-blur-glass-playground",
+    "name": "CSS Backdrop Filter & Glassmorphism Blur Playground",
+    "slug": "css-backdrop-filter-blur-glass-playground",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "css backdrop filter playground",
+      "frosted glass css generator",
+      "backdrop blur css generator",
+      "glassmorphism backdrop filter tool",
+      "webkit backdrop filter generator"
+    ],
+    "primaryKeywords": [
+      "css backdrop filter playground",
+      "backdrop filter generator",
+      "frosted glass css"
+    ],
+    "secondaryKeywords": [
+      "backdrop blur saturate contrast brightness opacity background scene preview",
+      "tailwind css backdrop blur utility classes frosted glass component code"
+    ],
+    "targetUsers": [
+      "Frontend UI/UX Designers",
+      "Web Developers",
+      "Product Designers",
+      "Design System Engineers"
+    ],
+    "badge": "New",
+    "userProblem": "Web designers and frontend developers building modern frosted glass interfaces struggle to dial in the ideal combination of blur, saturation, contrast, and background opacity while previewing the effect against diverse visual backgrounds.",
+    "searchIntent": "Experiment with CSS backdrop-filter properties (blur, saturate, brightness, contrast) in real time and generate CSS and Tailwind snippets.",
+    "resultInterpretation": "Provides an interactive live preview with interchangeable background scenes (gradient, cyberpunk, mesh), controls for blur, saturation, contrast, brightness, and background opacity, and generates cross-browser CSS and Tailwind CSS classes.",
+    "practicalGuidance": "Combining blur (15-25px) with slight saturation boost (160-200%) and low opacity fill (15-30%) creates authentic Apple-style frosted glass surfaces while maintaining typography legibility.",
+    "limitations": "Hardware-accelerated CSS backdrop-filter preview.",
+    "formula": "backdrop-filter: blur(px) saturate(%) brightness(%) contrast(%); -webkit-backdrop-filter: ...;",
+    "trustNotes": "100% Client-Side generation in browser memory.",
+    "related": [
+      "css-text-stroke-hollow-outline-generator",
+      "css-gradient-generator",
+      "css-glassmorphism-generator",
+      "svg-isometric-cube-3d-tile-generator"
+    ],
+    "seo": {
+      "title": "CSS Backdrop Filter Playground — Free Frosted Glass Tool",
+      "metaDescription": "Design frosted glass UI elements with CSS backdrop-filter. Customize blur, saturation, contrast, and opacity with live scene previews and Tailwind export.",
+      "whatIsThis": "An interactive web design tool that allows developers to fine-tune CSS backdrop-filter effects and export production-ready CSS and Tailwind code.",
+      "howItWorks": "1. Adjust blur radius, saturation boost, brightness, contrast, and background opacity.\n2. Switch between test scenes (gradient, cyberpunk grid, mesh) to test legibility.\n3. Copy the cross-browser CSS snippet or Tailwind CSS utility string.",
+      "whyUseIt": "Eliminates guess-and-check design workflows for creating high-end macOS and iOS style frosted glass surfaces in web applications.",
+      "faqs": [
+        {
+          "question": "What browsers support backdrop-filter?",
+          "answer": "All modern browsers (Chrome, Edge, Safari, Firefox) support backdrop-filter. Always include the -webkit-backdrop-filter vendor prefix for Safari compatibility."
+        },
+        {
+          "question": "Why does frosted glass look dull without saturation?",
+          "answer": "Heavy Gaussian blur washes out color vibrancy from the underlying layer. Boosting saturation to 150-200% restores depth and visual warmth."
+        }
+      ]
+    }
+  },
+  {
+    "id": "dnssec-nsec-authenticated-denial-of-existence-generator",
+    "name": "DNSSEC NSEC Record & Authenticated Denial of Existence Generator",
+    "slug": "dnssec-nsec-authenticated-denial-of-existence-generator",
+    "category": "network",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "dnssec nsec generator",
+      "nsec record generator",
+      "dnssec authenticated denial of existence",
+      "rfc 4034 nsec type bitmap generator",
+      "bind dnssec nsec record builder"
+    ],
+    "primaryKeywords": [
+      "dnssec nsec generator",
+      "nsec record generator",
+      "dnssec denial of existence"
+    ],
+    "secondaryKeywords": [
+      "rfc 4034 canonical name ordering next domain name type bit maps hex encoding",
+      "zone walking vulnerability rfc 5155 nsec3 transition bind master file format"
+    ],
+    "targetUsers": [
+      "DNS Administrators & SREs",
+      "Cybersecurity Analysts & Penetration Testers",
+      "Network Protocol Engineers",
+      "Cloud Infrastructure Engineers"
+    ],
+    "badge": "New",
+    "userProblem": "System administrators and network engineers configuring DNSSEC need to understand and generate RFC 4034 NSEC records, encode type bit maps, and verify authenticated denial of existence proofs while evaluating zone walking risks.",
+    "searchIntent": "Generate RFC 4034 DNSSEC NSEC records for BIND zone files and calculate binary type bit map hex representations.",
+    "resultInterpretation": "Generates syntactically validated BIND master file NSEC records, encodes the RFC 4034 Type Bit Map window block in hexadecimal, and provides a security analysis of authenticated denial of existence and zone walking vulnerabilities.",
+    "practicalGuidance": "NSEC creates a sorted linked chain of all names in a zone. Because each record discloses the exact next domain, malicious actors can walk the zone to enumerate all subdomains unless NSEC3 hashed denial is used.",
+    "limitations": "RFC 4034 and RFC 3845 DNSSEC specifications.",
+    "formula": "<owner> <ttl> IN NSEC <next-domain> <type-list>",
+    "trustNotes": "100% Client-Side generation in browser memory.",
+    "related": [
+      "dns-hinfo-hardware-os-record-generator",
+      "rfc-9460-dns-https-svcb-record-generator",
+      "dns-loc-geographic-location-record-generator",
+      "dns-srv-service-record-generator"
+    ],
+    "seo": {
+      "title": "DNSSEC NSEC Record Generator — Free DNS Protocol Tool",
+      "metaDescription": "Generate RFC 4034 DNSSEC NSEC records for BIND zone files. Calculate type bit map hex windows and analyze authenticated denial of existence.",
+      "whatIsThis": "A network engineering utility that constructs RFC 4034 DNSSEC NSEC records, encodes type bit map octets, and analyzes cryptographic denial of existence.",
+      "howItWorks": "1. Enter owner domain name and next canonical domain name in alphabetical order.\n2. Select existing DNS record types present at the owner name.\n3. Copy the BIND master file record and inspect the RFC 4034 type bit map hex encoding.",
+      "whyUseIt": "Essential for understanding DNSSEC non-existence proofs and evaluating zone enumeration risks during security audits.",
+      "faqs": [
+        {
+          "question": "How does NSEC prove a domain does not exist?",
+          "answer": "NSEC links each existing name to the next alphabetical name. Presenting a signed NSEC record spanning 'alfa' to 'charlie' proves that 'bravo' cannot exist between them."
+        },
+        {
+          "question": "What is DNSSEC zone walking?",
+          "answer": "Zone walking is a technique where an attacker systematically queries non-existent names to collect NSEC records, sequentially revealing every single subdomain in the entire zone."
+        }
+      ]
+    }
+  },
+  {
+    "id": "pre-money-vs-post-money-safe-dilution-stack-calculator",
+    "name": "Pre-Money vs Post-Money SAFE Dilution Stack Calculator",
+    "slug": "pre-money-vs-post-money-safe-dilution-stack-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "safe dilution calculator",
+      "pre money vs post money safe calculator",
+      "yc safe stacking calculator",
+      "post money safe cap table calculator",
+      "safe conversion dilution model"
+    ],
+    "primaryKeywords": [
+      "safe dilution calculator",
+      "pre money vs post money safe",
+      "safe stacking calculator"
+    ],
+    "secondaryKeywords": [
+      "y combinator post money safe valuation cap series a priced round dilution",
+      "multi tranche safe stacking founder equity ownership comparison cap table"
+    ],
+    "targetUsers": [
+      "Startup Founders & Co-Founders",
+      "Angel Investors & Seed VCs",
+      "Startup Attorneys & Legal Counsel",
+      "Chief Financial Officers (CFOs)"
+    ],
+    "badge": "New",
+    "userProblem": "Early-stage startup founders stacking multiple SAFE notes across angels and seed funds struggle to understand how YC Post-Money SAFEs concentrate all subsequent dilution onto the founders compared to legacy Pre-Money SAFEs.",
+    "searchIntent": "Compare founder dilution and cap table outcomes between Pre-Money and Post-Money SAFE note stacks upon Series A conversion.",
+    "resultInterpretation": "Models multiple SAFE tranches with distinct investments and valuation caps, calculates conversion into preferred stock at Series A alongside option pool expansion, and compares post-round founder equity ownership under both Pre-Money and Post-Money frameworks.",
+    "practicalGuidance": "With Post-Money SAFEs, each investor owns a guaranteed fixed percentage (Investment / Cap) of the pre-Series-A company, meaning founders bear 100% of the dilution from every subsequent SAFE raised.",
+    "limitations": "Y Combinator SAFE standard post-money and legacy pre-money models.",
+    "formula": "Post_Safe_Pct = Investment / Valuation_Cap; Founder_Equity = (100% - Sum_Safe_Pcts) * (1 - SeriesA_Pct - OptionPool_Pct)",
+    "trustNotes": "100% Client-Side financial calculations in browser memory.",
+    "related": [
+      "safe-note-pre-vs-post-money-calculator",
+      "venture-debt-warrant-coverage-calculator",
+      "convertible-note-seed-round-calculator",
+      "arr-waterfall-bridge-ebitda-calculator"
+    ],
+    "seo": {
+      "title": "Pre-Money vs Post-Money SAFE Dilution Calculator — Free Startup Tool",
+      "metaDescription": "Model multi-tranche SAFE stacking and compare founder dilution between Pre-Money and Post-Money SAFEs upon Series A conversion.",
+      "whatIsThis": "A capitalization table modeling tool for startup founders to visualize dilution when stacking multiple SAFE notes prior to a priced round.",
+      "howItWorks": "1. Add SAFE tranches with check sizes and valuation caps.\n2. Enter Series A pre-money valuation, new investment, and option pool percentage.\n3. Compare founder equity ownership and investor cap tables under Pre-Money vs Post-Money mechanics.",
+      "whyUseIt": "Protects startup founders from unexpected equity dilution when raising successive seed checks on convertible SAFEs.",
+      "faqs": [
+        {
+          "question": "Why did Y Combinator switch to Post-Money SAFEs in 2018?",
+          "answer": "Post-money SAFEs provide immediate ownership certainty to investors by fixing their percentage upfront, avoiding the complex circular math of pre-money SAFEs."
+        },
+        {
+          "question": "Who absorbs dilution when stacking multiple Post-Money SAFEs?",
+          "answer": "Founders absorb 100% of the dilution from each new post-money SAFE; previously issued post-money SAFEs are completely protected from dilution by other SAFEs."
+        }
+      ]
+    }
+  },
+  {
+    "id": "hex-grid-coordinate-system-converter-distance-calculator",
+    "name": "Hexagonal Grid Coordinate Converter & Distance Calculator",
+    "slug": "hex-grid-coordinate-system-converter-distance-calculator",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "hex grid coordinate converter",
+      "hex distance calculator",
+      "axial to cube hex coordinates converter",
+      "hex grid manhattan distance",
+      "offset to axial hex converter"
+    ],
+    "primaryKeywords": [
+      "hex grid coordinate converter",
+      "hex distance calculator",
+      "axial to cube hex"
+    ],
+    "secondaryKeywords": [
+      "axial coordinates q r cube x y z offset odd-r even-r doubled distance formula",
+      "game development turn based strategy hex grid distance code typescript python godot"
+    ],
+    "targetUsers": [
+      "Video Game Developers (Turn-Based Strategy)",
+      "Tabletop Wargame & RPG Designers",
+      "Procedural Map & Simulation Coders",
+      "Computer Science Students & Educators"
+    ],
+    "badge": "New",
+    "userProblem": "Game developers building hexagonal grid games in Godot, Unity, or custom web engines need to convert between Axial (q, r), Cube (x, y, z), and Offset coordinates and compute step distances without writing custom math from scratch.",
+    "searchIntent": "Convert between hex coordinate systems (axial, cube, offset) and calculate hex tile step distance with interactive canvas visualizer.",
+    "resultInterpretation": "Calculates step distance and straight-line pixel distance between any two hex coordinates, dynamically converts between Axial, Cube, and Offset formats, renders an interactive hex grid canvas, and exports distance code in TypeScript, Python, and Godot GDScript.",
+    "practicalGuidance": "Cube coordinates (x + y + z = 0) simplify distance formulas to half the sum of absolute differences, eliminating messy conditional branch logic required in offset grids.",
+    "limitations": "Flat-topped hexagonal coordinate systems.",
+    "formula": "Hex_Distance = (|x1 - x2| + |y1 - y2| + |z1 - z2|) / 2; x = q, z = r, y = -x - z",
+    "trustNotes": "100% Client-Side interactive canvas engine.",
+    "related": [
+      "hex-grid-movement-range-cost-calculator",
+      "hex-grid-field-of-view-shadowcasting-calculator",
+      "svg-isometric-cube-3d-tile-generator",
+      "svg-matrix-transformation-visualizer"
+    ],
+    "seo": {
+      "title": "Hex Grid Coordinate Converter & Distance Calculator — Free Game Tool",
+      "metaDescription": "Convert between axial, cube, and offset hex coordinates. Calculate hex step distance and export distance algorithms for TypeScript, Python, and Godot.",
+      "whatIsThis": "A game development utility that converts between hexagonal coordinate representations and calculates tile step distances with an interactive canvas.",
+      "howItWorks": "1. Enter axial coordinates (q, r) for Point A and Point B.\n2. View instant conversions to Cube (x, y, z) and Offset (odd-r) coordinates.\n3. Inspect the visual line on the interactive canvas and copy ready-to-use game code.",
+      "whyUseIt": "Simplifies hexagonal grid spatial algorithms and prevents off-by-one errors in turn-based game development.",
+      "faqs": [
+        {
+          "question": "What is the cube coordinate zero-sum invariant?",
+          "answer": "In cube coordinates, every valid hexagon satisfies x + y + z = 0. This invariant represents a 2D plane sliced through a 3D coordinate space."
+        },
+        {
+          "question": "Why avoid offset coordinates in game logic?",
+          "answer": "Offset coordinates introduce jagged neighbor offsets that change depending on whether a row is odd or even, complicating distance and pathfinding algorithms."
+        }
+      ]
+    }
+  },
+  {
+    "id": "crontab-to-pagerduty-heartbeat-dead-mans-switch-converter",
+    "name": "Crontab to PagerDuty Events API v2 Heartbeat & Alert Generator",
+    "slug": "crontab-to-pagerduty-heartbeat-dead-mans-switch-converter",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "crontab to pagerduty converter",
+      "pagerduty cron wrapper script",
+      "pagerduty events api v2 cron alert",
+      "dead mans switch pagerduty monitoring",
+      "cron job pagerduty integration script"
+    ],
+    "primaryKeywords": [
+      "crontab to pagerduty converter",
+      "pagerduty cron wrapper",
+      "pagerduty cron alert"
+    ],
+    "secondaryKeywords": [
+      "pagerduty events v2 enqueue routing key severity critical error warning log capture",
+      "hardened bash wrapper exit status trap curl dead mans switch infrastructure"
+    ],
+    "targetUsers": [
+      "DevOps Engineers & SREs",
+      "Linux System Administrators",
+      "Cloud Infrastructure Architects",
+      "Backend Platform Engineers"
+    ],
+    "badge": "New",
+    "userProblem": "SREs and DevOps engineers managing mission-critical Linux cron tasks (backups, ETL jobs, cert renewals) need to wrap them in production-grade scripts that instantly page on-call engineers via PagerDuty Events API v2 upon non-zero exit codes.",
+    "searchIntent": "Generate hardened Bash wrappers and crontab lines that post error logs and incident triggers to PagerDuty Events API v2.",
+    "resultInterpretation": "Generates a production-hardened Bash wrapper script utilizing set -Eeuo pipefail, capturing stdout/stderr into temporary log files, and dispatching structured JSON incident payloads to PagerDuty with configurable severity and error snippets.",
+    "practicalGuidance": "Integrating PagerDuty Events API v2 directly into cron runners ensures that failure logs are embedded directly in the initial incident notification, dramatically reducing Mean Time to Resolution (MTTR).",
+    "limitations": "Pure client-side script synthesis.",
+    "formula": "curl -X POST https://events.pagerduty.com/v2/enqueue -d '{routing_key, event_action: trigger, payload}'",
+    "trustNotes": "100% Client-Side generation in browser memory.",
+    "related": [
+      "crontab-to-healthchecks-io-heartbeat-converter",
+      "crontab-to-uptime-kuma-monitor-converter",
+      "crontab-to-better-uptime-heartbeat-converter",
+      "curl-to-go-fasthttp-converter"
+    ],
+    "seo": {
+      "title": "Crontab to PagerDuty Converter — Free DevOps Alert Tool",
+      "metaDescription": "Wrap scheduled cron jobs in hardened PagerDuty Events API v2 alerting scripts. Auto-page on-call engineers with failure exit codes and log traces.",
+      "whatIsThis": "A DevOps tool that generates hardened Bash wrapper scripts to report scheduled job failures directly to PagerDuty Events API v2.",
+      "howItWorks": "1. Enter cron schedule expression, target shell command, and PagerDuty routing key.\n2. Select alert severity level (critical, error, warning, info).\n3. Copy the production-hardened Bash script with built-in error traps and log uploads.",
+      "whyUseIt": "Eliminates silent cron failures by automatically notifying on-call engineers the moment a critical background task encounters an error.",
+      "faqs": [
+        {
+          "question": "Does this require installing the PagerDuty agent?",
+          "answer": "No, the generated script uses standard curl to post JSON payloads directly to PagerDuty's public Events API v2 endpoint without any agent dependency."
+        },
+        {
+          "question": "How are execution error logs passed to PagerDuty?",
+          "answer": "The wrapper script redirects combined stdout and stderr to a temporary log file and extracts the last 2,000 characters into the custom_details JSON payload."
+        }
+      ]
+    }
+  },
+  {
+    "id": "estate-tax-portability-dsue-unified-credit-calculator",
+    "name": "Federal Estate Tax Portability (DSUE) & 2026 Sunset Calculator",
+    "slug": "estate-tax-portability-dsue-unified-credit-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "estate tax portability calculator",
+      "dsue calculator",
+      "2026 estate tax sunset calculator",
+      "deceased spousal unused exemption calculator",
+      "form 706 portability election calculator"
+    ],
+    "primaryKeywords": [
+      "estate tax portability calculator",
+      "dsue calculator",
+      "estate tax sunset calculator"
+    ],
+    "secondaryKeywords": [
+      "federal unified credit basic exclusion amount tcja sunset surviving spouse shelter",
+      "form 706 estate tax return 40 percent top tax bracket wealth planning model"
+    ],
+    "targetUsers": [
+      "High-Net-Worth Individuals & Married Couples",
+      "Estate Planning Attorneys",
+      "Certified Financial Planners (CFPs)",
+      "Family Office Executives & CPAs"
+    ],
+    "badge": "New",
+    "userProblem": "Married couples and wealth planning professionals need to calculate the Deceased Spousal Unused Exemption (DSUE) transferred to a surviving spouse via Form 706 and evaluate exposure to the December 31, 2025 TCJA sunset which cuts the federal estate exclusion roughly in half.",
+    "searchIntent": "Calculate DSUE portability, model total surviving spouse estate tax exclusion, and estimate tax savings from filing Form 706.",
+    "resultInterpretation": "Calculates DSUE transferred from the first deceased spouse, models surviving spouse exclusion before and after the 2026 TCJA sunset, estimates 40% federal estate tax liability, and quantifies tax savings secured by filing Form 706.",
+    "practicalGuidance": "Even if the first deceased spouse's estate owes $0 in estate tax, an affirmative Form 706 portability return should be filed to permanently lock in the unused multi-million dollar exclusion for the surviving spouse.",
+    "limitations": "Federal estate tax statutory rules under IRC Section 2010(c).",
+    "formula": "DSUE = max(0, First_BEA - First_Taxable_Estate); Total_Surviving_Exclusion = Surviving_BEA + DSUE",
+    "trustNotes": "100% Client-Side wealth planning in browser memory.",
+    "related": [
+      "qualified-small-business-stock-gain-exclusion-cap-calculator",
+      "venture-debt-warrant-coverage-calculator",
+      "arr-waterfall-bridge-ebitda-calculator",
+      "safe-note-pre-vs-post-money-calculator"
+    ],
+    "seo": {
+      "title": "Estate Tax Portability (DSUE) Calculator — Free Wealth Tool",
+      "metaDescription": "Calculate federal estate tax DSUE portability and evaluate exposure to the 2026 TCJA sunset. Model Form 706 spousal exemption transfer savings.",
+      "whatIsThis": "A wealth preservation utility that calculates federal estate tax DSUE portability and models surviving spouse tax liabilities around the 2026 TCJA sunset.",
+      "howItWorks": "1. Enter first deceased spouse's death year and taxable estate value.\n2. Enter surviving spouse's projected estate at death and toggle Form 706 election status.\n3. View portable DSUE exemption, total surviving tax shield, and federal tax savings.",
+      "whyUseIt": "Helps high-net-worth families protect millions of dollars from unnecessary 40% federal estate tax liabilities through timely portability elections.",
+      "faqs": [
+        {
+          "question": "What is the Deceased Spousal Unused Exemption (DSUE)?",
+          "answer": "DSUE allows a surviving spouse to inherit and apply whatever portion of the first deceased spouse's federal basic exclusion amount was not utilized at their death."
+        },
+        {
+          "question": "What happens to the estate tax exemption in 2026?",
+          "answer": "Under the 2017 TCJA sunset, the individual basic exclusion amount drops from ~$13.99M in 2025 back to approximately ~$7.0M on January 1, 2026, adjusted for inflation."
+        }
+      ]
+    }
+  },
+  {
+    "id": "svg-isometric-cube-3d-tile-generator",
+    "name": "SVG 2.5D Isometric Cube & Game Tile Generator",
+    "slug": "svg-isometric-cube-3d-tile-generator",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "svg isometric cube generator",
+      "isometric tile generator svg",
+      "2.5d game tile svg generator",
+      "isometric block generator vector",
+      "react isometric cube component generator"
+    ],
+    "primaryKeywords": [
+      "svg isometric cube generator",
+      "isometric tile generator",
+      "svg isometric block"
+    ],
+    "secondaryKeywords": [
+      "dimetric 2:1 ratio top left right polygon faces shading lighting vector asset",
+      "game development strategy game tile asset export react jsx svg component"
+    ],
+    "targetUsers": [
+      "Indie Game Developers (Strategy & Sim)",
+      "Graphic Designers & Pixel Artists",
+      "UI/UX Animators & Web Designers",
+      "Creative Coders & Educators"
+    ],
+    "badge": "New",
+    "userProblem": "Game developers, graphic designers, and UI engineers building isometric web games or hero illustrations need a customizable SVG 2.5D isometric cube and tile generator with true 2:1 dimetric projection, shading angles, and React JSX export.",
+    "searchIntent": "Generate customizable SVG 2.5D isometric cubes and game tiles with real-time preview, shading, and React code export.",
+    "resultInterpretation": "Renders an interactive SVG isometric block with true 2:1 pixel-perfect game projection, controls for width, height extrusion, surface colors, wireframe strokes, and outputs standalone SVG markup and React JSX components.",
+    "practicalGuidance": "Using a 2:1 dimetric projection ensures that tiled isometric grids align seamlessly without fractional pixel rounding artifacts or visible seam gaps.",
+    "limitations": "Pure client-side vector synthesis.",
+    "formula": "Top_Face: (cx, cy-h), (cx+w, cy), (cx, cy+h), (cx-w, cy) where w = size/2, h = size/4",
+    "trustNotes": "100% Client-Side vector generation in browser memory.",
+    "related": [
+      "hex-grid-coordinate-system-converter-distance-calculator",
+      "hex-grid-movement-range-cost-calculator",
+      "css-backdrop-filter-blur-glass-playground",
+      "svg-matrix-transformation-visualizer"
+    ],
+    "seo": {
+      "title": "SVG 2.5D Isometric Cube Generator — Free Game Asset Tool",
+      "metaDescription": "Generate customizable 2.5D isometric cubes and game tiles in pure SVG. Tune size, extrusion height, shading, and export standalone SVG or React JSX.",
+      "whatIsThis": "A vector graphic design tool that generates scalable 2.5D isometric block tiles and game assets in pure SVG and React JSX.",
+      "howItWorks": "1. Adjust width, extrusion height, surface color, and wireframe stroke width.\n2. Preview the crisp isometric polygon tile in real time.\n3. Copy the standalone SVG code or ready-to-use React component.",
+      "whyUseIt": "Creates lightweight, resolution-independent 2.5D vector assets for turn-based strategy games, dashboard illustrations, and interactive maps.",
+      "faqs": [
+        {
+          "question": "What projection angle is used for isometric game tiles?",
+          "answer": "Video games use a 2:1 dimetric projection (approx 26.565 degrees) where 2 horizontal pixels correspond to 1 vertical pixel, preventing jagged diagonal lines."
+        },
+        {
+          "question": "Can I use these tiles in React or Next.js?",
+          "answer": "Yes, the tool generates a clean, parameterized React component that accepts color, size, and height props for dynamic tile rendering."
+        }
+      ]
+    }
+  },
+  {
+    "id": "critical-swim-speed-css-aerobic-pace-calculator",
+    "name": "Critical Swim Speed (CSS) & Aerobic Training Zones Calculator",
+    "slug": "critical-swim-speed-css-aerobic-pace-calculator",
+    "category": "health",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "critical swim speed calculator",
+      "css swimming calculator",
+      "swim pace zones calculator",
+      "aerobic threshold swim pace",
+      "400m 200m time trial swim calculator"
+    ],
+    "primaryKeywords": [
+      "critical swim speed calculator",
+      "css calculator swimming",
+      "swim pace calculator"
+    ],
+    "secondaryKeywords": [
+      "aerobic threshold velocity meters per second pace per 100m anaerobic reserve d-prime",
+      "triathlon masters swimming 5 zone aerobic conditioning interval targets"
+    ],
+    "targetUsers": [
+      "Competitive Swimmers & Coaches",
+      "Triathletes & Ironman Competitors",
+      "Masters Swim Teams",
+      "Exercise Physiologists & Sports Scientists"
+    ],
+    "badge": "New",
+    "userProblem": "Swimmers, triathletes, and swim coaches need to determine an athlete's Critical Swim Speed (CSS)—their theoretical maximal aerobic velocity in min/100m—from standard 400m and 200m time trials to prescribe individualized aerobic pace zones.",
+    "searchIntent": "Calculate Critical Swim Speed (CSS) in m/s and min/100m pace, estimate anaerobic work capacity (D'), and generate 5 aerobic training zones.",
+    "resultInterpretation": "Calculates critical velocity in meters per second, CSS base pace per 100m, anaerobic work capacity (D' in meters), predicted 1500m threshold times, and generates a 5-tier training zone chart with split pace offsets.",
+    "practicalGuidance": "Critical Swim Speed represents the threshold pace a swimmer can sustain for 30-40 minutes without continuous blood lactate accumulation. Doing 100m repeats at CSS with short 10-15s rest is the gold standard for aerobic endurance.",
+    "limitations": "Ginn & Wakayoshi two-point critical velocity model.",
+    "formula": "CSS (m/s) = (400 - 200) / (T400 - T200); CSS_Pace = 100 / CSS_mps; D' = 400 - (CSS * T400)",
+    "trustNotes": "100% Client-Side exercise physiology calculations.",
+    "related": [
+      "running-economy-aerobic-cost-calculator",
+      "maximum-aerobic-speed-mas-running-intervals-calculator",
+      "critical-power-w-prime-anaerobic-capacity-calculator",
+      "aerobic-decoupling-cardiac-drift-calculator"
+    ],
+    "seo": {
+      "title": "Critical Swim Speed (CSS) Calculator — Free Swimming Tool",
+      "metaDescription": "Calculate Critical Swim Speed (CSS in min/100m) from 400m and 200m time trials. Generate individualized 5-tier aerobic training pace zones.",
+      "whatIsThis": "A sports physiology utility that calculates an athlete's Critical Swim Speed (CSS) and prescribes customized aerobic training zones.",
+      "howItWorks": "1. Enter 400m and 200m all-out swim time trial results.\n2. View Critical Velocity in m/s, CSS base pace per 100m, and anaerobic capacity (D').\n3. Review prescribed 100m target split times for Recovery, Endurance, Threshold, and Sprint zones.",
+      "whyUseIt": "Enables swimmers and triathletes to train at scientifically validated aerobic paces rather than guessing workout intensity.",
+      "faqs": [
+        {
+          "question": "What is Critical Swim Speed (CSS)?",
+          "answer": "CSS is the swimming equivalent of Functional Threshold Power (FTP) in cycling—the maximum swimming pace you can maintain aerobically without fatiguing exponentially."
+        },
+        {
+          "question": "How often should CSS be retested?",
+          "answer": "Every 4 to 6 weeks to evaluate aerobic fitness improvements and recalibrate workout interval split targets."
+        }
+      ]
+    }
   }
 ]
