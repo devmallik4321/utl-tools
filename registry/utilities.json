@@ -21163,5 +21163,615 @@
         }
       ]
     }
+  },
+  {
+    "id": "curl-to-scala-akka-http-converter",
+    "name": "cURL to Scala Akka HTTP & Apache Pekko HTTP Converter",
+    "slug": "curl-to-scala-akka-http-converter",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "curl to scala converter",
+      "akka http client generator",
+      "apache pekko http client",
+      "curl to pekko http",
+      "scala reactive http request generator"
+    ],
+    "primaryKeywords": [
+      "curl to scala",
+      "akka http client generator",
+      "pekko http client"
+    ],
+    "secondaryKeywords": [
+      "scala singleRequest HttpRequest HttpEntity unmarshal json",
+      "convert curl to reactive scala future http client"
+    ],
+    "targetUsers": [
+      "Scala Developers",
+      "Backend & Distributed Systems Engineers",
+      "Akka / Pekko Microservices Engineers",
+      "Full-Stack Functional Programmers"
+    ],
+    "badge": "New",
+    "userProblem": "Scala developers building reactive microservices with Akka HTTP or Apache Pekko HTTP need to convert complex cURL commands into HttpRequest, HttpEntity, RawHeader, and Future Unmarshal pipelines without manual syntax boilerplate.",
+    "searchIntent": "Convert cURL commands to Scala Akka HTTP and Apache Pekko HTTP reactive client code.",
+    "resultInterpretation": "Parses methods, URLs, custom headers, and JSON request bodies, generating production-grade Akka HTTP or Pekko HTTP singleRequest code with asynchronous Future handling.",
+    "practicalGuidance": "Apache Pekko HTTP is the open-source Apache foundation fork of Akka HTTP. Toggle between Pekko and Akka package namespaces depending on your project build dependencies.",
+    "limitations": "Generates standard singleRequest HTTP calls for all common REST methods.",
+    "formula": "cURL CLI -> AST Parser -> Akka/Pekko HttpRequest(HttpMethods, Uri, headers, entity)",
+    "trustNotes": "100% Client-Side memory execution. Zero network calls.",
+    "related": [
+      "curl-to-scala-sttp-converter",
+      "curl-to-ocaml-ezcurl-converter",
+      "curl-to-ocaml-cohttp-converter",
+      "curl-to-haskell-http-conduit-converter"
+    ],
+    "seo": {
+      "title": "cURL to Scala Akka HTTP & Apache Pekko HTTP Converter — Free Tool",
+      "metaDescription": "Convert cURL commands to Scala Akka HTTP and Apache Pekko HTTP reactive client code. Automatic HttpRequest, headers, and JSON entity generation.",
+      "whatIsThis": "A developer code generator that converts cURL commands into reactive Scala code for Akka HTTP and Apache Pekko HTTP.",
+      "howItWorks": "1. Paste a cURL command.\n2. Choose Apache Pekko HTTP or Akka HTTP framework.\n3. Copy the compiled Scala request object and Future execution handler.",
+      "whyUseIt": "Eliminates repetitive boilerplate when integrating REST endpoints into Scala actor systems and microservices.",
+      "faqs": [
+        {
+          "question": "What is Apache Pekko HTTP?",
+          "answer": "Apache Pekko is an open-source fork of the Akka reactive framework created by the Apache Software Foundation under the Apache 2.0 license."
+        },
+        {
+          "question": "How does this handle JSON request payloads?",
+          "answer": "It automatically sets ContentTypes.`application/json` and wraps payload strings into HttpEntity with proper Scala string escaping."
+        }
+      ]
+    }
+  },
+  {
+    "id": "convertible-note-seed-round-calculator",
+    "name": "Convertible Note Seed Round Financing & Dilution Calculator",
+    "slug": "convertible-note-seed-round-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "convertible note calculator",
+      "seed round dilution calculator",
+      "valuation cap vs discount rate",
+      "startup convertible note conversion",
+      "series a convertible debt conversion"
+    ],
+    "primaryKeywords": [
+      "convertible note calculator",
+      "seed round calculator",
+      "valuation cap calculator"
+    ],
+    "secondaryKeywords": [
+      "accrued interest startup note conversion series a share price",
+      "post financing cap table founder dilution percentage"
+    ],
+    "targetUsers": [
+      "Startup Founders & Co-Founders",
+      "Angel Investors & Seed VCs",
+      "Startup CFOs & Finance Advisors",
+      "Venture Capital Attorneys"
+    ],
+    "badge": "Popular",
+    "userProblem": "Founders and seed investors need to model how convertible debt converts into preferred equity upon a Series A priced round, determining whether the Valuation Cap or Discount Rate governs and calculating exact post-round dilution.",
+    "searchIntent": "Calculate convertible note conversion share price, accrued interest, and cap table dilution upon Series A financing.",
+    "resultInterpretation": "Calculates total conversion amount (principal + accrued interest), evaluates discount price vs cap price to identify the controlling mechanism, and models post-money shares and percentage ownership for founders, note holders, and new Series A investors.",
+    "practicalGuidance": "Convertible notes typically specify that investors receive whichever mechanism yields the lower share price (higher share count). If the Series A valuation exceeds the valuation cap, the cap will almost always govern.",
+    "limitations": "Models standard single-note or consolidated seed-round convertible debt conversion.",
+    "formula": "Cap_Price = Cap / Existing_Shares; Discount_Price = SeriesA_Price * (1 - Discount); Eff_Price = Min(Cap_Price, Discount_Price)",
+    "trustNotes": "100% Client-Side financial calculation.",
+    "related": [
+      "iso-83b-election-startup-equity-tax-calculator",
+      "saas-net-burn-runway-calculator",
+      "qsbs-qualified-small-business-stock-tax-exemption-calculator",
+      "saas-rule-of-40-growth-fcf-margin-calculator"
+    ],
+    "seo": {
+      "title": "Convertible Note Seed Round Calculator — Cap vs Discount Tool",
+      "metaDescription": "Calculate startup convertible note conversion upon Series A. Compare valuation cap vs discount rate and model post-financing founder dilution.",
+      "whatIsThis": "A startup venture finance calculator that models convertible debt interest compounding, conversion share prices, and post-Series A cap table equity.",
+      "howItWorks": "1. Enter note principal, annual interest rate, and months to qualified round.\n2. Input valuation cap, discount rate, and Series A terms.\n3. View governing conversion price, share counts, and post-round equity percentages.",
+      "whyUseIt": "Prevents founders from being blindsided by unexpected dilution when convertible notes convert at Series A.",
+      "faqs": [
+        {
+          "question": "How does accrued interest work on a convertible note?",
+          "answer": "Interest accrues on the principal amount until conversion. Upon qualified financing, the total principal plus accumulated interest converts into shares rather than being paid in cash."
+        },
+        {
+          "question": "What is the difference between a valuation cap and a discount rate?",
+          "answer": "A discount rate gives note holders a fixed percentage discount (usually 15-25%) off the Series A price. A valuation cap sets an upper ceiling on the company valuation used to set the note holder's conversion price."
+        }
+      ]
+    }
+  },
+  {
+    "id": "css-curved-section-separator-generator",
+    "name": "Pure CSS & SVG Curved Section Separator Generator",
+    "slug": "css-curved-section-separator-generator",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "css curved section separator generator",
+      "svg wave section divider generator",
+      "curved section divider css",
+      "custom shape divider web design",
+      "responsive svg page divider"
+    ],
+    "primaryKeywords": [
+      "css curved separator generator",
+      "svg wave divider generator",
+      "shape divider css"
+    ],
+    "secondaryKeywords": [
+      "website section divider sine wave diagonal tilt convex arc",
+      "responsive svg vector section separator react tailwind"
+    ],
+    "targetUsers": [
+      "Frontend Web Developers",
+      "UI/UX Designers",
+      "Landing Page Creators",
+      "Webflow & WordPress Designers"
+    ],
+    "badge": "New",
+    "userProblem": "Web designers and developers building modern landing pages want smooth, curved, wave, or tilted section transitions between page blocks without writing complicated SVG bezier curves by hand.",
+    "searchIntent": "Generate responsive SVG and pure CSS code for curved and wave section dividers with live visual styling and export.",
+    "resultInterpretation": "Provides 6 distinct wave archetypes (sine wave, tilt diagonal, concave arch, convex dome, rolling hills, and pointed arrow), allowing height customization, color matching, and orientation flipping with instant HTML/SVG and React export.",
+    "practicalGuidance": "Set preserveAspectRatio='none' on the SVG element so the shape stretches dynamically across 100% of the viewport width while preserving exact pixel height.",
+    "limitations": "Generates scalable SVG vector paths with responsive CSS containers.",
+    "formula": "SVG Path D = M 0 0 [C/Q/L Bezier Nodes] L 1200 120 L 0 120 Z; preserveAspectRatio = none",
+    "trustNotes": "100% Client-Side generator.",
+    "related": [
+      "pure-css-custom-range-slider-generator",
+      "css-custom-switch-toggle-generator",
+      "css-custom-checkbox-and-radio-generator",
+      "css-animated-gradient-border-generator"
+    ],
+    "seo": {
+      "title": "Pure CSS & SVG Curved Section Separator Generator — Free UI Tool",
+      "metaDescription": "Generate responsive curved, wave, and tilt section dividers for web pages. Customizable SVG paths, height, colors, and React/Tailwind code export.",
+      "whatIsThis": "A visual design tool that generates responsive SVG wave and curved dividers to create modern transitions between website sections.",
+      "howItWorks": "1. Select a wave archetype (wave, tilt, concave, convex, hills, arrow).\n2. Customize height, fill colors, and flip orientations.\n3. Copy the clean HTML/SVG or React component snippet.",
+      "whyUseIt": "Elevates visual aesthetics of landing pages and marketing sites without adding bulky external graphics libraries.",
+      "faqs": [
+        {
+          "question": "How do I make the SVG wave stretch full width?",
+          "answer": "By setting width: 100% and preserveAspectRatio='none' on the SVG with a viewBox of 0 0 1200 120, the wave stretches across any monitor resolution."
+        },
+        {
+          "question": "Can I use this with Tailwind CSS?",
+          "answer": "Yes, the generated React code uses standard Tailwind CSS utility classes (relative, w-full, overflow-hidden)."
+        }
+      ]
+    }
+  },
+  {
+    "id": "dns-loc-geographic-location-record-generator",
+    "name": "RFC 1876 DNS LOC Geographic Location Record Generator",
+    "slug": "dns-loc-geographic-location-record-generator",
+    "category": "network",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "dns loc record generator",
+      "rfc 1876 dns generator",
+      "geographic location dns record",
+      "bind loc record builder",
+      "cloudflare loc record generator"
+    ],
+    "primaryKeywords": [
+      "dns loc record generator",
+      "rfc 1876 dns generator",
+      "loc record builder"
+    ],
+    "secondaryKeywords": [
+      "latitude longitude altitude precision dms decimal conversion",
+      "bind 9 zone file loc resource record rdata"
+    ],
+    "targetUsers": [
+      "DevOps Engineers",
+      "Network Administrators",
+      "Ham Radio & APRS Operators",
+      "NTP Server & Infrastructure Operators"
+    ],
+    "badge": "New",
+    "userProblem": "Network administrators and infrastructure engineers need to publish geographic coordinates (latitude, longitude, altitude, and spherical precision) in RFC 1876 DNS LOC records, but converting decimal degrees to degrees-minutes-seconds and formatting BIND RDATA is difficult to do manually.",
+    "searchIntent": "Generate valid RFC 1876 DNS LOC zone records from decimal or DMS latitude, longitude, and altitude coordinates.",
+    "resultInterpretation": "Converts decimal coordinates to degrees, minutes, seconds, and cardinal directions (N/S, E/W), formats altitude, size, horizontal and vertical precision in meters, and generates valid BIND 9 zone records.",
+    "practicalGuidance": "DNS LOC records are commonly used by NTP pools, distributed server farms, and amateur radio operators to locate nodes geographically without querying third-party IP geolocation APIs.",
+    "limitations": "Implements the RFC 1876 DNS LOC resource record specification.",
+    "formula": "Domain TTL IN LOC Deg Min Sec N/S Deg Min Sec E/W Alt(m) Size(m) Horiz(m) Vert(m)",
+    "trustNotes": "100% Client-Side generation. Zero network requests.",
+    "related": [
+      "rfc-9460-dns-https-svcb-record-generator",
+      "dns-naptr-record-generator",
+      "dns-srv-service-record-generator",
+      "dns-tlsa-dane-record-generator"
+    ],
+    "seo": {
+      "title": "RFC 1876 DNS LOC Record Generator — Geographic DNS Tool",
+      "metaDescription": "Generate RFC 1876 DNS LOC geographic records from latitude, longitude, and altitude. Formats BIND zone files and Cloudflare RDATA strings.",
+      "whatIsThis": "A network utility that constructs RFC 1876 DNS LOC records containing physical geographic coordinates for hostnames.",
+      "howItWorks": "1. Choose a city preset or enter latitude and longitude.\n2. Configure altitude, object size, and horizontal/vertical precision.\n3. Copy the formatted BIND zone entry or raw RDATA string.",
+      "whyUseIt": "Provides an authoritative, protocol-standard way to embed node physical locations directly into DNS.",
+      "faqs": [
+        {
+          "question": "What is an RFC 1876 DNS LOC record?",
+          "answer": "RFC 1876 defines the LOC resource record type, allowing domain names to publish their geographical coordinates (latitude, longitude, altitude, and precision) in DNS."
+        },
+        {
+          "question": "How are decimal degrees converted to DNS LOC format?",
+          "answer": "Decimal degrees are converted to whole degrees, minutes, and decimal seconds with a cardinal direction indicator (N, S, E, or W)."
+        }
+      ]
+    }
+  },
+  {
+    "id": "saas-net-burn-runway-calculator",
+    "name": "SaaS Net Burn & Cash Runway Timeline Simulator",
+    "slug": "saas-net-burn-runway-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "saas net burn runway calculator",
+      "startup cash runway calculator",
+      "gross burn vs net burn",
+      "default alive default dead calculator",
+      "startup zero cash date forecaster"
+    ],
+    "primaryKeywords": [
+      "saas net burn runway calculator",
+      "startup cash runway calculator",
+      "net burn calculator"
+    ],
+    "secondaryKeywords": [
+      "monthly recurring revenue growth rate expense ramp runway forecast",
+      "paul graham default alive cash flow breakeven projection"
+    ],
+    "targetUsers": [
+      "SaaS Founders & Co-Founders",
+      "Startup CEOs & CFOs",
+      "Venture Capital Board Members",
+      "Startup Financial Analysts"
+    ],
+    "badge": "Popular",
+    "userProblem": "Startup founders need to forecast cash runway dynamically, accounting for monthly recurring revenue (MRR) growth and expense ramps, to determine whether they are Default Alive or Default Dead and pinpoint their exact zero-cash date.",
+    "searchIntent": "Simulate startup monthly cash runway and net burn with revenue growth and expense ramp projections.",
+    "resultInterpretation": "Compares simple static runway against dynamic growth-modeled runway, predicts exact zero-cash date or cash-flow breakeven month, evaluates Paul Graham Default Alive status, and outputs a 12-month projection table.",
+    "practicalGuidance": "Static runway (Cash / Current Net Burn) is overly pessimistic for growing companies and overly optimistic if expenses ramp faster than revenue. Dynamic modeling shows whether you reach breakeven before exhausting cash reserves.",
+    "limitations": "Deterministic monthly financial simulation model.",
+    "formula": "Net_Burn_t = Gross_Burn_t - MRR_t; Cash_(t+1) = Cash_t - Net_Burn_t",
+    "trustNotes": "100% Client-Side calculation. Financial figures never leave your device.",
+    "related": [
+      "saas-rule-of-40-growth-fcf-margin-calculator",
+      "saas-cac-payback-period-calculator",
+      "saas-burn-multiple-capital-efficiency-calculator",
+      "convertible-note-seed-round-calculator"
+    ],
+    "seo": {
+      "title": "SaaS Net Burn & Cash Runway Calculator — Startup Finance Tool",
+      "metaDescription": "Model startup cash runway dynamically with MRR growth and expense ramps. Calculate zero-cash date and Paul Graham Default Alive status.",
+      "whatIsThis": "A SaaS cash flow runway simulator that models monthly gross burn, net burn, and revenue growth to forecast cash runway.",
+      "howItWorks": "1. Input cash in bank, monthly expenses, and current MRR.\n2. Set MoM revenue growth rate and expense ramp rate.\n3. View dynamic runway months, zero-cash date, and 12-month cash projection.",
+      "whyUseIt": "Helps founders know exactly when to start fundraising before cash dips below critical safety thresholds.",
+      "faqs": [
+        {
+          "question": "What is the difference between Gross Burn and Net Burn?",
+          "answer": "Gross burn is the total cash spent each month on operations (payroll, servers, rent). Net burn is gross burn minus monthly cash collected from revenue."
+        },
+        {
+          "question": "What does Default Alive mean?",
+          "answer": "Coined by Paul Graham of Y Combinator, a startup is Default Alive if its existing cash runway is sufficient to reach profitability at its current growth and expense trajectories without raising additional capital."
+        }
+      ]
+    }
+  },
+  {
+    "id": "hex-grid-field-of-view-shadowcasting-calculator",
+    "name": "Hexagonal Grid Field of View (FOV) & Shadowcasting Calculator",
+    "slug": "hex-grid-field-of-view-shadowcasting-calculator",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "hex grid fov calculator",
+      "hexagonal shadowcasting calculator",
+      "hex line of sight raycast calculator",
+      "turn based game hex field of view",
+      "hex tile vision radius generator"
+    ],
+    "primaryKeywords": [
+      "hex grid fov calculator",
+      "hexagonal shadowcasting",
+      "hex field of view calculator"
+    ],
+    "secondaryKeywords": [
+      "axial coordinates line of sight raycasting obstacle blocking",
+      "interactive canvas hex vision cone game dev tile array export"
+    ],
+    "targetUsers": [
+      "Game Developers & Technical Artists",
+      "Turn-based RPG & Strategy Game Designers",
+      "Procedural Roguelike Developers",
+      "Tabletop & Board Game Creators"
+    ],
+    "badge": "New",
+    "userProblem": "Game developers building turn-based tactical games, roguelikes, or strategy titles on hexagonal grids need an interactive tool to calculate and visualize line-of-sight (LOS) and field of view (FOV) around obstacles.",
+    "searchIntent": "Calculate and visualize hexagonal field of view and shadowcasting with interactive obstacle placement and code export.",
+    "resultInterpretation": "Renders an interactive HTML5 hex grid canvas allowing users to click and toggle wall obstacles, computes line-of-sight raycasts to all tiles within radius R, and exports visible axial (q, r) tile coordinates in JSON format.",
+    "practicalGuidance": "Hexagonal line drawing uses fractional cube coordinate linear interpolation (Lerp) rounded to the nearest integer cube vector (satisfying x + y + z = 0). If any intermediate tile along the ray is opaque, the target tile is obscured.",
+    "limitations": "Point-to-point discrete hex raycast shadowcasting model.",
+    "formula": "Ray(A, B) = [CubeRound(Lerp(A, B, i/N)) for i in 0..N]; Visible = No Opaque in Ray(1..N-1)",
+    "trustNotes": "100% Client-Side canvas execution.",
+    "related": [
+      "hex-grid-ring-spiral-coordinate-generator",
+      "aspect-ratio-hexagonal-line-drawing-supercover-calculator",
+      "aspect-ratio-hexagonal-pixel-to-hex-picker",
+      "aspect-ratio-hexagonal-axial-to-cube-converter"
+    ],
+    "seo": {
+      "title": "Hex Grid Field of View (FOV) Calculator — Game Dev Tool",
+      "metaDescription": "Interactive hexagonal grid field of view (FOV) and line-of-sight shadowcasting tool. Click to place obstacles, adjust vision radius, and export JSON coordinates.",
+      "whatIsThis": "A game development math utility that calculates line-of-sight and field of view on hexagonal grids with interactive obstacle testing.",
+      "howItWorks": "1. Adjust vision radius (2 to 6 hex tiles).\n2. Click on hex tiles to toggle wall obstacles or load presets.\n3. View illuminated vs shadowed tiles and export visible coordinates.",
+      "whyUseIt": "Provides game designers with instant visual verification of hexagonal line-of-sight algorithms for fog of war and tactical range.",
+      "faqs": [
+        {
+          "question": "How does line of sight work on a hex grid?",
+          "answer": "Line of sight casts a ray between the center player tile and every potential target tile. If the ray passes through an opaque obstacle tile, all tiles behind it are cast into shadow."
+        },
+        {
+          "question": "What coordinate system is used for exports?",
+          "answer": "Coordinates are exported in standard axial (q, r) notation, where q is the column axis and r is the row axis."
+        }
+      ]
+    }
+  },
+  {
+    "id": "crontab-to-better-uptime-heartbeat-converter",
+    "name": "Crontab to Better Uptime Heartbeat Monitor Converter",
+    "slug": "crontab-to-better-uptime-heartbeat-converter",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "crontab to better uptime converter",
+      "better stack cron heartbeat generator",
+      "better uptime cron monitor wrapper",
+      "cron dead man switch better uptime",
+      "terraform better uptime heartbeat"
+    ],
+    "primaryKeywords": [
+      "crontab to better uptime",
+      "better uptime heartbeat generator",
+      "better stack cron monitor"
+    ],
+    "secondaryKeywords": [
+      "bash wrapper start fail success duration telemetry curl",
+      "terraform betteruptime_heartbeat resource configuration"
+    ],
+    "targetUsers": [
+      "DevOps Engineers & SREs",
+      "Platform & Infrastructure Engineers",
+      "Backend Developers",
+      "System Administrators"
+    ],
+    "badge": "New",
+    "userProblem": "Engineers using Better Stack (Better Uptime) need to monitor scheduled cron tasks with heartbeats, handling start signals, failure alerting on non-zero exit codes, and duration telemetry without writing brittle bash scripts.",
+    "searchIntent": "Convert cron expressions to Better Uptime heartbeat configurations, hardened bash wrappers, and Terraform code.",
+    "resultInterpretation": "Parses standard 5-part cron schedules to compute expected frequencies and grace periods, generating an automated bash wrapper with exit-code handling and execution telemetry plus Terraform IaC resources.",
+    "practicalGuidance": "Better Uptime heartbeats support /start, /fail, and ?duration=seconds query parameters. Sending /start allows Better Stack to alert you if a cron job runs longer than expected or hangs.",
+    "limitations": "Standard POSIX cron expression translation to Better Stack API.",
+    "formula": "Period_Sec = Cron_Interval; Grace_Sec = Grace_Minutes * 60; Heartbeat_URL = https://betteruptime.com/api/v1/heartbeat/{token}",
+    "trustNotes": "100% Client-Side generator.",
+    "related": [
+      "crontab-to-uptime-kuma-monitor-converter",
+      "crontab-to-datadog-synthetics-schedule-converter",
+      "crontab-to-google-cloud-scheduler-converter",
+      "crontab-to-cloudwatch-events-converter"
+    ],
+    "seo": {
+      "title": "Crontab to Better Uptime Heartbeat Converter — Free DevOps Tool",
+      "metaDescription": "Convert crontab schedules to Better Uptime (Better Stack) heartbeat monitors. Generates bash wrappers with start/fail pings and Terraform code.",
+      "whatIsThis": "A DevOps automation tool that converts cron schedules into Better Uptime heartbeat configurations and production bash wrapper scripts.",
+      "howItWorks": "1. Enter your cron expression and Better Uptime heartbeat token.\n2. Set grace period and target command.\n3. Copy the hardened bash wrapper or Terraform provider block.",
+      "whyUseIt": "Prevents silent cron failures by ensuring Better Stack alerts your team whenever a scheduled backup or ETL job fails or hangs.",
+      "faqs": [
+        {
+          "question": "What is a Better Uptime heartbeat monitor?",
+          "answer": "A heartbeat monitor (or dead man's switch) expects your recurring background job to ping an endpoint periodically. If the ping is not received within the expected window, an incident is triggered."
+        },
+        {
+          "question": "Why should my cron script send a /start signal?",
+          "answer": "Sending a /start signal informs Better Stack that execution has begun, allowing it to detect and alert on frozen or hung processes that exceed expected runtime."
+        }
+      ]
+    }
+  },
+  {
+    "id": "safe-note-pre-vs-post-money-calculator",
+    "name": "Y Combinator SAFE Note (Pre-Money vs Post-Money) Dilution Calculator",
+    "slug": "safe-note-pre-vs-post-money-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "safe note calculator",
+      "pre money vs post money safe",
+      "y combinator safe calculator",
+      "safe dilution calculator",
+      "valuation cap safe note conversion"
+    ],
+    "primaryKeywords": [
+      "safe note calculator",
+      "pre vs post money safe",
+      "yc safe calculator"
+    ],
+    "secondaryKeywords": [
+      "startup equity dilution multiple safe notes series a conversion",
+      "unallocated employee option pool post money safe founder dilution"
+    ],
+    "targetUsers": [
+      "Startup Founders & Co-Founders",
+      "Angel Investors & Seed VCs",
+      "Venture Capital Attorneys",
+      "Accelerator Graduates (YC / Techstars)"
+    ],
+    "badge": "Popular",
+    "userProblem": "Founders raising seed capital need to understand the critical dilution difference between Y Combinator Pre-Money SAFEs and Post-Money SAFEs when multiple SAFEs stack before a Series A priced round.",
+    "searchIntent": "Compare cap table dilution between Pre-Money SAFEs and Post-Money SAFEs upon Series A conversion.",
+    "resultInterpretation": "Models multiple SAFE notes, valuation caps, and option pool expansion side-by-side across Pre-Money and Post-Money models, quantifying the exact percentage dilution penalty experienced by founders.",
+    "practicalGuidance": "In Post-Money SAFEs, each investor receives a guaranteed fixed percentage ownership that is non-dilutive to other SAFEs. This transparency protects investors but concentrates all pre-Series A dilution exclusively onto founders.",
+    "limitations": "Standard Y Combinator open-source SAFE legal framework model.",
+    "formula": "Post_SAFE_Pct = Amount / Post_Cap; Pre_SAFE_Pct = Amount / (Pre_Cap + Total_SAFEs)",
+    "trustNotes": "100% Client-Side financial calculation.",
+    "related": [
+      "convertible-note-seed-round-calculator",
+      "iso-83b-election-startup-equity-tax-calculator",
+      "saas-net-burn-runway-calculator",
+      "qsbs-qualified-small-business-stock-tax-exemption-calculator"
+    ],
+    "seo": {
+      "title": "Y Combinator SAFE Note Calculator — Pre vs Post-Money Dilution",
+      "metaDescription": "Compare Pre-Money vs Post-Money SAFE note conversion and dilution. Model multiple SAFEs, valuation caps, option pools, and founder ownership.",
+      "whatIsThis": "A venture capital equity calculator that models dilution differences between YC Pre-Money and Post-Money Simple Agreements for Future Equity.",
+      "howItWorks": "1. Enter investment amounts and valuation caps for your SAFE notes.\n2. Input Series A round valuation and option pool target.\n3. Compare post-financing cap table percentages between Pre-Money and Post-Money SAFEs.",
+      "whyUseIt": "Prevents founders from accidentally surrendering excessive equity during seed fundraising rounds.",
+      "faqs": [
+        {
+          "question": "Why did Y Combinator switch to Post-Money SAFEs?",
+          "answer": "YC introduced Post-Money SAFEs in 2018 to eliminate the confusion of SAFE stacking, ensuring that both founders and investors know the exact ownership percentage being sold immediately upon signing."
+        },
+        {
+          "question": "Who suffers more dilution under Post-Money SAFEs?",
+          "answer": "Founders absorb more dilution under Post-Money SAFEs because each SAFE's ownership is fixed, meaning subsequent SAFEs dilute only the common stock rather than prior SAFE holders."
+        }
+      ]
+    }
+  },
+  {
+    "id": "svg-dashed-stroke-circle-timer-generator",
+    "name": "SVG Circular Countdown Ring Timer Generator",
+    "slug": "svg-dashed-stroke-circle-timer-generator",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "svg circle timer generator",
+      "circular countdown ring svg",
+      "svg stroke dashoffset countdown generator",
+      "react circular countdown timer component",
+      "segmented tick circular timer svg"
+    ],
+    "primaryKeywords": [
+      "svg circle timer generator",
+      "circular timer generator",
+      "svg countdown ring generator"
+    ],
+    "secondaryKeywords": [
+      "stroke-dasharray stroke-dashoffset transition animation pure svg",
+      "react countdown timer hook circular progress ring"
+    ],
+    "targetUsers": [
+      "Frontend Web Developers",
+      "UI/UX Designers",
+      "Fitness & Productivity App Authors",
+      "EdTech & Quiz Platform Developers"
+    ],
+    "badge": "New",
+    "userProblem": "Frontend developers building quiz apps, workout timers, or onboarding progress flows need customizable circular countdown ring timers without bloated third-party NPM dependencies.",
+    "searchIntent": "Generate responsive SVG circular countdown timers with customizable stroke, ticks, live animation, and React hook export.",
+    "resultInterpretation": "Calculates radius, circumference, and dynamic stroke-dashoffset formulas, supporting continuous rings or segmented tick marks, and generates standalone SVG markup or a ready-to-use React component with countdown state.",
+    "practicalGuidance": "The standard circular progress technique uses a circle element with stroke-dasharray equal to circumference and modulates stroke-dashoffset linearly as time elapses.",
+    "limitations": "Pure client-side SVG stroke-dashoffset animation.",
+    "formula": "Circumference = 2 * PI * r; Dashoffset = Circumference * (1 - Remaining / Total)",
+    "trustNotes": "100% Client-Side generator.",
+    "related": [
+      "svg-sparkline-micro-chart-generator",
+      "svg-circle-progress-ring-calculator",
+      "svg-stroke-dasharray-animator",
+      "svg-pie-donut-chart-generator"
+    ],
+    "seo": {
+      "title": "SVG Circular Countdown Timer Generator — Free UI Tool",
+      "metaDescription": "Generate customizable SVG circular countdown timers with stroke-dashoffset animations, segmented ticks, and React countdown hook export.",
+      "whatIsThis": "A visual UI generator for creating responsive SVG circular ring countdown timers with live animation and React code export.",
+      "howItWorks": "1. Set duration in seconds, circle diameter, and stroke width.\n2. Customize colors, segmented ticks, and text formatting.\n3. Test with live interactive controls and copy SVG or React code.",
+      "whyUseIt": "Provides a zero-dependency, lightweight animated circular timer for web applications.",
+      "faqs": [
+        {
+          "question": "How does the circular countdown animation work?",
+          "answer": "It uses SVG stroke-dasharray and stroke-dashoffset. By decreasing the stroke-dashoffset from circumference down to 0, the circular stroke visibly depletes in sync with the countdown timer."
+        },
+        {
+          "question": "Can I use this timer inside React or Next.js?",
+          "answer": "Yes, the tool generates a self-contained React component with a built-in useEffect countdown interval hook."
+        }
+      ]
+    }
+  },
+  {
+    "id": "maximum-aerobic-speed-mas-running-intervals-calculator",
+    "name": "Maximum Aerobic Speed (MAS) Running Intervals & Conditioning Calculator",
+    "slug": "maximum-aerobic-speed-mas-running-intervals-calculator",
+    "category": "health",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "maximum aerobic speed calculator",
+      "mas running calculator",
+      "hiit interval distances calculator",
+      "dan baker mas conditioning",
+      "eurofit 15:15 running intervals"
+    ],
+    "primaryKeywords": [
+      "maximum aerobic speed calculator",
+      "mas calculator",
+      "mas running intervals"
+    ],
+    "secondaryKeywords": [
+      "5 minute time trial velocity at vo2 max meters per second",
+      "120 percent mas eurofit short intervals tabata aerobic grid"
+    ],
+    "targetUsers": [
+      "Strength & Conditioning Coaches",
+      "Soccer, Rugby, AFL, & Basketball Coaches",
+      "Middle-Distance & Distance Runners",
+      "Exercise Physiologists & Sports Scientists"
+    ],
+    "badge": "New",
+    "userProblem": "Strength and conditioning coaches and runners need to compute an athlete's Maximum Aerobic Speed (MAS in m/s) from time trials to prescribe individualized HIIT cone running distances (such as 120% MAS 15:15s or 100% aerobic grids).",
+    "searchIntent": "Calculate Maximum Aerobic Speed (MAS) in m/s and km/h and generate prescribed HIIT interval distances.",
+    "resultInterpretation": "Calculates MAS in meters/second and km/h, determines 100% aerobic cruising pace, estimates VO2 max via the ACSM metabolic model, and generates exact individualized cone marker running distances for 120% Eurofit, 115% medium, 130% Tabata, and 100% pitch box grids.",
+    "practicalGuidance": "Research by Dan Baker demonstrates that high-intensity aerobic intervals performed at 115-125% of MAS elicit significantly greater adaptations in aerobic power and fatigue resistance than traditional long-slow distance training.",
+    "limitations": "Implements standard Dan Baker & Eurofit sports science MAS training protocols.",
+    "formula": "MAS (m/s) = Distance_Meters / Time_Seconds; Rep_Distance = MAS * Intensity_Pct * Work_Seconds",
+    "trustNotes": "100% Client-Side sports science calculation.",
+    "related": [
+      "critical-power-w-prime-anaerobic-capacity-calculator",
+      "aerobic-decoupling-cardiac-drift-calculator",
+      "vo2-max-running-fitness-calculator",
+      "pace-splits-marathon-calculator"
+    ],
+    "seo": {
+      "title": "Maximum Aerobic Speed (MAS) Calculator — Running Intervals Tool",
+      "metaDescription": "Calculate Maximum Aerobic Speed (MAS in m/s) from time trials. Generate individualized HIIT cone running distances for 120% Eurofit and Tabata intervals.",
+      "whatIsThis": "A sports science utility that calculates an athlete's Maximum Aerobic Speed (MAS) and prescribes individualized HIIT running distances.",
+      "howItWorks": "1. Select 5-minute time trial or fixed distance test (1500m/2000m).\n2. Enter distance covered or elapsed time.\n3. View MAS, aerobic pace, and exact cone running distances for 15:15s and Tabata intervals.",
+      "whyUseIt": "Eliminates one-size-fits-all conditioning by tailoring running drill distances to each athlete's unique physiological capacity.",
+      "faqs": [
+        {
+          "question": "What is Maximum Aerobic Speed (MAS)?",
+          "answer": "MAS is the lowest running velocity at which maximal oxygen uptake (VO2 max) occurs. It is the gold standard for prescribing conditioning in team sports."
+        },
+        {
+          "question": "What is the 120% MAS Eurofit protocol?",
+          "answer": "Developed by Dan Baker, it involves 15 seconds of running at 120% of MAS followed by 15 seconds of passive recovery, typically for 1-2 sets of 8-10 repetitions."
+        }
+      ]
+    }
   }
 ]
