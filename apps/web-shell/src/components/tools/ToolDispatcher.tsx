@@ -392,6 +392,17 @@ const Section179EquipmentDepreciationCalculator = dynamic(() => import("./financ
 const SvgNoiseTextureFilterGenerator = dynamic(() => import("./creative/SvgNoiseTextureFilterGenerator").then((m) => m.SvgNoiseTextureFilterGenerator), { ssr: false });
 const LactateThresholdHeartRateCalculator = dynamic(() => import("./health/LactateThresholdHeartRateCalculator").then((m) => m.LactateThresholdHeartRateCalculator), { ssr: false });
 
+const CurlToUrllib3Converter = dynamic(() => import("./developer/CurlToUrllib3Converter").then((m) => m.CurlToUrllib3Converter), { ssr: false });
+const RuleOf40Calculator = dynamic(() => import("./finance/RuleOf40Calculator").then((m) => m.RuleOf40Calculator), { ssr: false });
+const CssGridAutoFitMinmaxGenerator = dynamic(() => import("./creative/CssGridAutoFitMinmaxGenerator").then((m) => m.CssGridAutoFitMinmaxGenerator), { ssr: false });
+const DnsNaptrRecordGenerator = dynamic(() => import("./network/DnsNaptrRecordGenerator").then((m) => m.DnsNaptrRecordGenerator), { ssr: false });
+const SafeMfnAmendmentCalculator = dynamic(() => import("./finance/SafeMfnAmendmentCalculator").then((m) => m.SafeMfnAmendmentCalculator), { ssr: false });
+const HexGridFovShadowcastingAlgorithm = dynamic(() => import("./creative/HexGridFovShadowcastingAlgorithm").then((m) => m.HexGridFovShadowcastingAlgorithm), { ssr: false });
+const CronToNewRelicHeartbeatConverter = dynamic(() => import("./developer/CronToNewRelicHeartbeatConverter").then((m) => m.CronToNewRelicHeartbeatConverter), { ssr: false });
+const CostSegregationCalculator = dynamic(() => import("./finance/CostSegregationCalculator").then((m) => m.CostSegregationCalculator), { ssr: false });
+const SvgMeshGradientGenerator = dynamic(() => import("./creative/SvgMeshGradientGenerator").then((m) => m.SvgMeshGradientGenerator), { ssr: false });
+const CyclingFtpPowerZonesCalculator = dynamic(() => import("./health/CyclingFtpPowerZonesCalculator").then((m) => m.CyclingFtpPowerZonesCalculator), { ssr: false });
+
 const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "random-number-generator": RandomNumberGenerator,
   "spin-wheel": SpinWheel,
@@ -779,6 +790,17 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "section-179-equipment-depreciation-deduction-calculator": Section179EquipmentDepreciationCalculator,
   "svg-fe-turbulence-noise-texture-generator": SvgNoiseTextureFilterGenerator,
   "lactate-threshold-heart-rate-lthr-zones-calculator": LactateThresholdHeartRateCalculator,
+
+  "curl-to-python-urllib3-pool-converter": CurlToUrllib3Converter,
+  "rule-of-40-saas-efficiency-growth-margin-calculator": RuleOf40Calculator,
+  "css-grid-auto-fit-minmax-responsive-layout-generator": CssGridAutoFitMinmaxGenerator,
+  "dns-naptr-enum-sip-telephony-record-generator": DnsNaptrRecordGenerator,
+  "safe-mfn-most-favored-nation-clause-calculator": SafeMfnAmendmentCalculator,
+  "hex-grid-field-of-view-shadowcasting-algorithm": HexGridFovShadowcastingAlgorithm,
+  "crontab-to-new-relic-synthetics-heartbeat-converter": CronToNewRelicHeartbeatConverter,
+  "cost-segregation-bonus-depreciation-tax-calculator": CostSegregationCalculator,
+  "svg-radial-mesh-gradient-patch-generator": SvgMeshGradientGenerator,
+  "cycling-ftp-power-zones-coggan-calculator": CyclingFtpPowerZonesCalculator,
 };
 
 interface ToolDispatcherProps {
