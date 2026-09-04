@@ -26103,5 +26103,645 @@
         }
       ]
     }
+  },
+  {
+    "id": "curl-to-java-httpclient-converter",
+    "name": "cURL to Java HttpClient Code Converter",
+    "slug": "curl-to-java-httpclient-converter",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "curl to java converter",
+      "curl to java httpclient",
+      "convert curl to java 11 httpclient",
+      "curl java async sendAsync",
+      "curl to spring resttemplate java",
+      "java net http httpclient code generator"
+    ],
+    "primaryKeywords": [
+      "curl to java converter",
+      "curl to java httpclient",
+      "java httpclient generator",
+      "curl to java 17"
+    ],
+    "secondaryKeywords": [
+      "java.net.http.HttpClient builder",
+      "java record response dto",
+      "curl to java async http request"
+    ],
+    "targetUsers": [
+      "Java Backend Engineers",
+      "Spring Boot Developers",
+      "Enterprise Architects",
+      "API Integrators"
+    ],
+    "badge": "New",
+    "userProblem": "Java backend developers frequently need to translate cURL commands from API documentation into modern, non-blocking Java 11/17/21 java.net.http.HttpClient boilerplate with headers, body handlers, and DTO records.",
+    "searchIntent": "Convert cURL commands to modern Java 11+ java.net.http.HttpClient code supporting synchronous and async sendAsync patterns.",
+    "resultInterpretation": "Outputs clean, production-grade Java code using java.net.http.HttpClient, HttpRequest.newBuilder(), custom headers, authorization, timeouts, and modern Java record response DTOs.",
+    "practicalGuidance": "Modern Java 11+ java.net.http.HttpClient replaces legacy HttpURLConnection and Apache HttpClient without requiring external third-party dependencies.",
+    "limitations": "Multipart file uploads and binary streams should be adapted with HttpRequest.BodyPublishers.ofFile() in production.",
+    "formula": "HttpClient.newHttpClient().send(HttpRequest.newBuilder().uri(URI.create(url)).build(), HttpResponse.BodyHandlers.ofString())",
+    "trustNotes": "100% Client-Side. cURL commands and authorization tokens are parsed entirely in browser memory.",
+    "related": [
+      "curl-to-csharp-httpclient-converter",
+      "curl-to-swift-urlsession-async-await-converter",
+      "crontab-to-opsgenie-heartbeat-alert-converter",
+      "dns-cert-cryptographic-certificate-record-generator"
+    ],
+    "seo": {
+      "title": "cURL to Java HttpClient Converter — Modern Java 11/17/21 Code Generator",
+      "metaDescription": "Convert cURL commands into modern Java java.net.http.HttpClient code. Supports synchronous send, async CompletableFuture, JSON payloads, and Java records.",
+      "whatIsThis": "A developer utility that transforms raw cURL command lines into idiomatic Java 11/17/21 java.net.http.HttpClient code.",
+      "howItWorks": "1. Paste any standard cURL command with HTTP headers and body payload.\n2. Choose between Synchronous (send) or Asynchronous (sendAsync CompletableFuture) modes.\n3. Copy the compiled Java class and record DTO directly into your IDE.",
+      "whyUseIt": "Eliminates tedious manual syntax mapping from curl flags (-H, -d, -X, -u) into Java HttpRequest builders.",
+      "faqs": [
+        {
+          "question": "Which Java version is required for java.net.http.HttpClient?",
+          "answer": "java.net.http.HttpClient was introduced in Java 11 as a standard module and is fully supported in Java 17, 21, and subsequent LTS releases without external dependencies."
+        },
+        {
+          "question": "Does this tool support async HTTP requests?",
+          "answer": "Yes. You can toggle between synchronous client.send() and asynchronous non-blocking client.sendAsync() returning CompletableFuture<HttpResponse<String>>."
+        }
+      ]
+    }
+  },
+  {
+    "id": "saas-acv-tcv-deferred-revenue-waterfall-calculator",
+    "name": "SaaS ACV, TCV & Deferred Revenue Waterfall Calculator",
+    "slug": "saas-acv-tcv-deferred-revenue-waterfall-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "saas deferred revenue waterfall calculator",
+      "acv tcv calculator",
+      "asc 606 revenue recognition waterfall",
+      "unearned revenue saas model",
+      "annual contract value total contract value",
+      "multi year upfront billing deferred revenue"
+    ],
+    "primaryKeywords": [
+      "saas deferred revenue waterfall calculator",
+      "acv vs tcv calculator",
+      "asc 606 deferred revenue waterfall",
+      "b2b saas revenue recognition"
+    ],
+    "secondaryKeywords": [
+      "contract liability schedule saas",
+      "cash collections vs recognized revenue",
+      "multi-year contract billing waterfall"
+    ],
+    "targetUsers": [
+      "SaaS CFOs",
+      "FP&A Directors",
+      "Revenue Operations Managers",
+      "Startup Founders"
+    ],
+    "badge": "New",
+    "userProblem": "B2B SaaS finance teams and founders need to accurately model multi-year contracts (ACV vs TCV) and upfront annual billings into ASC 606 compliant monthly deferred revenue waterfalls and cash collections.",
+    "searchIntent": "Calculate ACV, TCV, monthly recognized revenue, cash collections, and monthly deferred revenue waterfall schedules for multi-year enterprise SaaS contracts.",
+    "resultInterpretation": "Displays ACV, TCV, monthly straight-line recognized revenue, upfront billings, and an interactive month-by-month deferred revenue waterfall balance schedule.",
+    "practicalGuidance": "Under ASC 606, cash collected upfront for multi-year software licenses must be booked as a deferred revenue liability and recognized ratably over the performance obligation period.",
+    "limitations": "Assumes ratable linear monthly recognition without usage-based true-ups or professional services carve-outs.",
+    "formula": "TCV = ACV * Contract_Years; Monthly_Recognized = TCV / Total_Months; Deferred_Rev_End = Deferred_Rev_Start + Billings - Recognized",
+    "trustNotes": "100% Client-Side financial modeling. No corporate contracts or revenue figures are transmitted.",
+    "related": [
+      "saas-gross-margin-cogs-unit-economics-calculator",
+      "saas-customer-health-score-churn-calculator",
+      "startup-anti-dilution-protection-down-round-calculator",
+      "founder-secondary-sale-equity-dilution-calculator"
+    ],
+    "seo": {
+      "title": "SaaS ACV, TCV & Deferred Revenue Waterfall Calculator — ASC 606 Schedule",
+      "metaDescription": "Calculate SaaS Annual Contract Value (ACV), Total Contract Value (TCV), and build ASC 606 monthly deferred revenue waterfall amortization schedules.",
+      "whatIsThis": "A SaaS financial planning tool that converts contract terms and billing frequencies into ASC 606 compliant deferred revenue schedules and cash flow metrics.",
+      "howItWorks": "1. Enter Annual Contract Value (ACV) and contract duration in years.\n2. Select billing schedule (Annual Upfront, Full Upfront, or Quarterly In Advance).\n3. View monthly revenue recognition, cash collections, and the complete deferred revenue balance waterfall.",
+      "whyUseIt": "Vital for SaaS GAAP/IFRS revenue compliance, board reporting, runway planning, and audit-ready contract schedules.",
+      "faqs": [
+        {
+          "question": "What is the difference between ACV and TCV?",
+          "answer": "ACV (Annual Contract Value) is the normalized annual revenue generated by a contract. TCV (Total Contract Value) includes the total committed revenue across the entire multi-year contract term, including upfront implementation fees."
+        },
+        {
+          "question": "How does ASC 606 govern upfront multi-year SaaS billings?",
+          "answer": "When a customer pays for multi-year contracts upfront, the cash is recorded as a contract liability (Deferred Revenue) on the balance sheet and recognized ratably each month as software access is delivered."
+        }
+      ]
+    }
+  },
+  {
+    "id": "css-radar-beacon-pulse-generator",
+    "name": "CSS Radar Beacon & Sonar Wave Pulse Generator",
+    "slug": "css-radar-beacon-pulse-generator",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "css radar beacon pulse generator",
+      "css sonar wave effect generator",
+      "expanding pulse ring css animation",
+      "live status ping beacon css",
+      "pure css pulsing circle ripple",
+      "tactical radar ping css effect"
+    ],
+    "primaryKeywords": [
+      "css radar beacon pulse generator",
+      "css sonar pulse effect",
+      "css pulsing beacon generator",
+      "radar ping animation css"
+    ],
+    "secondaryKeywords": [
+      "pure css ripple wave effect",
+      "status indicator beacon pulse",
+      "expanding concentric rings css"
+    ],
+    "targetUsers": [
+      "Front-End Engineers",
+      "UI/UX Designers",
+      "Game UI Developers",
+      "Dashboard Creators"
+    ],
+    "badge": "New",
+    "userProblem": "Web developers and UI designers need lightweight, pure CSS pulsing beacon, radar ping, and sonar wave effects for live status indicators, tactical dashboards, and telemetry maps without heavy external JavaScript libraries.",
+    "searchIntent": "Generate pure CSS keyframe code for radar beacon pulses, sonar ripple waves, and status indicators with customizable colors, ring counts, and speeds.",
+    "resultInterpretation": "Generates cross-browser optimized CSS @keyframes and HTML markup for concentric pulsing rings, opacity falloff, and glowing core indicators.",
+    "practicalGuidance": "Use GPU-accelerated properties (transform: scale() and opacity) rather than width/height to guarantee stutter-free 60 FPS animations on mobile devices.",
+    "limitations": "Pure CSS animation. For interactive polar coordinate target plotting, pair with SVG polar radar generators.",
+    "formula": "@keyframes pulse { 0% { transform: scale(1); opacity: 0.8; } 100% { transform: scale(3.5); opacity: 0; } }",
+    "trustNotes": "100% Client-Side. Generates standalone HTML and CSS for instant clipboard copying.",
+    "related": [
+      "css-shimmer-skeleton-loading-effect-generator",
+      "svg-polar-radar-target-sweep-generator",
+      "css-infinite-marquee-ticker-generator",
+      "hex-grid-3d-elevation-heightmap-los-algorithm"
+    ],
+    "seo": {
+      "title": "CSS Radar Beacon & Sonar Wave Pulse Generator — Pure CSS Keyframes",
+      "metaDescription": "Generate pure CSS radar beacon, sonar wave pulse rings, and glowing status ping indicators. Zero dependencies, GPU-accelerated 60 FPS animations.",
+      "whatIsThis": "A CSS code generator that builds tactical radar pulses, expanding sonar waves, and live beacon animations using hardware-accelerated CSS keyframes.",
+      "howItWorks": "1. Choose beacon theme (Tactical Emerald, Radar Cyan, Warning Amber, Crimson Alert, or Neon Purple).\n2. Customize ring count, pulse duration, maximum expansion scale, and core size.\n3. Preview live animation and copy ready-to-use HTML and CSS.",
+      "whyUseIt": "Replaces heavy canvas or JavaScript animation scripts with featherlight, hardware-accelerated CSS.",
+      "faqs": [
+        {
+          "question": "Is this animation hardware-accelerated?",
+          "answer": "Yes. The keyframes strictly animate 'transform: scale()' and 'opacity', ensuring the browser composites layers directly on the GPU without reflows."
+        },
+        {
+          "question": "Can I use multiple pulsing rings?",
+          "answer": "Yes. The generator automatically calculates staggered 'animation-delay' offsets across pseudo-elements and child spans for smooth, continuous wave propagation."
+        }
+      ]
+    }
+  },
+  {
+    "id": "dns-cert-cryptographic-certificate-record-generator",
+    "name": "DNS CERT Record Generator (RFC 4398 PKIX & PGP)",
+    "slug": "dns-cert-cryptographic-certificate-record-generator",
+    "category": "network",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "dns cert record generator",
+      "rfc 4398 cert record builder",
+      "dns certificate record generator",
+      "pkix x509 dns cert record",
+      "pgp key in dns cert record",
+      "dns zone cert type 37 generator"
+    ],
+    "primaryKeywords": [
+      "dns cert record generator",
+      "rfc 4398 cert record",
+      "dns certificate record",
+      "bind9 cert record builder"
+    ],
+    "secondaryKeywords": [
+      "pkix certificate dns entry",
+      "pgp openpgp dns cert record",
+      "dnssec cert record format"
+    ],
+    "targetUsers": [
+      "DevOps Engineers",
+      "DNS Administrators",
+      "Security Architects",
+      "Infrastructure SREs"
+    ],
+    "badge": "New",
+    "userProblem": "System administrators and security engineers need to publish X.509 PKIX or PGP public certificates directly in DNS zone files under RFC 4398, requiring exact calculation of certificate type codes, key tags, algorithms, and base64 payloads.",
+    "searchIntent": "Generate RFC 4398 compliant DNS CERT resource records for BIND9, Cloudflare, PowerDNS, and Route53 zone files.",
+    "resultInterpretation": "Produces valid RFC 4398 DNS CERT zone record strings, tinydns format, key tag checksums, and hex payload diagnostics.",
+    "practicalGuidance": "Publishing CERT records allows cryptographic certificate discovery via standard DNS queries without relying on proprietary LDAP or external CA directories.",
+    "limitations": "For large X.509 certificates (> 512 bytes), DNS queries must support EDNS0 or fallback to TCP transport.",
+    "formula": "<name> [ttl] IN CERT <type> <key-tag> <algorithm> <certificate-data>",
+    "trustNotes": "100% Client-Side. Public certificates and keys are parsed entirely in browser memory.",
+    "related": [
+      "dns-openpgpkey-email-encryption-record-generator",
+      "dns-sshfp-record-generator",
+      "curl-to-java-httpclient-converter",
+      "crontab-to-opsgenie-heartbeat-alert-converter"
+    ],
+    "seo": {
+      "title": "DNS CERT Record Generator (RFC 4398) — PKIX, SPKI & PGP DNS Builder",
+      "metaDescription": "Generate RFC 4398 compliant DNS CERT resource records for BIND9, PowerDNS, and Cloudflare. Supports X.509 PKIX, PGP, and SPKI public certificates.",
+      "whatIsThis": "A cryptographic network utility for building standard RFC 4398 DNS CERT resource records to distribute public keys and certificates via DNS.",
+      "howItWorks": "1. Enter domain name and TTL.\n2. Select certificate type (PKIX / X.509, PGP, SPKI, or URI).\n3. Input key tag, cryptographic algorithm, and paste base64 certificate payload.\n4. Copy BIND9 / Cloudflare zone record syntax.",
+      "whyUseIt": "Prevents syntax and encoding errors in RFC 4398 DNS certificate distribution.",
+      "faqs": [
+        {
+          "question": "What is a DNS CERT record (RFC 4398)?",
+          "answer": "A CERT record (DNS Type 37) stores cryptographic certificates directly in the Domain Name System, enabling automated public key discovery and validation."
+        },
+        {
+          "question": "What certificate types are supported by RFC 4398?",
+          "answer": "RFC 4398 specifies type 1 for PKIX (X.509), type 2 for SPKI, type 3 for PGP, type 4 for IPKIX, and types 253/254 for URI-based references."
+        }
+      ]
+    }
+  },
+  {
+    "id": "startup-anti-dilution-protection-down-round-calculator",
+    "name": "Startup Anti-Dilution Down-Round Calculator (Broad-Based & Full Ratchet)",
+    "slug": "startup-anti-dilution-protection-down-round-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "startup anti dilution calculator",
+      "down round calculator",
+      "broad based weighted average anti dilution",
+      "narrow based weighted average vs full ratchet",
+      "convertible preferred stock anti dilution",
+      "series a down round cap table model"
+    ],
+    "primaryKeywords": [
+      "startup anti dilution calculator",
+      "broad based weighted average calculator",
+      "down round dilution calculator",
+      "full ratchet anti dilution formula"
+    ],
+    "secondaryKeywords": [
+      "narrow based anti dilution calculator",
+      "conversion price adjustment down round",
+      "founder equity loss down round"
+    ],
+    "targetUsers": [
+      "Startup Founders",
+      "Venture Capitalists",
+      "Angel Investors",
+      "Cap Table Counsel"
+    ],
+    "badge": "New",
+    "userProblem": "Startup founders and early investors facing a down-round financing need to accurately evaluate the dilution impact of Broad-Based Weighted Average, Narrow-Based Weighted Average, and Full Ratchet anti-dilution clauses on conversion prices and post-round ownership percentages.",
+    "searchIntent": "Calculate conversion price adjustments, additional shares issued, and cap table ownership shifts across Broad-Based, Narrow-Based, and Full Ratchet anti-dilution mechanisms.",
+    "resultInterpretation": "Provides side-by-side comparison of new conversion prices, effective shares issued, and post-round equity breakdown between founders, early investors, and new down-round investors.",
+    "practicalGuidance": "Broad-based weighted average is the standard NVCA market protection; Full Ratchet is severe and disproportionately wipes out common stockholders in down rounds.",
+    "limitations": "Assumes single preferred share class adjustment; multi-tiered series with divergent anti-dilution terms require sequential waterfall modeling.",
+    "formula": "CP2 = CP1 * (A + B) / (A + C), where A = Pre-round Shares, B = Capital Raised / CP1, C = New Shares Issued",
+    "trustNotes": "100% Client-Side calculation. Zero cap table or valuation figures are sent to any server.",
+    "related": [
+      "founder-secondary-sale-equity-dilution-calculator",
+      "startup-liquidation-waterfall-calculator",
+      "saas-acv-tcv-deferred-revenue-waterfall-calculator",
+      "idgt-trust-promissory-note-installment-sale-calculator"
+    ],
+    "seo": {
+      "title": "Startup Anti-Dilution Down-Round Calculator — Broad-Based & Full Ratchet",
+      "metaDescription": "Calculate new conversion prices and founder equity dilution in a down round. Compare Broad-Based Weighted Average, Narrow-Based, and Full Ratchet anti-dilution.",
+      "whatIsThis": "A venture capital financial calculator that models preferred stock conversion price adjustments and equity dilution during down-round financing rounds.",
+      "howItWorks": "1. Input Series A original share price and capital invested.\n2. Input existing share base (common stock, options pool, warrants).\n3. Input new down-round share price and capital to be raised.\n4. Compare Broad-Based Weighted Average, Narrow-Based, and Full Ratchet outcomes.",
+      "whyUseIt": "Crucial for founders and boards negotiating term sheet anti-dilution provisions and preparing for difficult financing environments.",
+      "faqs": [
+        {
+          "question": "What is the difference between Broad-Based and Narrow-Based Weighted Average?",
+          "answer": "Broad-Based includes all common stock, preferred stock, options, and unissued pool shares in the base (A), diluting the price adjustment. Narrow-Based only counts currently issued preferred shares, resulting in a more aggressive repricing."
+        },
+        {
+          "question": "Why is Full Ratchet anti-dilution considered toxic for founders?",
+          "answer": "Full Ratchet reduces the conversion price directly to the down-round price regardless of how few shares are issued, causing massive common equity wipeouts."
+        }
+      ]
+    }
+  },
+  {
+    "id": "hex-grid-3d-elevation-heightmap-los-algorithm",
+    "name": "Hex Grid 3D Elevation Heightmap & Line-of-Sight Algorithm",
+    "slug": "hex-grid-3d-elevation-heightmap-los-algorithm",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "hex grid elevation heightmap algorithm",
+      "hex grid line of sight 3d",
+      "hexagonal terrain shadowcasting",
+      "hex grid raycasting elevation slope",
+      "wargame hex line of sight calculator",
+      "3d hex heightmap obstruction algorithm"
+    ],
+    "primaryKeywords": [
+      "hex grid 3d elevation heightmap",
+      "hex grid line of sight",
+      "hex terrain elevation shadowcasting",
+      "hexagonal los algorithm"
+    ],
+    "secondaryKeywords": [
+      "wargame hex los height check",
+      "axial coordinates 3d hex heightmap",
+      "terrain slope occlusion algorithm"
+    ],
+    "targetUsers": [
+      "Indie Game Developers",
+      "Tactical RPG Programmers",
+      "Tabletop Wargamers",
+      "Procedural Generation Designers"
+    ],
+    "badge": "New",
+    "userProblem": "Game developers and tabletop wargamers need to determine true 3D line-of-sight across hexagonal tile grids where hexes have varying vertical heights, hills, and cliff terrain occlusions.",
+    "searchIntent": "Simulate and visualize 3D line-of-sight, terrain shadowcasting, and slope occlusion across hexagonal heightmaps using axial coordinate ray interpolation.",
+    "resultInterpretation": "Renders interactive isometric/top-down hex grid with elevation contours, raycasting line-of-sight trace, obstructed tiles, and line slope elevation profiles.",
+    "practicalGuidance": "Interpolating 3D rays in cube coordinates (x, y, z) + height (h) prevents directional bias inherent in offset coordinate systems.",
+    "limitations": "Assumes planar tile heights without partial cover or forest canopy transparent foliage penetration.",
+    "formula": "h(t) = h_origin + t * (h_target - h_origin); Obstructed if Terrain_Height(t) > h(t)",
+    "trustNotes": "100% Client-Side procedural algorithm. Generates zero server requests.",
+    "related": [
+      "hex-grid-a-star-pathfinding-algorithm",
+      "hex-grid-raycasting-algorithm",
+      "svg-polar-radar-target-sweep-generator",
+      "svg-orthogonal-flowchart-wire-connector-generator"
+    ],
+    "seo": {
+      "title": "Hex Grid 3D Elevation Heightmap & Line-of-Sight Algorithm — Tactical LOS Tool",
+      "metaDescription": "Test 3D line-of-sight and terrain shadowcasting across hexagonal heightmaps. Interactive raycasting with axial coordinates and slope occlusion simulation.",
+      "whatIsThis": "A game mathematics utility that computes 3D line-of-sight and terrain occlusion across elevation-mapped hexagonal game maps.",
+      "howItWorks": "1. Configure hex grid radius and randomize or paint elevation heights (1 to 5 levels).\n2. Set observer position and eye height.\n3. Click target hex to trace 3D ray and check elevation profile for blocking hills and terrain.",
+      "whyUseIt": "Essential for tactical RPG combat engines, military wargame simulations, and 4X strategy game rules.",
+      "faqs": [
+        {
+          "question": "How does 3D line-of-sight work on a hex grid?",
+          "answer": "The algorithm samples points along a 3D line between observer eye height and target center. If any intermediate hex terrain elevation exceeds the ray height, line of sight is obstructed."
+        },
+        {
+          "question": "Which coordinate system does this utility use?",
+          "answer": "It uses axial/cube coordinates (q, r, s) where q + r + s = 0, allowing mathematically symmetrical 3D distance and raycasting calculations."
+        }
+      ]
+    }
+  },
+  {
+    "id": "crontab-to-opsgenie-heartbeat-alert-converter",
+    "name": "Crontab to Opsgenie Heartbeat & Incident Alert Exporter",
+    "slug": "crontab-to-opsgenie-heartbeat-alert-converter",
+    "category": "developer",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "crontab to opsgenie converter",
+      "opsgenie heartbeat cron monitoring",
+      "cron job failure opsgenie alert",
+      "opsgenie dead man snitch cron wrapper",
+      "crontab incident notification script",
+      "monitor cron jobs with opsgenie api"
+    ],
+    "primaryKeywords": [
+      "crontab to opsgenie converter",
+      "opsgenie heartbeat cron script",
+      "opsgenie cron failure alert",
+      "cron to opsgenie incident exporter"
+    ],
+    "secondaryKeywords": [
+      "opsgenie dead man switch wrapper",
+      "curl opsgenie heartbeat ping",
+      "bash cron wrapper opsgenie"
+    ],
+    "targetUsers": [
+      "Site Reliability Engineers",
+      "DevOps Practitioners",
+      "Sysadmins",
+      "Cloud Operations Engineers"
+    ],
+    "badge": "New",
+    "userProblem": "Engineers running mission-critical crontab jobs need automated heartbeat pings to Atlassian Opsgenie and immediate P1/P2 incident creation with stdout/stderr diagnostic logs upon job execution failure.",
+    "searchIntent": "Convert standard crontab lines into resilient Bash and Python wrappers that ping Opsgenie Heartbeat and trigger incident alerts on exit codes.",
+    "resultInterpretation": "Generates robust Bash and Python wrapper scripts featuring execution timing, stdout/stderr capture, Opsgenie Heartbeat pings, and incident alert dispatching.",
+    "practicalGuidance": "Configure Opsgenie Heartbeat intervals to slightly exceed cron cadence (e.g. 65 minutes for hourly jobs) to avoid false positive pager alarms from minor drift.",
+    "limitations": "Requires an Opsgenie API key or Heartbeat name configured in your Atlassian Opsgenie team integration.",
+    "formula": "START=$(date +%s); $CMD 2>&1 > $LOG || curl -X POST -d '{\"message\":\"Cron Failure\"}' $OPSGENIE_ALERT_API",
+    "trustNotes": "100% Client-Side. Your commands and API tokens remain in your browser memory.",
+    "related": [
+      "crontab-to-prometheus-pushgateway-exporter",
+      "crontab-to-honeycomb-otel-trace-converter",
+      "curl-to-java-httpclient-converter",
+      "dns-cert-cryptographic-certificate-record-generator"
+    ],
+    "seo": {
+      "title": "Crontab to Opsgenie Heartbeat & Alert Converter — SRE Cron Monitoring",
+      "metaDescription": "Wrap crontab jobs with Opsgenie Heartbeat pings and automated incident alerts. Captures exit codes, runtime duration, and logs in Bash and Python.",
+      "whatIsThis": "A DevOps tool that transforms standard Linux crontab entries into fault-tolerant scripts monitored by Atlassian Opsgenie Heartbeats and Alert APIs.",
+      "howItWorks": "1. Enter your crontab schedule and command.\n2. Provide your Opsgenie Heartbeat name and alert priority.\n3. Copy the generated Bash wrapper or Python monitoring script directly into your server.",
+      "whyUseIt": "Guarantees silent cron job failures are immediately escalated to on-call engineers via Opsgenie.",
+      "faqs": [
+        {
+          "question": "What is an Opsgenie Heartbeat?",
+          "answer": "An Opsgenie Heartbeat is a dead man's switch mechanism. If Opsgenie does not receive a ping within a specified timeframe, an alert is automatically triggered."
+        },
+        {
+          "question": "Does this handle non-zero exit codes?",
+          "answer": "Yes. The generated wrapper captures exit codes and dispatches an immediate Opsgenie Incident Alert containing stdout/stderr diagnostics before terminating."
+        }
+      ]
+    }
+  },
+  {
+    "id": "idgt-trust-promissory-note-installment-sale-calculator",
+    "name": "IDGT Promissory Note Installment Sale Calculator (Rev. Rul. 85-13)",
+    "slug": "idgt-trust-promissory-note-installment-sale-calculator",
+    "category": "finance",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "idgt calculator",
+      "intentionally defective grantor trust promissory note calculator",
+      "idgt installment sale calculator",
+      "revenue ruling 85-13 estate freeze",
+      "afr promissory note estate planning calculator",
+      "idgt seed gift 10 percent ratio model"
+    ],
+    "primaryKeywords": [
+      "idgt calculator",
+      "idgt promissory note calculator",
+      "intentionally defective grantor trust calculator",
+      "rev rul 85-13 installment sale"
+    ],
+    "secondaryKeywords": [
+      "estate tax freeze promissory note",
+      "grantor trust tax burn calculation",
+      "applicable federal rate installment note"
+    ],
+    "targetUsers": [
+      "Estate Planning Attorneys",
+      "High-Net-Worth Family Offices",
+      "Wealth Advisors",
+      "Private Clients"
+    ],
+    "badge": "New",
+    "userProblem": "Wealth advisors, estate attorneys, and high-net-worth individuals need to model the wealth transfer and estate tax freeze mechanics of selling appreciating assets to an Intentionally Defective Grantor Trust (IDGT) in exchange for an AFR promissory note.",
+    "searchIntent": "Calculate trust net equity at maturity, tax-free interest payments, grantor tax burn benefits, and federal estate tax savings from an IDGT installment note sale.",
+    "resultInterpretation": "Generates a comprehensive year-by-year amortization schedule, interest payments, grantor income tax burn, and projected federal estate tax savings.",
+    "practicalGuidance": "Under Rev. Rul. 85-13, transactions between the grantor and trust are disregarded for income tax purposes, allowing tax-free asset sales and income tax-free promissory note interest.",
+    "limitations": "Assumes constant annual asset appreciation and notes held to maturity without early renegotiation or valuation discount challenges.",
+    "formula": "Trust_Equity_N = Asset_0 * (1 + g)^N - Note_Payoff; Estate_Tax_Saved = Trust_Equity_N * 40%",
+    "trustNotes": "100% Client-Side financial modeling. No client wealth or asset figures are recorded.",
+    "related": [
+      "grantor-retained-annuity-trust-grat-calculator",
+      "qsbs-section-1202-capital-gains-exclusion-calculator",
+      "founder-secondary-sale-equity-dilution-calculator",
+      "startup-anti-dilution-protection-down-round-calculator"
+    ],
+    "seo": {
+      "title": "IDGT Promissory Note Installment Sale Calculator — Rev. Rul. 85-13 Tax Freeze",
+      "metaDescription": "Model estate tax freeze savings and wealth transfer with an Intentionally Defective Grantor Trust (IDGT) promissory note installment sale under Rev. Rul. 85-13.",
+      "whatIsThis": "A high-net-worth estate planning calculator that analyzes asset sales to an Intentionally Defective Grantor Trust (IDGT) funded with an AFR promissory note.",
+      "howItWorks": "1. Enter asset value, seed gift percentage (typically 10%), and expected growth rate.\n2. Choose note term and IRS Applicable Federal Rate (AFR).\n3. Toggle grantor income tax burn to calculate compounding trust growth and estate tax savings.",
+      "whyUseIt": "Demonstrates the profound wealth transfer leverage of freezing estate assets at low AFR interest rates while the grantor absorbs income taxes.",
+      "faqs": [
+        {
+          "question": "What is an IDGT installment sale?",
+          "answer": "An IDGT installment sale is an estate planning strategy where a grantor sells appreciating assets to an irrevocable grantor trust in exchange for an AFR promissory note, removing future growth from the grantor's taxable estate."
+        },
+        {
+          "question": "Why is the 10% seed gift important?",
+          "answer": "Seeding the trust with independent capital equal to roughly 10% of the note value establishes economic substance and prevents the IRS from asserting retained interest under IRC § 2036."
+        }
+      ]
+    }
+  },
+  {
+    "id": "svg-polar-radar-target-sweep-generator",
+    "name": "SVG Polar Radar Target Sweep & HUD Scope Generator",
+    "slug": "svg-polar-radar-target-sweep-generator",
+    "category": "creative",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "svg polar radar generator",
+      "svg radar sweep target scope",
+      "sci fi polar radar hud generator",
+      "concentric range rings svg generator",
+      "polar coordinates radar svg export",
+      "animated radar sweep svg"
+    ],
+    "primaryKeywords": [
+      "svg polar radar generator",
+      "svg radar sweep generator",
+      "polar radar scope svg",
+      "animated radar hud svg"
+    ],
+    "secondaryKeywords": [
+      "tactical radar svg vector",
+      "polar azimuth range rings svg",
+      "css radar sweep keyframes svg"
+    ],
+    "targetUsers": [
+      "Creative Developers",
+      "Sci-Fi Game Designers",
+      "HUD / Telemetry Engineers",
+      "Front-End Artists"
+    ],
+    "badge": "New",
+    "userProblem": "Creative developers and gaming engineers need vector polar radar scopes with animated target sweep cones, concentric range rings, azimuth spokes, and tactical blips for sci-fi interfaces and tactical dashboards.",
+    "searchIntent": "Generate and export standalone SVG vector polar radar displays with animated sweep beams, customizable rings, spokes, and tactical blip targets.",
+    "resultInterpretation": "Renders clean vector SVG polar radar with glowing filters, gradient sweep cones, pulsing target blips, and ready-to-use SVG code export.",
+    "practicalGuidance": "Vector SVGs scale infinitely to 4K/8K displays without raster pixelation, and embedded CSS @keyframes run natively in all modern browsers.",
+    "limitations": "For high-frequency particle simulations with thousands of radar contacts, HTML5 Canvas or WebGL may be preferred.",
+    "formula": "x = r * cos(theta - 90 deg); y = r * sin(theta - 90 deg); Beam = Path + SVG LinearGradient",
+    "trustNotes": "100% Client-Side. Generates pure standalone SVG code without remote dependencies.",
+    "related": [
+      "css-radar-beacon-pulse-generator",
+      "hex-grid-3d-elevation-heightmap-los-algorithm",
+      "svg-orthogonal-flowchart-wire-connector-generator",
+      "svg-isometric-3d-grid-projection-generator"
+    ],
+    "seo": {
+      "title": "SVG Polar Radar Target Sweep Generator — Sci-Fi HUD Scope Builder",
+      "metaDescription": "Generate standalone vector SVG polar radar scopes with animated rotating sweep beams, azimuth spokes, range rings, and tactical target contacts.",
+      "whatIsThis": "A vector graphics tool for designing and downloading production-ready SVG polar radar scopes, HUD screens, and tactical telemetry displays.",
+      "howItWorks": "1. Configure radar size, concentric range rings, and azimuth spokes.\n2. Choose tactical theme (Emerald, Cyan, Amber, Crimson).\n3. Add custom target contacts (hostile, friendly, neutral) with polar coordinates.\n4. Copy SVG markup or download .svg file.",
+      "whyUseIt": "Instantly generates beautiful sci-fi and tactical radar graphics without manual Illustrator or Inkscape vector drafting.",
+      "faqs": [
+        {
+          "question": "Can I use the exported SVG in React or plain HTML?",
+          "answer": "Yes. The generated SVG contains self-contained CSS keyframe animations and can be embedded directly as inline SVG, loaded via <img> tag, or imported into React."
+        },
+        {
+          "question": "Does the radar sweep require JavaScript?",
+          "answer": "No. The sweep rotation and blip pulse animations are powered by embedded pure CSS @keyframes running directly inside the SVG document."
+        }
+      ]
+    }
+  },
+  {
+    "id": "cycling-ftp-w-prime-dynamic-battery-balance-calculator",
+    "name": "Cycling FTP & W' Balance Dynamic Battery Calculator",
+    "slug": "cycling-ftp-w-prime-dynamic-battery-balance-calculator",
+    "category": "health",
+    "type": "Static Utility",
+    "technology": "HTML5 / React / TypeScript",
+    "keywords": [
+      "cycling w prime balance calculator",
+      "w prime battery calculator cycling",
+      "skiba w prime dynamic balance model",
+      "cycling critical power w prime depletion",
+      "w bal time to exhaustion calculator",
+      "cycling anaerobic work capacity battery"
+    ],
+    "primaryKeywords": [
+      "cycling w prime balance calculator",
+      "w prime bal calculator",
+      "cycling anaerobic battery calculator",
+      "skiba w prime recovery model"
+    ],
+    "secondaryKeywords": [
+      "critical power w prime calculator",
+      "cycling time to exhaustion tte",
+      "anaerobic work capacity cycling"
+    ],
+    "targetUsers": [
+      "Cyclists & Triathletes",
+      "Cycling Coaches",
+      "Sports Physiologists",
+      "Power Meter Users"
+    ],
+    "badge": "New",
+    "userProblem": "Competitive cyclists and coaches need to model real-time anaerobic work capacity depletion and exponential recovery (W'bal) across suprathreshold power intervals to predict exhaustion and optimize attack pacing.",
+    "searchIntent": "Simulate second-by-second W' balance battery depletion and exponential recovery during cycling intervals using the Skiba (2012/2015) physiological model.",
+    "resultInterpretation": "Displays dynamic W' battery percentage, minimum session battery level, total work above Critical Power (kJ), and real-time Time-to-Exhaustion (TTE).",
+    "practicalGuidance": "When power drops below Critical Power, W' recharges exponentially governed by the recovery time constant tau_W; staying at low sub-CP intensity accelerates replenishment.",
+    "limitations": "Assumes acute non-fatigued state; extreme prolonged endurance rides introduce progressive glycogen depletion and downward drift in W'.",
+    "formula": "tau_W = 546 * exp(-0.01 * (CP - P)) + 316; W'_bal(t) = W'_0 - (W'_0 - W'_bal) * exp(-1 / tau_W)",
+    "trustNotes": "100% Client-Side calculation. Zero personal health or power meter files are uploaded.",
+    "related": [
+      "cycling-ftp-power-zones-coggan-calculator",
+      "hrv-rmssd-autonomic-recovery-score-calculator",
+      "running-critical-speed-d-prime-aerobic-model-calculator",
+      "lactate-threshold-heart-rate-lthr-zones-calculator"
+    ],
+    "seo": {
+      "title": "Cycling FTP & W' Balance Dynamic Battery Calculator — Skiba Model",
+      "metaDescription": "Calculate anaerobic W' balance depletion and exponential recovery across cycling intervals. Predict time to exhaustion and optimize race attacks.",
+      "whatIsThis": "A cycling physiology simulator that models anaerobic battery capacity (W'bal) depletion and recovery across variable power workout intervals.",
+      "howItWorks": "1. Enter your Critical Power (CP / FTP) and W' capacity in kJ.\n2. Select a preset workout (Microbursts, Over-Unders, Breakaway) or add custom power intervals.\n3. View dynamic battery levels, minimum battery reached, and time to exhaustion at target attack wattage.",
+      "whyUseIt": "Reveals the hidden physiological battery that dictates whether a cyclist can survive hard surges, repeat attacks, and contest sprint finishes.",
+      "faqs": [
+        {
+          "question": "What is W' (W-prime) in cycling?",
+          "answer": "W' represents the finite amount of anaerobic work capacity (measured in kJ) available above Critical Power before acute muscle exhaustion forces power to drop."
+        },
+        {
+          "question": "How does W' recover during a race?",
+          "answer": "W' recharges only when pedaling below Critical Power (sub-CP). According to Skiba's model, the recovery rate is exponential, recharging fastest when coasting or spinning in Zone 1-2."
+        }
+      ]
+    }
   }
 ]

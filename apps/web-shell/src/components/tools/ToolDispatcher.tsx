@@ -436,6 +436,17 @@ const GratTrustCalculator = dynamic(() => import("./finance/GratTrustCalculator"
 const SvgOrthogonalWireGenerator = dynamic(() => import("./creative/SvgOrthogonalWireGenerator").then((m) => m.SvgOrthogonalWireGenerator), { ssr: false });
 const HrvRmssdRecoveryCalculator = dynamic(() => import("./health/HrvRmssdRecoveryCalculator").then((m) => m.HrvRmssdRecoveryCalculator), { ssr: false });
 
+const CurlToJavaHttpClientConverter = dynamic(() => import("./developer/CurlToJavaHttpClientConverter").then((m) => m.CurlToJavaHttpClientConverter), { ssr: false });
+const SaasDeferredRevenueWaterfallCalculator = dynamic(() => import("./finance/SaasDeferredRevenueWaterfallCalculator").then((m) => m.SaasDeferredRevenueWaterfallCalculator), { ssr: false });
+const CssRadarBeaconPulseGenerator = dynamic(() => import("./creative/CssRadarBeaconPulseGenerator").then((m) => m.CssRadarBeaconPulseGenerator), { ssr: false });
+const DnsCertRecordGenerator = dynamic(() => import("./network/DnsCertRecordGenerator").then((m) => m.DnsCertRecordGenerator), { ssr: false });
+const StartupAntiDilutionCalculator = dynamic(() => import("./finance/StartupAntiDilutionCalculator").then((m) => m.StartupAntiDilutionCalculator), { ssr: false });
+const HexGridHeightmapLosAlgorithm = dynamic(() => import("./creative/HexGridHeightmapLosAlgorithm").then((m) => m.HexGridHeightmapLosAlgorithm), { ssr: false });
+const CronToOpsgenieConverter = dynamic(() => import("./developer/CronToOpsgenieConverter").then((m) => m.CronToOpsgenieConverter), { ssr: false });
+const IdgtPromissoryNoteCalculator = dynamic(() => import("./finance/IdgtPromissoryNoteCalculator").then((m) => m.IdgtPromissoryNoteCalculator), { ssr: false });
+const SvgPolarRadarGenerator = dynamic(() => import("./creative/SvgPolarRadarGenerator").then((m) => m.SvgPolarRadarGenerator), { ssr: false });
+const CyclingWPrimeBalanceCalculator = dynamic(() => import("./health/CyclingWPrimeBalanceCalculator").then((m) => m.CyclingWPrimeBalanceCalculator), { ssr: false });
+
 const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "random-number-generator": RandomNumberGenerator,
   "spin-wheel": SpinWheel,
@@ -865,6 +876,16 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType<any>> = {
   "grantor-retained-annuity-trust-grat-calculator": GratTrustCalculator,
   "svg-orthogonal-flowchart-wire-connector-generator": SvgOrthogonalWireGenerator,
   "hrv-rmssd-autonomic-recovery-score-calculator": HrvRmssdRecoveryCalculator,
+  "curl-to-java-httpclient-converter": CurlToJavaHttpClientConverter,
+  "saas-acv-tcv-deferred-revenue-waterfall-calculator": SaasDeferredRevenueWaterfallCalculator,
+  "css-radar-beacon-pulse-generator": CssRadarBeaconPulseGenerator,
+  "dns-cert-cryptographic-certificate-record-generator": DnsCertRecordGenerator,
+  "startup-anti-dilution-protection-down-round-calculator": StartupAntiDilutionCalculator,
+  "hex-grid-3d-elevation-heightmap-los-algorithm": HexGridHeightmapLosAlgorithm,
+  "crontab-to-opsgenie-heartbeat-alert-converter": CronToOpsgenieConverter,
+  "idgt-trust-promissory-note-installment-sale-calculator": IdgtPromissoryNoteCalculator,
+  "svg-polar-radar-target-sweep-generator": SvgPolarRadarGenerator,
+  "cycling-ftp-w-prime-dynamic-battery-balance-calculator": CyclingWPrimeBalanceCalculator,
 };
 
 interface ToolDispatcherProps {
