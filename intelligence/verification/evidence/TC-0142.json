@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0142",
+  "utility_id": "curl-to-php-curl-converter",
+  "slug": "curl-to-php-curl-converter",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:27:36.439Z",
+  "duration_ms": 573,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/curl-to-php-curl-converter",
+    "controls_found": 14
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 14 controls, main container content length 3382",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0142.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

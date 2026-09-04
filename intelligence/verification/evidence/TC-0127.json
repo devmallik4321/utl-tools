@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0127",
+  "utility_id": "morse-code-translator",
+  "slug": "morse-code-translator",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:27:22.820Z",
+  "duration_ms": 689,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/morse-code-translator",
+    "controls_found": 14
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 14 controls, main container content length 3639",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0127.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

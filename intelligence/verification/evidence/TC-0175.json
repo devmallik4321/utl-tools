@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0175",
+  "utility_id": "inflation-adjusted-salary-calculator",
+  "slug": "inflation-adjusted-salary-calculator",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:28:03.025Z",
+  "duration_ms": 1381,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/inflation-adjusted-salary-calculator",
+    "controls_found": 14
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 14 controls, main container content length 4145",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0175.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

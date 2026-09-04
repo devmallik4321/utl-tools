@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0233",
+  "utility_id": "css-mesh-gradient-generator",
+  "slug": "css-mesh-gradient-generator",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:28:52.551Z",
+  "duration_ms": 789,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/css-mesh-gradient-generator",
+    "controls_found": 15
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 15 controls, main container content length 4122",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0233.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

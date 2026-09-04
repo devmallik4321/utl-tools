@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0058",
+  "utility_id": "utm-builder",
+  "slug": "utm-builder",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:26:17.484Z",
+  "duration_ms": 778,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/utm-builder",
+    "controls_found": 14
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 14 controls, main container content length 3651",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0058.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

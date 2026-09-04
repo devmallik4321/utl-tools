@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0190",
+  "utility_id": "time-until-countdown-timer",
+  "slug": "time-until-countdown-timer",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:28:16.417Z",
+  "duration_ms": 830,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/time-until-countdown-timer",
+    "controls_found": 15
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 15 controls, main container content length 3189",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0190.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

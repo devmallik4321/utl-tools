@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0318",
+  "utility_id": "wash-sale-rule-crypto-stock-loss-disallowance-calculator",
+  "slug": "wash-sale-rule-crypto-stock-loss-disallowance-calculator",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:30:15.434Z",
+  "duration_ms": 993,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/wash-sale-rule-crypto-stock-loss-disallowance-calculator",
+    "controls_found": 15
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 15 controls, main container content length 4847",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0318.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

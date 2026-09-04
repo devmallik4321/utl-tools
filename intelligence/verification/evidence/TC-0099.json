@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0099",
+  "utility_id": "screen-aspect-ratio-comparator",
+  "slug": "screen-aspect-ratio-comparator",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:26:59.160Z",
+  "duration_ms": 885,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/screen-aspect-ratio-comparator",
+    "controls_found": 14
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 14 controls, main container content length 4117",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0099.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

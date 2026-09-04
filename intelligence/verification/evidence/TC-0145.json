@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0145",
+  "utility_id": "net-worth-milestone-tracker",
+  "slug": "net-worth-milestone-tracker",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:27:38.732Z",
+  "duration_ms": 703,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/net-worth-milestone-tracker",
+    "controls_found": 14
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 14 controls, main container content length 3591",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0145.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

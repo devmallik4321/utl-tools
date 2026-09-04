@@ -2,6 +2,7 @@ import ExcelJS from "exceljs";
 import fs from "fs";
 import path from "path";
 import { loadDailyStatistics } from "../intelligence/project/dailyStatisticsStore.mjs";
+import { buildReleasesLedger } from "./reconstruct_releases.mjs";
 
 export async function buildControlCenter() {
   console.log("Starting UTL.tools Canonical Control Center V1.2 Maintenance Freeze Generation...");
@@ -77,17 +78,17 @@ export async function buildControlCenter() {
     { code: "P-00", name: "P-00 INDEX", type: "Parent", parent: "ROOT", desc: "Canonical navigation directory registering all worksheets.", count: "22 Sheets", target: "A1" },
     { code: "P-01", name: "P-Dashboard", type: "Parent", parent: "P-00 INDEX", desc: "Operational KPIs, live status, GA4 analytics, Search Console state, and maintenance freeze.", count: "Formula KPIs", target: "A1" },
     { code: "P-02", name: "P-Charter", type: "Parent", parent: "P-00 INDEX", desc: "Project mission, philosophy, design rules, non-goals, and governance.", count: "Charter Doc", target: "A1" },
-    { code: "P-03", name: "P-Utilities", type: "Parent", parent: "P-00 INDEX", desc: "Master registry of all 47 production utilities with live status & URLs.", count: "47 Utilities", target: "A1" },
+    { code: "P-03", name: "P-Utilities", type: "Parent", parent: "P-00 INDEX", desc: `Master registry of all ${utilities.length} production utilities with live status & URLs.`, count: `${utilities.length} Utilities`, target: "A1" },
     { code: "P-04", name: "P-Work", type: "Parent", parent: "P-00 INDEX", desc: "Primary actionable work queue, task states, acceptance criteria, assignments.", count: "Work Queue", target: "A1" },
     { code: "P-05", name: "P-Research", type: "Parent", parent: "P-00 INDEX", desc: "Specialized context research findings, domain benchmarks, and recommendations.", count: "Research Log", target: "A1" },
     { code: "P-06", name: "P-Releases", type: "Parent", parent: "P-00 INDEX", desc: "Version release ledger, milestones, deployment statuses, and builds.", count: "Releases Log", target: "A1" },
     { code: "P-07", name: "P-Contexts", type: "Parent", parent: "P-00 INDEX", desc: "Standard operating agent contexts (CTX-001 through CTX-010) with prompt links.", count: "10 Contexts", target: "A1" },
     { code: "P-08", name: "P-Sessions", type: "Parent", parent: "P-00 INDEX", desc: "Persistent Antigravity CLI & agent session registry with conversation IDs.", count: "Sessions Log", target: "A1" },
-    { code: "C-01", name: "C-Reviews", type: "Child", parent: "P-Utilities", desc: "30-column operational review matrix with dropdowns and human comments.", count: "47 Rows", target: "A1" },
-    { code: "C-02", name: "C-Changes", type: "Child", parent: "P-Releases", desc: "Master chronological changelog history with author stamps.", count: "94 Entries", target: "A1" },
-    { code: "C-03", name: "C-TestCases", type: "Child", parent: "P-Work", desc: "Executable test cases with step-by-step instructions, inputs, expected/actual.", count: "47 Test Cases", target: "A1" },
-    { code: "C-04", name: "C-SEO", type: "Child", parent: "P-Utilities", desc: "Search intent mapping, primary/secondary keywords, JSON-LD Schema status.", count: "47 SEO Records", target: "A1" },
-    { code: "C-05", name: "C-Trust", type: "Child", parent: "P-Utilities", desc: "Zero-knowledge client-side audit, Web APIs used, formulas, and sandboxing.", count: "47 Trust Audits", target: "A1" },
+    { code: "C-01", name: "C-Reviews", type: "Child", parent: "P-Utilities", desc: "30-column operational review matrix with dropdowns and human comments.", count: `${utilities.length} Rows`, target: "A1" },
+    { code: "C-02", name: "C-Changes", type: "Child", parent: "P-Releases", desc: "Master chronological changelog history with author stamps.", count: "Foundation Entries", target: "A1" },
+    { code: "C-03", name: "C-TestCases", type: "Child", parent: "P-Work", desc: "Functional test specifications with step-by-step instructions (Automated execution pending).", count: `${utilities.length} Specifications`, target: "A1" },
+    { code: "C-04", name: "C-SEO", type: "Child", parent: "P-Utilities", desc: "Search intent mapping, primary/secondary keywords, JSON-LD Schema status.", count: `${utilities.length} SEO Records`, target: "A1" },
+    { code: "C-05", name: "C-Trust", type: "Child", parent: "P-Utilities", desc: "Zero-knowledge client-side audit, Web APIs used, formulas, and sandboxing.", count: `${utilities.length} Trust Audits`, target: "A1" },
     { code: "C-06", name: "C-Candidates", type: "Child", parent: "P-Research", desc: "Prioritized expansion pipeline backlog (P0, P1, P2, P3).", count: "31 Candidates", target: "A1" },
     { code: "C-07", name: "C-Competitors", type: "Child", parent: "P-Research", desc: "Competitor intelligence tracking (features, traffic, gaps, opportunities).", count: "7 Competitors", target: "A1" },
     { code: "C-08", name: "C-SearchIntel", type: "Child", parent: "P-Research", desc: "Search intelligence registry (queries, country, intent, SERP density).", count: "8 Search Records", target: "A1" },
@@ -130,34 +131,34 @@ export async function buildControlCenter() {
     ["SN", "Metric", "Value", "Derived From / Source", "Direct Link"],
     [1, "Platform Status", "MAINTENANCE_MODE (FEATURE_DEVELOPMENT_FROZEN)", "Governance Directive", { text: "Open Production", hyperlink: "https://utl.tools" }],
     [2, "Current Version", "1.2.0 (Observability, Widgets & Project Intelligence V1)", "Release Ledger", { text: "View Changelog", hyperlink: "#'C-Changes'!A1" }],
-    [3, "Project Intelligence Health", "HEALTHY (Live Multi-Provider Intelligence Active)", "Project Intelligence Engine", { text: "View Opportunities", hyperlink: "#'C-GrowthOpportunities'!A1" }],
-    [4, "GA4 Data API v1beta", "CONNECTED (Live: 11 active users, 12 sessions, 48 pageviews in Last 7 Days)", "UtlGA4Adapter", { text: "View Layout", hyperlink: "https://utl.tools" }],
-    [5, "Google Search Console", "CONNECTED (Live Search Analytics: sc-domain:utl.tools active; 0 rows / newly verified)", "UtlSearchConsoleAdapter", { text: "View Sitemap", hyperlink: "https://utl.tools/sitemap.xml" }],
-    [6, "Data Quality & Telemetry", "RECONCILED (GA4 vs Telemetry Discrepancy Resolved as Expected Difference)", "P-Research RES-0007", { text: "View Research", hyperlink: "#'P-Research'!A1" }],
-    [7, "Indexation Technical Health", "STRONG (Valid sitemap.xml, robots.txt, canonicals, 92 static routes)", "Search Console Audit", { text: "View Sitemap", hyperlink: "https://utl.tools/sitemap.xml" }],
+    [3, "Project Intelligence Health", "ATTENTION_REQUIRED (External Telemetry Unconfigured; Core Static Build Verified)", "Project Intelligence Engine", { text: "View Opportunities", hyperlink: "#'C-GrowthOpportunities'!A1" }],
+    [4, "GA4 Data API v1beta", "PENDING_REAUTH (API credentials expired / pending refresh)", "UtlGA4Adapter", { text: "View Layout", hyperlink: "https://utl.tools" }],
+    [5, "Google Search Console", "PENDING_VERIFICATION (Site ownership verification / pending data)", "UtlSearchConsoleAdapter", { text: "View Sitemap", hyperlink: "https://utl.tools/sitemap.xml" }],
+    [6, "Data Quality & Telemetry", "UNAVAILABLE (No live client telemetry ingest endpoint; zero synthetic fabrication)", "P-Research RES-0007", { text: "View Research", hyperlink: "#'P-Research'!A1" }],
+    [7, "Indexation Technical Health", "STRONG (Valid sitemap.xml [461 URLs], robots.txt, canonicals, 463 static routes)", "Search Console Audit", { text: "View Sitemap", hyperlink: "https://utl.tools/sitemap.xml" }],
     [8, "Recommended Observation Window", "14 to 28 Days (Accumulate empirical baseline before growth decisions)", "Project Intelligence Directive", { text: "View Opportunities", hyperlink: "#'C-GrowthOpportunities'!A1" }],
-    [9, "Internal Application Telemetry", "HEALTHY (47 Utilities & 12 Windows Widgets Monitored)", "UtlTelemetryAdapter", { text: "View Utilities", hyperlink: "#'P-Utilities'!A1" }],
+    [9, "Internal Application Telemetry", `UNAVAILABLE (No live event database connected; ${utilities.length} tools in inventory)`, "UtlTelemetryAdapter", { text: "View Utilities", hyperlink: "#'P-Utilities'!A1" }],
     [10, "Internet Intelligence Upstream", "AVAILABLE (Upstream Sensor Fabric Linked)", "UtlInternetIntelAdapter", { text: "View Intel Control", hyperlink: "#'P-00 INDEX'!A1" }],
-    [11, "Total Production Utilities", { formula: "COUNTA('P-Utilities'!A5:A100)" }, "P-Utilities Registry", { text: "View Utilities", hyperlink: "#'P-Utilities'!A1" }],
-    [12, "Windows Widget Discoveries", { formula: "COUNTA('C-Widgets'!A5:A100)" }, "C-Widgets Registry", { text: "View Widgets", hyperlink: "#'C-Widgets'!A1" }],
-    [13, "Total Executable Test Cases", { formula: "COUNTA('C-TestCases'!A5:A100)" }, "C-TestCases Sheet", { text: "View Test Cases", hyperlink: "#'C-TestCases'!A1" }],
-    [14, "Tests Passed (100% Rate)", { formula: "COUNTIF('C-TestCases'!J5:J100,\"PASS\")" }, "C-TestCases Status", { text: "Verify Tests", hyperlink: "#'C-TestCases'!A1" }],
-    [15, "Project Intelligence Opportunities", { formula: "COUNTA('C-GrowthOpportunities'!A5:A100)" }, "C-GrowthOpportunities", { text: "View Growth Opps", hyperlink: "#'C-GrowthOpportunities'!A1" }],
-    [16, "Approved Growth Tasks", { formula: "COUNTIF('C-GrowthOpportunities'!M5:M100,\"APPROVED\")" }, "C-GrowthOpportunities", { text: "View Approved Opps", hyperlink: "#'C-GrowthOpportunities'!A1" }],
-    [17, "Open P0 Work Tasks", { formula: "COUNTIFS('P-Work'!F5:F100,\"P0\",'P-Work'!G5:G100,\"OPEN\")" }, "P-Work Action Queue", { text: "Open Work Queue", hyperlink: "#'P-Work'!A1" }],
-    [18, "Open P1 Work Tasks", { formula: "COUNTIFS('P-Work'!F5:F100,\"P1\",'P-Work'!G5:G100,\"OPEN\")" }, "P-Work Action Queue", { text: "Open Work Queue", hyperlink: "#'P-Work'!A1" }],
-    [19, "Pending Human Reviews", "0 (All 47 Approved)", "C-Reviews Matrix", { text: "View Reviews", hyperlink: "#'C-Reviews'!A1" }],
-    [20, "Expansion Pipeline Backlog", { formula: "COUNTA('C-Candidates'!A5:A100)" }, "C-Candidates Pipeline", { text: "View Candidates", hyperlink: "#'C-Candidates'!A1" }],
-    [21, "Competitors Tracked", { formula: "COUNTA('C-Competitors'!A5:A100)" }, "C-Competitors Registry", { text: "View Competitors", hyperlink: "#'C-Competitors'!A1" }],
-    [22, "Search Queries Monitored", { formula: "COUNTA('C-SearchIntel'!A5:A100)" }, "C-SearchIntel Registry", { text: "View Search Intel", hyperlink: "#'C-SearchIntel'!A1" }],
+    [11, "Total Production Utilities", { formula: "COUNTA('P-Utilities'!A5:A1000)" }, "P-Utilities Registry", { text: "View Utilities", hyperlink: "#'P-Utilities'!A1" }],
+    [12, "Windows Widget Discoveries", { formula: "COUNTA('C-Widgets'!A5:A1000)" }, "C-Widgets Registry", { text: "View Widgets", hyperlink: "#'C-Widgets'!A1" }],
+    [13, "Total Test Specifications", { formula: "COUNTA('C-TestCases'!A5:A1000)" }, "C-TestCases Sheet", { text: "View Test Cases", hyperlink: "#'C-TestCases'!A1" }],
+    [14, "Automated Tests Executed", { formula: "COUNTIF('C-TestCases'!J5:J1000,\"PASS\")" }, "C-TestCases Status", { text: "Verify Tests", hyperlink: "#'C-TestCases'!A1" }],
+    [15, "Project Intelligence Opportunities", { formula: "COUNTA('C-GrowthOpportunities'!A5:A1000)" }, "C-GrowthOpportunities", { text: "View Growth Opps", hyperlink: "#'C-GrowthOpportunities'!A1" }],
+    [16, "Approved Growth Tasks", { formula: "COUNTIF('C-GrowthOpportunities'!M5:M1000,\"APPROVED\")" }, "C-GrowthOpportunities", { text: "View Approved Opps", hyperlink: "#'C-GrowthOpportunities'!A1" }],
+    [17, "Open P0 Work Tasks", { formula: "COUNTIFS('P-Work'!F5:F1000,\"P0\",'P-Work'!G5:G1000,\"OPEN\")" }, "P-Work Action Queue", { text: "Open Work Queue", hyperlink: "#'P-Work'!A1" }],
+    [18, "Open P1 Work Tasks", { formula: "COUNTIFS('P-Work'!F5:F1000,\"P1\",'P-Work'!G5:G1000,\"OPEN\")" }, "P-Work Action Queue", { text: "Open Work Queue", hyperlink: "#'P-Work'!A1" }],
+    [19, "Pending Human Reviews", "0 (All Specifications Documented)", "C-Reviews Matrix", { text: "View Reviews", hyperlink: "#'C-Reviews'!A1" }],
+    [20, "Expansion Pipeline Backlog", { formula: "COUNTA('C-Candidates'!A5:A1000)" }, "C-Candidates Pipeline", { text: "View Candidates", hyperlink: "#'C-Candidates'!A1" }],
+    [21, "Competitors Tracked", { formula: "COUNTA('C-Competitors'!A5:A1000)" }, "C-Competitors Registry", { text: "View Competitors", hyperlink: "#'C-Competitors'!A1" }],
+    [22, "Search Queries Monitored", { formula: "COUNTA('C-SearchIntel'!A5:A1000)" }, "C-SearchIntel Registry", { text: "View Search Intel", hyperlink: "#'C-SearchIntel'!A1" }],
     [23, "Active AG Conversation ID", "4ab9eb3a-c885-41dd-a79e-c88088d26811", "P-Sessions Registry", { text: "View Sessions", hyperlink: "#'P-Sessions'!A1" }],
     [24, "GitHub Repository", "https://github.com/devmallik4321/utl-tools", "GitHub Remote", { text: "Open GitHub", hyperlink: "https://github.com/devmallik4321/utl-tools" }],
     [25, "Vercel Project ID", "prj_U9CXugQfUbT5IAAttCWIQjqsXBJx (utl-tools)", "Vercel Dashboard", { text: "Open Vercel", hyperlink: "https://vercel.com/devmallik4321-6559s-projects/utl-tools" }],
     [26, "Production URL", "https://utl.tools (HTTP 200 OK)", "Vercel Live Edge", { text: "Open Site", hyperlink: "https://utl.tools" }],
-    [27, "WWW Subdomain URL", "https://www.utl.tools (HTTP 200 OK)", "Vercel Live Edge", { text: "Open WWW Site", hyperlink: "https://www.utl.tools" }],
+    [27, "WWW Subdomain URL", "https://www.utl.tools (HTTP 308 Permanent Redirect to Apex)", "Vercel Live Edge", { text: "Open WWW Site", hyperlink: "https://www.utl.tools" }],
     [28, "Primary Control Artifact", "control/UTL-CONTROL-CENTER.xlsx", "Canonical Master", { text: "Return to Index", hyperlink: "#'P-00 INDEX'!A1" }],
     [29, "Internet Sensor Fabric Control", "control/INTERNET-INTELLIGENCE-CONTROL-CENTER.xlsx", "Sensor Fabric Master", { text: "View Intelligence Control", hyperlink: "#'P-00 INDEX'!A1" }],
-    [30, "Last Verified Build", "Next.js 14 SSG (92 Static Routes Pre-rendered)", "Build Task Complete", { text: "View Releases", hyperlink: "#'P-Releases'!A1" }],
+    [30, "Last Verified Build", "Next.js 14 SSG (463 Static Routes Pre-rendered)", "Build Task Complete", { text: "View Releases", hyperlink: "#'P-Releases'!A1" }],
   ];
 
   kpis.forEach((kpi, idx) => {
@@ -415,14 +416,14 @@ export async function buildControlCenter() {
     "version",
     "date",
     "scope",
-    "utilities_changed",
-    "tasks_completed",
-    "tests_passed",
-    "tests_failed",
+    "utilities_count",
+    "commit_reference",
+    "epistemic_classification",
+    "provenance_evidence",
     "human_acceptance",
     "build_status",
     "deployment_status",
-    "release_notes_link"
+    "notes"
   ];
 
   const rowRelHeader = wsReleases.getRow(4);
@@ -431,18 +432,31 @@ export async function buildControlCenter() {
   rowRelHeader.fill = fillParentHeader;
   rowRelHeader.height = 26;
 
-  const releaseItems = [
-    [1, "REL-0001", "1.0.0", "2026-08-24", "Foundation Release: 38 Production Utilities + Next.js App Shell + Design System", 38, 38, 38, 0, "APPROVED", "PASS (54 Static Pages)", "STAGED", { text: "View Changelog ➡️", hyperlink: "#'C-Changes'!A2" }],
-    [2, "REL-0002", "1.1.0", "2026-08-25", "Public Production Release: 47 Utilities + Value Expansion + Widget Discovery + Canonical Control Center", 47, 47, 47, 0, "APPROVED", "PASS (64 Static Pages)", "LIVE", { text: "View Changelog ➡️", hyperlink: "#'C-Changes'!A3" }],
-    [3, "REL-0003", "1.2.0", "2026-08-25", "Observability & UX Polish Release: GA4 (G-H2G4BK9Y36), GSC Setup, Intent Discovery, Semantic Themes, ResultState, Maintenance Freeze", 47, 47, 47, 0, "APPROVED", "PASS (64 Static Pages)", "LIVE", { text: "View Changelog ➡️", hyperlink: "#'C-Changes'!A4" }],
-    [4, "REL-0004", "1.3.0", "2026-09-15", "Phase 2 Expansion: Next Batch of P1 Candidates & Traffic Intelligence", 15, 0, 0, 0, "PENDING", "PLANNED", "PLANNED", { text: "View Candidates ➡️", hyperlink: "#'C-Candidates'!A1" }],
-  ];
+  const releaseItems = buildReleasesLedger();
 
   releaseItems.forEach((rel, idx) => {
-    const row = wsReleases.addRow(rel);
+    const row = wsReleases.addRow([
+      rel.sn,
+      rel.release_id,
+      rel.version,
+      rel.date,
+      rel.scope,
+      rel.utilities_count,
+      rel.commit_reference,
+      rel.epistemic_classification,
+      rel.provenance_evidence,
+      rel.human_acceptance,
+      rel.build_status,
+      rel.deployment_status,
+      rel.notes
+    ]);
     row.height = 24;
     row.font = fontMain;
-    if (typeof rel[12] === "object") row.getCell(13).font = fontLink;
+    if (rel.epistemic_classification === "VERIFIED") {
+      row.getCell(8).font = { ...fontBold, color: { argb: "FF15803D" } };
+    } else if (rel.epistemic_classification === "DERIVED") {
+      row.getCell(8).font = { ...fontBold, color: { argb: "FF2563EB" } };
+    }
     if (idx % 2 === 1) row.eachCell((cell) => (cell.fill = fillZebra));
   });
 
@@ -669,36 +683,87 @@ export async function buildControlCenter() {
   rowChgHeader.fill = fillChildHeader;
   rowChgHeader.height = 26;
 
-  let chgIdx = 1;
-  utilities.forEach((u) => {
-    // Checkpoint 1: V1.0 Foundation
-    wsChanges.addRow([
-      chgIdx++,
-      `CHG-${String(chgIdx).padStart(4, "0")}`,
-      "2026-08-24T18:00:00Z",
-      u.id,
-      u.name,
-      "1.0.0",
-      "INITIAL_CREATION",
-      "Phase 1 Foundation: Implemented core interactive utility component",
-      "Zero-dependency client-side execution with light/dark theme support",
-      "Antigravity CLI"
-    ]);
+  // Read foundational changelog records (76 entries) from documentation/UTILITY-CHANGELOG.csv
+  const changelogCsvPath = path.resolve("documentation/UTILITY-CHANGELOG.csv");
+  let changeRecords = [];
+  if (fs.existsSync(changelogCsvPath)) {
+    const rawCsv = fs.readFileSync(changelogCsvPath, "utf-8");
+    const lines = rawCsv.trim().split(/\r?\n/).slice(1);
+    changeRecords = lines.map((line) => {
+      const matches = [];
+      let cur = "", inQuotes = false;
+      for (let i = 0; i < line.length; i++) {
+        const ch = line[i];
+        if (ch === '"') {
+          inQuotes = !inQuotes;
+        } else if (ch === ',' && !inQuotes) {
+          matches.push(cur.trim());
+          cur = "";
+        } else {
+          cur += ch;
+        }
+      }
+      matches.push(cur.trim());
+      return matches;
+    });
+  }
 
-    // Checkpoint 2: V1.1 Value & Search Intent Expansion
+  let chgIdx = 1;
+  changeRecords.forEach((cols) => {
     wsChanges.addRow([
       chgIdx++,
-      `CHG-${String(chgIdx).padStart(4, "0")}`,
-      "2026-08-25T04:00:00Z",
-      u.id,
-      u.name,
-      "1.1.0",
-      "VALUE_EXPANSION",
-      "Version 1.1 Upgrade: Added search intent, result interpretation, guidance, and FAQ schema",
-      "Expanded 8-part search destination layout with 100% client-side privacy guarantees (Live at https://utl.tools)",
-      "Antigravity CLI"
+      cols[0] || `LOG-${String(chgIdx).padStart(4, "0")}`,
+      cols[1] || "2026-08-24T14:00:00Z",
+      cols[2] || "unknown",
+      cols[3] || "Unknown Utility",
+      cols[4] || "1.0.0",
+      cols[5] || "INITIAL_CREATION",
+      cols[6] || "",
+      cols[7] || "",
+      cols[8] || "Antigravity Engine"
     ]);
   });
+
+  // Entry 77: Governance Audit Record
+  wsChanges.addRow([
+    chgIdx++,
+    "LOG-0077",
+    "2026-09-04T00:00:00Z",
+    "ALL_UTILITIES",
+    "UTL.tools Platform Governance",
+    "1.2.0",
+    "GOVERNANCE_AUDIT",
+    "Synthetic changelog generation loop suspended pending Phase 2 Git reconstruction",
+    "Forensic statistics audit verified 76 foundational changelog records. Full historical commit reconstruction scheduled for Phase 2.",
+    "Antigravity Governance"
+  ]);
+
+  // Append reconstructed Git commits from documentation/GIT-CHANGELOG.json
+  const gitChangelogPath = path.resolve("documentation/GIT-CHANGELOG.json");
+  if (fs.existsSync(gitChangelogPath)) {
+    const gitCommits = JSON.parse(fs.readFileSync(gitChangelogPath, "utf-8"));
+    gitCommits.forEach((commit) => {
+      const uIds = commit.affected_utilities && commit.affected_utilities.length > 0
+        ? commit.affected_utilities.join(", ")
+        : "REPO";
+      const uNames = commit.affected_utilities && commit.affected_utilities.length > 0
+        ? commit.affected_utilities.slice(0, 3).join(", ") + (commit.affected_utilities.length > 3 ? "..." : "")
+        : "Repository Infrastructure";
+
+      wsChanges.addRow([
+        chgIdx++,
+        `GIT-${commit.commit_sha.slice(0, 7)}`,
+        commit.timestamp,
+        uIds,
+        uNames,
+        commit.release_tag || "1.2.0",
+        commit.change_type || "GIT_COMMIT",
+        commit.subject,
+        `Touched: ${commit.touched_files?.length || 0} files. Provenance: Git SHA ${commit.commit_sha} (${commit.epistemic_classification})`,
+        commit.author || "devmallik4321"
+      ]);
+    });
+  }
 
   wsChanges.eachRow((row, rowNumber) => {
     if (rowNumber > 4) {
@@ -714,7 +779,7 @@ export async function buildControlCenter() {
   const wsTestCases = workbook.addWorksheet("C-TestCases", { views: [{ showGridLines: true, freeze: { ySplit: 4 } }] });
   addNavRow(wsTestCases, "P-Work");
 
-  wsTestCases.getCell("A2").value = `C-TestCases — Executable Step-by-Step Test Cases (${utilities.length} Total)`;
+  wsTestCases.getCell("A2").value = `C-TestCases — Functional Test Specifications (${utilities.length} Total — UNTESTED)`;
   wsTestCases.getCell("A2").font = fontTitle;
 
   const testHeaders = [
@@ -751,24 +816,24 @@ export async function buildControlCenter() {
       testId,
       u.id,
       "TSK-0009",
-      `Verify live production edge execution, GA4 aggregate tracking, and copy action for ${u.name}`,
+      `Verify client-side computation, UI rendering, and copy action for ${u.name}`,
       `1. Open ${prodUrl}. 2. Enter test inputs. 3. Verify real-time output computation. 4. Verify interpretation blocks & FAQ. 5. Click Copy.`,
       { text: prodUrl, hyperlink: prodUrl },
       { text: devUrl, hyperlink: devUrl },
-      "Instant computation within < 50ms, accurate mathematical/RFC output, successful clipboard copy notification, valid Schema.org tags, live HTTP 200 response, GA4 event triggered with 0 payload leaks.",
-      "PASS",
-      "Verified live in production",
-      "Automated and manual validation passed with HTTP 200 OK on Vercel Edge with GA4.",
-      { text: "Deployment dpl_Dkj9WZJ7LFMzFxq512i853E9py16", hyperlink: "https://utl.tools" },
-      "2026-08-25",
-      "Antigravity QA Engine"
+      "Instant computation within < 50ms, accurate mathematical/RFC output, successful clipboard copy notification, valid Schema.org tags, live HTTP 200 response.",
+      "UNTESTED",
+      "Specification documented; automated execution pending Phase 2 test harness",
+      "Pending automated DOM runner",
+      null,
+      null,
+      "UNASSIGNED"
     ]);
     row.height = 24;
     row.font = fontMain;
     row.getCell(7).font = fontLink;
     row.getCell(8).font = fontLink;
-    row.getCell(10).font = { ...fontBold, color: { argb: "FF15803D" } };
-    if (typeof row.getCell(13).value === "object") row.getCell(13).font = fontLink;
+    row.getCell(10).font = { ...fontBold, color: { argb: "FF64748B" } };
+    if (typeof row.getCell(13).value === "object" && row.getCell(13).value !== null) row.getCell(13).font = fontLink;
     if (idx % 2 === 1) row.eachCell((cell) => (cell.fill = fillZebra));
   });
 
@@ -1176,9 +1241,9 @@ export async function buildControlCenter() {
     [4, "OBS-GA4-LIVE-004", "2026-08-26", "Google Analytics 4 Data API", "engaged_sessions", "Engaged Sessions", 0, 0, "0%", "stable", "VERY_HIGH", "FACT", "https://analyticsdata.googleapis.com", "Live Data API query (Property 551527574).", "OPEN", ""],
     [5, "OBS-GSC-LIVE-001", "2026-08-26", "Google Search Console API", "search_impressions", "Google Search Impressions", 0, 0, "0%", "stable", "VERY_HIGH", "FACT", "https://searchconsole.googleapis.com", "Live Search Analytics API query (sc-domain:utl.tools). Newly verified site.", "OPEN", ""],
     [6, "OBS-GSC-LIVE-002", "2026-08-26", "Google Search Console API", "search_clicks", "Google Search Clicks", 0, 0, "0%", "stable", "VERY_HIGH", "FACT", "https://searchconsole.googleapis.com", "Live Search Analytics API query (sc-domain:utl.tools).", "OPEN", ""],
-    [7, "OBS-UTL-TEL-001", "2026-08-26", "UTL Application Telemetry", "utility_views", "Utility Page Views", 846, 790, "+7.1%", "increasing", "HIGH", "FACT", "registry/utilities.json", "Measured across 47 active production utilities.", "OPEN", ""],
-    [8, "OBS-UTL-TEL-002", "2026-08-26", "UTL Application Telemetry", "widget_views", "Widget Hub Views", 168, 140, "+20.0%", "accelerating", "HIGH", "FACT", "registry/widgets.json", "Measured across 12 desktop widget detail & category pages.", "OPEN", ""],
-    [9, "OBS-UTL-TEL-003", "2026-08-26", "UTL Application Telemetry", "utility_interactions", "Tool Executions", 564, 510, "+10.6%", "increasing", "HIGH", "FACT", "apps/web-shell", "66.7% execution rate among utility visitors.", "OPEN", ""],
+    [7, "OBS-UTL-TEL-001", "2026-08-26", "UTL Application Telemetry", "utility_views", "Utility Page Views", 846, 790, "+7.1%", "increasing", "HIGH", "UNVERIFIED_ESTIMATE", "registry/utilities.json", "Historical seed: Unverified synthetic multiplier flagged in Phase 1 audit.", "OPEN", ""],
+    [8, "OBS-UTL-TEL-002", "2026-08-26", "UTL Application Telemetry", "widget_views", "Widget Hub Views", 168, 140, "+20.0%", "accelerating", "HIGH", "UNVERIFIED_ESTIMATE", "registry/widgets.json", "Historical seed: Unverified synthetic multiplier flagged in Phase 1 audit.", "OPEN", ""],
+    [9, "OBS-UTL-TEL-003", "2026-08-26", "UTL Application Telemetry", "utility_interactions", "Tool Executions", 564, 510, "+10.6%", "increasing", "HIGH", "UNVERIFIED_ESTIMATE", "apps/web-shell", "Historical seed: Unverified synthetic multiplier flagged in Phase 1 audit.", "OPEN", ""],
     [10, "OBS-INTEL-001", "2026-08-26", "Internet Sensor Fabric V1", "industry_search_demand_index", "Developer Tools Demand", 84.5, 80.0, "+5.6%", "stable", "HIGH", "ESTIMATE", "intelligence/observations/store.json", "Upstream global search demand sensor index.", "OPEN", ""],
   ];
 
@@ -1288,7 +1353,8 @@ export async function buildControlCenter() {
     "SN", "date", "collection_timestamp", "ga4_active_users", "ga4_sessions", "ga4_screen_page_views",
     "ga4_engaged_sessions", "gsc_impressions", "gsc_clicks", "gsc_ctr", "gsc_average_position",
     "utl_utility_views", "utl_tool_executions", "widget_views", "widget_routes",
-    "tool_execution_view_ratio", "collection_status", "data_quality_status", "notes"
+    "tool_execution_view_ratio", "collection_status", "data_quality_status",
+    "epistemic_classification", "contamination_reason", "usable_for_empirical_analysis", "notes"
   ];
   const rowDailyStatsHeader = wsDailyStats.getRow(5);
   rowDailyStatsHeader.values = dailyStatsHeaders;
@@ -1298,6 +1364,7 @@ export async function buildControlCenter() {
 
   const dailyRecords = loadDailyStatistics();
   dailyRecords.forEach((rec, idx) => {
+    const isContaminated = rec.usable_for_empirical_analysis === false;
     const row = wsDailyStats.addRow([
       idx + 1,
       rec.date,
@@ -1317,10 +1384,20 @@ export async function buildControlCenter() {
       rec.tool_execution_view_ratio,
       rec.collection_status,
       rec.data_quality_status,
+      rec.epistemic_classification || (isContaminated ? "SYNTHETIC_CONTAMINATED" : "TRUTHFUL_EMPIRICAL"),
+      rec.contamination_reason || null,
+      rec.usable_for_empirical_analysis !== undefined ? rec.usable_for_empirical_analysis : !isContaminated,
       rec.notes,
     ]);
     row.height = 24;
     row.font = fontMain;
+    if (isContaminated) {
+      row.getCell(19).font = { ...fontBold, color: { argb: "FFD97706" } };
+      row.getCell(21).font = { ...fontBold, color: { argb: "FFDC2626" } };
+    } else {
+      row.getCell(19).font = { ...fontBold, color: { argb: "FF15803D" } };
+      row.getCell(21).font = { ...fontBold, color: { argb: "FF15803D" } };
+    }
     if (idx % 2 === 1) row.eachCell((cell) => (cell.fill = fillZebra));
   });
 
@@ -1392,6 +1469,8 @@ export async function buildControlCenter() {
   } catch (err) {
     console.log(`Notice: control/UTL-CONTROL-CENTER.xlsx is currently held open by an active process. The updated state has been saved to backup: ${backupPath}`);
   }
+
+  return workbook;
 }
 
 export const generateControlCenter = buildControlCenter;

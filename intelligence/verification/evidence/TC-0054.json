@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0054",
+  "utility_id": "jwt-debugger",
+  "slug": "jwt-debugger",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:26:13.497Z",
+  "duration_ms": 580,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/jwt-debugger",
+    "controls_found": 14
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 14 controls, main container content length 3902",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0054.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0348",
+  "utility_id": "qualified-small-business-stock-gain-exclusion-cap-calculator",
+  "slug": "qualified-small-business-stock-gain-exclusion-cap-calculator",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:30:47.026Z",
+  "duration_ms": 873,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/qualified-small-business-stock-gain-exclusion-cap-calculator",
+    "controls_found": 15
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 15 controls, main container content length 3905",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0348.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

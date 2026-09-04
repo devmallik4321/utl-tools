@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0264",
+  "utility_id": "dns-dkim-key-record-generator",
+  "slug": "dns-dkim-key-record-generator",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:29:20.877Z",
+  "duration_ms": 879,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/dns-dkim-key-record-generator",
+    "controls_found": 14
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 14 controls, main container content length 3950",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0264.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

@@ -46,20 +46,30 @@ test("UTL Provider Adapters - Live and Epistemic Behavior", async () => {
   const telemetry = new UtlTelemetryAdapter();
   const telObs = await telemetry.collect(utlProjectContract);
   assert.equal(telObs.length >= 3, true);
-  assert.equal(telObs[0].epistemic_type, "FACT");
-  assert.equal(telObs[0].status, "SUCCESS");
+  // Telemetry emits truthful UNAVAILABLE state (null value, no synthetic inventory multipliers)
+  assert.equal(["UNAVAILABLE", "SUCCESS"].includes(telObs[0].status), true);
+  assert.equal(["UNAVAILABLE", "FACT"].includes(telObs[0].epistemic_type), true);
+  if (telObs[0].status === "UNAVAILABLE") {
+    assert.equal(telObs[0].value, null);
+  }
 
   const ga4 = new UtlGA4Adapter();
   const ga4Obs = await ga4.collect(utlProjectContract);
   assert.equal(ga4Obs.length >= 1, true);
-  assert.equal(["SUCCESS", "FALLBACK", "ERROR", "AUTH_REQUIRED"].includes(ga4Obs[0].status), true);
-  assert.equal(["FACT", "ASSUMPTION", "ESTIMATE"].includes(ga4Obs[0].epistemic_type), true);
+  assert.equal(["SUCCESS", "AUTH_EXPIRED", "AUTH_UNAVAILABLE", "UNAVAILABLE", "ERROR"].includes(ga4Obs[0].status), true);
+  assert.equal(["FACT", "UNAVAILABLE"].includes(ga4Obs[0].epistemic_type), true);
+  if (ga4Obs[0].status !== "SUCCESS") {
+    assert.equal(ga4Obs[0].value, null);
+  }
 
   const gsc = new UtlSearchConsoleAdapter();
   const gscObs = await gsc.collect(utlProjectContract);
   assert.equal(gscObs.length >= 1, true);
-  assert.equal(["SUCCESS", "FALLBACK", "ERROR", "AUTH_REQUIRED"].includes(gscObs[0].status), true);
-  assert.equal(["FACT", "ASSUMPTION", "ESTIMATE"].includes(gscObs[0].epistemic_type), true);
+  assert.equal(["SUCCESS", "AUTH_EXPIRED", "AUTH_UNAVAILABLE", "UNAVAILABLE", "ERROR"].includes(gscObs[0].status), true);
+  assert.equal(["FACT", "UNAVAILABLE"].includes(gscObs[0].epistemic_type), true);
+  if (gscObs[0].status !== "SUCCESS") {
+    assert.equal(gscObs[0].value, null);
+  }
 
   const intel = new UtlInternetIntelAdapter();
   const intelObs = await intel.collect(utlProjectContract);

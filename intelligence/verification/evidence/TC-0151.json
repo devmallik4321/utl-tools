@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0151",
+  "utility_id": "curl-to-go-http-converter",
+  "slug": "curl-to-go-http-converter",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:27:43.130Z",
+  "duration_ms": 556,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/curl-to-go-http-converter",
+    "controls_found": 14
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 14 controls, main container content length 3243",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0151.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

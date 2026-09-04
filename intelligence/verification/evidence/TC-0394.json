@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0394",
+  "utility_id": "dns-sshfp-ssh-fingerprint-record-generator",
+  "slug": "dns-sshfp-ssh-fingerprint-record-generator",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:31:23.189Z",
+  "duration_ms": 601,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/dns-sshfp-ssh-fingerprint-record-generator",
+    "controls_found": 14
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 14 controls, main container content length 3813",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0394.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

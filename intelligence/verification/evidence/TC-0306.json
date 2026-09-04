@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0306",
+  "utility_id": "aspect-ratio-hexagonal-pixel-to-hex-picker",
+  "slug": "aspect-ratio-hexagonal-pixel-to-hex-picker",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:30:03.450Z",
+  "duration_ms": 1510,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/aspect-ratio-hexagonal-pixel-to-hex-picker",
+    "controls_found": 21
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 21 controls, main container content length 5442",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0306.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

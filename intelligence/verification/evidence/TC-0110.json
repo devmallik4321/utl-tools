@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0110",
+  "utility_id": "dns-record-generator",
+  "slug": "dns-record-generator",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:27:09.547Z",
+  "duration_ms": 928,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/dns-record-generator",
+    "controls_found": 15
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 15 controls, main container content length 3802",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0110.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

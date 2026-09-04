@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0194",
+  "utility_id": "yaml-to-json-online-converter",
+  "slug": "yaml-to-json-online-converter",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:28:19.664Z",
+  "duration_ms": 610,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/yaml-to-json-online-converter",
+    "controls_found": 14
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 14 controls, main container content length 3450",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0194.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0166",
+  "utility_id": "bcrypt-hash-cost-factor-benchmark",
+  "slug": "bcrypt-hash-cost-factor-benchmark",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:27:55.876Z",
+  "duration_ms": 643,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/bcrypt-hash-cost-factor-benchmark",
+    "controls_found": 14
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 14 controls, main container content length 3994",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0166.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

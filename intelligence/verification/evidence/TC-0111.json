@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0111",
+  "utility_id": "loan-refinance-savings-calculator",
+  "slug": "loan-refinance-savings-calculator",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:27:10.216Z",
+  "duration_ms": 669,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/loan-refinance-savings-calculator",
+    "controls_found": 14
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 14 controls, main container content length 3572",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0111.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

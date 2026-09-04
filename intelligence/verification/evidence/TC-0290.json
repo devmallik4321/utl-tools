@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0290",
+  "utility_id": "heart-rate-reserve-karvonen-calculator",
+  "slug": "heart-rate-reserve-karvonen-calculator",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:29:45.529Z",
+  "duration_ms": 664,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/heart-rate-reserve-karvonen-calculator",
+    "controls_found": 14
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 14 controls, main container content length 3781",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0290.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

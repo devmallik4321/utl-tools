@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0088",
+  "utility_id": "roi-investment-calculator",
+  "slug": "roi-investment-calculator",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:26:47.652Z",
+  "duration_ms": 959,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/roi-investment-calculator",
+    "controls_found": 14
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 14 controls, main container content length 3481",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0088.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

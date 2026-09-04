@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0126",
+  "utility_id": "csv-column-extractor-filter",
+  "slug": "csv-column-extractor-filter",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:27:22.131Z",
+  "duration_ms": 915,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/csv-column-extractor-filter",
+    "controls_found": 14
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 14 controls, main container content length 3654",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0126.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

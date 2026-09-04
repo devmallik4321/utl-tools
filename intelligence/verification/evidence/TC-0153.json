@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0153",
+  "utility_id": "css-gradient-generator",
+  "slug": "css-gradient-generator",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:27:44.391Z",
+  "duration_ms": 773,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/css-gradient-generator",
+    "controls_found": 15
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 15 controls, main container content length 3731",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0153.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

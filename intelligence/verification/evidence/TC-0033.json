@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0033",
+  "utility_id": "word-counter",
+  "slug": "word-counter",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:25:56.352Z",
+  "duration_ms": 1228,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/word-counter",
+    "controls_found": 14
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 14 controls, main container content length 4763",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0033.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

@@ -177,31 +177,41 @@ export class UtlSearchConsoleAdapter {
       }
     }
 
-    // Fallback if token unavailable
-    return [
-      {
-        observation_id: `OBS-GSC-UTL-001-${Date.now()}`,
-        project_id: project.project_id,
-        source_id: this.provider_id,
-        source_type: "GSC_SEARCH_ANALYTICS",
-        metric_id: "search_impressions",
-        timestamp: now,
-        period_start: periodStart,
-        period_end: now,
-        value: 0,
-        unit: "impressions",
-        dimensions: { property: this.siteUrl, auth_state: "AUTH_REQUIRED" },
-        status: "AUTH_REQUIRED",
-        confidence: "MEDIUM",
-        confidence_score: 0.75,
-        freshness_hours: 48,
-        epistemic_type: "ESTIMATE",
-        provenance: {
-          source_name: `Google Search Console (${this.siteUrl})`,
-          collection_method: "SERP_PROPERTY_BENCHMARK",
-        },
-        collection_run_id: `RUN-${Date.now()}`,
-      },
+    // Truthful Unavailable GSC Observation: No token obtained or API call failed
+    const hasCreds = this.authClient.hasCredentials();
+    const authStatus = hasCreds ? "AUTH_EXPIRED" : "AUTH_UNAVAILABLE";
+    const authReason = hasCreds ? "Service account token exchange failed or expired." : "Google Service Account credentials missing.";
+
+    const metrics = [
+      { id: "search_impressions", unit: "impressions" },
+      { id: "search_clicks", unit: "clicks" },
+      { id: "search_ctr", unit: "percentage" },
+      { id: "average_position", unit: "rank" },
     ];
+
+    return metrics.map((m, idx) => ({
+      observation_id: `OBS-GSC-UNAVAIL-${m.id.toUpperCase()}-${Date.now()}-${idx}`,
+      project_id: project.project_id,
+      source_id: this.provider_id,
+      source_type: "GSC_SEARCH_ANALYTICS_API",
+      metric_id: m.id,
+      timestamp: now,
+      period_start: periodStart,
+      period_end: now,
+      value: null,
+      unit: m.unit,
+      dimensions: { property: this.siteUrl, reason: authReason },
+      status: authStatus,
+      confidence: "LOW",
+      confidence_score: 0.0,
+      freshness_hours: 0,
+      epistemic_type: "UNAVAILABLE",
+      provenance: {
+        source_name: `Google Search Console (${this.siteUrl})`,
+        collection_method: "NONE",
+        notes: `Data unavailable: ${authReason}. Zero fallback values fabricated.`,
+      },
+      collection_run_id: `RUN-${Date.now()}`,
+    }));
   }
 }

@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0205",
+  "utility_id": "target-date-fund-allocation-calculator",
+  "slug": "target-date-fund-allocation-calculator",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:28:29.114Z",
+  "duration_ms": 626,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/target-date-fund-allocation-calculator",
+    "controls_found": 14
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 14 controls, main container content length 3911",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0205.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

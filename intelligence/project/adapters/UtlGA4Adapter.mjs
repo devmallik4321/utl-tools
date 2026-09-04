@@ -146,37 +146,53 @@ export class UtlGA4Adapter {
         } else {
           const errBody = await response.text();
           console.warn(`GA4 Data API call failed [${response.status}]: ${errBody}`);
+          return this._emitUnavailableObservations(project, now, periodStart, "UNAVAILABLE", `API call failed [${response.status}]: ${errBody}`);
         }
       } catch (callErr) {
         console.warn("GA4 Data API network error:", callErr.message);
+        return this._emitUnavailableObservations(project, now, periodStart, "UNAVAILABLE", `Network error: ${callErr.message}`);
       }
     }
 
-    // Fallback if token unavailable
-    return [
-      {
-        observation_id: `OBS-GA4-UTL-001-${Date.now()}`,
-        project_id: project.project_id,
-        source_id: this.provider_id,
-        source_type: "GA4_REPORTING_ADAPTER",
-        metric_id: "users",
-        timestamp: now,
-        period_start: periodStart,
-        period_end: now,
-        value: 120,
-        unit: "users",
-        dimensions: { measurement_id: this.measurementId, auth_state: "AUTH_REQUIRED" },
-        status: "AUTH_REQUIRED",
-        confidence: "MEDIUM",
-        confidence_score: 0.70,
-        freshness_hours: 24,
-        epistemic_type: "ESTIMATE",
-        provenance: {
-          source_name: `Google Analytics 4 (${this.measurementId})`,
-          collection_method: "CLIENT_SIDE_BEACON_BASELINE",
-        },
-        collection_run_id: `RUN-${Date.now()}`,
-      },
+    // Truthful Unavailable GA4 Observation: No token obtained or propertyId missing
+    const hasCreds = typeof this.authClient.hasCredentials === "function" ? this.authClient.hasCredentials() : false;
+    const authStatus = hasCreds ? "AUTH_EXPIRED" : "AUTH_UNAVAILABLE";
+    const authReason = hasCreds ? "Service account token exchange failed or expired." : "Google Service Account credentials missing.";
+
+    return this._emitUnavailableObservations(project, now, periodStart, authStatus, authReason);
+  }
+
+  _emitUnavailableObservations(project, now, periodStart, status, reason) {
+    const metrics = [
+      { id: "users", unit: "users" },
+      { id: "sessions", unit: "sessions" },
+      { id: "landing_page_views", unit: "views" },
+      { id: "engaged_sessions", unit: "sessions" },
     ];
+
+    return metrics.map((m, idx) => ({
+      observation_id: `OBS-GA4-UNAVAIL-${m.id.toUpperCase()}-${Date.now()}-${idx}`,
+      project_id: project.project_id,
+      source_id: this.provider_id,
+      source_type: "GA4_DATA_API_V1BETA",
+      metric_id: m.id,
+      timestamp: now,
+      period_start: periodStart,
+      period_end: now,
+      value: null,
+      unit: m.unit,
+      dimensions: { measurement_id: this.measurementId, property_id: this.propertyId, reason },
+      status: status,
+      confidence: "LOW",
+      confidence_score: 0.0,
+      freshness_hours: 0,
+      epistemic_type: "UNAVAILABLE",
+      provenance: {
+        source_name: `Google Analytics 4 (${this.measurementId})`,
+        collection_method: "NONE",
+        notes: `Data unavailable: ${reason}. Zero fallback values fabricated.`,
+      },
+      collection_run_id: `RUN-${Date.now()}`,
+    }));
   }
 }

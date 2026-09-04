@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0129",
+  "utility_id": "url-parser-query-parameter-builder",
+  "slug": "url-parser-query-parameter-builder",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:27:24.095Z",
+  "duration_ms": 601,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/url-parser-query-parameter-builder",
+    "controls_found": 14
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 14 controls, main container content length 3671",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0129.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

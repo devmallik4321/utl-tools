@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0386",
+  "utility_id": "hex-grid-spiral-ring-traversal-algorithm",
+  "slug": "hex-grid-spiral-ring-traversal-algorithm",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:31:17.563Z",
+  "duration_ms": 634,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/hex-grid-spiral-ring-traversal-algorithm",
+    "controls_found": 14
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 14 controls, main container content length 3679",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0386.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0296",
+  "utility_id": "aspect-ratio-hexagonal-axial-to-cube-converter",
+  "slug": "aspect-ratio-hexagonal-axial-to-cube-converter",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:29:52.205Z",
+  "duration_ms": 1707,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/aspect-ratio-hexagonal-axial-to-cube-converter",
+    "controls_found": 14
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 14 controls, main container content length 5398",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0296.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0288",
+  "utility_id": "solo-401k-contribution-calculator",
+  "slug": "solo-401k-contribution-calculator",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:29:44.251Z",
+  "duration_ms": 1104,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/solo-401k-contribution-calculator",
+    "controls_found": 15
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 15 controls, main container content length 4651",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0288.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

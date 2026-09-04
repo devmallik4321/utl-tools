@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0260",
+  "utility_id": "vo2-max-running-fitness-calculator",
+  "slug": "vo2-max-running-fitness-calculator",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:29:17.130Z",
+  "duration_ms": 1013,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/vo2-max-running-fitness-calculator",
+    "controls_found": 14
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 14 controls, main container content length 3844",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0260.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

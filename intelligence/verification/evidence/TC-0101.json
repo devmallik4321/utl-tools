@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0101",
+  "utility_id": "unix-timestamp-batch-converter",
+  "slug": "unix-timestamp-batch-converter",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:27:01.853Z",
+  "duration_ms": 1381,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/unix-timestamp-batch-converter",
+    "controls_found": 14
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 14 controls, main container content length 4173",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0101.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

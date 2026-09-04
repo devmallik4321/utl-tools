@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0236",
+  "utility_id": "aspect-ratio-cinema-anamorphic-calculator",
+  "slug": "aspect-ratio-cinema-anamorphic-calculator",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:28:54.272Z",
+  "duration_ms": 563,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/aspect-ratio-cinema-anamorphic-calculator",
+    "controls_found": 14
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 14 controls, main container content length 3772",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0236.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

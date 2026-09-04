@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0294",
+  "utility_id": "dns-srv-service-record-generator",
+  "slug": "dns-srv-service-record-generator",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:29:49.688Z",
+  "duration_ms": 1096,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/dns-srv-service-record-generator",
+    "controls_found": 15
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 15 controls, main container content length 3782",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0294.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

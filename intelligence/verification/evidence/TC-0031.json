@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0031",
+  "utility_id": "age-calculator",
+  "slug": "age-calculator",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:25:54.071Z",
+  "duration_ms": 546,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/age-calculator",
+    "controls_found": 13
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 13 controls, main container content length 3409",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0031.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

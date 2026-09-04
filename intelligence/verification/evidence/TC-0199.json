@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0199",
+  "utility_id": "json-schema-to-zod-schema-converter",
+  "slug": "json-schema-to-zod-schema-converter",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:28:24.052Z",
+  "duration_ms": 840,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/json-schema-to-zod-schema-converter",
+    "controls_found": 15
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 15 controls, main container content length 4323",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0199.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

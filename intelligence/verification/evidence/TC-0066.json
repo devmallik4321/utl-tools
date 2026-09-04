@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0066",
+  "utility_id": "timezone-meeting-planner",
+  "slug": "timezone-meeting-planner",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:26:23.474Z",
+  "duration_ms": 1066,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/timezone-meeting-planner",
+    "controls_found": 15
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 15 controls, main container content length 4158",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0066.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

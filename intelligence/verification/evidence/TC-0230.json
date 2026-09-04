@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0230",
+  "utility_id": "ideal-body-weight-devine-calculator",
+  "slug": "ideal-body-weight-devine-calculator",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:28:50.566Z",
+  "duration_ms": 815,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/ideal-body-weight-devine-calculator",
+    "controls_found": 15
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 15 controls, main container content length 3862",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0230.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0150",
+  "utility_id": "cron-job-human-readable-explainer",
+  "slug": "cron-job-human-readable-explainer",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:27:42.574Z",
+  "duration_ms": 674,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/cron-job-human-readable-explainer",
+    "controls_found": 14
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 14 controls, main container content length 3442",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0150.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

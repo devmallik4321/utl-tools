@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0387",
+  "utility_id": "crontab-to-splunk-signalfx-heartbeat-converter",
+  "slug": "crontab-to-splunk-signalfx-heartbeat-converter",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:31:18.092Z",
+  "duration_ms": 529,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/crontab-to-splunk-signalfx-heartbeat-converter",
+    "controls_found": 14
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 14 controls, main container content length 3710",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0387.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

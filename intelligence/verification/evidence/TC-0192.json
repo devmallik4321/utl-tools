@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0192",
+  "utility_id": "hsa-investment-growth-calculator",
+  "slug": "hsa-investment-growth-calculator",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:28:18.173Z",
+  "duration_ms": 845,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/hsa-investment-growth-calculator",
+    "controls_found": 14
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 14 controls, main container content length 3744",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0192.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

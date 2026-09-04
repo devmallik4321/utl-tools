@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0398",
+  "utility_id": "qsbs-section-1202-capital-gains-exclusion-calculator",
+  "slug": "qsbs-section-1202-capital-gains-exclusion-calculator",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:31:26.276Z",
+  "duration_ms": 484,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/qsbs-section-1202-capital-gains-exclusion-calculator",
+    "controls_found": 14
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 14 controls, main container content length 3925",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0398.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

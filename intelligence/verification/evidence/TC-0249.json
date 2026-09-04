@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0249",
+  "utility_id": "hex-to-rgb-linear-srgb-converter",
+  "slug": "hex-to-rgb-linear-srgb-converter",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:29:05.615Z",
+  "duration_ms": 738,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/hex-to-rgb-linear-srgb-converter",
+    "controls_found": 14
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 14 controls, main container content length 4044",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0249.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

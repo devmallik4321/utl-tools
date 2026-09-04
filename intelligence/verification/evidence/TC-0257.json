@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0257",
+  "utility_id": "crontab-to-github-actions-schedule-converter",
+  "slug": "crontab-to-github-actions-schedule-converter",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:29:13.807Z",
+  "duration_ms": 1639,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/crontab-to-github-actions-schedule-converter",
+    "controls_found": 15
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 15 controls, main container content length 4375",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0257.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

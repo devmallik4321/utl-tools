@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0385",
+  "utility_id": "option-pool-shuffle-dilution-calculator",
+  "slug": "option-pool-shuffle-dilution-calculator",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:31:16.929Z",
+  "duration_ms": 587,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/option-pool-shuffle-dilution-calculator",
+    "controls_found": 14
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 14 controls, main container content length 3980",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0385.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

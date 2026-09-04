@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0125",
+  "utility_id": "compound-annual-growth-rate-matrix",
+  "slug": "compound-annual-growth-rate-matrix",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:27:21.216Z",
+  "duration_ms": 1218,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/compound-annual-growth-rate-matrix",
+    "controls_found": 14
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 14 controls, main container content length 4005",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0125.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

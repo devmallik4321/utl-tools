@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0364",
+  "utility_id": "dns-rpz-response-policy-zone-generator",
+  "slug": "dns-rpz-response-policy-zone-generator",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:30:59.193Z",
+  "duration_ms": 723,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/dns-rpz-response-policy-zone-generator",
+    "controls_found": 14
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 14 controls, main container content length 3703",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0364.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

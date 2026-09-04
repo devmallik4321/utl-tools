@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0212",
+  "utility_id": "backdoor-roth-ira-tax-calculator",
+  "slug": "backdoor-roth-ira-tax-calculator",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:28:36.986Z",
+  "duration_ms": 929,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/backdoor-roth-ira-tax-calculator",
+    "controls_found": 15
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 15 controls, main container content length 3817",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0212.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

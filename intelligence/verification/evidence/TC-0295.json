@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0295",
+  "utility_id": "saas-magic-number-sales-efficiency-calculator",
+  "slug": "saas-magic-number-sales-efficiency-calculator",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:29:50.498Z",
+  "duration_ms": 810,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/saas-magic-number-sales-efficiency-calculator",
+    "controls_found": 14
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 14 controls, main container content length 4014",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0295.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

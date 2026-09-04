@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0418",
+  "utility_id": "idgt-trust-promissory-note-installment-sale-calculator",
+  "slug": "idgt-trust-promissory-note-installment-sale-calculator",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:31:46.121Z",
+  "duration_ms": 1264,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/idgt-trust-promissory-note-installment-sale-calculator",
+    "controls_found": 15
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 15 controls, main container content length 7483",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0418.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

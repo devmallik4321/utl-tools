@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0405",
+  "utility_id": "founder-secondary-sale-equity-dilution-calculator",
+  "slug": "founder-secondary-sale-equity-dilution-calculator",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:31:32.414Z",
+  "duration_ms": 1013,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/founder-secondary-sale-equity-dilution-calculator",
+    "controls_found": 14
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 14 controls, main container content length 3891",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0405.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

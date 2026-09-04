@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0024",
+  "utility_id": "business-name-generator",
+  "slug": "business-name-generator",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:25:49.031Z",
+  "duration_ms": 1174,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/business-name-generator",
+    "controls_found": 13
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 13 controls, main container content length 3898",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0024.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

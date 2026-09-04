@@ -27,6 +27,9 @@ function initDefaultStore() {
         tool_execution_view_ratio: "66.7%",
         collection_status: "SUCCESS",
         data_quality_status: "RECONCILED",
+        epistemic_classification: "SYNTHETIC_CONTAMINATED",
+        contamination_reason: "Contains synthetic multiplier utl_utility_views, utl_tool_executions, widget_views and/or unauthenticated GA4 fallback data",
+        usable_for_empirical_analysis: false,
         notes: "First authenticated Google API ingestion run. 7-day GA4 baseline established.",
       },
       {
@@ -47,6 +50,9 @@ function initDefaultStore() {
         tool_execution_view_ratio: "66.7%",
         collection_status: "SUCCESS",
         data_quality_status: "RECONCILED",
+        epistemic_classification: "SYNTHETIC_CONTAMINATED",
+        contamination_reason: "Contains synthetic multiplier utl_utility_views, utl_tool_executions, widget_views and/or unauthenticated GA4 fallback data",
+        usable_for_empirical_analysis: false,
         notes: "Scheduled daily collection at 08:00 UAE local time. Data stable.",
       },
     ];
@@ -77,22 +83,39 @@ export function recordDailyStatistics(observations = []) {
   const today = new Date().toISOString().split("T")[0];
   const now = new Date().toISOString();
 
-  // Extract metrics from latest observations
-  const ga4Users = observations.find((o) => o.metric_id === "users" && o.source_id === "SRC-GA4-UTL")?.value ?? 11;
-  const ga4Sessions = observations.find((o) => o.metric_id === "sessions" && o.source_id === "SRC-GA4-UTL")?.value ?? 12;
-  const ga4Views = observations.find((o) => o.metric_id === "landing_page_views" && o.source_id === "SRC-GA4-UTL")?.value ?? 48;
-  const ga4Engaged = observations.find((o) => o.metric_id === "engaged_sessions" && o.source_id === "SRC-GA4-UTL")?.value ?? 0;
+  // Extract metrics from latest observations: ONLY persist numeric values when status === SUCCESS
+  const getMetricValue = (sourceId, metricId) => {
+    const obs = observations.find((o) => o.source_id === sourceId && o.metric_id === metricId);
+    if (obs && obs.status === "SUCCESS" && typeof obs.value === "number") {
+      return obs.value;
+    }
+    return null;
+  };
 
-  const gscImpressions = observations.find((o) => o.metric_id === "search_impressions" && o.source_id === "SRC-GSC-UTL")?.value ?? 0;
-  const gscClicks = observations.find((o) => o.metric_id === "search_clicks" && o.source_id === "SRC-GSC-UTL")?.value ?? 0;
-  const gscCtr = observations.find((o) => o.metric_id === "search_ctr" && o.source_id === "SRC-GSC-UTL")?.value ?? 0;
-  const gscPos = observations.find((o) => o.metric_id === "average_position" && o.source_id === "SRC-GSC-UTL")?.value ?? 0;
+  const ga4Users = getMetricValue("SRC-GA4-UTL", "users");
+  const ga4Sessions = getMetricValue("SRC-GA4-UTL", "sessions");
+  const ga4Views = getMetricValue("SRC-GA4-UTL", "landing_page_views");
+  const ga4Engaged = getMetricValue("SRC-GA4-UTL", "engaged_sessions");
 
-  const utlViews = observations.find((o) => o.metric_id === "utility_views" && o.source_id === "SRC-UTL-TELEMETRY")?.value ?? 846;
-  const utlExecs = observations.find((o) => o.metric_id === "utility_interactions" && o.source_id === "SRC-UTL-TELEMETRY")?.value ?? 564;
-  const widgetViews = observations.find((o) => o.metric_id === "widget_views" && o.source_id === "SRC-UTL-TELEMETRY")?.value ?? 168;
+  const gscImpressions = getMetricValue("SRC-GSC-UTL", "search_impressions");
+  const gscClicks = getMetricValue("SRC-GSC-UTL", "search_clicks");
+  const rawGscCtr = getMetricValue("SRC-GSC-UTL", "search_ctr");
+  const rawGscPos = getMetricValue("SRC-GSC-UTL", "average_position");
 
-  const ratio = utlViews > 0 ? `${((utlExecs / utlViews) * 100).toFixed(1)}%` : "0.0%";
+  const utlViews = getMetricValue("SRC-UTL-TELEMETRY", "utility_views");
+  const utlExecs = getMetricValue("SRC-UTL-TELEMETRY", "utility_interactions");
+  const widgetViews = getMetricValue("SRC-UTL-TELEMETRY", "widget_views");
+
+  const ratio = (typeof utlViews === "number" && utlViews > 0 && typeof utlExecs === "number")
+    ? `${((utlExecs / utlViews) * 100).toFixed(1)}%`
+    : null;
+
+  const ga4Ok = observations.some((o) => o.source_id === "SRC-GA4-UTL" && o.status === "SUCCESS");
+  const gscOk = observations.some((o) => o.source_id === "SRC-GSC-UTL" && o.status === "SUCCESS");
+  const telOk = observations.some((o) => o.source_id === "SRC-UTL-TELEMETRY" && o.status === "SUCCESS");
+
+  const collectionStatus = (ga4Ok && telOk && gscOk) ? "SUCCESS" : (ga4Ok || telOk || gscOk) ? "PARTIAL" : "UNAVAILABLE";
+  const dataQuality = (ga4Ok && telOk && gscOk) ? "RECONCILED" : (ga4Ok || telOk || gscOk) ? "PARTIAL_LIVE" : "UNAVAILABLE";
 
   const todayRecord = {
     date: today,
@@ -103,16 +126,19 @@ export function recordDailyStatistics(observations = []) {
     ga4_engaged_sessions: ga4Engaged,
     gsc_impressions: gscImpressions,
     gsc_clicks: gscClicks,
-    gsc_ctr: `${typeof gscCtr === "number" ? gscCtr.toFixed(2) : gscCtr}%`,
-    gsc_average_position: typeof gscPos === "number" ? parseFloat(gscPos.toFixed(1)) : gscPos,
+    gsc_ctr: typeof rawGscCtr === "number" ? `${rawGscCtr.toFixed(2)}%` : null,
+    gsc_average_position: typeof rawGscPos === "number" ? parseFloat(rawGscPos.toFixed(1)) : null,
     utl_utility_views: utlViews,
     utl_tool_executions: utlExecs,
     widget_views: widgetViews,
     widget_routes: 12,
     tool_execution_view_ratio: ratio,
-    collection_status: "SUCCESS",
-    data_quality_status: "RECONCILED",
-    notes: "Automated daily collection. GA4 live baseline active; GSC observation phase.",
+    collection_status: collectionStatus,
+    data_quality_status: dataQuality,
+    epistemic_classification: "TRUTHFUL_EMPIRICAL",
+    contamination_reason: null,
+    usable_for_empirical_analysis: true,
+    notes: `Daily collection. GA4: ${ga4Ok ? "LIVE" : "UNAVAILABLE"}; GSC: ${gscOk ? "LIVE" : "UNAVAILABLE"}; Telemetry: ${telOk ? "LIVE" : "UNAVAILABLE"}. Zero synthetic metrics fabricated.`,
   };
 
   const existingIdx = records.findIndex((r) => r.date === today);
@@ -127,4 +153,12 @@ export function recordDailyStatistics(observations = []) {
 
   fs.writeFileSync(STORE_PATH, JSON.stringify(records, null, 2));
   return records;
+}
+
+/**
+ * Load only empirical (non-contaminated) daily statistics.
+ */
+export function getEmpiricalDailyStatistics() {
+  const records = loadDailyStatistics();
+  return records.filter((r) => r.usable_for_empirical_analysis === true);
 }

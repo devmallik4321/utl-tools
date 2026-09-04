@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0344",
+  "utility_id": "dns-hinfo-hardware-os-record-generator",
+  "slug": "dns-hinfo-hardware-os-record-generator",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:30:42.705Z",
+  "duration_ms": 865,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/dns-hinfo-hardware-os-record-generator",
+    "controls_found": 14
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 14 controls, main container content length 3834",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0344.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

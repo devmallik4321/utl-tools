@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0325",
+  "utility_id": "saas-rule-of-40-growth-fcf-margin-calculator",
+  "slug": "saas-rule-of-40-growth-fcf-margin-calculator",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:30:21.878Z",
+  "duration_ms": 610,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/saas-rule-of-40-growth-fcf-margin-calculator",
+    "controls_found": 14
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 14 controls, main container content length 3997",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0325.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

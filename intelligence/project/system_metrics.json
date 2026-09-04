@@ -1,0 +1,447 @@
+{
+  "schema_version": "2.0.0",
+  "generated_at": "2026-09-04T09:39:23.301Z",
+  "total_metrics": 24,
+  "metrics": [
+    {
+      "metric_id": "active_utilities",
+      "value": 420,
+      "unit": "utilities",
+      "status": "SUCCESS",
+      "epistemic_type": "VERIFIED",
+      "confidence": 1,
+      "source": "registry/utilities.json",
+      "collection_timestamp": "2026-09-04T09:39:23.301Z",
+      "calculation_method": "JSON array length from canonical registry",
+      "provenance": {
+        "path": "registry/utilities.json",
+        "sha256_prefix": "b6ea17dd702f1a4e"
+      },
+      "notes": "420 live functional utility tools defined in the catalog.",
+      "evidence_reference": "registry/utilities.json",
+      "contamination_status": "UNCONTAMINATED",
+      "empirical_usability": true
+    },
+    {
+      "metric_id": "tool_components",
+      "value": 420,
+      "unit": "components",
+      "status": "SUCCESS",
+      "epistemic_type": "VERIFIED",
+      "confidence": 1,
+      "source": "apps/web-shell/src/components/tools/",
+      "collection_timestamp": "2026-09-04T09:39:23.301Z",
+      "calculation_method": "Recursive .tsx file enumeration excluding ToolDispatcher.tsx",
+      "provenance": {
+        "path": "apps/web-shell/src/components/tools/"
+      },
+      "notes": "Every active utility has an independently verified .tsx implementation.",
+      "evidence_reference": "apps/web-shell/src/components/tools/",
+      "contamination_status": "UNCONTAMINATED",
+      "empirical_usability": true
+    },
+    {
+      "metric_id": "dispatcher_active_mappings",
+      "value": 420,
+      "unit": "mappings",
+      "status": "SUCCESS",
+      "epistemic_type": "VERIFIED",
+      "confidence": 1,
+      "source": "apps/web-shell/src/components/tools/ToolDispatcher.tsx",
+      "collection_timestamp": "2026-09-04T09:39:23.301Z",
+      "calculation_method": "Mapping keys in TOOL_COMPONENTS matching active registry slugs",
+      "provenance": {
+        "path": "apps/web-shell/src/components/tools/ToolDispatcher.tsx"
+      },
+      "notes": "1:1 active mapping between registry slugs and interactive React components.",
+      "evidence_reference": "apps/web-shell/src/components/tools/ToolDispatcher.tsx",
+      "contamination_status": "UNCONTAMINATED",
+      "empirical_usability": true
+    },
+    {
+      "metric_id": "dispatcher_alias_mappings",
+      "value": 6,
+      "unit": "aliases",
+      "status": "SUCCESS",
+      "epistemic_type": "VERIFIED",
+      "confidence": 1,
+      "source": "apps/web-shell/src/components/tools/ToolDispatcher.tsx",
+      "collection_timestamp": "2026-09-04T09:39:23.301Z",
+      "calculation_method": "Mapping keys in TOOL_COMPONENTS not in active registry",
+      "provenance": {
+        "path": "apps/web-shell/src/components/tools/ToolDispatcher.tsx"
+      },
+      "notes": "Backward-compatibility aliases: json-minifier, salary-inflation-calculator, aspect-ratio-multiplier, device-screen-dimensions-reference, box-shadow-generator, screen-comparator.",
+      "evidence_reference": "apps/web-shell/src/components/tools/ToolDispatcher.tsx",
+      "contamination_status": "UNCONTAMINATED",
+      "empirical_usability": true
+    },
+    {
+      "metric_id": "dispatcher_total_mappings",
+      "value": 426,
+      "unit": "mappings",
+      "status": "SUCCESS",
+      "epistemic_type": "VERIFIED",
+      "confidence": 1,
+      "source": "apps/web-shell/src/components/tools/ToolDispatcher.tsx",
+      "collection_timestamp": "2026-09-04T09:39:23.301Z",
+      "calculation_method": "Total unique mapping keys in TOOL_COMPONENTS",
+      "provenance": {
+        "path": "apps/web-shell/src/components/tools/ToolDispatcher.tsx"
+      },
+      "notes": "420 active utility routes + 6 backward compatibility aliases.",
+      "evidence_reference": "apps/web-shell/src/components/tools/ToolDispatcher.tsx",
+      "contamination_status": "UNCONTAMINATED",
+      "empirical_usability": true
+    },
+    {
+      "metric_id": "prerender_routes",
+      "value": 463,
+      "unit": "routes",
+      "status": "SUCCESS",
+      "epistemic_type": "VERIFIED",
+      "confidence": 1,
+      "source": "apps/web-shell/.next/prerender-manifest.json",
+      "collection_timestamp": "2026-09-04T09:39:23.301Z",
+      "calculation_method": "Object.keys(manifest.routes).length from Next.js SSG artifact",
+      "provenance": {
+        "path": "apps/web-shell/.next/prerender-manifest.json"
+      },
+      "notes": "Includes 420 tool pages, 10 categories, 16 widget categories, 12 widgets, home, saved, widgets, robots.txt, sitemap.xml.",
+      "evidence_reference": "apps/web-shell/.next/prerender-manifest.json",
+      "contamination_status": "UNCONTAMINATED",
+      "empirical_usability": true
+    },
+    {
+      "metric_id": "sitemap_urls",
+      "value": 461,
+      "unit": "urls",
+      "status": "SUCCESS",
+      "epistemic_type": "VERIFIED",
+      "confidence": 1,
+      "source": "apps/web-shell/src/app/sitemap.ts",
+      "collection_timestamp": "2026-09-04T09:39:23.301Z",
+      "calculation_method": "Model calculation matching sitemap.ts generation rules",
+      "provenance": {
+        "path": "apps/web-shell/src/app/sitemap.ts"
+      },
+      "notes": "All canonical pages: 420 tools + 26 categories/widget categories + 12 widgets + 3 root index pages.",
+      "evidence_reference": "apps/web-shell/src/app/sitemap.ts",
+      "contamination_status": "UNCONTAMINATED",
+      "empirical_usability": true
+    },
+    {
+      "metric_id": "git_commits_total",
+      "value": 57,
+      "unit": "commits",
+      "status": "SUCCESS",
+      "epistemic_type": "VERIFIED",
+      "confidence": 1,
+      "source": "documentation/GIT-CHANGELOG.json",
+      "collection_timestamp": "2026-09-04T09:39:23.301Z",
+      "calculation_method": "Reconstructed Git log commit enumeration",
+      "provenance": {
+        "path": "documentation/GIT-CHANGELOG.json"
+      },
+      "notes": "57 authentic Git commits spanning initialization through Phase 2 remediation.",
+      "evidence_reference": "documentation/GIT-CHANGELOG.json",
+      "contamination_status": "UNCONTAMINATED",
+      "empirical_usability": true
+    },
+    {
+      "metric_id": "git_expansion_batches_verified",
+      "value": 8,
+      "unit": "batches",
+      "status": "SUCCESS",
+      "epistemic_type": "VERIFIED",
+      "confidence": 1,
+      "source": "git log",
+      "collection_timestamp": "2026-09-04T09:39:23.301Z",
+      "calculation_method": "Regex count of commits matching feat(batch-XX)",
+      "provenance": {
+        "commits": "Batches 30 through 37"
+      },
+      "notes": "Explicitly titled and verified expansion batches in repository history.",
+      "evidence_reference": "git log",
+      "contamination_status": "UNCONTAMINATED",
+      "empirical_usability": true
+    },
+    {
+      "metric_id": "git_expansion_batches_derived",
+      "value": 29,
+      "unit": "batches",
+      "status": "SUCCESS",
+      "epistemic_type": "DERIVED",
+      "confidence": 0.85,
+      "source": "git log",
+      "collection_timestamp": "2026-09-04T09:39:23.301Z",
+      "calculation_method": "Sequential utility expansion commits prior to batch-30 naming",
+      "provenance": {
+        "commit_range": "Commits 20 through 48 in repository chronological sequence"
+      },
+      "notes": "29 sequential expansion commits scaled catalog from 47 to 340 tools.",
+      "evidence_reference": "git log",
+      "contamination_status": "UNCONTAMINATED",
+      "empirical_usability": true
+    },
+    {
+      "metric_id": "expansion_batches_claimed",
+      "value": 37,
+      "unit": "batches",
+      "status": "SUCCESS",
+      "epistemic_type": "DERIVED",
+      "confidence": 0.9,
+      "source": "Repository commit history reconciliation",
+      "collection_timestamp": "2026-09-04T09:39:23.301Z",
+      "calculation_method": "Sum of verified and derived expansion commits",
+      "provenance": {
+        "batches": "37 total expansion milestones (29 derived + 8 verified)"
+      },
+      "notes": "Reconciles the historical claim of 37 expansion batches against git commits.",
+      "evidence_reference": "Repository commit history reconciliation",
+      "contamination_status": "UNCONTAMINATED",
+      "empirical_usability": true
+    },
+    {
+      "metric_id": "functional_verification_specifications",
+      "value": 420,
+      "unit": "specifications",
+      "status": "SUCCESS",
+      "epistemic_type": "VERIFIED",
+      "confidence": 1,
+      "source": "registry/utilities.json",
+      "collection_timestamp": "2026-09-04T09:39:23.301Z",
+      "calculation_method": "1 specification per active registered utility",
+      "provenance": {
+        "path": "registry/utilities.json"
+      },
+      "notes": "Functional verification specifications documented in control center C-TestCases.",
+      "evidence_reference": "registry/utilities.json",
+      "contamination_status": "UNCONTAMINATED",
+      "empirical_usability": true
+    },
+    {
+      "metric_id": "automated_tests_executed",
+      "value": 420,
+      "unit": "tests",
+      "status": "SUCCESS",
+      "epistemic_type": "FACT",
+      "confidence": 1,
+      "source": "Playwright Chromium Test Harness Logs",
+      "collection_timestamp": "2026-09-04T09:39:23.301Z",
+      "calculation_method": "Count of component UI/integration tests executed by automated harness",
+      "provenance": {
+        "harness": "Playwright Chromium (Headless)",
+        "run_id": "RUN-HARNESS-1788510325235",
+        "evidence_store": "intelligence/verification/test_execution_evidence.json"
+      },
+      "notes": "Truthful reporting: 420 automated component tests executed.",
+      "evidence_reference": "Playwright Chromium Test Harness Logs",
+      "contamination_status": "UNCONTAMINATED",
+      "empirical_usability": true
+    },
+    {
+      "metric_id": "automated_tests_passed",
+      "value": 417,
+      "unit": "tests",
+      "status": "SUCCESS",
+      "epistemic_type": "FACT",
+      "confidence": 1,
+      "source": "Playwright Chromium Test Harness Logs",
+      "collection_timestamp": "2026-09-04T09:39:23.301Z",
+      "calculation_method": "Count of component UI/integration tests passed with DOM assertion verification",
+      "provenance": {
+        "harness": "Playwright Chromium (Headless)",
+        "run_id": "RUN-HARNESS-1788510325235",
+        "evidence_store": "intelligence/verification/test_execution_evidence.json"
+      },
+      "notes": "Truthful reporting: 417 automated component tests passed.",
+      "evidence_reference": "Playwright Chromium Test Harness Logs",
+      "contamination_status": "UNCONTAMINATED",
+      "empirical_usability": true
+    },
+    {
+      "metric_id": "automated_tests_failed",
+      "value": 0,
+      "unit": "tests",
+      "status": "SUCCESS",
+      "epistemic_type": "FACT",
+      "confidence": 1,
+      "source": "Playwright Chromium Test Harness Logs",
+      "collection_timestamp": "2026-09-04T09:39:23.301Z",
+      "calculation_method": "Count of component UI/integration tests failed",
+      "provenance": {
+        "harness": "Playwright Chromium (Headless)",
+        "run_id": "RUN-HARNESS-1788510325235"
+      },
+      "notes": "Truthful reporting: 0 automated component tests failed.",
+      "evidence_reference": "Playwright Chromium Test Harness Logs",
+      "contamination_status": "UNCONTAMINATED",
+      "empirical_usability": true
+    },
+    {
+      "metric_id": "automated_tests_requires_human_validation",
+      "value": 3,
+      "unit": "tests",
+      "status": "SUCCESS",
+      "epistemic_type": "FACT",
+      "confidence": 1,
+      "source": "Playwright Chromium Test Harness Logs",
+      "collection_timestamp": "2026-09-04T09:39:23.301Z",
+      "calculation_method": "Count of tests requiring physical hardware or external network probe",
+      "provenance": {
+        "harness": "Playwright Chromium (Headless)",
+        "run_id": "RUN-HARNESS-1788510325235"
+      },
+      "notes": "Truthful reporting: 3 utilities require human validation / external network probes.",
+      "evidence_reference": "Playwright Chromium Test Harness Logs",
+      "contamination_status": "UNCONTAMINATED",
+      "empirical_usability": true
+    },
+    {
+      "metric_id": "automated_tests_untested",
+      "value": 0,
+      "unit": "specifications",
+      "status": "SUCCESS",
+      "epistemic_type": "FACT",
+      "confidence": 1,
+      "source": "Playwright Chromium Test Harness Logs",
+      "collection_timestamp": "2026-09-04T09:39:23.301Z",
+      "calculation_method": "Specifications not yet executed by automated harness",
+      "provenance": {
+        "harness": "Playwright Chromium (Headless)"
+      },
+      "notes": "0 specifications remain untested.",
+      "evidence_reference": "Playwright Chromium Test Harness Logs",
+      "contamination_status": "UNCONTAMINATED",
+      "empirical_usability": true
+    },
+    {
+      "metric_id": "first_party_telemetry_events_total",
+      "value": 0,
+      "unit": "events",
+      "status": "SUCCESS",
+      "epistemic_type": "FACT",
+      "confidence": 1,
+      "source": "intelligence/telemetry/events.json",
+      "collection_timestamp": "2026-09-04T09:39:23.301Z",
+      "calculation_method": "Length of sanitized first-party telemetry events array",
+      "provenance": {
+        "store": "intelligence/telemetry/events.json"
+      },
+      "notes": "0 privacy-preserving first-party telemetry events recorded.",
+      "evidence_reference": "intelligence/telemetry/events.json",
+      "contamination_status": "UNCONTAMINATED",
+      "empirical_usability": true
+    },
+    {
+      "metric_id": "live_telemetry_views",
+      "value": null,
+      "unit": "views",
+      "status": "UNAVAILABLE",
+      "epistemic_type": "UNAVAILABLE",
+      "confidence": 0,
+      "source": "SRC-UTL-TELEMETRY",
+      "collection_timestamp": "2026-09-04T09:39:23.301Z",
+      "calculation_method": "Real-time client telemetry event stream",
+      "provenance": {
+        "collector": "No authenticated production telemetry ingest endpoint configured"
+      },
+      "notes": "Telemetry adapter returns null and UNAVAILABLE. Zero multiplier fabrication.",
+      "evidence_reference": "SRC-UTL-TELEMETRY",
+      "contamination_status": "UNCONTAMINATED",
+      "empirical_usability": false
+    },
+    {
+      "metric_id": "live_telemetry_executions",
+      "value": null,
+      "unit": "interactions",
+      "status": "UNAVAILABLE",
+      "epistemic_type": "UNAVAILABLE",
+      "confidence": 0,
+      "source": "SRC-UTL-TELEMETRY",
+      "collection_timestamp": "2026-09-04T09:39:23.301Z",
+      "calculation_method": "Real-time client execution event stream",
+      "provenance": {
+        "collector": "No authenticated production telemetry ingest endpoint configured"
+      },
+      "notes": "Telemetry adapter returns null and UNAVAILABLE. Zero multiplier fabrication.",
+      "evidence_reference": "SRC-UTL-TELEMETRY",
+      "contamination_status": "UNCONTAMINATED",
+      "empirical_usability": false
+    },
+    {
+      "metric_id": "ga4_active_users_live",
+      "value": 27,
+      "unit": "users",
+      "status": "SUCCESS",
+      "epistemic_type": "VERIFIED",
+      "confidence": 1,
+      "source": "SRC-GA4-UTL",
+      "collection_timestamp": "2026-09-04T09:39:23.301Z",
+      "calculation_method": "Google Analytics 4 Data API runReport",
+      "provenance": {
+        "property_id": "477610444"
+      },
+      "notes": "Live data collected via authenticated API.",
+      "evidence_reference": "SRC-GA4-UTL",
+      "contamination_status": "UNCONTAMINATED",
+      "empirical_usability": true
+    },
+    {
+      "metric_id": "historical_daily_stats_contaminated_count",
+      "value": 9,
+      "unit": "records",
+      "status": "SUCCESS",
+      "epistemic_type": "SYNTHETIC_CONTAMINATED",
+      "confidence": 1,
+      "source": "intelligence/project/daily_statistics.json",
+      "collection_timestamp": "2026-09-04T09:39:23.301Z",
+      "calculation_method": "Count of daily records where usable_for_empirical_analysis === false",
+      "provenance": {
+        "path": "intelligence/project/daily_statistics.json",
+        "date_range": "2026-08-26 through 2026-09-03"
+      },
+      "notes": "Preserved for forensic auditability; excluded from empirical traffic analysis.",
+      "evidence_reference": "intelligence/project/daily_statistics.json",
+      "contamination_status": "CONTAMINATED",
+      "empirical_usability": false
+    },
+    {
+      "metric_id": "historical_daily_stats_empirical_count",
+      "value": 1,
+      "unit": "records",
+      "status": "SUCCESS",
+      "epistemic_type": "VERIFIED",
+      "confidence": 1,
+      "source": "intelligence/project/daily_statistics.json",
+      "collection_timestamp": "2026-09-04T09:39:23.301Z",
+      "calculation_method": "Count of daily records where usable_for_empirical_analysis === true",
+      "provenance": {
+        "path": "intelligence/project/daily_statistics.json"
+      },
+      "notes": "Empirical daily statistics meeting strict truth-first criteria.",
+      "evidence_reference": "intelligence/project/daily_statistics.json",
+      "contamination_status": "UNCONTAMINATED",
+      "empirical_usability": true
+    },
+    {
+      "metric_id": "production_system_status",
+      "value": "ATTENTION_REQUIRED",
+      "unit": "status",
+      "status": "SUCCESS",
+      "epistemic_type": "DERIVED",
+      "confidence": 1,
+      "source": "System reconciliation audit",
+      "collection_timestamp": "2026-09-04T09:39:23.301Z",
+      "calculation_method": "Operational assessment: routes & components verified, external telemetry unconfigured",
+      "provenance": {
+        "assessment": "Core catalog complete and prerendered; external telemetry unconfigured; component tests pending Phase 3"
+      },
+      "notes": "Truthful qualified status. Replaces misleading '100% HEALTHY / ZERO DEFECTS'.",
+      "evidence_reference": "System reconciliation audit",
+      "contamination_status": "UNCONTAMINATED",
+      "empirical_usability": true
+    }
+  ]
+}

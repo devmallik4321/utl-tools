@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0060",
+  "utility_id": "social-media-image-resizer",
+  "slug": "social-media-image-resizer",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:26:18.795Z",
+  "duration_ms": 777,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/social-media-image-resizer",
+    "controls_found": 15
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 15 controls, main container content length 4581",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0060.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

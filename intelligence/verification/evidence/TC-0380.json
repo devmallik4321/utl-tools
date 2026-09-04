@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0380",
+  "utility_id": "cycling-ftp-power-zones-coggan-calculator",
+  "slug": "cycling-ftp-power-zones-coggan-calculator",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:31:13.118Z",
+  "duration_ms": 1464,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/cycling-ftp-power-zones-coggan-calculator",
+    "controls_found": 15
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 15 controls, main container content length 4339",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0380.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

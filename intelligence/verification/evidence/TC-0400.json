@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0400",
+  "utility_id": "running-critical-speed-d-prime-aerobic-model-calculator",
+  "slug": "running-critical-speed-d-prime-aerobic-model-calculator",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:31:27.443Z",
+  "duration_ms": 542,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/running-critical-speed-d-prime-aerobic-model-calculator",
+    "controls_found": 14
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 14 controls, main container content length 3523",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0400.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0160",
+  "utility_id": "javascript-regex-cheat-sheet-reference",
+  "slug": "javascript-regex-cheat-sheet-reference",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:27:51.253Z",
+  "duration_ms": 994,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/javascript-regex-cheat-sheet-reference",
+    "controls_found": 15
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 15 controls, main container content length 3644",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0160.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

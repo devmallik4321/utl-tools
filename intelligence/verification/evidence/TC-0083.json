@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0083",
+  "utility_id": "electricity-cost-calculator",
+  "slug": "electricity-cost-calculator",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:26:42.403Z",
+  "duration_ms": 1531,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/electricity-cost-calculator",
+    "controls_found": 14
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 14 controls, main container content length 4510",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0083.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

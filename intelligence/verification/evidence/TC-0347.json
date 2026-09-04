@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0347",
+  "utility_id": "crontab-to-healthchecks-io-heartbeat-converter",
+  "slug": "crontab-to-healthchecks-io-heartbeat-converter",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:30:46.153Z",
+  "duration_ms": 1750,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/crontab-to-healthchecks-io-heartbeat-converter",
+    "controls_found": 14
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 14 controls, main container content length 5941",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0347.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

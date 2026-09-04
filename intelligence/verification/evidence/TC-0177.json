@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0177",
+  "utility_id": "aspect-ratio-css-padding-hack-calculator",
+  "slug": "aspect-ratio-css-padding-hack-calculator",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:28:05.413Z",
+  "duration_ms": 1072,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/aspect-ratio-css-padding-hack-calculator",
+    "controls_found": 15
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 15 controls, main container content length 4497",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0177.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

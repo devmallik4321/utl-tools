@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0224",
+  "utility_id": "ipv4-to-ipv6-mapping-converter",
+  "slug": "ipv4-to-ipv6-mapping-converter",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:28:46.168Z",
+  "duration_ms": 524,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/ipv4-to-ipv6-mapping-converter",
+    "controls_found": 14
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 14 controls, main container content length 3588",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0224.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

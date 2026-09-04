@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0089",
+  "utility_id": "list-cleaner-deduplicator",
+  "slug": "list-cleaner-deduplicator",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:26:49.246Z",
+  "duration_ms": 1594,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/list-cleaner-deduplicator",
+    "controls_found": 15
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 15 controls, main container content length 4089",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0089.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

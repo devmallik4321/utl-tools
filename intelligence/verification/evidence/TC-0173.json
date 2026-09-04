@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0173",
+  "utility_id": "css-clip-path-polygon-generator",
+  "slug": "css-clip-path-polygon-generator",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:28:00.832Z",
+  "duration_ms": 553,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/css-clip-path-polygon-generator",
+    "controls_found": 14
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 14 controls, main container content length 3607",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0173.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

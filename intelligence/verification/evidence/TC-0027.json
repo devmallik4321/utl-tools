@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0027",
+  "utility_id": "compound-interest-calculator",
+  "slug": "compound-interest-calculator",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:25:51.486Z",
+  "duration_ms": 618,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/compound-interest-calculator",
+    "controls_found": 14
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 14 controls, main container content length 4300",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0027.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

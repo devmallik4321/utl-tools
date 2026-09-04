@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0164",
+  "utility_id": "csv-to-sqlite-ddl-converter",
+  "slug": "csv-to-sqlite-ddl-converter",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:27:54.468Z",
+  "duration_ms": 807,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/csv-to-sqlite-ddl-converter",
+    "controls_found": 15
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 15 controls, main container content length 4471",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0164.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

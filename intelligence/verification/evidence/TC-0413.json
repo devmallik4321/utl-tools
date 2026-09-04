@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0413",
+  "utility_id": "css-radar-beacon-pulse-generator",
+  "slug": "css-radar-beacon-pulse-generator",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:31:40.350Z",
+  "duration_ms": 1139,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/css-radar-beacon-pulse-generator",
+    "controls_found": 15
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 15 controls, main container content length 6432",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0413.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

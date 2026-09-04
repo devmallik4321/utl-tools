@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0204",
+  "utility_id": "dns-propagation-checker-reference",
+  "slug": "dns-propagation-checker-reference",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:28:28.488Z",
+  "duration_ms": 982,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/dns-propagation-checker-reference",
+    "controls_found": 15
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 15 controls, main container content length 4636",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0204.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

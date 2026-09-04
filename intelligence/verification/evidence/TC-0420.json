@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0420",
+  "utility_id": "cycling-ftp-w-prime-dynamic-battery-balance-calculator",
+  "slug": "cycling-ftp-w-prime-dynamic-battery-balance-calculator",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:31:47.968Z",
+  "duration_ms": 1059,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/cycling-ftp-w-prime-dynamic-battery-balance-calculator",
+    "controls_found": 14
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 14 controls, main container content length 3637",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0420.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0039",
+  "utility_id": "talking-alarm-clock",
+  "slug": "talking-alarm-clock",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:26:00.255Z",
+  "duration_ms": 416,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/talking-alarm-clock",
+    "controls_found": 15
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 15 controls, main container content length 4343",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0039.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

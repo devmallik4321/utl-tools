@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0159",
+  "utility_id": "subnet-cidr-to-ip-range-expander",
+  "slug": "subnet-cidr-to-ip-range-expander",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:27:50.259Z",
+  "duration_ms": 955,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/subnet-cidr-to-ip-range-expander",
+    "controls_found": 15
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 15 controls, main container content length 4144",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0159.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0135",
+  "utility_id": "emergency-fund-runway-calculator",
+  "slug": "emergency-fund-runway-calculator",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:27:29.983Z",
+  "duration_ms": 854,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/emergency-fund-runway-calculator",
+    "controls_found": 14
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 14 controls, main container content length 3654",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0135.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

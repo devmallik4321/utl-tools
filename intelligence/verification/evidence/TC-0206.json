@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0206",
+  "utility_id": "ip-address-to-binary-hex-converter",
+  "slug": "ip-address-to-binary-hex-converter",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:28:30.503Z",
+  "duration_ms": 1389,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/ip-address-to-binary-hex-converter",
+    "controls_found": 14
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 14 controls, main container content length 3948",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0206.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

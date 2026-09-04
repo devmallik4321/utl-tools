@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0354",
+  "utility_id": "dnssec-nsec-authenticated-denial-of-existence-generator",
+  "slug": "dnssec-nsec-authenticated-denial-of-existence-generator",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:30:51.591Z",
+  "duration_ms": 680,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/dnssec-nsec-authenticated-denial-of-existence-generator",
+    "controls_found": 14
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 14 controls, main container content length 3912",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0354.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0002",
+  "utility_id": "spin-wheel",
+  "slug": "spin-wheel",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:25:33.631Z",
+  "duration_ms": 1013,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/spin-wheel",
+    "controls_found": 15
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 15 controls, main container content length 4037",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0002.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

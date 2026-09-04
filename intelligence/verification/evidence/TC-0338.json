@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0338",
+  "utility_id": "safe-note-pre-vs-post-money-calculator",
+  "slug": "safe-note-pre-vs-post-money-calculator",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:30:37.342Z",
+  "duration_ms": 1270,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/safe-note-pre-vs-post-money-calculator",
+    "controls_found": 15
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 15 controls, main container content length 4663",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0338.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

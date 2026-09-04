@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0317",
+  "utility_id": "crontab-to-datadog-synthetics-schedule-converter",
+  "slug": "crontab-to-datadog-synthetics-schedule-converter",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:30:14.441Z",
+  "duration_ms": 1335,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/crontab-to-datadog-synthetics-schedule-converter",
+    "controls_found": 15
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 15 controls, main container content length 3853",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0317.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

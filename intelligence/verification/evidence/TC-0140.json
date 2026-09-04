@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0140",
+  "utility_id": "hours-minutes-time-duration-calculator",
+  "slug": "hours-minutes-time-duration-calculator",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:27:34.803Z",
+  "duration_ms": 1184,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/hours-minutes-time-duration-calculator",
+    "controls_found": 14
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 14 controls, main container content length 3468",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0140.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

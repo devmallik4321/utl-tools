@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0268",
+  "utility_id": "student-loan-idr-save-calculator",
+  "slug": "student-loan-idr-save-calculator",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:29:24.844Z",
+  "duration_ms": 993,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/student-loan-idr-save-calculator",
+    "controls_found": 15
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 15 controls, main container content length 4124",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0268.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

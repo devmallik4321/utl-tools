@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0012",
+  "utility_id": "dns-lookup",
+  "slug": "dns-lookup",
+  "status": "REQUIRES_HUMAN_VALIDATION",
+  "execution_timestamp": "2026-09-04T08:25:39.147Z",
+  "duration_ms": 0,
+  "input_fixture": {
+    "type": "external_probe",
+    "target": "external_endpoint"
+  },
+  "expected_output": "Live external socket / HTTP response from third-party network",
+  "actual_output": "External network call requires human verification or live unfirewalled egress",
+  "assertion_result": null,
+  "evidence_link": "intelligence/verification/evidence/TC-0012.json",
+  "notes": "Utility requires external network endpoint probing; classified as REQUIRES_HUMAN_VALIDATION per truth governance."
+}

@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0114",
+  "utility_id": "aspect-ratio-scale-multiplier",
+  "slug": "aspect-ratio-scale-multiplier",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:27:11.878Z",
+  "duration_ms": 571,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/aspect-ratio-scale-multiplier",
+    "controls_found": 14
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 14 controls, main container content length 3540",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0114.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

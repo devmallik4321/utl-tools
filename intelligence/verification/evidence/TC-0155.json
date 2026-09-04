@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0155",
+  "utility_id": "car-lease-vs-buy-calculator",
+  "slug": "car-lease-vs-buy-calculator",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:27:46.815Z",
+  "duration_ms": 777,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/car-lease-vs-buy-calculator",
+    "controls_found": 15
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 15 controls, main container content length 3854",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0155.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

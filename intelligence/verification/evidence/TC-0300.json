@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0300",
+  "utility_id": "target-heart-rate-zone-calculator",
+  "slug": "target-heart-rate-zone-calculator",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:29:56.634Z",
+  "duration_ms": 868,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/target-heart-rate-zone-calculator",
+    "controls_found": 14
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 14 controls, main container content length 3975",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0300.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

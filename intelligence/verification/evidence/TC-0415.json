@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0415",
+  "utility_id": "startup-anti-dilution-protection-down-round-calculator",
+  "slug": "startup-anti-dilution-protection-down-round-calculator",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:31:42.215Z",
+  "duration_ms": 943,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/startup-anti-dilution-protection-down-round-calculator",
+    "controls_found": 15
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 15 controls, main container content length 5141",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0415.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

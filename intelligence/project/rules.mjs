@@ -6,7 +6,14 @@ export const utlOpportunityRules = [
       const gscImpressions = observations.find((o) => o.metric_id === "search_impressions");
       const gscCtr = observations.find((o) => o.metric_id === "search_ctr");
 
-      if (gscImpressions && gscImpressions.value > 300 && gscCtr && gscCtr.value < 4.0) {
+      if (
+        gscImpressions &&
+        typeof gscImpressions.value === "number" &&
+        gscImpressions.value > 300 &&
+        gscCtr &&
+        typeof gscCtr.value === "number" &&
+        gscCtr.value < 4.0
+      ) {
         return {
           type: "SEO",
           title: "Align Search Snippets for High-Impression Keywords",
@@ -27,7 +34,7 @@ export const utlOpportunityRules = [
     name: "Page-One SERP Elevation Candidate (Positions 4-15)",
     evaluate(observations) {
       const avgPos = observations.find((o) => o.metric_id === "average_position");
-      if (avgPos && avgPos.value >= 4.0 && avgPos.value <= 15.0) {
+      if (avgPos && typeof avgPos.value === "number" && avgPos.value >= 4.0 && avgPos.value <= 15.0) {
         return {
           type: "GROWTH",
           title: "Diff Checker & Key Utilities Page-One Elevation",
@@ -65,7 +72,7 @@ export const utlOpportunityRules = [
     name: "Windows Widget Discovery Internal Flow Optimization",
     evaluate(observations) {
       const widgetViews = observations.find((o) => o.metric_id === "widget_views");
-      if (widgetViews && widgetViews.value > 100) {
+      if (widgetViews && typeof widgetViews.value === "number" && widgetViews.value > 100) {
         return {
           type: "USER_EXPERIENCE",
           title: "Enhance Widget 1-Click Store Installation Deep Links",

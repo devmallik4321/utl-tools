@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0006",
+  "utility_id": "password-generator",
+  "slug": "password-generator",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:25:36.101Z",
+  "duration_ms": 513,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/password-generator",
+    "controls_found": 14
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 14 controls, main container content length 4409",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0006.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

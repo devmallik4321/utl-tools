@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0049",
+  "utility_id": "llm-token-cost-calculator",
+  "slug": "llm-token-cost-calculator",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:26:08.423Z",
+  "duration_ms": 744,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/llm-token-cost-calculator",
+    "controls_found": 14
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 14 controls, main container content length 3819",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0049.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

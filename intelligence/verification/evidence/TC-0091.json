@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0091",
+  "utility_id": "car-loan-affordability-calculator",
+  "slug": "car-loan-affordability-calculator",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:26:51.596Z",
+  "duration_ms": 984,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/car-loan-affordability-calculator",
+    "controls_found": 15
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 15 controls, main container content length 3960",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0091.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

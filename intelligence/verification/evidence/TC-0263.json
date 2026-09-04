@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0263",
+  "utility_id": "css-ribbon-banner-generator",
+  "slug": "css-ribbon-banner-generator",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:29:19.998Z",
+  "duration_ms": 1029,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/css-ribbon-banner-generator",
+    "controls_found": 15
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 15 controls, main container content length 4806",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0263.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

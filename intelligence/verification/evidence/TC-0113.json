@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0113",
+  "utility_id": "uuid-v4-batch-generator",
+  "slug": "uuid-v4-batch-generator",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:27:11.307Z",
+  "duration_ms": 568,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/uuid-v4-batch-generator",
+    "controls_found": 14
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 14 controls, main container content length 3740",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0113.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

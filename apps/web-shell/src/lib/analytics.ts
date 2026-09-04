@@ -22,10 +22,53 @@ export function trackEvent(eventName: string, params?: Record<string, any>) {
   }
 }
 
+// First-Party Application Telemetry (Zero User Payload / Privacy-Preserving)
+export function sendFirstPartyTelemetry(payload: {
+  event_type: "utility_view" | "tool_execution" | "widget_view";
+  utility_id?: string;
+  widget_id?: string;
+  source?: string;
+  metadata?: Record<string, any>;
+}) {
+  if (typeof window === "undefined") return;
+  try {
+    const eventId = `evt_${Date.now()}_${Math.random().toString(36).slice(2, 10)}`;
+    const body = JSON.stringify({
+      event_id: eventId,
+      event_type: payload.event_type,
+      timestamp: new Date().toISOString(),
+      utility_id: payload.utility_id,
+      widget_id: payload.widget_id,
+      source: payload.source || "web-shell-client",
+      schema_version: "1.0.0",
+      metadata: payload.metadata,
+    });
+
+    if (navigator.sendBeacon) {
+      const blob = new Blob([body], { type: "application/json" });
+      navigator.sendBeacon("/api/telemetry", blob);
+    } else {
+      fetch("/api/telemetry", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body,
+        keepalive: true,
+      }).catch(() => {});
+    }
+  } catch {
+    // Fail silently in client
+  }
+}
+
 export function trackUtilityView(utilityId: string, category: string) {
   trackEvent("utility_view", {
     utility_id: utilityId,
     category: category,
+  });
+  sendFirstPartyTelemetry({
+    event_type: "utility_view",
+    utility_id: utilityId,
+    metadata: { category },
   });
 }
 
@@ -33,6 +76,11 @@ export function trackUtilityInteraction(utilityId: string, interactionType: stri
   trackEvent("utility_interaction", {
     utility_id: utilityId,
     interaction_type: interactionType,
+  });
+  sendFirstPartyTelemetry({
+    event_type: "tool_execution",
+    utility_id: utilityId,
+    metadata: { interaction_type: interactionType },
   });
 }
 
@@ -69,6 +117,11 @@ export function trackWidgetView(widgetSlug: string, category: string) {
   trackEvent("widget_view", {
     widget_slug: widgetSlug,
     category: category,
+  });
+  sendFirstPartyTelemetry({
+    event_type: "widget_view",
+    widget_id: widgetSlug,
+    metadata: { category },
   });
 }
 

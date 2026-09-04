@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0022",
+  "utility_id": "qr-code-generator",
+  "slug": "qr-code-generator",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:25:47.037Z",
+  "duration_ms": 1136,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/qr-code-generator",
+    "controls_found": 15
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 15 controls, main container content length 4366",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0022.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

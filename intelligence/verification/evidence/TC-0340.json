@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0340",
+  "utility_id": "maximum-aerobic-speed-mas-running-intervals-calculator",
+  "slug": "maximum-aerobic-speed-mas-running-intervals-calculator",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:30:38.750Z",
+  "duration_ms": 666,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/maximum-aerobic-speed-mas-running-intervals-calculator",
+    "controls_found": 14
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 14 controls, main container content length 3693",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0340.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

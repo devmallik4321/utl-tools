@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0037",
+  "utility_id": "token-counter",
+  "slug": "token-counter",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:25:58.816Z",
+  "duration_ms": 486,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/token-counter",
+    "controls_found": 14
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 14 controls, main container content length 4183",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0037.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}

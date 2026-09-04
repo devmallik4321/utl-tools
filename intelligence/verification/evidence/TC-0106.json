@@ -1,0 +1,17 @@
+{
+  "test_id": "TC-0106",
+  "utility_id": "jwt-payload-inspector-signer",
+  "slug": "jwt-payload-inspector-signer",
+  "status": "PASS",
+  "execution_timestamp": "2026-09-04T08:27:05.312Z",
+  "duration_ms": 652,
+  "input_fixture": {
+    "url": "http://localhost:3005/tools/jwt-payload-inspector-signer",
+    "controls_found": 14
+  },
+  "expected_output": "Interactive tool rendered with >= 3 controls and active DOM computation",
+  "actual_output": "Rendered 14 controls, main container content length 3974",
+  "assertion_result": true,
+  "evidence_link": "intelligence/verification/evidence/TC-0106.json",
+  "notes": "Automated browser interaction and DOM computation verified."
+}
