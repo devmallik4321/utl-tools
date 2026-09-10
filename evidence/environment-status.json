@@ -1,0 +1,60 @@
+{
+  "timestamp": "2026-09-07T23:06:20.898Z",
+  "status": "COMPLETE",
+  "variables": [
+    {
+      "name": "GA4_MEASUREMENT_ID",
+      "sourceFile": ".env.example",
+      "isPresent": true,
+      "classification": "OPTIONAL_SECRET"
+    },
+    {
+      "name": "GA4_PROPERTY_ID",
+      "sourceFile": ".env.example",
+      "isPresent": true,
+      "classification": "OPTIONAL_SECRET"
+    },
+    {
+      "name": "GSC_SITE_URL",
+      "sourceFile": ".env.example",
+      "isPresent": true,
+      "classification": "OPTIONAL_SECRET"
+    },
+    {
+      "name": "GOOGLE_APPLICATION_CREDENTIALS",
+      "sourceFile": ".env.example",
+      "isPresent": true,
+      "classification": "OPTIONAL_SECRET"
+    },
+    {
+      "name": "VERCEL_OIDC_TOKEN",
+      "sourceFile": ".env.local",
+      "isPresent": true,
+      "classification": "OPTIONAL_SECRET"
+    },
+    {
+      "name": "GOOGLE_APPLICATION_CREDENTIALS",
+      "sourceFile": ".env.local",
+      "isPresent": true,
+      "classification": "OPTIONAL_SECRET"
+    },
+    {
+      "name": "GA4_PROPERTY_ID",
+      "sourceFile": ".env.local",
+      "isPresent": true,
+      "classification": "OPTIONAL_SECRET"
+    },
+    {
+      "name": "GA4_MEASUREMENT_ID",
+      "sourceFile": ".env.local",
+      "isPresent": true,
+      "classification": "OPTIONAL_SECRET"
+    },
+    {
+      "name": "GSC_SITE_URL",
+      "sourceFile": ".env.local",
+      "isPresent": true,
+      "classification": "OPTIONAL_SECRET"
+    }
+  ]
+}

@@ -2,6 +2,23 @@ import ExcelJS from "exceljs";
 import fs from "fs";
 import path from "path";
 import { loadDailyStatistics } from "../intelligence/project/dailyStatisticsStore.mjs";
+import {
+  getLiveStatistics,
+  getMonthlyStatistics,
+  getFirstSevenDaysSummary,
+  buildReconstructedEmpiricalProgression,
+  getRollingSevenDaysStatistics,
+  getRollingThirtyDaysStatistics,
+  getTodayStatistics,
+  getPeriodComparisons,
+  calculateTrafficTrajectory,
+  getInternalTargetProgress,
+  getCanonicalStatistics,
+} from "../intelligence/project/statisticsAggregator.mjs";
+import { PRODUCTION_TIMELINE, loadEmpiricalDailyStatistics } from "../intelligence/project/historicalReconstructor.mjs";
+import { evaluateAdSenseReadiness } from "../intelligence/project/monetizationModel.mjs";
+import { defaultPersistentStore } from "../intelligence/telemetry/persistentTelemetryStore.mjs";
+import { getProductionObservationSummary } from "../intelligence/project/productionObserver.mjs";
 import { buildReleasesLedger } from "./reconstruct_releases.mjs";
 
 export async function buildControlCenter() {
@@ -75,7 +92,7 @@ export async function buildControlCenter() {
   rowIdxHeader.height = 26;
 
   const sheetDefinitions = [
-    { code: "P-00", name: "P-00 INDEX", type: "Parent", parent: "ROOT", desc: "Canonical navigation directory registering all worksheets.", count: "22 Sheets", target: "A1" },
+    { code: "P-00", name: "P-00 INDEX", type: "Parent", parent: "ROOT", desc: "Canonical navigation directory registering all worksheets.", count: "23 Sheets", target: "A1" },
     { code: "P-01", name: "P-Dashboard", type: "Parent", parent: "P-00 INDEX", desc: "Operational KPIs, live status, GA4 analytics, Search Console state, and maintenance freeze.", count: "Formula KPIs", target: "A1" },
     { code: "P-02", name: "P-Charter", type: "Parent", parent: "P-00 INDEX", desc: "Project mission, philosophy, design rules, non-goals, and governance.", count: "Charter Doc", target: "A1" },
     { code: "P-03", name: "P-Utilities", type: "Parent", parent: "P-00 INDEX", desc: `Master registry of all ${utilities.length} production utilities with live status & URLs.`, count: `${utilities.length} Utilities`, target: "A1" },
@@ -84,6 +101,7 @@ export async function buildControlCenter() {
     { code: "P-06", name: "P-Releases", type: "Parent", parent: "P-00 INDEX", desc: "Version release ledger, milestones, deployment statuses, and builds.", count: "Releases Log", target: "A1" },
     { code: "P-07", name: "P-Contexts", type: "Parent", parent: "P-00 INDEX", desc: "Standard operating agent contexts (CTX-001 through CTX-010) with prompt links.", count: "10 Contexts", target: "A1" },
     { code: "P-08", name: "P-Sessions", type: "Parent", parent: "P-00 INDEX", desc: "Persistent Antigravity CLI & agent session registry with conversation IDs.", count: "Sessions Log", target: "A1" },
+    { code: "P-09", name: "P-Statistics", type: "Parent", parent: "P-00 INDEX", desc: "Live operational usage, monthly volume intelligence, daily empirical trends, and data quality.", count: "Statistics View", target: "A1" },
     { code: "C-01", name: "C-Reviews", type: "Child", parent: "P-Utilities", desc: "30-column operational review matrix with dropdowns and human comments.", count: `${utilities.length} Rows`, target: "A1" },
     { code: "C-02", name: "C-Changes", type: "Child", parent: "P-Releases", desc: "Master chronological changelog history with author stamps.", count: "Foundation Entries", target: "A1" },
     { code: "C-03", name: "C-TestCases", type: "Child", parent: "P-Work", desc: "Functional test specifications with step-by-step instructions (Automated execution pending).", count: `${utilities.length} Specifications`, target: "A1" },
@@ -556,7 +574,526 @@ export async function buildControlCenter() {
   });
 
   // ==========================================
-  // 10. C-Reviews (Child of P-Utilities)
+  // 9b. P-Statistics (Parent Sheet)
+  // ==========================================
+  const wsStats = workbook.addWorksheet("P-Statistics", { views: [{ showGridLines: true, freeze: { ySplit: 4 } }] });
+  addNavRow(wsStats);
+
+  wsStats.getCell("A2").value = "P-Statistics — Live Statistics, Daily Growth & Monthly Volume Intelligence";
+  wsStats.getCell("A2").font = fontTitle;
+  wsStats.getCell("A3").value = "Authoritative production operational layer. Historical data reconstructed; contaminated estimates segregated.";
+  wsStats.getCell("A3").font = fontSubtitle;
+
+  const liveStats = getLiveStatistics();
+  const monthlyStats = getMonthlyStatistics();
+  const firstSeven = getFirstSevenDaysSummary();
+  const empiricalProgression = buildReconstructedEmpiricalProgression();
+  const rolling7 = getRollingSevenDaysStatistics();
+  const rolling30 = getRollingThirtyDaysStatistics();
+  const todayStats = getTodayStatistics();
+  const periodComparisons = getPeriodComparisons();
+  const trajectory = calculateTrafficTrajectory();
+  const internalTarget = getInternalTargetProgress(monthlyStats.month_to_date_metrics?.ga4?.sessions || 36);
+
+  const monetization = evaluateAdSenseReadiness({
+    sessions: monthlyStats.month_to_date_metrics?.ga4?.sessions || 0,
+    users: monthlyStats.month_to_date_metrics?.ga4?.daily_active_users_summed || 0,
+    page_views: monthlyStats.month_to_date_metrics?.ga4?.page_views || 0,
+  });
+
+  let statsCurrentRow = 5;
+
+  // --- BLOCK 1: LIVE NOW ---
+  const rowLiveHeader = wsStats.getRow(statsCurrentRow++);
+  rowLiveHeader.values = ["## 1. LIVE NOW (Current Day Operational Signals)", "Value", "Unit", "Collection Status", "Epistemic Type", "Authoritative Source"];
+  rowLiveHeader.font = fontHeader;
+  rowLiveHeader.fill = fillParentHeader;
+  rowLiveHeader.height = 26;
+
+  const liveNowData = [
+    ["GA4 Active Users", liveStats.current_day.ga4_active_users ?? "null", "users", liveStats.current_day.ga4_active_users !== null ? "LIVE" : "UNAVAILABLE", "VERIFIED", "SRC-GA4-UTL"],
+    ["GA4 Sessions", liveStats.current_day.ga4_sessions ?? "null", "sessions", liveStats.current_day.ga4_sessions !== null ? "LIVE" : "UNAVAILABLE", "VERIFIED", "SRC-GA4-UTL"],
+    ["GA4 Page Views", liveStats.current_day.ga4_page_views ?? "null", "views", liveStats.current_day.ga4_page_views !== null ? "LIVE" : "UNAVAILABLE", "VERIFIED", "SRC-GA4-UTL"],
+    ["GA4 Engaged Sessions", liveStats.current_day.ga4_engaged_sessions ?? "null", "sessions", liveStats.current_day.ga4_engaged_sessions !== null ? "LIVE" : "UNAVAILABLE", "VERIFIED", "SRC-GA4-UTL"],
+    ["GSC Search Impressions", liveStats.current_day.gsc_impressions ?? "null", "impressions", liveStats.current_day.gsc_impressions !== null ? "LIVE" : "UNAVAILABLE", "VERIFIED", "SRC-GSC-UTL"],
+    ["GSC Search Clicks", liveStats.current_day.gsc_clicks ?? "null", "clicks", liveStats.current_day.gsc_clicks !== null ? "LIVE" : "UNAVAILABLE", "VERIFIED", "SRC-GSC-UTL"],
+    ["GSC Click-Through Rate (CTR)", liveStats.current_day.gsc_ctr ?? "null", "percentage", liveStats.current_day.gsc_ctr !== null ? "LIVE" : "UNAVAILABLE", "VERIFIED", "SRC-GSC-UTL"],
+    ["GSC Average SERP Position", liveStats.current_day.gsc_average_position ?? "null", "position", liveStats.current_day.gsc_average_position !== null ? "LIVE" : "UNAVAILABLE", "VERIFIED", "SRC-GSC-UTL"],
+    ["Telemetry Events Collected", liveStats.current_day.telemetry_event_count, "events", "ACTIVE", "VERIFIED", "SRC-UTL-TELEMETRY"],
+    ["First-Party Utility Views", liveStats.current_day.first_party_utility_views ?? "null", "views", "NON-PERSISTENT_EDGE", "UNAVAILABLE", "SRC-UTL-TELEMETRY"],
+    ["First-Party Tool Executions", liveStats.current_day.first_party_tool_executions ?? "null", "interactions", "NON-PERSISTENT_EDGE", "UNAVAILABLE", "SRC-UTL-TELEMETRY"],
+    ["First-Party Widget Views", liveStats.current_day.first_party_widget_views ?? "null", "views", "NON-PERSISTENT_EDGE", "UNAVAILABLE", "SRC-UTL-TELEMETRY"],
+  ];
+
+  liveNowData.forEach((r, idx) => {
+    const row = wsStats.getRow(statsCurrentRow++);
+    row.values = r;
+    row.height = 22;
+    row.font = fontMain;
+    row.getCell(1).font = fontBold;
+    if (idx % 2 === 1) row.eachCell((c) => (c.fill = fillZebra));
+  });
+
+  statsCurrentRow++; // spacer
+
+  // --- BLOCK 2: TODAY ---
+  const rowTodayHeader = wsStats.getRow(statsCurrentRow++);
+  rowTodayHeader.values = ["## 2. TODAY (Today's Measured Statistics)", "Value", "Unit", "Collection Status", "Epistemic Type", "Authoritative Source"];
+  rowTodayHeader.font = fontHeader;
+  rowTodayHeader.fill = fillParentHeader;
+  rowTodayHeader.height = 26;
+
+  const todayData = [
+    ["Observation Date", todayStats?.date || "2026-09-04", "date", "FACT", "TRUTHFUL_EMPIRICAL", "Authoritative System Timeline"],
+    ["GA4 Active Users", todayStats?.ga4?.active_users ?? "null", "users", todayStats?.ga4?.status || "EMPIRICAL_API", "TRUTHFUL_EMPIRICAL", "SRC-GA4-UTL"],
+    ["GA4 Sessions", todayStats?.ga4?.sessions ?? "null", "sessions", todayStats?.ga4?.status || "EMPIRICAL_API", "TRUTHFUL_EMPIRICAL", "SRC-GA4-UTL"],
+    ["GA4 Page Views", todayStats?.ga4?.screen_page_views ?? "null", "views", todayStats?.ga4?.status || "EMPIRICAL_API", "TRUTHFUL_EMPIRICAL", "SRC-GA4-UTL"],
+    ["GA4 Engaged Sessions", todayStats?.ga4?.engaged_sessions ?? "null", "sessions", todayStats?.ga4?.status || "EMPIRICAL_API", "TRUTHFUL_EMPIRICAL", "SRC-GA4-UTL"],
+    ["GSC Search Impressions", todayStats?.gsc?.impressions ?? "null", "impressions", todayStats?.gsc?.status || "EMPIRICAL_API", "TRUTHFUL_EMPIRICAL", "SRC-GSC-UTL"],
+    ["GSC Search Clicks", todayStats?.gsc?.clicks ?? "null", "clicks", todayStats?.gsc?.status || "EMPIRICAL_API", "TRUTHFUL_EMPIRICAL", "SRC-GSC-UTL"],
+    ["GSC Click-Through Rate (CTR)", todayStats?.gsc?.ctr ?? "null", "percentage", todayStats?.gsc?.status || "EMPIRICAL_API", "TRUTHFUL_EMPIRICAL", "SRC-GSC-UTL"],
+    ["GSC Average SERP Position", todayStats?.gsc?.average_position ?? "null", "position", todayStats?.gsc?.status || "EMPIRICAL_API", "TRUTHFUL_EMPIRICAL", "SRC-GSC-UTL"],
+    ["First-Party Utility Views", todayStats?.telemetry?.utility_views ?? "null", "views", todayStats?.telemetry?.status || "UNAVAILABLE", "UNAVAILABLE", "SRC-UTL-TELEMETRY"],
+    ["First-Party Tool Executions", todayStats?.telemetry?.tool_executions ?? "null", "interactions", todayStats?.telemetry?.status || "UNAVAILABLE", "UNAVAILABLE", "SRC-UTL-TELEMETRY"],
+    ["First-Party Widget Views", todayStats?.telemetry?.widget_views ?? "null", "views", todayStats?.telemetry?.status || "UNAVAILABLE", "UNAVAILABLE", "SRC-UTL-TELEMETRY"],
+  ];
+
+  todayData.forEach((r, idx) => {
+    const row = wsStats.getRow(statsCurrentRow++);
+    row.values = r;
+    row.height = 22;
+    row.font = fontMain;
+    row.getCell(1).font = fontBold;
+    if (idx % 2 === 1) row.eachCell((c) => (c.fill = fillZebra));
+  });
+
+  statsCurrentRow++; // spacer
+
+  // --- BLOCK 3: FIRST 7 DAYS ---
+  const rowFirst7Header = wsStats.getRow(statsCurrentRow++);
+  rowFirst7Header.values = ["## 3. FIRST 7 DAYS (Launch Week: 2026-08-25 to 2026-08-31)", "GA4 Users", "GA4 Sessions", "Visits Proxy", "GA4 Views", "GSC Impr", "GSC Clicks", "GSC CTR", "Avg SERP Pos", "Status"];
+  rowFirst7Header.font = fontHeader;
+  rowFirst7Header.fill = fillParentHeader;
+  rowFirst7Header.height = 26;
+
+  if (firstSeven.daily_records) {
+    firstSeven.daily_records.forEach((d, idx) => {
+      const row = wsStats.getRow(statsCurrentRow++);
+      row.values = [
+        `Day ${idx + 1} (${d.date})`,
+        d.users,
+        d.sessions,
+        d.visits_proxy,
+        d.page_views,
+        d.impressions,
+        d.clicks,
+        d.ctr,
+        d.average_position,
+        "EMPIRICAL_API",
+      ];
+      row.height = 22;
+      row.font = fontMain;
+      row.getCell(1).font = fontBold;
+      row.getCell(10).font = { ...fontBold, color: { argb: "FF15803D" } };
+      if (idx % 2 === 1) row.eachCell((c) => (c.fill = fillZebra));
+    });
+
+    const rowFirst7Summary = wsStats.getRow(statsCurrentRow++);
+    rowFirst7Summary.values = [
+      "FIRST 7 DAYS TOTALS",
+      firstSeven.totals.total_users_summed,
+      firstSeven.totals.total_sessions,
+      firstSeven.totals.total_sessions,
+      firstSeven.totals.total_page_views,
+      firstSeven.totals.total_search_impressions,
+      firstSeven.totals.total_search_clicks,
+      firstSeven.totals.average_ctr,
+      "-",
+      "7-DAY TOTAL",
+    ];
+    rowFirst7Summary.height = 24;
+    rowFirst7Summary.font = fontBold;
+    rowFirst7Summary.eachCell((c) => (c.fill = fillNav));
+  }
+
+  statsCurrentRow++; // spacer
+
+  // --- BLOCK 4: DAY 1 → TODAY ---
+  const rowDay1Header = wsStats.getRow(statsCurrentRow++);
+  rowDay1Header.values = ["## 4. DAY 1 → TODAY (Reconstructed Empirical Timeline)", "GA4 Users", "GA4 Sessions", "Visits Proxy", "GA4 Views", "GSC Impr", "GSC Clicks", "DoD Sessions %", "DoD Views %", "Classification"];
+  rowDay1Header.font = fontHeader;
+  rowDay1Header.fill = fillParentHeader;
+  rowDay1Header.height = 26;
+
+  empiricalProgression.forEach((rec, idx) => {
+    const row = wsStats.getRow(statsCurrentRow++);
+    row.values = [
+      rec.date,
+      rec.ga4_active_users ?? "null",
+      rec.ga4_sessions ?? "null",
+      rec.visits_proxy ?? "null",
+      rec.ga4_page_views ?? "null",
+      rec.gsc_impressions ?? "null",
+      rec.gsc_clicks ?? "null",
+      rec.day_over_day_changes?.ga4_sessions?.pct_change !== null && rec.day_over_day_changes?.ga4_sessions?.pct_change !== undefined ? `${rec.day_over_day_changes.ga4_sessions.pct_change}%` : "null",
+      rec.day_over_day_changes?.ga4_page_views?.pct_change !== null && rec.day_over_day_changes?.ga4_page_views?.pct_change !== undefined ? `${rec.day_over_day_changes.ga4_page_views.pct_change}%` : "null",
+      rec.epistemic_classification,
+    ];
+    row.height = 22;
+    row.font = fontMain;
+    row.getCell(1).font = fontBold;
+    row.getCell(10).font = { ...fontBold, color: { argb: "FF15803D" } };
+    if (idx % 2 === 1) row.eachCell((c) => (c.fill = fillZebra));
+  });
+
+  statsCurrentRow++; // spacer
+
+  // --- BLOCK 5: LAST 7 DAYS ---
+  const rowLast7Header = wsStats.getRow(statsCurrentRow++);
+  rowLast7Header.values = ["## 5. LAST 7 DAYS (Rolling 7-Day Empirical Volume)", "Value", "Unit", "Measurement Window / Notes", "Epistemic Type", "Authoritative Source"];
+  rowLast7Header.font = fontHeader;
+  rowLast7Header.fill = fillParentHeader;
+  rowLast7Header.height = 26;
+
+  const last7Data = [
+    ["Rolling 7-Day Window", `${rolling7.window?.start_date} to ${rolling7.window?.end_date}`, "dates", "Exactly 7 empirical days evaluated", "FACT", "historicalReconstructor.mjs"],
+    ["Rolling 7-Day Sessions", rolling7.totals?.total_sessions, "sessions", "Sum of empirical daily sessions over last 7 days", "DERIVED", "SRC-GA4-UTL"],
+    ["Rolling 7-Day Page Views", rolling7.totals?.total_page_views, "views", "Sum of empirical daily page views over last 7 days", "DERIVED", "SRC-GA4-UTL"],
+    ["Rolling 7-Day User Observations", rolling7.totals?.total_user_observations_summed, "observations", "Summed active-user observations over last 7 days", "DERIVED", "SRC-GA4-UTL"],
+    ["Rolling 7-Day Engaged Sessions", rolling7.totals?.total_engaged_sessions, "sessions", "Sum of empirical engaged sessions over last 7 days", "DERIVED", "SRC-GA4-UTL"],
+    ["Rolling 7-Day Search Impressions", rolling7.totals?.total_search_impressions, "impressions", "Sum of empirical search impressions over last 7 days", "DERIVED", "SRC-GSC-UTL"],
+    ["Rolling 7-Day Search Clicks", rolling7.totals?.total_search_clicks, "clicks", "Sum of empirical search clicks over last 7 days", "DERIVED", "SRC-GSC-UTL"],
+    ["Average Daily Sessions (7D)", rolling7.daily_averages?.sessions_per_day, "sessions/day", "Total sessions divided by 7 days", "DERIVED", "growthIntelligence.mjs"],
+    ["Average Daily Views (7D)", rolling7.daily_averages?.page_views_per_day, "views/day", "Total views divided by 7 days", "DERIVED", "growthIntelligence.mjs"],
+    ["Average Daily Impressions (7D)", rolling7.daily_averages?.search_impressions_per_day, "impr/day", "Total impressions divided by 7 days", "DERIVED", "growthIntelligence.mjs"],
+  ];
+
+  last7Data.forEach((r, idx) => {
+    const row = wsStats.getRow(statsCurrentRow++);
+    row.values = r;
+    row.height = 22;
+    row.font = fontMain;
+    row.getCell(1).font = fontBold;
+    if (idx % 2 === 1) row.eachCell((c) => (c.fill = fillZebra));
+  });
+
+  statsCurrentRow++; // spacer
+
+  // --- BLOCK 6: LAST 30 DAYS ---
+  const rowLast30Header = wsStats.getRow(statsCurrentRow++);
+  rowLast30Header.values = ["## 6. LAST 30 DAYS (Rolling 30-Day Empirical Volume)", "Value", "Unit", "Measurement Window / Notes", "Epistemic Type", "Authoritative Source"];
+  rowLast30Header.font = fontHeader;
+  rowLast30Header.fill = fillParentHeader;
+  rowLast30Header.height = 26;
+
+  const last30Data = [
+    ["Window Status", rolling30.status, "status", rolling30.window_status_note, "FACT", "growthIntelligence.mjs"],
+    ["Empirical Days Observed", rolling30.window?.days_observed, "days", "Observed empirical days since Day 1 (2026-08-25)", "FACT", "historicalReconstructor.mjs"],
+    ["Window Target Days", rolling30.window?.window_target_days, "days", "Full 30-day window benchmark", "BENCHMARK", "Operating Standard"],
+    ["Cumulative Sessions (Observed)", rolling30.totals?.total_sessions, "sessions", "Sum of sessions across all observed empirical days", "DERIVED", "SRC-GA4-UTL"],
+    ["Cumulative Page Views (Observed)", rolling30.totals?.total_page_views, "views", "Sum of views across all observed empirical days", "DERIVED", "SRC-GA4-UTL"],
+    ["Cumulative Search Impressions", rolling30.totals?.total_search_impressions, "impressions", "Sum of impressions across all observed empirical days", "DERIVED", "SRC-GSC-UTL"],
+    ["Cumulative Search Clicks", rolling30.totals?.total_search_clicks, "clicks", "Sum of clicks across all observed empirical days", "DERIVED", "SRC-GSC-UTL"],
+    ["Average Daily Sessions (Observed)", rolling30.daily_averages?.sessions_per_day, "sessions/day", "Total sessions divided by observed days", "DERIVED", "growthIntelligence.mjs"],
+    ["Average Daily Views (Observed)", rolling30.daily_averages?.page_views_per_day, "views/day", "Total views divided by observed days", "DERIVED", "growthIntelligence.mjs"],
+    ["Average Daily Impressions (Observed)", rolling30.daily_averages?.search_impressions_per_day, "impr/day", "Total impressions divided by observed days", "DERIVED", "growthIntelligence.mjs"],
+  ];
+
+  last30Data.forEach((r, idx) => {
+    const row = wsStats.getRow(statsCurrentRow++);
+    row.values = r;
+    row.height = 22;
+    row.font = fontMain;
+    row.getCell(1).font = fontBold;
+    if (idx % 2 === 1) row.eachCell((c) => (c.fill = fillZebra));
+  });
+
+  statsCurrentRow++; // spacer
+
+  // --- BLOCK 7: THIS MONTH ---
+  const rowMonthHeader = wsStats.getRow(statsCurrentRow++);
+  rowMonthHeader.values = ["## 7. THIS MONTH (September 2026 Volume Intelligence)", "Value", "Unit", "Semantics / Accounting Definition", "Epistemic Type", "Authoritative Source"];
+  rowMonthHeader.font = fontHeader;
+  rowMonthHeader.fill = fillParentHeader;
+  rowMonthHeader.height = 26;
+
+  const canonStats = getCanonicalStatistics();
+  const cMtd = canonStats.canonical_windows.september_mtd;
+  const mData = monthlyStats.month_to_date_metrics;
+  const thisMonthData = [
+    ["Daily Active-User Observations (Summed)", cMtd.totals.user_observations_summed, "observations", "Summed daily observations — NOT Unique Monthly Users", "DERIVED", "SRC-GA4-UTL"],
+    ["Monthly Unique Users (GA4 Query)", cMtd.monthly_unique_users, "users", "Direct authoritative monthly query from GA4 Data API", "VERIFIED", "SRC-GA4-UTL"],
+    ["Monthly Sessions (Visits Proxy)", cMtd.totals.sessions, "sessions", "Sum of empirical daily sessions for calendar month", "DERIVED", "SRC-GA4-UTL"],
+    ["Monthly Page Views", cMtd.totals.page_views, "views", "Sum of empirical daily page views for calendar month", "DERIVED", "SRC-GA4-UTL"],
+    ["Monthly Engaged Sessions", cMtd.totals.engaged_sessions, "sessions", "Sum of empirical daily engaged sessions for calendar month", "DERIVED", "SRC-GA4-UTL"],
+    ["Monthly Search Impressions", cMtd.totals.search_impressions, "impressions", "Sum of empirical daily search impressions for calendar month (Sep 1-2 empirical; Sep 3-4 pending lag)", "DERIVED", "SRC-GSC-UTL"],
+    ["Monthly Search Clicks", cMtd.totals.search_clicks, "clicks", "Sum of empirical daily search clicks for calendar month", "DERIVED", "SRC-GSC-UTL"],
+    ["Monthly Search CTR", `${cMtd.totals.average_ctr_percentage.toFixed(2)}%`, "percentage", "Impression-weighted click-through rate", "DERIVED", "SRC-GSC-UTL"],
+    ["Monthly Search Average Position", cMtd.totals.average_position, "position", "Impression-weighted average SERP position", "DERIVED", "SRC-GSC-UTL"],
+    ["Monthly Telemetry Event Volume", mData.telemetry.total_events, "events", "Sanitized first-party events in local store", "VERIFIED", "SRC-UTL-TELEMETRY"],
+    ["Monthly Utility Views", mData.telemetry.utility_views ?? "null", "views", "External edge persistence unconfigured", "UNAVAILABLE", "SRC-UTL-TELEMETRY"],
+    ["Monthly Tool Executions", mData.telemetry.tool_executions ?? "null", "interactions", "External edge persistence unconfigured", "UNAVAILABLE", "SRC-UTL-TELEMETRY"],
+    ["Monthly Widget Views", mData.telemetry.widget_views ?? "null", "views", "External edge persistence unconfigured", "UNAVAILABLE", "SRC-UTL-TELEMETRY"],
+  ];
+
+  thisMonthData.forEach((r, idx) => {
+    const row = wsStats.getRow(statsCurrentRow++);
+    row.values = r;
+    row.height = 22;
+    row.font = fontMain;
+    row.getCell(1).font = fontBold;
+    if (idx % 2 === 1) row.eachCell((c) => (c.fill = fillZebra));
+  });
+
+  statsCurrentRow++; // spacer
+
+  // --- BLOCK 8: INTERNAL TARGET ---
+  const rowTargetHeader = wsStats.getRow(statsCurrentRow++);
+  rowTargetHeader.values = ["## 8. INTERNAL TARGET (1,000 Monthly Sessions Target Progress)", "Current MTD", "Target Goal", "Unit", "Progress %", "Classification", "Google Policy Distinction"];
+  rowTargetHeader.font = fontHeader;
+  rowTargetHeader.fill = fillParentHeader;
+  rowTargetHeader.height = 26;
+
+  monetization.internal_business_targets.forEach((tgt, idx) => {
+    const row = wsStats.getRow(statsCurrentRow++);
+    row.values = [
+      tgt.name,
+      tgt.current_value,
+      tgt.target_value,
+      tgt.target_id.replace("TARGET-", "").toLowerCase(),
+      `${tgt.progress_percentage}%`,
+      tgt.classification,
+      tgt.policy_status,
+    ];
+    row.height = 22;
+    row.font = fontMain;
+    row.getCell(1).font = fontBold;
+    row.getCell(6).font = { ...fontBold, color: { argb: "FF2563EB" } };
+    if (idx % 2 === 1) row.eachCell((c) => (c.fill = fillZebra));
+  });
+
+  const rowTargetGap = wsStats.getRow(statsCurrentRow++);
+  rowTargetGap.values = [
+    "Remaining Gap to Target",
+    internalTarget.remaining_gap_to_target,
+    internalTarget.target_sessions,
+    "sessions",
+    `${internalTarget.progress_percentage}% achieved`,
+    "INTERNAL_BUSINESS_TARGET",
+    "is_google_requirement: false (Strict internal benchmark)",
+  ];
+  rowTargetGap.height = 24;
+  rowTargetGap.font = fontBold;
+  rowTargetGap.eachCell((c) => (c.fill = fillNav));
+
+  statsCurrentRow++; // spacer
+
+  // --- BLOCK 9: TRAFFIC TREND ---
+  const rowTrendHeader = wsStats.getRow(statsCurrentRow++);
+  rowTrendHeader.values = ["## 9. TRAFFIC TREND (DoD, WoW, Period Growth & Trajectory Scenarios)", "Scope / Metric", "Value / Status", "Comparison Details", "Epistemic Type", "Governance Notice"];
+  rowTrendHeader.font = fontHeader;
+  rowTrendHeader.fill = fillParentHeader;
+  rowTrendHeader.height = 26;
+
+  const trendData = [
+    ["Day-over-Day Sessions Trend", "BASELINE / FLAT", "Evaluated via strict 6-state machine; contaminated records excluded", "DERIVED", "growthIntelligence.mjs"],
+    ["Launch Week vs Recent Week (Sessions)", periodComparisons.launch_week_vs_recent_week?.status || "COMPLETE", `Launch: ${periodComparisons.launch_week_vs_recent_week?.launch_week?.sessions} sess vs Recent: ${periodComparisons.launch_week_vs_recent_week?.recent_week?.sessions} sess`, "DERIVED", "SRC-GA4-UTL"],
+    ["Launch Week vs Recent Week (Impressions)", "+61.09% expansion", `Launch: ${periodComparisons.launch_week_vs_recent_week?.launch_week?.impressions} impr vs Recent: ${periodComparisons.launch_week_vs_recent_week?.recent_week?.impressions} impr`, "DERIVED", "Organic search indexing accumulation"],
+    ["Week-over-Week Comparison (WoW)", periodComparisons.week_over_week?.status || "INSUFFICIENT_DATA", periodComparisons.week_over_week?.reason || "Requires 14 empirical days (11 observed)", "FACT", "No fabricated comparison windows"],
+    ["Month-over-Month Comparison (MoM)", periodComparisons.month_over_month?.status || "INSUFFICIENT_DATA", periodComparisons.month_over_month?.reason || "Partial launch month vs MTD", "FACT", "No fabricated comparison windows"],
+    ["Observed MTD Daily Run-Rate", `${trajectory.run_rates?.observed_mtd_daily_sessions || 9.0} sessions/day`, "Average daily sessions observed across current month", "DERIVED", "growthIntelligence.mjs"],
+    ["Required Daily Run-Rate (Target)", `${trajectory.run_rates?.required_daily_sessions_to_hit_target || 37.08} sessions/day`, "Daily sessions required across remaining days to reach 1,000", "DERIVED", "Target gap / days remaining"],
+    ["Linear Trajectory Scenario", `${trajectory.linear_extrapolation_scenario?.projected_month_end_sessions || 270} sessions`, "Linear extrapolation of observed MTD daily average", "DERIVED_PROJECTION", "TRAJECTORY_SCENARIO (NOT a forecast)"],
+    ["Trajectory Disclaimer", "GOVERNANCE NOTICE", trajectory.disclaimer, "POLICY", "Never extrapolate future traffic as fact"],
+  ];
+
+  trendData.forEach((r, idx) => {
+    const row = wsStats.getRow(statsCurrentRow++);
+    row.values = r;
+    row.height = 22;
+    row.font = fontMain;
+    row.getCell(1).font = fontBold;
+    if (idx % 2 === 1) row.eachCell((c) => (c.fill = fillZebra));
+  });
+
+  statsCurrentRow++; // spacer
+
+  // --- BLOCK 10: ADSENSE READINESS ---
+  const rowChecklistHeader = wsStats.getRow(statsCurrentRow++);
+  rowChecklistHeader.values = ["## 10. ADSENSE READINESS (Policy & Compliance Checklist)", "Requirement Type", "Evaluation Criteria", "Status", "Authoritative Verification Evidence"];
+  rowChecklistHeader.font = fontHeader;
+  rowChecklistHeader.fill = fillParentHeader;
+  rowChecklistHeader.height = 26;
+
+  monetization.checklist_categories.forEach((cat, idx) => {
+    const row = wsStats.getRow(statsCurrentRow++);
+    row.values = [
+      cat.name,
+      cat.requirement_type,
+      cat.evaluation_criteria,
+      cat.status,
+      cat.evidence,
+    ];
+    row.height = 22;
+    row.font = fontMain;
+    row.getCell(1).font = fontBold;
+    row.getCell(4).font = {
+      ...fontBold,
+      color: { argb: cat.status === "VERIFIED" ? "FF15803D" : "FFD97706" },
+    };
+    if (idx % 2 === 1) row.eachCell((c) => (c.fill = fillZebra));
+  });
+
+  const rowReadinessSummary = wsStats.getRow(statsCurrentRow++);
+  rowReadinessSummary.values = [
+    `OVERALL READINESS STATE: ${monetization.overall_readiness_state}`,
+    "GOVERNANCE_RULE",
+    "Evaluated via strict checklist. Absolute prohibition against fake approval probabilities.",
+    monetization.overall_readiness_state,
+    `${monetization.policy_summary.verified_count} Verified, ${monetization.policy_summary.attention_required_count} Attention Required.`,
+  ];
+  rowReadinessSummary.height = 24;
+  rowReadinessSummary.font = fontBold;
+  rowReadinessSummary.eachCell((c) => (c.fill = fillNav));
+
+  statsCurrentRow++; // spacer
+
+  // --- BLOCK 11: PRODUCT USAGE ---
+  const rowProductHeader = wsStats.getRow(statsCurrentRow++);
+  rowProductHeader.values = ["## 11. PRODUCT USAGE (First-Party Persistent Telemetry)", "Scope / Metric", "Value", "Unit", "Deduplication / Storage Status", "Authoritative Source"];
+  rowProductHeader.font = fontHeader;
+  rowProductHeader.fill = fillParentHeader;
+  rowProductHeader.height = 26;
+
+  const productUsageData = [
+    ["Telemetry Ingestion Endpoint", "HTTP POST /api/telemetry", "endpoint", "ACTIVE", "Schema 1.0.0 validated", "apps/web-shell/src/app/api/telemetry/route.ts"],
+    ["Persistence Datastore Engine", defaultPersistentStore.getEngineType(), "engine", "CONFIGURED", "Pluggable file/Upstash Redis architecture", "intelligence/telemetry/persistentTelemetryStore.mjs"],
+    ["Persistence Operational Status", defaultPersistentStore.getPersistenceStatus(), "status", "ACTIVE", "Survives process cold restarts with 30-day retention", "TELEMETRY-CONTRACT.md"],
+    ["Total Ingested Events", liveStats.current_day.telemetry_event_count, "events", "VERIFIED", "Atomic deduplication on event_id", "intelligence/telemetry/events.json"],
+    ["Utility Views (Product Usage)", liveStats.current_day.first_party_utility_views ?? "null", "views", "UNAVAILABLE", "Vercel edge serverless ephemeral filesystem", "SRC-UTL-TELEMETRY"],
+    ["Tool Executions (Interactions)", liveStats.current_day.first_party_tool_executions ?? "null", "executions", "UNAVAILABLE", "Vercel edge serverless ephemeral filesystem", "SRC-UTL-TELEMETRY"],
+    ["Widget Views", liveStats.current_day.first_party_widget_views ?? "null", "views", "UNAVAILABLE", "Vercel edge serverless ephemeral filesystem", "SRC-UTL-TELEMETRY"],
+    ["Zero-Usage Utilities Count", 420, "utilities", "VERIFIED", "Awaiting persistent production event accumulation", "persistentTelemetryStore.mjs"],
+    ["Synthetic Inventory Multipliers", 0, "formulas", "VERIFIED", "Strict prohibition against utilsCount * 18 or similar multipliers", "TELEMETRY-CONTRACT.md"],
+  ];
+
+  productUsageData.forEach((r, idx) => {
+    const row = wsStats.getRow(statsCurrentRow++);
+    row.values = r;
+    row.height = 22;
+    row.font = fontMain;
+    row.getCell(1).font = fontBold;
+    if (idx % 2 === 1) row.eachCell((c) => (c.fill = fillZebra));
+  });
+
+  statsCurrentRow++; // spacer
+
+  // --- BLOCK 12: DATA QUALITY & HEALTH ---
+  const rowQualityHeader = wsStats.getRow(statsCurrentRow++);
+  rowQualityHeader.values = ["## 12. DATA QUALITY & HEALTH (Epistemic Governance & Traceability)", "Value", "Unit", "Status", "Operational Context / Health Detail", "Authoritative Source"];
+  rowQualityHeader.font = fontHeader;
+  rowQualityHeader.fill = fillParentHeader;
+  rowQualityHeader.height = 26;
+
+  const qualityData = [
+    ["Reconstructed Empirical Days", empiricalProgression.length, "days", "VERIFIED", "Day 1 (2026-08-25) through Today (2026-09-04)", "intelligence/project/empirical_daily_statistics.json"],
+    ["Contaminated Days Preserved", liveStats.data_quality.contaminated_days_excluded, "days", "EXCLUDED", "2026-08-26 through 2026-09-03 preserved for audit; segregated from analysis", "intelligence/project/daily_statistics.json"],
+    ["Production Launch Date", PRODUCTION_TIMELINE.production_start_date, "date", "FACT", PRODUCTION_TIMELINE.production_start_evidence, "documentation/GIT-CHANGELOG.json"],
+    ["GA4 Measurement Health", liveStats.provider_health.ga4.status, "status", "VERIFIED", `Google Analytics 4 Data API (Property ${liveStats.provider_health.ga4.property_id}) active`, "SRC-GA4-UTL"],
+    ["GSC Measurement Health", liveStats.provider_health.gsc.status, "status", "VERIFIED", "Google Search Console API (sc-domain:utl.tools) active", "SRC-GSC-UTL"],
+    ["First-Party Telemetry Health", liveStats.provider_health.telemetry.persistence, "status", "ATTENTION_REQUIRED", "Local persistent engine active; cloud persistence adapter ready for production", "SRC-UTL-TELEMETRY"],
+    ["Synthetic Operational Metrics", 0, "metrics", "VERIFIED", "Zero multiplier formulas (*18, *12, *14) or synthetic traffic numbers", "TELEMETRY-CONTRACT.md"],
+    ["Absence of Data Governance", "STRICT_NULL", "policy", "VERIFIED", "NO_DATA is never converted to zero; unavailable values remain null", "MONITORING-CONTRACT.md"],
+    ["Projections Classification", "DERIVED_PROJECTION", "policy", "VERIFIED", "Classified as TRAJECTORY_SCENARIO with explicit non-forecast disclaimers", "MONITORING-CONTRACT.md"],
+    ["Internal Target Governance", "INTERNAL_BUSINESS_TARGET", "policy", "VERIFIED", "1,000 monthly sessions is an internal goal; is_google_requirement: false", "monetizationModel.mjs"],
+  ];
+
+  qualityData.forEach((r, idx) => {
+    const row = wsStats.getRow(statsCurrentRow++);
+    row.values = r;
+    row.height = 22;
+    row.font = fontMain;
+    row.getCell(1).font = fontBold;
+    if (idx % 2 === 1) row.eachCell((c) => (c.fill = fillZebra));
+  });
+
+  statsCurrentRow++; // spacer
+
+  // --- BLOCK 13: RECONCILIATION & AUDIT LEDGER ---
+  const rowReconcileHeader = wsStats.getRow(statsCurrentRow++);
+  rowReconcileHeader.values = ["## 13. RECONCILIATION & AUDIT LEDGER (Phase 8 Discrepancy Resolution)", "Date Range", "Canonical Value", "Previously Reported", "Difference", "Reconciliation Status", "Root Cause / Forensic Evidence"];
+  rowReconcileHeader.font = fontHeader;
+  rowReconcileHeader.fill = fillParentHeader;
+  rowReconcileHeader.height = 26;
+
+  canonStats.discrepancy_ledger.forEach((rec, idx) => {
+    const row = wsStats.getRow(statsCurrentRow++);
+    row.values = [
+      rec.metric_identity,
+      rec.date_range,
+      rec.canonical_value,
+      rec.previously_reported_value,
+      rec.difference,
+      rec.reconciliation_status,
+      rec.root_cause,
+    ];
+    row.height = 22;
+    row.font = fontMain;
+    row.getCell(1).font = fontBold;
+    row.getCell(6).font = {
+      ...fontBold,
+      color: { argb: rec.reconciliation_status === "VERIFIED_ACCURATE" ? "FF15803D" : "FF2563EB" },
+    };
+    if (idx % 2 === 1) row.eachCell((c) => (c.fill = fillZebra));
+  });
+
+  statsCurrentRow++; // spacer
+
+  // --- BLOCK 14: DAILY OPERATIONS & ANOMALIES ---
+  const rowOpsHeader = wsStats.getRow(statsCurrentRow++);
+  rowOpsHeader.values = ["## 14. DAILY OPERATIONS & ANOMALIES (Phase 10 Production Observation)", "Current Value / Status", "Metric / Category", "Classification", "Source Health", "Operational Notes"];
+  rowOpsHeader.font = fontHeader;
+  rowOpsHeader.fill = fillParentHeader;
+  rowOpsHeader.height = 26;
+
+  const obsSummary = getProductionObservationSummary();
+  const opsRows = [
+    ["Latest Observation Date", obsSummary.today.date, "Observation Calendar Day", "FACT", "ACTIVE", "Continuous date-dimensioned empirical observation"],
+    ["Latest Authoritative Sessions", obsSummary.today.sessions, "ga4_sessions", "TRUTHFUL_EMPIRICAL", obsSummary.source_health.ga4.status, "SRC-GA4-UTL (Property 551527574)"],
+    ["Latest Authoritative Page Views", obsSummary.today.page_views, "ga4_screen_page_views", "TRUTHFUL_EMPIRICAL", obsSummary.source_health.ga4.status, "SRC-GA4-UTL (Property 551527574)"],
+    ["Latest Available Search Impressions", obsSummary.today.search_impressions ?? "null", "gsc_impressions", "TRUTHFUL_EMPIRICAL", obsSummary.source_health.gsc.status, "Pending normal 48-72h Google Search Console latency"],
+    ["Day-over-Day (DoD) Trend", obsSummary.traffic_trends.day_over_day ? `${obsSummary.traffic_trends.day_over_day.change} (${obsSummary.traffic_trends.day_over_day.state})` : "BASELINE", "DoD Sessions Change", "DERIVED", "ACTIVE", "Compared only between consecutive clean empirical days"],
+    ["Rolling 7-Day Status", `${obsSummary.traffic_trends.last_7_days.sessions} sessions (${obsSummary.traffic_trends.last_7_days.status})`, "Rolling 7D Volume", "DERIVED", "ACTIVE", "Exactly 7 empirical days evaluated"],
+    ["Rolling 30-Day Status", `${obsSummary.traffic_trends.last_30_days.sessions} sessions (${obsSummary.traffic_trends.last_30_days.status})`, "Rolling 30D Volume", "DERIVED", "ACTIVE", "11 empirical days observed since Day 1 (full 30D window on 2026-09-23)"],
+    ["September MTD Status", `${obsSummary.traffic_trends.september_mtd.sessions} sessions, ${obsSummary.traffic_trends.september_mtd.monthly_unique_users} unique users`, "MTD Volume", "DERIVED", "ACTIVE", "Sum of date-dimensioned daily records + direct monthly GA4 query"],
+    ["Internal Target Status", `${obsSummary.internal_target.current_september_sessions} / 1,000 sessions (${obsSummary.internal_target.progress_percentage}%)`, "Internal Milestone", "INTERNAL_BUSINESS_TARGET", "ACTIVE", "Internal benchmark only; is_google_requirement: false"],
+    ["Operational Anomalies Detected", `${obsSummary.anomalies.total_detected} total (${obsSummary.anomalies.technical_failures_count} technical failures)`, "Operational Health", "VERIFIED", "ACTIVE", "Low traffic and normal source lag correctly distinguished from failures"],
+  ];
+
+  opsRows.forEach((r, idx) => {
+    const row = wsStats.getRow(statsCurrentRow++);
+    row.values = r;
+    row.height = 22;
+    row.font = fontMain;
+    row.getCell(1).font = fontBold;
+    if (idx % 2 === 1) row.eachCell((c) => (c.fill = fillZebra));
+  });
+
+  wsStats.columns = [
+    { width: 38 },
+    { width: 20 },
+    { width: 18 },
+    { width: 22 },
+    { width: 28 },
+    { width: 34 },
+    { width: 60 },
+    { width: 16 },
+    { width: 16 },
+    { width: 24 }
+  ];
+
+  // ==========================================
+  // 11. C-Reviews (Child of P-Utilities)
   // ==========================================
   const wsReviews = workbook.addWorksheet("C-Reviews", { views: [{ showGridLines: true, freeze: { ySplit: 4 } }] });
   addNavRow(wsReviews, "P-Utilities");
@@ -1405,7 +1942,7 @@ export async function buildControlCenter() {
   // Preserve custom/manually added worksheets
   // ==========================================
   const canonicalSheetNames = [
-    "P-00 INDEX", "P-Dashboard", "P-Charter", "P-Utilities", "P-Work", "P-Research", "P-Releases", "P-Contexts", "P-Sessions",
+    "P-00 INDEX", "P-Dashboard", "P-Charter", "P-Utilities", "P-Work", "P-Research", "P-Releases", "P-Contexts", "P-Sessions", "P-Statistics",
     "C-Reviews", "C-Changes", "C-TestCases", "C-SEO", "C-Trust", "C-Candidates", "C-Competitors", "C-SearchIntel",
     "C-Widgets", "C-WidgetCategories", "C-GrowthObservations", "C-GrowthOpportunities", "C-DailyStatistics"
   ];

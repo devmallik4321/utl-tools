@@ -1,0 +1,512 @@
+[
+  {
+    "date": "2026-08-25",
+    "collection_timestamp": "2026-09-10T04:00:19.384Z",
+    "epistemic_classification": "TRUTHFUL_EMPIRICAL",
+    "usable_for_empirical_analysis": true,
+    "ga4": {
+      "active_users": 12,
+      "sessions": 13,
+      "visits_proxy": 13,
+      "screen_page_views": 55,
+      "engaged_sessions": 2,
+      "new_users": 12,
+      "event_count": 127,
+      "status": "EMPIRICAL_API",
+      "source": "SRC-GA4-UTL"
+    },
+    "gsc": {
+      "impressions": 0,
+      "clicks": 0,
+      "ctr": "0.00%",
+      "average_position": 0,
+      "status": "EMPIRICAL_API",
+      "source": "SRC-GSC-UTL"
+    },
+    "telemetry": {
+      "utility_views": null,
+      "tool_executions": null,
+      "widget_views": null,
+      "status": "UNAVAILABLE",
+      "persistence_status": "NON-PERSISTENT_EDGE",
+      "source": "SRC-UTL-TELEMETRY"
+    },
+    "reconstruction_note": "Authoritative external measurement independently reconstructed; replaces contaminated internal estimates while preserving original contaminated records in daily_statistics.json."
+  },
+  {
+    "date": "2026-08-26",
+    "collection_timestamp": "2026-09-10T04:00:19.384Z",
+    "epistemic_classification": "TRUTHFUL_EMPIRICAL",
+    "usable_for_empirical_analysis": true,
+    "ga4": {
+      "active_users": 32,
+      "sessions": 34,
+      "visits_proxy": 34,
+      "screen_page_views": 46,
+      "engaged_sessions": 4,
+      "new_users": 32,
+      "event_count": 134,
+      "status": "EMPIRICAL_API",
+      "source": "SRC-GA4-UTL"
+    },
+    "gsc": {
+      "impressions": 21,
+      "clicks": 0,
+      "ctr": "0.00%",
+      "average_position": 53.38095238095238,
+      "status": "EMPIRICAL_API",
+      "source": "SRC-GSC-UTL"
+    },
+    "telemetry": {
+      "utility_views": null,
+      "tool_executions": null,
+      "widget_views": null,
+      "status": "UNAVAILABLE",
+      "persistence_status": "NON-PERSISTENT_EDGE",
+      "source": "SRC-UTL-TELEMETRY"
+    },
+    "reconstruction_note": "Authoritative external measurement independently reconstructed; replaces contaminated internal estimates while preserving original contaminated records in daily_statistics.json."
+  },
+  {
+    "date": "2026-08-27",
+    "collection_timestamp": "2026-09-10T04:00:19.384Z",
+    "epistemic_classification": "TRUTHFUL_EMPIRICAL",
+    "usable_for_empirical_analysis": true,
+    "ga4": {
+      "active_users": 19,
+      "sessions": 19,
+      "visits_proxy": 19,
+      "screen_page_views": 20,
+      "engaged_sessions": 2,
+      "new_users": 18,
+      "event_count": 71,
+      "status": "EMPIRICAL_API",
+      "source": "SRC-GA4-UTL"
+    },
+    "gsc": {
+      "impressions": 59,
+      "clicks": 0,
+      "ctr": "0.00%",
+      "average_position": 67.44067796610169,
+      "status": "EMPIRICAL_API",
+      "source": "SRC-GSC-UTL"
+    },
+    "telemetry": {
+      "utility_views": null,
+      "tool_executions": null,
+      "widget_views": null,
+      "status": "UNAVAILABLE",
+      "persistence_status": "NON-PERSISTENT_EDGE",
+      "source": "SRC-UTL-TELEMETRY"
+    },
+    "reconstruction_note": "Authoritative external measurement independently reconstructed; replaces contaminated internal estimates while preserving original contaminated records in daily_statistics.json."
+  },
+  {
+    "date": "2026-08-28",
+    "collection_timestamp": "2026-09-10T04:00:19.384Z",
+    "epistemic_classification": "TRUTHFUL_EMPIRICAL",
+    "usable_for_empirical_analysis": true,
+    "ga4": {
+      "active_users": 10,
+      "sessions": 10,
+      "visits_proxy": 10,
+      "screen_page_views": 10,
+      "engaged_sessions": 1,
+      "new_users": 10,
+      "event_count": 31,
+      "status": "EMPIRICAL_API",
+      "source": "SRC-GA4-UTL"
+    },
+    "gsc": {
+      "impressions": 126,
+      "clicks": 0,
+      "ctr": "0.00%",
+      "average_position": 68.46825396825396,
+      "status": "EMPIRICAL_API",
+      "source": "SRC-GSC-UTL"
+    },
+    "telemetry": {
+      "utility_views": null,
+      "tool_executions": null,
+      "widget_views": null,
+      "status": "UNAVAILABLE",
+      "persistence_status": "NON-PERSISTENT_EDGE",
+      "source": "SRC-UTL-TELEMETRY"
+    },
+    "reconstruction_note": "Authoritative external measurement independently reconstructed; replaces contaminated internal estimates while preserving original contaminated records in daily_statistics.json."
+  },
+  {
+    "date": "2026-08-29",
+    "collection_timestamp": "2026-09-10T04:00:19.384Z",
+    "epistemic_classification": "TRUTHFUL_EMPIRICAL",
+    "usable_for_empirical_analysis": true,
+    "ga4": {
+      "active_users": 1,
+      "sessions": 1,
+      "visits_proxy": 1,
+      "screen_page_views": 1,
+      "engaged_sessions": 0,
+      "new_users": 1,
+      "event_count": 3,
+      "status": "EMPIRICAL_API",
+      "source": "SRC-GA4-UTL"
+    },
+    "gsc": {
+      "impressions": 131,
+      "clicks": 0,
+      "ctr": "0.00%",
+      "average_position": 71.7557251908397,
+      "status": "EMPIRICAL_API",
+      "source": "SRC-GSC-UTL"
+    },
+    "telemetry": {
+      "utility_views": null,
+      "tool_executions": null,
+      "widget_views": null,
+      "status": "UNAVAILABLE",
+      "persistence_status": "NON-PERSISTENT_EDGE",
+      "source": "SRC-UTL-TELEMETRY"
+    },
+    "reconstruction_note": "Authoritative external measurement independently reconstructed; replaces contaminated internal estimates while preserving original contaminated records in daily_statistics.json."
+  },
+  {
+    "date": "2026-08-30",
+    "collection_timestamp": "2026-09-10T04:00:19.384Z",
+    "epistemic_classification": "TRUTHFUL_EMPIRICAL",
+    "usable_for_empirical_analysis": true,
+    "ga4": {
+      "active_users": 4,
+      "sessions": 4,
+      "visits_proxy": 4,
+      "screen_page_views": 4,
+      "engaged_sessions": 1,
+      "new_users": 4,
+      "event_count": 14,
+      "status": "EMPIRICAL_API",
+      "source": "SRC-GA4-UTL"
+    },
+    "gsc": {
+      "impressions": 131,
+      "clicks": 0,
+      "ctr": "0.00%",
+      "average_position": 72.3969465648855,
+      "status": "EMPIRICAL_API",
+      "source": "SRC-GSC-UTL"
+    },
+    "telemetry": {
+      "utility_views": null,
+      "tool_executions": null,
+      "widget_views": null,
+      "status": "UNAVAILABLE",
+      "persistence_status": "NON-PERSISTENT_EDGE",
+      "source": "SRC-UTL-TELEMETRY"
+    },
+    "reconstruction_note": "Authoritative external measurement independently reconstructed; replaces contaminated internal estimates while preserving original contaminated records in daily_statistics.json."
+  },
+  {
+    "date": "2026-08-31",
+    "collection_timestamp": "2026-09-10T04:00:19.384Z",
+    "epistemic_classification": "TRUTHFUL_EMPIRICAL",
+    "usable_for_empirical_analysis": true,
+    "ga4": {
+      "active_users": 3,
+      "sessions": 3,
+      "visits_proxy": 3,
+      "screen_page_views": 3,
+      "engaged_sessions": 0,
+      "new_users": 3,
+      "event_count": 12,
+      "status": "EMPIRICAL_API",
+      "source": "SRC-GA4-UTL"
+    },
+    "gsc": {
+      "impressions": 64,
+      "clicks": 0,
+      "ctr": "0.00%",
+      "average_position": 63.140625,
+      "status": "EMPIRICAL_API",
+      "source": "SRC-GSC-UTL"
+    },
+    "telemetry": {
+      "utility_views": null,
+      "tool_executions": null,
+      "widget_views": null,
+      "status": "UNAVAILABLE",
+      "persistence_status": "NON-PERSISTENT_EDGE",
+      "source": "SRC-UTL-TELEMETRY"
+    },
+    "reconstruction_note": "Authoritative external measurement independently reconstructed; replaces contaminated internal estimates while preserving original contaminated records in daily_statistics.json."
+  },
+  {
+    "date": "2026-09-01",
+    "collection_timestamp": "2026-09-10T04:00:19.384Z",
+    "epistemic_classification": "TRUTHFUL_EMPIRICAL",
+    "usable_for_empirical_analysis": true,
+    "ga4": {
+      "active_users": 6,
+      "sessions": 6,
+      "visits_proxy": 6,
+      "screen_page_views": 8,
+      "engaged_sessions": 2,
+      "new_users": 6,
+      "event_count": 24,
+      "status": "EMPIRICAL_API",
+      "source": "SRC-GA4-UTL"
+    },
+    "gsc": {
+      "impressions": 25,
+      "clicks": 0,
+      "ctr": "0.00%",
+      "average_position": 43.04,
+      "status": "EMPIRICAL_API",
+      "source": "SRC-GSC-UTL"
+    },
+    "telemetry": {
+      "utility_views": null,
+      "tool_executions": null,
+      "widget_views": null,
+      "status": "UNAVAILABLE",
+      "persistence_status": "NON-PERSISTENT_EDGE",
+      "source": "SRC-UTL-TELEMETRY"
+    },
+    "reconstruction_note": "Authoritative external measurement independently reconstructed; replaces contaminated internal estimates while preserving original contaminated records in daily_statistics.json."
+  },
+  {
+    "date": "2026-09-02",
+    "collection_timestamp": "2026-09-10T04:00:19.384Z",
+    "epistemic_classification": "TRUTHFUL_EMPIRICAL",
+    "usable_for_empirical_analysis": true,
+    "ga4": {
+      "active_users": 1,
+      "sessions": 1,
+      "visits_proxy": 1,
+      "screen_page_views": 1,
+      "engaged_sessions": 1,
+      "new_users": 1,
+      "event_count": 4,
+      "status": "EMPIRICAL_API",
+      "source": "SRC-GA4-UTL"
+    },
+    "gsc": {
+      "impressions": 29,
+      "clicks": 0,
+      "ctr": "0.00%",
+      "average_position": 57.96551724137931,
+      "status": "EMPIRICAL_API",
+      "source": "SRC-GSC-UTL"
+    },
+    "telemetry": {
+      "utility_views": null,
+      "tool_executions": null,
+      "widget_views": null,
+      "status": "UNAVAILABLE",
+      "persistence_status": "NON-PERSISTENT_EDGE",
+      "source": "SRC-UTL-TELEMETRY"
+    },
+    "reconstruction_note": "Authoritative external measurement independently reconstructed; replaces contaminated internal estimates while preserving original contaminated records in daily_statistics.json."
+  },
+  {
+    "date": "2026-09-03",
+    "collection_timestamp": "2026-09-10T04:00:19.384Z",
+    "epistemic_classification": "TRUTHFUL_EMPIRICAL",
+    "usable_for_empirical_analysis": true,
+    "ga4": {
+      "active_users": 2,
+      "sessions": 2,
+      "visits_proxy": 2,
+      "screen_page_views": 3,
+      "engaged_sessions": 2,
+      "new_users": 2,
+      "event_count": 13,
+      "status": "EMPIRICAL_API",
+      "source": "SRC-GA4-UTL"
+    },
+    "gsc": {
+      "impressions": 51,
+      "clicks": 0,
+      "ctr": "0.00%",
+      "average_position": 57.509803921568626,
+      "status": "EMPIRICAL_API",
+      "source": "SRC-GSC-UTL"
+    },
+    "telemetry": {
+      "utility_views": null,
+      "tool_executions": null,
+      "widget_views": null,
+      "status": "UNAVAILABLE",
+      "persistence_status": "NON-PERSISTENT_EDGE",
+      "source": "SRC-UTL-TELEMETRY"
+    },
+    "reconstruction_note": "Authoritative external measurement independently reconstructed; replaces contaminated internal estimates while preserving original contaminated records in daily_statistics.json."
+  },
+  {
+    "date": "2026-09-04",
+    "collection_timestamp": "2026-09-10T04:00:19.384Z",
+    "epistemic_classification": "TRUTHFUL_EMPIRICAL",
+    "usable_for_empirical_analysis": true,
+    "ga4": {
+      "active_users": 1,
+      "sessions": 1,
+      "visits_proxy": 1,
+      "screen_page_views": 1,
+      "engaged_sessions": 0,
+      "new_users": 1,
+      "event_count": 4,
+      "status": "EMPIRICAL_API",
+      "source": "SRC-GA4-UTL"
+    },
+    "gsc": {
+      "impressions": 53,
+      "clicks": 0,
+      "ctr": "0.00%",
+      "average_position": 73.43396226415095,
+      "status": "EMPIRICAL_API",
+      "source": "SRC-GSC-UTL"
+    },
+    "telemetry": {
+      "utility_views": null,
+      "tool_executions": null,
+      "widget_views": null,
+      "status": "UNAVAILABLE",
+      "persistence_status": "NON-PERSISTENT_EDGE",
+      "source": "SRC-UTL-TELEMETRY"
+    },
+    "reconstruction_note": "Authoritative external measurement independently reconstructed; replaces contaminated internal estimates while preserving original contaminated records in daily_statistics.json."
+  },
+  {
+    "date": "2026-09-06",
+    "collection_timestamp": "2026-09-10T04:00:19.384Z",
+    "epistemic_classification": "TRUTHFUL_EMPIRICAL",
+    "usable_for_empirical_analysis": true,
+    "ga4": {
+      "active_users": 2,
+      "sessions": 2,
+      "visits_proxy": 2,
+      "screen_page_views": 2,
+      "engaged_sessions": 0,
+      "new_users": 2,
+      "event_count": 6,
+      "status": "EMPIRICAL_API",
+      "source": "SRC-GA4-UTL"
+    },
+    "gsc": {
+      "impressions": null,
+      "clicks": null,
+      "ctr": null,
+      "average_position": null,
+      "status": "PENDING_SEARCH_CONSOLE_LAG",
+      "source": "SRC-GSC-UTL"
+    },
+    "telemetry": {
+      "utility_views": null,
+      "tool_executions": null,
+      "widget_views": null,
+      "status": "UNAVAILABLE",
+      "persistence_status": "NON-PERSISTENT_EDGE",
+      "source": "SRC-UTL-TELEMETRY"
+    },
+    "reconstruction_note": "Authoritative external measurement independently reconstructed; replaces contaminated internal estimates while preserving original contaminated records in daily_statistics.json."
+  },
+  {
+    "date": "2026-09-08",
+    "collection_timestamp": "2026-09-10T04:00:19.384Z",
+    "epistemic_classification": "TRUTHFUL_EMPIRICAL",
+    "usable_for_empirical_analysis": true,
+    "ga4": {
+      "active_users": 1,
+      "sessions": 4,
+      "visits_proxy": 4,
+      "screen_page_views": 12,
+      "engaged_sessions": 3,
+      "new_users": 0,
+      "event_count": 24,
+      "status": "EMPIRICAL_API",
+      "source": "SRC-GA4-UTL"
+    },
+    "gsc": {
+      "impressions": null,
+      "clicks": null,
+      "ctr": null,
+      "average_position": null,
+      "status": "PENDING_SEARCH_CONSOLE_LAG",
+      "source": "SRC-GSC-UTL"
+    },
+    "telemetry": {
+      "utility_views": null,
+      "tool_executions": null,
+      "widget_views": null,
+      "status": "UNAVAILABLE",
+      "persistence_status": "NON-PERSISTENT_EDGE",
+      "source": "SRC-UTL-TELEMETRY"
+    },
+    "reconstruction_note": "Authoritative external measurement independently reconstructed; replaces contaminated internal estimates while preserving original contaminated records in daily_statistics.json."
+  },
+  {
+    "date": "2026-09-09",
+    "collection_timestamp": "2026-09-10T04:00:19.384Z",
+    "epistemic_classification": "TRUTHFUL_EMPIRICAL",
+    "usable_for_empirical_analysis": true,
+    "ga4": {
+      "active_users": 1,
+      "sessions": 3,
+      "visits_proxy": 3,
+      "screen_page_views": 8,
+      "engaged_sessions": 3,
+      "new_users": 0,
+      "event_count": 17,
+      "status": "EMPIRICAL_API",
+      "source": "SRC-GA4-UTL"
+    },
+    "gsc": {
+      "impressions": null,
+      "clicks": null,
+      "ctr": null,
+      "average_position": null,
+      "status": "PENDING_SEARCH_CONSOLE_LAG",
+      "source": "SRC-GSC-UTL"
+    },
+    "telemetry": {
+      "utility_views": null,
+      "tool_executions": null,
+      "widget_views": null,
+      "status": "UNAVAILABLE",
+      "persistence_status": "NON-PERSISTENT_EDGE",
+      "source": "SRC-UTL-TELEMETRY"
+    },
+    "reconstruction_note": "Authoritative external measurement independently reconstructed; replaces contaminated internal estimates while preserving original contaminated records in daily_statistics.json."
+  },
+  {
+    "date": "2026-09-10",
+    "collection_timestamp": "2026-09-10T04:00:19.384Z",
+    "epistemic_classification": "TRUTHFUL_EMPIRICAL",
+    "usable_for_empirical_analysis": true,
+    "ga4": {
+      "active_users": 0,
+      "sessions": 1,
+      "visits_proxy": 1,
+      "screen_page_views": 1,
+      "engaged_sessions": 0,
+      "new_users": 0,
+      "event_count": 2,
+      "status": "EMPIRICAL_API",
+      "source": "SRC-GA4-UTL"
+    },
+    "gsc": {
+      "impressions": null,
+      "clicks": null,
+      "ctr": null,
+      "average_position": null,
+      "status": "PENDING_SEARCH_CONSOLE_LAG",
+      "source": "SRC-GSC-UTL"
+    },
+    "telemetry": {
+      "utility_views": null,
+      "tool_executions": null,
+      "widget_views": null,
+      "status": "UNAVAILABLE",
+      "persistence_status": "NON-PERSISTENT_EDGE",
+      "source": "SRC-UTL-TELEMETRY"
+    },
+    "reconstruction_note": "Authoritative external measurement independently reconstructed; replaces contaminated internal estimates while preserving original contaminated records in daily_statistics.json."
+  }
+]

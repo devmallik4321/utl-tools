@@ -2,6 +2,9 @@ import fs from "fs";
 import path from "path";
 import { runUtlProjectIntelligence } from "../intelligence/project/runner.mjs";
 import { recordDailyStatistics } from "../intelligence/project/dailyStatisticsStore.mjs";
+import { runHistoricalReconstruction } from "../intelligence/project/historicalReconstructor.mjs";
+import { generateStatisticsArtifacts } from "../intelligence/project/statisticsAggregator.mjs";
+import { writeSystemMetrics } from "./generate_system_metrics.mjs";
 import { generateControlCenter } from "./generate_control_center.mjs";
 
 async function main() {
@@ -32,10 +35,20 @@ async function main() {
   console.log(`\nSaved run snapshot to: ${snapshotPath}`);
 
   // 3. Record / update daily statistics history store
-  recordDailyStatistics(result.observations);
+  recordDailyStatistics(result.observations, { retainExisting: true });
   console.log("Updated daily statistics historical store.");
 
-  // 4. Re-generate and synchronize canonical Control Center workbook
+  // 3b. Run historical reconstruction to ensure empirical dataset is synchronized
+  await runHistoricalReconstruction();
+  console.log("Synchronized canonical empirical daily statistics and reconstruction metadata.");
+
+  // 4. Generate canonical Phase 6 & 7 statistics artifacts (live & monthly)
+  generateStatisticsArtifacts();
+
+  // 5. Compute and synchronize authoritative system metrics
+  writeSystemMetrics();
+
+  // 6. Re-generate and synchronize canonical Control Center workbook
   console.log("\nSynchronizing UTL-CONTROL-CENTER.xlsx...");
   await generateControlCenter();
 

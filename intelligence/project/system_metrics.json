@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0.0",
-  "generated_at": "2026-09-04T09:39:23.301Z",
-  "total_metrics": 24,
+  "generated_at": "2026-09-07T04:00:09.535Z",
+  "total_metrics": 44,
   "metrics": [
     {
       "metric_id": "active_utilities",
@@ -11,7 +11,7 @@
       "epistemic_type": "VERIFIED",
       "confidence": 1,
       "source": "registry/utilities.json",
-      "collection_timestamp": "2026-09-04T09:39:23.301Z",
+      "collection_timestamp": "2026-09-07T04:00:09.535Z",
       "calculation_method": "JSON array length from canonical registry",
       "provenance": {
         "path": "registry/utilities.json",
@@ -30,7 +30,7 @@
       "epistemic_type": "VERIFIED",
       "confidence": 1,
       "source": "apps/web-shell/src/components/tools/",
-      "collection_timestamp": "2026-09-04T09:39:23.301Z",
+      "collection_timestamp": "2026-09-07T04:00:09.535Z",
       "calculation_method": "Recursive .tsx file enumeration excluding ToolDispatcher.tsx",
       "provenance": {
         "path": "apps/web-shell/src/components/tools/"
@@ -48,7 +48,7 @@
       "epistemic_type": "VERIFIED",
       "confidence": 1,
       "source": "apps/web-shell/src/components/tools/ToolDispatcher.tsx",
-      "collection_timestamp": "2026-09-04T09:39:23.301Z",
+      "collection_timestamp": "2026-09-07T04:00:09.535Z",
       "calculation_method": "Mapping keys in TOOL_COMPONENTS matching active registry slugs",
       "provenance": {
         "path": "apps/web-shell/src/components/tools/ToolDispatcher.tsx"
@@ -66,7 +66,7 @@
       "epistemic_type": "VERIFIED",
       "confidence": 1,
       "source": "apps/web-shell/src/components/tools/ToolDispatcher.tsx",
-      "collection_timestamp": "2026-09-04T09:39:23.301Z",
+      "collection_timestamp": "2026-09-07T04:00:09.535Z",
       "calculation_method": "Mapping keys in TOOL_COMPONENTS not in active registry",
       "provenance": {
         "path": "apps/web-shell/src/components/tools/ToolDispatcher.tsx"
@@ -84,7 +84,7 @@
       "epistemic_type": "VERIFIED",
       "confidence": 1,
       "source": "apps/web-shell/src/components/tools/ToolDispatcher.tsx",
-      "collection_timestamp": "2026-09-04T09:39:23.301Z",
+      "collection_timestamp": "2026-09-07T04:00:09.535Z",
       "calculation_method": "Total unique mapping keys in TOOL_COMPONENTS",
       "provenance": {
         "path": "apps/web-shell/src/components/tools/ToolDispatcher.tsx"
@@ -102,7 +102,7 @@
       "epistemic_type": "VERIFIED",
       "confidence": 1,
       "source": "apps/web-shell/.next/prerender-manifest.json",
-      "collection_timestamp": "2026-09-04T09:39:23.301Z",
+      "collection_timestamp": "2026-09-07T04:00:09.535Z",
       "calculation_method": "Object.keys(manifest.routes).length from Next.js SSG artifact",
       "provenance": {
         "path": "apps/web-shell/.next/prerender-manifest.json"
@@ -120,7 +120,7 @@
       "epistemic_type": "VERIFIED",
       "confidence": 1,
       "source": "apps/web-shell/src/app/sitemap.ts",
-      "collection_timestamp": "2026-09-04T09:39:23.301Z",
+      "collection_timestamp": "2026-09-07T04:00:09.535Z",
       "calculation_method": "Model calculation matching sitemap.ts generation rules",
       "provenance": {
         "path": "apps/web-shell/src/app/sitemap.ts"
@@ -138,7 +138,7 @@
       "epistemic_type": "VERIFIED",
       "confidence": 1,
       "source": "documentation/GIT-CHANGELOG.json",
-      "collection_timestamp": "2026-09-04T09:39:23.301Z",
+      "collection_timestamp": "2026-09-07T04:00:09.535Z",
       "calculation_method": "Reconstructed Git log commit enumeration",
       "provenance": {
         "path": "documentation/GIT-CHANGELOG.json"
@@ -156,7 +156,7 @@
       "epistemic_type": "VERIFIED",
       "confidence": 1,
       "source": "git log",
-      "collection_timestamp": "2026-09-04T09:39:23.301Z",
+      "collection_timestamp": "2026-09-07T04:00:09.535Z",
       "calculation_method": "Regex count of commits matching feat(batch-XX)",
       "provenance": {
         "commits": "Batches 30 through 37"
@@ -174,7 +174,7 @@
       "epistemic_type": "DERIVED",
       "confidence": 0.85,
       "source": "git log",
-      "collection_timestamp": "2026-09-04T09:39:23.301Z",
+      "collection_timestamp": "2026-09-07T04:00:09.535Z",
       "calculation_method": "Sequential utility expansion commits prior to batch-30 naming",
       "provenance": {
         "commit_range": "Commits 20 through 48 in repository chronological sequence"
@@ -192,7 +192,7 @@
       "epistemic_type": "DERIVED",
       "confidence": 0.9,
       "source": "Repository commit history reconciliation",
-      "collection_timestamp": "2026-09-04T09:39:23.301Z",
+      "collection_timestamp": "2026-09-07T04:00:09.535Z",
       "calculation_method": "Sum of verified and derived expansion commits",
       "provenance": {
         "batches": "37 total expansion milestones (29 derived + 8 verified)"
@@ -210,7 +210,7 @@
       "epistemic_type": "VERIFIED",
       "confidence": 1,
       "source": "registry/utilities.json",
-      "collection_timestamp": "2026-09-04T09:39:23.301Z",
+      "collection_timestamp": "2026-09-07T04:00:09.535Z",
       "calculation_method": "1 specification per active registered utility",
       "provenance": {
         "path": "registry/utilities.json"
@@ -228,7 +228,7 @@
       "epistemic_type": "FACT",
       "confidence": 1,
       "source": "Playwright Chromium Test Harness Logs",
-      "collection_timestamp": "2026-09-04T09:39:23.301Z",
+      "collection_timestamp": "2026-09-07T04:00:09.535Z",
       "calculation_method": "Count of component UI/integration tests executed by automated harness",
       "provenance": {
         "harness": "Playwright Chromium (Headless)",
@@ -248,7 +248,7 @@
       "epistemic_type": "FACT",
       "confidence": 1,
       "source": "Playwright Chromium Test Harness Logs",
-      "collection_timestamp": "2026-09-04T09:39:23.301Z",
+      "collection_timestamp": "2026-09-07T04:00:09.535Z",
       "calculation_method": "Count of component UI/integration tests passed with DOM assertion verification",
       "provenance": {
         "harness": "Playwright Chromium (Headless)",
@@ -268,7 +268,7 @@
       "epistemic_type": "FACT",
       "confidence": 1,
       "source": "Playwright Chromium Test Harness Logs",
-      "collection_timestamp": "2026-09-04T09:39:23.301Z",
+      "collection_timestamp": "2026-09-07T04:00:09.535Z",
       "calculation_method": "Count of component UI/integration tests failed",
       "provenance": {
         "harness": "Playwright Chromium (Headless)",
@@ -287,7 +287,7 @@
       "epistemic_type": "FACT",
       "confidence": 1,
       "source": "Playwright Chromium Test Harness Logs",
-      "collection_timestamp": "2026-09-04T09:39:23.301Z",
+      "collection_timestamp": "2026-09-07T04:00:09.535Z",
       "calculation_method": "Count of tests requiring physical hardware or external network probe",
       "provenance": {
         "harness": "Playwright Chromium (Headless)",
@@ -306,7 +306,7 @@
       "epistemic_type": "FACT",
       "confidence": 1,
       "source": "Playwright Chromium Test Harness Logs",
-      "collection_timestamp": "2026-09-04T09:39:23.301Z",
+      "collection_timestamp": "2026-09-07T04:00:09.535Z",
       "calculation_method": "Specifications not yet executed by automated harness",
       "provenance": {
         "harness": "Playwright Chromium (Headless)"
@@ -324,7 +324,7 @@
       "epistemic_type": "FACT",
       "confidence": 1,
       "source": "intelligence/telemetry/events.json",
-      "collection_timestamp": "2026-09-04T09:39:23.301Z",
+      "collection_timestamp": "2026-09-07T04:00:09.535Z",
       "calculation_method": "Length of sanitized first-party telemetry events array",
       "provenance": {
         "store": "intelligence/telemetry/events.json"
@@ -342,7 +342,7 @@
       "epistemic_type": "UNAVAILABLE",
       "confidence": 0,
       "source": "SRC-UTL-TELEMETRY",
-      "collection_timestamp": "2026-09-04T09:39:23.301Z",
+      "collection_timestamp": "2026-09-07T04:00:09.535Z",
       "calculation_method": "Real-time client telemetry event stream",
       "provenance": {
         "collector": "No authenticated production telemetry ingest endpoint configured"
@@ -360,7 +360,7 @@
       "epistemic_type": "UNAVAILABLE",
       "confidence": 0,
       "source": "SRC-UTL-TELEMETRY",
-      "collection_timestamp": "2026-09-04T09:39:23.301Z",
+      "collection_timestamp": "2026-09-07T04:00:09.535Z",
       "calculation_method": "Real-time client execution event stream",
       "provenance": {
         "collector": "No authenticated production telemetry ingest endpoint configured"
@@ -372,21 +372,21 @@
     },
     {
       "metric_id": "ga4_active_users_live",
-      "value": 27,
+      "value": null,
       "unit": "users",
-      "status": "SUCCESS",
-      "epistemic_type": "VERIFIED",
-      "confidence": 1,
+      "status": "UNAVAILABLE",
+      "epistemic_type": "UNAVAILABLE",
+      "confidence": 0,
       "source": "SRC-GA4-UTL",
-      "collection_timestamp": "2026-09-04T09:39:23.301Z",
+      "collection_timestamp": "2026-09-07T04:00:09.535Z",
       "calculation_method": "Google Analytics 4 Data API runReport",
       "provenance": {
         "property_id": "477610444"
       },
-      "notes": "Live data collected via authenticated API.",
+      "notes": "Google credentials currently unauthenticated or expired.",
       "evidence_reference": "SRC-GA4-UTL",
       "contamination_status": "UNCONTAMINATED",
-      "empirical_usability": true
+      "empirical_usability": false
     },
     {
       "metric_id": "historical_daily_stats_contaminated_count",
@@ -396,7 +396,7 @@
       "epistemic_type": "SYNTHETIC_CONTAMINATED",
       "confidence": 1,
       "source": "intelligence/project/daily_statistics.json",
-      "collection_timestamp": "2026-09-04T09:39:23.301Z",
+      "collection_timestamp": "2026-09-07T04:00:09.535Z",
       "calculation_method": "Count of daily records where usable_for_empirical_analysis === false",
       "provenance": {
         "path": "intelligence/project/daily_statistics.json",
@@ -409,13 +409,13 @@
     },
     {
       "metric_id": "historical_daily_stats_empirical_count",
-      "value": 1,
+      "value": 4,
       "unit": "records",
       "status": "SUCCESS",
       "epistemic_type": "VERIFIED",
       "confidence": 1,
       "source": "intelligence/project/daily_statistics.json",
-      "collection_timestamp": "2026-09-04T09:39:23.301Z",
+      "collection_timestamp": "2026-09-07T04:00:09.535Z",
       "calculation_method": "Count of daily records where usable_for_empirical_analysis === true",
       "provenance": {
         "path": "intelligence/project/daily_statistics.json"
@@ -433,13 +433,392 @@
       "epistemic_type": "DERIVED",
       "confidence": 1,
       "source": "System reconciliation audit",
-      "collection_timestamp": "2026-09-04T09:39:23.301Z",
+      "collection_timestamp": "2026-09-07T04:00:09.535Z",
       "calculation_method": "Operational assessment: routes & components verified, external telemetry unconfigured",
       "provenance": {
         "assessment": "Core catalog complete and prerendered; external telemetry unconfigured; component tests pending Phase 3"
       },
       "notes": "Truthful qualified status. Replaces misleading '100% HEALTHY / ZERO DEFECTS'.",
       "evidence_reference": "System reconciliation audit",
+      "contamination_status": "UNCONTAMINATED",
+      "empirical_usability": true
+    },
+    {
+      "metric_id": "current_day_volume",
+      "value": null,
+      "unit": "views",
+      "status": "UNAVAILABLE",
+      "epistemic_type": "VERIFIED",
+      "confidence": 1,
+      "source": "SRC-GA4-UTL",
+      "collection_timestamp": "2026-09-07T04:00:09.535Z",
+      "calculation_method": "GA4 screenPageViews for latest empirical day",
+      "provenance": {
+        "property_id": "477610444",
+        "date": "2026-09-07"
+      },
+      "notes": "Daily empirical page view volume.",
+      "evidence_reference": "SRC-GA4-UTL",
+      "contamination_status": "UNCONTAMINATED",
+      "empirical_usability": false
+    },
+    {
+      "metric_id": "month_to_date_volume",
+      "value": 50,
+      "unit": "views",
+      "status": "SUCCESS",
+      "epistemic_type": "DERIVED",
+      "confidence": 1,
+      "source": "intelligence/project/monthly_statistics.json",
+      "collection_timestamp": "2026-09-07T04:00:09.535Z",
+      "calculation_method": "Sum of empirical daily screenPageViews for current calendar month",
+      "provenance": {
+        "path": "intelligence/project/monthly_statistics.json",
+        "month": "2026-09"
+      },
+      "notes": "Month-to-date cumulative empirical page views.",
+      "evidence_reference": "intelligence/project/monthly_statistics.json",
+      "contamination_status": "UNCONTAMINATED",
+      "empirical_usability": true
+    },
+    {
+      "metric_id": "month_to_date_impressions",
+      "value": 806,
+      "unit": "impressions",
+      "status": "SUCCESS",
+      "epistemic_type": "DERIVED",
+      "confidence": 1,
+      "source": "intelligence/project/monthly_statistics.json",
+      "collection_timestamp": "2026-09-07T04:00:09.535Z",
+      "calculation_method": "Sum of empirical daily search impressions for current calendar month",
+      "provenance": {
+        "path": "intelligence/project/monthly_statistics.json",
+        "month": "2026-09"
+      },
+      "notes": "Month-to-date cumulative empirical Search Console impressions.",
+      "evidence_reference": "intelligence/project/monthly_statistics.json",
+      "contamination_status": "UNCONTAMINATED",
+      "empirical_usability": true
+    },
+    {
+      "metric_id": "telemetry_accumulation_state",
+      "value": "NON-PERSISTENT_EDGE / LOCAL_ACTIVE",
+      "unit": "state",
+      "status": "SUCCESS",
+      "epistemic_type": "VERIFIED",
+      "confidence": 1,
+      "source": "SRC-UTL-TELEMETRY",
+      "collection_timestamp": "2026-09-07T04:00:09.535Z",
+      "calculation_method": "Production edge filesystem persistence assessment",
+      "provenance": {
+        "endpoint": "/api/telemetry",
+        "runtime": "Vercel Serverless Edge"
+      },
+      "notes": "Telemetry functions ingest and sanitize locally; edge persistence requires external database.",
+      "evidence_reference": "SRC-UTL-TELEMETRY",
+      "contamination_status": "UNCONTAMINATED",
+      "empirical_usability": true
+    },
+    {
+      "metric_id": "provider_availability_summary",
+      "value": "PARTIAL_LIVE",
+      "unit": "status",
+      "status": "SUCCESS",
+      "epistemic_type": "DERIVED",
+      "confidence": 1,
+      "source": "intelligence/project/live_statistics.json",
+      "collection_timestamp": "2026-09-07T04:00:09.535Z",
+      "calculation_method": "Multi-provider availability synthesis",
+      "provenance": {
+        "assessment": "GA4 baseline live, GSC live, first-party telemetry non-persistent edge"
+      },
+      "notes": "Live synthesis across GA4, GSC, and first-party telemetry.",
+      "evidence_reference": "intelligence/project/live_statistics.json",
+      "contamination_status": "UNCONTAMINATED",
+      "empirical_usability": true
+    },
+    {
+      "metric_id": "production_start_date",
+      "value": "2026-08-25",
+      "unit": "date",
+      "status": "SUCCESS",
+      "epistemic_type": "FACT",
+      "confidence": 1,
+      "source": "documentation/GIT-CHANGELOG.json",
+      "collection_timestamp": "2026-09-07T04:00:09.535Z",
+      "calculation_method": "First production commit and release tag timestamp",
+      "provenance": {
+        "commit": "28360e6"
+      },
+      "notes": "Commit 28360e6 (Version 1.1 Release, 47 utilities, 2026-08-25T04:14:45.000Z) and earliest GA4 traffic record.",
+      "evidence_reference": "documentation/GIT-CHANGELOG.json",
+      "contamination_status": "UNCONTAMINATED",
+      "empirical_usability": true
+    },
+    {
+      "metric_id": "ga4_measurement_start_date",
+      "value": "2026-08-25",
+      "unit": "date",
+      "status": "SUCCESS",
+      "epistemic_type": "VERIFIED",
+      "confidence": 1,
+      "source": "SRC-GA4-UTL",
+      "collection_timestamp": "2026-09-07T04:00:09.535Z",
+      "calculation_method": "First observable empirical GA4 event and session date",
+      "provenance": {},
+      "notes": "First active traffic observed 2026-08-25 via GA4 Data API.",
+      "evidence_reference": "SRC-GA4-UTL",
+      "contamination_status": "UNCONTAMINATED",
+      "empirical_usability": true
+    },
+    {
+      "metric_id": "gsc_measurement_start_date",
+      "value": "2026-08-24",
+      "unit": "date",
+      "status": "SUCCESS",
+      "epistemic_type": "VERIFIED",
+      "confidence": 1,
+      "source": "SRC-GSC-UTL",
+      "collection_timestamp": "2026-09-07T04:00:09.535Z",
+      "calculation_method": "First Search Console tracking date",
+      "provenance": {},
+      "notes": "First impressions observed 2026-08-26; zero impressions tracked 2026-08-24 to 2026-08-25.",
+      "evidence_reference": "SRC-GSC-UTL",
+      "contamination_status": "UNCONTAMINATED",
+      "empirical_usability": true
+    },
+    {
+      "metric_id": "reconstructed_empirical_days",
+      "value": 11,
+      "unit": "days",
+      "status": "SUCCESS",
+      "epistemic_type": "VERIFIED",
+      "confidence": 1,
+      "source": "intelligence/project/empirical_daily_statistics.json",
+      "collection_timestamp": "2026-09-07T04:00:09.535Z",
+      "calculation_method": "Count of reconstructed empirical daily records from Day 1 to present",
+      "provenance": {
+        "path": "intelligence/project/empirical_daily_statistics.json"
+      },
+      "notes": "Canonical empirical timeline reconstructed from GA4 and GSC APIs.",
+      "evidence_reference": "intelligence/project/empirical_daily_statistics.json",
+      "contamination_status": "UNCONTAMINATED",
+      "empirical_usability": true
+    },
+    {
+      "metric_id": "first_seven_days_sessions",
+      "value": 84,
+      "unit": "sessions",
+      "status": "SUCCESS",
+      "epistemic_type": "DERIVED",
+      "confidence": 1,
+      "source": "SRC-GA4-UTL",
+      "collection_timestamp": "2026-09-07T04:00:09.535Z",
+      "calculation_method": "Sum of empirical GA4 sessions across first 7 calendar days (2026-08-25 to 2026-08-31)",
+      "provenance": {
+        "range": "2026-08-25 to 2026-08-31"
+      },
+      "notes": "First 7 days launch week traffic volume.",
+      "evidence_reference": "SRC-GA4-UTL",
+      "contamination_status": "UNCONTAMINATED",
+      "empirical_usability": true
+    },
+    {
+      "metric_id": "first_seven_days_views",
+      "value": 139,
+      "unit": "views",
+      "status": "SUCCESS",
+      "epistemic_type": "DERIVED",
+      "confidence": 1,
+      "source": "SRC-GA4-UTL",
+      "collection_timestamp": "2026-09-07T04:00:09.535Z",
+      "calculation_method": "Sum of empirical GA4 page views across first 7 calendar days (2026-08-25 to 2026-08-31)",
+      "provenance": {
+        "range": "2026-08-25 to 2026-08-31"
+      },
+      "notes": "First 7 days launch week page view volume.",
+      "evidence_reference": "SRC-GA4-UTL",
+      "contamination_status": "UNCONTAMINATED",
+      "empirical_usability": true
+    },
+    {
+      "metric_id": "first_seven_days_impressions",
+      "value": 532,
+      "unit": "impressions",
+      "status": "SUCCESS",
+      "epistemic_type": "DERIVED",
+      "confidence": 1,
+      "source": "SRC-GSC-UTL",
+      "collection_timestamp": "2026-09-07T04:00:09.535Z",
+      "calculation_method": "Sum of empirical GSC impressions across first 7 calendar days (2026-08-25 to 2026-08-31)",
+      "provenance": {
+        "range": "2026-08-25 to 2026-08-31"
+      },
+      "notes": "First 7 days search console impressions.",
+      "evidence_reference": "SRC-GSC-UTL",
+      "contamination_status": "UNCONTAMINATED",
+      "empirical_usability": true
+    },
+    {
+      "metric_id": "adsense_readiness_state",
+      "value": "NOT_READY",
+      "unit": "status",
+      "status": "SUCCESS",
+      "epistemic_type": "VERIFIED",
+      "confidence": 1,
+      "source": "intelligence/project/monetizationModel.mjs",
+      "collection_timestamp": "2026-09-07T04:00:09.535Z",
+      "calculation_method": "Strict policy compliance checklist evaluation",
+      "provenance": {
+        "policy": "Google AdSense Program Policies (2026)"
+      },
+      "notes": "Status evaluated by policy checklist, strictly prohibiting fake probability scores.",
+      "evidence_reference": "intelligence/project/monetizationModel.mjs",
+      "contamination_status": "UNCONTAMINATED",
+      "empirical_usability": true
+    },
+    {
+      "metric_id": "internal_target_sessions",
+      "value": 1000,
+      "unit": "sessions",
+      "status": "SUCCESS",
+      "epistemic_type": "FACT",
+      "confidence": 1,
+      "source": "intelligence/project/monetizationModel.mjs",
+      "collection_timestamp": "2026-09-07T04:00:09.535Z",
+      "calculation_method": "Internal business milestone target definition",
+      "provenance": {
+        "policy_distinction": "INTERNAL_BUSINESS_TARGET (NOT a Google AdSense policy requirement)"
+      },
+      "notes": "1,000 monthly sessions is an internal business milestone target, not an official AdSense eligibility threshold.",
+      "evidence_reference": "intelligence/project/monetizationModel.mjs",
+      "contamination_status": "UNCONTAMINATED",
+      "empirical_usability": true
+    },
+    {
+      "metric_id": "rolling_seven_days_sessions",
+      "value": 18,
+      "unit": "sessions",
+      "status": "SUCCESS",
+      "epistemic_type": "DERIVED",
+      "confidence": 1,
+      "source": "SRC-GA4-UTL",
+      "collection_timestamp": "2026-09-07T04:00:09.535Z",
+      "calculation_method": "Sum of empirical daily sessions over rolling 7-day window",
+      "provenance": {
+        "window": {
+          "start_date": "2026-08-29",
+          "end_date": "2026-09-04",
+          "days_count": 7
+        }
+      },
+      "notes": "Rolling 7-day empirical sessions volume.",
+      "evidence_reference": "SRC-GA4-UTL",
+      "contamination_status": "UNCONTAMINATED",
+      "empirical_usability": true
+    },
+    {
+      "metric_id": "rolling_seven_days_views",
+      "value": 21,
+      "unit": "views",
+      "status": "SUCCESS",
+      "epistemic_type": "DERIVED",
+      "confidence": 1,
+      "source": "SRC-GA4-UTL",
+      "collection_timestamp": "2026-09-07T04:00:09.535Z",
+      "calculation_method": "Sum of empirical daily views over rolling 7-day window",
+      "provenance": {
+        "window": {
+          "start_date": "2026-08-29",
+          "end_date": "2026-09-04",
+          "days_count": 7
+        }
+      },
+      "notes": "Rolling 7-day empirical page views volume.",
+      "evidence_reference": "SRC-GA4-UTL",
+      "contamination_status": "UNCONTAMINATED",
+      "empirical_usability": true
+    },
+    {
+      "metric_id": "rolling_seven_days_impressions",
+      "value": 431,
+      "unit": "impressions",
+      "status": "SUCCESS",
+      "epistemic_type": "DERIVED",
+      "confidence": 1,
+      "source": "SRC-GSC-UTL",
+      "collection_timestamp": "2026-09-07T04:00:09.535Z",
+      "calculation_method": "Sum of empirical search impressions over rolling 7-day window",
+      "provenance": {
+        "window": {
+          "start_date": "2026-08-29",
+          "end_date": "2026-09-04",
+          "days_count": 7
+        }
+      },
+      "notes": "Rolling 7-day search impressions volume.",
+      "evidence_reference": "SRC-GSC-UTL",
+      "contamination_status": "UNCONTAMINATED",
+      "empirical_usability": true
+    },
+    {
+      "metric_id": "rolling_thirty_days_sessions",
+      "value": 94,
+      "unit": "sessions",
+      "status": "SUCCESS",
+      "epistemic_type": "DERIVED",
+      "confidence": 1,
+      "source": "SRC-GA4-UTL",
+      "collection_timestamp": "2026-09-07T04:00:09.535Z",
+      "calculation_method": "Sum of empirical daily sessions over observed 30-day rolling window",
+      "provenance": {
+        "window": {
+          "start_date": "2026-08-25",
+          "end_date": "2026-09-04",
+          "days_observed": 11,
+          "window_target_days": 30
+        }
+      },
+      "notes": "Cumulative empirical sessions observed across rolling 30-day window.",
+      "evidence_reference": "SRC-GA4-UTL",
+      "contamination_status": "UNCONTAMINATED",
+      "empirical_usability": true
+    },
+    {
+      "metric_id": "internal_target_remaining_sessions",
+      "value": 964,
+      "unit": "sessions",
+      "status": "SUCCESS",
+      "epistemic_type": "DERIVED",
+      "confidence": 1,
+      "source": "intelligence/project/growthIntelligence.mjs",
+      "collection_timestamp": "2026-09-07T04:00:09.535Z",
+      "calculation_method": "target (1000) - current MTD sessions (36)",
+      "provenance": {
+        "target": 1000,
+        "current_mtd": 36
+      },
+      "notes": "Remaining sessions needed to reach internal 1,000 monthly sessions milestone.",
+      "evidence_reference": "intelligence/project/growthIntelligence.mjs",
+      "contamination_status": "UNCONTAMINATED",
+      "empirical_usability": true
+    },
+    {
+      "metric_id": "internal_target_progress_pct",
+      "value": 3.6,
+      "unit": "percentage",
+      "status": "SUCCESS",
+      "epistemic_type": "DERIVED",
+      "confidence": 1,
+      "source": "intelligence/project/growthIntelligence.mjs",
+      "collection_timestamp": "2026-09-07T04:00:09.535Z",
+      "calculation_method": "(current / target) * 100",
+      "provenance": {
+        "target": 1000,
+        "current_mtd": 36
+      },
+      "notes": "Percentage of internal 1,000 monthly sessions milestone achieved.",
+      "evidence_reference": "intelligence/project/growthIntelligence.mjs",
       "contamination_status": "UNCONTAMINATED",
       "empirical_usability": true
     }

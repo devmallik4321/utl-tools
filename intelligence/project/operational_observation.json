@@ -1,0 +1,151 @@
+{
+  "schema_version": "2.0.0",
+  "generated_at": "2026-09-07T04:00:09.722Z",
+  "governance": {
+    "contract": "CANONICAL-STATISTICS-CONTRACT.md",
+    "standard": "Phase 10 Production Observation & Anomaly Detection Protocol",
+    "rule": "MEASURE WHAT ACTUALLY HAPPENED; DERIVE ONLY FROM AUTHORITATIVE MEASUREMENTS; NEVER TURN ABSENCE OF DATA INTO DATA"
+  },
+  "production_timeline": {
+    "production_start_date": "2026-08-25",
+    "latest_empirical_day": "2026-09-04",
+    "empirical_days_recorded": 11
+  },
+  "today": {
+    "date": "2026-09-04",
+    "sessions": 1,
+    "page_views": 1,
+    "active_users": 1,
+    "engaged_sessions": 0,
+    "search_impressions": null,
+    "search_clicks": null,
+    "gsc_status": "PENDING_SEARCH_CONSOLE_LAG",
+    "telemetry_views": null,
+    "telemetry_executions": null,
+    "telemetry_status": "UNAVAILABLE"
+  },
+  "traffic_trends": {
+    "day_over_day": {
+      "state": "DECREASE",
+      "change": -1,
+      "pct_change": -50,
+      "current_value": 1,
+      "previous_value": 2,
+      "metric": "sessions",
+      "current_date": "2026-09-04",
+      "previous_date": "2026-09-03"
+    },
+    "last_7_days": {
+      "window": "2026-08-29 to 2026-09-04",
+      "status": "COMPLETE",
+      "sessions": 18,
+      "page_views": 21,
+      "search_impressions": 431
+    },
+    "last_30_days": {
+      "window": "2026-08-25 to 2026-09-04",
+      "days_observed": 11,
+      "target_days": 30,
+      "status": "PARTIAL_WINDOW",
+      "sessions": 94,
+      "page_views": 152,
+      "search_impressions": 637,
+      "window_status_note": "11 empirical days recorded since production launch (2026-08-25). Full 30-day rolling window will be available on 2026-09-23."
+    },
+    "september_mtd": {
+      "month": "2026-09",
+      "sessions": 10,
+      "monthly_unique_users": 10,
+      "page_views": 13,
+      "engaged_sessions": 5,
+      "search_impressions": 105,
+      "search_clicks": 0,
+      "search_average_position": 54.2
+    },
+    "day_1_to_today": {
+      "start_date": "2026-08-25",
+      "end_date": "2026-09-04",
+      "days_count": 11,
+      "sessions": 94,
+      "page_views": 152,
+      "search_impressions": 637,
+      "search_average_position": 66.5
+    }
+  },
+  "internal_target": {
+    "target_monthly_sessions": 1000,
+    "current_september_sessions": 10,
+    "remaining_gap": 990,
+    "progress_percentage": 1,
+    "classification": "INTERNAL_BUSINESS_TARGET",
+    "is_google_requirement": false,
+    "governance_rule": "1,000 monthly sessions is strictly an internal business milestone. It is NOT a Google AdSense policy requirement."
+  },
+  "source_health": {
+    "ga4": {
+      "provider_id": "SRC-GA4-UTL",
+      "status": "ACTIVE",
+      "epistemic_type": "TRUTHFUL_EMPIRICAL",
+      "notes": "Connected to GA4 Data API v1beta (Property 551527574)."
+    },
+    "gsc": {
+      "provider_id": "SRC-GSC-UTL",
+      "status": "ACTIVE_PENDING_LAG",
+      "epistemic_type": "TRUTHFUL_EMPIRICAL",
+      "lag_status": "48-72h publication delay; recent dates faithfully preserved as null.",
+      "notes": "Connected to Google Search Console API (sc-domain:utl.tools)."
+    },
+    "telemetry": {
+      "provider_id": "SRC-UTL-TELEMETRY",
+      "status": "UNAVAILABLE_UNCONFIGURED_EDGE",
+      "epistemic_type": "UNAVAILABLE",
+      "notes": "Vercel Edge serverless runtime requires external persistent storage. Telemetry views preserved as null."
+    }
+  },
+  "anomalies": {
+    "total_detected": 3,
+    "critical_count": 0,
+    "technical_failures_count": 0,
+    "items": [
+      {
+        "id": "ANO-TRAFFIC-LOW",
+        "type": "LOW_TRAFFIC",
+        "severity": "INFORMATIONAL",
+        "is_technical_failure": false,
+        "affected_metric": "ga4_sessions",
+        "affected_date": "2026-09-04",
+        "observed_value": 1,
+        "description": "Low traffic volume observed (1 session on 2026-09-04). Authenticated empirical business observation, not a measurement failure.",
+        "remediation": "None required. Measure truthfully without synthesizing traffic."
+      },
+      {
+        "id": "ANO-LAG-GSC",
+        "type": "SOURCE_LAG",
+        "severity": "INFORMATIONAL",
+        "is_technical_failure": false,
+        "affected_metric": "gsc_impressions",
+        "affected_date": "2026-09-04",
+        "observed_value": null,
+        "description": "GSC search analytics data for 2026-09-04 is pending normal 48-72h Google publication latency. Truthfully preserved as null.",
+        "remediation": "Awaiting standard upstream publication window. GSC data will populate automatically once released by Google."
+      },
+      {
+        "id": "ANO-TEL-EDGE",
+        "type": "SOURCE_UNAVAILABLE_EXPECTED",
+        "severity": "INFORMATIONAL",
+        "is_technical_failure": false,
+        "affected_metric": "first_party_telemetry",
+        "description": "First-party telemetry edge persistence is unconfigured in production serverless environment. Truthfully reported as null.",
+        "remediation": "Provision external persistent database connection for edge telemetry ingestion if persistent first-party storage is required."
+      }
+    ]
+  },
+  "data_integrity": {
+    "synthetic_metrics_reintroduced": false,
+    "synthetic_test_results_reintroduced": false,
+    "no_data_converted_to_zero": false,
+    "historical_canonical_data_altered_without_evidence": false,
+    "containment_invariants_status": "ALL_PASSED",
+    "discrepancy_ledger_count": 10
+  }
+}

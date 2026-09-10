@@ -94,58 +94,70 @@ test("Test 4: GA4 expired credentials emits AUTH_EXPIRED with null value", async
 });
 
 test("Test 5: Daily statistics store preserves null without fabricating numbers or zeros", () => {
-  const mockObservations = [
-    { source_id: "SRC-GA4-UTL", metric_id: "users", value: null, status: "AUTH_EXPIRED" },
-    { source_id: "SRC-GA4-UTL", metric_id: "sessions", value: null, status: "AUTH_EXPIRED" },
-    { source_id: "SRC-GA4-UTL", metric_id: "landing_page_views", value: null, status: "AUTH_EXPIRED" },
-    { source_id: "SRC-GA4-UTL", metric_id: "engaged_sessions", value: null, status: "AUTH_EXPIRED" },
-    { source_id: "SRC-GSC-UTL", metric_id: "search_impressions", value: null, status: "AUTH_UNAVAILABLE" },
-    { source_id: "SRC-GSC-UTL", metric_id: "search_clicks", value: null, status: "AUTH_UNAVAILABLE" },
-    { source_id: "SRC-GSC-UTL", metric_id: "search_ctr", value: null, status: "AUTH_UNAVAILABLE" },
-    { source_id: "SRC-GSC-UTL", metric_id: "average_position", value: null, status: "AUTH_UNAVAILABLE" },
-    { source_id: "SRC-UTL-TELEMETRY", metric_id: "utility_views", value: null, status: "UNAVAILABLE" },
-    { source_id: "SRC-UTL-TELEMETRY", metric_id: "utility_interactions", value: null, status: "UNAVAILABLE" },
-    { source_id: "SRC-UTL-TELEMETRY", metric_id: "widget_views", value: null, status: "UNAVAILABLE" },
-  ];
+  const storePath = path.resolve("intelligence/project/daily_statistics.json");
+  const backup = fs.readFileSync(storePath, "utf-8");
+  try {
+    const mockObservations = [
+      { source_id: "SRC-GA4-UTL", metric_id: "users", value: null, status: "AUTH_EXPIRED" },
+      { source_id: "SRC-GA4-UTL", metric_id: "sessions", value: null, status: "AUTH_EXPIRED" },
+      { source_id: "SRC-GA4-UTL", metric_id: "landing_page_views", value: null, status: "AUTH_EXPIRED" },
+      { source_id: "SRC-GA4-UTL", metric_id: "engaged_sessions", value: null, status: "AUTH_EXPIRED" },
+      { source_id: "SRC-GSC-UTL", metric_id: "search_impressions", value: null, status: "AUTH_UNAVAILABLE" },
+      { source_id: "SRC-GSC-UTL", metric_id: "search_clicks", value: null, status: "AUTH_UNAVAILABLE" },
+      { source_id: "SRC-GSC-UTL", metric_id: "search_ctr", value: null, status: "AUTH_UNAVAILABLE" },
+      { source_id: "SRC-GSC-UTL", metric_id: "average_position", value: null, status: "AUTH_UNAVAILABLE" },
+      { source_id: "SRC-UTL-TELEMETRY", metric_id: "utility_views", value: null, status: "UNAVAILABLE" },
+      { source_id: "SRC-UTL-TELEMETRY", metric_id: "utility_interactions", value: null, status: "UNAVAILABLE" },
+      { source_id: "SRC-UTL-TELEMETRY", metric_id: "widget_views", value: null, status: "UNAVAILABLE" },
+    ];
 
-  // Load existing, backup, record test day, then reload
-  const today = new Date().toISOString().slice(0, 10);
-  recordDailyStatistics(mockObservations);
+    // Load existing, backup, record test day, then reload
+    const today = new Date().toISOString().slice(0, 10);
+    recordDailyStatistics(mockObservations);
 
-  const records = loadDailyStatistics();
-  const todayRecord = records.find((r) => r.date === today);
+    const records = loadDailyStatistics();
+    const todayRecord = records.find((r) => r.date === today);
 
-  assert.ok(todayRecord, "Today record must exist in store");
-  assert.equal(todayRecord.ga4_active_users, null, "GA4 users must be null");
-  assert.equal(todayRecord.ga4_sessions, null, "GA4 sessions must be null");
-  assert.equal(todayRecord.ga4_screen_page_views, null, "GA4 screen views must be null");
-  assert.equal(todayRecord.utl_utility_views, null, "Telemetry views must be null");
-  assert.equal(todayRecord.utl_tool_executions, null, "Telemetry executions must be null");
-  assert.equal(todayRecord.widget_views, null, "Widget views must be null");
-  assert.equal(todayRecord.tool_execution_view_ratio, null, "Ratio must be null when views are null");
-  assert.equal(todayRecord.collection_status, "UNAVAILABLE");
-  assert.equal(todayRecord.data_quality_status, "UNAVAILABLE");
+    assert.ok(todayRecord, "Today record must exist in store");
+    assert.equal(todayRecord.ga4_active_users, null, "GA4 users must be null");
+    assert.equal(todayRecord.ga4_sessions, null, "GA4 sessions must be null");
+    assert.equal(todayRecord.ga4_screen_page_views, null, "GA4 screen views must be null");
+    assert.equal(todayRecord.utl_utility_views, null, "Telemetry views must be null");
+    assert.equal(todayRecord.utl_tool_executions, null, "Telemetry executions must be null");
+    assert.equal(todayRecord.widget_views, null, "Widget views must be null");
+    assert.equal(todayRecord.tool_execution_view_ratio, null, "Ratio must be null when views are null");
+    assert.equal(todayRecord.collection_status, "UNAVAILABLE");
+    assert.equal(todayRecord.data_quality_status, "UNAVAILABLE");
+  } finally {
+    fs.writeFileSync(storePath, backup);
+  }
 });
 
 test("Test 6: Scheduler pipeline execution completes without fabricating operational values", async () => {
-  const telemetry = new UtlTelemetryAdapter();
-  const ga4 = new UtlGA4Adapter();
-  const obs = [
-    ...(await telemetry.collect(utlProjectContract)),
-    ...(await ga4.collect(utlProjectContract)),
-  ];
+  const storePath = path.resolve("intelligence/project/daily_statistics.json");
+  const backup = fs.readFileSync(storePath, "utf-8");
+  try {
+    const telemetry = new UtlTelemetryAdapter();
+    const ga4 = new UtlGA4Adapter();
+    const obs = [
+      ...(await telemetry.collect(utlProjectContract)),
+      ...(await ga4.collect(utlProjectContract)),
+    ];
 
-  recordDailyStatistics(obs);
-  const records = loadDailyStatistics();
-  const latest = records[records.length - 1];
+    recordDailyStatistics(obs);
+    const records = loadDailyStatistics();
+    const latest = records[records.length - 1];
 
-  // Ensure no fabricated numbers
-  assert.notEqual(latest.utl_utility_views, 7560);
-  assert.notEqual(latest.utl_tool_executions, 5040);
-  assert.notEqual(latest.tool_execution_view_ratio, "66.7%");
-  if (latest.collection_status === "UNAVAILABLE") {
-    assert.equal(latest.utl_utility_views, null);
-    assert.equal(latest.utl_tool_executions, null);
+    // Ensure no fabricated numbers
+    assert.notEqual(latest.utl_utility_views, 7560);
+    assert.notEqual(latest.utl_tool_executions, 5040);
+    assert.notEqual(latest.tool_execution_view_ratio, "66.7%");
+    if (latest.collection_status === "UNAVAILABLE") {
+      assert.equal(latest.utl_utility_views, null);
+      assert.equal(latest.utl_tool_executions, null);
+    }
+  } finally {
+    fs.writeFileSync(storePath, backup);
   }
 });
 

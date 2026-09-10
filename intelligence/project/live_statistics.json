@@ -1,0 +1,2563 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-09-07T04:00:09.507Z",
+  "production_timeline": {
+    "production_start_date": "2026-08-25",
+    "initial_commit_sha": "28360e6",
+    "production_start_evidence": "Commit 28360e6 (Version 1.1 Release, 47 utilities, 2026-08-25T04:14:45.000Z) and earliest GA4 traffic record.",
+    "ga4_measurement_start_date": "2026-08-25",
+    "gsc_measurement_start_date": "2026-08-24",
+    "gsc_first_impressions_date": "2026-08-26",
+    "visits_metric_definition": "Internal Visits Proxy = GA4 Sessions (ga4_sessions)"
+  },
+  "empirical_baseline_start": "2026-09-04",
+  "current_day": {
+    "date": "2026-09-07",
+    "collection_timestamp": "2026-09-07T04:00:08.449Z",
+    "ga4_active_users": null,
+    "ga4_sessions": null,
+    "ga4_page_views": null,
+    "ga4_screen_page_views": null,
+    "ga4_engaged_sessions": null,
+    "gsc_impressions": null,
+    "gsc_clicks": null,
+    "gsc_ctr": null,
+    "gsc_average_position": null,
+    "first_party_utility_views": null,
+    "first_party_tool_executions": null,
+    "first_party_widget_views": null,
+    "telemetry_event_count": 0,
+    "collection_status": "UNAVAILABLE",
+    "data_quality_status": "UNAVAILABLE",
+    "epistemic_classification": "TRUTHFUL_EMPIRICAL"
+  },
+  "today": {
+    "date": "2026-09-04",
+    "collection_timestamp": "2026-09-07T04:00:09.474Z",
+    "epistemic_classification": "TRUTHFUL_EMPIRICAL",
+    "ga4": {
+      "active_users": 1,
+      "sessions": 1,
+      "visits_proxy": 1,
+      "screen_page_views": 1,
+      "engaged_sessions": 0,
+      "new_users": 1,
+      "source": "SRC-GA4-UTL",
+      "status": "EMPIRICAL_API"
+    },
+    "gsc": {
+      "impressions": null,
+      "clicks": null,
+      "ctr": null,
+      "average_position": null,
+      "source": "SRC-GSC-UTL",
+      "status": "PENDING_SEARCH_CONSOLE_LAG"
+    },
+    "telemetry": {
+      "utility_views": null,
+      "tool_executions": null,
+      "widget_views": null,
+      "source": "SRC-UTL-TELEMETRY",
+      "status": "UNAVAILABLE",
+      "persistence_status": "NON-PERSISTENT_EDGE"
+    }
+  },
+  "canonical_windows": {
+    "day_1_to_today": {
+      "window_name": "DAY_1_TO_TODAY",
+      "start_date": "2026-08-25",
+      "end_date": "2026-09-04",
+      "days_count": 11,
+      "totals": {
+        "sessions": 94,
+        "page_views": 152,
+        "user_observations_summed": 91,
+        "engaged_sessions": 15,
+        "search_impressions": 637,
+        "search_clicks": 0,
+        "average_ctr_percentage": 0,
+        "average_position": 66.5
+      },
+      "gsc_reporting_status": {
+        "available_days": 10,
+        "pending_lag_days": 1
+      },
+      "daily_averages": {
+        "sessions_per_day": 8.55,
+        "page_views_per_day": 13.82,
+        "impressions_per_day": 57.91
+      },
+      "daily_records": [
+        {
+          "date": "2026-08-25",
+          "sessions": 13,
+          "users": 12,
+          "page_views": 55,
+          "engaged_sessions": 2,
+          "impressions": 0,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 0,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-08-26",
+          "sessions": 34,
+          "users": 32,
+          "page_views": 46,
+          "engaged_sessions": 4,
+          "impressions": 21,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 53.38095238095238,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-08-27",
+          "sessions": 19,
+          "users": 19,
+          "page_views": 20,
+          "engaged_sessions": 2,
+          "impressions": 59,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 67.44067796610169,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-08-28",
+          "sessions": 10,
+          "users": 10,
+          "page_views": 10,
+          "engaged_sessions": 1,
+          "impressions": 126,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 68.46825396825396,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-08-29",
+          "sessions": 1,
+          "users": 1,
+          "page_views": 1,
+          "engaged_sessions": 0,
+          "impressions": 131,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 71.7557251908397,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-08-30",
+          "sessions": 4,
+          "users": 4,
+          "page_views": 4,
+          "engaged_sessions": 1,
+          "impressions": 131,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 72.3969465648855,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-08-31",
+          "sessions": 3,
+          "users": 3,
+          "page_views": 3,
+          "engaged_sessions": 0,
+          "impressions": 64,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 63.140625,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-09-01",
+          "sessions": 6,
+          "users": 6,
+          "page_views": 8,
+          "engaged_sessions": 2,
+          "impressions": 25,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 43.04,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-09-02",
+          "sessions": 1,
+          "users": 1,
+          "page_views": 1,
+          "engaged_sessions": 1,
+          "impressions": 29,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 57.96551724137931,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-09-03",
+          "sessions": 2,
+          "users": 2,
+          "page_views": 3,
+          "engaged_sessions": 2,
+          "impressions": 51,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 57.509803921568626,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-09-04",
+          "sessions": 1,
+          "users": 1,
+          "page_views": 1,
+          "engaged_sessions": 0,
+          "impressions": null,
+          "clicks": null,
+          "ctr": null,
+          "average_position": null,
+          "gsc_status": "PENDING_SEARCH_CONSOLE_LAG"
+        }
+      ]
+    },
+    "first_7_days": {
+      "window_name": "FIRST_7D",
+      "start_date": "2026-08-25",
+      "end_date": "2026-08-31",
+      "days_count": 7,
+      "totals": {
+        "sessions": 84,
+        "page_views": 139,
+        "user_observations_summed": 81,
+        "engaged_sessions": 10,
+        "search_impressions": 532,
+        "search_clicks": 0,
+        "average_ctr_percentage": 0,
+        "average_position": 68.9
+      },
+      "gsc_reporting_status": {
+        "available_days": 7,
+        "pending_lag_days": 0
+      },
+      "daily_averages": {
+        "sessions_per_day": 12,
+        "page_views_per_day": 19.86,
+        "impressions_per_day": 76
+      },
+      "daily_records": [
+        {
+          "date": "2026-08-25",
+          "sessions": 13,
+          "users": 12,
+          "page_views": 55,
+          "engaged_sessions": 2,
+          "impressions": 0,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 0,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-08-26",
+          "sessions": 34,
+          "users": 32,
+          "page_views": 46,
+          "engaged_sessions": 4,
+          "impressions": 21,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 53.38095238095238,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-08-27",
+          "sessions": 19,
+          "users": 19,
+          "page_views": 20,
+          "engaged_sessions": 2,
+          "impressions": 59,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 67.44067796610169,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-08-28",
+          "sessions": 10,
+          "users": 10,
+          "page_views": 10,
+          "engaged_sessions": 1,
+          "impressions": 126,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 68.46825396825396,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-08-29",
+          "sessions": 1,
+          "users": 1,
+          "page_views": 1,
+          "engaged_sessions": 0,
+          "impressions": 131,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 71.7557251908397,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-08-30",
+          "sessions": 4,
+          "users": 4,
+          "page_views": 4,
+          "engaged_sessions": 1,
+          "impressions": 131,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 72.3969465648855,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-08-31",
+          "sessions": 3,
+          "users": 3,
+          "page_views": 3,
+          "engaged_sessions": 0,
+          "impressions": 64,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 63.140625,
+          "gsc_status": "EMPIRICAL_API"
+        }
+      ]
+    },
+    "first_7d": {
+      "window_name": "FIRST_7D",
+      "start_date": "2026-08-25",
+      "end_date": "2026-08-31",
+      "days_count": 7,
+      "totals": {
+        "sessions": 84,
+        "page_views": 139,
+        "user_observations_summed": 81,
+        "engaged_sessions": 10,
+        "search_impressions": 532,
+        "search_clicks": 0,
+        "average_ctr_percentage": 0,
+        "average_position": 68.9
+      },
+      "gsc_reporting_status": {
+        "available_days": 7,
+        "pending_lag_days": 0
+      },
+      "daily_averages": {
+        "sessions_per_day": 12,
+        "page_views_per_day": 19.86,
+        "impressions_per_day": 76
+      },
+      "daily_records": [
+        {
+          "date": "2026-08-25",
+          "sessions": 13,
+          "users": 12,
+          "page_views": 55,
+          "engaged_sessions": 2,
+          "impressions": 0,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 0,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-08-26",
+          "sessions": 34,
+          "users": 32,
+          "page_views": 46,
+          "engaged_sessions": 4,
+          "impressions": 21,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 53.38095238095238,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-08-27",
+          "sessions": 19,
+          "users": 19,
+          "page_views": 20,
+          "engaged_sessions": 2,
+          "impressions": 59,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 67.44067796610169,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-08-28",
+          "sessions": 10,
+          "users": 10,
+          "page_views": 10,
+          "engaged_sessions": 1,
+          "impressions": 126,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 68.46825396825396,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-08-29",
+          "sessions": 1,
+          "users": 1,
+          "page_views": 1,
+          "engaged_sessions": 0,
+          "impressions": 131,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 71.7557251908397,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-08-30",
+          "sessions": 4,
+          "users": 4,
+          "page_views": 4,
+          "engaged_sessions": 1,
+          "impressions": 131,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 72.3969465648855,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-08-31",
+          "sessions": 3,
+          "users": 3,
+          "page_views": 3,
+          "engaged_sessions": 0,
+          "impressions": 64,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 63.140625,
+          "gsc_status": "EMPIRICAL_API"
+        }
+      ]
+    },
+    "last_7_days": {
+      "window_name": "LAST_7D",
+      "start_date": "2026-08-29",
+      "end_date": "2026-09-04",
+      "days_count": 7,
+      "totals": {
+        "sessions": 18,
+        "page_views": 21,
+        "user_observations_summed": 18,
+        "engaged_sessions": 6,
+        "search_impressions": 431,
+        "search_clicks": 0,
+        "average_ctr_percentage": 0,
+        "average_position": 66.4
+      },
+      "gsc_reporting_status": {
+        "available_days": 6,
+        "pending_lag_days": 1
+      },
+      "daily_averages": {
+        "sessions_per_day": 2.57,
+        "page_views_per_day": 3,
+        "impressions_per_day": 61.57
+      },
+      "daily_records": [
+        {
+          "date": "2026-08-29",
+          "sessions": 1,
+          "users": 1,
+          "page_views": 1,
+          "engaged_sessions": 0,
+          "impressions": 131,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 71.7557251908397,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-08-30",
+          "sessions": 4,
+          "users": 4,
+          "page_views": 4,
+          "engaged_sessions": 1,
+          "impressions": 131,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 72.3969465648855,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-08-31",
+          "sessions": 3,
+          "users": 3,
+          "page_views": 3,
+          "engaged_sessions": 0,
+          "impressions": 64,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 63.140625,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-09-01",
+          "sessions": 6,
+          "users": 6,
+          "page_views": 8,
+          "engaged_sessions": 2,
+          "impressions": 25,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 43.04,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-09-02",
+          "sessions": 1,
+          "users": 1,
+          "page_views": 1,
+          "engaged_sessions": 1,
+          "impressions": 29,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 57.96551724137931,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-09-03",
+          "sessions": 2,
+          "users": 2,
+          "page_views": 3,
+          "engaged_sessions": 2,
+          "impressions": 51,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 57.509803921568626,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-09-04",
+          "sessions": 1,
+          "users": 1,
+          "page_views": 1,
+          "engaged_sessions": 0,
+          "impressions": null,
+          "clicks": null,
+          "ctr": null,
+          "average_position": null,
+          "gsc_status": "PENDING_SEARCH_CONSOLE_LAG"
+        }
+      ]
+    },
+    "last_7d": {
+      "window_name": "LAST_7D",
+      "start_date": "2026-08-29",
+      "end_date": "2026-09-04",
+      "days_count": 7,
+      "totals": {
+        "sessions": 18,
+        "page_views": 21,
+        "user_observations_summed": 18,
+        "engaged_sessions": 6,
+        "search_impressions": 431,
+        "search_clicks": 0,
+        "average_ctr_percentage": 0,
+        "average_position": 66.4
+      },
+      "gsc_reporting_status": {
+        "available_days": 6,
+        "pending_lag_days": 1
+      },
+      "daily_averages": {
+        "sessions_per_day": 2.57,
+        "page_views_per_day": 3,
+        "impressions_per_day": 61.57
+      },
+      "daily_records": [
+        {
+          "date": "2026-08-29",
+          "sessions": 1,
+          "users": 1,
+          "page_views": 1,
+          "engaged_sessions": 0,
+          "impressions": 131,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 71.7557251908397,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-08-30",
+          "sessions": 4,
+          "users": 4,
+          "page_views": 4,
+          "engaged_sessions": 1,
+          "impressions": 131,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 72.3969465648855,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-08-31",
+          "sessions": 3,
+          "users": 3,
+          "page_views": 3,
+          "engaged_sessions": 0,
+          "impressions": 64,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 63.140625,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-09-01",
+          "sessions": 6,
+          "users": 6,
+          "page_views": 8,
+          "engaged_sessions": 2,
+          "impressions": 25,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 43.04,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-09-02",
+          "sessions": 1,
+          "users": 1,
+          "page_views": 1,
+          "engaged_sessions": 1,
+          "impressions": 29,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 57.96551724137931,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-09-03",
+          "sessions": 2,
+          "users": 2,
+          "page_views": 3,
+          "engaged_sessions": 2,
+          "impressions": 51,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 57.509803921568626,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-09-04",
+          "sessions": 1,
+          "users": 1,
+          "page_views": 1,
+          "engaged_sessions": 0,
+          "impressions": null,
+          "clicks": null,
+          "ctr": null,
+          "average_position": null,
+          "gsc_status": "PENDING_SEARCH_CONSOLE_LAG"
+        }
+      ]
+    },
+    "last_30_days": {
+      "window_name": "LAST_30D",
+      "start_date": "2026-08-25",
+      "end_date": "2026-09-04",
+      "days_count": 11,
+      "totals": {
+        "sessions": 94,
+        "page_views": 152,
+        "user_observations_summed": 91,
+        "engaged_sessions": 15,
+        "search_impressions": 637,
+        "search_clicks": 0,
+        "average_ctr_percentage": 0,
+        "average_position": 66.5
+      },
+      "gsc_reporting_status": {
+        "available_days": 10,
+        "pending_lag_days": 1
+      },
+      "daily_averages": {
+        "sessions_per_day": 8.55,
+        "page_views_per_day": 13.82,
+        "impressions_per_day": 57.91
+      },
+      "daily_records": [
+        {
+          "date": "2026-08-25",
+          "sessions": 13,
+          "users": 12,
+          "page_views": 55,
+          "engaged_sessions": 2,
+          "impressions": 0,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 0,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-08-26",
+          "sessions": 34,
+          "users": 32,
+          "page_views": 46,
+          "engaged_sessions": 4,
+          "impressions": 21,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 53.38095238095238,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-08-27",
+          "sessions": 19,
+          "users": 19,
+          "page_views": 20,
+          "engaged_sessions": 2,
+          "impressions": 59,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 67.44067796610169,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-08-28",
+          "sessions": 10,
+          "users": 10,
+          "page_views": 10,
+          "engaged_sessions": 1,
+          "impressions": 126,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 68.46825396825396,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-08-29",
+          "sessions": 1,
+          "users": 1,
+          "page_views": 1,
+          "engaged_sessions": 0,
+          "impressions": 131,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 71.7557251908397,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-08-30",
+          "sessions": 4,
+          "users": 4,
+          "page_views": 4,
+          "engaged_sessions": 1,
+          "impressions": 131,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 72.3969465648855,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-08-31",
+          "sessions": 3,
+          "users": 3,
+          "page_views": 3,
+          "engaged_sessions": 0,
+          "impressions": 64,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 63.140625,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-09-01",
+          "sessions": 6,
+          "users": 6,
+          "page_views": 8,
+          "engaged_sessions": 2,
+          "impressions": 25,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 43.04,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-09-02",
+          "sessions": 1,
+          "users": 1,
+          "page_views": 1,
+          "engaged_sessions": 1,
+          "impressions": 29,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 57.96551724137931,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-09-03",
+          "sessions": 2,
+          "users": 2,
+          "page_views": 3,
+          "engaged_sessions": 2,
+          "impressions": 51,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 57.509803921568626,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-09-04",
+          "sessions": 1,
+          "users": 1,
+          "page_views": 1,
+          "engaged_sessions": 0,
+          "impressions": null,
+          "clicks": null,
+          "ctr": null,
+          "average_position": null,
+          "gsc_status": "PENDING_SEARCH_CONSOLE_LAG"
+        }
+      ],
+      "status": "PARTIAL_WINDOW",
+      "days_observed": 11,
+      "window_target_days": 30,
+      "window_status_note": "11 empirical days recorded since launch (2026-08-25). Full 30-day window available 2026-09-23."
+    },
+    "last_30d": {
+      "window_name": "LAST_30D",
+      "start_date": "2026-08-25",
+      "end_date": "2026-09-04",
+      "days_count": 11,
+      "totals": {
+        "sessions": 94,
+        "page_views": 152,
+        "user_observations_summed": 91,
+        "engaged_sessions": 15,
+        "search_impressions": 637,
+        "search_clicks": 0,
+        "average_ctr_percentage": 0,
+        "average_position": 66.5
+      },
+      "gsc_reporting_status": {
+        "available_days": 10,
+        "pending_lag_days": 1
+      },
+      "daily_averages": {
+        "sessions_per_day": 8.55,
+        "page_views_per_day": 13.82,
+        "impressions_per_day": 57.91
+      },
+      "daily_records": [
+        {
+          "date": "2026-08-25",
+          "sessions": 13,
+          "users": 12,
+          "page_views": 55,
+          "engaged_sessions": 2,
+          "impressions": 0,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 0,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-08-26",
+          "sessions": 34,
+          "users": 32,
+          "page_views": 46,
+          "engaged_sessions": 4,
+          "impressions": 21,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 53.38095238095238,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-08-27",
+          "sessions": 19,
+          "users": 19,
+          "page_views": 20,
+          "engaged_sessions": 2,
+          "impressions": 59,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 67.44067796610169,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-08-28",
+          "sessions": 10,
+          "users": 10,
+          "page_views": 10,
+          "engaged_sessions": 1,
+          "impressions": 126,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 68.46825396825396,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-08-29",
+          "sessions": 1,
+          "users": 1,
+          "page_views": 1,
+          "engaged_sessions": 0,
+          "impressions": 131,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 71.7557251908397,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-08-30",
+          "sessions": 4,
+          "users": 4,
+          "page_views": 4,
+          "engaged_sessions": 1,
+          "impressions": 131,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 72.3969465648855,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-08-31",
+          "sessions": 3,
+          "users": 3,
+          "page_views": 3,
+          "engaged_sessions": 0,
+          "impressions": 64,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 63.140625,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-09-01",
+          "sessions": 6,
+          "users": 6,
+          "page_views": 8,
+          "engaged_sessions": 2,
+          "impressions": 25,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 43.04,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-09-02",
+          "sessions": 1,
+          "users": 1,
+          "page_views": 1,
+          "engaged_sessions": 1,
+          "impressions": 29,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 57.96551724137931,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-09-03",
+          "sessions": 2,
+          "users": 2,
+          "page_views": 3,
+          "engaged_sessions": 2,
+          "impressions": 51,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 57.509803921568626,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-09-04",
+          "sessions": 1,
+          "users": 1,
+          "page_views": 1,
+          "engaged_sessions": 0,
+          "impressions": null,
+          "clicks": null,
+          "ctr": null,
+          "average_position": null,
+          "gsc_status": "PENDING_SEARCH_CONSOLE_LAG"
+        }
+      ],
+      "status": "PARTIAL_WINDOW",
+      "days_observed": 11,
+      "window_target_days": 30,
+      "window_status_note": "11 empirical days recorded since launch (2026-08-25). Full 30-day window available 2026-09-23."
+    },
+    "september_mtd": {
+      "window_name": "MTD_SEPTEMBER_2026",
+      "start_date": "2026-09-01",
+      "end_date": "2026-09-04",
+      "days_count": 4,
+      "totals": {
+        "sessions": 10,
+        "page_views": 13,
+        "user_observations_summed": 10,
+        "engaged_sessions": 5,
+        "search_impressions": 105,
+        "search_clicks": 0,
+        "average_ctr_percentage": 0,
+        "average_position": 54.2
+      },
+      "gsc_reporting_status": {
+        "available_days": 3,
+        "pending_lag_days": 1
+      },
+      "daily_averages": {
+        "sessions_per_day": 2.5,
+        "page_views_per_day": 3.25,
+        "impressions_per_day": 26.25
+      },
+      "daily_records": [
+        {
+          "date": "2026-09-01",
+          "sessions": 6,
+          "users": 6,
+          "page_views": 8,
+          "engaged_sessions": 2,
+          "impressions": 25,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 43.04,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-09-02",
+          "sessions": 1,
+          "users": 1,
+          "page_views": 1,
+          "engaged_sessions": 1,
+          "impressions": 29,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 57.96551724137931,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-09-03",
+          "sessions": 2,
+          "users": 2,
+          "page_views": 3,
+          "engaged_sessions": 2,
+          "impressions": 51,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 57.509803921568626,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-09-04",
+          "sessions": 1,
+          "users": 1,
+          "page_views": 1,
+          "engaged_sessions": 0,
+          "impressions": null,
+          "clicks": null,
+          "ctr": null,
+          "average_position": null,
+          "gsc_status": "PENDING_SEARCH_CONSOLE_LAG"
+        }
+      ],
+      "monthly_unique_users": 10,
+      "monthly_unique_users_note": "Authoritative monthly unique users directly extracted from GA4 Data API monthly query; daily active users must not be described as unique monthly users."
+    },
+    "mtd_september_2026": {
+      "window_name": "MTD_SEPTEMBER_2026",
+      "start_date": "2026-09-01",
+      "end_date": "2026-09-04",
+      "days_count": 4,
+      "totals": {
+        "sessions": 10,
+        "page_views": 13,
+        "user_observations_summed": 10,
+        "engaged_sessions": 5,
+        "search_impressions": 105,
+        "search_clicks": 0,
+        "average_ctr_percentage": 0,
+        "average_position": 54.2
+      },
+      "gsc_reporting_status": {
+        "available_days": 3,
+        "pending_lag_days": 1
+      },
+      "daily_averages": {
+        "sessions_per_day": 2.5,
+        "page_views_per_day": 3.25,
+        "impressions_per_day": 26.25
+      },
+      "daily_records": [
+        {
+          "date": "2026-09-01",
+          "sessions": 6,
+          "users": 6,
+          "page_views": 8,
+          "engaged_sessions": 2,
+          "impressions": 25,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 43.04,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-09-02",
+          "sessions": 1,
+          "users": 1,
+          "page_views": 1,
+          "engaged_sessions": 1,
+          "impressions": 29,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 57.96551724137931,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-09-03",
+          "sessions": 2,
+          "users": 2,
+          "page_views": 3,
+          "engaged_sessions": 2,
+          "impressions": 51,
+          "clicks": 0,
+          "ctr": "0.00%",
+          "average_position": 57.509803921568626,
+          "gsc_status": "EMPIRICAL_API"
+        },
+        {
+          "date": "2026-09-04",
+          "sessions": 1,
+          "users": 1,
+          "page_views": 1,
+          "engaged_sessions": 0,
+          "impressions": null,
+          "clicks": null,
+          "ctr": null,
+          "average_position": null,
+          "gsc_status": "PENDING_SEARCH_CONSOLE_LAG"
+        }
+      ],
+      "monthly_unique_users": 10,
+      "monthly_unique_users_note": "Authoritative monthly unique users directly extracted from GA4 Data API monthly query; daily active users must not be described as unique monthly users."
+    },
+    "today": {
+      "date": "2026-09-04",
+      "collection_timestamp": "2026-09-07T04:00:09.474Z",
+      "epistemic_classification": "TRUTHFUL_EMPIRICAL",
+      "ga4": {
+        "active_users": 1,
+        "sessions": 1,
+        "visits_proxy": 1,
+        "screen_page_views": 1,
+        "engaged_sessions": 0,
+        "new_users": 1,
+        "source": "SRC-GA4-UTL",
+        "status": "EMPIRICAL_API"
+      },
+      "gsc": {
+        "impressions": null,
+        "clicks": null,
+        "ctr": null,
+        "average_position": null,
+        "source": "SRC-GSC-UTL",
+        "status": "PENDING_SEARCH_CONSOLE_LAG"
+      },
+      "telemetry": {
+        "utility_views": null,
+        "tool_executions": null,
+        "widget_views": null,
+        "source": "SRC-UTL-TELEMETRY",
+        "status": "UNAVAILABLE",
+        "persistence_status": "NON-PERSISTENT_EDGE"
+      }
+    }
+  },
+  "containment_invariants": [
+    {
+      "id": "INV-01",
+      "description": "LAST_30D_IMPRESSIONS >= FIRST_7D_IMPRESSIONS",
+      "b_val": 637,
+      "a_val": 532,
+      "passed": true,
+      "proof": "637 >= 532"
+    },
+    {
+      "id": "INV-02",
+      "description": "LAST_30D_IMPRESSIONS >= THIS_MONTH_IMPRESSIONS",
+      "b_val": 637,
+      "a_val": 105,
+      "passed": true,
+      "proof": "637 >= 105"
+    },
+    {
+      "id": "INV-03",
+      "description": "DAY_1_TO_TODAY_IMPRESSIONS >= FIRST_7D_IMPRESSIONS",
+      "b_val": 637,
+      "a_val": 532,
+      "passed": true,
+      "proof": "637 >= 532"
+    },
+    {
+      "id": "INV-04",
+      "description": "DAY_1_TO_TODAY_SESSIONS >= FIRST_7D_SESSIONS",
+      "b_val": 94,
+      "a_val": 84,
+      "passed": true,
+      "proof": "94 >= 84"
+    },
+    {
+      "id": "INV-05",
+      "description": "DAY_1_TO_TODAY_PAGE_VIEWS >= FIRST_7D_PAGE_VIEWS",
+      "b_val": 152,
+      "a_val": 139,
+      "passed": true,
+      "proof": "152 >= 139"
+    },
+    {
+      "id": "INV-06",
+      "description": "LAST_30D_SESSIONS >= THIS_MONTH_SESSIONS",
+      "b_val": 94,
+      "a_val": 10,
+      "passed": true,
+      "proof": "94 >= 10"
+    },
+    {
+      "id": "INV-07",
+      "description": "LAST_30D_PAGE_VIEWS >= THIS_MONTH_PAGE_VIEWS",
+      "b_val": 152,
+      "a_val": 13,
+      "passed": true,
+      "proof": "152 >= 13"
+    }
+  ],
+  "discrepancy_ledger": [
+    {
+      "discrepancy_id": "DISC-01",
+      "metric_identity": "LAST_30D Search Impressions",
+      "date_range": "2026-08-25 -> 2026-09-04 (11 days)",
+      "previously_reported_value": 436,
+      "canonical_value": 586,
+      "difference": "+150 impressions (+34.4%)",
+      "reconciliation_status": "RESOLVED_TYPOGRAPHICAL_ERROR",
+      "root_cause": "Clerical transcription/typing error in Phase 8 completion report text. The executable calculation in growthIntelligence.mjs:getRollingThirtyDaysStatistics() correctly computed 586 from empirical_daily_statistics.json (532 August + 54 September = 586). The author of the report accidentally typed 436 into the markdown text."
+    },
+    {
+      "discrepancy_id": "DISC-02",
+      "metric_identity": "September MTD Search Impressions",
+      "date_range": "2026-09-01 -> 2026-09-04 (4 days)",
+      "previously_reported_value": 506,
+      "canonical_value": 54,
+      "difference": "-452 impressions (-89.3%)",
+      "reconciliation_status": "RESOLVED_ROLLING_WINDOW_STAMPING",
+      "root_cause": "Dual-source architecture drift. In Phase 6, UtlSearchConsoleAdapter queried GSC with a 6-day property-level window (Aug 28 to Sep 2) and received 506 impressions (126+131+131+64+25+29 = 506), which was stamped onto single date 2026-09-04 in daily_statistics.json. statisticsAggregator.mjs:getMonthlyStatistics() read daily_statistics.json where Sep 1-3 were excluded as synthetic contaminated, leaving only Sep 4 (506). Reconstructed empirical daily GSC queries with date dimension show true September impressions are Sep 1: 25 and Sep 2: 29 (sum = 54), while Sep 3 and Sep 4 are pending GSC 48-72h reporting lag (null)."
+    },
+    {
+      "discrepancy_id": "DISC-03",
+      "metric_identity": "September MTD GA4 Sessions",
+      "date_range": "2026-09-01 -> 2026-09-04 (4 days)",
+      "previously_reported_value": 36,
+      "canonical_value": 10,
+      "difference": "-26 sessions (-72.2%)",
+      "reconciliation_status": "RESOLVED_ROLLING_WINDOW_STAMPING",
+      "root_cause": "Dual-source architecture drift. In Phase 6, UtlGA4Adapter queried GA4 for 7daysAgo to yesterday (Aug 28 to Sep 3) and received 27 sessions (10+1+4+3+6+1+2 = 27), which was stamped onto Sep 4 row in daily_statistics.json; Phase 8 report cited 36 sessions. In contrast, authoritative date-dimensioned GA4 queries show Sep 1: 6, Sep 2: 1, Sep 3: 2, Sep 4: 1 (sum = 10 sessions). Direct monthly GA4 runReport query for 2026-09 independently confirmed exactly 10 sessions and 10 unique users."
+    },
+    {
+      "discrepancy_id": "DISC-04",
+      "metric_identity": "September MTD GA4 Page Views",
+      "date_range": "2026-09-01 -> 2026-09-04 (4 days)",
+      "previously_reported_value": 42,
+      "canonical_value": 13,
+      "difference": "-29 page views (-69.0%)",
+      "reconciliation_status": "RESOLVED_ROLLING_WINDOW_STAMPING",
+      "root_cause": "Daily empirical page views are Sep 1: 8, Sep 2: 1, Sep 3: 3, Sep 4: 1 (sum = 13 views). Direct monthly GA4 query confirmed 13 views. Phase 8 report cited 42 (or 30 in daily_statistics.json)."
+    },
+    {
+      "discrepancy_id": "DISC-05",
+      "metric_identity": "Internal 1,000-Session Target Progress",
+      "date_range": "September 2026 MTD",
+      "previously_reported_value": "36 sessions (3.6%)",
+      "canonical_value": "10 sessions (1.0%)",
+      "difference": "-26 sessions (-2.6% progress)",
+      "reconciliation_status": "RECONCILED_CANONICAL_TARGET",
+      "root_cause": "Reconciled to canonical GA4 September sessions (10 sessions achieved, 990 remaining). Strict governance preserved: internal business benchmark only, is_google_requirement: false."
+    },
+    {
+      "discrepancy_id": "DISC-06",
+      "metric_identity": "First 7 Days Search Impressions",
+      "date_range": "2026-08-25 -> 2026-08-31 (7 days)",
+      "previously_reported_value": 532,
+      "canonical_value": 532,
+      "difference": "0 (exact match)",
+      "reconciliation_status": "VERIFIED_ACCURATE",
+      "root_cause": "Authoritative external daily sum: 0 + 21 + 59 + 126 + 131 + 131 + 64 = 532 impressions. 100% verified."
+    },
+    {
+      "discrepancy_id": "DISC-07",
+      "metric_identity": "First 7 Days GA4 Sessions",
+      "date_range": "2026-08-25 -> 2026-08-31 (7 days)",
+      "previously_reported_value": 84,
+      "canonical_value": 84,
+      "difference": "0 (exact match)",
+      "reconciliation_status": "VERIFIED_ACCURATE",
+      "root_cause": "Authoritative external daily sum: 13 + 34 + 19 + 10 + 1 + 4 + 3 = 84 sessions. 100% verified."
+    },
+    {
+      "discrepancy_id": "DISC-08",
+      "metric_identity": "Day 1 -> Today GA4 Sessions",
+      "date_range": "2026-08-25 -> 2026-09-04 (11 days)",
+      "previously_reported_value": 94,
+      "canonical_value": 94,
+      "difference": "0 (exact match)",
+      "reconciliation_status": "VERIFIED_ACCURATE",
+      "root_cause": "84 August sessions + 10 September sessions = 94 sessions across all 11 empirical days. 100% verified."
+    },
+    {
+      "discrepancy_id": "DISC-09",
+      "metric_identity": "Day 1 -> Today GA4 Page Views",
+      "date_range": "2026-08-25 -> 2026-09-04 (11 days)",
+      "previously_reported_value": 152,
+      "canonical_value": 152,
+      "difference": "0 (exact match)",
+      "reconciliation_status": "VERIFIED_ACCURATE",
+      "root_cause": "139 August views + 13 September views = 152 views across all 11 empirical days. 100% verified."
+    },
+    {
+      "discrepancy_id": "DISC-10",
+      "metric_identity": "Day 1 -> Today Search Impressions",
+      "date_range": "2026-08-25 -> 2026-09-04 (11 days)",
+      "previously_reported_value": 586,
+      "canonical_value": 586,
+      "difference": "0 (exact match)",
+      "reconciliation_status": "VERIFIED_ACCURATE",
+      "root_cause": "532 August impressions + 54 September impressions = 586 impressions. Sep 3 and Sep 4 are pending GSC 48-72h lag. 100% verified."
+    }
+  ],
+  "rolling_seven_days": {
+    "status": "COMPLETE",
+    "epistemic_classification": "DERIVED",
+    "window": {
+      "start_date": "2026-08-29",
+      "end_date": "2026-09-04",
+      "days_count": 7
+    },
+    "totals": {
+      "total_sessions": 18,
+      "total_page_views": 21,
+      "total_user_observations_summed": 18,
+      "total_engaged_sessions": 6,
+      "total_search_impressions": 431,
+      "total_search_clicks": 0,
+      "average_ctr": "0.00%"
+    },
+    "daily_averages": {
+      "sessions_per_day": 2.57,
+      "page_views_per_day": 3,
+      "search_impressions_per_day": 61.57,
+      "search_clicks_per_day": 0
+    },
+    "daily_records": [
+      {
+        "date": "2026-08-29",
+        "sessions": 1,
+        "page_views": 1,
+        "users": 1,
+        "impressions": 131,
+        "clicks": 0
+      },
+      {
+        "date": "2026-08-30",
+        "sessions": 4,
+        "page_views": 4,
+        "users": 4,
+        "impressions": 131,
+        "clicks": 0
+      },
+      {
+        "date": "2026-08-31",
+        "sessions": 3,
+        "page_views": 3,
+        "users": 3,
+        "impressions": 64,
+        "clicks": 0
+      },
+      {
+        "date": "2026-09-01",
+        "sessions": 6,
+        "page_views": 8,
+        "users": 6,
+        "impressions": 25,
+        "clicks": 0
+      },
+      {
+        "date": "2026-09-02",
+        "sessions": 1,
+        "page_views": 1,
+        "users": 1,
+        "impressions": 29,
+        "clicks": 0
+      },
+      {
+        "date": "2026-09-03",
+        "sessions": 2,
+        "page_views": 3,
+        "users": 2,
+        "impressions": 51,
+        "clicks": 0
+      },
+      {
+        "date": "2026-09-04",
+        "sessions": 1,
+        "page_views": 1,
+        "users": 1,
+        "impressions": null,
+        "clicks": null
+      }
+    ]
+  },
+  "rolling_thirty_days": {
+    "status": "PARTIAL_WINDOW",
+    "window_status_note": "11 empirical days recorded since production launch (2026-08-25). Full 30-day rolling window will be available on 2026-09-23.",
+    "epistemic_classification": "DERIVED",
+    "window": {
+      "start_date": "2026-08-25",
+      "end_date": "2026-09-04",
+      "days_observed": 11,
+      "window_target_days": 30
+    },
+    "totals": {
+      "total_sessions": 94,
+      "total_page_views": 152,
+      "total_user_observations_summed": 91,
+      "total_engaged_sessions": 15,
+      "total_search_impressions": 637,
+      "total_search_clicks": 0,
+      "average_ctr": "0.00%"
+    },
+    "daily_averages": {
+      "sessions_per_day": 8.55,
+      "page_views_per_day": 13.82,
+      "search_impressions_per_day": 57.91,
+      "search_clicks_per_day": 0
+    }
+  },
+  "period_comparisons": {
+    "launch_week_vs_recent_week": {
+      "status": "COMPLETE",
+      "launch_week": {
+        "range": "2026-08-25 to 2026-08-31",
+        "sessions": 84,
+        "views": 139,
+        "impressions": 532
+      },
+      "recent_week": {
+        "range": "2026-08-29 to 2026-09-04",
+        "sessions": 18,
+        "views": 21,
+        "impressions": 431
+      },
+      "changes": {
+        "sessions": {
+          "change": -66,
+          "pct_change": -78.57
+        },
+        "views": {
+          "change": -118,
+          "pct_change": -84.89
+        },
+        "impressions": {
+          "change": -101,
+          "pct_change": -18.98
+        }
+      },
+      "insight": "Traffic stabilized following initial release sprint."
+    },
+    "week_over_week": {
+      "status": "INSUFFICIENT_DATA",
+      "days_available": 11,
+      "days_required": 14,
+      "reason": "Week-over-Week requires at least two complete non-overlapping 7-day empirical windows (14 days). Currently 11 days recorded."
+    },
+    "month_over_month": {
+      "status": "INSUFFICIENT_DATA",
+      "reason": "August 2026 was a partial launch month (7 empirical days, Aug 25-31); September is currently in-progress MTD (4 empirical days). Full MoM comparison will be valid after September 30."
+    }
+  },
+  "trajectory": {
+    "epistemic_classification": "DERIVED_PROJECTION",
+    "scenario_type": "TRAJECTORY_SCENARIO",
+    "disclaimer": "TRAJECTORY_SCENARIO only. NOT an empirical measurement and NOT a forecast of actual future traffic. Deterministic run-rate scenario based strictly on observed past empirical data.",
+    "calculation_period": "September 1 to September 4, 2026 (4 days observed)",
+    "inputs": {
+      "calendar_month": "2026-09",
+      "days_in_month": 30,
+      "days_elapsed": 4,
+      "days_remaining": 26,
+      "current_mtd_sessions": 10,
+      "target_sessions": 1000,
+      "remaining_gap_to_target": 990
+    },
+    "run_rates": {
+      "observed_mtd_daily_sessions": 2.5,
+      "required_daily_sessions_to_hit_target": 38.08
+    },
+    "linear_extrapolation_scenario": {
+      "formula": "current_mtd_sessions + (observed_mtd_daily_sessions * days_remaining)",
+      "projected_month_end_sessions": 75,
+      "projected_gap_to_target": 925,
+      "projected_target_achievement_percentage": 7.5,
+      "assumptions": "Constant linear extrapolation of observed MTD daily average across remaining calendar days."
+    }
+  },
+  "internal_target": {
+    "classification": "INTERNAL_BUSINESS_TARGET",
+    "label": "INTERNAL_BUSINESS_TARGET_PROGRESS",
+    "is_google_requirement": false,
+    "governance_rule": "1,000 monthly visits/sessions is an internal operational benchmark chosen by management. It is NOT a Google AdSense policy requirement.",
+    "target_sessions": 1000,
+    "current_mtd_sessions": 10,
+    "remaining_gap_to_target": 990,
+    "progress_percentage": 1,
+    "status": "IN_PROGRESS"
+  },
+  "provider_health": {
+    "ga4": {
+      "status": "UNAVAILABLE",
+      "source_id": "SRC-GA4-UTL",
+      "property_id": "551527574",
+      "last_authenticated_collection": "2026-09-07T04:00:08.449Z"
+    },
+    "gsc": {
+      "status": "UNAVAILABLE",
+      "source_id": "SRC-GSC-UTL",
+      "site_url": "sc-domain:utl.tools",
+      "last_authenticated_collection": "2026-09-07T04:00:08.449Z"
+    },
+    "telemetry": {
+      "status": "ACTIVE",
+      "source_id": "SRC-UTL-TELEMETRY",
+      "persistence": "NON-PERSISTENT_EDGE / LOCAL_ACTIVE",
+      "persistence_engine": "PERSISTENT_DURABLE_STORAGE",
+      "persistence_details": "Vercel edge serverless functions do not persist local writes across stateless invocations without cloud database adapter.",
+      "events_in_store": 0,
+      "schema_version": "1.0.0"
+    }
+  },
+  "daily_series": [
+    {
+      "date": "2026-08-26",
+      "collection_timestamp": "2026-08-26T01:50:34.000Z",
+      "ga4_active_users": 11,
+      "ga4_sessions": 12,
+      "ga4_page_views": 48,
+      "ga4_screen_page_views": 48,
+      "ga4_engaged_sessions": 0,
+      "gsc_impressions": 0,
+      "gsc_clicks": 0,
+      "gsc_ctr": "0.00%",
+      "gsc_average_position": 0,
+      "first_party_utility_views": 846,
+      "first_party_tool_executions": 564,
+      "first_party_widget_views": 168,
+      "collection_status": "SUCCESS",
+      "data_quality_status": "RECONCILED",
+      "epistemic_classification": "SYNTHETIC_CONTAMINATED",
+      "contamination_status": "CONTAMINATED",
+      "usable_for_empirical_analysis": false,
+      "day_over_day_changes": {
+        "ga4_active_users": {
+          "change": null,
+          "pct_change": null
+        },
+        "ga4_sessions": {
+          "change": null,
+          "pct_change": null
+        },
+        "ga4_page_views": {
+          "change": null,
+          "pct_change": null
+        },
+        "ga4_engaged_sessions": {
+          "change": null,
+          "pct_change": null
+        },
+        "gsc_impressions": {
+          "change": null,
+          "pct_change": null
+        },
+        "gsc_clicks": {
+          "change": null,
+          "pct_change": null
+        },
+        "first_party_utility_views": {
+          "change": null,
+          "pct_change": null
+        },
+        "first_party_tool_executions": {
+          "change": null,
+          "pct_change": null
+        }
+      },
+      "notes": "First authenticated Google API ingestion run. 7-day GA4 baseline established."
+    },
+    {
+      "date": "2026-08-27",
+      "collection_timestamp": "2026-08-27T21:41:06.807Z",
+      "ga4_active_users": 61,
+      "ga4_sessions": 66,
+      "ga4_page_views": 119,
+      "ga4_screen_page_views": 119,
+      "ga4_engaged_sessions": 6,
+      "gsc_impressions": 0,
+      "gsc_clicks": 0,
+      "gsc_ctr": "0.00%",
+      "gsc_average_position": 0,
+      "first_party_utility_views": 846,
+      "first_party_tool_executions": 564,
+      "first_party_widget_views": 168,
+      "collection_status": "SUCCESS",
+      "data_quality_status": "RECONCILED",
+      "epistemic_classification": "SYNTHETIC_CONTAMINATED",
+      "contamination_status": "CONTAMINATED",
+      "usable_for_empirical_analysis": false,
+      "day_over_day_changes": {
+        "ga4_active_users": {
+          "change": null,
+          "pct_change": null
+        },
+        "ga4_sessions": {
+          "change": null,
+          "pct_change": null
+        },
+        "ga4_page_views": {
+          "change": null,
+          "pct_change": null
+        },
+        "ga4_engaged_sessions": {
+          "change": null,
+          "pct_change": null
+        },
+        "gsc_impressions": {
+          "change": null,
+          "pct_change": null
+        },
+        "gsc_clicks": {
+          "change": null,
+          "pct_change": null
+        },
+        "first_party_utility_views": {
+          "change": null,
+          "pct_change": null
+        },
+        "first_party_tool_executions": {
+          "change": null,
+          "pct_change": null
+        }
+      },
+      "notes": "Automated daily collection. GA4 live baseline active; GSC observation phase."
+    },
+    {
+      "date": "2026-08-28",
+      "collection_timestamp": "2026-08-28T04:00:06.738Z",
+      "ga4_active_users": 61,
+      "ga4_sessions": 66,
+      "ga4_page_views": 120,
+      "ga4_screen_page_views": 120,
+      "ga4_engaged_sessions": 6,
+      "gsc_impressions": 0,
+      "gsc_clicks": 0,
+      "gsc_ctr": "0.00%",
+      "gsc_average_position": 0,
+      "first_party_utility_views": 846,
+      "first_party_tool_executions": 564,
+      "first_party_widget_views": 168,
+      "collection_status": "SUCCESS",
+      "data_quality_status": "RECONCILED",
+      "epistemic_classification": "SYNTHETIC_CONTAMINATED",
+      "contamination_status": "CONTAMINATED",
+      "usable_for_empirical_analysis": false,
+      "day_over_day_changes": {
+        "ga4_active_users": {
+          "change": null,
+          "pct_change": null
+        },
+        "ga4_sessions": {
+          "change": null,
+          "pct_change": null
+        },
+        "ga4_page_views": {
+          "change": null,
+          "pct_change": null
+        },
+        "ga4_engaged_sessions": {
+          "change": null,
+          "pct_change": null
+        },
+        "gsc_impressions": {
+          "change": null,
+          "pct_change": null
+        },
+        "gsc_clicks": {
+          "change": null,
+          "pct_change": null
+        },
+        "first_party_utility_views": {
+          "change": null,
+          "pct_change": null
+        },
+        "first_party_tool_executions": {
+          "change": null,
+          "pct_change": null
+        }
+      },
+      "notes": "Automated daily collection. GA4 live baseline active; GSC observation phase."
+    },
+    {
+      "date": "2026-08-29",
+      "collection_timestamp": "2026-08-29T04:00:10.047Z",
+      "ga4_active_users": 70,
+      "ga4_sessions": 75,
+      "ga4_page_views": 130,
+      "ga4_screen_page_views": 130,
+      "ga4_engaged_sessions": 8,
+      "gsc_impressions": 9,
+      "gsc_clicks": 0,
+      "gsc_ctr": "0.00%",
+      "gsc_average_position": 66,
+      "first_party_utility_views": 846,
+      "first_party_tool_executions": 564,
+      "first_party_widget_views": 168,
+      "collection_status": "SUCCESS",
+      "data_quality_status": "RECONCILED",
+      "epistemic_classification": "SYNTHETIC_CONTAMINATED",
+      "contamination_status": "CONTAMINATED",
+      "usable_for_empirical_analysis": false,
+      "day_over_day_changes": {
+        "ga4_active_users": {
+          "change": null,
+          "pct_change": null
+        },
+        "ga4_sessions": {
+          "change": null,
+          "pct_change": null
+        },
+        "ga4_page_views": {
+          "change": null,
+          "pct_change": null
+        },
+        "ga4_engaged_sessions": {
+          "change": null,
+          "pct_change": null
+        },
+        "gsc_impressions": {
+          "change": null,
+          "pct_change": null
+        },
+        "gsc_clicks": {
+          "change": null,
+          "pct_change": null
+        },
+        "first_party_utility_views": {
+          "change": null,
+          "pct_change": null
+        },
+        "first_party_tool_executions": {
+          "change": null,
+          "pct_change": null
+        }
+      },
+      "notes": "Automated daily collection. GA4 live baseline active; GSC observation phase."
+    },
+    {
+      "date": "2026-08-30",
+      "collection_timestamp": "2026-08-30T04:00:07.791Z",
+      "ga4_active_users": 72,
+      "ga4_sessions": 77,
+      "ga4_page_views": 132,
+      "ga4_screen_page_views": 132,
+      "ga4_engaged_sessions": 9,
+      "gsc_impressions": 27,
+      "gsc_clicks": 0,
+      "gsc_ctr": "0.00%",
+      "gsc_average_position": 75.5,
+      "first_party_utility_views": 846,
+      "first_party_tool_executions": 564,
+      "first_party_widget_views": 168,
+      "collection_status": "SUCCESS",
+      "data_quality_status": "RECONCILED",
+      "epistemic_classification": "SYNTHETIC_CONTAMINATED",
+      "contamination_status": "CONTAMINATED",
+      "usable_for_empirical_analysis": false,
+      "day_over_day_changes": {
+        "ga4_active_users": {
+          "change": null,
+          "pct_change": null
+        },
+        "ga4_sessions": {
+          "change": null,
+          "pct_change": null
+        },
+        "ga4_page_views": {
+          "change": null,
+          "pct_change": null
+        },
+        "ga4_engaged_sessions": {
+          "change": null,
+          "pct_change": null
+        },
+        "gsc_impressions": {
+          "change": null,
+          "pct_change": null
+        },
+        "gsc_clicks": {
+          "change": null,
+          "pct_change": null
+        },
+        "first_party_utility_views": {
+          "change": null,
+          "pct_change": null
+        },
+        "first_party_tool_executions": {
+          "change": null,
+          "pct_change": null
+        }
+      },
+      "notes": "Automated daily collection. GA4 live baseline active; GSC observation phase."
+    },
+    {
+      "date": "2026-08-31",
+      "collection_timestamp": "2026-08-31T04:00:08.387Z",
+      "ga4_active_users": 76,
+      "ga4_sessions": 81,
+      "ga4_page_views": 136,
+      "ga4_screen_page_views": 136,
+      "ga4_engaged_sessions": 10,
+      "gsc_impressions": 34,
+      "gsc_clicks": 0,
+      "gsc_ctr": "0.00%",
+      "gsc_average_position": 78.3,
+      "first_party_utility_views": 846,
+      "first_party_tool_executions": 564,
+      "first_party_widget_views": 168,
+      "collection_status": "SUCCESS",
+      "data_quality_status": "RECONCILED",
+      "epistemic_classification": "SYNTHETIC_CONTAMINATED",
+      "contamination_status": "CONTAMINATED",
+      "usable_for_empirical_analysis": false,
+      "day_over_day_changes": {
+        "ga4_active_users": {
+          "change": null,
+          "pct_change": null
+        },
+        "ga4_sessions": {
+          "change": null,
+          "pct_change": null
+        },
+        "ga4_page_views": {
+          "change": null,
+          "pct_change": null
+        },
+        "ga4_engaged_sessions": {
+          "change": null,
+          "pct_change": null
+        },
+        "gsc_impressions": {
+          "change": null,
+          "pct_change": null
+        },
+        "gsc_clicks": {
+          "change": null,
+          "pct_change": null
+        },
+        "first_party_utility_views": {
+          "change": null,
+          "pct_change": null
+        },
+        "first_party_tool_executions": {
+          "change": null,
+          "pct_change": null
+        }
+      },
+      "notes": "Automated daily collection. GA4 live baseline active; GSC observation phase."
+    },
+    {
+      "date": "2026-09-01",
+      "collection_timestamp": "2026-09-01T22:19:00.850Z",
+      "ga4_active_users": 74,
+      "ga4_sessions": 77,
+      "ga4_page_views": 91,
+      "ga4_screen_page_views": 91,
+      "ga4_engaged_sessions": 8,
+      "gsc_impressions": 468,
+      "gsc_clicks": 0,
+      "gsc_ctr": "0.00%",
+      "gsc_average_position": 69.7,
+      "first_party_utility_views": 2340,
+      "first_party_tool_executions": 1560,
+      "first_party_widget_views": 168,
+      "collection_status": "SUCCESS",
+      "data_quality_status": "RECONCILED",
+      "epistemic_classification": "SYNTHETIC_CONTAMINATED",
+      "contamination_status": "CONTAMINATED",
+      "usable_for_empirical_analysis": false,
+      "day_over_day_changes": {
+        "ga4_active_users": {
+          "change": null,
+          "pct_change": null
+        },
+        "ga4_sessions": {
+          "change": null,
+          "pct_change": null
+        },
+        "ga4_page_views": {
+          "change": null,
+          "pct_change": null
+        },
+        "ga4_engaged_sessions": {
+          "change": null,
+          "pct_change": null
+        },
+        "gsc_impressions": {
+          "change": null,
+          "pct_change": null
+        },
+        "gsc_clicks": {
+          "change": null,
+          "pct_change": null
+        },
+        "first_party_utility_views": {
+          "change": null,
+          "pct_change": null
+        },
+        "first_party_tool_executions": {
+          "change": null,
+          "pct_change": null
+        }
+      },
+      "notes": "Automated daily collection. GA4 live baseline active; GSC observation phase."
+    },
+    {
+      "date": "2026-09-02",
+      "collection_timestamp": "2026-09-02T21:07:41.835Z",
+      "ga4_active_users": 120,
+      "ga4_sessions": 12,
+      "ga4_page_views": 48,
+      "ga4_screen_page_views": 48,
+      "ga4_engaged_sessions": 0,
+      "gsc_impressions": 0,
+      "gsc_clicks": 0,
+      "gsc_ctr": "0.00%",
+      "gsc_average_position": 0,
+      "first_party_utility_views": 4320,
+      "first_party_tool_executions": 2880,
+      "first_party_widget_views": 168,
+      "collection_status": "SUCCESS",
+      "data_quality_status": "RECONCILED",
+      "epistemic_classification": "SYNTHETIC_CONTAMINATED",
+      "contamination_status": "CONTAMINATED",
+      "usable_for_empirical_analysis": false,
+      "day_over_day_changes": {
+        "ga4_active_users": {
+          "change": null,
+          "pct_change": null
+        },
+        "ga4_sessions": {
+          "change": null,
+          "pct_change": null
+        },
+        "ga4_page_views": {
+          "change": null,
+          "pct_change": null
+        },
+        "ga4_engaged_sessions": {
+          "change": null,
+          "pct_change": null
+        },
+        "gsc_impressions": {
+          "change": null,
+          "pct_change": null
+        },
+        "gsc_clicks": {
+          "change": null,
+          "pct_change": null
+        },
+        "first_party_utility_views": {
+          "change": null,
+          "pct_change": null
+        },
+        "first_party_tool_executions": {
+          "change": null,
+          "pct_change": null
+        }
+      },
+      "notes": "Automated daily collection. GA4 live baseline active; GSC observation phase."
+    },
+    {
+      "date": "2026-09-03",
+      "collection_timestamp": "2026-09-03T23:24:06.973Z",
+      "ga4_active_users": 120,
+      "ga4_sessions": 12,
+      "ga4_page_views": 48,
+      "ga4_screen_page_views": 48,
+      "ga4_engaged_sessions": 0,
+      "gsc_impressions": 0,
+      "gsc_clicks": 0,
+      "gsc_ctr": "0.00%",
+      "gsc_average_position": 0,
+      "first_party_utility_views": 5760,
+      "first_party_tool_executions": 3840,
+      "first_party_widget_views": 168,
+      "collection_status": "SUCCESS",
+      "data_quality_status": "RECONCILED",
+      "epistemic_classification": "SYNTHETIC_CONTAMINATED",
+      "contamination_status": "CONTAMINATED",
+      "usable_for_empirical_analysis": false,
+      "day_over_day_changes": {
+        "ga4_active_users": {
+          "change": null,
+          "pct_change": null
+        },
+        "ga4_sessions": {
+          "change": null,
+          "pct_change": null
+        },
+        "ga4_page_views": {
+          "change": null,
+          "pct_change": null
+        },
+        "ga4_engaged_sessions": {
+          "change": null,
+          "pct_change": null
+        },
+        "gsc_impressions": {
+          "change": null,
+          "pct_change": null
+        },
+        "gsc_clicks": {
+          "change": null,
+          "pct_change": null
+        },
+        "first_party_utility_views": {
+          "change": null,
+          "pct_change": null
+        },
+        "first_party_tool_executions": {
+          "change": null,
+          "pct_change": null
+        }
+      },
+      "notes": "Automated daily collection. GA4 live baseline active; GSC observation phase."
+    },
+    {
+      "date": "2026-09-04",
+      "collection_timestamp": "2026-09-04T17:47:18.481Z",
+      "ga4_active_users": 27,
+      "ga4_sessions": 27,
+      "ga4_page_views": 30,
+      "ga4_screen_page_views": 30,
+      "ga4_engaged_sessions": 7,
+      "gsc_impressions": 506,
+      "gsc_clicks": 0,
+      "gsc_ctr": "0.00%",
+      "gsc_average_position": 67.8,
+      "first_party_utility_views": null,
+      "first_party_tool_executions": null,
+      "first_party_widget_views": null,
+      "collection_status": "PARTIAL",
+      "data_quality_status": "PARTIAL_LIVE",
+      "epistemic_classification": "TRUTHFUL_EMPIRICAL",
+      "contamination_status": "UNCONTAMINATED",
+      "usable_for_empirical_analysis": true,
+      "day_over_day_changes": {
+        "ga4_active_users": {
+          "change": null,
+          "pct_change": null
+        },
+        "ga4_sessions": {
+          "change": null,
+          "pct_change": null
+        },
+        "ga4_page_views": {
+          "change": null,
+          "pct_change": null
+        },
+        "ga4_engaged_sessions": {
+          "change": null,
+          "pct_change": null
+        },
+        "gsc_impressions": {
+          "change": null,
+          "pct_change": null
+        },
+        "gsc_clicks": {
+          "change": null,
+          "pct_change": null
+        },
+        "first_party_utility_views": {
+          "change": null,
+          "pct_change": null
+        },
+        "first_party_tool_executions": {
+          "change": null,
+          "pct_change": null
+        }
+      },
+      "notes": "Daily collection. GA4: LIVE; GSC: LIVE; Telemetry: UNAVAILABLE. Zero synthetic metrics fabricated."
+    },
+    {
+      "date": "2026-09-05",
+      "collection_timestamp": "2026-09-05T04:00:08.982Z",
+      "ga4_active_users": null,
+      "ga4_sessions": null,
+      "ga4_page_views": null,
+      "ga4_screen_page_views": null,
+      "ga4_engaged_sessions": null,
+      "gsc_impressions": null,
+      "gsc_clicks": null,
+      "gsc_ctr": null,
+      "gsc_average_position": null,
+      "first_party_utility_views": null,
+      "first_party_tool_executions": null,
+      "first_party_widget_views": null,
+      "collection_status": "UNAVAILABLE",
+      "data_quality_status": "UNAVAILABLE",
+      "epistemic_classification": "TRUTHFUL_EMPIRICAL",
+      "contamination_status": "UNCONTAMINATED",
+      "usable_for_empirical_analysis": true,
+      "day_over_day_changes": {
+        "ga4_active_users": {
+          "change": null,
+          "pct_change": null
+        },
+        "ga4_sessions": {
+          "change": null,
+          "pct_change": null
+        },
+        "ga4_page_views": {
+          "change": null,
+          "pct_change": null
+        },
+        "ga4_engaged_sessions": {
+          "change": null,
+          "pct_change": null
+        },
+        "gsc_impressions": {
+          "change": null,
+          "pct_change": null
+        },
+        "gsc_clicks": {
+          "change": null,
+          "pct_change": null
+        },
+        "first_party_utility_views": {
+          "change": null,
+          "pct_change": null
+        },
+        "first_party_tool_executions": {
+          "change": null,
+          "pct_change": null
+        }
+      },
+      "notes": "Daily collection. GA4: UNAVAILABLE; GSC: UNAVAILABLE; Telemetry: UNAVAILABLE. Zero synthetic metrics fabricated."
+    },
+    {
+      "date": "2026-09-06",
+      "collection_timestamp": "2026-09-06T04:00:07.825Z",
+      "ga4_active_users": 17,
+      "ga4_sessions": 17,
+      "ga4_page_views": 20,
+      "ga4_screen_page_views": 20,
+      "ga4_engaged_sessions": 6,
+      "gsc_impressions": 300,
+      "gsc_clicks": 0,
+      "gsc_ctr": "0.00%",
+      "gsc_average_position": 64,
+      "first_party_utility_views": null,
+      "first_party_tool_executions": null,
+      "first_party_widget_views": null,
+      "collection_status": "PARTIAL",
+      "data_quality_status": "PARTIAL_LIVE",
+      "epistemic_classification": "TRUTHFUL_EMPIRICAL",
+      "contamination_status": "UNCONTAMINATED",
+      "usable_for_empirical_analysis": true,
+      "day_over_day_changes": {
+        "ga4_active_users": {
+          "change": null,
+          "pct_change": null
+        },
+        "ga4_sessions": {
+          "change": null,
+          "pct_change": null
+        },
+        "ga4_page_views": {
+          "change": null,
+          "pct_change": null
+        },
+        "ga4_engaged_sessions": {
+          "change": null,
+          "pct_change": null
+        },
+        "gsc_impressions": {
+          "change": null,
+          "pct_change": null
+        },
+        "gsc_clicks": {
+          "change": null,
+          "pct_change": null
+        },
+        "first_party_utility_views": {
+          "change": null,
+          "pct_change": null
+        },
+        "first_party_tool_executions": {
+          "change": null,
+          "pct_change": null
+        }
+      },
+      "notes": "Daily collection. GA4: LIVE; GSC: LIVE; Telemetry: UNAVAILABLE. Zero synthetic metrics fabricated."
+    },
+    {
+      "date": "2026-09-07",
+      "collection_timestamp": "2026-09-07T04:00:08.449Z",
+      "ga4_active_users": null,
+      "ga4_sessions": null,
+      "ga4_page_views": null,
+      "ga4_screen_page_views": null,
+      "ga4_engaged_sessions": null,
+      "gsc_impressions": null,
+      "gsc_clicks": null,
+      "gsc_ctr": null,
+      "gsc_average_position": null,
+      "first_party_utility_views": null,
+      "first_party_tool_executions": null,
+      "first_party_widget_views": null,
+      "collection_status": "UNAVAILABLE",
+      "data_quality_status": "UNAVAILABLE",
+      "epistemic_classification": "TRUTHFUL_EMPIRICAL",
+      "contamination_status": "UNCONTAMINATED",
+      "usable_for_empirical_analysis": true,
+      "day_over_day_changes": {
+        "ga4_active_users": {
+          "change": null,
+          "pct_change": null
+        },
+        "ga4_sessions": {
+          "change": null,
+          "pct_change": null
+        },
+        "ga4_page_views": {
+          "change": null,
+          "pct_change": null
+        },
+        "ga4_engaged_sessions": {
+          "change": null,
+          "pct_change": null
+        },
+        "gsc_impressions": {
+          "change": null,
+          "pct_change": null
+        },
+        "gsc_clicks": {
+          "change": null,
+          "pct_change": null
+        },
+        "first_party_utility_views": {
+          "change": null,
+          "pct_change": null
+        },
+        "first_party_tool_executions": {
+          "change": null,
+          "pct_change": null
+        }
+      },
+      "notes": "Daily collection. GA4: UNAVAILABLE; GSC: UNAVAILABLE; Telemetry: UNAVAILABLE. Zero synthetic metrics fabricated."
+    }
+  ],
+  "first_seven_days": {
+    "status": "COMPLETE",
+    "window": {
+      "start_date": "2026-08-25",
+      "end_date": "2026-08-31",
+      "days_count": 7
+    },
+    "totals": {
+      "total_sessions": 84,
+      "total_users_summed": 81,
+      "total_page_views": 139,
+      "total_engaged_sessions": 10,
+      "total_search_impressions": 532,
+      "total_search_clicks": 0,
+      "average_ctr": "0.00%"
+    },
+    "highlights": {
+      "highest_traffic_day": {
+        "date": "2026-08-26",
+        "sessions": 34
+      },
+      "highest_page_view_day": {
+        "date": "2026-08-25",
+        "page_views": 55
+      },
+      "highest_impression_day": {
+        "date": "2026-08-29",
+        "impressions": 131
+      },
+      "first_day": {
+        "date": "2026-08-25",
+        "sessions": 13,
+        "page_views": 55,
+        "impressions": 0
+      },
+      "seventh_day": {
+        "date": "2026-08-31",
+        "sessions": 3,
+        "page_views": 3,
+        "impressions": 64
+      },
+      "growth_day_1_to_day_7": {
+        "sessions": {
+          "change": -10,
+          "pct_change": -76.92
+        },
+        "page_views": {
+          "change": -52,
+          "pct_change": -94.55
+        },
+        "impressions": {
+          "change": 64,
+          "pct_change": null
+        }
+      }
+    },
+    "daily_records": [
+      {
+        "date": "2026-08-25",
+        "users": 12,
+        "sessions": 13,
+        "visits_proxy": 13,
+        "page_views": 55,
+        "engaged_sessions": 2,
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": "0.00%",
+        "average_position": 0
+      },
+      {
+        "date": "2026-08-26",
+        "users": 32,
+        "sessions": 34,
+        "visits_proxy": 34,
+        "page_views": 46,
+        "engaged_sessions": 4,
+        "impressions": 21,
+        "clicks": 0,
+        "ctr": "0.00%",
+        "average_position": 53.38095238095238
+      },
+      {
+        "date": "2026-08-27",
+        "users": 19,
+        "sessions": 19,
+        "visits_proxy": 19,
+        "page_views": 20,
+        "engaged_sessions": 2,
+        "impressions": 59,
+        "clicks": 0,
+        "ctr": "0.00%",
+        "average_position": 67.44067796610169
+      },
+      {
+        "date": "2026-08-28",
+        "users": 10,
+        "sessions": 10,
+        "visits_proxy": 10,
+        "page_views": 10,
+        "engaged_sessions": 1,
+        "impressions": 126,
+        "clicks": 0,
+        "ctr": "0.00%",
+        "average_position": 68.46825396825396
+      },
+      {
+        "date": "2026-08-29",
+        "users": 1,
+        "sessions": 1,
+        "visits_proxy": 1,
+        "page_views": 1,
+        "engaged_sessions": 0,
+        "impressions": 131,
+        "clicks": 0,
+        "ctr": "0.00%",
+        "average_position": 71.7557251908397
+      },
+      {
+        "date": "2026-08-30",
+        "users": 4,
+        "sessions": 4,
+        "visits_proxy": 4,
+        "page_views": 4,
+        "engaged_sessions": 1,
+        "impressions": 131,
+        "clicks": 0,
+        "ctr": "0.00%",
+        "average_position": 72.3969465648855
+      },
+      {
+        "date": "2026-08-31",
+        "users": 3,
+        "sessions": 3,
+        "visits_proxy": 3,
+        "page_views": 3,
+        "engaged_sessions": 0,
+        "impressions": 64,
+        "clicks": 0,
+        "ctr": "0.00%",
+        "average_position": 63.140625
+      }
+    ]
+  },
+  "week_over_week": {
+    "status": "INSUFFICIENT_DATA",
+    "empirical_days_available": 11,
+    "required_days": 14,
+    "note": "Week-over-Week analysis requires at least two complete 7-day empirical periods (14 days). 11 empirical days currently recorded.",
+    "wow_growth": null
+  },
+  "monetization_readiness": {
+    "governance_notice": "Google AdSense official policies do NOT require 1,000 visits/month. Monthly traffic goals are strictly INTERNAL_TARGET metrics.",
+    "overall_readiness_state": "NOT_READY",
+    "checklist_categories": [
+      {
+        "category_id": "CONTENT",
+        "name": "High-Quality, Original Content & Value",
+        "requirement_type": "GOOGLE_POLICY_REQUIREMENT",
+        "description": "Site must provide unique, value-adding content that gives users a reason to visit and return.",
+        "evaluation_criteria": "420 functional, interactive utilities with zero placeholder tools; rich technical FAQs and canonical metadata.",
+        "status": "VERIFIED",
+        "evidence": "420 live interactive tools verified with 100% test execution pass (417 automated passes, 3 human-validated)."
+      },
+      {
+        "category_id": "POLICY_COMPLIANCE",
+        "name": "Google Publisher Policies Compliance",
+        "requirement_type": "GOOGLE_POLICY_REQUIREMENT",
+        "description": "Must comply with Google Publisher Policies (no illegal content, intellectual property infringement, deceptive navigation).",
+        "evaluation_criteria": "Clean utility implementations, no deceptive redirects, strict tool integrity.",
+        "status": "VERIFIED",
+        "evidence": "Audited codebase; zero deceptive layouts or prohibited content."
+      },
+      {
+        "category_id": "SITE_OWNERSHIP",
+        "name": "Domain & Site Ownership Verification",
+        "requirement_type": "GOOGLE_POLICY_REQUIREMENT",
+        "description": "Publisher must own or have administrative rights to the domain.",
+        "evaluation_criteria": "Google Search Console DNS domain verification active for sc-domain:utl.tools.",
+        "status": "VERIFIED",
+        "evidence": "GSC authenticated query active on sc-domain:utl.tools (GSC API verified)."
+      },
+      {
+        "category_id": "CRAWLABILITY",
+        "name": "Technical Crawlability & Site Architecture",
+        "requirement_type": "GOOGLE_POLICY_REQUIREMENT",
+        "description": "Site must have clean navigation, robots.txt, dynamic sitemap, and accessible URLs for Googlebot.",
+        "evaluation_criteria": "robots.ts and sitemap.ts generating all 467 routes; canonical URLs on all pages.",
+        "status": "VERIFIED",
+        "evidence": "Next.js SSG build produces 467 static pages + robots.txt + sitemap.xml. Canonical SEO verified."
+      },
+      {
+        "category_id": "TRAFFIC_MEASUREMENT",
+        "name": "Authoritative Traffic Measurement",
+        "requirement_type": "GOOGLE_POLICY_REQUIREMENT",
+        "description": "Site must maintain real, truthful traffic measurement without synthetic inflation or invalid traffic.",
+        "evaluation_criteria": "GA4 live measurement active; zero synthetic traffic multipliers.",
+        "status": "VERIFIED",
+        "evidence": "Phase 1-6 remediation established zero synthetic multipliers; GA4 Property 551527574 verified."
+      },
+      {
+        "category_id": "ORIGINALITY",
+        "name": "Originality & Substantial Usability",
+        "requirement_type": "GOOGLE_POLICY_REQUIREMENT",
+        "description": "Tools must not simply scrape or mirror third-party content without independent functionality.",
+        "evaluation_criteria": "Client-side execution logic in React/TypeScript, independent computation.",
+        "status": "VERIFIED",
+        "evidence": "420 standalone interactive tools executing locally in browser."
+      },
+      {
+        "category_id": "USER_EXPERIENCE",
+        "name": "Navigation & User Experience",
+        "requirement_type": "GOOGLE_POLICY_REQUIREMENT",
+        "description": "Clear visual hierarchy, fast load times, accessible design, mobile responsive.",
+        "evaluation_criteria": "Tailwind CSS responsive design, dark/light themes, search modal, category hierarchy.",
+        "status": "VERIFIED",
+        "evidence": "Verified responsive layouts and component mounting across all 420 tools."
+      },
+      {
+        "category_id": "PRIVACY_CONSENT",
+        "name": "Privacy Policy & User Consent (GDPR/CPRA)",
+        "requirement_type": "GOOGLE_POLICY_REQUIREMENT",
+        "description": "Publishers must have a clear privacy policy and cookie consent mechanism where required.",
+        "evaluation_criteria": "Dedicated privacy policy route and consent disclosure for analytics/telemetry.",
+        "status": "ATTENTION_REQUIRED",
+        "evidence": "Telemetry contract enforces zero PII, but dedicated user-facing /privacy page should be formally reviewed before submission."
+      }
+    ],
+    "policy_summary": {
+      "total_categories": 8,
+      "verified_count": 7,
+      "attention_required_count": 1,
+      "unknown_count": 0
+    },
+    "internal_business_targets": [
+      {
+        "target_id": "TARGET-SESSIONS",
+        "name": "Monthly Sessions",
+        "classification": "INTERNAL_TARGET",
+        "is_google_requirement": false,
+        "policy_status": "NOT_A_GOOGLE_REQUIREMENT",
+        "current_value": 1,
+        "target_value": 1000,
+        "progress_percentage": 0.1,
+        "achieved": false
+      },
+      {
+        "target_id": "TARGET-USERS",
+        "name": "Monthly Active Users",
+        "classification": "INTERNAL_TARGET",
+        "is_google_requirement": false,
+        "policy_status": "NOT_A_GOOGLE_REQUIREMENT",
+        "current_value": 1,
+        "target_value": 1000,
+        "progress_percentage": 0.1,
+        "achieved": false
+      },
+      {
+        "target_id": "TARGET-VIEWS",
+        "name": "Monthly Page Views",
+        "classification": "INTERNAL_TARGET",
+        "is_google_requirement": false,
+        "policy_status": "NOT_A_GOOGLE_REQUIREMENT",
+        "current_value": 1,
+        "target_value": 1000,
+        "progress_percentage": 0.1,
+        "achieved": false
+      }
+    ]
+  },
+  "data_quality": {
+    "total_recorded_days": 13,
+    "empirical_days": 4,
+    "contaminated_days_excluded": 9,
+    "reconstructed_empirical_days": 11,
+    "synthetic_metrics_count": 0,
+    "no_data_converted_to_zero": false
+  },
+  "provenance": {
+    "SRC-GA4-UTL": "Google Analytics 4 Data API (Property 551527574)",
+    "SRC-GSC-UTL": "Google Search Console API (sc-domain:utl.tools)",
+    "SRC-UTL-TELEMETRY": "UTL First-Party Ingestion API (/api/telemetry, Schema 1.0.0)"
+  }
+}

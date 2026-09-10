@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-09-09T19:35:34.428Z",
+  "project": "web-shell",
+  "framework": "nextjs",
+  "status": "FAIL",
+  "buildStatus": "FAIL",
+  "environmentStatus": "COMPLETE",
+  "dependencyStatus": "SATISFIED",
+  "smokeTestStatus": "SKIPPED",
+  "securityCheckStatus": "FAIL",
+  "warnings": [
+    "Local user file paths detected in public build output"
+  ],
+  "failures": [
+    "Build validation failed: spawnSync C:\\WINDOWS\\system32\\cmd.exe ETIMEDOUT"
+  ]
+}

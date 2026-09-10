@@ -37,8 +37,7 @@ export class GoogleAuthClient {
       process.env.GOOGLE_APPLICATION_CREDENTIALS ||
       "C:\\Users\\mallik\\Documents\\AAEP\\.config\\utl-project-intelligence.json";
     this.keyJsonString = options.keyJsonString || process.env.GOOGLE_SERVICE_ACCOUNT_JSON || null;
-    this.cachedToken = null;
-    this.tokenExpiry = 0;
+    this.tokenCache = new Map();
   }
 
   /**
@@ -75,9 +74,12 @@ export class GoogleAuthClient {
     }
 
     const now = Math.floor(Date.now() / 1000);
+    const scopeKey = Array.isArray(scopes) ? scopes.slice().sort().join(" ") : scopes;
+
     // Use cached token if valid for more than 5 minutes
-    if (this.cachedToken && this.tokenExpiry > now + 300) {
-      return this.cachedToken;
+    const cached = this.tokenCache.get(scopeKey);
+    if (cached && cached.expiry > now + 300) {
+      return cached.token;
     }
 
     const header = {
@@ -116,30 +118,38 @@ export class GoogleAuthClient {
 
     const jwt = `${signatureInput}.${signature}`;
 
-    // Request access token from Google OAuth endpoint
-    try {
-      const response = await fetch("https://oauth2.googleapis.com/token", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams({
-          grant_type: "urn:ietf:params:oauth:grant-type:jwt-bearer",
-          assertion: jwt,
-        }),
-      });
+    // Request access token from Google OAuth endpoint with retry
+    for (let attempt = 0; attempt < 2; attempt++) {
+      try {
+        const response = await fetch("https://oauth2.googleapis.com/token", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: new URLSearchParams({
+            grant_type: "urn:ietf:params:oauth:grant-type:jwt-bearer",
+            assertion: jwt,
+          }),
+        });
 
-      if (!response.ok) {
-        const errText = await response.text();
-        console.warn(`Google OAuth Token request failed [${response.status}]: ${errText}`);
+        if (!response.ok) {
+          const errText = await response.text();
+          console.warn(`Google OAuth Token request failed [${response.status}]: ${errText}`);
+          return null;
+        }
+
+        const data = await response.json();
+        this.tokenCache.set(scopeKey, {
+          token: data.access_token,
+          expiry: now + (data.expires_in || 3600),
+        });
+        return data.access_token;
+      } catch (fetchErr) {
+        if (attempt === 0) {
+          await new Promise((r) => setTimeout(r, 400));
+          continue;
+        }
+        console.warn("Network error during Google OAuth token exchange:", fetchErr.message);
         return null;
       }
-
-      const data = await response.json();
-      this.cachedToken = data.access_token;
-      this.tokenExpiry = now + (data.expires_in || 3600);
-      return this.cachedToken;
-    } catch (fetchErr) {
-      console.warn("Network error during Google OAuth token exchange:", fetchErr.message);
-      return null;
     }
   }
 }

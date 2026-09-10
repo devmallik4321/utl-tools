@@ -78,7 +78,8 @@ export function loadDailyStatistics() {
 /**
  * Record or update today's daily statistics row idempotently.
  */
-export function recordDailyStatistics(observations = []) {
+export function recordDailyStatistics(observations = [], options = {}) {
+  const { retainExisting = false } = options;
   const records = loadDailyStatistics();
   const today = new Date().toISOString().split("T")[0];
   const now = new Date().toISOString();
@@ -106,13 +107,45 @@ export function recordDailyStatistics(observations = []) {
   const utlExecs = getMetricValue("SRC-UTL-TELEMETRY", "utility_interactions");
   const widgetViews = getMetricValue("SRC-UTL-TELEMETRY", "widget_views");
 
-  const ratio = (typeof utlViews === "number" && utlViews > 0 && typeof utlExecs === "number")
-    ? `${((utlExecs / utlViews) * 100).toFixed(1)}%`
-    : null;
+  const existingIdx = records.findIndex((r) => r.date === today);
+  const existingRecord = existingIdx >= 0 ? records[existingIdx] : null;
 
-  const ga4Ok = observations.some((o) => o.source_id === "SRC-GA4-UTL" && o.status === "SUCCESS");
-  const gscOk = observations.some((o) => o.source_id === "SRC-GSC-UTL" && o.status === "SUCCESS");
-  const telOk = observations.some((o) => o.source_id === "SRC-UTL-TELEMETRY" && o.status === "SUCCESS");
+  const hasGa4Obs = observations.some((o) => o.source_id === "SRC-GA4-UTL");
+  const hasGscObs = observations.some((o) => o.source_id === "SRC-GSC-UTL");
+  const hasTelObs = observations.some((o) => o.source_id === "SRC-UTL-TELEMETRY");
+
+  const resolveMetric = (newVal, existingVal, hasObs) => {
+    if (typeof newVal === "number") return newVal;
+    if (retainExisting && existingRecord && typeof existingVal === "number") return existingVal;
+    if (!hasObs && existingRecord && existingVal !== undefined) return existingVal;
+    return null;
+  };
+
+  const finalGa4Users = resolveMetric(ga4Users, existingRecord?.ga4_active_users, hasGa4Obs);
+  const finalGa4Sessions = resolveMetric(ga4Sessions, existingRecord?.ga4_sessions, hasGa4Obs);
+  const finalGa4Views = resolveMetric(ga4Views, existingRecord?.ga4_screen_page_views, hasGa4Obs);
+  const finalGa4Engaged = resolveMetric(ga4Engaged, existingRecord?.ga4_engaged_sessions, hasGa4Obs);
+
+  const finalGscImpressions = resolveMetric(gscImpressions, existingRecord?.gsc_impressions, hasGscObs);
+  const finalGscClicks = resolveMetric(gscClicks, existingRecord?.gsc_clicks, hasGscObs);
+  const finalGscCtr = typeof rawGscCtr === "number"
+    ? `${rawGscCtr.toFixed(2)}%`
+    : (retainExisting && existingRecord?.gsc_ctr ? existingRecord.gsc_ctr : (!hasGscObs && existingRecord ? existingRecord.gsc_ctr : null));
+  const finalGscPos = typeof rawGscPos === "number"
+    ? parseFloat(rawGscPos.toFixed(1))
+    : (retainExisting && existingRecord?.gsc_average_position ? existingRecord.gsc_average_position : (!hasGscObs && existingRecord ? existingRecord.gsc_average_position : null));
+
+  const finalUtlViews = resolveMetric(utlViews, existingRecord?.utl_utility_views, hasTelObs);
+  const finalUtlExecs = resolveMetric(utlExecs, existingRecord?.utl_tool_executions, hasTelObs);
+  const finalWidgetViews = resolveMetric(widgetViews, existingRecord?.widget_views, hasTelObs);
+
+  const ga4Ok = finalGa4Users !== null;
+  const gscOk = finalGscImpressions !== null;
+  const telOk = finalUtlViews !== null;
+
+  const finalRatio = (typeof finalUtlViews === "number" && finalUtlViews > 0 && typeof finalUtlExecs === "number")
+    ? `${((finalUtlExecs / finalUtlViews) * 100).toFixed(1)}%`
+    : null;
 
   const collectionStatus = (ga4Ok && telOk && gscOk) ? "SUCCESS" : (ga4Ok || telOk || gscOk) ? "PARTIAL" : "UNAVAILABLE";
   const dataQuality = (ga4Ok && telOk && gscOk) ? "RECONCILED" : (ga4Ok || telOk || gscOk) ? "PARTIAL_LIVE" : "UNAVAILABLE";
@@ -120,19 +153,19 @@ export function recordDailyStatistics(observations = []) {
   const todayRecord = {
     date: today,
     collection_timestamp: now,
-    ga4_active_users: ga4Users,
-    ga4_sessions: ga4Sessions,
-    ga4_screen_page_views: ga4Views,
-    ga4_engaged_sessions: ga4Engaged,
-    gsc_impressions: gscImpressions,
-    gsc_clicks: gscClicks,
-    gsc_ctr: typeof rawGscCtr === "number" ? `${rawGscCtr.toFixed(2)}%` : null,
-    gsc_average_position: typeof rawGscPos === "number" ? parseFloat(rawGscPos.toFixed(1)) : null,
-    utl_utility_views: utlViews,
-    utl_tool_executions: utlExecs,
-    widget_views: widgetViews,
+    ga4_active_users: finalGa4Users,
+    ga4_sessions: finalGa4Sessions,
+    ga4_screen_page_views: finalGa4Views,
+    ga4_engaged_sessions: finalGa4Engaged,
+    gsc_impressions: finalGscImpressions,
+    gsc_clicks: finalGscClicks,
+    gsc_ctr: finalGscCtr,
+    gsc_average_position: finalGscPos,
+    utl_utility_views: finalUtlViews,
+    utl_tool_executions: finalUtlExecs,
+    widget_views: finalWidgetViews,
     widget_routes: 12,
-    tool_execution_view_ratio: ratio,
+    tool_execution_view_ratio: finalRatio,
     collection_status: collectionStatus,
     data_quality_status: dataQuality,
     epistemic_classification: "TRUTHFUL_EMPIRICAL",
@@ -141,7 +174,6 @@ export function recordDailyStatistics(observations = []) {
     notes: `Daily collection. GA4: ${ga4Ok ? "LIVE" : "UNAVAILABLE"}; GSC: ${gscOk ? "LIVE" : "UNAVAILABLE"}; Telemetry: ${telOk ? "LIVE" : "UNAVAILABLE"}. Zero synthetic metrics fabricated.`,
   };
 
-  const existingIdx = records.findIndex((r) => r.date === today);
   if (existingIdx >= 0) {
     records[existingIdx] = todayRecord;
   } else {

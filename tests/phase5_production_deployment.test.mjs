@@ -219,23 +219,29 @@ test("9. Unavailable-source semantics", () => {
 // 10. Daily statistics idempotency
 // ============================================================================
 test("10. Daily statistics idempotency", () => {
-  const initial = loadDailyStatistics();
-  const mockObservations = [
-    { source_id: "SRC-UTL-TELEMETRY", metric_id: "utility_views", status: "SUCCESS", value: 0 },
-    { source_id: "SRC-UTL-TELEMETRY", metric_id: "utility_interactions", status: "SUCCESS", value: 0 },
-    { source_id: "SRC-UTL-TELEMETRY", metric_id: "widget_views", status: "SUCCESS", value: 0 },
-  ];
+  const storePath = path.resolve("intelligence/project/daily_statistics.json");
+  const backup = fs.readFileSync(storePath, "utf-8");
+  try {
+    const initial = loadDailyStatistics();
+    const mockObservations = [
+      { source_id: "SRC-UTL-TELEMETRY", metric_id: "utility_views", status: "SUCCESS", value: 0 },
+      { source_id: "SRC-UTL-TELEMETRY", metric_id: "utility_interactions", status: "SUCCESS", value: 0 },
+      { source_id: "SRC-UTL-TELEMETRY", metric_id: "widget_views", status: "SUCCESS", value: 0 },
+    ];
 
-  recordDailyStatistics(mockObservations);
-  const run1 = loadDailyStatistics();
+    recordDailyStatistics(mockObservations);
+    const run1 = loadDailyStatistics();
 
-  recordDailyStatistics(mockObservations);
-  const run2 = loadDailyStatistics();
+    recordDailyStatistics(mockObservations);
+    const run2 = loadDailyStatistics();
 
-  assert.equal(run1.length, run2.length);
-  const todayStr = new Date().toISOString().slice(0, 10);
-  const todayRecords = run2.filter((r) => r.date === todayStr);
-  assert.equal(todayRecords.length, 1);
+    assert.equal(run1.length, run2.length);
+    const todayStr = new Date().toISOString().slice(0, 10);
+    const todayRecords = run2.filter((r) => r.date === todayStr);
+    assert.equal(todayRecords.length, 1);
+  } finally {
+    fs.writeFileSync(storePath, backup);
+  }
 });
 
 // ============================================================================

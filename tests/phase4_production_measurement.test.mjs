@@ -438,26 +438,32 @@ test("15. Human-validation utilities cannot become PASS without evidence", () =>
 // Requirement 16: Scheduler reruns do not corrupt historical state
 // ============================================================================
 test("16. Scheduler reruns do not corrupt historical state", () => {
-  const initialRecords = loadDailyStatistics();
-  const initialCount = initialRecords.length;
+  const storePath = path.resolve("intelligence/project/daily_statistics.json");
+  const backup = fs.readFileSync(storePath, "utf-8");
+  try {
+    const initialRecords = loadDailyStatistics();
+    const initialCount = initialRecords.length;
 
-  // Run recording twice with the same observations
-  const mockObservations = [
-    { source_id: "SRC-UTL-TELEMETRY", metric_id: "utility_views", status: "SUCCESS", value: 0 },
-    { source_id: "SRC-UTL-TELEMETRY", metric_id: "utility_interactions", status: "SUCCESS", value: 0 },
-    { source_id: "SRC-UTL-TELEMETRY", metric_id: "widget_views", status: "SUCCESS", value: 0 },
-  ];
+    // Run recording twice with the same observations
+    const mockObservations = [
+      { source_id: "SRC-UTL-TELEMETRY", metric_id: "utility_views", status: "SUCCESS", value: 0 },
+      { source_id: "SRC-UTL-TELEMETRY", metric_id: "utility_interactions", status: "SUCCESS", value: 0 },
+      { source_id: "SRC-UTL-TELEMETRY", metric_id: "widget_views", status: "SUCCESS", value: 0 },
+    ];
 
-  recordDailyStatistics(mockObservations);
-  const afterFirst = loadDailyStatistics();
+    recordDailyStatistics(mockObservations);
+    const afterFirst = loadDailyStatistics();
 
-  recordDailyStatistics(mockObservations);
-  const afterSecond = loadDailyStatistics();
+    recordDailyStatistics(mockObservations);
+    const afterSecond = loadDailyStatistics();
 
-  assert.equal(afterFirst.length, afterSecond.length);
-  // Historical records count (9 contaminated) remain exactly 9
-  const contaminated = afterSecond.filter((r) => r.epistemic_classification === "SYNTHETIC_CONTAMINATED");
-  assert.equal(contaminated.length, 9);
+    assert.equal(afterFirst.length, afterSecond.length);
+    // Historical records count (9 contaminated) remain exactly 9
+    const contaminated = afterSecond.filter((r) => r.epistemic_classification === "SYNTHETIC_CONTAMINATED");
+    assert.equal(contaminated.length, 9);
+  } finally {
+    fs.writeFileSync(storePath, backup);
+  }
 });
 
 // ============================================================================

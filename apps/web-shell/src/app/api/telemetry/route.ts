@@ -171,10 +171,31 @@ export async function POST(request: Request) {
 
 export async function GET() {
   const events = loadEvents();
+  const views = events.filter((e) => e.event_type === "utility_view").length;
+  const executions = events.filter((e) => e.event_type === "tool_execution").length;
+  const widgetViews = events.filter((e) => e.event_type === "widget_view").length;
+
+  const persistenceStatus = process.env.UPSTASH_REDIS_REST_URL
+    ? "PERSISTENT_CLOUD_REDIS"
+    : process.env.TELEMETRY_STORE_PATH
+    ? "PERSISTENT_DURABLE_STORAGE"
+    : "NON-PERSISTENT_EDGE / LOCAL_ACTIVE";
+
+  const persistenceEngine = process.env.UPSTASH_REDIS_REST_URL
+    ? "UPSTASH_REDIS"
+    : process.env.TELEMETRY_STORE_PATH
+    ? "FILE_STORAGE"
+    : "EPHEMERAL_FS";
+
   return NextResponse.json({
     status: "ACTIVE",
     provider: "SRC-UTL-TELEMETRY",
     schema_version: "1.0.0",
+    persistence_status: persistenceStatus,
+    persistence_engine: persistenceEngine,
     total_events_collected: events.length,
+    utility_views: views,
+    tool_executions: executions,
+    widget_views: widgetViews,
   });
 }

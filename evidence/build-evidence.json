@@ -1,0 +1,7 @@
+{
+  "timestamp": "2026-09-07T23:06:20.898Z",
+  "status": "PASS",
+  "command": "npm run build",
+  "durationMs": 156436,
+  "outputSnippet": "\n> utl-tools@1.0.0 build\n> npm --workspace=apps/web-shell run build\n\n\n> web-shell@1.0.0 build\n> next build\n\n  ▲ Next.js 14.2.35\n\n   Creating an optimized production build ...\n ✓ Compiled successfully\n   Linting and checking validity of types ...\n   Collecting page data ...\n   Generating static pages (0/469) ...\n   Generating static pages (117/469) \r\n   Generating static pages (234/469) \r\n   Generating static pages (351/469) \r\n ✓ Generating static pages (469/469)\n   Finalizing page optimization ...\n   Collecting build traces ...\n\nRoute (app)                                           Size     First Load JS\n┌ ○ /                                                 1.92 kB         111 kB\n├ ○ /_not-found                                       880 B          94.1 kB\n├ ƒ /api/review                                       0 B                0 B\n├ ƒ /api/statistics                                   0 B                0 B\n├ ƒ /api/telemetry                                    0 B                0 B\n├ ●"
+}

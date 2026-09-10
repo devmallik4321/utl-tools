@@ -10,7 +10,8 @@
     "dev": "npm --workspace=apps/web-shell run dev",
     "build": "npm --workspace=apps/web-shell run build",
     "start": "npm --workspace=apps/web-shell run start",
-    "lint": "npm --workspace=apps/web-shell run lint"
+    "lint": "npm --workspace=apps/web-shell run lint",
+    "test": "node --test --test-concurrency=1 tests/utl_project_intelligence.test.mjs tests/phase1_statistics_integrity.test.mjs tests/phase2_statistics_integrity.test.mjs tests/phase3_real_measurement.test.mjs tests/phase4_production_measurement.test.mjs tests/phase5_production_deployment.test.mjs tests/phase6_live_statistics.test.mjs tests/phase7_historical_measurement.test.mjs tests/phase8_growth_intelligence.test.mjs tests/phase9_statistics_reconciliation.test.mjs tests/phase10_production_observation.test.mjs"
   },
   "keywords": [
     "utilities",

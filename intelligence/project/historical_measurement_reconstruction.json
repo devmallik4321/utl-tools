@@ -1,0 +1,281 @@
+{
+  "schema_version": "1.0.0",
+  "extracted_at": "2026-09-10T04:00:19.384Z",
+  "provenance_statement": "Reconstructed directly from Google Analytics 4 Data API (v1beta) and Google Search Console API. Historical synthetic estimates are preserved in daily_statistics.json for audit, while empirical metrics are extracted from external authoritative sources.",
+  "production_timeline": {
+    "production_start_date": "2026-08-25",
+    "initial_commit_sha": "28360e6",
+    "production_start_evidence": "Commit 28360e6 (Version 1.1 Release, 47 utilities, 2026-08-25T04:14:45.000Z) and earliest GA4 traffic record.",
+    "ga4_measurement_start_date": "2026-08-25",
+    "gsc_measurement_start_date": "2026-08-24",
+    "gsc_first_impressions_date": "2026-08-26",
+    "visits_metric_definition": "Internal Visits Proxy = GA4 Sessions (ga4_sessions)"
+  },
+  "first_seven_days_summary": {
+    "range": {
+      "start_date": "2026-08-25",
+      "end_date": "2026-08-31",
+      "days": 7
+    },
+    "totals": {
+      "total_sessions": 84,
+      "total_page_views": 139,
+      "total_search_impressions": 532
+    }
+  },
+  "ga4_source": {
+    "property_id": "551527574",
+    "measurement_id": "G-H2G4BK9Y36",
+    "daily_records_count": 15,
+    "monthly_summary_september": {
+      "month": "2026-09",
+      "monthly_unique_users": 13,
+      "monthly_active_users": 13,
+      "monthly_sessions": 20,
+      "monthly_page_views": 36,
+      "source": "GA4 Data API Property 551527574"
+    },
+    "records": [
+      {
+        "date": "2026-08-25",
+        "active_users": 12,
+        "sessions": 13,
+        "screen_page_views": 55,
+        "engaged_sessions": 2,
+        "new_users": 12,
+        "user_engagement_duration_seconds": 380,
+        "event_count": 127
+      },
+      {
+        "date": "2026-08-26",
+        "active_users": 32,
+        "sessions": 34,
+        "screen_page_views": 46,
+        "engaged_sessions": 4,
+        "new_users": 32,
+        "user_engagement_duration_seconds": 167,
+        "event_count": 134
+      },
+      {
+        "date": "2026-08-27",
+        "active_users": 19,
+        "sessions": 19,
+        "screen_page_views": 20,
+        "engaged_sessions": 2,
+        "new_users": 18,
+        "user_engagement_duration_seconds": 51,
+        "event_count": 71
+      },
+      {
+        "date": "2026-08-28",
+        "active_users": 10,
+        "sessions": 10,
+        "screen_page_views": 10,
+        "engaged_sessions": 1,
+        "new_users": 10,
+        "user_engagement_duration_seconds": 17,
+        "event_count": 31
+      },
+      {
+        "date": "2026-08-29",
+        "active_users": 1,
+        "sessions": 1,
+        "screen_page_views": 1,
+        "engaged_sessions": 0,
+        "new_users": 1,
+        "user_engagement_duration_seconds": 0,
+        "event_count": 3
+      },
+      {
+        "date": "2026-08-30",
+        "active_users": 4,
+        "sessions": 4,
+        "screen_page_views": 4,
+        "engaged_sessions": 1,
+        "new_users": 4,
+        "user_engagement_duration_seconds": 8,
+        "event_count": 14
+      },
+      {
+        "date": "2026-08-31",
+        "active_users": 3,
+        "sessions": 3,
+        "screen_page_views": 3,
+        "engaged_sessions": 0,
+        "new_users": 3,
+        "user_engagement_duration_seconds": 5,
+        "event_count": 12
+      },
+      {
+        "date": "2026-09-01",
+        "active_users": 6,
+        "sessions": 6,
+        "screen_page_views": 8,
+        "engaged_sessions": 2,
+        "new_users": 6,
+        "user_engagement_duration_seconds": 74,
+        "event_count": 24
+      },
+      {
+        "date": "2026-09-02",
+        "active_users": 1,
+        "sessions": 1,
+        "screen_page_views": 1,
+        "engaged_sessions": 1,
+        "new_users": 1,
+        "user_engagement_duration_seconds": 19,
+        "event_count": 4
+      },
+      {
+        "date": "2026-09-03",
+        "active_users": 2,
+        "sessions": 2,
+        "screen_page_views": 3,
+        "engaged_sessions": 2,
+        "new_users": 2,
+        "user_engagement_duration_seconds": 115,
+        "event_count": 13
+      },
+      {
+        "date": "2026-09-04",
+        "active_users": 1,
+        "sessions": 1,
+        "screen_page_views": 1,
+        "engaged_sessions": 0,
+        "new_users": 1,
+        "user_engagement_duration_seconds": 2,
+        "event_count": 4
+      },
+      {
+        "date": "2026-09-06",
+        "active_users": 2,
+        "sessions": 2,
+        "screen_page_views": 2,
+        "engaged_sessions": 0,
+        "new_users": 2,
+        "user_engagement_duration_seconds": 0,
+        "event_count": 6
+      },
+      {
+        "date": "2026-09-08",
+        "active_users": 1,
+        "sessions": 4,
+        "screen_page_views": 12,
+        "engaged_sessions": 3,
+        "new_users": 0,
+        "user_engagement_duration_seconds": 162,
+        "event_count": 24
+      },
+      {
+        "date": "2026-09-09",
+        "active_users": 1,
+        "sessions": 3,
+        "screen_page_views": 8,
+        "engaged_sessions": 3,
+        "new_users": 0,
+        "user_engagement_duration_seconds": 34,
+        "event_count": 17
+      },
+      {
+        "date": "2026-09-10",
+        "active_users": 0,
+        "sessions": 1,
+        "screen_page_views": 1,
+        "engaged_sessions": 0,
+        "new_users": 0,
+        "user_engagement_duration_seconds": 0,
+        "event_count": 2
+      }
+    ]
+  },
+  "gsc_source": {
+    "site_url": "sc-domain:utl.tools",
+    "daily_records_count": 12,
+    "records": [
+      {
+        "date": "2026-08-24",
+        "impressions": 0,
+        "clicks": 0,
+        "ctr_percentage": 0,
+        "average_position": 0
+      },
+      {
+        "date": "2026-08-25",
+        "impressions": 0,
+        "clicks": 0,
+        "ctr_percentage": 0,
+        "average_position": 0
+      },
+      {
+        "date": "2026-08-26",
+        "impressions": 21,
+        "clicks": 0,
+        "ctr_percentage": 0,
+        "average_position": 53.38095238095238
+      },
+      {
+        "date": "2026-08-27",
+        "impressions": 59,
+        "clicks": 0,
+        "ctr_percentage": 0,
+        "average_position": 67.44067796610169
+      },
+      {
+        "date": "2026-08-28",
+        "impressions": 126,
+        "clicks": 0,
+        "ctr_percentage": 0,
+        "average_position": 68.46825396825396
+      },
+      {
+        "date": "2026-08-29",
+        "impressions": 131,
+        "clicks": 0,
+        "ctr_percentage": 0,
+        "average_position": 71.7557251908397
+      },
+      {
+        "date": "2026-08-30",
+        "impressions": 131,
+        "clicks": 0,
+        "ctr_percentage": 0,
+        "average_position": 72.3969465648855
+      },
+      {
+        "date": "2026-08-31",
+        "impressions": 64,
+        "clicks": 0,
+        "ctr_percentage": 0,
+        "average_position": 63.140625
+      },
+      {
+        "date": "2026-09-01",
+        "impressions": 25,
+        "clicks": 0,
+        "ctr_percentage": 0,
+        "average_position": 43.04
+      },
+      {
+        "date": "2026-09-02",
+        "impressions": 29,
+        "clicks": 0,
+        "ctr_percentage": 0,
+        "average_position": 57.96551724137931
+      },
+      {
+        "date": "2026-09-03",
+        "impressions": 51,
+        "clicks": 0,
+        "ctr_percentage": 0,
+        "average_position": 57.509803921568626
+      },
+      {
+        "date": "2026-09-04",
+        "impressions": 53,
+        "clicks": 0,
+        "ctr_percentage": 0,
+        "average_position": 73.43396226415095
+      }
+    ]
+  }
+}

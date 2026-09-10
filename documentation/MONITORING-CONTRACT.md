@@ -91,3 +91,39 @@ For every metric published on the platform or recorded in the Control Center, th
 4. **How was it measured?** (Collection method, calculation logic).
 5. **What is its epistemic status?** (`FACT`, `VERIFIED`, `DERIVED`, `UNAVAILABLE`, `SYNTHETIC_CONTAMINATED`).
 6. **Where is the raw evidence?** (File path or artifact reference).
+
+---
+
+## 7. Operational Attention Conditions & Anomaly Classification
+
+The monitoring system enforces a strict operational distinction between genuine real-world observations and subsystem failures:
+
+### Critical Epistemic Distinction: `LOW TRAFFIC` vs `MEASUREMENT FAILURE`
+- **`LOW TRAFFIC` (Valid Empirical Observation)**: When authenticated measurement providers (GA4, GSC) and telemetry endpoints are operating normally, a drop in traffic or low session count is an empirical observation of reality. It is **NOT** a system failure, and must **NEVER** be artificially inflated, masked, or flagged as an engineering outage.
+- **`MEASUREMENT FAILURE` (Technical Anomaly)**: When an API fails to authenticate, an endpoint returns 5xx/404, network sockets time out, or the persistent event store becomes unreachable. In this case, metrics must be classified as `UNAVAILABLE` with `value: null` and an explicit diagnostic reason.
+
+### Operational Attention Matrix
+
+| Attention Condition | Technical Signature | Root Cause Category | Operational Severity | System Action & Response |
+| :--- | :--- | :--- | :--- | :--- |
+| **Telemetry Persistence Unavailable** | `persistence_status: "NON-PERSISTENT_EDGE"` without cloud adapter | Architectural Limitation | `ATTENTION_REQUIRED` | Ingestion continues via edge memory buffer; flag requirement for Upstash Redis or durable database before permanent event retention. |
+| **GA4 Authentication Failure** | OAuth token expired or service account error (`AUTH_EXPIRED` / `UNAVAILABLE`) | Credential Expiry | `DEGRADED` | Isolate provider; preserve existing historical empirical records; record `null` for current day; alert operator to refresh token. |
+| **GSC Authentication Failure** | GSC API returns 401/403 or network error | Credential Expiry | `DEGRADED` | Record `null` for GSC metrics; preserve GA4 and telemetry; never synthesize search impressions. |
+| **Sudden Zero Traffic (Anomaly)** | Sessions drop to 0 following active preceding days while credentials are valid | Market Event / Routing Glitch | `ATTENTION_REQUIRED` | Trigger verification probe to confirm GA4 client tag firing on production web-shell; if tag fires normally, record 0 as empirical fact. |
+| **Abnormal Measurement Gaps** | Date missing from daily series without explicit maintenance freeze | Pipeline Glitch | `DEGRADED` | Forensic audit of scheduler; re-run historical query for missing date range; never interpolate missing dates. |
+| **Stale Data** | `collection_timestamp` older than 24 hours | Scheduler Stall | `ATTENTION_REQUIRED` | Check Windows Task Scheduler job status; trigger manual idempotent reconciliation. |
+| **AdSense Readiness Item Unresolved** | Any item in checklist marked `ATTENTION_REQUIRED` (e.g. privacy consent route) | Policy Governance | `ATTENTION_REQUIRED` | Retain overall status `NOT_READY`; flag checklist item in Control Center `P-Statistics` block 10; prevent premature ad tag deployment. |
+| **Telemetry Event Ingestion Failure** | Rejection rate > 5% or persistent store write errors | Storage/Schema Anomaly | `DEGRADED` | Verify JSON payload structure against Schema 1.0.0; inspect logs for forbidden privacy keys (`password`, `token`, `email`, etc.). |
+
+---
+
+## 8. Growth Projections & Monetization Governance
+
+1. **Strict Separation of Targets vs Google Policy**:
+   - The platform tracks `INTERNAL_TARGET_MONTHLY_SESSIONS = 1000`.
+   - This benchmark is explicitly categorized as `INTERNAL_BUSINESS_TARGET` with `is_google_requirement: false`.
+   - The platform strictly forbids calculating or displaying fake "Google AdSense approval probabilities".
+2. **Projections as Scenarios**:
+   - Any trajectory calculation is labeled `DERIVED_PROJECTION` and `TRAJECTORY_SCENARIO`.
+   - Disclaimers must state clearly: *Scenario only; not an empirical measurement and not a forecast of future traffic.*
+
