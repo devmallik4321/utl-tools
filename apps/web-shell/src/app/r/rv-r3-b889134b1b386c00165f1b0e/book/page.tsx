@@ -193,7 +193,7 @@ export default function UnlistedReviewPackagePage() {
               {bookSpec.subtitle}
             </p>
             <p className="text-xs text-slate-400 mt-1">
-              Author: <strong className="text-slate-200">{bookSpec.author_pseudonym}</strong> &bull; {bookSpec.edition} &bull; Series: <em>{publishingPackage.series_name}</em> &bull; Word Count: <strong className="text-emerald-400">17,888 words</strong> &bull; Length: <strong className="text-blue-400">93 pages (6"&times;9")</strong> &bull; Read Time: <strong>~80 min</strong>
+              Author: <strong className="text-slate-200">{bookSpec.author_pseudonym}</strong> &bull; {bookSpec.edition} &bull; Series: <em>{publishingPackage.series_name}</em> &bull; Word Count: <strong className="text-emerald-400">{bookSpec.total_word_count.toLocaleString()} words</strong> &bull; Length: <strong className="text-blue-400">{bookSpec.total_page_count} pages (6"&times;9")</strong> &bull; Read Time: <strong>~80 min</strong>
             </p>
           </div>
 
@@ -204,28 +204,28 @@ export default function UnlistedReviewPackagePage() {
               download="BOOK-0001-EXTERNAL-REVIEW-PACKAGE.zip"
               className="bg-amber-600 hover:bg-amber-500 text-white text-xs font-semibold px-4 py-2.5 rounded-xl transition flex items-center gap-1.5 shadow-lg shadow-amber-500/20"
             >
-              <Download className="h-4 w-4" /> Review Bundle (ZIP &bull; 4.1 MB)
+              <Download className="h-4 w-4" /> Review Bundle (ZIP &bull; {bookSpec.zip_file_size_mb} MB)
             </a>
             <a
               href="/r-assets/rv-r3-b889134b1b386c00165f1b0e/BOOK-0001.pdf"
               download="The-Zero-Employee-Agency-Alex-Vance.pdf"
               className="bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold px-4 py-2.5 rounded-xl transition flex items-center gap-1.5 shadow-lg shadow-blue-500/20"
             >
-              <Download className="h-4 w-4" /> Download PDF (751 KB &bull; 93 pages)
+              <Download className="h-4 w-4" /> Download PDF ({bookSpec.pdf_file_size_kb} KB &bull; {bookSpec.total_page_count} pages)
             </a>
             <a
               href="/r-assets/rv-r3-b889134b1b386c00165f1b0e/BOOK-0001.epub"
               download="The-Zero-Employee-Agency-Alex-Vance.epub"
               className="bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold px-4 py-2.5 rounded-xl transition flex items-center gap-1.5 shadow-lg shadow-emerald-500/20"
             >
-              <Download className="h-4 w-4" /> Download EPUB3 (1.5 MB)
+              <Download className="h-4 w-4" /> Download EPUB3 ({bookSpec.epub_file_size_mb} MB)
             </a>
             <a
               href="/r-assets/rv-r3-b889134b1b386c00165f1b0e/cover.jpg"
               download="The-Zero-Employee-Agency-Cover.jpg"
               className="bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-semibold px-3 py-2.5 rounded-xl transition flex items-center gap-1.5 border border-slate-700"
             >
-              <Download className="h-4 w-4" /> Master Cover (1.3 MB)
+              <Download className="h-4 w-4" /> Master Cover ({bookSpec.cover_file_size_mb} MB)
             </a>
           </div>
         </div>
@@ -463,7 +463,7 @@ export default function UnlistedReviewPackagePage() {
                 <BookOpen className="h-5 w-5 text-emerald-400" /> 3. Complete Manuscript — Full Browser-Readable HTML
               </h2>
               <p className="text-xs text-slate-400 mt-0.5">
-                Full 17,888-word text across all 9 chapters, front matter, and back matter (11 total sections). Complete blueprint, artifacts, and diagrams included.
+                Full {bookSpec.total_word_count.toLocaleString()}-word text across all 9 chapters, front matter, and back matter (11 total sections). Complete blueprint, artifacts, and diagrams included.
               </p>
             </div>
 
@@ -692,11 +692,11 @@ export default function UnlistedReviewPackagePage() {
               <div className="grid grid-cols-2 gap-2 text-[11px] font-mono">
                 <div className="bg-slate-950/80 p-2 rounded border border-slate-800 text-slate-300">
                   <span className="text-slate-500 block text-[10px]">PDF Geometry:</span>
-                  <strong>6.00" &times; 9.00" (93 Pages)</strong>
+                  <strong>6.00" &times; 9.00" ({bookSpec.total_page_count} Pages)</strong>
                 </div>
                 <div className="bg-slate-950/80 p-2 rounded border border-slate-800 text-slate-300">
                   <span className="text-slate-500 block text-[10px]">EPUB3 Container:</span>
-                  <strong>Valid XML + Nav (1.5 MB)</strong>
+                  <strong>Valid XML + Nav ({bookSpec.epub_file_size_mb} MB)</strong>
                 </div>
                 <div className="bg-slate-950/80 p-2 rounded border border-slate-800 text-slate-300">
                   <span className="text-slate-500 block text-[10px]">Citation Checks:</span>
@@ -779,24 +779,24 @@ export default function UnlistedReviewPackagePage() {
             </div>
 
             <p className="text-xs text-slate-300">
-              Automated gate verifies total parity between SQLite operational database (<code className="text-emerald-300">kdp_publishing.db</code>), <code className="text-emerald-300">spec.json</code>, compiled Markdown manuscript (17,888 words, 9 chapters), 6"&times;9" print PDF, EPUB3 package, and Master Cover.
+              Automated gate verifies total parity between SQLite operational database (<code className="text-emerald-300">kdp_publishing.db</code>), <code className="text-emerald-300">spec.json</code>, compiled Markdown manuscript ({bookSpec.total_word_count.toLocaleString()} words, 9 chapters), 6"&times;9" print PDF, EPUB3 package, and Master Cover.
             </p>
 
             <div className="grid md:grid-cols-2 gap-3 text-xs font-mono">
               <div className="bg-slate-950 p-3 rounded-xl border border-slate-800/80 space-y-1">
-                <span className="text-slate-500 block text-[10px]">Manuscript Full (17,888 words):</span>
+                <span className="text-slate-500 block text-[10px]">Manuscript Full ({bookSpec.total_word_count.toLocaleString()} words):</span>
                 <span className="text-emerald-400 text-[11px] break-all">{consistencyGate.hashes.manuscript_sha256}</span>
               </div>
               <div className="bg-slate-950 p-3 rounded-xl border border-slate-800/80 space-y-1">
-                <span className="text-slate-500 block text-[10px]">6" &times; 9" Print PDF (93 pages &bull; 751 KB):</span>
+                <span className="text-slate-500 block text-[10px]">6" &times; 9" Print PDF ({bookSpec.total_page_count} pages &bull; {bookSpec.pdf_file_size_kb} KB):</span>
                 <span className="text-blue-400 text-[11px] break-all">{consistencyGate.hashes.pdf_sha256}</span>
               </div>
               <div className="bg-slate-950 p-3 rounded-xl border border-slate-800/80 space-y-1">
-                <span className="text-slate-500 block text-[10px]">Standard EPUB3 (1.5 MB):</span>
+                <span className="text-slate-500 block text-[10px]">Standard EPUB3 ({bookSpec.epub_file_size_mb} MB):</span>
                 <span className="text-purple-400 text-[11px] break-all">{consistencyGate.hashes.epub_sha256}</span>
               </div>
               <div className="bg-slate-950 p-3 rounded-xl border border-slate-800/80 space-y-1">
-                <span className="text-slate-500 block text-[10px]">Master Cover (1600 &times; 2560 px &bull; 1.3 MB):</span>
+                <span className="text-slate-500 block text-[10px]">Master Cover (1600 &times; 2560 px &bull; {bookSpec.cover_file_size_mb} MB):</span>
                 <span className="text-amber-400 text-[11px] break-all">{consistencyGate.hashes.cover_sha256}</span>
               </div>
             </div>
