@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "extracted_at": "2026-09-10T04:00:19.384Z",
+  "extracted_at": "2026-09-11T04:00:16.278Z",
   "provenance_statement": "Reconstructed directly from Google Analytics 4 Data API (v1beta) and Google Search Console API. Historical synthetic estimates are preserved in daily_statistics.json for audit, while empirical metrics are extracted from external authoritative sources.",
   "production_timeline": {
     "production_start_date": "2026-08-25",
@@ -26,13 +26,13 @@
   "ga4_source": {
     "property_id": "551527574",
     "measurement_id": "G-H2G4BK9Y36",
-    "daily_records_count": 15,
+    "daily_records_count": 16,
     "monthly_summary_september": {
       "month": "2026-09",
-      "monthly_unique_users": 13,
-      "monthly_active_users": 13,
-      "monthly_sessions": 20,
-      "monthly_page_views": 36,
+      "monthly_unique_users": 16,
+      "monthly_active_users": 16,
+      "monthly_sessions": 26,
+      "monthly_page_views": 40,
       "source": "GA4 Data API Property 551527574"
     },
     "records": [
@@ -178,13 +178,23 @@
       },
       {
         "date": "2026-09-10",
-        "active_users": 0,
-        "sessions": 1,
-        "screen_page_views": 1,
+        "active_users": 2,
+        "sessions": 4,
+        "screen_page_views": 3,
         "engaged_sessions": 0,
-        "new_users": 0,
-        "user_engagement_duration_seconds": 0,
-        "event_count": 2
+        "new_users": 2,
+        "user_engagement_duration_seconds": 2,
+        "event_count": 11
+      },
+      {
+        "date": "2026-09-11",
+        "active_users": 1,
+        "sessions": 3,
+        "screen_page_views": 2,
+        "engaged_sessions": 0,
+        "new_users": 1,
+        "user_engagement_duration_seconds": 2,
+        "event_count": 8
       }
     ]
   },

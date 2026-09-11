@@ -1,5 +1,5 @@
 {
-  "executed_at": "2026-09-10T04:00:15.732Z",
+  "executed_at": "2026-09-11T04:00:11.480Z",
   "project_id": "UTL",
   "project_name": "UTL.tools",
   "project_health": "ATTENTION_REQUIRED",
@@ -10,13 +10,13 @@
   "recommendations_count": 3,
   "opportunities": [
     {
-      "opportunity_id": "OPP-AUTO-1789012815730-1",
+      "opportunity_id": "OPP-AUTO-1789099211479-1",
       "project_id": "UTL",
       "type": "REPAIR",
       "title": "Investigate SUDDEN_DROP in monthly_visit_estimate",
       "description": "Sudden drop of 76.7% detected in metric monthly_visit_estimate.",
       "evidence_ids": [
-        "ANM-DROP-monthly_visit_estimate-1789012815728"
+        "ANM-DROP-monthly_visit_estimate-1789099211479"
       ],
       "impact_score": 90,
       "effort_score": 20,
@@ -26,18 +26,18 @@
       "priority": "P1",
       "recommended_action": "Perform root cause audit for metric monthly_visit_estimate.",
       "approval_status": "PROPOSED",
-      "created_at": "2026-09-10T04:00:15.730Z",
-      "updated_at": "2026-09-10T04:00:15.730Z",
+      "created_at": "2026-09-11T04:00:11.479Z",
+      "updated_at": "2026-09-11T04:00:11.479Z",
       "explanation": "Priority P1 (Score: 74.1) because impact=90/100, confidence=90%, urgency=95/100, effort=20/100 (1 evidence sources)."
     },
     {
-      "opportunity_id": "OPP-AUTO-1789012815730-2",
+      "opportunity_id": "OPP-AUTO-1789099211480-2",
       "project_id": "UTL",
       "type": "RESEARCH",
       "title": "Investigate CONFLICT_DETECTED in monthly_visit_estimate",
       "description": "Conflicting observations detected across sources for metric monthly_visit_estimate.",
       "evidence_ids": [
-        "ANM-CONFLICT-monthly_visit_estimate-1789012815729"
+        "ANM-CONFLICT-monthly_visit_estimate-1789099211479"
       ],
       "impact_score": 90,
       "effort_score": 20,
@@ -47,12 +47,12 @@
       "priority": "P1",
       "recommended_action": "Perform root cause audit for metric monthly_visit_estimate.",
       "approval_status": "PROPOSED",
-      "created_at": "2026-09-10T04:00:15.730Z",
-      "updated_at": "2026-09-10T04:00:15.730Z",
+      "created_at": "2026-09-11T04:00:11.479Z",
+      "updated_at": "2026-09-11T04:00:11.479Z",
       "explanation": "Priority P1 (Score: 74.1) because impact=90/100, confidence=90%, urgency=95/100, effort=20/100 (1 evidence sources)."
     },
     {
-      "opportunity_id": "OPP-CAND-1789012815730-3",
+      "opportunity_id": "OPP-CAND-1789099211480-3",
       "project_id": "UTL",
       "type": "CREATE_NEW",
       "title": "Create Percentage Difference Calculator",
@@ -68,20 +68,20 @@
       "priority": "P1",
       "recommended_action": "Build a zero-install, instant client-side Percentage Difference Calculator under /tools/percentage-difference-calculator in next feature batch.",
       "approval_status": "PROPOSED",
-      "created_at": "2026-09-10T04:00:15.730Z",
-      "updated_at": "2026-09-10T04:00:15.730Z",
+      "created_at": "2026-09-11T04:00:11.479Z",
+      "updated_at": "2026-09-11T04:00:11.479Z",
       "explanation": "Priority P1 (Score: 67.5) because impact=82/100, confidence=92%, urgency=75/100, effort=20/100 (1 evidence sources)."
     }
   ],
   "recommendations": [
     {
-      "recommendation_id": "REC-OPP-AUTO-1789012815730-1",
-      "opportunity_id": "OPP-AUTO-1789012815730-1",
+      "recommendation_id": "REC-OPP-AUTO-1789099211479-1",
+      "opportunity_id": "OPP-AUTO-1789099211479-1",
       "project_id": "UTL",
       "action": "Perform root cause audit for metric monthly_visit_estimate.",
       "reason": "Sudden drop of 76.7% detected in metric monthly_visit_estimate.",
       "evidence_ids": [
-        "ANM-DROP-monthly_visit_estimate-1789012815728"
+        "ANM-DROP-monthly_visit_estimate-1789099211479"
       ],
       "confidence": "VERY_HIGH",
       "confidence_score": 0.9,
@@ -89,16 +89,16 @@
       "risk_level": "LOW",
       "approval_required": true,
       "status": "PROPOSED",
-      "created_at": "2026-09-10T04:00:15.731Z"
+      "created_at": "2026-09-11T04:00:11.480Z"
     },
     {
-      "recommendation_id": "REC-OPP-AUTO-1789012815730-2",
-      "opportunity_id": "OPP-AUTO-1789012815730-2",
+      "recommendation_id": "REC-OPP-AUTO-1789099211480-2",
+      "opportunity_id": "OPP-AUTO-1789099211480-2",
       "project_id": "UTL",
       "action": "Perform root cause audit for metric monthly_visit_estimate.",
       "reason": "Conflicting observations detected across sources for metric monthly_visit_estimate.",
       "evidence_ids": [
-        "ANM-CONFLICT-monthly_visit_estimate-1789012815729"
+        "ANM-CONFLICT-monthly_visit_estimate-1789099211479"
       ],
       "confidence": "VERY_HIGH",
       "confidence_score": 0.9,
@@ -106,11 +106,11 @@
       "risk_level": "LOW",
       "approval_required": true,
       "status": "PROPOSED",
-      "created_at": "2026-09-10T04:00:15.731Z"
+      "created_at": "2026-09-11T04:00:11.480Z"
     },
     {
-      "recommendation_id": "REC-OPP-CAND-1789012815730-3",
-      "opportunity_id": "OPP-CAND-1789012815730-3",
+      "recommendation_id": "REC-OPP-CAND-1789099211480-3",
+      "opportunity_id": "OPP-CAND-1789099211480-3",
       "project_id": "UTL",
       "action": "Build a zero-install, instant client-side Percentage Difference Calculator under /tools/percentage-difference-calculator in next feature batch.",
       "reason": "Significant search volume exists for 'percentage difference calculator' and 'percentage increase decrease'. UTL currently has only standard percentage calculators.",
@@ -123,7 +123,7 @@
       "risk_level": "LOW",
       "approval_required": true,
       "status": "PROPOSED",
-      "created_at": "2026-09-10T04:00:15.731Z"
+      "created_at": "2026-09-11T04:00:11.480Z"
     }
   ]
 }

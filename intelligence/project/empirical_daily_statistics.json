@@ -1,7 +1,7 @@
 [
   {
     "date": "2026-08-25",
-    "collection_timestamp": "2026-09-10T04:00:19.384Z",
+    "collection_timestamp": "2026-09-11T04:00:16.278Z",
     "epistemic_classification": "TRUTHFUL_EMPIRICAL",
     "usable_for_empirical_analysis": true,
     "ga4": {
@@ -35,7 +35,7 @@
   },
   {
     "date": "2026-08-26",
-    "collection_timestamp": "2026-09-10T04:00:19.384Z",
+    "collection_timestamp": "2026-09-11T04:00:16.278Z",
     "epistemic_classification": "TRUTHFUL_EMPIRICAL",
     "usable_for_empirical_analysis": true,
     "ga4": {
@@ -69,7 +69,7 @@
   },
   {
     "date": "2026-08-27",
-    "collection_timestamp": "2026-09-10T04:00:19.384Z",
+    "collection_timestamp": "2026-09-11T04:00:16.278Z",
     "epistemic_classification": "TRUTHFUL_EMPIRICAL",
     "usable_for_empirical_analysis": true,
     "ga4": {
@@ -103,7 +103,7 @@
   },
   {
     "date": "2026-08-28",
-    "collection_timestamp": "2026-09-10T04:00:19.384Z",
+    "collection_timestamp": "2026-09-11T04:00:16.278Z",
     "epistemic_classification": "TRUTHFUL_EMPIRICAL",
     "usable_for_empirical_analysis": true,
     "ga4": {
@@ -137,7 +137,7 @@
   },
   {
     "date": "2026-08-29",
-    "collection_timestamp": "2026-09-10T04:00:19.384Z",
+    "collection_timestamp": "2026-09-11T04:00:16.278Z",
     "epistemic_classification": "TRUTHFUL_EMPIRICAL",
     "usable_for_empirical_analysis": true,
     "ga4": {
@@ -171,7 +171,7 @@
   },
   {
     "date": "2026-08-30",
-    "collection_timestamp": "2026-09-10T04:00:19.384Z",
+    "collection_timestamp": "2026-09-11T04:00:16.278Z",
     "epistemic_classification": "TRUTHFUL_EMPIRICAL",
     "usable_for_empirical_analysis": true,
     "ga4": {
@@ -205,7 +205,7 @@
   },
   {
     "date": "2026-08-31",
-    "collection_timestamp": "2026-09-10T04:00:19.384Z",
+    "collection_timestamp": "2026-09-11T04:00:16.278Z",
     "epistemic_classification": "TRUTHFUL_EMPIRICAL",
     "usable_for_empirical_analysis": true,
     "ga4": {
@@ -239,7 +239,7 @@
   },
   {
     "date": "2026-09-01",
-    "collection_timestamp": "2026-09-10T04:00:19.384Z",
+    "collection_timestamp": "2026-09-11T04:00:16.278Z",
     "epistemic_classification": "TRUTHFUL_EMPIRICAL",
     "usable_for_empirical_analysis": true,
     "ga4": {
@@ -273,7 +273,7 @@
   },
   {
     "date": "2026-09-02",
-    "collection_timestamp": "2026-09-10T04:00:19.384Z",
+    "collection_timestamp": "2026-09-11T04:00:16.278Z",
     "epistemic_classification": "TRUTHFUL_EMPIRICAL",
     "usable_for_empirical_analysis": true,
     "ga4": {
@@ -307,7 +307,7 @@
   },
   {
     "date": "2026-09-03",
-    "collection_timestamp": "2026-09-10T04:00:19.384Z",
+    "collection_timestamp": "2026-09-11T04:00:16.278Z",
     "epistemic_classification": "TRUTHFUL_EMPIRICAL",
     "usable_for_empirical_analysis": true,
     "ga4": {
@@ -341,7 +341,7 @@
   },
   {
     "date": "2026-09-04",
-    "collection_timestamp": "2026-09-10T04:00:19.384Z",
+    "collection_timestamp": "2026-09-11T04:00:16.278Z",
     "epistemic_classification": "TRUTHFUL_EMPIRICAL",
     "usable_for_empirical_analysis": true,
     "ga4": {
@@ -375,7 +375,7 @@
   },
   {
     "date": "2026-09-06",
-    "collection_timestamp": "2026-09-10T04:00:19.384Z",
+    "collection_timestamp": "2026-09-11T04:00:16.278Z",
     "epistemic_classification": "TRUTHFUL_EMPIRICAL",
     "usable_for_empirical_analysis": true,
     "ga4": {
@@ -409,7 +409,7 @@
   },
   {
     "date": "2026-09-08",
-    "collection_timestamp": "2026-09-10T04:00:19.384Z",
+    "collection_timestamp": "2026-09-11T04:00:16.278Z",
     "epistemic_classification": "TRUTHFUL_EMPIRICAL",
     "usable_for_empirical_analysis": true,
     "ga4": {
@@ -443,7 +443,7 @@
   },
   {
     "date": "2026-09-09",
-    "collection_timestamp": "2026-09-10T04:00:19.384Z",
+    "collection_timestamp": "2026-09-11T04:00:16.278Z",
     "epistemic_classification": "TRUTHFUL_EMPIRICAL",
     "usable_for_empirical_analysis": true,
     "ga4": {
@@ -477,17 +477,51 @@
   },
   {
     "date": "2026-09-10",
-    "collection_timestamp": "2026-09-10T04:00:19.384Z",
+    "collection_timestamp": "2026-09-11T04:00:16.278Z",
     "epistemic_classification": "TRUTHFUL_EMPIRICAL",
     "usable_for_empirical_analysis": true,
     "ga4": {
-      "active_users": 0,
-      "sessions": 1,
-      "visits_proxy": 1,
-      "screen_page_views": 1,
+      "active_users": 2,
+      "sessions": 4,
+      "visits_proxy": 4,
+      "screen_page_views": 3,
       "engaged_sessions": 0,
-      "new_users": 0,
-      "event_count": 2,
+      "new_users": 2,
+      "event_count": 11,
+      "status": "EMPIRICAL_API",
+      "source": "SRC-GA4-UTL"
+    },
+    "gsc": {
+      "impressions": null,
+      "clicks": null,
+      "ctr": null,
+      "average_position": null,
+      "status": "PENDING_SEARCH_CONSOLE_LAG",
+      "source": "SRC-GSC-UTL"
+    },
+    "telemetry": {
+      "utility_views": null,
+      "tool_executions": null,
+      "widget_views": null,
+      "status": "UNAVAILABLE",
+      "persistence_status": "NON-PERSISTENT_EDGE",
+      "source": "SRC-UTL-TELEMETRY"
+    },
+    "reconstruction_note": "Authoritative external measurement independently reconstructed; replaces contaminated internal estimates while preserving original contaminated records in daily_statistics.json."
+  },
+  {
+    "date": "2026-09-11",
+    "collection_timestamp": "2026-09-11T04:00:16.278Z",
+    "epistemic_classification": "TRUTHFUL_EMPIRICAL",
+    "usable_for_empirical_analysis": true,
+    "ga4": {
+      "active_users": 1,
+      "sessions": 3,
+      "visits_proxy": 3,
+      "screen_page_views": 2,
+      "engaged_sessions": 0,
+      "new_users": 1,
+      "event_count": 8,
       "status": "EMPIRICAL_API",
       "source": "SRC-GA4-UTL"
     },
